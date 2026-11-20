@@ -1,6 +1,46 @@
 {
-  "candidates": [],
+  "candidates": [
+    {
+      "_id": "cand-0ee6cf10-6f40-4ea4-9c88-b1f18b918c42",
+      "candidateId": "INZ-CAND-2026-00001",
+      "fullName": "ram",
+      "email": "ram@gmail.com",
+      "password": "Ram@2003",
+      "mobileNumber": "987654321",
+      "altMobileNumber": "",
+      "dateOfBirth": "2026-11-24",
+      "gender": "Male",
+      "residentialAddress": "set",
+      "district": "",
+      "state": "Tamil Nadu",
+      "pinCode": "fer23r",
+      "collegeId": "",
+      "collegeName": "sadxfcgbnmkl,",
+      "universityRegisterNumber": "",
+      "degree": "B.E. Computer Science and Engineering",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.5",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-20T11:25:06.179Z",
+      "updatedAt": "2026-11-20T11:25:06.179Z"
+    }
+  ],
   "assessment_results": [],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-20T11:22:16.724Z"
+  "lastUpdated": "2026-11-20T11:25:06.263Z"
 }
