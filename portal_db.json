@@ -36,13 +36,90 @@
       "recruitmentStage": "Registered",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-20T13:15:22.744Z",
-      "updatedAt": "2026-11-20T13:15:22.744Z"
+      "updatedAt": "2026-11-20T13:15:22.744Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_b788992d-dd2d-46d7-bdf3-db34040b4a55",
+        "candidateId": "INZ-CAND-2026-00001",
+        "candidateDisplayId": "INZ-CAND-2026-00001",
+        "candidateName": "INZOVATE TECHNOLOGIES",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "Coimbatore Institute of Technology (CIT)",
+        "totalScore": 6,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 18,
+        "totalQuestionsAttempted": 18,
+        "unattempted": 27,
+        "percentage": 13,
+        "performanceCategory": "Needs Improvement",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-1E62DB",
+        "sectionScores": {
+          "section-1": {
+            "score": 5,
+            "total": 15,
+            "percentage": 33
+          },
+          "section-2": {
+            "score": 1,
+            "total": 15,
+            "percentage": 7
+          },
+          "section-3": {
+            "score": 0,
+            "total": 15,
+            "percentage": 0
+          }
+        },
+        "completedAt": "2026-11-20T13:26:51.946Z"
+      },
+      "totalScore": 6,
+      "percentage": 13,
+      "certificateId": "INZ-CERT-2026-1E62DB",
+      "completedAt": "2026-11-20T13:26:51.946Z"
     }
   ],
-  "assessment_results": [],
+  "assessment_results": [
+    {
+      "sessionId": "inz_cbt_b788992d-dd2d-46d7-bdf3-db34040b4a55",
+      "candidateId": "INZ-CAND-2026-00001",
+      "candidateDisplayId": "INZ-CAND-2026-00001",
+      "candidateName": "INZOVATE TECHNOLOGIES",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "Coimbatore Institute of Technology (CIT)",
+      "totalScore": 6,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 18,
+      "totalQuestionsAttempted": 18,
+      "unattempted": 27,
+      "percentage": 13,
+      "performanceCategory": "Needs Improvement",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-1E62DB",
+      "sectionScores": {
+        "section-1": {
+          "score": 5,
+          "total": 15,
+          "percentage": 33
+        },
+        "section-2": {
+          "score": 1,
+          "total": 15,
+          "percentage": 7
+        },
+        "section-3": {
+          "score": 0,
+          "total": 15,
+          "percentage": 0
+        }
+      },
+      "completedAt": "2026-11-20T13:26:51.946Z"
+    }
+  ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-20T13:25:26.449Z"
+  "lastUpdated": "2026-11-20T13:26:52.095Z"
 }
