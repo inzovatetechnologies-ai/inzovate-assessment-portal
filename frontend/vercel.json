@@ -1,8 +1,33 @@
 {
+  "cleanUrls": true,
   "rewrites": [
     {
       "source": "/api/domains",
       "destination": "/api/job-roles?type=domains"
+    },
+    {
+      "source": "/api/candidates/:id",
+      "destination": "/api/candidates?id=:id"
+    },
+    {
+      "source": "/api/exam/:path*",
+      "destination": "/api/exam?path=:path*"
+    },
+    {
+      "source": "/api/exam",
+      "destination": "/api/exam"
+    },
+    {
+      "source": "/api/questions/:path*",
+      "destination": "/api/exam?type=questions&path=:path*"
+    },
+    {
+      "source": "/api/questions",
+      "destination": "/api/exam?type=questions"
+    },
+    {
+      "source": "/api/proctoring/:path*",
+      "destination": "/api/exam?type=proctoring&path=:path*"
     },
     {
       "source": "/(.*)",

@@ -22,7 +22,7 @@ import {
 interface RegistrationPageProps {
   onRegistrationSuccess: (candidate: any) => void;
   onCancel: () => void;
-  onOpenLogin: () => void;
+  onOpenLogin: (initialIdentifier?: string, initialPassword?: string) => void;
 }
 
 export const RegistrationPage: React.FC<RegistrationPageProps> = ({
@@ -44,6 +44,7 @@ export const RegistrationPage: React.FC<RegistrationPageProps> = ({
     candidateId: string;
     fullName: string;
     email: string;
+    candidateObj?: any;
   } | null>(null);
 
   // Form State
@@ -235,8 +236,8 @@ export const RegistrationPage: React.FC<RegistrationPageProps> = ({
           candidateId: res.candidateId,
           fullName: formData.fullName,
           email: formData.email,
+          candidateObj: res.candidate,
         });
-        onRegistrationSuccess(res.candidate);
       } else {
         setErrorMsg(res.message);
       }
@@ -1076,16 +1077,35 @@ export const RegistrationPage: React.FC<RegistrationPageProps> = ({
               safe. If forgotten, use the "Forgot Password" option on the login screen.
             </div>
 
-            <button
-              onClick={() => {
-                setSuccessInfo(null);
-                onOpenLogin();
-              }}
-              className="w-full py-3.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs shadow-lg shadow-blue-600/30 flex items-center justify-center space-x-2 transition-all transform hover:-translate-y-0.5"
-            >
-              <span>Proceed to Candidate Sign In</span>
-              <ArrowRight className="w-4 h-4" />
-            </button>
+            <div className="space-y-2 pt-2">
+              <button
+                onClick={() => {
+                  const cId = successInfo.candidateId;
+                  const cPw = formData.password;
+                  setSuccessInfo(null);
+                  onOpenLogin(cId, cPw);
+                }}
+                className="w-full py-3.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs shadow-lg shadow-blue-600/30 flex items-center justify-center space-x-2 transition-all transform hover:-translate-y-0.5"
+              >
+                <span>Proceed to Candidate Sign In</span>
+                <ArrowRight className="w-4 h-4" />
+              </button>
+
+              <button
+                onClick={() => {
+                  const candidateData = successInfo.candidateObj || {
+                    ...formData,
+                    candidateId: successInfo.candidateId,
+                  };
+                  setSuccessInfo(null);
+                  onRegistrationSuccess(candidateData);
+                }}
+                className="w-full py-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold text-xs transition-colors flex items-center justify-center space-x-1.5"
+              >
+                <span>Start Assessment Immediately (Direct)</span>
+                <ArrowRight className="w-4 h-4 text-slate-600" />
+              </button>
+            </div>
           </div>
         </div>
       )}

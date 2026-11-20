@@ -1,4 +1,4 @@
-import { COLLEGES } from './data/collegesData.js';
+import { COLLEGES } from './_data/collegesData.js';
 
 export default function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');

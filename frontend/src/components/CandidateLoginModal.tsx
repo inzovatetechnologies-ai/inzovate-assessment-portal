@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { api } from '../services/api';
-import { User, Lock, Mail, ArrowRight, AlertCircle, KeyRound, CheckCircle2 } from 'lucide-react';
+import { User, Lock, ArrowRight, AlertCircle, Eye, EyeOff } from 'lucide-react';
 
 interface CandidateLoginModalProps {
   isOpen: boolean;
@@ -8,6 +8,8 @@ interface CandidateLoginModalProps {
   onLoginSuccess: (user: any, token: string) => void;
   onOpenRegister: () => void;
   onOpenForgotPassword: (initialIdentifier?: string) => void;
+  initialIdentifier?: string;
+  initialPassword?: string;
 }
 
 export const CandidateLoginModal: React.FC<CandidateLoginModalProps> = ({
@@ -16,17 +18,28 @@ export const CandidateLoginModal: React.FC<CandidateLoginModalProps> = ({
   onLoginSuccess,
   onOpenRegister,
   onOpenForgotPassword,
+  initialIdentifier = '',
+  initialPassword = '',
 }) => {
-  const [identifier, setIdentifier] = useState('');
-  const [password, setPassword] = useState('');
+  const [identifier, setIdentifier] = useState(initialIdentifier);
+  const [password, setPassword] = useState(initialPassword);
+  const [showPassword, setShowPassword] = useState(false);
   const [loading, setLoading] = useState(false);
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (isOpen) {
+      if (initialIdentifier) setIdentifier(initialIdentifier);
+      if (initialPassword) setPassword(initialPassword);
+      setErrorMsg(null);
+    }
+  }, [isOpen, initialIdentifier, initialPassword]);
 
   if (!isOpen) return null;
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!identifier || !password) {
+    if (!identifier.trim() || !password.trim()) {
       setErrorMsg('Please enter your Username / Candidate ID / Email and Password.');
       return;
     }
@@ -34,10 +47,10 @@ export const CandidateLoginModal: React.FC<CandidateLoginModalProps> = ({
     setLoading(true);
     setErrorMsg(null);
     try {
-      const res = await api.login(identifier, password);
+      const res = await api.login(identifier.trim(), password.trim());
       if (res.success && res.user) {
-        localStorage.setItem('inzovate_token', res.token);
-        onLoginSuccess(res.user, res.token);
+        if (res.token) localStorage.setItem('inzovate_token', res.token);
+        onLoginSuccess(res.user, res.token || 'inz_session_active');
         onClose();
       } else {
         setErrorMsg(res.message || 'Invalid credentials.');
@@ -89,7 +102,7 @@ export const CandidateLoginModal: React.FC<CandidateLoginModalProps> = ({
               <input
                 type="text"
                 required
-                placeholder="e.g. INZ-CAND-2026-00001 or email"
+                placeholder="e.g. INZ-CAND-2026-00001 or registered email"
                 value={identifier}
                 onChange={(e) => setIdentifier(e.target.value)}
                 className="w-full pl-9 pr-3 py-2.5 rounded-xl border border-slate-300 font-medium text-slate-900 focus:ring-2 focus:ring-blue-500 focus:outline-none"
@@ -114,13 +127,20 @@ export const CandidateLoginModal: React.FC<CandidateLoginModalProps> = ({
             <div className="relative">
               <Lock className="w-4 h-4 text-slate-400 absolute left-3 top-3" />
               <input
-                type="password"
+                type={showPassword ? 'text' : 'password'}
                 required
                 placeholder="••••••••"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                className="w-full pl-9 pr-3 py-2.5 rounded-xl border border-slate-300 font-medium text-slate-900 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                className="w-full pl-9 pr-10 py-2.5 rounded-xl border border-slate-300 font-medium text-slate-900 focus:ring-2 focus:ring-blue-500 focus:outline-none"
               />
+              <button
+                type="button"
+                onClick={() => setShowPassword(!showPassword)}
+                className="absolute right-3 top-3 text-slate-400 hover:text-slate-600"
+              >
+                {showPassword ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
+              </button>
             </div>
           </div>
 

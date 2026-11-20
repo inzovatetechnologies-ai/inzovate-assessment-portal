@@ -9,14 +9,36 @@ if (!fs.existsSync(TMP_DIR)) {
 }
 
 const CANDIDATES_FILE = path.join(TMP_DIR, 'candidates.json');
+const USERS_FILE = path.join(TMP_DIR, 'users.json');
 
 function getCandidates() {
+  const list = [];
   try {
     if (fs.existsSync(CANDIDATES_FILE)) {
-      return JSON.parse(fs.readFileSync(CANDIDATES_FILE, 'utf8'));
+      const data = JSON.parse(fs.readFileSync(CANDIDATES_FILE, 'utf8'));
+      if (Array.isArray(data)) list.push(...data);
     }
   } catch (e) {}
-  return [];
+
+  if (list.length === 0) {
+    try {
+      const seedPaths = [
+        path.join(process.cwd(), 'api', '_data', 'candidates.json'),
+        path.join(process.cwd(), 'frontend', 'api', '_data', 'candidates.json'),
+        path.join(process.cwd(), '_data', 'candidates.json'),
+      ];
+      for (const sp of seedPaths) {
+        if (fs.existsSync(sp)) {
+          const seed = JSON.parse(fs.readFileSync(sp, 'utf8'));
+          if (Array.isArray(seed) && seed.length > 0) {
+            list.push(...seed);
+            break;
+          }
+        }
+      }
+    } catch (e) {}
+  }
+  return list;
 }
 
 function saveCandidates(list) {
@@ -25,6 +47,22 @@ function saveCandidates(list) {
   } catch (e) {
     console.error('Failed to save candidates:', e);
   }
+}
+
+function saveUser(userObj) {
+  try {
+    let users = [];
+    if (fs.existsSync(USERS_FILE)) {
+      users = JSON.parse(fs.readFileSync(USERS_FILE, 'utf8'));
+    }
+    const idx = users.findIndex(u => u.email === userObj.email || u.candidateId === userObj.candidateId);
+    if (idx >= 0) {
+      users[idx] = { ...users[idx], ...userObj };
+    } else {
+      users.push(userObj);
+    }
+    fs.writeFileSync(USERS_FILE, JSON.stringify(users, null, 2), 'utf8');
+  } catch (e) {}
 }
 
 async function parseBody(req) {
@@ -85,21 +123,32 @@ export default async function handler(req, res) {
 
     const existingEmail = candidates.find(c => c.email && c.email.toLowerCase() === cleanEmail);
     if (existingEmail) {
-      res.statusCode = 409;
+      const token = 'inz_session_' + Buffer.from(cleanEmail).toString('base64');
+      res.statusCode = 200;
       res.setHeader('Content-Type', 'application/json');
       return res.end(JSON.stringify({
-        success: false,
-        message: `You have already registered with email '${cleanEmail}' (Candidate ID: ${existingEmail.candidateId}). Please log in.`
-      }));
-    }
-
-    const existingMobile = candidates.find(c => c.mobileNumber && c.mobileNumber === cleanMobile);
-    if (existingMobile) {
-      res.statusCode = 409;
-      res.setHeader('Content-Type', 'application/json');
-      return res.end(JSON.stringify({
-        success: false,
-        message: `You have already registered with mobile number '${cleanMobile}' (Candidate ID: ${existingMobile.candidateId}). Please log in.`
+        success: true,
+        alreadyRegistered: true,
+        message: `Candidate profile already exists for ${cleanEmail}. Ready for sign in.`,
+        candidateId: existingEmail.candidateId,
+        token,
+        candidate: existingEmail,
+        user: {
+          id: existingEmail.candidateId,
+          candidateId: existingEmail.candidateId,
+          fullName: existingEmail.fullName,
+          email: existingEmail.email,
+          role: 'Candidate',
+          jobRoleId: existingEmail.jobRoleId,
+          jobRoleTitle: existingEmail.jobRoleTitle,
+          domainId: existingEmail.domainId,
+          domainName: existingEmail.domainName,
+          collegeName: existingEmail.collegeName,
+          degree: existingEmail.degree,
+          branch: existingEmail.branch,
+          cgpa: existingEmail.cgpa,
+          graduationYear: existingEmail.yearOfPassing || existingEmail.graduationYear
+        }
       }));
     }
 
@@ -112,20 +161,27 @@ export default async function handler(req, res) {
       candidateId,
       fullName: payload.fullName.trim(),
       email: cleanEmail,
+      password: payload.password,
       mobileNumber: cleanMobile,
       altMobileNumber: payload.altMobileNumber || '',
       dateOfBirth: payload.dateOfBirth || '',
       gender: payload.gender || 'Not Specified',
+      residentialAddress: payload.residentialAddress || '',
+      district: payload.district || '',
+      state: payload.state || 'Tamil Nadu',
+      pinCode: payload.pinCode || '',
       collegeId: payload.collegeId || '',
       collegeName: payload.collegeName || 'Autonomous Institution',
       universityRegisterNumber: payload.universityRegisterNumber || '',
       degree: payload.degree || 'B.E. / B.Tech',
       branch: payload.branch || 'Engineering',
       yearOfPassing: payload.yearOfPassing || '2026',
-      cgpa: payload.cgpa || '',
+      graduationYear: payload.yearOfPassing || '2026',
+      cgpa: payload.cgpa || '8.5',
       sslcPercentage: payload.sslcPercentage || '',
       hscPercentage: payload.hscPercentage || '',
       standingArrears: payload.standingArrears || '0',
+      arrearStatus: payload.standingArrears && payload.standingArrears !== '0' ? `${payload.standingArrears} Standing Arrear(s)` : 'No History',
       historyOfArrears: payload.historyOfArrears || '0',
       driveId: payload.driveId || 'INZ-DRIVE-2026-01',
       domainId: payload.domainId || 'dom-01',
@@ -143,13 +199,41 @@ export default async function handler(req, res) {
     candidates.push(newCandidate);
     saveCandidates(candidates);
 
+    saveUser({
+      id: newCandidate._id,
+      candidateId,
+      fullName: newCandidate.fullName,
+      email: cleanEmail,
+      password: payload.password,
+      role: 'Candidate'
+    });
+
+    const token = 'inz_session_' + Buffer.from(cleanEmail).toString('base64');
+
     res.statusCode = 201;
     res.setHeader('Content-Type', 'application/json');
     return res.end(JSON.stringify({
       success: true,
       message: `Candidate ${newCandidate.fullName} successfully registered for Inzovate Campus Drive 2026.`,
       candidateId,
-      candidate: newCandidate
+      token,
+      candidate: newCandidate,
+      user: {
+        id: candidateId,
+        candidateId,
+        fullName: newCandidate.fullName,
+        email: cleanEmail,
+        role: 'Candidate',
+        jobRoleId: newCandidate.jobRoleId,
+        jobRoleTitle: newCandidate.jobRoleTitle,
+        domainId: newCandidate.domainId,
+        domainName: newCandidate.domainName,
+        collegeName: newCandidate.collegeName,
+        degree: newCandidate.degree,
+        branch: newCandidate.branch,
+        cgpa: newCandidate.cgpa,
+        graduationYear: newCandidate.yearOfPassing
+      }
     }));
   } catch (err) {
     res.statusCode = 500;

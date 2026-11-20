@@ -33,6 +33,8 @@ export default function App() {
 
   // Authentication Modals
   const [candidateLoginOpen, setCandidateLoginOpen] = useState(false);
+  const [candidateLoginInitialIdentifier, setCandidateLoginInitialIdentifier] = useState('');
+  const [candidateLoginInitialPassword, setCandidateLoginInitialPassword] = useState('');
   const [forgotPasswordOpen, setForgotPasswordOpen] = useState(false);
   const [forgotPasswordInitialIdentifier, setForgotPasswordInitialIdentifier] = useState('');
   const [adminLoginOpen, setAdminLoginOpen] = useState(false);
@@ -140,6 +142,18 @@ export default function App() {
   };
 
   const handleRegistrationSuccess = (candidate: any) => {
+    if (candidate) {
+      handleCandidateLoginSuccess(candidate, 'inz_session_direct');
+      setActiveTab('candidate-profile');
+    } else {
+      setActiveTab('home');
+      setCandidateLoginOpen(true);
+    }
+  };
+
+  const handleOpenCandidateLogin = (initialId?: string, initialPw?: string) => {
+    if (initialId) setCandidateLoginInitialIdentifier(initialId);
+    if (initialPw) setCandidateLoginInitialPassword(initialPw);
     setActiveTab('home');
     setCandidateLoginOpen(true);
   };
@@ -211,9 +225,8 @@ export default function App() {
           <RegistrationPage
             onRegistrationSuccess={handleRegistrationSuccess}
             onCancel={() => setActiveTab('home')}
-            onOpenLogin={() => {
-              setActiveTab('home');
-              setCandidateLoginOpen(true);
+            onOpenLogin={(initialId, initialPw) => {
+              handleOpenCandidateLogin(initialId, initialPw);
             }}
           />
         )}
@@ -280,7 +293,13 @@ export default function App() {
       {/* Authentication Modals */}
       <CandidateLoginModal
         isOpen={candidateLoginOpen}
-        onClose={() => setCandidateLoginOpen(false)}
+        initialIdentifier={candidateLoginInitialIdentifier}
+        initialPassword={candidateLoginInitialPassword}
+        onClose={() => {
+          setCandidateLoginOpen(false);
+          setCandidateLoginInitialIdentifier('');
+          setCandidateLoginInitialPassword('');
+        }}
         onLoginSuccess={handleCandidateLoginSuccess}
         onOpenRegister={() => {
           setCandidateLoginOpen(false);
