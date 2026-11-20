@@ -1,0 +1,86 @@
+[
+  {
+    "_id": "0a40da43-e5ca-4de9-9355-ff51ca5ade01",
+    "sessionId": "1f48fa43-5945-4921-84f6-a97454a68102",
+    "candidateId": "INZ-CAND-2026-00001",
+    "eventType": "tab_switch",
+    "details": "Candidate navigated away from assessment window (Tab switch).",
+    "snapshotUrl": "",
+    "violationNumber": 1,
+    "timestamp": "2026-11-18T05:56:39.999Z",
+    "createdAt": "2026-11-18T05:56:40.000Z",
+    "updatedAt": "2026-11-18T05:56:40.000Z"
+  },
+  {
+    "_id": "cdd90136-b607-4391-9cfe-5e72f475f4e1",
+    "sessionId": "965dd7ae-a076-4eae-9f27-af0f4ecc5c16",
+    "candidateId": "INZ-CAND-2026-00008",
+    "eventType": "window_blur",
+    "details": "Window focus lost. Please remain strictly on the examination window.",
+    "snapshotUrl": "",
+    "violationNumber": 1,
+    "timestamp": "2026-11-18T07:42:20.891Z",
+    "createdAt": "2026-11-18T07:42:20.891Z",
+    "updatedAt": "2026-11-18T07:42:20.891Z"
+  },
+  {
+    "_id": "8abd7c9b-96da-447a-b178-d2f5e7a970ed",
+    "sessionId": "30143c92-bf07-4c08-a6c7-0af6ffc9296c",
+    "candidateId": "INZ-CAND-2026-00008",
+    "eventType": "window_blur",
+    "details": "Window focus lost. Please remain strictly on the examination window.",
+    "snapshotUrl": "",
+    "violationNumber": 1,
+    "timestamp": "2026-11-18T11:15:17.674Z",
+    "createdAt": "2026-11-18T11:15:17.674Z",
+    "updatedAt": "2026-11-18T11:15:17.674Z"
+  },
+  {
+    "_id": "c5c745cc-9f19-4d0c-b8ce-b828ef4d187b",
+    "sessionId": "30143c92-bf07-4c08-a6c7-0af6ffc9296c",
+    "candidateId": "INZ-CAND-2026-00008",
+    "eventType": "tab_switch",
+    "details": "Candidate navigated away from assessment window (Tab Switch Detected).",
+    "snapshotUrl": "",
+    "violationNumber": 2,
+    "timestamp": "2026-11-18T11:15:17.919Z",
+    "createdAt": "2026-11-18T11:15:17.919Z",
+    "updatedAt": "2026-11-18T11:15:17.919Z"
+  },
+  {
+    "_id": "e0f18100-3ff5-4909-8d97-6bd3e3d37b57",
+    "sessionId": "8cb1e94d-cad0-424a-8e30-b045b370715a",
+    "candidateId": "INZ-CAND-2026-00001",
+    "eventType": "tab_switch",
+    "details": "Candidate navigated away from assessment window (Tab switch).",
+    "snapshotUrl": "",
+    "violationNumber": 1,
+    "timestamp": "2026-11-20T04:58:56.670Z",
+    "createdAt": "2026-11-20T04:58:56.670Z",
+    "updatedAt": "2026-11-20T04:58:56.670Z"
+  },
+  {
+    "_id": "8872bdd9-3ee9-4ad1-8cfb-77cefacff29c",
+    "sessionId": "e2519425-8002-415e-bc5b-de084ba1fc5d",
+    "candidateId": "INZ-CAND-2026-00001",
+    "eventType": "tab_switch",
+    "details": "Candidate navigated away from assessment window (Tab switch).",
+    "snapshotUrl": "",
+    "violationNumber": 1,
+    "timestamp": "2026-11-20T04:59:38.379Z",
+    "createdAt": "2026-11-20T04:59:38.379Z",
+    "updatedAt": "2026-11-20T04:59:38.379Z"
+  },
+  {
+    "_id": "620f2db7-2c98-4fe3-a9aa-e920db800bcb",
+    "sessionId": "52400628-e5e3-4860-8735-dece0e21fd70",
+    "candidateId": "INZ-CAND-2026-00001",
+    "eventType": "tab_switch",
+    "details": "Candidate navigated away from assessment window (Tab switch).",
+    "snapshotUrl": "",
+    "violationNumber": 1,
+    "timestamp": "2026-11-20T05:02:28.040Z",
+    "createdAt": "2026-11-20T05:02:28.040Z",
+    "updatedAt": "2026-11-20T05:02:28.040Z"
+  }
+]
