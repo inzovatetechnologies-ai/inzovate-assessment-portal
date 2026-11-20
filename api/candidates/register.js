@@ -136,6 +136,7 @@ export default async function handler(req, res) {
       jobRoleId: payload.jobRoleId,
       jobRoleTitle: 'Software Engineer',
       recruitmentStage: 'Registered',
+      password: payload.password,
       isEmailVerified: true,
       isMobileVerified: true,
       termsAccepted: true,
