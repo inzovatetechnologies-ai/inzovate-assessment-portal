@@ -283,13 +283,59 @@
       "jobRoleId": "role-soft-dev",
       "jobRoleTitle": "Software Developer",
       "preferredLocation": "Coimbatore / Chennai",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Rejected",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-20T17:11:49.262Z",
-      "updatedAt": "2026-11-20T17:11:49.262Z"
+      "updatedAt": "2026-11-20T17:11:49.262Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_73499cbb-759a-4dcd-b87c-e3942ce68a3b",
+        "candidateId": "INZ-CAND-2026-00005",
+        "candidateDisplayId": "INZ-CAND-2026-00005",
+        "candidateName": "Stress Test Candidate 1-1",
+        "jobRoleTitle": "Software Developer",
+        "collegeName": "PSG College of Technology",
+        "totalScore": 19,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 42,
+        "isPassed": false,
+        "examResult": "Fail",
+        "selectionStatus": "Rejected",
+        "passCutoff": "> 25",
+        "performanceCategory": "Needs Improvement",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-9CBCE6",
+        "sectionScores": {
+          "section-1": {
+            "score": 7,
+            "total": 15,
+            "percentage": 47
+          },
+          "section-2": {
+            "score": 11,
+            "total": 15,
+            "percentage": 73
+          },
+          "section-3": {
+            "score": 1,
+            "total": 15,
+            "percentage": 7
+          }
+        },
+        "completedAt": "2026-11-20T17:11:56.648Z"
+      },
+      "totalScore": 19,
+      "percentage": 42,
+      "isPassed": false,
+      "examResult": "Fail",
+      "certificateId": "INZ-CERT-2026-9CBCE6",
+      "completedAt": "2026-11-20T17:11:56.648Z"
     },
     {
       "_id": "cand-e016008d-b13a-4b86-8b61-c8356e09cc22",
@@ -576,8 +622,48 @@
         }
       },
       "completedAt": "2026-11-20T17:11:56.637Z"
+    },
+    {
+      "sessionId": "inz_cbt_73499cbb-759a-4dcd-b87c-e3942ce68a3b",
+      "candidateId": "INZ-CAND-2026-00005",
+      "candidateDisplayId": "INZ-CAND-2026-00005",
+      "candidateName": "Stress Test Candidate 1-1",
+      "jobRoleTitle": "Software Developer",
+      "collegeName": "PSG College of Technology",
+      "totalScore": 19,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 42,
+      "isPassed": false,
+      "examResult": "Fail",
+      "selectionStatus": "Rejected",
+      "passCutoff": "> 25",
+      "performanceCategory": "Needs Improvement",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-9CBCE6",
+      "sectionScores": {
+        "section-1": {
+          "score": 7,
+          "total": 15,
+          "percentage": 47
+        },
+        "section-2": {
+          "score": 11,
+          "total": 15,
+          "percentage": 73
+        },
+        "section-3": {
+          "score": 1,
+          "total": 15,
+          "percentage": 7
+        }
+      },
+      "completedAt": "2026-11-20T17:11:56.648Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-20T17:11:57.917Z"
+  "lastUpdated": "2026-11-20T17:11:59.380Z"
 }
