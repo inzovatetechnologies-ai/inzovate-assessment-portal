@@ -1,87 +1,5 @@
 {
-  "candidates": [
-    {
-      "_id": "cand-8d7d4e32-f575-41f0-aa43-4e6107a06692",
-      "candidateId": "INZ-CAND-2026-00002",
-      "fullName": "Ram Fresh",
-      "email": "ram@gmail.com",
-      "password": "Ram@Password2026",
-      "mobileNumber": "+91 9876543210",
-      "altMobileNumber": "",
-      "dateOfBirth": "",
-      "gender": "Not Specified",
-      "residentialAddress": "",
-      "district": "",
-      "state": "Tamil Nadu",
-      "pinCode": "",
-      "collegeId": "",
-      "collegeName": "PSG College of Technology",
-      "universityRegisterNumber": "",
-      "degree": "B.E. Computer Science",
-      "branch": "Engineering",
-      "yearOfPassing": "2026",
-      "graduationYear": "2026",
-      "cgpa": "8.5",
-      "sslcPercentage": "",
-      "hscPercentage": "",
-      "standingArrears": "0",
-      "arrearStatus": "No History",
-      "historyOfArrears": "0",
-      "driveId": "INZ-DRIVE-2026-01",
-      "domainId": "dom-01",
-      "domainName": "Software Development",
-      "jobRoleId": "role-soft-dev",
-      "jobRoleTitle": "Process Associate",
-      "preferredLocation": "Chennai / Coimbatore",
-      "recruitmentStage": "Registered",
-      "assessmentStatus": "Completed",
-      "testAttempts": 1,
-      "createdAt": "2026-11-20T12:03:00.584Z",
-      "updatedAt": "2026-11-20T12:03:00.584Z",
-      "assessmentResult": {
-        "sessionId": "inz_cbt_3250df78-e8b9-4a19-92ec-285cd3c18169",
-        "candidateId": "INZ-CAND-2026-00002",
-        "candidateDisplayId": "INZ-CAND-2026-00002",
-        "candidateName": "Ram Fresh",
-        "jobRoleTitle": "Process Associate",
-        "collegeName": "PSG College of Technology",
-        "totalScore": 0,
-        "maxScore": 45,
-        "totalQuestions": 45,
-        "totalAttempted": 15,
-        "totalQuestionsAttempted": 15,
-        "unattempted": 30,
-        "percentage": 0,
-        "performanceCategory": "Needs Improvement",
-        "status": "Completed",
-        "certificateId": "INZ-CERT-2026-D6764F",
-        "sectionScores": {
-          "section-1": {
-            "score": 0,
-            "total": 15,
-            "percentage": 0
-          },
-          "section-2": {
-            "score": 0,
-            "total": 15,
-            "percentage": 0
-          },
-          "section-3": {
-            "score": 0,
-            "total": 15,
-            "percentage": 0
-          }
-        },
-        "completedAt": "2026-11-20T12:03:41.503Z"
-      },
-      "totalScore": 0,
-      "percentage": 0,
-      "certificateId": "INZ-CERT-2026-D6764F",
-      "completedAt": "2026-11-20T12:03:41.503Z",
-      "status": "Registered",
-      "deletedAt": null
-    }
-  ],
+  "candidates": [],
   "assessment_results": [
     {
       "sessionId": "inz_cbt_32122f34-87a6-418e-be5c-fb00dcc29015",
@@ -117,44 +35,8 @@
         }
       },
       "completedAt": "2026-11-20T11:26:23.727Z"
-    },
-    {
-      "sessionId": "inz_cbt_3250df78-e8b9-4a19-92ec-285cd3c18169",
-      "candidateId": "INZ-CAND-2026-00002",
-      "candidateDisplayId": "INZ-CAND-2026-00002",
-      "candidateName": "Ram Fresh",
-      "jobRoleTitle": "Process Associate",
-      "collegeName": "PSG College of Technology",
-      "totalScore": 0,
-      "maxScore": 45,
-      "totalQuestions": 45,
-      "totalAttempted": 15,
-      "totalQuestionsAttempted": 15,
-      "unattempted": 30,
-      "percentage": 0,
-      "performanceCategory": "Needs Improvement",
-      "status": "Completed",
-      "certificateId": "INZ-CERT-2026-D6764F",
-      "sectionScores": {
-        "section-1": {
-          "score": 0,
-          "total": 15,
-          "percentage": 0
-        },
-        "section-2": {
-          "score": 0,
-          "total": 15,
-          "percentage": 0
-        },
-        "section-3": {
-          "score": 0,
-          "total": 15,
-          "percentage": 0
-        }
-      },
-      "completedAt": "2026-11-20T12:03:41.503Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-20T12:34:32.503Z"
+  "lastUpdated": "2026-11-20T12:34:42.136Z"
 }
