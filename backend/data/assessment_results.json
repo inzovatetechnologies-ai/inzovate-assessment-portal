@@ -326,5 +326,53 @@
     "isPublished": true,
     "createdAt": "2026-11-20T05:02:13.118Z",
     "updatedAt": "2026-11-20T05:02:13.118Z"
+  },
+  {
+    "_id": "7647747a-be9a-4cb2-9020-17eb8221961c",
+    "sessionId": "2029b99e-de41-4bdc-9665-eb6af56597da",
+    "candidateId": "664a7ba9-4123-4dee-87db-63a6fde9e626",
+    "candidateDisplayId": "INZ-CAND-2026-00018",
+    "candidateName": "Ram",
+    "candidateEmail": "ram123@gmail.com",
+    "jobRoleId": "role-fullstack",
+    "jobRoleTitle": "Full Stack Developer",
+    "domainId": "dom-01",
+    "domainName": "Software Development",
+    "collegeId": "col-98",
+    "collegeName": "Anna University",
+    "driveId": "INZ-DRIVE-2026-01",
+    "assessmentDate": "2026-11-20",
+    "totalScore": 12,
+    "maxScore": 45,
+    "percentage": 26.7,
+    "performanceCategory": "Requires Further Evaluation",
+    "sectionScores": {
+      "section1": {
+        "title": "Aptitude & Logical Reasoning",
+        "score": 4,
+        "max": 15,
+        "percentage": 26.7
+      },
+      "section2": {
+        "title": "Communication Assessment",
+        "score": 6,
+        "max": 15,
+        "percentage": 40
+      },
+      "section3": {
+        "title": "Full Stack Developer Technical Assessment",
+        "score": 2,
+        "max": 15,
+        "percentage": 13.3
+      }
+    },
+    "timeTakenMinutes": 2,
+    "violationsCount": 1,
+    "certificateId": "INZ-CERT-2026-48312",
+    "verificationHash": "bddba2eb43484fbb",
+    "submissionType": "Candidate Manual",
+    "isPublished": true,
+    "createdAt": "2026-11-20T08:51:51.636Z",
+    "updatedAt": "2026-11-20T08:51:51.640Z"
   }
 ]

@@ -14,7 +14,7 @@ module.exports = {
   HOSTINGER_DOMAIN: 'assessment.inzovate-technologies.com',
   S3_STORAGE_BUCKET: process.env.S3_STORAGE_BUCKET || 'inzovate-proctoring-recordings',
   CLOUDFLARE_ZONE_ID: process.env.CLOUDFLARE_ZONE_ID || '',
-  DEFAULT_EXAM_DURATION_MINUTES: 60,
+  DEFAULT_EXAM_DURATION_MINUTES: 45,
   TOTAL_QUESTIONS: 45,
   ADMIN_EMAIL: process.env.ADMIN_EMAIL || 'admin@inzovate-technologies.com',
   ADMIN_PASSWORD: process.env.ADMIN_PASSWORD || 'Admin@2026',

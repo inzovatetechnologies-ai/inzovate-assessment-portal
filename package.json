@@ -11,5 +11,8 @@
     "dev:frontend": "cd frontend && npm run dev"
   },
   "author": "Inzovate Technologies Private Limited",
-  "license": "UNLICENSED"
+  "license": "UNLICENSED",
+  "dependencies": {
+    "nodemailer": "^10.6.1"
+  }
 }

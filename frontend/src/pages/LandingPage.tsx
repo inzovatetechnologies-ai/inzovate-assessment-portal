@@ -177,7 +177,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
             </div>
             <h3 className="text-lg font-bold text-[#172033] mb-2">Complete Your Assessment</h3>
             <p className="text-slate-600 text-xs leading-relaxed mb-4">
-              Take the 60-minute, 45-question CBT test with continuous webcam proctoring: 15 Aptitude, 15
+              Take the 45-minute, 45-question CBT test with continuous webcam proctoring: 15 Aptitude, 15
               Communication, and 15 Role-specific Technical questions.
             </p>
             <div className="flex items-center space-x-1.5 text-xs text-blue-600 font-semibold">
@@ -320,7 +320,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
             <div className="space-y-3 text-xs">
               <div className="flex justify-between py-2 border-b border-slate-800">
                 <span className="text-slate-400">Total Examination Duration</span>
-                <span className="font-bold text-white">60 Minutes</span>
+                <span className="font-bold text-white">45 Minutes</span>
               </div>
               <div className="flex justify-between py-2 border-b border-slate-800">
                 <span className="text-slate-400">Section 1: Aptitude & Reasoning</span>

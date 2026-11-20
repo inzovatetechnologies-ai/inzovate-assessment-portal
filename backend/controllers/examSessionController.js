@@ -155,7 +155,7 @@ async function startOrResumeSession(req, res) {
     const questionIds = fullQuestionSet.map(q => q._id);
 
     const now = new Date();
-    const durationMinutes = 60;
+    const durationMinutes = 45;
     const expiresAt = new Date(now.getTime() + durationMinutes * 60 * 1000);
 
     const newSession = await sessionsCol.create({

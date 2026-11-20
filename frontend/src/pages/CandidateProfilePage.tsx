@@ -106,7 +106,7 @@ export const CandidateProfilePage: React.FC<CandidateProfilePageProps> = ({
           <div>
             <h3 className="font-bold text-sm text-slate-900">45-Question Proctored Assessment</h3>
             <p className="text-xs text-slate-500 mt-1 leading-relaxed">
-              60-minute standard CBT exam: 15 Aptitude, 15 Communication, and 15 Domain Technical questions.
+              45-minute standard CBT exam: 15 Aptitude, 15 Communication, and 15 Domain Technical questions.
             </p>
           </div>
 

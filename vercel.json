@@ -5,6 +5,10 @@
   "cleanUrls": true,
   "rewrites": [
     {
+      "source": "/api/auth/:action",
+      "destination": "/api/auth/:action"
+    },
+    {
       "source": "/(.*)",
       "destination": "/index.html"
     }

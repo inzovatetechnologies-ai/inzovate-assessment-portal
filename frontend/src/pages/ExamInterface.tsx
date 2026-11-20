@@ -37,7 +37,7 @@ export const ExamInterface: React.FC<ExamInterfaceProps> = ({ currentUser, onExa
   const [markedForReview, setMarkedForReview] = useState<string[]>([]);
 
   // Timer & Security
-  const [timeRemainingSeconds, setTimeRemainingSeconds] = useState(60 * 60);
+  const [timeRemainingSeconds, setTimeRemainingSeconds] = useState(45 * 60);
   const [violationsCount, setViolationsCount] = useState(0);
   const [violationModal, setViolationModal] = useState<{ open: boolean; message: string; count: number } | null>(null);
   const [submitModalOpen, setSubmitModalOpen] = useState(false);
@@ -76,7 +76,7 @@ export const ExamInterface: React.FC<ExamInterfaceProps> = ({ currentUser, onExa
           setQuestions(s.questions);
           setAnswers(s.savedAnswers || {});
           setMarkedForReview(s.markedForReview || []);
-          setTimeRemainingSeconds(s.timeRemainingSeconds || 3600);
+          setTimeRemainingSeconds(s.timeRemainingSeconds || 2700);
           setViolationsCount(s.violationsCount || 0);
 
           // Mark first question visited

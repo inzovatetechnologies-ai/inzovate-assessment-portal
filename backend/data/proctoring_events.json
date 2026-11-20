@@ -82,5 +82,17 @@
     "timestamp": "2026-11-20T05:02:28.040Z",
     "createdAt": "2026-11-20T05:02:28.040Z",
     "updatedAt": "2026-11-20T05:02:28.040Z"
+  },
+  {
+    "_id": "36b18d1c-e59f-42bf-b643-df3fb1dc34e6",
+    "sessionId": "2029b99e-de41-4bdc-9665-eb6af56597da",
+    "candidateId": "INZ-CAND-2026-00018",
+    "eventType": "window_blur",
+    "details": "Window focus lost. Please remain strictly on the examination window.",
+    "snapshotUrl": "",
+    "violationNumber": 1,
+    "timestamp": "2026-11-20T08:50:03.803Z",
+    "createdAt": "2026-11-20T08:50:03.803Z",
+    "updatedAt": "2026-11-20T08:50:03.803Z"
   }
 ]

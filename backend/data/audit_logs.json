@@ -1078,5 +1078,49 @@
     "ipAddress": "::1",
     "createdAt": "2026-11-20T05:02:28.122Z",
     "updatedAt": "2026-11-20T05:02:28.122Z"
+  },
+  {
+    "_id": "6588fe68-6d19-447d-b455-d859efa480b7",
+    "actorEmail": "ram123@gmail.com",
+    "actorRole": "Candidate",
+    "action": "CANDIDATE_REGISTRATION",
+    "target": "INZ-CAND-2026-00018",
+    "details": "New candidate registered with ID INZ-CAND-2026-00018 for Full Stack Developer at Anna University",
+    "ipAddress": "::1",
+    "createdAt": "2026-11-20T08:49:09.143Z",
+    "updatedAt": "2026-11-20T08:49:09.143Z"
+  },
+  {
+    "_id": "89418977-737c-4c7f-9db4-73a81930029b",
+    "actorEmail": "ram123@gmail.com",
+    "actorRole": "Candidate",
+    "action": "USER_LOGIN_SUCCESS",
+    "target": "Auth",
+    "details": "Successful login by Ram (Candidate)",
+    "ipAddress": "::1",
+    "createdAt": "2026-11-20T08:49:34.696Z",
+    "updatedAt": "2026-11-20T08:49:34.696Z"
+  },
+  {
+    "_id": "5c6c99eb-6b3e-4196-a4fe-5d26df88f408",
+    "actorEmail": "ram123@gmail.com",
+    "actorRole": "Candidate",
+    "action": "EXAM_SESSION_STARTED",
+    "target": "2029b99e-de41-4bdc-9665-eb6af56597da",
+    "details": "Candidate started assessment session with 45 questions (Role: Full Stack Developer)",
+    "ipAddress": "::1",
+    "createdAt": "2026-11-20T08:49:43.081Z",
+    "updatedAt": "2026-11-20T08:49:43.081Z"
+  },
+  {
+    "_id": "fc8dd98b-4296-47ad-9720-8712bd399c90",
+    "actorEmail": "ram123@gmail.com",
+    "actorRole": "Candidate",
+    "action": "ASSESSMENT_SUBMITTED_AND_EVALUATED",
+    "target": "INZ-CERT-2026-48312",
+    "details": "Assessment evaluated: Score 12/45 (26.7%, Requires Further Evaluation) for Ram",
+    "ipAddress": "::1",
+    "createdAt": "2026-11-20T08:51:51.641Z",
+    "updatedAt": "2026-11-20T08:51:51.641Z"
   }
 ]

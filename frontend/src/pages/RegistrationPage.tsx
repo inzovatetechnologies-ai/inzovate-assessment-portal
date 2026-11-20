@@ -949,7 +949,7 @@ export const RegistrationPage: React.FC<RegistrationPageProps> = ({
                   className="mt-0.5 rounded border-slate-300 text-blue-600 focus:ring-blue-500"
                 />
                 <span>
-                  <strong>Camera & Proctoring Consent:</strong> I agree to continuous camera presence monitoring and full-screen examination mode throughout the 60-minute assessment. Closing the tab will immediately terminate the exam.
+                  <strong>Camera & Proctoring Consent:</strong> I agree to continuous camera presence monitoring and full-screen examination mode throughout the 45-minute assessment. Closing the tab will immediately terminate the exam.
                 </span>
               </label>
 

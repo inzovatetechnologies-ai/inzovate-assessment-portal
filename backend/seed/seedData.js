@@ -389,7 +389,7 @@ const RECRUITMENT_DRIVES_DATA = [
     availableJobRoles: ['role-soft-dev', 'role-fullstack', 'role-data-analyst', 'role-cloud-eng', 'role-devops', 'role-uiux'],
     maxCandidates: 500,
     status: 'active',
-    instructions: 'Please bring college ID, ensure desktop/laptop with working webcam and audio. Assessment duration: 60 minutes.'
+    instructions: 'Please bring college ID, ensure desktop/laptop with working webcam and audio. Assessment duration: 45 minutes.'
   },
   {
     _id: 'drive-02',

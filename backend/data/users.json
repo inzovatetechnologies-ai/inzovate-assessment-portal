@@ -307,5 +307,19 @@
     "status": "active",
     "createdAt": "2026-11-20T05:02:20.993Z",
     "updatedAt": "2026-11-20T05:02:20.993Z"
+  },
+  {
+    "_id": "5c25b473-1f55-4013-99d2-03edb16baebf",
+    "fullName": "Ram",
+    "email": "ram123@gmail.com",
+    "password": "$2b$10$WHK.irzCnJxMkfHkAIWvnunjmMi12JZvNAn8GbvmoMITzEv466q1C",
+    "role": "Candidate",
+    "candidateId": "INZ-CAND-2026-00018",
+    "collegeId": "col-98",
+    "department": "Computer Science",
+    "phone": "9876543210",
+    "status": "active",
+    "createdAt": "2026-11-20T08:49:09.139Z",
+    "updatedAt": "2026-11-20T08:49:09.139Z"
   }
 ]

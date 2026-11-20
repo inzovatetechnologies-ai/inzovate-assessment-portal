@@ -284,7 +284,7 @@ export const SystemCheckPage: React.FC<SystemCheckPageProps> = ({ onProceedToAss
               />
               <span>
                 I confirm that my camera and microphone are operational and unobstructed. I will not switch tabs or exit
-                full-screen mode during the 60-minute assessment.
+                full-screen mode during the 45-minute assessment.
               </span>
             </label>
           </div>
