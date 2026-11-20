@@ -318,7 +318,8 @@ export const ExamInterface: React.FC<ExamInterfaceProps> = ({ currentUser, onExa
       const res = await api.submitExam({
         sessionId: activeSessionId || undefined,
         candidateId: activeCandidateId,
-        submissionType: reason
+        submissionType: reason,
+        answers: answers
       });
 
       if (res && res.success) {

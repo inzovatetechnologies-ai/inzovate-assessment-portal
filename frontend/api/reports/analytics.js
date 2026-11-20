@@ -12,7 +12,8 @@ export default async function handler(req, res) {
 
   try {
     const db = await getDb(true);
-    const candidates = db.candidates || [];
+    const allCandidates = db.candidates || [];
+    const candidates = allCandidates.filter(c => c.status !== 'deleted');
     const results = db.assessment_results || [];
 
     const totalRegistered = candidates.length;

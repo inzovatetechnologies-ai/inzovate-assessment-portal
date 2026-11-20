@@ -211,6 +211,11 @@ export const api = {
       res = { success: false, message: e.message };
     }
 
+    // If server returned failure (e.g. 409 already registered), return that error immediately!
+    if (res && res.success === false) {
+      return res;
+    }
+
     const candidateId = res?.candidateId || 'INZ-CAND-2026-' + Math.floor(10000 + Math.random() * 90000);
     const candidateObj = {
       _id: res?.candidate?._id || 'cand-' + Math.random().toString(36).substring(2, 9),
@@ -230,6 +235,7 @@ export const api = {
       domainName: payload.domainName || 'Software Development',
       driveId: payload.driveId || 'INZ-DRIVE-2026-01',
       recruitmentStage: 'Registered',
+      status: 'Registered',
       assessmentStatus: 'Ready',
       arrearStatus: payload.standingArrears && payload.standingArrears !== '0' ? `${payload.standingArrears} Standing Arrear(s)` : 'No History',
       ...(res?.candidate || {})
@@ -245,17 +251,47 @@ export const api = {
       localStorage.setItem('inzovate_user', JSON.stringify(candidateObj));
     } catch (e) {}
 
-    if (res?.success) {
-      return { ...res, candidate: candidateObj, candidateId };
+    return { ...res, success: true, candidate: candidateObj, candidateId };
+  },
+
+  async deleteCandidate(candidateId: string, action: 'delete' | 'restore' | 'permanent_delete' = 'delete') {
+    let res: any;
+    try {
+      const response = await fetch(`${API_BASE}/candidates?id=${encodeURIComponent(candidateId)}&action=${action}`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', ...getHeaders() },
+        body: JSON.stringify({ candidateId, action }),
+      });
+      res = await handleResponse(response);
+    } catch (e: any) {
+      res = { success: false, message: e.message };
     }
 
-    return {
-      success: true,
-      candidateId,
-      message: `Candidate ${payload.fullName} successfully registered for Inzovate Campus Drive 2026.`,
-      candidate: candidateObj,
-      token: 'inz_session_' + btoa(payload.email)
-    };
+    try {
+      const stored = JSON.parse(localStorage.getItem('inzovate_registered_candidates') || '[]');
+      const clean = candidateId.toLowerCase();
+      let updated: any[] = [];
+      if (action === 'permanent_delete') {
+        updated = stored.filter((c: any) => c.candidateId?.toLowerCase() !== clean && c.email?.toLowerCase() !== clean);
+      } else if (action === 'delete') {
+        updated = stored.map((c: any) => {
+          if (c.candidateId?.toLowerCase() === clean || c.email?.toLowerCase() === clean) {
+            return { ...c, status: 'deleted', recruitmentStage: 'Deleted / Archived' };
+          }
+          return c;
+        });
+      } else if (action === 'restore') {
+        updated = stored.map((c: any) => {
+          if (c.candidateId?.toLowerCase() === clean || c.email?.toLowerCase() === clean) {
+            return { ...c, status: 'Registered', recruitmentStage: 'Registered' };
+          }
+          return c;
+        });
+      }
+      localStorage.setItem('inzovate_registered_candidates', JSON.stringify(updated));
+    } catch (e) {}
+
+    return res;
   },
 
   async getCandidates(params?: Record<string, string>) {
@@ -268,6 +304,10 @@ export const api = {
       const data = await handleResponse(res);
       if (data.success && Array.isArray(data.candidates)) {
         serverCandidates = data.candidates;
+        try {
+          localStorage.setItem('inzovate_registered_candidates', JSON.stringify(data.candidates));
+        } catch (e) {}
+        return { success: true, count: serverCandidates.length, candidates: serverCandidates };
       }
     } catch (e) {}
 
@@ -276,21 +316,7 @@ export const api = {
       localCandidates = JSON.parse(localStorage.getItem('inzovate_registered_candidates') || '[]');
     } catch (e) {}
 
-    const candMap = new Map();
-    for (const c of serverCandidates) {
-      if (c && (c.candidateId || c.email)) {
-        candMap.set((c.candidateId || c.email).toLowerCase(), c);
-      }
-    }
-    for (const c of localCandidates) {
-      if (c && (c.candidateId || c.email)) {
-        const key = (c.candidateId || c.email).toLowerCase();
-        candMap.set(key, { ...candMap.get(key), ...c });
-      }
-    }
-
-    const merged = Array.from(candMap.values());
-    return { success: true, count: merged.length, candidates: merged };
+    return { success: true, count: localCandidates.length, candidates: localCandidates };
   },
 
   async getCandidateById(id: string) {

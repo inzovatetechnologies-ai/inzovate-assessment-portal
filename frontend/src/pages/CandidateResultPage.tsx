@@ -66,11 +66,12 @@ export const CandidateResultPage: React.FC<CandidateResultPageProps> = ({
   // Attempt count calculations
   const totalQuestions = result?.totalQuestions || 45;
   const attemptedCount =
-    result?.totalAttempted !== undefined
+    typeof result?.totalAttempted === 'number'
       ? result.totalAttempted
-      : result?.totalQuestionsAttempted !== undefined
+      : typeof result?.totalQuestionsAttempted === 'number'
       ? result.totalQuestionsAttempted
-      : 45;
+      : 0;
+  const unattemptedCount = Math.max(0, totalQuestions - attemptedCount);
 
   return (
     <div className="max-w-3xl mx-auto px-4 py-12 space-y-8">
@@ -109,15 +110,20 @@ export const CandidateResultPage: React.FC<CandidateResultPageProps> = ({
                 <FileCheck2 className="w-4 h-4 mr-1.5 text-blue-600" />
                 Assessment Submission Metric
               </span>
-              <p className="text-sm font-semibold text-slate-700">Questions Attempted</p>
+              <p className="text-sm font-semibold text-slate-700">Questions Attempted & Verified</p>
               <p className="text-xs text-slate-500">All responses have been securely synced and recorded on the server.</p>
             </div>
-            <div className="text-right sm:text-right">
-              <div className="inline-flex items-baseline space-x-1 px-4 py-2 rounded-xl bg-white border border-blue-200 shadow-sm">
-                <span className="text-3xl font-black text-blue-700">{attemptedCount}</span>
-                <span className="text-base font-semibold text-slate-400">/ {totalQuestions}</span>
+            <div className="flex items-center space-x-3">
+              <div className="text-center px-4 py-2 rounded-xl bg-white border border-blue-200 shadow-sm">
+                <span className="text-xs font-medium text-slate-500 uppercase block">Attempted</span>
+                <span className="text-2xl font-black text-blue-700">{attemptedCount}</span>
+                <span className="text-xs font-semibold text-slate-400"> / {totalQuestions}</span>
               </div>
-              <p className="text-[10px] font-bold text-emerald-600 mt-1 uppercase">Recorded Successfully</p>
+              <div className="text-center px-4 py-2 rounded-xl bg-white border border-slate-200 shadow-sm">
+                <span className="text-xs font-medium text-slate-500 uppercase block">Unattempted</span>
+                <span className="text-2xl font-black text-slate-600">{unattemptedCount}</span>
+                <span className="text-xs font-semibold text-slate-400"> / {totalQuestions}</span>
+              </div>
             </div>
           </div>
 

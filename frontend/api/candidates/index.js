@@ -17,7 +17,7 @@ async function parseBody(req) {
 
 export default async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
-  res.setHeader('Access-Control-Allow-Methods', 'GET,POST,OPTIONS');
+  res.setHeader('Access-Control-Allow-Methods', 'GET,POST,PUT,PATCH,DELETE,OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
 
   if (req.method === 'OPTIONS') {
@@ -27,12 +27,13 @@ export default async function handler(req, res) {
 
   const url = new URL(req.url, 'http://localhost');
   const candidateIdQuery = url.searchParams.get('id') || url.searchParams.get('candidateId');
+  const actionQuery = url.searchParams.get('action');
 
   try {
     const db = await getDb(true);
     const candidates = db.candidates || [];
 
-    // Single candidate lookup
+    // 1. Single candidate lookup
     if (req.method === 'GET' && candidateIdQuery) {
       const query = candidateIdQuery.toLowerCase();
       const found = candidates.find(c =>
@@ -50,9 +51,96 @@ export default async function handler(req, res) {
       return res.end(JSON.stringify({ success: false, message: 'Candidate not found' }));
     }
 
-    // Upsert or sync candidate(s)
+    // 2. Candidate Management: Delete / Restore / Permanent Delete
+    let payload = {};
+    if (req.method !== 'GET') {
+      payload = await parseBody(req);
+    }
+    const targetId = candidateIdQuery || payload.candidateId || payload.id;
+    const action = actionQuery || payload.action || (req.method === 'DELETE' ? 'delete' : null);
+
+    if (action && targetId) {
+      const cleanTarget = String(targetId).toLowerCase();
+
+      if (action === 'delete') {
+        const updatedDb = await mutateDb((current) => {
+          if (!current.candidates) current.candidates = [];
+          const idx = current.candidates.findIndex(c =>
+            (c.candidateId && c.candidateId.toLowerCase() === cleanTarget) ||
+            (c._id && c._id.toLowerCase() === cleanTarget) ||
+            (c.email && c.email.toLowerCase() === cleanTarget)
+          );
+          if (idx >= 0) {
+            current.candidates[idx].status = 'deleted';
+            current.candidates[idx].recruitmentStage = 'Deleted / Archived';
+            current.candidates[idx].deletedAt = new Date().toISOString();
+          }
+          return current;
+        });
+
+        res.statusCode = 200;
+        res.setHeader('Content-Type', 'application/json');
+        return res.end(JSON.stringify({
+          success: true,
+          message: `Candidate ${targetId} profile archived. Email and mobile number are now released for new registration.`,
+          candidates: updatedDb.candidates
+        }));
+      }
+
+      if (action === 'restore') {
+        const updatedDb = await mutateDb((current) => {
+          if (!current.candidates) current.candidates = [];
+          const idx = current.candidates.findIndex(c =>
+            (c.candidateId && c.candidateId.toLowerCase() === cleanTarget) ||
+            (c._id && c._id.toLowerCase() === cleanTarget) ||
+            (c.email && c.email.toLowerCase() === cleanTarget)
+          );
+          if (idx >= 0) {
+            current.candidates[idx].status = 'Registered';
+            current.candidates[idx].recruitmentStage = 'Registered';
+            current.candidates[idx].deletedAt = null;
+          }
+          return current;
+        });
+
+        res.statusCode = 200;
+        res.setHeader('Content-Type', 'application/json');
+        return res.end(JSON.stringify({
+          success: true,
+          message: `Candidate ${targetId} profile successfully restored to Active.`,
+          candidates: updatedDb.candidates
+        }));
+      }
+
+      if (action === 'permanent_delete') {
+        const updatedDb = await mutateDb((current) => {
+          if (!current.candidates) current.candidates = [];
+          current.candidates = current.candidates.filter(c =>
+            c.candidateId?.toLowerCase() !== cleanTarget &&
+            c._id?.toLowerCase() !== cleanTarget &&
+            c.email?.toLowerCase() !== cleanTarget
+          );
+          if (current.assessment_results) {
+            current.assessment_results = current.assessment_results.filter(r =>
+              r.candidateId?.toLowerCase() !== cleanTarget &&
+              r.candidateDisplayId?.toLowerCase() !== cleanTarget
+            );
+          }
+          return current;
+        });
+
+        res.statusCode = 200;
+        res.setHeader('Content-Type', 'application/json');
+        return res.end(JSON.stringify({
+          success: true,
+          message: `Candidate ${targetId} profile permanently removed from system.`,
+          candidates: updatedDb.candidates
+        }));
+      }
+    }
+
+    // 3. Upsert or sync candidate(s)
     if (req.method === 'POST') {
-      const payload = await parseBody(req);
       const candidatesToSync = Array.isArray(payload) ? payload : (payload.candidates ? payload.candidates : [payload]);
 
       for (const cand of candidatesToSync) {
@@ -71,7 +159,7 @@ export default async function handler(req, res) {
       }));
     }
 
-    // List all registered candidates
+    // 4. List all registered candidates
     res.statusCode = 200;
     res.setHeader('Content-Type', 'application/json');
     return res.end(JSON.stringify({

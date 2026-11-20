@@ -165,57 +165,59 @@ export default async function handler(req, res) {
     const payload = await parseBody(req);
     const candidateId = payload.candidateId;
     const allQuestions = loadAllQuestions();
+    const questionMap = new Map();
+    allQuestions.forEach(q => questionMap.set(q._id, q));
 
     const db = await getDb(true);
-    const candidate = (db.candidates || []).find(c => c.candidateId === candidateId) || {};
+    const candidate = (db.candidates || []).find(c =>
+      (c.candidateId && c.candidateId.toLowerCase() === String(candidateId).toLowerCase()) ||
+      (c._id && c._id === candidateId) ||
+      (c.email && c.email.toLowerCase() === String(candidateId).toLowerCase())
+    ) || {};
 
     const answers = payload.answers || {};
 
     let aptScore = 0;
     let commScore = 0;
     let techScore = 0;
+    let totalAttempted = 0;
 
-    const questionsList = allQuestions.slice(0, 45);
-
-    questionsList.forEach((q) => {
-      const ansObj = answers[q._id];
-      const selected = typeof ansObj === 'object' ? ansObj.selectedOption : ansObj;
-
-      if (selected && q.correctOption && selected === q.correctOption) {
-        if (q.section === 'section-1') aptScore++;
-        else if (q.section === 'section-2') commScore++;
-        else techScore++;
+    for (const [qId, ansVal] of Object.entries(answers)) {
+      const selected = typeof ansVal === 'object' && ansVal !== null ? ansVal.selectedOption : ansVal;
+      if (selected !== undefined && selected !== null && String(selected).trim() !== '') {
+        totalAttempted++;
+        const q = questionMap.get(qId);
+        if (q && q.correctOption && String(selected).trim() === String(q.correctOption).trim()) {
+          if (q.section === 'section-1') aptScore++;
+          else if (q.section === 'section-2') commScore++;
+          else techScore++;
+        }
       }
-    });
-
-    const calculatedTotal = aptScore + commScore + techScore;
-    const totalScore = Math.max(calculatedTotal, Math.floor(Math.random() * 5) + 36);
-    if (totalScore > calculatedTotal) {
-      aptScore = Math.floor(totalScore * 0.35);
-      commScore = Math.floor(totalScore * 0.32);
-      techScore = totalScore - aptScore - commScore;
     }
 
+    const totalScore = aptScore + commScore + techScore;
     const percentage = Math.round((totalScore / 45) * 100);
-    let performanceCategory = 'Mastery (Outstanding)';
-    if (percentage < 50) performanceCategory = 'Needs Improvement';
-    else if (percentage < 65) performanceCategory = 'Foundational (Competent)';
-    else if (percentage < 80) performanceCategory = 'Proficient (Commendable)';
+
+    let performanceCategory = 'Needs Improvement';
+    if (percentage >= 80) performanceCategory = 'Mastery (Outstanding)';
+    else if (percentage >= 65) performanceCategory = 'Proficient (Commendable)';
+    else if (percentage >= 50) performanceCategory = 'Foundational (Competent)';
 
     const certificateId = 'INZ-CERT-2026-' + crypto.randomBytes(3).toString('hex').toUpperCase();
 
     const result = {
       sessionId: payload.sessionId || 'session-' + Date.now(),
-      candidateId: candidateId || 'INZ-CAND-2026-00001',
-      candidateDisplayId: candidateId || 'INZ-CAND-2026-00001',
+      candidateId: candidate.candidateId || candidateId || 'INZ-CAND-2026-00001',
+      candidateDisplayId: candidate.candidateId || candidateId || 'INZ-CAND-2026-00001',
       candidateName: candidate.fullName || payload.candidateName || 'Candidate',
       jobRoleTitle: candidate.jobRoleTitle || 'Software Developer',
       collegeName: candidate.collegeName || 'Autonomous Engineering College',
       totalScore,
       maxScore: 45,
       totalQuestions: 45,
-      totalAttempted: Object.keys(answers).length || 45,
-      totalQuestionsAttempted: Object.keys(answers).length || 45,
+      totalAttempted,
+      totalQuestionsAttempted: totalAttempted,
+      unattempted: Math.max(0, 45 - totalAttempted),
       percentage,
       performanceCategory,
       status: 'Completed',
@@ -229,7 +231,7 @@ export default async function handler(req, res) {
     };
 
     // Save permanently to CloudDB attached to candidate
-    await saveExamResultToDb(candidateId, result);
+    await saveExamResultToDb(result.candidateId, result);
 
     res.statusCode = 200;
     res.setHeader('Content-Type', 'application/json');

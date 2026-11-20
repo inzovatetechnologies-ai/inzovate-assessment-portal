@@ -63,39 +63,38 @@ export default async function handler(req, res) {
 
     const cleanEmail = String(payload.email).toLowerCase().trim();
     const cleanMobile = String(payload.mobileNumber).trim();
+    const rawDigits = cleanMobile.replace(/\D/g, '');
 
     const db = await getDb(true);
     const candidates = db.candidates || [];
 
-    const existingEmail = candidates.find(c => c.email && c.email.toLowerCase() === cleanEmail);
-    if (existingEmail) {
-      const token = 'inz_session_' + Buffer.from(cleanEmail).toString('base64');
-      res.statusCode = 200;
+    // Duplicate Check: Active (non-deleted) candidates with matching email or phone
+    const existingActiveEmail = candidates.find(
+      c => c.status !== 'deleted' && c.email && c.email.toLowerCase() === cleanEmail
+    );
+    if (existingActiveEmail) {
+      res.statusCode = 409;
       res.setHeader('Content-Type', 'application/json');
       return res.end(JSON.stringify({
-        success: true,
+        success: false,
         alreadyRegistered: true,
-        message: `Candidate profile already exists for ${cleanEmail}. Ready for sign in.`,
-        candidateId: existingEmail.candidateId,
-        token,
-        candidate: existingEmail,
-        user: {
-          id: existingEmail.candidateId,
-          candidateId: existingEmail.candidateId,
-          fullName: existingEmail.fullName,
-          email: existingEmail.email,
-          role: 'Candidate',
-          jobRoleId: existingEmail.jobRoleId,
-          jobRoleTitle: existingEmail.jobRoleTitle,
-          domainId: existingEmail.domainId,
-          domainName: existingEmail.domainName,
-          collegeName: existingEmail.collegeName,
-          degree: existingEmail.degree,
-          branch: existingEmail.branch,
-          cgpa: existingEmail.cgpa,
-          graduationYear: existingEmail.yearOfPassing || existingEmail.graduationYear
-        }
+        message: `Candidate profile is already registered with email '${cleanEmail}' (Candidate ID: ${existingActiveEmail.candidateId}). Please log in directly to attend or view your assessment.`
       }));
+    }
+
+    if (rawDigits.length >= 10) {
+      const existingActiveMobile = candidates.find(
+        c => c.status !== 'deleted' && c.mobileNumber && c.mobileNumber.replace(/\D/g, '').endsWith(rawDigits.slice(-10))
+      );
+      if (existingActiveMobile) {
+        res.statusCode = 409;
+        res.setHeader('Content-Type', 'application/json');
+        return res.end(JSON.stringify({
+          success: false,
+          alreadyRegistered: true,
+          message: `Candidate profile is already registered with mobile number '${cleanMobile}' (Candidate ID: ${existingActiveMobile.candidateId}). Please log in directly to attend or view your assessment.`
+        }));
+      }
     }
 
     const sequence = String(candidates.length + 1).padStart(5, '0');
@@ -136,6 +135,8 @@ export default async function handler(req, res) {
       jobRoleTitle: payload.jobRoleTitle || 'Process Associate',
       preferredLocation: payload.preferredLocation || 'Chennai / Coimbatore',
       recruitmentStage: 'Registered',
+      status: 'Registered',
+      deletedAt: null,
       assessmentStatus: 'Ready',
       testAttempts: 0,
       createdAt: now,

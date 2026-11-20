@@ -79,78 +79,55 @@ export default async function handler(req, res) {
            (c.candidateId && c.candidateId.toLowerCase() === identifier)
     );
 
-    // Fallback auto-provision if not found but valid format
-    if (!candidate && password.length >= 6) {
-      const generatedId = identifier.startsWith('inz-')
-        ? identifier.toUpperCase()
-        : 'INZ-CAND-2026-' + String(candidates.length + 1).padStart(5, '0');
-      const namePart = identifier.includes('@')
-        ? identifier.split('@')[0].replace(/[._]/g, ' ')
-        : 'Candidate';
-      const cleanName = namePart.charAt(0).toUpperCase() + namePart.slice(1);
-
-      candidate = {
-        _id: 'cand-' + Math.random().toString(36).substring(2, 9),
-        candidateId: generatedId,
-        fullName: cleanName,
-        email: identifier.includes('@') ? identifier : `${identifier}@inzovate-candidate.com`,
-        password,
-        mobileNumber: '+91 98000 00000',
-        collegeName: 'Autonomous Engineering College',
-        degree: 'B.E. Computer Science and Engineering',
-        branch: 'Computer Science',
-        yearOfPassing: '2026',
-        graduationYear: '2026',
-        cgpa: '8.5',
-        standingArrears: '0',
-        arrearStatus: 'No History',
-        driveId: 'INZ-DRIVE-2026-01',
-        domainId: 'dom-01',
-        domainName: 'Software Development',
-        jobRoleId: 'role-soft-dev',
-        jobRoleTitle: 'Software Developer',
-        recruitmentStage: 'Registered',
-        assessmentStatus: 'Ready',
-        testAttempts: 0,
-        createdAt: new Date().toISOString(),
-        updatedAt: new Date().toISOString()
-      };
-      await addCandidateToDb(candidate);
-    }
-
-    if (candidate) {
-      if (candidate.password && password && candidate.password !== password) {
-        res.statusCode = 401;
-        res.setHeader('Content-Type', 'application/json');
-        return res.end(JSON.stringify({
-          success: false,
-          message: 'Invalid password. Please check your credentials.'
-        }));
-      }
-
-      res.statusCode = 200;
+    if (!candidate) {
+      res.statusCode = 404;
       res.setHeader('Content-Type', 'application/json');
       return res.end(JSON.stringify({
-        success: true,
-        token: 'inz_session_' + Buffer.from(candidate.email || identifier).toString('base64'),
-        user: {
-          id: candidate.candidateId || candidate._id,
-          candidateId: candidate.candidateId,
-          fullName: candidate.fullName,
-          email: candidate.email,
-          role: 'Candidate',
-          jobRoleId: candidate.jobRoleId || 'role-soft-dev',
-          jobRoleTitle: candidate.jobRoleTitle || 'Software Developer',
-          domainId: candidate.domainId || 'dom-01',
-          domainName: candidate.domainName || 'Software Development',
-          collegeName: candidate.collegeName || 'Autonomous Engineering College',
-          degree: candidate.degree || 'B.E. Computer Science',
-          branch: candidate.branch || 'Engineering',
-          cgpa: candidate.cgpa || '8.5',
-          graduationYear: candidate.yearOfPassing || candidate.graduationYear || '2026'
-        }
+        success: false,
+        message: 'No registered candidate profile found with this Email / Candidate ID. Please register first.'
       }));
     }
+
+    if (candidate.status === 'deleted') {
+      res.statusCode = 403;
+      res.setHeader('Content-Type', 'application/json');
+      return res.end(JSON.stringify({
+        success: false,
+        message: 'This candidate account has been deleted by administrator. Please complete a fresh registration to attend the assessment.'
+      }));
+    }
+
+    if (candidate.password && password && candidate.password !== password) {
+      res.statusCode = 401;
+      res.setHeader('Content-Type', 'application/json');
+      return res.end(JSON.stringify({
+        success: false,
+        message: 'Invalid password. Please check your credentials or reset your password.'
+      }));
+    }
+
+    res.statusCode = 200;
+    res.setHeader('Content-Type', 'application/json');
+    return res.end(JSON.stringify({
+      success: true,
+      token: 'inz_session_' + Buffer.from(candidate.email || identifier).toString('base64'),
+      user: {
+        id: candidate.candidateId || candidate._id,
+        candidateId: candidate.candidateId,
+        fullName: candidate.fullName,
+        email: candidate.email,
+        role: 'Candidate',
+        jobRoleId: candidate.jobRoleId || 'role-soft-dev',
+        jobRoleTitle: candidate.jobRoleTitle || 'Software Developer',
+        domainId: candidate.domainId || 'dom-01',
+        domainName: candidate.domainName || 'Software Development',
+        collegeName: candidate.collegeName || 'Autonomous Engineering College',
+        degree: candidate.degree || 'B.E. Computer Science',
+        branch: candidate.branch || 'Engineering',
+        cgpa: candidate.cgpa || '8.5',
+        graduationYear: candidate.yearOfPassing || candidate.graduationYear || '2026'
+      }
+    }));
 
     res.statusCode = 401;
     res.setHeader('Content-Type', 'application/json');

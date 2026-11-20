@@ -33,10 +33,13 @@ import {
   ArrowDown,
   Printer,
   MapPin,
+  Trash2,
+  RotateCcw,
 } from 'lucide-react';
 
 export const AdminDashboard: React.FC = () => {
   const [activeTab, setActiveTab] = useState<'scores' | 'registered' | 'drives' | 'audit'>('scores');
+  const [candidateProfileView, setCandidateProfileView] = useState<'active' | 'deleted'>('active');
 
   const [metrics, setMetrics] = useState<any>({
     totalRegistered: 0,
@@ -260,8 +263,13 @@ export const AdminDashboard: React.FC = () => {
     return matchesSearch && matchesStage && matchesCollege && matchesDistrict;
   });
 
-  // Candidates who attended / attempted the assessment
+  const activeCandidates = filteredCandidates.filter((c: any) => c.status !== 'deleted');
+  const deletedCandidates = filteredCandidates.filter((c: any) => c.status === 'deleted');
+  const displayedCandidates = candidateProfileView === 'active' ? activeCandidates : deletedCandidates;
+
+  // Candidates who attended / attempted the assessment (excluding deleted profiles)
   const attendedCandidates = filteredCandidates.filter((c: any) => {
+    if (c.status === 'deleted') return false;
     return (
       (c.totalScore !== null && c.totalScore !== undefined) ||
       c.assessmentResult ||
@@ -305,6 +313,8 @@ export const AdminDashboard: React.FC = () => {
       'Degree',
       'Department',
       'Job Role',
+      'Questions Attempted (/45)',
+      'Questions Unattempted (/45)',
       'Aptitude (/15)',
       'Communication (/15)',
       'Technical (/15)',
@@ -323,6 +333,8 @@ export const AdminDashboard: React.FC = () => {
       const sec2 = r?.sectionScores?.['section-2']?.score ?? 0;
       const sec3 = r?.sectionScores?.['section-3']?.score ?? 0;
       const isPassed = total >= 27;
+      const attempted = r?.totalAttempted ?? 0;
+      const unattempted = r?.unattempted ?? Math.max(0, 45 - attempted);
 
       return [
         idx + 1,
@@ -334,6 +346,8 @@ export const AdminDashboard: React.FC = () => {
         `"${c.degree || ''}"`,
         `"${c.department || ''}"`,
         `"${c.jobRoleTitle || ''}"`,
+        attempted,
+        unattempted,
         sec1,
         sec2,
         sec3,
@@ -399,6 +413,7 @@ export const AdminDashboard: React.FC = () => {
             </td>
             <td style="padding: 10px; font-size: 11px; color: #334155;">${c.collegeName}</td>
             <td style="padding: 10px; font-size: 11px; color: #334155;">${c.jobRoleTitle}</td>
+            <td style="padding: 10px; text-align: center; font-family: monospace; font-weight: bold; color: #0284C7;">${r?.totalAttempted ?? (c.assessmentResult?.totalAttempted ?? 0)}</td>
             <td style="padding: 10px; text-align: center; font-family: monospace;">${sec1}</td>
             <td style="padding: 10px; text-align: center; font-family: monospace;">${sec2}</td>
             <td style="padding: 10px; text-align: center; font-family: monospace;">${sec3}</td>
@@ -493,6 +508,7 @@ export const AdminDashboard: React.FC = () => {
               <th>Candidate Name & Email</th>
               <th>College</th>
               <th>Applied Role</th>
+              <th style="text-align: center;">Att (/45)</th>
               <th style="text-align: center;">Apt (/15)</th>
               <th style="text-align: center;">Comm (/15)</th>
               <th style="text-align: center;">Tech (/15)</th>
@@ -1114,6 +1130,9 @@ export const AdminDashboard: React.FC = () => {
                               </span>
                               <span className="text-xs text-slate-400 font-normal"> / 45</span>
                               <div className="text-[10px] font-semibold text-blue-700 font-mono">({pct}%)</div>
+                              <div className="text-[9px] text-slate-500 font-semibold mt-0.5">
+                                Attempted: {r?.totalAttempted ?? (c.assessmentResult?.totalAttempted ?? (total ? total : 0))} / 45
+                              </div>
                             </div>
                           ) : (
                             <span className="text-slate-400 text-xs italic">In Progress</span>
@@ -1196,17 +1215,45 @@ export const AdminDashboard: React.FC = () => {
       {/* ======================================================== */}
       {activeTab === 'registered' && (
         <div className="bg-white rounded-3xl border border-slate-200 shadow-sm overflow-hidden">
-          <div className="p-6 border-b border-slate-200 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+          <div className="p-6 border-b border-slate-200 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
             <div>
               <h3 className="text-base font-bold text-[#0A1128] flex items-center space-x-2">
                 <span>Registered Candidate Profiles</span>
                 <span className="text-xs px-2.5 py-0.5 rounded-full bg-slate-100 text-slate-700 font-mono font-bold">
-                  {filteredCandidates.length} Total Registered
+                  {candidateProfileView === 'active' ? activeCandidates.length : deletedCandidates.length} Displayed
                 </span>
               </h3>
               <p className="text-xs text-slate-500 mt-0.5">
                 Full applicant registration data: personal contact, parent details, academic CGPA, backlogs & applied role.
               </p>
+            </div>
+
+            {/* Active Profiles vs Deleted Archive Toggle */}
+            <div className="flex items-center space-x-2 bg-slate-100 p-1 rounded-xl">
+              <button
+                type="button"
+                onClick={() => setCandidateProfileView('active')}
+                className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all flex items-center space-x-1.5 ${
+                  candidateProfileView === 'active'
+                    ? 'bg-white text-blue-700 shadow-sm'
+                    : 'text-slate-600 hover:text-slate-900'
+                }`}
+              >
+                <UserCheck className="w-3.5 h-3.5" />
+                <span>Active Profiles ({activeCandidates.length})</span>
+              </button>
+              <button
+                type="button"
+                onClick={() => setCandidateProfileView('deleted')}
+                className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all flex items-center space-x-1.5 ${
+                  candidateProfileView === 'deleted'
+                    ? 'bg-rose-600 text-white shadow-sm'
+                    : 'text-slate-600 hover:text-rose-600'
+                }`}
+              >
+                <Trash2 className="w-3.5 h-3.5" />
+                <span>Deleted Archive ({deletedCandidates.length})</span>
+              </button>
             </div>
           </div>
 
@@ -1220,85 +1267,196 @@ export const AdminDashboard: React.FC = () => {
                   <th className="py-3 px-3 font-bold text-center">CGPA / Backlogs</th>
                   <th className="py-3 px-4 font-bold">Applied Job Role</th>
                   <th className="py-3 px-3 font-bold text-center">Stage</th>
-                  <th className="py-3 px-4 font-bold text-right">Action</th>
+                  <th className="py-3 px-4 font-bold text-right">Actions</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-slate-100">
-                {filteredCandidates.map((c: any) => (
-                  <tr key={c._id} className="hover:bg-slate-50/80 transition-colors">
-                    <td className="py-3.5 px-4">
-                      <p className="font-bold text-slate-900">{c.fullName}</p>
-                      <p className="font-mono text-[11px] text-blue-600 font-semibold">{c.candidateId}</p>
-                      <p className="text-[10px] text-slate-400">Reg: {new Date(c.createdAt || Date.now()).toLocaleDateString()}</p>
-                    </td>
-
-                    <td className="py-3.5 px-4 space-y-0.5">
-                      <div className="flex items-center space-x-1 text-slate-700">
-                        <Mail className="w-3 h-3 text-slate-400" />
-                        <span>{c.email}</span>
-                      </div>
-                      <div className="flex items-center space-x-1 text-slate-700">
-                        <Phone className="w-3 h-3 text-slate-400" />
-                        <span>{c.mobileNumber}</span>
-                      </div>
-                      {c.fatherName && (
-                        <p className="text-[10px] text-slate-400">Parent: {c.fatherName} ({c.fatherMobile || c.emergencyContact || 'N/A'})</p>
-                      )}
-                    </td>
-
-                    <td className="py-3.5 px-4">
-                      <p className="font-semibold text-slate-800">{c.collegeName}</p>
-                      <p className="text-[11px] text-slate-500">
-                        {c.degree || 'B.E.'} - {c.department || 'CSE'} ({c.graduationYear || '2026'})
-                      </p>
-                    </td>
-
-                    <td className="py-3.5 px-3 text-center">
-                      <p className="font-bold text-slate-900 font-mono">{c.cgpa || '8.2'} CGPA</p>
-                      <span
-                        className={`inline-block px-1.5 py-0.5 rounded text-[10px] font-bold ${
-                          Number(c.backlogCount) > 0
-                            ? 'bg-rose-100 text-rose-700'
-                            : 'bg-emerald-100 text-emerald-700'
-                        }`}
-                      >
-                        {c.arrearStatus || '0 Backlogs'}
-                      </span>
-                    </td>
-
-                    <td className="py-3.5 px-4">
-                      <span className="font-semibold text-slate-800 block">{c.jobRoleTitle}</span>
-                      <span className="text-[10px] text-sky-600 font-medium">{c.domainName}</span>
-                    </td>
-
-                    <td className="py-3.5 px-3 text-center">
-                      <select
-                        value={c.recruitmentStage}
-                        onChange={(e) => {
-                          api.updateCandidateStage(c._id, e.target.value).then(() => loadAllAdminData());
-                        }}
-                        className="px-2 py-1 rounded-lg border border-slate-300 text-[11px] bg-white font-medium focus:ring-1 focus:ring-blue-500"
-                      >
-                        <option value="Assessment Pending">Assessment Pending</option>
-                        <option value="Under Review">Under Review</option>
-                        <option value="Shortlisted">Shortlisted</option>
-                        <option value="Interview Scheduled">Interview Scheduled</option>
-                        <option value="Selected">Selected</option>
-                        <option value="Rejected">Rejected</option>
-                      </select>
-                    </td>
-
-                    <td className="py-3.5 px-4 text-right">
-                      <button
-                        onClick={() => setSelectedCandidate(c)}
-                        className="px-3 py-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-white text-xs font-semibold transition-all flex items-center space-x-1 ml-auto shadow-sm"
-                      >
-                        <Eye className="w-3.5 h-3.5" />
-                        <span>Inspect Profile</span>
-                      </button>
+                {displayedCandidates.length === 0 ? (
+                  <tr>
+                    <td colSpan={7} className="py-12 text-center text-slate-400 font-medium">
+                      {candidateProfileView === 'active'
+                        ? 'No active candidate profiles found.'
+                        : 'No deleted candidate profiles in archive.'}
                     </td>
                   </tr>
-                ))}
+                ) : (
+                  displayedCandidates.map((c: any) => (
+                    <tr key={c._id} className="hover:bg-slate-50/80 transition-colors">
+                      <td className="py-3.5 px-4">
+                        <p className="font-bold text-slate-900">{c.fullName}</p>
+                        <div className="flex items-center space-x-1.5">
+                          <p className="font-mono text-[11px] text-blue-600 font-semibold">{c.candidateId}</p>
+                          {c.status === 'deleted' && (
+                            <span className="px-1.5 py-0.2 rounded text-[9px] font-bold bg-rose-100 text-rose-700 border border-rose-200 uppercase">
+                              Deleted
+                            </span>
+                          )}
+                        </div>
+                        <p className="text-[10px] text-slate-400">
+                          {c.status === 'deleted' && c.deletedAt
+                            ? `Deleted: ${new Date(c.deletedAt).toLocaleDateString()}`
+                            : `Reg: ${new Date(c.createdAt || Date.now()).toLocaleDateString()}`}
+                        </p>
+                      </td>
+
+                      <td className="py-3.5 px-4 space-y-0.5">
+                        <div className="flex items-center space-x-1 text-slate-700">
+                          <Mail className="w-3 h-3 text-slate-400" />
+                          <span>{c.email}</span>
+                        </div>
+                        <div className="flex items-center space-x-1 text-slate-700">
+                          <Phone className="w-3 h-3 text-slate-400" />
+                          <span>{c.mobileNumber}</span>
+                        </div>
+                        {c.fatherName && (
+                          <p className="text-[10px] text-slate-400">Parent: {c.fatherName} ({c.fatherMobile || c.emergencyContact || 'N/A'})</p>
+                        )}
+                      </td>
+
+                      <td className="py-3.5 px-4">
+                        <p className="font-semibold text-slate-800">{c.collegeName}</p>
+                        <p className="text-[11px] text-slate-500">
+                          {c.degree || 'B.E.'} - {c.department || 'CSE'} ({c.graduationYear || '2026'})
+                        </p>
+                      </td>
+
+                      <td className="py-3.5 px-3 text-center">
+                        <p className="font-bold text-slate-900 font-mono">{c.cgpa || '8.2'} CGPA</p>
+                        <span
+                          className={`inline-block px-1.5 py-0.5 rounded text-[10px] font-bold ${
+                            Number(c.backlogCount) > 0
+                              ? 'bg-rose-100 text-rose-700'
+                              : 'bg-emerald-100 text-emerald-700'
+                          }`}
+                        >
+                          {c.arrearStatus || '0 Backlogs'}
+                        </span>
+                      </td>
+
+                      <td className="py-3.5 px-4">
+                        <span className="font-semibold text-slate-800 block">{c.jobRoleTitle}</span>
+                        <span className="text-[10px] text-sky-600 font-medium">{c.domainName}</span>
+                      </td>
+
+                      <td className="py-3.5 px-3 text-center">
+                        {c.status === 'deleted' ? (
+                          <span className="px-2 py-1 rounded-lg bg-rose-50 border border-rose-200 text-rose-700 font-semibold text-[11px]">
+                            Archived
+                          </span>
+                        ) : (
+                          <select
+                            value={c.recruitmentStage}
+                            onChange={(e) => {
+                              api.updateCandidateStage(c._id, e.target.value).then(() => loadAllAdminData());
+                            }}
+                            className="px-2 py-1 rounded-lg border border-slate-300 text-[11px] bg-white font-medium focus:ring-1 focus:ring-blue-500"
+                          >
+                            <option value="Assessment Pending">Assessment Pending</option>
+                            <option value="Under Review">Under Review</option>
+                            <option value="Shortlisted">Shortlisted</option>
+                            <option value="Interview Scheduled">Interview Scheduled</option>
+                            <option value="Selected">Selected</option>
+                            <option value="Rejected">Rejected</option>
+                          </select>
+                        )}
+                      </td>
+
+                      <td className="py-3.5 px-4 text-right">
+                        <div className="flex items-center justify-end space-x-1.5">
+                          <button
+                            onClick={() => setSelectedCandidate(c)}
+                            className="px-2.5 py-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-semibold transition-all flex items-center space-x-1 shadow-sm"
+                            title="Inspect Profile Dossier"
+                          >
+                            <Eye className="w-3.5 h-3.5" />
+                            <span>Inspect</span>
+                          </button>
+
+                          {c.status !== 'deleted' ? (
+                            <button
+                              onClick={async () => {
+                                if (
+                                  window.confirm(
+                                    `Delete profile for ${c.fullName} (${c.candidateId})?\n\nThis will move the candidate to Deleted Archive. Their email and mobile number will be released so they can register brand new if needed.`
+                                  )
+                                ) {
+                                  try {
+                                    const res = await api.deleteCandidate(c.candidateId, 'delete');
+                                    if (res && res.success) {
+                                      await loadAllAdminData();
+                                    } else {
+                                      alert(res?.message || 'Failed to delete candidate.');
+                                    }
+                                  } catch (e: any) {
+                                    alert(e.message || 'Error deleting candidate');
+                                  }
+                                }
+                              }}
+                              className="px-2.5 py-1.5 rounded-lg border border-rose-200 bg-rose-50 hover:bg-rose-100 text-rose-700 text-xs font-bold transition-all flex items-center space-x-1 shadow-sm"
+                              title="Delete profile and release email/mobile"
+                            >
+                              <Trash2 className="w-3.5 h-3.5" />
+                              <span>Delete</span>
+                            </button>
+                          ) : (
+                            <>
+                              <button
+                                onClick={async () => {
+                                  if (
+                                    window.confirm(
+                                      `Restore candidate ${c.fullName} (${c.candidateId}) back to Active Profiles?`
+                                    )
+                                  ) {
+                                    try {
+                                      const res = await api.deleteCandidate(c.candidateId, 'restore');
+                                      if (res && res.success) {
+                                        await loadAllAdminData();
+                                      } else {
+                                        alert(res?.message || 'Failed to restore candidate.');
+                                      }
+                                    } catch (e: any) {
+                                      alert(e.message || 'Error restoring candidate');
+                                    }
+                                  }
+                                }}
+                                className="px-2.5 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold transition-all flex items-center space-x-1 shadow-sm"
+                                title="Restore profile to Active"
+                              >
+                                <RotateCcw className="w-3.5 h-3.5" />
+                                <span>Restore</span>
+                              </button>
+                              <button
+                                onClick={async () => {
+                                  if (
+                                    window.confirm(
+                                      `PERMANENTLY DELETE ${c.fullName} (${c.candidateId})?\n\nThis will permanently delete this candidate from the database. This action cannot be undone.`
+                                    )
+                                  ) {
+                                    try {
+                                      const res = await api.deleteCandidate(c.candidateId, 'permanent_delete');
+                                      if (res && res.success) {
+                                        await loadAllAdminData();
+                                      } else {
+                                        alert(res?.message || 'Failed to permanently delete candidate.');
+                                      }
+                                    } catch (e: any) {
+                                      alert(e.message || 'Error deleting candidate');
+                                    }
+                                  }
+                                }}
+                                className="px-2.5 py-1.5 rounded-lg bg-rose-700 hover:bg-rose-800 text-white text-xs font-bold transition-all flex items-center space-x-1 shadow-sm"
+                                title="Permanently delete from database"
+                              >
+                                <Trash2 className="w-3.5 h-3.5" />
+                                <span>Purge</span>
+                              </button>
+                            </>
+                          )}
+                        </div>
+                      </td>
+                    </tr>
+                  ))
+                )}
               </tbody>
             </table>
           </div>
