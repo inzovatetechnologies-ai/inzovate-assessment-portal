@@ -1,11 +1,23 @@
 const fs = require('fs');
 const path = require('path');
+const os = require('os');
 const { v4: uuidv4 } = require('uuid');
 
-const DATA_DIR = path.join(__dirname, '..', 'data');
+const isServerless = Boolean(process.env.VERCEL || process.env.AWS_LAMBDA_FUNCTION_NAME);
+let DATA_DIR = path.join(__dirname, '..', 'data');
 
-if (!fs.existsSync(DATA_DIR)) {
-  fs.mkdirSync(DATA_DIR, { recursive: true });
+if (isServerless) {
+  const tmpDir = path.join(os.tmpdir(), 'inzovate-data');
+  try {
+    if (!fs.existsSync(tmpDir)) {
+      fs.mkdirSync(tmpDir, { recursive: true });
+    }
+  } catch (e) {}
+  DATA_DIR = tmpDir;
+} else if (!fs.existsSync(DATA_DIR)) {
+  try {
+    fs.mkdirSync(DATA_DIR, { recursive: true });
+  } catch (e) {}
 }
 
 class Collection {
@@ -36,8 +48,15 @@ class Collection {
         const raw = fs.readFileSync(this.filePath, 'utf8');
         this.data = JSON.parse(raw);
       } else {
-        this.data = [];
-        this.flushSync();
+        const fallbackPath = path.join(__dirname, '..', 'data', `${this.name}.json`);
+        if (fs.existsSync(fallbackPath)) {
+          const raw = fs.readFileSync(fallbackPath, 'utf8');
+          this.data = JSON.parse(raw);
+          this.flushSync();
+        } else {
+          this.data = [];
+          this.flushSync();
+        }
       }
     } catch (err) {
       console.error(`Error loading collection ${this.name}:`, err);
