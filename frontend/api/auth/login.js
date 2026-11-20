@@ -65,19 +65,27 @@ export default async function handler(req, res) {
       }));
     }
 
-    if (identifier === 'admin@inzovate.com' || identifier === 'superadmin@inzovate.com') {
-      res.statusCode = 200;
-      res.setHeader('Content-Type', 'application/json');
-      return res.end(JSON.stringify({
-        success: true,
-        token: 'inz_admin_session_root',
-        user: {
-          id: 'admin-01',
-          fullName: 'Enterprise Administrator',
-          email: identifier,
-          role: 'Super Admin',
-        },
-      }));
+    if (
+      identifier === 'admin@inzovate-technologies.com' ||
+      identifier === 'admin@inzovate.com' ||
+      identifier === 'superadmin@inzovate.com' ||
+      identifier === 'admin'
+    ) {
+      const password = String(body.password || '').trim();
+      if (password === 'Admin@2026' || password === 'Admin@Inzovate2026') {
+        res.statusCode = 200;
+        res.setHeader('Content-Type', 'application/json');
+        return res.end(JSON.stringify({
+          success: true,
+          token: 'inz_admin_session_root',
+          user: {
+            id: 'admin-01',
+            fullName: 'Enterprise Administrator',
+            email: identifier,
+            role: 'Admin',
+          },
+        }));
+      }
     }
 
     res.statusCode = 401;
