@@ -1,0 +1,14 @@
+{
+  "name": "inzovate-talent-assessment-portal",
+  "version": "2.0.0",
+  "description": "Enterprise AI-Powered Recruitment, Online Examination & Proctoring Platform for Inzovate Technologies Private Limited",
+  "scripts": {
+    "start": "node backend/server.js",
+    "test:e2e": "node backend/test-e2e.js",
+    "build:frontend": "cd frontend && npm run build",
+    "dev:backend": "cd backend && node server.js",
+    "dev:frontend": "cd frontend && npm run dev"
+  },
+  "author": "Inzovate Technologies Private Limited",
+  "license": "UNLICENSED"
+}
