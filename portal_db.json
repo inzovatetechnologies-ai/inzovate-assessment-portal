@@ -34,49 +34,50 @@
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Coimbatore",
       "recruitmentStage": "Registered",
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-20T12:03:00.584Z",
       "updatedAt": "2026-11-20T12:03:00.584Z",
       "assessmentResult": {
-        "sessionId": "inz_cbt_32122f34-87a6-418e-be5c-fb00dcc29015",
-        "candidateId": "INZ-CAND-2026-00001",
-        "candidateDisplayId": "INZ-CAND-2026-00001",
-        "candidateName": "ram",
+        "sessionId": "inz_cbt_3250df78-e8b9-4a19-92ec-285cd3c18169",
+        "candidateId": "INZ-CAND-2026-00002",
+        "candidateDisplayId": "INZ-CAND-2026-00002",
+        "candidateName": "Ram Fresh",
         "jobRoleTitle": "Process Associate",
-        "collegeName": "sadxfcgbnmkl,",
-        "totalScore": 37,
+        "collegeName": "PSG College of Technology",
+        "totalScore": 0,
         "maxScore": 45,
         "totalQuestions": 45,
-        "totalAttempted": 45,
-        "totalQuestionsAttempted": 45,
-        "percentage": 82,
-        "performanceCategory": "Mastery (Outstanding)",
+        "totalAttempted": 15,
+        "totalQuestionsAttempted": 15,
+        "unattempted": 30,
+        "percentage": 0,
+        "performanceCategory": "Needs Improvement",
         "status": "Completed",
-        "certificateId": "INZ-CERT-2026-72CC33",
+        "certificateId": "INZ-CERT-2026-D6764F",
         "sectionScores": {
           "section-1": {
-            "score": 12,
+            "score": 0,
             "total": 15,
-            "percentage": 80
+            "percentage": 0
           },
           "section-2": {
-            "score": 11,
+            "score": 0,
             "total": 15,
-            "percentage": 73
+            "percentage": 0
           },
           "section-3": {
-            "score": 14,
+            "score": 0,
             "total": 15,
-            "percentage": 93
+            "percentage": 0
           }
         },
-        "completedAt": "2026-11-20T11:26:23.727Z"
+        "completedAt": "2026-11-20T12:03:41.503Z"
       },
-      "totalScore": 37,
-      "percentage": 82,
-      "certificateId": "INZ-CERT-2026-72CC33",
-      "completedAt": "2026-11-20T11:26:23.727Z",
+      "totalScore": 0,
+      "percentage": 0,
+      "certificateId": "INZ-CERT-2026-D6764F",
+      "completedAt": "2026-11-20T12:03:41.503Z",
       "status": "Registered",
       "deletedAt": null
     }
@@ -116,8 +117,44 @@
         }
       },
       "completedAt": "2026-11-20T11:26:23.727Z"
+    },
+    {
+      "sessionId": "inz_cbt_3250df78-e8b9-4a19-92ec-285cd3c18169",
+      "candidateId": "INZ-CAND-2026-00002",
+      "candidateDisplayId": "INZ-CAND-2026-00002",
+      "candidateName": "Ram Fresh",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "PSG College of Technology",
+      "totalScore": 0,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 15,
+      "totalQuestionsAttempted": 15,
+      "unattempted": 30,
+      "percentage": 0,
+      "performanceCategory": "Needs Improvement",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-D6764F",
+      "sectionScores": {
+        "section-1": {
+          "score": 0,
+          "total": 15,
+          "percentage": 0
+        },
+        "section-2": {
+          "score": 0,
+          "total": 15,
+          "percentage": 0
+        },
+        "section-3": {
+          "score": 0,
+          "total": 15,
+          "percentage": 0
+        }
+      },
+      "completedAt": "2026-11-20T12:03:41.503Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-20T12:03:00.708Z"
+  "lastUpdated": "2026-11-20T12:03:41.593Z"
 }
