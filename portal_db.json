@@ -33,9 +33,9 @@
       "jobRoleId": "role-soft-dev",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Deleted / Archived",
-      "status": "deleted",
-      "deletedAt": "2026-11-20T12:45:52.634Z",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
       "assessmentStatus": "Completed",
       "testAttempts": 1,
       "createdAt": "2026-11-20T12:37:01.148Z",
@@ -121,5 +121,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-20T12:45:52.634Z"
+  "lastUpdated": "2026-11-20T12:46:22.474Z"
 }
