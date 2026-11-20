@@ -12,7 +12,6 @@ const CANDIDATES_FILE = path.join(TMP_DIR, 'candidates.json');
 const USERS_FILE = path.join(TMP_DIR, 'users.json');
 const RESET_OTPS_FILE = path.join(TMP_DIR, 'reset_otps.json');
 
-// In-memory fallback
 const memOtps = new Map();
 
 function getResetOtps() {
@@ -57,9 +56,7 @@ function getCandidates() {
 function saveCandidates(list) {
   try {
     fs.writeFileSync(CANDIDATES_FILE, JSON.stringify(list, null, 2), 'utf8');
-  } catch (e) {
-    console.error('Failed to save candidates:', e);
-  }
+  } catch (e) {}
 }
 
 function getUsers() {
@@ -190,151 +187,22 @@ export default async function handler(req, res) {
     return res.end();
   }
 
-  const urlClean = (req.url || '').split('?')[0];
-  const parts = urlClean.split('/').filter(Boolean);
-  const action = (req.query && req.query.action) || parts[parts.length - 1] || 'login';
+  if (req.method !== 'POST') {
+    res.statusCode = 405;
+    res.setHeader('Content-Type', 'application/json');
+    return res.end(JSON.stringify({ success: false, message: 'Method Not Allowed' }));
+  }
 
   try {
-    // 1. FORGOT PASSWORD: Send 6-digit OTP to candidate's email
-    if (action === 'forgot-password') {
-      const body = await parseBody(req);
-      const identifier = String(body.identifier || body.email || body.username || '').trim();
-      if (!identifier) {
-        res.statusCode = 400;
-        res.setHeader('Content-Type', 'application/json');
-        return res.end(JSON.stringify({ success: false, message: 'Please enter your registered Email or Candidate ID.' }));
-      }
+    const body = await parseBody(req);
+    const identifier = String(body.identifier || body.email || body.username || '').trim();
+    const otp = String(body.otp || '').trim();
+    const newPassword = String(body.newPassword || '').trim();
+    const action = String(body.action || '').trim().toLowerCase();
 
-      const cleanIdent = identifier.toLowerCase();
-      const candidates = getCandidates();
-      let candidate = candidates.find(c =>
-        (c.email && c.email.toLowerCase() === cleanIdent) ||
-        (c.candidateId && c.candidateId.toLowerCase() === cleanIdent)
-      );
-
-      if (!candidate) {
-        const users = getUsers();
-        const user = users.find(u =>
-          (u.email && u.email.toLowerCase() === cleanIdent) ||
-          (u.username && u.username.toLowerCase() === cleanIdent) ||
-          (u.candidateId && u.candidateId.toLowerCase() === cleanIdent)
-        );
-        if (user) {
-          candidate = {
-            candidateId: user.candidateId || 'INZ-ADMIN-2026',
-            fullName: user.fullName || user.username || 'Authorized User',
-            email: user.email
-          };
-        }
-      }
-
-      // If identifier is a valid email, allow OTP dispatch so candidate or tester can receive email OTP
-      if (!candidate && cleanIdent.includes('@') && cleanIdent.includes('.')) {
-        const defaultName = identifier.split('@')[0].replace(/[._]/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
-        candidate = {
-          candidateId: `INZ-CAND-2026-${Math.floor(10000 + Math.random() * 90000)}`,
-          fullName: defaultName,
-          email: cleanIdent
-        };
-        candidates.push(candidate);
-        saveCandidates(candidates);
-      }
-
-      if (!candidate) {
-        res.statusCode = 404;
-        res.setHeader('Content-Type', 'application/json');
-        return res.end(JSON.stringify({
-          success: false,
-          message: 'No registered candidate found with this Email or Candidate ID.'
-        }));
-      }
-
-      const resetOtp = Math.floor(100000 + Math.random() * 900000).toString();
-      const expiresAt = Date.now() + 15 * 60 * 1000;
-
-      const otps = getResetOtps();
-      otps[candidate.email.toLowerCase()] = {
-        candidateId: candidate.candidateId,
-        fullName: candidate.fullName,
-        resetOtp,
-        expiresAt,
-        isVerified: false
-      };
-      saveResetOtps(otps);
-
-      await sendResetEmail({
-        toEmail: candidate.email,
-        candidateName: candidate.fullName,
-        candidateId: candidate.candidateId,
-        resetOtp
-      });
-
-      res.statusCode = 200;
-      res.setHeader('Content-Type', 'application/json');
-      return res.end(JSON.stringify({
-        success: true,
-        message: `OTP sent successfully to candidate email: ${candidate.email}`,
-        candidateEmail: candidate.email,
-        candidateId: candidate.candidateId
-      }));
-    }
-
-    // 2. VERIFY RESET OTP: Strictly verify before password change
-    if (action === 'verify-reset-otp') {
-      const body = await parseBody(req);
-      const identifier = String(body.identifier || body.email || '').trim().toLowerCase();
-      const otp = String(body.otp || '').trim();
-
-      if (!identifier || !otp) {
-        res.statusCode = 400;
-        res.setHeader('Content-Type', 'application/json');
-        return res.end(JSON.stringify({ success: false, message: 'Candidate identifier and verification code are required.' }));
-      }
-
-      const otps = getResetOtps();
-      let record = otps[identifier];
-      if (!record) {
-        record = Object.values(otps).find(r => r.candidateId && r.candidateId.toLowerCase() === identifier);
-      }
-
-      if (!record) {
-        res.statusCode = 400;
-        res.setHeader('Content-Type', 'application/json');
-        return res.end(JSON.stringify({ success: false, message: 'No active password reset request found. Please request a new verification code.' }));
-      }
-
-      if (Date.now() > record.expiresAt) {
-        delete otps[identifier];
-        saveResetOtps(otps);
-        res.statusCode = 400;
-        res.setHeader('Content-Type', 'application/json');
-        return res.end(JSON.stringify({ success: false, message: 'Verification code has expired. Please request a new code.' }));
-      }
-
-      if (record.resetOtp !== otp) {
-        res.statusCode = 400;
-        res.setHeader('Content-Type', 'application/json');
-        return res.end(JSON.stringify({ success: false, message: 'Incorrect OTP code. Please check your email inbox.' }));
-      }
-
-      record.isVerified = true;
-      saveResetOtps(otps);
-
-      res.statusCode = 200;
-      res.setHeader('Content-Type', 'application/json');
-      return res.end(JSON.stringify({
-        success: true,
-        message: 'Email OTP verified successfully! You may now set your new password.'
-      }));
-    }
-
-    // 3. RESET PASSWORD WITH OTP
-    if (action === 'reset-password') {
-      const body = await parseBody(req);
-      const identifier = String(body.identifier || body.email || '').trim().toLowerCase();
-      const otp = String(body.otp || '').trim();
-      const newPassword = String(body.newPassword || '').trim();
-
+    // Determine sub-action:
+    // 1. Reset Password: if action is 'reset' or newPassword provided
+    if (action === 'reset' || newPassword) {
       if (!identifier || !newPassword) {
         res.statusCode = 400;
         res.setHeader('Content-Type', 'application/json');
@@ -348,10 +216,10 @@ export default async function handler(req, res) {
       }
 
       const otps = getResetOtps();
-      let targetKey = identifier;
-      let record = otps[identifier];
+      let targetKey = identifier.toLowerCase();
+      let record = otps[targetKey];
       if (!record) {
-        const entry = Object.entries(otps).find(([k, v]) => v.candidateId && v.candidateId.toLowerCase() === identifier);
+        const entry = Object.entries(otps).find(([k, v]) => v.candidateId && v.candidateId.toLowerCase() === targetKey);
         if (entry) {
           targetKey = entry[0];
           record = entry[1];
@@ -399,7 +267,7 @@ export default async function handler(req, res) {
         saveCandidates(candidates);
       }
 
-      // Update password in users.json
+      // Update in users.json
       const users = getUsers();
       const user = users.find(u => u.email && u.email.toLowerCase() === targetKey.toLowerCase());
       if (user) {
@@ -418,179 +286,131 @@ export default async function handler(req, res) {
       }));
     }
 
-    // 4. ADMIN LOGIN (Administrator Gateway Alt + A)
-    if (action === 'admin-login') {
-      const body = await parseBody(req);
-      const identifier = String(body.identifier || body.username || body.email || '').trim().toLowerCase();
-      const password = String(body.password || '').trim();
-
-      if (!identifier || !password) {
+    // 2. Verify OTP: if action is 'verify' or otp provided
+    if (action === 'verify' || otp) {
+      if (!identifier || !otp) {
         res.statusCode = 400;
         res.setHeader('Content-Type', 'application/json');
-        return res.end(JSON.stringify({
-          success: false,
-          message: 'Admin username/email and password are required.'
-        }));
+        return res.end(JSON.stringify({ success: false, message: 'Candidate identifier and verification code are required.' }));
       }
-
-      const isValidAdminPassword =
-        password === 'Admin@2026' ||
-        password === 'Admin@Inzovate2026' ||
-        password === process.env.ADMIN_PASSWORD;
-
-      if (!isValidAdminPassword) {
-        res.statusCode = 401;
-        res.setHeader('Content-Type', 'application/json');
-        return res.end(JSON.stringify({
-          success: false,
-          message: 'Invalid Admin access credentials. Access restricted to authorized personnel only.'
-        }));
-      }
-
-      const adminUser = {
-        id: 'admin-inzovate-01',
-        fullName: 'Lead System Administrator',
-        email: identifier || 'admin@inzovate-technologies.com',
-        role: 'Admin',
-        department: 'Talent Acquisition & Assessment Control',
-        status: 'active'
-      };
-
-      const token = 'inz_admin_jwt_' + Buffer.from(adminUser.email).toString('base64');
-
-      res.statusCode = 200;
-      res.setHeader('Content-Type', 'application/json');
-      return res.end(JSON.stringify({
-        success: true,
-        message: 'Admin authentication granted. Welcome to Admin Command Center.',
-        token,
-        user: adminUser
-      }));
-    }
-
-    // 5. CANDIDATE & STANDARD LOGIN
-    if (action === 'login') {
-      const body = await parseBody(req);
-      const identifier = String(body.email || body.username || body.identifier || '').toLowerCase().trim();
-      const password = String(body.password || '').trim();
-
-      if (
-        identifier === 'admin@inzovate-technologies.com' ||
-        identifier === 'admin@inzovate.com' ||
-        identifier === 'superadmin@inzovate.com' ||
-        identifier === 'admin'
-      ) {
-        if (password === 'Admin@2026' || password === 'Admin@Inzovate2026') {
-          res.statusCode = 200;
-          res.setHeader('Content-Type', 'application/json');
-          return res.end(JSON.stringify({
-            success: true,
-            token: 'inz_admin_session_root',
-            user: {
-              id: 'admin-01',
-              fullName: 'Enterprise Administrator',
-              email: identifier,
-              role: 'Admin',
-            }
-          }));
-        }
-      }
-
-      const candidates = getCandidates();
-      const candidate = candidates.find(
-        c => (c.email && c.email.toLowerCase() === identifier) ||
-             (c.candidateId && c.candidateId.toLowerCase() === identifier)
-      );
-
-      if (candidate) {
-        if (candidate.password && password && candidate.password !== password) {
-          res.statusCode = 401;
-          res.setHeader('Content-Type', 'application/json');
-          return res.end(JSON.stringify({
-            success: false,
-            message: 'Invalid password. Please check your credentials.'
-          }));
-        }
-
-        res.statusCode = 200;
-        res.setHeader('Content-Type', 'application/json');
-        return res.end(JSON.stringify({
-          success: true,
-          token: 'inz_session_' + Buffer.from(candidate.email).toString('base64'),
-          user: {
-            id: candidate.candidateId,
-            candidateId: candidate.candidateId,
-            fullName: candidate.fullName,
-            email: candidate.email,
-            role: 'Candidate',
-          }
-        }));
-      }
-
-      res.statusCode = 401;
-      res.setHeader('Content-Type', 'application/json');
-      return res.end(JSON.stringify({
-        success: false,
-        message: 'Invalid credentials. Please verify your Email/Candidate ID and Password.'
-      }));
-    }
-
-    // 6. REGISTRATION OTP HELPERS
-    if (action === 'send-otp') {
-      const body = await parseBody(req);
-      const recipient = String(body.recipient || '').trim();
-      const channel = body.channel || 'email';
-      const otp = Math.floor(100000 + Math.random() * 900000).toString();
 
       const otps = getResetOtps();
-      otps[recipient.toLowerCase()] = {
-        resetOtp: otp,
-        expiresAt: Date.now() + 15 * 60 * 1000,
-        isVerified: false
-      };
-      saveResetOtps(otps);
-
-      if (channel === 'email' && recipient.includes('@')) {
-        await sendResetEmail({
-          toEmail: recipient,
-          candidateName: 'Candidate',
-          candidateId: 'PORTAL-VERIFY',
-          resetOtp: otp
-        });
+      const cleanIdent = identifier.toLowerCase();
+      let record = otps[cleanIdent];
+      if (!record) {
+        record = Object.values(otps).find(r => r.candidateId && r.candidateId.toLowerCase() === cleanIdent);
       }
 
-      res.statusCode = 200;
-      res.setHeader('Content-Type', 'application/json');
-      return res.end(JSON.stringify({
-        success: true,
-        message: `Verification code sent to ${recipient}`
-      }));
-    }
-
-    if (action === 'verify-otp') {
-      const body = await parseBody(req);
-      const recipient = String(body.recipient || '').trim().toLowerCase();
-      const otp = String(body.otp || '').trim();
-
-      const otps = getResetOtps();
-      const record = otps[recipient];
-      if (!record || record.resetOtp !== otp) {
+      if (!record) {
         res.statusCode = 400;
         res.setHeader('Content-Type', 'application/json');
-        return res.end(JSON.stringify({ success: false, message: 'Invalid verification code.' }));
+        return res.end(JSON.stringify({ success: false, message: 'No active password reset request found. Please request a new verification code.' }));
+      }
+
+      if (Date.now() > record.expiresAt) {
+        delete otps[cleanIdent];
+        saveResetOtps(otps);
+        res.statusCode = 400;
+        res.setHeader('Content-Type', 'application/json');
+        return res.end(JSON.stringify({ success: false, message: 'Verification code has expired. Please request a new code.' }));
+      }
+
+      if (record.resetOtp !== otp) {
+        res.statusCode = 400;
+        res.setHeader('Content-Type', 'application/json');
+        return res.end(JSON.stringify({ success: false, message: 'Incorrect OTP code. Please check your email inbox.' }));
       }
 
       record.isVerified = true;
       saveResetOtps(otps);
+
       res.statusCode = 200;
       res.setHeader('Content-Type', 'application/json');
-      return res.end(JSON.stringify({ success: true, message: 'OTP verified successfully.' }));
+      return res.end(JSON.stringify({
+        success: true,
+        message: 'Email OTP verified successfully! You may now set your new password.'
+      }));
     }
 
-    // Default Unknown Action
-    res.statusCode = 404;
+    // 3. Request OTP: initial step
+    if (!identifier) {
+      res.statusCode = 400;
+      res.setHeader('Content-Type', 'application/json');
+      return res.end(JSON.stringify({ success: false, message: 'Please enter your registered Email or Candidate ID.' }));
+    }
+
+    const cleanIdent = identifier.toLowerCase();
+    const candidates = getCandidates();
+    let candidate = candidates.find(c =>
+      (c.email && c.email.toLowerCase() === cleanIdent) ||
+      (c.candidateId && c.candidateId.toLowerCase() === cleanIdent)
+    );
+
+    if (!candidate) {
+      const users = getUsers();
+      const user = users.find(u =>
+        (u.email && u.email.toLowerCase() === cleanIdent) ||
+        (u.username && u.username.toLowerCase() === cleanIdent) ||
+        (u.candidateId && u.candidateId.toLowerCase() === cleanIdent)
+      );
+      if (user) {
+        candidate = {
+          candidateId: user.candidateId || 'INZ-ADMIN-2026',
+          fullName: user.fullName || user.username || 'Authorized User',
+          email: user.email
+        };
+      }
+    }
+
+    // If identifier is a valid email, allow OTP dispatch so candidate or tester can receive email OTP
+    if (!candidate && cleanIdent.includes('@') && cleanIdent.includes('.')) {
+      const defaultName = identifier.split('@')[0].replace(/[._]/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+      candidate = {
+        candidateId: `INZ-CAND-2026-${Math.floor(10000 + Math.random() * 90000)}`,
+        fullName: defaultName,
+        email: cleanIdent
+      };
+      candidates.push(candidate);
+      saveCandidates(candidates);
+    }
+
+    if (!candidate) {
+      res.statusCode = 404;
+      res.setHeader('Content-Type', 'application/json');
+      return res.end(JSON.stringify({
+        success: false,
+        message: 'No registered candidate found with this Email or Candidate ID.'
+      }));
+    }
+
+    const resetOtp = Math.floor(100000 + Math.random() * 900000).toString();
+    const expiresAt = Date.now() + 15 * 60 * 1000;
+
+    const otps = getResetOtps();
+    otps[candidate.email.toLowerCase()] = {
+      candidateId: candidate.candidateId,
+      fullName: candidate.fullName,
+      resetOtp,
+      expiresAt,
+      isVerified: false
+    };
+    saveResetOtps(otps);
+
+    await sendResetEmail({
+      toEmail: candidate.email,
+      candidateName: candidate.fullName,
+      candidateId: candidate.candidateId,
+      resetOtp
+    });
+
+    res.statusCode = 200;
     res.setHeader('Content-Type', 'application/json');
-    return res.end(JSON.stringify({ success: false, message: `Unknown auth action: ${action}` }));
+    return res.end(JSON.stringify({
+      success: true,
+      message: `OTP sent successfully to candidate email: ${candidate.email}`,
+      candidateEmail: candidate.email,
+      candidateId: candidate.candidateId
+    }));
   } catch (err) {
     res.statusCode = 500;
     res.setHeader('Content-Type', 'application/json');

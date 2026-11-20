@@ -1,8 +1,12 @@
 {
   "rewrites": [
     {
-      "source": "/api/auth/:action",
-      "destination": "/api/auth/:action"
+      "source": "/api/auth/verify-reset-otp",
+      "destination": "/api/auth/forgot-password"
+    },
+    {
+      "source": "/api/auth/reset-password",
+      "destination": "/api/auth/forgot-password"
     },
     {
       "source": "/(.*)",

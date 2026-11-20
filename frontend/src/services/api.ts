@@ -49,25 +49,25 @@ export const api = {
     const res = await fetch(`${API_BASE}/auth/forgot-password`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ identifier }),
+      body: JSON.stringify({ action: 'request', identifier }),
     });
     return handleResponse(res);
   },
 
   async verifyResetOtp(identifier: string, otp: string) {
-    const res = await fetch(`${API_BASE}/auth/verify-reset-otp`, {
+    const res = await fetch(`${API_BASE}/auth/forgot-password`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ identifier, otp }),
+      body: JSON.stringify({ action: 'verify', identifier, otp }),
     });
     return handleResponse(res);
   },
 
   async resetPasswordWithOtp(identifier: string, otp: string, newPassword: string) {
-    const res = await fetch(`${API_BASE}/auth/reset-password`, {
+    const res = await fetch(`${API_BASE}/auth/forgot-password`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ identifier, otp, newPassword }),
+      body: JSON.stringify({ action: 'reset', identifier, otp, newPassword }),
     });
     return handleResponse(res);
   },
