@@ -33,7 +33,7 @@
       "jobRoleId": "role-soft-dev",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Deleted / Archived",
       "assessmentStatus": "Completed",
       "testAttempts": 1,
       "createdAt": "2026-11-20T11:25:06.179Z",
@@ -76,7 +76,9 @@
       "totalScore": 37,
       "percentage": 82,
       "certificateId": "INZ-CERT-2026-72CC33",
-      "completedAt": "2026-11-20T11:26:23.727Z"
+      "completedAt": "2026-11-20T11:26:23.727Z",
+      "status": "deleted",
+      "deletedAt": "2026-11-20T12:02:47.410Z"
     }
   ],
   "assessment_results": [
@@ -117,5 +119,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-20T11:26:23.841Z"
+  "lastUpdated": "2026-11-20T12:02:47.410Z"
 }
