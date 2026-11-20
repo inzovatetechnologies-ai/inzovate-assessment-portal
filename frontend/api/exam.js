@@ -89,7 +89,7 @@ export default async function handler(req, res) {
       const parts = effectiveRoute.split('/');
       candidateId = parts[parts.length - 1];
     }
-    const db = await getDb(true);
+    const db = await getDb(false);
     const results = db.assessment_results || [];
     const found = results.find(r => r.candidateId === candidateId || r.candidateDisplayId === candidateId);
     if (found) {
@@ -168,7 +168,7 @@ export default async function handler(req, res) {
     const questionMap = new Map();
     allQuestions.forEach(q => questionMap.set(q._id, q));
 
-    const db = await getDb(true);
+    const db = await getDb(false);
     const candidate = (db.candidates || []).find(c =>
       (c.candidateId && c.candidateId.toLowerCase() === String(candidateId).toLowerCase()) ||
       (c._id && c._id === candidateId) ||

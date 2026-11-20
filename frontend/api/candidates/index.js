@@ -30,7 +30,7 @@ export default async function handler(req, res) {
   const actionQuery = url.searchParams.get('action');
 
   try {
-    const db = await getDb(true);
+    const db = await getDb(false);
     const candidates = db.candidates || [];
 
     // 1. Single candidate lookup

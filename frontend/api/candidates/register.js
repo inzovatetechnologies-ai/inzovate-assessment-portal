@@ -65,7 +65,7 @@ export default async function handler(req, res) {
     const cleanMobile = String(payload.mobileNumber).trim();
     const rawDigits = cleanMobile.replace(/\D/g, '');
 
-    const db = await getDb(true);
+    const db = await getDb(false);
     const candidates = db.candidates || [];
 
     // Duplicate Check: Active (non-deleted) candidates with matching email or phone
@@ -143,6 +143,7 @@ export default async function handler(req, res) {
       updatedAt: now
     };
 
+    // Save to permanent cloud DB
     await addCandidateToDb(newCandidate);
 
     const token = 'inz_session_' + Buffer.from(cleanEmail).toString('base64');
