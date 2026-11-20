@@ -260,22 +260,37 @@ export const api = {
 
   async getCandidates(params?: Record<string, string>) {
     const query = new URLSearchParams(params).toString();
+    let serverCandidates: any[] = [];
     try {
       const res = await fetch(`${API_BASE}/candidates?${query}`, {
         headers: getHeaders(),
       });
       const data = await handleResponse(res);
-      if (data.success && data.candidates && data.candidates.length > 0) return data;
-    } catch (e) {}
-
-    try {
-      const stored = JSON.parse(localStorage.getItem('inzovate_registered_candidates') || '[]');
-      if (stored.length > 0) {
-        return { success: true, count: stored.length, candidates: stored };
+      if (data.success && Array.isArray(data.candidates)) {
+        serverCandidates = data.candidates;
       }
     } catch (e) {}
 
-    return { success: true, count: 0, candidates: [] };
+    let localCandidates: any[] = [];
+    try {
+      localCandidates = JSON.parse(localStorage.getItem('inzovate_registered_candidates') || '[]');
+    } catch (e) {}
+
+    const candMap = new Map();
+    for (const c of serverCandidates) {
+      if (c && (c.candidateId || c.email)) {
+        candMap.set((c.candidateId || c.email).toLowerCase(), c);
+      }
+    }
+    for (const c of localCandidates) {
+      if (c && (c.candidateId || c.email)) {
+        const key = (c.candidateId || c.email).toLowerCase();
+        candMap.set(key, { ...candMap.get(key), ...c });
+      }
+    }
+
+    const merged = Array.from(candMap.values());
+    return { success: true, count: merged.length, candidates: merged };
   },
 
   async getCandidateById(id: string) {
@@ -365,13 +380,36 @@ export const api = {
     }
   },
 
-  async submitExam(payload: { sessionId?: string; candidateId?: string; submissionType?: string }) {
-    const res = await fetch(`${API_BASE}/exam/submit`, {
-      method: 'POST',
-      headers: getHeaders(),
-      body: JSON.stringify(payload),
-    });
-    return handleResponse(res);
+  async submitExam(payload: { sessionId?: string; candidateId?: string; submissionType?: string; answers?: any }) {
+    let res: any;
+    try {
+      const response = await fetch(`${API_BASE}/exam/submit`, {
+        method: 'POST',
+        headers: getHeaders(),
+        body: JSON.stringify(payload),
+      });
+      res = await handleResponse(response);
+    } catch (e: any) {
+      res = { success: false, message: e.message };
+    }
+
+    if (res && res.success && res.result) {
+      try {
+        const stored = JSON.parse(localStorage.getItem('inzovate_registered_candidates') || '[]');
+        const cId = payload.candidateId;
+        const idx = stored.findIndex((c: any) => c.candidateId === cId || c.email === cId);
+        if (idx >= 0) {
+          stored[idx].assessmentStatus = 'Completed';
+          stored[idx].assessmentResult = res.result;
+          stored[idx].totalScore = res.result.totalScore;
+          stored[idx].percentage = res.result.percentage;
+          stored[idx].certificateId = res.result.certificateId;
+          stored[idx].testAttempts = 1;
+          localStorage.setItem('inzovate_registered_candidates', JSON.stringify(stored));
+        }
+      } catch (e) {}
+    }
+    return res;
   },
 
   async getCandidateResult(candidateId: string) {

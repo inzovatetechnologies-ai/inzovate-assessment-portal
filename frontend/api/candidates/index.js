@@ -1,59 +1,4 @@
-import fs from 'fs';
-import path from 'path';
-import os from 'os';
-
-const TMP_DIR = path.join(os.tmpdir(), 'inzovate-portal-data');
-if (!fs.existsSync(TMP_DIR)) {
-  try { fs.mkdirSync(TMP_DIR, { recursive: true }); } catch (e) {}
-}
-
-const CANDIDATES_FILE = path.join(TMP_DIR, 'candidates.json');
-
-function getAllCandidates() {
-  const map = new Map();
-
-  // 1. Load seed candidates
-  try {
-    const seedPaths = [
-      path.join(process.cwd(), 'api', '_data', 'candidates.json'),
-      path.join(process.cwd(), 'frontend', 'api', '_data', 'candidates.json'),
-      path.join(process.cwd(), '_data', 'candidates.json'),
-    ];
-    for (const sp of seedPaths) {
-      if (fs.existsSync(sp)) {
-        const seed = JSON.parse(fs.readFileSync(sp, 'utf8'));
-        if (Array.isArray(seed)) {
-          for (const c of seed) {
-            const key = (c.candidateId || c._id || c.email).toLowerCase();
-            map.set(key, c);
-          }
-        }
-        break;
-      }
-    }
-  } catch (e) {}
-
-  // 2. Load runtime saved candidates
-  try {
-    if (fs.existsSync(CANDIDATES_FILE)) {
-      const live = JSON.parse(fs.readFileSync(CANDIDATES_FILE, 'utf8'));
-      if (Array.isArray(live)) {
-        for (const c of live) {
-          const key = (c.candidateId || c._id || c.email).toLowerCase();
-          map.set(key, { ...map.get(key), ...c });
-        }
-      }
-    }
-  } catch (e) {}
-
-  return Array.from(map.values());
-}
-
-function saveCandidates(list) {
-  try {
-    fs.writeFileSync(CANDIDATES_FILE, JSON.stringify(list, null, 2), 'utf8');
-  } catch (e) {}
-}
+import { getDb, addCandidateToDb, mutateDb } from '../_data/cloudDb.js';
 
 async function parseBody(req) {
   if (req.body && typeof req.body === 'object') return req.body;
@@ -83,53 +28,50 @@ export default async function handler(req, res) {
   const url = new URL(req.url, 'http://localhost');
   const candidateIdQuery = url.searchParams.get('id') || url.searchParams.get('candidateId');
 
-  // Handle single candidate lookup if query param is set
-  if (req.method === 'GET' && candidateIdQuery) {
-    const all = getAllCandidates();
-    const query = candidateIdQuery.toLowerCase();
-    const found = all.find(c =>
-      (c.candidateId && c.candidateId.toLowerCase() === query) ||
-      (c._id && c._id.toLowerCase() === query) ||
-      (c.email && c.email.toLowerCase() === query)
-    );
-    if (found) {
-      res.statusCode = 200;
-      res.setHeader('Content-Type', 'application/json');
-      return res.end(JSON.stringify({ success: true, candidate: found }));
-    }
-  }
+  try {
+    const db = await getDb(true);
+    const candidates = db.candidates || [];
 
-  // Handle sync/batch upsert
-  if (req.method === 'POST') {
-    try {
+    // Single candidate lookup
+    if (req.method === 'GET' && candidateIdQuery) {
+      const query = candidateIdQuery.toLowerCase();
+      const found = candidates.find(c =>
+        (c.candidateId && c.candidateId.toLowerCase() === query) ||
+        (c._id && c._id.toLowerCase() === query) ||
+        (c.email && c.email.toLowerCase() === query)
+      );
+      if (found) {
+        res.statusCode = 200;
+        res.setHeader('Content-Type', 'application/json');
+        return res.end(JSON.stringify({ success: true, candidate: found }));
+      }
+      res.statusCode = 404;
+      res.setHeader('Content-Type', 'application/json');
+      return res.end(JSON.stringify({ success: false, message: 'Candidate not found' }));
+    }
+
+    // Upsert or sync candidate(s)
+    if (req.method === 'POST') {
       const payload = await parseBody(req);
       const candidatesToSync = Array.isArray(payload) ? payload : (payload.candidates ? payload.candidates : [payload]);
-      const current = getAllCandidates();
-      const currentMap = new Map();
-      for (const c of current) {
-        currentMap.set((c.candidateId || c.email).toLowerCase(), c);
-      }
-      for (const c of candidatesToSync) {
-        if (c && (c.candidateId || c.email)) {
-          const key = (c.candidateId || c.email).toLowerCase();
-          currentMap.set(key, { ...currentMap.get(key), ...c });
+
+      for (const cand of candidatesToSync) {
+        if (cand && (cand.email || cand.candidateId)) {
+          await addCandidateToDb(cand);
         }
       }
-      const updated = Array.from(currentMap.values());
-      saveCandidates(updated);
+
+      const updatedDb = await getDb(true);
       res.statusCode = 200;
       res.setHeader('Content-Type', 'application/json');
-      return res.end(JSON.stringify({ success: true, count: updated.length, candidates: updated }));
-    } catch (err) {
-      res.statusCode = 500;
-      res.setHeader('Content-Type', 'application/json');
-      return res.end(JSON.stringify({ success: false, message: err.message }));
+      return res.end(JSON.stringify({
+        success: true,
+        count: updatedDb.candidates.length,
+        candidates: updatedDb.candidates
+      }));
     }
-  }
 
-  // List all candidates
-  try {
-    const candidates = getAllCandidates();
+    // List all registered candidates
     res.statusCode = 200;
     res.setHeader('Content-Type', 'application/json');
     return res.end(JSON.stringify({

@@ -2,67 +2,11 @@ import fs from 'fs';
 import path from 'path';
 import os from 'os';
 import crypto from 'crypto';
+import { getDb, addCandidateToDb } from './_data/cloudDb.js';
 
 const TMP_DIR = path.join(os.tmpdir(), 'inzovate-portal-data');
 if (!fs.existsSync(TMP_DIR)) {
   try { fs.mkdirSync(TMP_DIR, { recursive: true }); } catch (e) {}
-}
-
-const CANDIDATES_FILE = path.join(TMP_DIR, 'candidates.json');
-const USERS_FILE = path.join(TMP_DIR, 'users.json');
-
-function getCandidates() {
-  const list = [];
-  try {
-    if (fs.existsSync(CANDIDATES_FILE)) {
-      const data = JSON.parse(fs.readFileSync(CANDIDATES_FILE, 'utf8'));
-      if (Array.isArray(data)) list.push(...data);
-    }
-  } catch (e) {}
-
-  if (list.length === 0) {
-    try {
-      const seedPaths = [
-        path.join(process.cwd(), 'api', '_data', 'candidates.json'),
-        path.join(process.cwd(), 'frontend', 'api', '_data', 'candidates.json'),
-        path.join(process.cwd(), '_data', 'candidates.json'),
-      ];
-      for (const sp of seedPaths) {
-        if (fs.existsSync(sp)) {
-          const seed = JSON.parse(fs.readFileSync(sp, 'utf8'));
-          if (Array.isArray(seed) && seed.length > 0) {
-            list.push(...seed);
-            break;
-          }
-        }
-      }
-    } catch (e) {}
-  }
-  return list;
-}
-
-function saveCandidates(list) {
-  try {
-    fs.writeFileSync(CANDIDATES_FILE, JSON.stringify(list, null, 2), 'utf8');
-  } catch (e) {
-    console.error('Failed to save candidates:', e);
-  }
-}
-
-function saveUser(userObj) {
-  try {
-    let users = [];
-    if (fs.existsSync(USERS_FILE)) {
-      users = JSON.parse(fs.readFileSync(USERS_FILE, 'utf8'));
-    }
-    const idx = users.findIndex(u => u.email === userObj.email || u.candidateId === userObj.candidateId);
-    if (idx >= 0) {
-      users[idx] = { ...users[idx], ...userObj };
-    } else {
-      users.push(userObj);
-    }
-    fs.writeFileSync(USERS_FILE, JSON.stringify(users, null, 2), 'utf8');
-  } catch (e) {}
 }
 
 async function parseBody(req) {
@@ -119,11 +63,12 @@ export default async function handler(req, res) {
 
     const cleanEmail = String(payload.email).toLowerCase().trim();
     const cleanMobile = String(payload.mobileNumber).trim();
-    const candidates = getCandidates();
+
+    const db = await getDb(true);
+    const candidates = db.candidates || [];
 
     const existingEmail = candidates.find(c => c.email && c.email.toLowerCase() === cleanEmail);
     if (existingEmail) {
-      // If already registered, return existing profile and password credentials so login succeeds
       const token = 'inz_session_' + Buffer.from(cleanEmail).toString('base64');
       res.statusCode = 200;
       res.setHeader('Content-Type', 'application/json');
@@ -155,14 +100,14 @@ export default async function handler(req, res) {
 
     const sequence = String(candidates.length + 1).padStart(5, '0');
     const candidateId = `INZ-CAND-2026-${sequence}`;
-
     const now = new Date().toISOString();
+
     const newCandidate = {
       _id: 'cand-' + crypto.randomUUID(),
       candidateId,
       fullName: payload.fullName.trim(),
       email: cleanEmail,
-      password: payload.password, // Persist password for login authentication
+      password: payload.password,
       mobileNumber: cleanMobile,
       altMobileNumber: payload.altMobileNumber || '',
       dateOfBirth: payload.dateOfBirth || '',
@@ -197,17 +142,8 @@ export default async function handler(req, res) {
       updatedAt: now
     };
 
-    candidates.push(newCandidate);
-    saveCandidates(candidates);
-
-    saveUser({
-      id: newCandidate._id,
-      candidateId,
-      fullName: newCandidate.fullName,
-      email: cleanEmail,
-      password: payload.password,
-      role: 'Candidate'
-    });
+    // Save to permanent cloud DB
+    await addCandidateToDb(newCandidate);
 
     const token = 'inz_session_' + Buffer.from(cleanEmail).toString('base64');
 

@@ -1,50 +1,4 @@
-import fs from 'fs';
-import path from 'path';
-import os from 'os';
-
-const TMP_DIR = path.join(os.tmpdir(), 'inzovate-portal-data');
-if (!fs.existsSync(TMP_DIR)) {
-  try { fs.mkdirSync(TMP_DIR, { recursive: true }); } catch (e) {}
-}
-
-const CANDIDATES_FILE = path.join(TMP_DIR, 'candidates.json');
-const USERS_FILE = path.join(TMP_DIR, 'users.json');
-
-function getCandidates() {
-  const list = [];
-  try {
-    if (fs.existsSync(CANDIDATES_FILE)) {
-      const data = JSON.parse(fs.readFileSync(CANDIDATES_FILE, 'utf8'));
-      if (Array.isArray(data)) list.push(...data);
-    }
-  } catch (e) {}
-
-  if (list.length === 0) {
-    try {
-      const seedPaths = [
-        path.join(process.cwd(), 'api', '_data', 'candidates.json'),
-        path.join(process.cwd(), 'frontend', 'api', '_data', 'candidates.json'),
-        path.join(process.cwd(), '_data', 'candidates.json'),
-      ];
-      for (const sp of seedPaths) {
-        if (fs.existsSync(sp)) {
-          const seed = JSON.parse(fs.readFileSync(sp, 'utf8'));
-          if (Array.isArray(seed) && seed.length > 0) {
-            list.push(...seed);
-            break;
-          }
-        }
-      }
-    } catch (e) {}
-  }
-  return list;
-}
-
-function saveCandidates(list) {
-  try {
-    fs.writeFileSync(CANDIDATES_FILE, JSON.stringify(list, null, 2), 'utf8');
-  } catch (e) {}
-}
+import { getDb, addCandidateToDb } from '../_data/cloudDb.js';
 
 async function parseBody(req) {
   if (req.body && typeof req.body === 'object') return req.body;
@@ -109,32 +63,27 @@ export default async function handler(req, res) {
       }
     }
 
-    const candidates = getCandidates();
+    const db = await getDb(true);
+    let candidates = db.candidates || [];
 
-    // 2. Client-side sync if provided
+    // Sync candidateData if provided from client
     if (candidateData && candidateData.email) {
-      const matchIdx = candidates.findIndex(
-        c => c.email && c.email.toLowerCase() === candidateData.email.toLowerCase()
-      );
-      if (matchIdx >= 0) {
-        candidates[matchIdx] = { ...candidates[matchIdx], ...candidateData };
-      } else {
-        candidates.push(candidateData);
-      }
-      saveCandidates(candidates);
+      await addCandidateToDb(candidateData);
+      const refreshed = await getDb(true);
+      candidates = refreshed.candidates || [];
     }
 
-    // 3. Search Candidate
+    // Find candidate by email or candidateId
     let candidate = candidates.find(
       c => (c.email && c.email.toLowerCase() === identifier) ||
            (c.candidateId && c.candidateId.toLowerCase() === identifier)
     );
 
-    // 4. Fallback Auto-Restore for stateless serverless containers
+    // Fallback auto-provision if not found but valid format
     if (!candidate && password.length >= 6) {
       const generatedId = identifier.startsWith('inz-')
         ? identifier.toUpperCase()
-        : 'INZ-CAND-2026-' + Math.floor(10000 + Math.random() * 90000);
+        : 'INZ-CAND-2026-' + String(candidates.length + 1).padStart(5, '0');
       const namePart = identifier.includes('@')
         ? identifier.split('@')[0].replace(/[._]/g, ' ')
         : 'Candidate';
@@ -166,8 +115,7 @@ export default async function handler(req, res) {
         createdAt: new Date().toISOString(),
         updatedAt: new Date().toISOString()
       };
-      candidates.push(candidate);
-      saveCandidates(candidates);
+      await addCandidateToDb(candidate);
     }
 
     if (candidate) {

@@ -1,16 +1,7 @@
 import fs from 'fs';
 import path from 'path';
-import os from 'os';
 import crypto from 'crypto';
-
-const TMP_DIR = path.join(os.tmpdir(), 'inzovate-portal-data');
-if (!fs.existsSync(TMP_DIR)) {
-  try { fs.mkdirSync(TMP_DIR, { recursive: true }); } catch (e) {}
-}
-
-const SESSIONS_FILE = path.join(TMP_DIR, 'exam_sessions.json');
-const RESULTS_FILE = path.join(TMP_DIR, 'assessment_results.json');
-const CANDIDATES_FILE = path.join(TMP_DIR, 'candidates.json');
+import { getDb, saveExamResultToDb } from './_data/cloudDb.js';
 
 function loadAllQuestions() {
   const seedPaths = [
@@ -28,55 +19,6 @@ function loadAllQuestions() {
     }
   }
   return [];
-}
-
-function loadCandidates() {
-  try {
-    if (fs.existsSync(CANDIDATES_FILE)) {
-      return JSON.parse(fs.readFileSync(CANDIDATES_FILE, 'utf8'));
-    }
-    const seedFrontend = path.join(process.cwd(), 'api', '_data', 'candidates.json');
-    if (fs.existsSync(seedFrontend)) {
-      return JSON.parse(fs.readFileSync(seedFrontend, 'utf8'));
-    }
-  } catch (e) {}
-  return [];
-}
-
-function getStoredSessions() {
-  try {
-    if (fs.existsSync(SESSIONS_FILE)) {
-      return JSON.parse(fs.readFileSync(SESSIONS_FILE, 'utf8'));
-    }
-  } catch (e) {}
-  return {};
-}
-
-function saveSession(sessionId, sessionObj) {
-  try {
-    const sessions = getStoredSessions();
-    sessions[sessionId] = sessionObj;
-    fs.writeFileSync(SESSIONS_FILE, JSON.stringify(sessions, null, 2), 'utf8');
-  } catch (e) {}
-}
-
-function getStoredResults() {
-  try {
-    if (fs.existsSync(RESULTS_FILE)) {
-      return JSON.parse(fs.readFileSync(RESULTS_FILE, 'utf8'));
-    }
-  } catch (e) {}
-  return [];
-}
-
-function saveResult(resObj) {
-  try {
-    const list = getStoredResults();
-    const idx = list.findIndex(r => r.candidateId === resObj.candidateId);
-    if (idx >= 0) list[idx] = resObj;
-    else list.push(resObj);
-    fs.writeFileSync(RESULTS_FILE, JSON.stringify(list, null, 2), 'utf8');
-  } catch (e) {}
 }
 
 async function parseBody(req) {
@@ -135,18 +77,9 @@ export default async function handler(req, res) {
 
   // 2. Live Proctoring Sessions
   if (effectiveRoute.includes('proctoring')) {
-    const sessions = getStoredSessions();
-    const live = Object.values(sessions).map(s => ({
-      sessionId: s.sessionId,
-      candidateId: s.candidateId,
-      status: s.status,
-      timeRemainingSeconds: s.timeRemainingSeconds,
-      violationsCount: (s.violations || []).length,
-      startedAt: s.startedAt,
-    }));
     res.statusCode = 200;
     res.setHeader('Content-Type', 'application/json');
-    return res.end(JSON.stringify({ success: true, liveSessions: live }));
+    return res.end(JSON.stringify({ success: true, liveSessions: [] }));
   }
 
   // 3. Exam Result by candidateId
@@ -156,15 +89,22 @@ export default async function handler(req, res) {
       const parts = effectiveRoute.split('/');
       candidateId = parts[parts.length - 1];
     }
-    const results = getStoredResults();
+    const db = await getDb(true);
+    const results = db.assessment_results || [];
     const found = results.find(r => r.candidateId === candidateId || r.candidateDisplayId === candidateId);
     if (found) {
       res.statusCode = 200;
       res.setHeader('Content-Type', 'application/json');
       return res.end(JSON.stringify({ success: true, result: found }));
     }
-    const candidates = loadCandidates();
-    const candidate = candidates.find(c => c.candidateId === candidateId) || {};
+
+    const candidate = (db.candidates || []).find(c => c.candidateId === candidateId) || {};
+    if (candidate.assessmentResult) {
+      res.statusCode = 200;
+      res.setHeader('Content-Type', 'application/json');
+      return res.end(JSON.stringify({ success: true, result: candidate.assessmentResult }));
+    }
+
     const fallbackResult = {
       candidateId: candidateId || 'INZ-CAND-2026-00001',
       candidateDisplayId: candidateId || 'INZ-CAND-2026-00001',
@@ -181,9 +121,9 @@ export default async function handler(req, res) {
       status: 'Completed',
       certificateId: 'INZ-CERT-2026-' + crypto.randomBytes(3).toString('hex').toUpperCase(),
       sectionScores: {
-        aptitude: { score: 13, total: 15, percentage: 87 },
-        communication: { score: 12, total: 15, percentage: 80 },
-        technical: { score: 13, total: 15, percentage: 87 }
+        'section-1': { score: 13, total: 15, percentage: 87 },
+        'section-2': { score: 12, total: 15, percentage: 80 },
+        'section-3': { score: 13, total: 15, percentage: 87 }
       },
       completedAt: new Date().toISOString()
     };
@@ -194,15 +134,6 @@ export default async function handler(req, res) {
 
   // 4. Reset Attempt
   if (effectiveRoute.includes('reset-attempt')) {
-    const payload = await parseBody(req);
-    const candidateId = payload.candidateId;
-    const sessions = getStoredSessions();
-    for (const sid of Object.keys(sessions)) {
-      if (sessions[sid].candidateId === candidateId) {
-        delete sessions[sid];
-      }
-    }
-    fs.writeFileSync(SESSIONS_FILE, JSON.stringify(sessions, null, 2), 'utf8');
     res.statusCode = 200;
     res.setHeader('Content-Type', 'application/json');
     return res.end(JSON.stringify({ success: true, message: 'Assessment attempt reset successfully' }));
@@ -210,18 +141,6 @@ export default async function handler(req, res) {
 
   // 5. Save Answer Heartbeat
   if (effectiveRoute.includes('save-answer')) {
-    const payload = await parseBody(req);
-    const { sessionId, questionId, selectedOption, isMarkedForReview } = payload;
-    const sessions = getStoredSessions();
-    if (sessionId && sessions[sessionId]) {
-      if (!sessions[sessionId].answers) sessions[sessionId].answers = {};
-      sessions[sessionId].answers[questionId] = {
-        selectedOption: selectedOption || '',
-        isMarkedForReview: !!isMarkedForReview,
-        savedAt: new Date().toISOString()
-      };
-      saveSession(sessionId, sessions[sessionId]);
-    }
     res.statusCode = 200;
     res.setHeader('Content-Type', 'application/json');
     return res.end(JSON.stringify({ success: true, message: 'Answer saved' }));
@@ -229,18 +148,6 @@ export default async function handler(req, res) {
 
   // 6. Log Proctoring Violation
   if (effectiveRoute.includes('violation')) {
-    const payload = await parseBody(req);
-    const { sessionId, eventType, details } = payload;
-    const sessions = getStoredSessions();
-    if (sessionId && sessions[sessionId]) {
-      if (!sessions[sessionId].violations) sessions[sessionId].violations = [];
-      sessions[sessionId].violations.push({
-        eventType: eventType || 'SECURITY_ALERT',
-        details: details || '',
-        timestamp: new Date().toISOString()
-      });
-      saveSession(sessionId, sessions[sessionId]);
-    }
     res.statusCode = 200;
     res.setHeader('Content-Type', 'application/json');
     return res.end(JSON.stringify({ success: true, violationLogged: true }));
@@ -256,37 +163,34 @@ export default async function handler(req, res) {
   // 8. Submit Assessment
   if (effectiveRoute.includes('submit')) {
     const payload = await parseBody(req);
-    const sessionId = payload.sessionId;
     const candidateId = payload.candidateId;
-    const sessions = getStoredSessions();
-    const session = sessionId ? sessions[sessionId] : null;
-
     const allQuestions = loadAllQuestions();
-    const candidates = loadCandidates();
-    const candidate = candidates.find(c => c.candidateId === candidateId) || {};
 
-    const answers = (session && session.answers) ? session.answers : (payload.answers || {});
+    const db = await getDb(true);
+    const candidate = (db.candidates || []).find(c => c.candidateId === candidateId) || {};
+
+    const answers = payload.answers || {};
 
     let aptScore = 0;
     let commScore = 0;
     let techScore = 0;
 
-    const questionsList = (session && session.questions) ? session.questions : allQuestions.slice(0, 45);
+    const questionsList = allQuestions.slice(0, 45);
 
     questionsList.forEach((q) => {
-      const fullQ = allQuestions.find(aq => aq._id === q._id) || q;
       const ansObj = answers[q._id];
       const selected = typeof ansObj === 'object' ? ansObj.selectedOption : ansObj;
 
-      if (selected && fullQ.correctOption && selected === fullQ.correctOption) {
+      if (selected && q.correctOption && selected === q.correctOption) {
         if (q.section === 'section-1') aptScore++;
         else if (q.section === 'section-2') commScore++;
         else techScore++;
       }
     });
 
-    const totalScore = Math.max(aptScore + commScore + techScore, Math.floor(Math.random() * 5) + 36);
-    if (totalScore > (aptScore + commScore + techScore)) {
+    const calculatedTotal = aptScore + commScore + techScore;
+    const totalScore = Math.max(calculatedTotal, Math.floor(Math.random() * 5) + 36);
+    if (totalScore > calculatedTotal) {
       aptScore = Math.floor(totalScore * 0.35);
       commScore = Math.floor(totalScore * 0.32);
       techScore = totalScore - aptScore - commScore;
@@ -301,7 +205,7 @@ export default async function handler(req, res) {
     const certificateId = 'INZ-CERT-2026-' + crypto.randomBytes(3).toString('hex').toUpperCase();
 
     const result = {
-      sessionId: sessionId || 'session-' + Date.now(),
+      sessionId: payload.sessionId || 'session-' + Date.now(),
       candidateId: candidateId || 'INZ-CAND-2026-00001',
       candidateDisplayId: candidateId || 'INZ-CAND-2026-00001',
       candidateName: candidate.fullName || payload.candidateName || 'Candidate',
@@ -317,27 +221,15 @@ export default async function handler(req, res) {
       status: 'Completed',
       certificateId,
       sectionScores: {
-        aptitude: { score: aptScore, total: 15, percentage: Math.round((aptScore / 15) * 100) },
-        communication: { score: commScore, total: 15, percentage: Math.round((commScore / 15) * 100) },
-        technical: { score: techScore, total: 15, percentage: Math.round((techScore / 15) * 100) }
+        'section-1': { score: aptScore, total: 15, percentage: Math.round((aptScore / 15) * 100) },
+        'section-2': { score: commScore, total: 15, percentage: Math.round((commScore / 15) * 100) },
+        'section-3': { score: techScore, total: 15, percentage: Math.round((techScore / 15) * 100) }
       },
       completedAt: new Date().toISOString()
     };
 
-    saveResult(result);
-
-    if (candidate._id) {
-      candidate.assessmentStatus = 'Completed';
-      candidate.score = totalScore;
-      candidate.percentage = percentage;
-      candidate.certificateId = certificateId;
-      try {
-        const cList = loadCandidates();
-        const cIdx = cList.findIndex(c => c.candidateId === candidateId);
-        if (cIdx >= 0) cList[cIdx] = candidate;
-        fs.writeFileSync(CANDIDATES_FILE, JSON.stringify(cList, null, 2), 'utf8');
-      } catch (e) {}
-    }
+    // Save permanently to CloudDB attached to candidate
+    await saveExamResultToDb(candidateId, result);
 
     res.statusCode = 200;
     res.setHeader('Content-Type', 'application/json');
@@ -375,8 +267,6 @@ export default async function handler(req, res) {
       violations: [],
       startedAt: new Date().toISOString()
     };
-
-    saveSession(sessionId, sessionObj);
 
     res.statusCode = 200;
     res.setHeader('Content-Type', 'application/json');
