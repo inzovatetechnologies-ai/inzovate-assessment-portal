@@ -68,6 +68,12 @@ export default function App() {
     // Auto-wipe candidate session on beforeunload so reload forces fresh sign-in
     const handleBeforeUnload = () => {
       try {
+        if ('scrollRestoration' in window.history) {
+          window.history.scrollRestoration = 'manual';
+        }
+        window.scrollTo(0, 0);
+        document.documentElement.scrollTop = 0;
+        document.body.scrollTop = 0;
         const raw = localStorage.getItem('inzovate_user');
         if (raw) {
           const u = JSON.parse(raw);
@@ -81,6 +87,45 @@ export default function App() {
     window.addEventListener('beforeunload', handleBeforeUnload);
     return () => window.removeEventListener('beforeunload', handleBeforeUnload);
   }, []);
+
+  // Instant Strict Scroll-To-Top on Initial Mount, Page Show, and Window Load
+  useEffect(() => {
+    if ('scrollRestoration' in window.history) {
+      window.history.scrollRestoration = 'manual';
+    }
+    const forceScrollToTop = () => {
+      window.scrollTo({ top: 0, left: 0, behavior: 'instant' as ScrollBehavior });
+      document.documentElement.scrollTop = 0;
+      document.body.scrollTop = 0;
+    };
+
+    forceScrollToTop();
+    window.addEventListener('load', forceScrollToTop);
+    window.addEventListener('pageshow', forceScrollToTop);
+
+    return () => {
+      window.removeEventListener('load', forceScrollToTop);
+      window.removeEventListener('pageshow', forceScrollToTop);
+    };
+  }, []);
+
+  // Strict Instant Scroll-To-Top whenever activeTab (page navigation) changes
+  useEffect(() => {
+    const forceScrollToTop = () => {
+      window.scrollTo({ top: 0, left: 0, behavior: 'instant' as ScrollBehavior });
+      document.documentElement.scrollTop = 0;
+      document.body.scrollTop = 0;
+    };
+
+    forceScrollToTop();
+    const rafId = requestAnimationFrame(forceScrollToTop);
+    const timer = setTimeout(forceScrollToTop, 30);
+
+    return () => {
+      cancelAnimationFrame(rafId);
+      clearTimeout(timer);
+    };
+  }, [activeTab]);
 
   // Global Keyboard Shortcut: Press Alt + A or Ctrl + Shift + A to open Admin Login Modal
   useEffect(() => {

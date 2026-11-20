@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: auto !important;
+}
+
 @layer base {
   body {
     @apply bg-[#F5F7FB] text-[#172033] font-sans antialiased;

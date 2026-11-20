@@ -102,6 +102,13 @@ export const AdminDashboard: React.FC = () => {
     loadAllAdminData();
   }, []);
 
+  // Strict Instant Scroll-To-Top on Admin Tab Change
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' as ScrollBehavior });
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+  }, [activeTab]);
+
   async function loadAllAdminData() {
     setLoading(true);
     try {

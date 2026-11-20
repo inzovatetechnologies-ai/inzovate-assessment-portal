@@ -35,6 +35,10 @@ export const CandidateProfilePage: React.FC<CandidateProfilePageProps> = ({
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' as ScrollBehavior });
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+
     async function load() {
       setLoading(true);
       try {

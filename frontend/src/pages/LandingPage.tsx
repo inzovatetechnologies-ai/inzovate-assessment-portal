@@ -57,6 +57,10 @@ export const LandingPage: React.FC<LandingPageProps> = ({
   const [domains, setDomains] = useState<Domain[]>([]);
 
   useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' as ScrollBehavior });
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+
     async function loadData() {
       try {
         const domRes = await api.getDomains();

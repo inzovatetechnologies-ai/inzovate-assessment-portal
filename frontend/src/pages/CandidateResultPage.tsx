@@ -59,6 +59,13 @@ export const CandidateResultPage: React.FC<CandidateResultPageProps> = ({
     loadResult();
   }, [currentUser, resultData]);
 
+  // Strict Instant Scroll-To-Top on Mount
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' as ScrollBehavior });
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+  }, []);
+
   if (loading) {
     return (
       <div className="min-h-[70vh] flex flex-col items-center justify-center space-y-3">

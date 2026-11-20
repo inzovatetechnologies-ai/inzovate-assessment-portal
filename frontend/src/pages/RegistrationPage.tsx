@@ -110,6 +110,13 @@ export const RegistrationPage: React.FC<RegistrationPageProps> = ({
     recordingConsent: false,
   });
 
+  // Strict Instant Scroll-To-Top on Registration Step Change & Mount
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' as ScrollBehavior });
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+  }, [step]);
+
   useEffect(() => {
     async function loadMeta() {
       try {
