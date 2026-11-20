@@ -120,7 +120,7 @@
       "completedAt": "2026-11-20T13:26:51.946Z"
     },
     {
-      "sessionId": "session-1795183689381",
+      "sessionId": "session-1795183728927",
       "candidateId": "TEST-CAND-001",
       "candidateDisplayId": "TEST-CAND-001",
       "candidateName": "Candidate",
@@ -139,7 +139,7 @@
       "passCutoff": "> 25",
       "performanceCategory": "Needs Improvement",
       "status": "Completed",
-      "certificateId": "INZ-CERT-2026-62689E",
+      "certificateId": "INZ-CERT-2026-4ECAB3",
       "sectionScores": {
         "section-1": {
           "score": 0,
@@ -157,9 +157,9 @@
           "percentage": 0
         }
       },
-      "completedAt": "2026-11-20T14:08:09.381Z"
+      "completedAt": "2026-11-20T14:08:48.927Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-20T14:08:09.497Z"
+  "lastUpdated": "2026-11-20T14:08:49.064Z"
 }
