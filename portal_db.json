@@ -288,9 +288,9 @@
       "jobRoleId": "role-soft-dev",
       "jobRoleTitle": "Software Developer",
       "preferredLocation": "Coimbatore / Chennai",
-      "recruitmentStage": "Rejected",
-      "status": "Registered",
-      "deletedAt": null,
+      "recruitmentStage": "Deleted / Archived",
+      "status": "deleted",
+      "deletedAt": "2026-11-20T17:12:52.945Z",
       "assessmentStatus": "Completed",
       "testAttempts": 1,
       "createdAt": "2026-11-20T17:11:49.256Z",
@@ -2447,5 +2447,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-20T17:12:51.590Z"
+  "lastUpdated": "2026-11-20T17:12:52.945Z"
 }
