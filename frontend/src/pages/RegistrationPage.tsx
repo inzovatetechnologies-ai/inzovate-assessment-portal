@@ -119,7 +119,8 @@ export const RegistrationPage: React.FC<RegistrationPageProps> = ({
           api.getDrives(),
         ]);
 
-        let loadedDomains = domRes.success ? domRes.domains : [];
+        const rawDomains = domRes.domains || (Array.isArray(domRes) ? domRes : []);
+        let loadedDomains = Array.isArray(rawDomains) ? [...rawDomains] : [];
         // Ensure "Process Associate" domain is available
         const hasProcAssoc = loadedDomains.some(
           (d: any) => d.name.toLowerCase().includes('process associate') || d.code === 'PROC-ASSOC'
@@ -138,7 +139,8 @@ export const RegistrationPage: React.FC<RegistrationPageProps> = ({
         }
         setDomains(loadedDomains);
 
-        let loadedRoles = roleRes.success ? roleRes.roles : [];
+        const rawRoles = roleRes.roles || (Array.isArray(roleRes) ? roleRes : []);
+        let loadedRoles = Array.isArray(rawRoles) ? [...rawRoles] : [];
         // Ensure "Process Associate" role is available
         const hasProcRole = loadedRoles.some(
           (r: any) => r.title.toLowerCase().includes('process associate')
@@ -157,10 +159,15 @@ export const RegistrationPage: React.FC<RegistrationPageProps> = ({
         }
         setJobRoles(loadedRoles);
 
-        if (colRes.success && colRes.colleges.length > 0) {
-          setColleges(colRes.colleges);
+        const rawColleges = colRes.colleges || (Array.isArray(colRes) ? colRes : []);
+        if (Array.isArray(rawColleges) && rawColleges.length > 0) {
+          setColleges(rawColleges);
         }
-        if (driveRes.success) setDrives(driveRes.drives);
+
+        const rawDrives = driveRes.drives || (Array.isArray(driveRes) ? driveRes : []);
+        if (Array.isArray(rawDrives) && rawDrives.length > 0) {
+          setDrives(rawDrives);
+        }
       } catch (err) {
         console.error('Failed to load registration meta:', err);
       }

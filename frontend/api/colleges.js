@@ -12,5 +12,8 @@ export default function handler(req, res) {
 
   res.statusCode = 200;
   res.setHeader('Content-Type', 'application/json');
-  res.end(JSON.stringify(COLLEGES));
+  res.end(JSON.stringify({
+    success: true,
+    colleges: COLLEGES
+  }));
 }
