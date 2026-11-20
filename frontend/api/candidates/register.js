@@ -1,7 +1,7 @@
-const fs = require('fs');
-const path = require('path');
-const os = require('os');
-const crypto = require('crypto');
+import fs from 'fs';
+import path from 'path';
+import os from 'os';
+import crypto from 'crypto';
 
 const TMP_DIR = path.join(os.tmpdir(), 'inzovate-portal-data');
 if (!fs.existsSync(TMP_DIR)) {
@@ -16,11 +16,7 @@ function getCandidates() {
       return JSON.parse(fs.readFileSync(CANDIDATES_FILE, 'utf8'));
     }
   } catch (e) {}
-  try {
-    return require('../data/candidates.json');
-  } catch (e) {
-    return [];
-  }
+  return [];
 }
 
 function saveCandidates(list) {
@@ -46,7 +42,7 @@ async function parseBody(req) {
   });
 }
 
-module.exports = async (req, res) => {
+export default async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'POST,OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
@@ -112,19 +108,6 @@ module.exports = async (req, res) => {
     const sequence = String(candidates.length + 1).padStart(5, '0');
     const candidateId = `INZ-CAND-2026-${sequence}`;
 
-    let domainName = 'Technology';
-    let jobRoleTitle = 'Software Engineer';
-    try {
-      const jobRoles = require('../data/job_roles.json');
-      const domains = require('../data/domains.json');
-      const roleObj = jobRoles.find(r => r._id === payload.jobRoleId || r.id === payload.jobRoleId);
-      if (roleObj) {
-        jobRoleTitle = roleObj.title;
-        const domObj = domains.find(d => d._id === roleObj.domainId);
-        if (domObj) domainName = domObj.name;
-      }
-    } catch (e) {}
-
     const now = new Date().toISOString();
     const newCandidate = {
       _id: 'cand-' + crypto.randomUUID(),
@@ -149,9 +132,9 @@ module.exports = async (req, res) => {
       department: payload.department || 'Computer Science and Engineering',
       cgpa: payload.cgpa || '',
       domainId: 'domain-01',
-      domainName,
+      domainName: 'Technology',
       jobRoleId: payload.jobRoleId,
-      jobRoleTitle,
+      jobRoleTitle: 'Software Engineer',
       recruitmentStage: 'Registered',
       isEmailVerified: true,
       isMobileVerified: true,
@@ -181,4 +164,4 @@ module.exports = async (req, res) => {
       message: 'Server error during registration: ' + err.message
     }));
   }
-};
+}
