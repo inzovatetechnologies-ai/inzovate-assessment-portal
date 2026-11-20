@@ -36,49 +36,90 @@
       "recruitmentStage": "Registered",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-20T12:37:01.148Z",
-      "updatedAt": "2026-11-20T12:37:01.148Z"
+      "updatedAt": "2026-11-20T12:37:01.148Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_bb01fa27-950d-4644-9048-cb2f88148a2f",
+        "candidateId": "INZ-CAND-2026-00001",
+        "candidateDisplayId": "INZ-CAND-2026-00001",
+        "candidateName": "Lakshmi Prabha S",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "Kongu Engineering College",
+        "totalScore": 4,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 15,
+        "totalQuestionsAttempted": 15,
+        "unattempted": 30,
+        "percentage": 9,
+        "performanceCategory": "Needs Improvement",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-D54D0E",
+        "sectionScores": {
+          "section-1": {
+            "score": 4,
+            "total": 15,
+            "percentage": 27
+          },
+          "section-2": {
+            "score": 0,
+            "total": 15,
+            "percentage": 0
+          },
+          "section-3": {
+            "score": 0,
+            "total": 15,
+            "percentage": 0
+          }
+        },
+        "completedAt": "2026-11-20T12:40:14.621Z"
+      },
+      "totalScore": 4,
+      "percentage": 9,
+      "certificateId": "INZ-CERT-2026-D54D0E",
+      "completedAt": "2026-11-20T12:40:14.621Z"
     }
   ],
   "assessment_results": [
     {
-      "sessionId": "inz_cbt_32122f34-87a6-418e-be5c-fb00dcc29015",
+      "sessionId": "inz_cbt_bb01fa27-950d-4644-9048-cb2f88148a2f",
       "candidateId": "INZ-CAND-2026-00001",
       "candidateDisplayId": "INZ-CAND-2026-00001",
-      "candidateName": "ram",
+      "candidateName": "Lakshmi Prabha S",
       "jobRoleTitle": "Process Associate",
-      "collegeName": "sadxfcgbnmkl,",
-      "totalScore": 37,
+      "collegeName": "Kongu Engineering College",
+      "totalScore": 4,
       "maxScore": 45,
       "totalQuestions": 45,
-      "totalAttempted": 45,
-      "totalQuestionsAttempted": 45,
-      "percentage": 82,
-      "performanceCategory": "Mastery (Outstanding)",
+      "totalAttempted": 15,
+      "totalQuestionsAttempted": 15,
+      "percentage": 9,
+      "performanceCategory": "Needs Improvement",
       "status": "Completed",
-      "certificateId": "INZ-CERT-2026-72CC33",
+      "certificateId": "INZ-CERT-2026-D54D0E",
       "sectionScores": {
         "section-1": {
-          "score": 12,
+          "score": 4,
           "total": 15,
-          "percentage": 80
+          "percentage": 27
         },
         "section-2": {
-          "score": 11,
+          "score": 0,
           "total": 15,
-          "percentage": 73
+          "percentage": 0
         },
         "section-3": {
-          "score": 14,
+          "score": 0,
           "total": 15,
-          "percentage": 93
+          "percentage": 0
         }
       },
-      "completedAt": "2026-11-20T11:26:23.727Z"
+      "completedAt": "2026-11-20T12:40:14.621Z",
+      "unattempted": 30
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-20T12:37:01.278Z"
+  "lastUpdated": "2026-11-20T12:40:14.746Z"
 }
