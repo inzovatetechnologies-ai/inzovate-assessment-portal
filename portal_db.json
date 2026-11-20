@@ -60,13 +60,88 @@
       "jobRoleTitle": "Software Developer",
       "preferredLocation": "Chennai / Coimbatore",
       "recruitmentStage": "Registered",
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-20T11:18:39.098Z",
-      "updatedAt": "2026-11-20T11:18:39.098Z"
+      "updatedAt": "2026-11-20T11:18:39.098Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_503d68bf-ed6a-4aa3-9fe6-50dff8569b64",
+        "candidateId": "INZ-CAND-2026-00002",
+        "candidateDisplayId": "INZ-CAND-2026-00002",
+        "candidateName": "Kavitha S",
+        "jobRoleTitle": "Software Developer",
+        "collegeName": "PSG College of Technology",
+        "totalScore": 39,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "percentage": 87,
+        "performanceCategory": "Mastery (Outstanding)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-0DA90F",
+        "sectionScores": {
+          "section-1": {
+            "score": 13,
+            "total": 15,
+            "percentage": 87
+          },
+          "section-2": {
+            "score": 12,
+            "total": 15,
+            "percentage": 80
+          },
+          "section-3": {
+            "score": 14,
+            "total": 15,
+            "percentage": 93
+          }
+        },
+        "completedAt": "2026-11-20T11:19:11.248Z"
+      },
+      "totalScore": 39,
+      "percentage": 87,
+      "certificateId": "INZ-CERT-2026-0DA90F",
+      "completedAt": "2026-11-20T11:19:11.248Z"
     }
   ],
-  "assessment_results": [],
+  "assessment_results": [
+    {
+      "sessionId": "inz_cbt_503d68bf-ed6a-4aa3-9fe6-50dff8569b64",
+      "candidateId": "INZ-CAND-2026-00002",
+      "candidateDisplayId": "INZ-CAND-2026-00002",
+      "candidateName": "Kavitha S",
+      "jobRoleTitle": "Software Developer",
+      "collegeName": "PSG College of Technology",
+      "totalScore": 39,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "percentage": 87,
+      "performanceCategory": "Mastery (Outstanding)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-0DA90F",
+      "sectionScores": {
+        "section-1": {
+          "score": 13,
+          "total": 15,
+          "percentage": 87
+        },
+        "section-2": {
+          "score": 12,
+          "total": 15,
+          "percentage": 80
+        },
+        "section-3": {
+          "score": 14,
+          "total": 15,
+          "percentage": 93
+        }
+      },
+      "completedAt": "2026-11-20T11:19:11.248Z"
+    }
+  ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-20T11:18:39.203Z"
+  "lastUpdated": "2026-11-20T11:19:11.358Z"
 }
