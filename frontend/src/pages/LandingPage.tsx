@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { api } from '../services/api';
-import { Domain, RecruitmentDrive } from '../types';
+import { Domain } from '../types';
 import {
   ShieldCheck,
   CheckCircle2,
@@ -10,10 +10,8 @@ import {
   FileCheck2,
   Award,
   Users2,
-  GraduationCap,
   Sparkles,
   Lock,
-  Search,
   ExternalLink,
   ChevronRight,
   Code2,
@@ -57,28 +55,18 @@ export const LandingPage: React.FC<LandingPageProps> = ({
   onVerifyCert,
 }) => {
   const [domains, setDomains] = useState<Domain[]>([]);
-  const [drives, setDrives] = useState<RecruitmentDrive[]>([]);
-  const [searchDrive, setSearchDrive] = useState('');
 
   useEffect(() => {
     async function loadData() {
       try {
-        const [domRes, driveRes] = await Promise.all([api.getDomains(), api.getDrives()]);
+        const domRes = await api.getDomains();
         if (domRes.success) setDomains(domRes.domains);
-        if (driveRes.success) setDrives(driveRes.drives);
       } catch (err) {
         console.error('Failed to load landing data:', err);
       }
     }
     loadData();
   }, []);
-
-  const filteredDrives = drives.filter(
-    (d) =>
-      d.name.toLowerCase().includes(searchDrive.toLowerCase()) ||
-      d.collegeName.toLowerCase().includes(searchDrive.toLowerCase()) ||
-      d.driveId.toLowerCase().includes(searchDrive.toLowerCase())
-  );
 
   return (
     <div className="space-y-16 pb-16">
@@ -259,73 +247,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
         </div>
       </section>
 
-      {/* Recruitment Drive Lookup Section */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-gradient-to-r from-[#0A1128] to-[#101F42] text-white p-8 rounded-3xl shadow-xl border border-slate-800">
-          <div className="max-w-3xl space-y-4">
-            <span className="px-3 py-1 rounded-full bg-blue-500/20 text-sky-400 text-xs font-bold uppercase tracking-wider border border-blue-500/30">
-              Campus Drives
-            </span>
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-white">
-              Active College Recruitment Drives (Phase 1 - 2026)
-            </h2>
-            <p className="text-slate-300 text-xs sm:text-sm leading-relaxed">
-              Find your college recruitment schedule or enter your recruitment drive link to verify eligibility criteria
-              and register your profile before the deadline.
-            </p>
 
-            {/* Search Input */}
-            <div className="relative max-w-md pt-2">
-              <Search className="w-4 h-4 text-slate-400 absolute left-3 top-5" />
-              <input
-                type="text"
-                placeholder="Search by college name or Drive ID (e.g. INZ-DRIVE-2026-01)..."
-                value={searchDrive}
-                onChange={(e) => setSearchDrive(e.target.value)}
-                className="w-full pl-9 pr-4 py-2.5 rounded-xl bg-slate-800/90 border border-slate-700 text-xs text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
-              />
-            </div>
-          </div>
-
-          {/* Drive Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
-            {filteredDrives.map((drive) => (
-              <div
-                key={drive._id}
-                className="bg-slate-800/80 p-5 rounded-2xl border border-slate-700 hover:border-blue-500 transition-colors flex flex-col justify-between"
-              >
-                <div className="space-y-2">
-                  <div className="flex items-center justify-between">
-                    <span className="font-mono text-[11px] font-bold text-sky-400">{drive.driveId}</span>
-                    <span className="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-[10px] font-bold uppercase">
-                      {drive.status}
-                    </span>
-                  </div>
-                  <h3 className="font-bold text-sm text-white">{drive.name}</h3>
-                  <p className="text-xs text-slate-300 flex items-center space-x-1.5">
-                    <GraduationCap className="w-3.5 h-3.5 text-blue-400" />
-                    <span>{drive.collegeName}</span>
-                  </p>
-                  <p className="text-[11px] text-slate-400">
-                    Drive Date: <strong className="text-slate-200">{drive.recruitmentDate}</strong>
-                  </p>
-                  <p className="text-[11px] text-slate-400">
-                    Deadline: <strong className="text-amber-300">{drive.registrationDeadline}</strong>
-                  </p>
-                </div>
-
-                <button
-                  onClick={onStartRegistration}
-                  className="mt-4 w-full py-2 rounded-lg bg-blue-600 hover:bg-blue-500 text-white font-semibold text-xs flex items-center justify-center space-x-1.5 shadow transition-colors"
-                >
-                  <span>Apply with Drive ID</span>
-                  <ArrowRight className="w-3.5 h-3.5" />
-                </button>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Examination Integrity & Technical Requirements */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
