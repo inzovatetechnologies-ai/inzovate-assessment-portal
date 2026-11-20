@@ -3,9 +3,17 @@ import path from 'path';
 
 let colleges = [];
 try {
-  const filePath = path.join(process.cwd(), 'api', 'data', 'colleges.json');
-  if (fs.existsSync(filePath)) {
-    colleges = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+  const possiblePaths = [
+    path.join(import.meta.dirname, 'data', 'colleges.json'),
+    path.join(process.cwd(), 'api', 'data', 'colleges.json'),
+    path.join(process.cwd(), 'data', 'colleges.json'),
+    path.join(process.cwd(), 'frontend', 'data', 'colleges.json'),
+  ];
+  for (const p of possiblePaths) {
+    if (fs.existsSync(p)) {
+      colleges = JSON.parse(fs.readFileSync(p, 'utf8'));
+      break;
+    }
   }
 } catch (e) {
   colleges = [];
