@@ -1,5 +1,19 @@
 const API_BASE = '/api';
 
+async function handleResponse(res: Response) {
+  const text = await res.text();
+  try {
+    return JSON.parse(text);
+  } catch {
+    return {
+      success: false,
+      message: res.ok
+        ? 'Invalid JSON response from server'
+        : `Server Error (${res.status}): ${text.slice(0, 150) || res.statusText}`,
+    };
+  }
+}
+
 function getHeaders() {
   const token = localStorage.getItem('inzovate_token');
   const headers: Record<string, string> = {
@@ -19,7 +33,7 @@ export const api = {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ email: identifier, username: identifier, password }),
     });
-    return res.json();
+    return handleResponse(res);
   },
 
   async adminLogin(identifier: string, password: string) {
@@ -28,7 +42,7 @@ export const api = {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ email: identifier, username: identifier, password }),
     });
-    return res.json();
+    return handleResponse(res);
   },
 
   async requestPasswordReset(identifier: string) {
@@ -37,7 +51,7 @@ export const api = {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ identifier }),
     });
-    return res.json();
+    return handleResponse(res);
   },
 
   async verifyResetOtp(identifier: string, otp: string) {
@@ -46,7 +60,7 @@ export const api = {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ identifier, otp }),
     });
-    return res.json();
+    return handleResponse(res);
   },
 
   async resetPasswordWithOtp(identifier: string, otp: string, newPassword: string) {
@@ -55,7 +69,7 @@ export const api = {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ identifier, otp, newPassword }),
     });
-    return res.json();
+    return handleResponse(res);
   },
 
   async sendOtp(channel: 'email' | 'mobile', recipient: string) {
@@ -64,7 +78,7 @@ export const api = {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ channel, recipient }),
     });
-    return res.json();
+    return handleResponse(res);
   },
 
   async verifyOtp(channel: 'email' | 'mobile', recipient: string, otp: string) {
@@ -73,26 +87,26 @@ export const api = {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ channel, recipient, otp }),
     });
-    return res.json();
+    return handleResponse(res);
   },
 
   async getMe() {
     const res = await fetch(`${API_BASE}/auth/me`, {
       headers: getHeaders(),
     });
-    return res.json();
+    return handleResponse(res);
   },
 
   // Metadata
   async getDomains() {
     const res = await fetch(`${API_BASE}/domains`);
-    return res.json();
+    return handleResponse(res);
   },
 
   async getJobRoles(domainId?: string) {
     const url = domainId ? `${API_BASE}/job-roles?domainId=${domainId}` : `${API_BASE}/job-roles`;
     const res = await fetch(url);
-    return res.json();
+    return handleResponse(res);
   },
 
   async createJobRole(payload: any) {
@@ -101,17 +115,17 @@ export const api = {
       headers: getHeaders(),
       body: JSON.stringify(payload),
     });
-    return res.json();
+    return handleResponse(res);
   },
 
   async getColleges() {
     const res = await fetch(`${API_BASE}/colleges`);
-    return res.json();
+    return handleResponse(res);
   },
 
   async getDrives() {
     const res = await fetch(`${API_BASE}/drives`);
-    return res.json();
+    return handleResponse(res);
   },
 
   async createDrive(payload: any) {
@@ -120,7 +134,7 @@ export const api = {
       headers: getHeaders(),
       body: JSON.stringify(payload),
     });
-    return res.json();
+    return handleResponse(res);
   },
 
   // Candidates
@@ -130,7 +144,7 @@ export const api = {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(payload),
     });
-    return res.json();
+    return handleResponse(res);
   },
 
   async getCandidates(params?: Record<string, string>) {
@@ -138,14 +152,14 @@ export const api = {
     const res = await fetch(`${API_BASE}/candidates?${query}`, {
       headers: getHeaders(),
     });
-    return res.json();
+    return handleResponse(res);
   },
 
   async getCandidateById(id: string) {
     const res = await fetch(`${API_BASE}/candidates/${id}`, {
       headers: getHeaders(),
     });
-    return res.json();
+    return handleResponse(res);
   },
 
   async updateCandidateStage(id: string, stage: string, notes?: string) {
@@ -154,7 +168,7 @@ export const api = {
       headers: getHeaders(),
       body: JSON.stringify({ stage, notes }),
     });
-    return res.json();
+    return handleResponse(res);
   },
 
   // Assessment Engine
@@ -164,7 +178,7 @@ export const api = {
       headers: getHeaders(),
       body: JSON.stringify({ candidateId }),
     });
-    return res.json();
+    return handleResponse(res);
   },
 
   async resetExamAttempt(candidateId: string) {
@@ -173,7 +187,7 @@ export const api = {
       headers: getHeaders(),
       body: JSON.stringify({ candidateId }),
     });
-    return res.json();
+    return handleResponse(res);
   },
 
   async saveAnswer(payload: { sessionId: string; questionId: string; selectedOption?: string; isMarkedForReview?: boolean }) {
@@ -182,7 +196,7 @@ export const api = {
       headers: getHeaders(),
       body: JSON.stringify(payload),
     });
-    return res.json();
+    return handleResponse(res);
   },
 
   async logViolation(payload: { sessionId: string; eventType: string; details?: string }) {
@@ -191,7 +205,7 @@ export const api = {
       headers: getHeaders(),
       body: JSON.stringify(payload),
     });
-    return res.json();
+    return handleResponse(res);
   },
 
   terminateExamOnTabClose(sessionId: string, candidateId?: string) {
@@ -214,14 +228,14 @@ export const api = {
       headers: getHeaders(),
       body: JSON.stringify(payload),
     });
-    return res.json();
+    return handleResponse(res);
   },
 
   async getCandidateResult(candidateId: string) {
     const res = await fetch(`${API_BASE}/exam/results/${candidateId}`, {
       headers: getHeaders(),
     });
-    return res.json();
+    return handleResponse(res);
   },
 
   // Proctoring
@@ -229,7 +243,7 @@ export const api = {
     const res = await fetch(`${API_BASE}/proctoring/live-sessions`, {
       headers: getHeaders(),
     });
-    return res.json();
+    return handleResponse(res);
   },
 
   async resolveViolation(sessionId: string, resolution: 'cleared' | 'confirmed', notes?: string) {
@@ -238,14 +252,14 @@ export const api = {
       headers: getHeaders(),
       body: JSON.stringify({ sessionId, resolution, notes }),
     });
-    return res.json();
+    return handleResponse(res);
   },
 
   // Questions
   async getQuestions(params?: Record<string, string>) {
     const query = new URLSearchParams(params).toString();
     const res = await fetch(`${API_BASE}/questions?${query}`);
-    return res.json();
+    return handleResponse(res);
   },
 
   async createQuestion(payload: any) {
@@ -254,7 +268,7 @@ export const api = {
       headers: getHeaders(),
       body: JSON.stringify(payload),
     });
-    return res.json();
+    return handleResponse(res);
   },
 
   async deleteQuestion(id: string) {
@@ -262,7 +276,7 @@ export const api = {
       method: 'DELETE',
       headers: getHeaders(),
     });
-    return res.json();
+    return handleResponse(res);
   },
 
   async generateAiDraftQuestions(payload: any) {
@@ -271,7 +285,7 @@ export const api = {
       headers: getHeaders(),
       body: JSON.stringify(payload),
     });
-    return res.json();
+    return handleResponse(res);
   },
 
   async approveQuestion(id: string) {
@@ -279,13 +293,13 @@ export const api = {
       method: 'PATCH',
       headers: getHeaders(),
     });
-    return res.json();
+    return handleResponse(res);
   },
 
   // Coding Sandbox
   async getCodingChallenges() {
     const res = await fetch(`${API_BASE}/coding/challenges`, { headers: getHeaders() });
-    return res.json();
+    return handleResponse(res);
   },
 
   async executeCode(payload: any) {
@@ -294,7 +308,7 @@ export const api = {
       headers: getHeaders(),
       body: JSON.stringify(payload),
     });
-    return res.json();
+    return handleResponse(res);
   },
 
   // Interviews
@@ -304,7 +318,7 @@ export const api = {
       headers: getHeaders(),
       body: JSON.stringify(payload),
     });
-    return res.json();
+    return handleResponse(res);
   },
 
   // Analytics & Certificate
@@ -312,12 +326,12 @@ export const api = {
     const res = await fetch(`${API_BASE}/reports/analytics`, {
       headers: getHeaders(),
     });
-    return res.json();
+    return handleResponse(res);
   },
 
   async verifyCertificate(certificateId: string) {
     const res = await fetch(`${API_BASE}/certificates/verify/${certificateId}`);
-    return res.json();
+    return handleResponse(res);
   },
 
   // Audit Logs
@@ -325,6 +339,6 @@ export const api = {
     const res = await fetch(`${API_BASE}/audit-logs`, {
       headers: getHeaders(),
     });
-    return res.json();
+    return handleResponse(res);
   },
 };

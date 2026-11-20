@@ -30625,12 +30625,28 @@ var require_db2 = __commonJS({
             const raw = fs.readFileSync(this.filePath, "utf8");
             this.data = JSON.parse(raw);
           } else {
-            const fallbackPath = path.join(__dirname, "..", "data", `${this.name}.json`);
-            if (fs.existsSync(fallbackPath)) {
-              const raw = fs.readFileSync(fallbackPath, "utf8");
-              this.data = JSON.parse(raw);
-              this.flushSync();
-            } else {
+            const possibleFallbacks = [
+              path.join(__dirname, "..", "data", `${this.name}.json`),
+              path.join(__dirname, "data", `${this.name}.json`),
+              path.join(process.cwd(), "data", `${this.name}.json`),
+              path.join(process.cwd(), "api", "data", `${this.name}.json`),
+              path.join(process.cwd(), "frontend", "data", `${this.name}.json`),
+              path.join(process.cwd(), "backend", "data", `${this.name}.json`)
+            ];
+            let loaded = false;
+            for (const p of possibleFallbacks) {
+              if (fs.existsSync(p)) {
+                try {
+                  const raw = fs.readFileSync(p, "utf8");
+                  this.data = JSON.parse(raw);
+                  this.flushSync();
+                  loaded = true;
+                  break;
+                } catch (e) {
+                }
+              }
+            }
+            if (!loaded) {
               this.data = [];
               this.flushSync();
             }
@@ -51549,7 +51565,7 @@ app.use(compression());
 app.use(cors());
 app.use(express.json({ limit: "50mb" }));
 app.use(express.urlencoded({ extended: true, limit: "50mb" }));
-app.get(["/api/health", "/health"], (req, res) => {
+app.get(["/", "/api", "/api/health", "/health"], (req, res) => {
   res.json({
     status: "ONLINE",
     organization: "INZOVATE TECHNOLOGIES PRIVATE LIMITED",
@@ -51572,7 +51588,10 @@ app.use(async (req, res, next) => {
   next();
 });
 app.use((req, res, next) => {
-  if (req.url.startsWith("/api/")) {
+  if (req.query && req.query.path) {
+    const subpath = Array.isArray(req.query.path) ? req.query.path.join("/") : req.query.path;
+    req.url = "/" + subpath;
+  } else if (req.url.startsWith("/api/")) {
     req.url = req.url.replace(/^\/api/, "");
   }
   next();

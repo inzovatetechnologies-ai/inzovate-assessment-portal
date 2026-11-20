@@ -19,7 +19,7 @@ app.use(express.json({ limit: '50mb' }));
 app.use(express.urlencoded({ extended: true, limit: '50mb' }));
 
 // Health check
-app.get(['/api/health', '/health'], (req, res) => {
+app.get(['/', '/api', '/api/health', '/health'], (req, res) => {
   res.json({
     status: 'ONLINE',
     organization: 'INZOVATE TECHNOLOGIES PRIVATE LIMITED',
@@ -46,7 +46,10 @@ app.use(async (req, res, next) => {
 
 // Normalize request URL for Vercel Serverless rewrite routing
 app.use((req, res, next) => {
-  if (req.url.startsWith('/api/')) {
+  if (req.query && req.query.path) {
+    const subpath = Array.isArray(req.query.path) ? req.query.path.join('/') : req.query.path;
+    req.url = '/' + subpath;
+  } else if (req.url.startsWith('/api/')) {
     req.url = req.url.replace(/^\/api/, '');
   }
   next();

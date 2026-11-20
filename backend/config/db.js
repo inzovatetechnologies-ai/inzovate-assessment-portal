@@ -48,12 +48,27 @@ class Collection {
         const raw = fs.readFileSync(this.filePath, 'utf8');
         this.data = JSON.parse(raw);
       } else {
-        const fallbackPath = path.join(__dirname, '..', 'data', `${this.name}.json`);
-        if (fs.existsSync(fallbackPath)) {
-          const raw = fs.readFileSync(fallbackPath, 'utf8');
-          this.data = JSON.parse(raw);
-          this.flushSync();
-        } else {
+        const possibleFallbacks = [
+          path.join(__dirname, '..', 'data', `${this.name}.json`),
+          path.join(__dirname, 'data', `${this.name}.json`),
+          path.join(process.cwd(), 'data', `${this.name}.json`),
+          path.join(process.cwd(), 'api', 'data', `${this.name}.json`),
+          path.join(process.cwd(), 'frontend', 'data', `${this.name}.json`),
+          path.join(process.cwd(), 'backend', 'data', `${this.name}.json`),
+        ];
+        let loaded = false;
+        for (const p of possibleFallbacks) {
+          if (fs.existsSync(p)) {
+            try {
+              const raw = fs.readFileSync(p, 'utf8');
+              this.data = JSON.parse(raw);
+              this.flushSync();
+              loaded = true;
+              break;
+            } catch (e) {}
+          }
+        }
+        if (!loaded) {
           this.data = [];
           this.flushSync();
         }
