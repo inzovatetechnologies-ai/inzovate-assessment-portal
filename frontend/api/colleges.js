@@ -1,23 +1,4 @@
-import fs from 'fs';
-import path from 'path';
-
-let colleges = [];
-try {
-  const possiblePaths = [
-    path.join(import.meta.dirname, 'data', 'colleges.json'),
-    path.join(process.cwd(), 'api', 'data', 'colleges.json'),
-    path.join(process.cwd(), 'data', 'colleges.json'),
-    path.join(process.cwd(), 'frontend', 'data', 'colleges.json'),
-  ];
-  for (const p of possiblePaths) {
-    if (fs.existsSync(p)) {
-      colleges = JSON.parse(fs.readFileSync(p, 'utf8'));
-      break;
-    }
-  }
-} catch (e) {
-  colleges = [];
-}
+import COLLEGES from './data/collegesData.js';
 
 export default function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
@@ -31,5 +12,5 @@ export default function handler(req, res) {
 
   res.statusCode = 200;
   res.setHeader('Content-Type', 'application/json');
-  res.end(JSON.stringify(colleges));
+  res.end(JSON.stringify(COLLEGES));
 }
