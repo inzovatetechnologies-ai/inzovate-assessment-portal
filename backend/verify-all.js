@@ -122,14 +122,24 @@ async function runTests() {
   console.log('\n[5] Testing Forgot Password OTP request...');
   const forgotRes = await post('/api/auth/forgot-password', {
     identifier: newEmail,
-  });
-  console.log('Forgot Password response:', forgotRes.data?.message, 'OTP received:', forgotRes.data?.devOtp);
-  if (!forgotRes.data?.success) throw new Error('Forgot password request failed');
+  }, { 'x-test-mode': 'true' });
+  console.log('Forgot Password response:', forgotRes.data?.message, 'OTP received in test mode:', forgotRes.data?.testOtp ? 'YES' : 'NO');
+  if (!forgotRes.data?.success || !forgotRes.data?.testOtp) throw new Error('Forgot password request failed');
+  const otpCode = forgotRes.data.testOtp;
 
-  console.log('\n[6] Testing Reset Password with OTP...');
+  // Step 5b: Verify OTP Code
+  console.log('\n[5b] Testing Verification of 6-digit Email OTP...');
+  const verifyOtpRes = await post('/api/auth/verify-reset-otp', {
+    identifier: newEmail,
+    otp: otpCode,
+  });
+  console.log('Verify OTP status:', verifyOtpRes.status, 'Message:', verifyOtpRes.data?.message);
+  if (!verifyOtpRes.data?.success) throw new Error('OTP verification failed');
+
+  console.log('\n[6] Testing Reset Password with Verified OTP...');
   const resetRes = await post('/api/auth/reset-password', {
     identifier: newEmail,
-    otp: forgotRes.data.devOtp,
+    otp: otpCode,
     newPassword: 'NewSecurePassword@2026',
   });
   console.log('Reset Password response status:', resetRes.status, 'Message:', resetRes.data?.message);

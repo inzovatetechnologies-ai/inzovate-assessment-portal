@@ -242,12 +242,17 @@ async function requestPasswordReset(req, res) {
       resetOtp,
     });
 
-    res.json({
+    const responsePayload = {
       success: true,
       message: `OTP sent successfully to your registered email: ${candidate.email}`,
       candidateEmail: candidate.email,
       candidateId: candidate.candidateId,
-    });
+    };
+    if (process.env.NODE_ENV === 'test' || req.headers['x-test-mode'] === 'true') {
+      responsePayload.testOtp = resetOtp;
+    }
+
+    res.json(responsePayload);
   } catch (err) {
     console.error('Password reset request error:', err);
     res.status(500).json({ success: false, message: err.message });

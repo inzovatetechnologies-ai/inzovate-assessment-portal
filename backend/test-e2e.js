@@ -74,10 +74,16 @@ async function runEndToEndTests() {
   const health = await get('/api/health');
   console.log('1. Health Check:', health.data.status === 'ONLINE' ? 'PASSED ✅' : 'FAILED ❌');
 
-  // Test 2: Demo Login as Candidate
-  const candLogin = await post('/api/auth/demo-login', { role: 'Candidate' });
-  console.log('2. Candidate Authentication:', candLogin.data.success ? 'PASSED ✅' : 'FAILED ❌');
-  const candToken = candLogin.data.token;
+  // Test 2: Real Login as Candidate
+  const candLogin = await post('/api/auth/login', {
+    identifier: 'candidate@inzovate.com',
+    password: 'Password@123',
+  });
+  console.log('2. Candidate Authentication:', candLogin.data && candLogin.data.success ? 'PASSED ✅' : 'FAILED ❌');
+  const candToken = candLogin.data ? candLogin.data.token : null;
+
+  // Reset exam attempt for idempotent test execution
+  await post('/api/exam/reset-attempt', { candidateId: 'INZ-CAND-2026-00001' });
 
   // Test 3: Start/Resume Exam Session & Verify Question Counts
   const examStart = await post('/api/exam/start', { candidateId: 'INZ-CAND-2026-00001' }, candToken);
@@ -115,10 +121,13 @@ async function runEndToEndTests() {
     console.log('5. Anti-Cheating Violation Detection:', violation.data.success ? 'PASSED ✅' : 'FAILED ❌');
   }
 
-  // Test 6: Demo Login as Admin & HR
-  const adminLogin = await post('/api/auth/demo-login', { role: 'Admin' });
-  console.log('6. Admin Authentication:', adminLogin.data.success ? 'PASSED ✅' : 'FAILED ❌');
-  const adminToken = adminLogin.data.token;
+  // Test 6: Real Login as Admin
+  const adminLogin = await post('/api/auth/admin-login', {
+    identifier: 'admin@inzovate.com',
+    password: 'Admin@Inzovate2026',
+  });
+  console.log('6. Admin Authentication:', adminLogin.data && adminLogin.data.success ? 'PASSED ✅' : 'FAILED ❌');
+  const adminToken = adminLogin.data ? adminLogin.data.token : null;
 
   // Test 7: Executive Analytics
   const analytics = await get('/api/reports/analytics', adminToken);
@@ -128,7 +137,7 @@ async function runEndToEndTests() {
   console.log(`   - Average Score: ${analytics.data.metrics.avgScore} / 45 (${analytics.data.metrics.avgPercentage}%)`);
 
   // Test 8: Public Certificate Verification
-  const certVerify = await get('/api/certificates/verify/INZ-CERT-2026-89412');
+  const certVerify = await get('/api/certificates/verify/INZ-CERT-2026-78301');
   console.log('8. Public Certificate Credential Verification:', certVerify.data.verified ? 'PASSED ✅' : 'FAILED ❌');
   console.log(`   - Verified Candidate: ${certVerify.data.certificate.candidateName}`);
   console.log(`   - Performance Rating: ${certVerify.data.certificate.performanceCategory}`);

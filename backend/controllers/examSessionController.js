@@ -591,7 +591,6 @@ async function submitAssessment(req, res) {
         totalQuestionsAttempted: questionsAttempted,
         totalQuestions: 45,
         status: 'Completed',
-        certificateId,
         assessmentDate: now.toISOString().split('T')[0],
       }
     });
