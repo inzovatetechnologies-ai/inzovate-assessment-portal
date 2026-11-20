@@ -244,6 +244,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-20T17:11:49.262Z",
       "updatedAt": "2026-11-20T17:11:49.262Z"
+    },
+    {
+      "_id": "cand-e016008d-b13a-4b86-8b61-c8356e09cc22",
+      "candidateId": "INZ-CAND-2026-00006",
+      "fullName": "Stress Test Candidate 1-6",
+      "email": "stresstest.c1.u6.ktq0@inzovate-technologies.com",
+      "password": "Pass@162026",
+      "mobileNumber": "9876163915",
+      "altMobileNumber": "",
+      "dateOfBirth": "",
+      "gender": "Not Specified",
+      "residentialAddress": "",
+      "district": "",
+      "state": "Tamil Nadu",
+      "pinCode": "",
+      "collegeId": "",
+      "collegeName": "PSG College of Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.Tech Information Technology",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.8",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Software Developer",
+      "preferredLocation": "Coimbatore / Chennai",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-20T17:11:49.299Z",
+      "updatedAt": "2026-11-20T17:11:49.299Z"
     }
   ],
   "assessment_results": [
@@ -325,5 +366,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-20T17:11:51.635Z"
+  "lastUpdated": "2026-11-20T17:11:52.526Z"
 }
