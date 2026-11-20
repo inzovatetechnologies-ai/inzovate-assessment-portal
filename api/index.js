@@ -21007,7 +21007,7 @@ var require_route = __commonJS({
         sync = 0;
       }
     };
-    Route.prototype.all = function all(handler) {
+    Route.prototype.all = function all(handler2) {
       const callbacks = flatten.call(slice.call(arguments), Infinity);
       if (callbacks.length === 0) {
         throw new TypeError("argument handler is required");
@@ -21025,7 +21025,7 @@ var require_route = __commonJS({
       return this;
     };
     methods.forEach(function(method) {
-      Route.prototype[method] = function(handler) {
+      Route.prototype[method] = function(handler2) {
         const callbacks = flatten.call(slice.call(arguments), Infinity);
         if (callbacks.length === 0) {
           throw new TypeError("argument handler is required");
@@ -21236,17 +21236,17 @@ var require_router = __commonJS({
         }
       }
     };
-    Router.prototype.use = function use(handler) {
+    Router.prototype.use = function use(handler2) {
       let offset = 0;
       let path = "/";
-      if (typeof handler !== "function") {
-        let arg = handler;
+      if (typeof handler2 !== "function") {
+        let arg = handler2;
         while (Array.isArray(arg) && arg.length !== 0) {
           arg = arg[0];
         }
         if (typeof arg !== "function") {
           offset = 1;
-          path = handler;
+          path = handler2;
         }
       }
       const callbacks = flatten.call(slice.call(arguments, offset), Infinity);
@@ -33598,7 +33598,7 @@ var require_fetch = __commonJS({
       let finished = false;
       let cookies;
       let body;
-      const handler = parsed.protocol === "https:" ? node_https_1.default : node_http_1.default;
+      const handler2 = parsed.protocol === "https:" ? node_https_1.default : node_http_1.default;
       const headers = {
         "accept-encoding": "gzip,deflate",
         "user-agent": "nodemailer/" + packageData.version
@@ -33682,7 +33682,7 @@ var require_fetch = __commonJS({
         reqOptions.servername = parsed.hostname;
       }
       try {
-        req = handler.request(reqOptions);
+        req = handler2.request(reqOptions);
       } catch (E) {
         finished = true;
         setImmediate(() => {
@@ -42607,7 +42607,7 @@ var require_smtp_connection = __commonJS({
           }
         }
         if (this.customAuth.has(this._authMethod)) {
-          const handler = this.customAuth.get(this._authMethod);
+          const handler2 = this.customAuth.get(this._authMethod);
           let lastResponse;
           let returned = false;
           const resolve = () => {
@@ -42660,7 +42660,7 @@ var require_smtp_connection = __commonJS({
             setImmediate(() => this._sendCommand(cmd, maskAuthCommand(cmd)));
             return promise;
           };
-          const handlerResponse = handler({
+          const handlerResponse = handler2({
             auth: this._auth,
             method: this._authMethod,
             extensions: [].concat(this._supportedExtensions),
@@ -51557,8 +51557,21 @@ var { seedDatabase } = require_seed();
 var app = express();
 app.set("trust proxy", true);
 app.use((req, res, next) => {
-  if (!req.socket) req.socket = {};
-  if (!req.socket.remoteAddress) req.socket.remoteAddress = "127.0.0.1";
+  try {
+    if (!req.socket) {
+      Object.defineProperty(req, "socket", {
+        value: { remoteAddress: "127.0.0.1" },
+        configurable: true,
+        writable: true
+      });
+    } else if (!req.socket.remoteAddress) {
+      try {
+        req.socket.remoteAddress = "127.0.0.1";
+      } catch (e) {
+      }
+    }
+  } catch (e) {
+  }
   next();
 });
 app.use(compression());
@@ -51591,14 +51604,43 @@ app.use((req, res, next) => {
   if (req.query && req.query.path) {
     const subpath = Array.isArray(req.query.path) ? req.query.path.join("/") : req.query.path;
     req.url = "/" + subpath;
-  } else if (req.url.startsWith("/api/")) {
+  } else if (req.url && req.url.startsWith("/api/")) {
     req.url = req.url.replace(/^\/api/, "");
   }
   next();
 });
 app.use("/", apiRoutes);
 app.use("/api", apiRoutes);
-module.exports = app;
+app.use((err, req, res, next) => {
+  console.error("Express Unhandled Error:", err);
+  if (!res.headersSent) {
+    res.status(500).json({
+      error: "EXPRESS_SERVER_ERROR",
+      message: err.message,
+      stack: process.env.NODE_ENV === "production" ? void 0 : err.stack
+    });
+  }
+});
+var handler = (req, res) => {
+  try {
+    return app(req, res);
+  } catch (err) {
+    console.error("Serverless Handler Invocation Error:", err);
+    if (!res.headersSent) {
+      res.statusCode = 500;
+      res.setHeader("Content-Type", "application/json");
+      res.end(
+        JSON.stringify({
+          error: "SERVERLESS_HANDLER_EXCEPTION",
+          message: err.message,
+          stack: err.stack
+        })
+      );
+    }
+  }
+};
+module.exports = handler;
+module.exports.default = handler;
 /*! Bundled license information:
 
 depd/index.js:

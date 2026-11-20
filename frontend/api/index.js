@@ -51565,8 +51565,21 @@ var require_serverless = __commonJS({
     var app = express();
     app.set("trust proxy", true);
     app.use((req, res, next) => {
-      if (!req.socket) req.socket = {};
-      if (!req.socket.remoteAddress) req.socket.remoteAddress = "127.0.0.1";
+      try {
+        if (!req.socket) {
+          Object.defineProperty(req, "socket", {
+            value: { remoteAddress: "127.0.0.1" },
+            configurable: true,
+            writable: true
+          });
+        } else if (!req.socket.remoteAddress) {
+          try {
+            req.socket.remoteAddress = "127.0.0.1";
+          } catch (e) {
+          }
+        }
+      } catch (e) {
+      }
       next();
     });
     app.use(compression());
@@ -51599,14 +51612,43 @@ var require_serverless = __commonJS({
       if (req.query && req.query.path) {
         const subpath = Array.isArray(req.query.path) ? req.query.path.join("/") : req.query.path;
         req.url = "/" + subpath;
-      } else if (req.url.startsWith("/api/")) {
+      } else if (req.url && req.url.startsWith("/api/")) {
         req.url = req.url.replace(/^\/api/, "");
       }
       next();
     });
     app.use("/", apiRoutes);
     app.use("/api", apiRoutes);
-    module.exports = app;
+    app.use((err, req, res, next) => {
+      console.error("Express Unhandled Error:", err);
+      if (!res.headersSent) {
+        res.status(500).json({
+          error: "EXPRESS_SERVER_ERROR",
+          message: err.message,
+          stack: process.env.NODE_ENV === "production" ? void 0 : err.stack
+        });
+      }
+    });
+    var handler = (req, res) => {
+      try {
+        return app(req, res);
+      } catch (err) {
+        console.error("Serverless Handler Invocation Error:", err);
+        if (!res.headersSent) {
+          res.statusCode = 500;
+          res.setHeader("Content-Type", "application/json");
+          res.end(
+            JSON.stringify({
+              error: "SERVERLESS_HANDLER_EXCEPTION",
+              message: err.message,
+              stack: err.stack
+            })
+          );
+        }
+      }
+    };
+    module.exports = handler;
+    module.exports.default = handler;
   }
 });
 export default require_serverless();
