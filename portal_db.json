@@ -1,5 +1,47 @@
 {
-  "candidates": [],
+  "candidates": [
+    {
+      "_id": "cand-2842b32e-e937-4056-ac8f-63235a7dc80d",
+      "candidateId": "INZ-CAND-2026-00001",
+      "fullName": "Lakshmi Prabha S",
+      "email": "test.candidate2026@inzovate.com",
+      "password": "Password@2026",
+      "mobileNumber": "9876543210",
+      "altMobileNumber": "",
+      "dateOfBirth": "2003-05-15",
+      "gender": "Female",
+      "residentialAddress": "123 Gandhi Street, Coimbatore, Tamil Nadu",
+      "district": "",
+      "state": "Tamil Nadu",
+      "pinCode": "641004",
+      "collegeId": "",
+      "collegeName": "Kongu Engineering College",
+      "universityRegisterNumber": "",
+      "degree": "B.E. CSE",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.5",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-20T12:37:01.148Z",
+      "updatedAt": "2026-11-20T12:37:01.148Z"
+    }
+  ],
   "assessment_results": [
     {
       "sessionId": "inz_cbt_32122f34-87a6-418e-be5c-fb00dcc29015",
@@ -38,5 +80,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-20T12:34:42.136Z"
+  "lastUpdated": "2026-11-20T12:37:01.278Z"
 }
