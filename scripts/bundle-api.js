@@ -6,11 +6,23 @@ async function bundle() {
   const rootApiDir = path.join(__dirname, '..', 'api');
   const frontendApiDir = path.join(__dirname, '..', 'frontend', 'api');
 
+  // Clean old conflicting files
   for (const dir of [rootApiDir, frontendApiDir]) {
-    if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
+    if (fs.existsSync(dir)) {
+      const files = fs.readdirSync(dir);
+      for (const f of files) {
+        if (f.endsWith('.cjs') || f.includes('[...path]')) {
+          fs.unlinkSync(path.join(dir, f));
+          console.log(`Deleted conflicting file: ${path.join(dir, f)}`);
+        }
+      }
+    } else {
+      fs.mkdirSync(dir, { recursive: true });
+    }
+
+    // Ensure data directory exists with seed json files
     const dataDir = path.join(dir, 'data');
     if (!fs.existsSync(dataDir)) fs.mkdirSync(dataDir, { recursive: true });
-
     const srcData = path.join(__dirname, '..', 'backend', 'data');
     if (fs.existsSync(srcData)) {
       for (const f of fs.readdirSync(srcData)) {
@@ -21,32 +33,29 @@ async function bundle() {
     }
   }
 
-  console.log('Bundling backend serverless API with esbuild...');
+  console.log('Bundling root api/index.js (CommonJS single file)...');
   await esbuild.build({
     entryPoints: [path.join(__dirname, '..', 'backend', 'serverless.js')],
     bundle: true,
     platform: 'node',
     target: 'node18',
     format: 'cjs',
-    outfile: path.join(rootApiDir, 'index.cjs'),
+    outfile: path.join(rootApiDir, 'index.js'),
   });
 
-  // Copy bundle to frontend/api as well
-  fs.copyFileSync(path.join(rootApiDir, 'index.cjs'), path.join(frontendApiDir, 'index.cjs'));
+  console.log('Bundling frontend/api/index.js (ESM single file)...');
+  await esbuild.build({
+    entryPoints: [path.join(__dirname, '..', 'backend', 'serverless.js')],
+    bundle: true,
+    platform: 'node',
+    target: 'node18',
+    format: 'esm',
+    outfile: path.join(frontendApiDir, 'index.js'),
+  });
 
-  // Root api directory (CommonJS based)
-  const rootIndexContent = `const app = require('./index.cjs');\nmodule.exports = app;\n`;
-  fs.writeFileSync(path.join(rootApiDir, 'index.js'), rootIndexContent, 'utf8');
-  fs.writeFileSync(path.join(rootApiDir, '[...path].js'), rootIndexContent, 'utf8');
-
-  // Frontend api directory (ESM based because frontend/package.json has "type": "module")
-  const frontendIndexContent = `import app from './index.cjs';\nexport default app;\n`;
-  fs.writeFileSync(path.join(frontendApiDir, 'index.js'), frontendIndexContent, 'utf8');
-  fs.writeFileSync(path.join(frontendApiDir, '[...path].js'), frontendIndexContent, 'utf8');
-
-  console.log('✓ Successfully generated:');
-  console.log('   - api/index.cjs, api/index.js, api/[...path].js (root)');
-  console.log('   - frontend/api/index.cjs, frontend/api/index.js, frontend/api/[...path].js');
+  console.log('✓ Successfully generated single non-conflicting files:');
+  console.log('   - api/index.js (Root CommonJS)');
+  console.log('   - frontend/api/index.js (Frontend ESM)');
 }
 
 bundle().catch(err => {
