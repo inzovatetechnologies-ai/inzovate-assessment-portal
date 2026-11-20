@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import os from 'os';
 import crypto from 'crypto';
-import { getDb, addCandidateToDb } from './_data/cloudDb.js';
+import { getDb, addCandidateToDb } from '../_data/cloudDb.js';
 
 const TMP_DIR = path.join(os.tmpdir(), 'inzovate-portal-data');
 if (!fs.existsSync(TMP_DIR)) {
