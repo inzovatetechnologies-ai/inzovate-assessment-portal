@@ -1,32 +1,6 @@
 {
   "candidates": [
     {
-      "_id": "cand-wv0js2m",
-      "candidateId": "INZ-CAND-2026-00001",
-      "fullName": "Test candidate",
-      "email": "test_candidate@inzovate.com",
-      "password": "Password123!",
-      "mobileNumber": "+91 98000 00000",
-      "collegeName": "Autonomous Engineering College",
-      "degree": "B.E. Computer Science and Engineering",
-      "branch": "Computer Science",
-      "yearOfPassing": "2026",
-      "graduationYear": "2026",
-      "cgpa": "8.5",
-      "standingArrears": "0",
-      "arrearStatus": "No History",
-      "driveId": "INZ-DRIVE-2026-01",
-      "domainId": "dom-01",
-      "domainName": "Software Development",
-      "jobRoleId": "role-soft-dev",
-      "jobRoleTitle": "Software Developer",
-      "recruitmentStage": "Registered",
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
-      "createdAt": "2026-11-20T11:18:02.039Z",
-      "updatedAt": "2026-11-20T11:18:02.039Z"
-    },
-    {
       "_id": "cand-a33c8c25-f9b9-4dfc-9f84-5c98bac4297f",
       "candidateId": "INZ-CAND-2026-00002",
       "fullName": "Kavitha S",
@@ -143,5 +117,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-20T11:19:11.358Z"
+  "lastUpdated": "2026-11-20T11:19:42.152Z"
 }
