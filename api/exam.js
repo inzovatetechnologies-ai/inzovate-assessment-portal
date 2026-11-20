@@ -197,6 +197,9 @@ export default async function handler(req, res) {
 
     const totalScore = aptScore + commScore + techScore;
     const percentage = Math.round((totalScore / 45) * 100);
+    const isPassed = totalScore > 25;
+    const examResult = isPassed ? 'Pass' : 'Fail';
+    const selectionStatus = isPassed ? 'Selected for Next Round' : 'Rejected';
 
     let performanceCategory = 'Needs Improvement';
     if (percentage >= 80) performanceCategory = 'Mastery (Outstanding)';
@@ -219,6 +222,10 @@ export default async function handler(req, res) {
       totalQuestionsAttempted: totalAttempted,
       unattempted: Math.max(0, 45 - totalAttempted),
       percentage,
+      isPassed,
+      examResult,
+      selectionStatus,
+      passCutoff: '> 25',
       performanceCategory,
       status: 'Completed',
       certificateId,

@@ -2,6 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import os from 'os';
 import nodemailer from 'nodemailer';
+import { getDb, mutateDb } from '../_data/cloudDb.js';
 
 const TMP_DIR = path.join(os.tmpdir(), 'inzovate-portal-data');
 if (!fs.existsSync(TMP_DIR)) {
@@ -246,7 +247,20 @@ export default async function handler(req, res) {
         return res.end(JSON.stringify({ success: false, message: 'Security error: Email OTP must be verified before setting a new password.' }));
       }
 
-      // Update password in candidates.json
+      // Update password in CloudDB permanently
+      await mutateDb((db) => {
+        if (!db.candidates) db.candidates = [];
+        const cand = db.candidates.find(c =>
+          (c.email && c.email.toLowerCase() === targetKey.toLowerCase()) ||
+          (c.candidateId && c.candidateId.toLowerCase() === targetKey.toLowerCase())
+        );
+        if (cand) {
+          cand.password = newPassword;
+        }
+        return db;
+      });
+
+      // Update password in local candidates.json
       const candidates = getCandidates();
       let cand = candidates.find(c =>
         (c.email && c.email.toLowerCase() === targetKey.toLowerCase()) ||
@@ -340,11 +354,21 @@ export default async function handler(req, res) {
     }
 
     const cleanIdent = identifier.toLowerCase();
-    const candidates = getCandidates();
-    let candidate = candidates.find(c =>
-      (c.email && c.email.toLowerCase() === cleanIdent) ||
-      (c.candidateId && c.candidateId.toLowerCase() === cleanIdent)
+    const db = await getDb(true);
+    let candidate = (db.candidates || []).find(c =>
+      c.status !== 'deleted' && (
+        (c.email && c.email.toLowerCase() === cleanIdent) ||
+        (c.candidateId && c.candidateId.toLowerCase() === cleanIdent)
+      )
     );
+
+    if (!candidate) {
+      const candidates = getCandidates();
+      candidate = candidates.find(c =>
+        (c.email && c.email.toLowerCase() === cleanIdent) ||
+        (c.candidateId && c.candidateId.toLowerCase() === cleanIdent)
+      );
+    }
 
     if (!candidate) {
       const users = getUsers();

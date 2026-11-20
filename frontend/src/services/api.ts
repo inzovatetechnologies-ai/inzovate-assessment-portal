@@ -347,12 +347,31 @@ export const api = {
   },
 
   async updateCandidateStage(id: string, stage: string, notes?: string) {
-    const res = await fetch(`${API_BASE}/candidates/${id}/stage`, {
-      method: 'PATCH',
-      headers: getHeaders(),
-      body: JSON.stringify({ stage, notes }),
-    });
-    return handleResponse(res);
+    let res: any;
+    try {
+      const response = await fetch(`${API_BASE}/candidates?id=${encodeURIComponent(id)}&action=update_stage`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', ...getHeaders() },
+        body: JSON.stringify({ id, candidateId: id, stage, notes, action: 'update_stage' }),
+      });
+      res = await handleResponse(response);
+    } catch (e: any) {
+      res = { success: false, message: e.message };
+    }
+
+    try {
+      const stored = JSON.parse(localStorage.getItem('inzovate_registered_candidates') || '[]');
+      const clean = id.toLowerCase();
+      const updated = stored.map((c: any) => {
+        if (c.candidateId?.toLowerCase() === clean || c._id?.toLowerCase() === clean || c.email?.toLowerCase() === clean) {
+          return { ...c, recruitmentStage: stage };
+        }
+        return c;
+      });
+      localStorage.setItem('inzovate_registered_candidates', JSON.stringify(updated));
+    } catch (e) {}
+
+    return res;
   },
 
   // Assessment Engine

@@ -340,7 +340,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
               </div>
               <div className="flex justify-between py-2">
                 <span className="text-slate-400">Shortlisting Threshold</span>
-                <span className="font-bold text-amber-400">60% (27 Marks)</span>
+                <span className="font-bold text-amber-400">&gt; 25 Marks (Score 26+ to Pass)</span>
               </div>
             </div>
           </div>

@@ -112,6 +112,31 @@ export default async function handler(req, res) {
         }));
       }
 
+      if (action === 'update_stage' || (payload.stage && targetId)) {
+        const stage = payload.stage;
+        const updatedDb = await mutateDb((current) => {
+          if (!current.candidates) current.candidates = [];
+          const idx = current.candidates.findIndex(c =>
+            (c.candidateId && c.candidateId.toLowerCase() === cleanTarget) ||
+            (c._id && c._id.toLowerCase() === cleanTarget) ||
+            (c.email && c.email.toLowerCase() === cleanTarget)
+          );
+          if (idx >= 0) {
+            current.candidates[idx].recruitmentStage = stage;
+            current.candidates[idx].updatedAt = new Date().toISOString();
+          }
+          return current;
+        });
+
+        res.statusCode = 200;
+        res.setHeader('Content-Type', 'application/json');
+        return res.end(JSON.stringify({
+          success: true,
+          message: `Candidate ${targetId} stage updated to ${stage}`,
+          candidates: updatedDb.candidates
+        }));
+      }
+
       if (action === 'permanent_delete') {
         const updatedDb = await mutateDb((current) => {
           if (!current.candidates) current.candidates = [];

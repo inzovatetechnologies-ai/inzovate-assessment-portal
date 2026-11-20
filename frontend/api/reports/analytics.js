@@ -18,7 +18,7 @@ export default async function handler(req, res) {
 
     const totalRegistered = candidates.length;
     const completedAssessments = candidates.filter(c => c.assessmentStatus === 'Completed' || c.totalScore !== undefined).length;
-    const shortlistedCount = candidates.filter(c => (c.totalScore || 0) >= 27).length;
+    const shortlistedCount = candidates.filter(c => (c.totalScore || 0) > 25).length;
     const underReviewCount = completedAssessments - shortlistedCount;
     const pendingAssessmentCount = totalRegistered - completedAssessments;
 
@@ -64,7 +64,7 @@ export default async function handler(req, res) {
       funnel: [
         { stage: '1. Registered', count: totalRegistered },
         { stage: '2. Assessment Taken', count: completedAssessments },
-        { stage: '3. Shortlisted', count: shortlistedCount },
+        { stage: '3. Selected for Next Round (>25)', count: shortlistedCount },
         { stage: '4. Interview Scheduled', count: Math.ceil(shortlistedCount * 0.5) },
         { stage: '5. Final Selected', count: Math.ceil(shortlistedCount * 0.25) }
       ]

@@ -9,6 +9,10 @@
       "destination": "/api/job-roles?type=domains"
     },
     {
+      "source": "/api/candidates/:id/stage",
+      "destination": "/api/candidates?id=:id&action=update_stage"
+    },
+    {
       "source": "/api/candidates/:id",
       "destination": "/api/candidates?id=:id"
     },

@@ -139,7 +139,11 @@ export async function addCandidateToDb(candidate) {
 export async function saveExamResultToDb(candidateId, result) {
   return mutateDb((db) => {
     if (!db.assessment_results) db.assessment_results = [];
-    const resIdx = db.assessment_results.findIndex(r => r.candidateId === candidateId);
+    const cleanId = String(candidateId || '').toLowerCase();
+    const resIdx = db.assessment_results.findIndex(r =>
+      (r.candidateId && r.candidateId.toLowerCase() === cleanId) ||
+      (r.candidateDisplayId && r.candidateDisplayId.toLowerCase() === cleanId)
+    );
     if (resIdx >= 0) {
       db.assessment_results[resIdx] = { ...db.assessment_results[resIdx], ...result };
     } else {
@@ -147,14 +151,23 @@ export async function saveExamResultToDb(candidateId, result) {
     }
 
     if (!db.candidates) db.candidates = [];
-    const candIdx = db.candidates.findIndex(c => c.candidateId === candidateId);
+    const candIdx = db.candidates.findIndex(c =>
+      (c.candidateId && c.candidateId.toLowerCase() === cleanId) ||
+      (c._id && c._id.toLowerCase() === cleanId) ||
+      (c.email && c.email.toLowerCase() === cleanId)
+    );
     if (candIdx >= 0) {
+      const isPassed = result.totalScore > 25;
+      const stage = isPassed ? 'Selected for Next Round' : 'Rejected';
       db.candidates[candIdx] = {
         ...db.candidates[candIdx],
         assessmentStatus: 'Completed',
         assessmentResult: result,
         totalScore: result.totalScore,
         percentage: result.percentage,
+        isPassed,
+        examResult: isPassed ? 'Pass' : 'Fail',
+        recruitmentStage: stage,
         certificateId: result.certificateId,
         testAttempts: 1,
         completedAt: result.completedAt || new Date().toISOString()

@@ -40,6 +40,7 @@ import {
 export const AdminDashboard: React.FC = () => {
   const [activeTab, setActiveTab] = useState<'scores' | 'registered' | 'drives' | 'audit'>('scores');
   const [candidateProfileView, setCandidateProfileView] = useState<'active' | 'deleted'>('active');
+  const [selectionDecisionFilter, setSelectionDecisionFilter] = useState<'all' | 'selected_next_round' | 'rejected' | 'final_selected'>('all');
 
   const [metrics, setMetrics] = useState<any>({
     totalRegistered: 0,
@@ -296,9 +297,35 @@ export const AdminDashboard: React.FC = () => {
     }
   });
 
+  // Filtered by Selection Decision: Selected for Next Round (>25), Rejected (<=25), Final Selected
+  const displayedAttendedCandidates = sortedAttendedCandidates.filter((c: any) => {
+    if (selectionDecisionFilter === 'all') return true;
+    const r = c.assessmentResult;
+    const total = r?.totalScore !== undefined ? r.totalScore : c.totalScore ?? 0;
+    const isPassed = total > 25;
+    const isFinalSelected = c.recruitmentStage === 'Selected' || c.selectionStatus === 'Selected';
+    if (selectionDecisionFilter === 'final_selected') return isFinalSelected;
+    if (selectionDecisionFilter === 'selected_next_round') return (isPassed || c.recruitmentStage === 'Selected for Next Round') && !isFinalSelected;
+    if (selectionDecisionFilter === 'rejected') return (!isPassed || c.recruitmentStage === 'Rejected') && !isFinalSelected;
+    return true;
+  });
+
+  const nextRoundCount = sortedAttendedCandidates.filter((c: any) => {
+    const total = c.assessmentResult?.totalScore ?? c.totalScore ?? 0;
+    return (total > 25 || c.recruitmentStage === 'Selected for Next Round') && c.recruitmentStage !== 'Selected';
+  }).length;
+  const rejectedCount = sortedAttendedCandidates.filter((c: any) => {
+    const total = c.assessmentResult?.totalScore ?? c.totalScore ?? 0;
+    return total <= 25 && c.recruitmentStage !== 'Selected';
+  }).length;
+  const finalSelectedCount = sortedAttendedCandidates.filter((c: any) => {
+    return c.recruitmentStage === 'Selected' || c.selectionStatus === 'Selected';
+  }).length;
+
   // Export Mark List as Excel (.CSV)
   const exportToExcel = () => {
-    if (sortedAttendedCandidates.length === 0) {
+    const exportList = displayedAttendedCandidates;
+    if (exportList.length === 0) {
       alert('No candidate records available to export.');
       return;
     }
@@ -321,20 +348,31 @@ export const AdminDashboard: React.FC = () => {
       'Total Score (/45)',
       'Percentage (%)',
       'Exam Status',
-      'Cutoff Qualified (>=60%)',
+      'Pass Cutoff Criteria (> 25 Marks)',
+      'Exam Result (PASS / FAIL)',
+      'Selection Decision',
       'Recruitment Stage',
     ];
 
-    const rows = sortedAttendedCandidates.map((c: any, idx: number) => {
+    const rows = exportList.map((c: any, idx: number) => {
       const r = c.assessmentResult;
       const total = r?.totalScore !== undefined ? r.totalScore : c.totalScore ?? 0;
       const pct = r?.percentage !== undefined ? r.percentage : c.percentage ?? 0;
       const sec1 = r?.sectionScores?.['section-1']?.score ?? 0;
       const sec2 = r?.sectionScores?.['section-2']?.score ?? 0;
       const sec3 = r?.sectionScores?.['section-3']?.score ?? 0;
-      const isPassed = total >= 27;
-      const attempted = r?.totalAttempted ?? 0;
+      const isPassed = total > 25;
+      const attempted = r?.totalAttempted ?? (total > 0 ? total : 0);
       const unattempted = r?.unattempted ?? Math.max(0, 45 - attempted);
+
+      let selectionDecision = isPassed ? 'Selected for Next Round' : 'Rejected';
+      if (c.recruitmentStage === 'Selected' || c.selectionStatus === 'Selected') {
+        selectionDecision = 'Final Selected';
+      } else if (c.recruitmentStage === 'Selected for Next Round') {
+        selectionDecision = 'Selected for Next Round';
+      } else if (c.recruitmentStage === 'Rejected') {
+        selectionDecision = 'Rejected';
+      }
 
       return [
         idx + 1,
@@ -354,8 +392,10 @@ export const AdminDashboard: React.FC = () => {
         total,
         `"${pct}%"`,
         `"${c.assessmentStatus || 'Completed'}"`,
-        isPassed ? 'YES (Shortlisted)' : 'NO (Under Review)',
-        `"${c.recruitmentStage || ''}"`,
+        `"Score > 25 (26+ to Pass)"`,
+        isPassed ? 'PASS' : 'FAIL',
+        `"${selectionDecision}"`,
+        `"${c.recruitmentStage || selectionDecision}"`,
       ].join(',');
     });
 
@@ -364,9 +404,10 @@ export const AdminDashboard: React.FC = () => {
     const link = document.createElement('a');
     link.setAttribute('href', encodedUri);
     const collegeTag = collegeFilter ? collegeFilter.replace(/[^a-zA-Z0-9]/g, '_') : 'All_Colleges';
+    const filterTag = selectionDecisionFilter !== 'all' ? `_${selectionDecisionFilter}` : '';
     link.setAttribute(
       'download',
-      `Inzovate_Assessment_MarkList_${collegeTag}_${new Date().toISOString().slice(0, 10)}.csv`
+      `Inzovate_Assessment_MarkList_${collegeTag}${filterTag}_${new Date().toISOString().slice(0, 10)}.csv`
     );
     document.body.appendChild(link);
     link.click();
@@ -375,7 +416,8 @@ export const AdminDashboard: React.FC = () => {
 
   // Export Mark List as Printable PDF Report
   const exportToPDF = () => {
-    if (sortedAttendedCandidates.length === 0) {
+    const exportList = displayedAttendedCandidates;
+    if (exportList.length === 0) {
       alert('No candidate records available to print or export.');
       return;
     }
@@ -388,12 +430,16 @@ export const AdminDashboard: React.FC = () => {
 
     const targetCollege = collegeFilter || 'All Affiliated Colleges & Institutions';
     const dateStr = new Date().toLocaleDateString('en-US', { day: 'numeric', month: 'long', year: 'numeric' });
-    const passedCount = sortedAttendedCandidates.filter((c: any) => {
+    const passedCount = exportList.filter((c: any) => {
       const tot = c.assessmentResult?.totalScore ?? c.totalScore ?? 0;
-      return tot >= 27;
+      return tot > 25;
+    }).length;
+    const rejectedCnt = exportList.filter((c: any) => {
+      const tot = c.assessmentResult?.totalScore ?? c.totalScore ?? 0;
+      return tot <= 25 && c.recruitmentStage !== 'Selected';
     }).length;
 
-    const rowsHtml = sortedAttendedCandidates
+    const rowsHtml = exportList
       .map((c: any, idx: number) => {
         const r = c.assessmentResult;
         const total = r?.totalScore !== undefined ? r.totalScore : c.totalScore ?? 0;
@@ -401,7 +447,25 @@ export const AdminDashboard: React.FC = () => {
         const sec1 = r?.sectionScores?.['section-1']?.score ?? '-';
         const sec2 = r?.sectionScores?.['section-2']?.score ?? '-';
         const sec3 = r?.sectionScores?.['section-3']?.score ?? '-';
-        const isPassed = total >= 27;
+        const isPassed = total > 25;
+        const isFinalSelected = c.recruitmentStage === 'Selected' || c.selectionStatus === 'Selected';
+
+        let badgeBg = '#DCFCE7';
+        let badgeColor = '#166534';
+        let badgeBorder = '#BBF7D0';
+        let decisionText = 'SELECTED FOR NEXT ROUND';
+
+        if (isFinalSelected) {
+          badgeBg = '#EFF6FF';
+          badgeColor = '#1D4ED8';
+          badgeBorder = '#BFDBFE';
+          decisionText = 'FINAL SELECTED';
+        } else if (!isPassed) {
+          badgeBg = '#FFE4E6';
+          badgeColor = '#9F1239';
+          badgeBorder = '#FECDD3';
+          decisionText = 'REJECTED';
+        }
 
         return `
           <tr style="border-bottom: 1px solid #E2E8F0; ${idx % 2 === 1 ? 'background-color: #F8FAFC;' : ''}">
@@ -413,23 +477,19 @@ export const AdminDashboard: React.FC = () => {
             </td>
             <td style="padding: 10px; font-size: 11px; color: #334155;">${c.collegeName}</td>
             <td style="padding: 10px; font-size: 11px; color: #334155;">${c.jobRoleTitle}</td>
-            <td style="padding: 10px; text-align: center; font-family: monospace; font-weight: bold; color: #0284C7;">${r?.totalAttempted ?? (c.assessmentResult?.totalAttempted ?? 0)}</td>
+            <td style="padding: 10px; text-align: center; font-family: monospace; font-weight: bold; color: #0284C7;">${r?.totalAttempted ?? (c.assessmentResult?.totalAttempted ?? (total ? total : 0))}</td>
             <td style="padding: 10px; text-align: center; font-family: monospace;">${sec1}</td>
             <td style="padding: 10px; text-align: center; font-family: monospace;">${sec2}</td>
             <td style="padding: 10px; text-align: center; font-family: monospace;">${sec3}</td>
             <td style="padding: 10px; text-align: center; font-weight: 800; font-size: 14px; color: ${
-              isPassed ? '#16A34A' : '#1E293B'
+              isPassed ? '#16A34A' : '#E11D48'
             }; background: #EFF6FF;">
               ${total} / 45
             </td>
             <td style="padding: 10px; text-align: center; font-weight: bold; color: #0284C7;">${pct}%</td>
             <td style="padding: 10px; text-align: center;">
-              <span style="display: inline-block; padding: 4px 8px; border-radius: 6px; font-size: 10px; font-weight: bold; ${
-                isPassed
-                  ? 'background: #DCFCE7; color: #166534; border: 1px solid #BBF7D0;'
-                  : 'background: #FEF3C7; color: #92400E; border: 1px solid #FDE68A;'
-              }">
-                ${isPassed ? 'SHORTLISTED' : 'UNDER REVIEW'}
+              <span style="display: inline-block; padding: 4px 8px; border-radius: 6px; font-size: 10px; font-weight: bold; background: ${badgeBg}; color: ${badgeColor}; border: 1px solid ${badgeBorder};">
+                ${decisionText}
               </span>
             </td>
           </tr>
@@ -448,7 +508,7 @@ export const AdminDashboard: React.FC = () => {
           .header { border-bottom: 2px solid #0A1128; padding-bottom: 12px; margin-bottom: 16px; display: flex; justify-content: space-between; align-items: flex-end; }
           .title { font-size: 20px; font-weight: 900; color: #0A1128; letter-spacing: 0.5px; }
           .subtitle { font-size: 12px; color: #0284C7; font-weight: 700; text-transform: uppercase; margin-top: 3px; }
-          .meta-box { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 12px; margin-bottom: 16px; font-size: 11px; }
+          .meta-box { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 12px; margin-bottom: 16px; font-size: 11px; }
           .meta-item strong { display: block; color: #64748B; font-size: 10px; text-transform: uppercase; }
           .meta-item span { font-weight: bold; color: #0F172A; font-size: 13px; }
           table { width: 100%; border-collapse: collapse; font-size: 11px; }
@@ -479,24 +539,26 @@ export const AdminDashboard: React.FC = () => {
 
         <div class="meta-box">
           <div class="meta-item">
-            <strong>Target College / Institution</strong>
+            <strong>Target College</strong>
             <span>${targetCollege}</span>
           </div>
           <div class="meta-item">
             <strong>Candidates Evaluated</strong>
-            <span>${sortedAttendedCandidates.length} Students</span>
+            <span>${exportList.length} Students</span>
           </div>
           <div class="meta-item">
-            <strong>Cutoff Passed (&ge;60%)</strong>
+            <strong>Pass Cutoff Rule</strong>
+            <span style="color: #0284C7;">Score &gt; 25 / 45 (26+ Pass)</span>
+          </div>
+          <div class="meta-item">
+            <strong>Selected for Next Round (&gt;25)</strong>
             <span style="color: #16A34A;">${passedCount} Shortlisted (${Math.round(
-      (passedCount / (sortedAttendedCandidates.length || 1)) * 100
+      (passedCount / (exportList.length || 1)) * 100
     )}%)</span>
           </div>
           <div class="meta-item">
-            <strong>Ranking Criterion</strong>
-            <span>${
-              sortOrder === 'score_desc' ? 'Highest Score First (Top to Low)' : 'Lowest Score First (Low to Top)'
-            }</span>
+            <strong>Rejected (&le;25)</strong>
+            <span style="color: #E11D48;">${rejectedCnt} Not Qualified</span>
           </div>
         </div>
 
@@ -514,7 +576,7 @@ export const AdminDashboard: React.FC = () => {
               <th style="text-align: center;">Tech (/15)</th>
               <th style="text-align: center;">Total (/45)</th>
               <th style="text-align: center;">%</th>
-              <th style="text-align: center;">Status</th>
+              <th style="text-align: center;">Selection Decision</th>
             </tr>
           </thead>
           <tbody>
@@ -817,6 +879,7 @@ export const AdminDashboard: React.FC = () => {
                 <option value="Assessment Pending">Assessment Pending</option>
                 <option value="Under Review">Under Review</option>
                 <option value="Shortlisted">Shortlisted</option>
+                <option value="Selected for Next Round">Selected for Next Round (&gt;25)</option>
                 <option value="Interview Scheduled">Interview Scheduled</option>
                 <option value="Selected">Selected</option>
                 <option value="Rejected">Rejected</option>
@@ -959,56 +1022,103 @@ export const AdminDashboard: React.FC = () => {
       {/* ======================================================== */}
       {activeTab === 'scores' && (
         <div className="bg-white rounded-3xl border border-slate-200 shadow-sm overflow-hidden">
-          <div className="p-6 border-b border-slate-200 flex flex-col md:flex-row md:items-center justify-between gap-4">
-            <div>
-              <div className="flex items-center space-x-2">
-                <h3 className="text-base font-bold text-[#0A1128]">
-                  Assessment Examination Scores & Merit Rankings
-                </h3>
-                <span className="text-xs px-2.5 py-0.5 rounded-full bg-blue-50 text-blue-700 font-mono font-bold">
-                  {sortedAttendedCandidates.length} Candidates Evaluated
-                </span>
+          <div className="p-6 border-b border-slate-200 flex flex-col gap-4">
+            <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
+              <div>
+                <div className="flex items-center space-x-2">
+                  <h3 className="text-base font-bold text-[#0A1128]">
+                    Assessment Examination Scores & Merit Rankings
+                  </h3>
+                  <span className="text-xs px-2.5 py-0.5 rounded-full bg-blue-50 text-blue-700 font-mono font-bold">
+                    {displayedAttendedCandidates.length} of {sortedAttendedCandidates.length} Displayed
+                  </span>
+                </div>
+                <p className="text-xs text-slate-500 mt-0.5">
+                  Exact candidate marks (Aptitude /15, Communication /15, Technical /15, Total /45). Pass cutoff: &gt; 25 / 45 Marks (Score 26 and above qualifies for Next Round).
+                </p>
               </div>
-              <p className="text-xs text-slate-500 mt-0.5">
-                Exact candidate marks (Aptitude /15, Communication /15, Technical /15, Total /45). Pass cutoff: &ge; 27 / 45 (60%).
-              </p>
+
+              {/* Sort Controls & Export Buttons */}
+              <div className="flex flex-wrap items-center gap-2">
+                {/* Sort Order Selector */}
+                <div className="flex items-center space-x-1.5 bg-slate-50 border border-slate-200 px-3 py-1.5 rounded-xl text-xs font-semibold text-slate-700 shadow-sm">
+                  <ArrowUpDown className="w-3.5 h-3.5 text-blue-600" />
+                  <span>Sort:</span>
+                  <select
+                    value={sortOrder}
+                    onChange={(e) => setSortOrder(e.target.value as any)}
+                    className="bg-transparent border-none text-xs font-bold text-blue-700 focus:outline-none cursor-pointer"
+                  >
+                    <option value="score_desc">Top Mark to Low Mark (Rank 1 First ↓)</option>
+                    <option value="score_asc">Low Mark to Top Mark (Ascending ↑)</option>
+                    <option value="name_asc">Candidate Name (A-Z)</option>
+                  </select>
+                </div>
+
+                {/* Download Excel Button */}
+                <button
+                  onClick={exportToExcel}
+                  className="flex items-center space-x-1.5 px-3.5 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold shadow-md shadow-emerald-600/20 transition-all cursor-pointer"
+                  title="Download Candidate Mark List as Excel (.CSV)"
+                >
+                  <FileSpreadsheet className="w-4 h-4" />
+                  <span>Export Excel</span>
+                </button>
+
+                {/* Download PDF Button */}
+                <button
+                  onClick={exportToPDF}
+                  className="flex items-center space-x-1.5 px-3.5 py-2 rounded-xl bg-[#0A1128] hover:bg-[#101F42] text-white text-xs font-bold shadow-md transition-all cursor-pointer"
+                  title="Download Candidate Mark List as Printable PDF"
+                >
+                  <Printer className="w-4 h-4 text-sky-400" />
+                  <span>Download PDF</span>
+                </button>
+              </div>
             </div>
 
-            {/* Sort Controls & Export Buttons */}
-            <div className="flex flex-wrap items-center gap-2">
-              {/* Sort Order Selector */}
-              <div className="flex items-center space-x-1.5 bg-slate-50 border border-slate-200 px-3 py-1.5 rounded-xl text-xs font-semibold text-slate-700 shadow-sm">
-                <ArrowUpDown className="w-3.5 h-3.5 text-blue-600" />
-                <span>Sort:</span>
-                <select
-                  value={sortOrder}
-                  onChange={(e) => setSortOrder(e.target.value as any)}
-                  className="bg-transparent border-none text-xs font-bold text-blue-700 focus:outline-none cursor-pointer"
-                >
-                  <option value="score_desc">Top Mark to Low Mark (Rank 1 First ↓)</option>
-                  <option value="score_asc">Low Mark to Top Mark (Ascending ↑)</option>
-                  <option value="name_asc">Candidate Name (A-Z)</option>
-                </select>
-              </div>
-
-              {/* Download Excel Button */}
+            {/* Selection Decision Quick Filter Pills */}
+            <div className="flex flex-wrap items-center gap-2 pt-2 border-t border-slate-100">
+              <span className="text-[11px] font-bold text-slate-500 uppercase tracking-wider">Selection Decision:</span>
               <button
-                onClick={exportToExcel}
-                className="flex items-center space-x-1.5 px-3.5 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold shadow-md shadow-emerald-600/20 transition-all cursor-pointer"
-                title="Download Candidate Mark List as Excel (.CSV)"
+                onClick={() => setSelectionDecisionFilter('all')}
+                className={`px-3 py-1 rounded-full text-xs font-bold transition-all ${
+                  selectionDecisionFilter === 'all'
+                    ? 'bg-[#0A1128] text-white shadow-sm'
+                    : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
+                }`}
               >
-                <FileSpreadsheet className="w-4 h-4" />
-                <span>Export Excel</span>
+                All Attended ({sortedAttendedCandidates.length})
               </button>
-
-              {/* Download PDF Button */}
               <button
-                onClick={exportToPDF}
-                className="flex items-center space-x-1.5 px-3.5 py-2 rounded-xl bg-[#0A1128] hover:bg-[#101F42] text-white text-xs font-bold shadow-md transition-all cursor-pointer"
-                title="Download Candidate Mark List as Printable PDF"
+                onClick={() => setSelectionDecisionFilter('selected_next_round')}
+                className={`px-3 py-1 rounded-full text-xs font-bold transition-all ${
+                  selectionDecisionFilter === 'selected_next_round'
+                    ? 'bg-emerald-600 text-white shadow-sm'
+                    : 'bg-emerald-50 text-emerald-700 hover:bg-emerald-100 border border-emerald-200'
+                }`}
               >
-                <Printer className="w-4 h-4 text-sky-400" />
-                <span>Download PDF</span>
+                ✓ Selected for Next Round ({nextRoundCount})
+              </button>
+              <button
+                onClick={() => setSelectionDecisionFilter('rejected')}
+                className={`px-3 py-1 rounded-full text-xs font-bold transition-all ${
+                  selectionDecisionFilter === 'rejected'
+                    ? 'bg-rose-600 text-white shadow-sm'
+                    : 'bg-rose-50 text-rose-700 hover:bg-rose-100 border border-rose-200'
+                }`}
+              >
+                ✕ Rejected ({rejectedCount})
+              </button>
+              <button
+                onClick={() => setSelectionDecisionFilter('final_selected')}
+                className={`px-3 py-1 rounded-full text-xs font-bold transition-all ${
+                  selectionDecisionFilter === 'final_selected'
+                    ? 'bg-blue-600 text-white shadow-sm'
+                    : 'bg-blue-50 text-blue-700 hover:bg-blue-100 border border-blue-200'
+                }`}
+              >
+                ★ Final Selected ({finalSelectedCount})
               </button>
             </div>
           </div>
@@ -1040,19 +1150,19 @@ export const AdminDashboard: React.FC = () => {
                     </div>
                   </th>
                   <th className="py-3 px-3 font-bold text-center">Status</th>
-                  <th className="py-3 px-3 font-bold text-center">Result</th>
+                  <th className="py-3 px-3 font-bold text-center">Selection Decision</th>
                   <th className="py-3 px-4 font-bold text-right">Action</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-slate-100">
-                {sortedAttendedCandidates.length === 0 ? (
+                {displayedAttendedCandidates.length === 0 ? (
                   <tr>
                     <td colSpan={10} className="py-12 text-center text-slate-400">
-                      No candidate assessments found matching the criteria.
+                      No candidate assessments found matching the selection criteria.
                     </td>
                   </tr>
                 ) : (
-                  sortedAttendedCandidates.map((c: any, idx: number) => {
+                  displayedAttendedCandidates.map((c: any, idx: number) => {
                     const r = c.assessmentResult;
                     const total = r?.totalScore !== undefined ? r.totalScore : c.totalScore;
                     const pct = r?.percentage !== undefined ? r.percentage : c.percentage;
@@ -1060,7 +1170,7 @@ export const AdminDashboard: React.FC = () => {
                     const sec2 = r?.sectionScores?.['section-2']?.score ?? '-';
                     const sec3 = r?.sectionScores?.['section-3']?.score ?? '-';
                     const isTerminated = c.assessmentStatus === 'Terminated' || r?.status === 'Terminated';
-                    const isPassed = total !== null && total !== undefined && total >= 27;
+                    const isPassed = total !== null && total !== undefined && total > 25;
 
                     return (
                       <tr key={c._id} className="hover:bg-slate-50/80 transition-colors">
@@ -1123,7 +1233,7 @@ export const AdminDashboard: React.FC = () => {
                             <div>
                               <span
                                 className={`text-base font-black font-mono ${
-                                  isPassed ? 'text-emerald-600' : 'text-slate-800'
+                                  isPassed ? 'text-emerald-600' : 'text-rose-600'
                                 }`}
                               >
                                 {total}
@@ -1132,6 +1242,11 @@ export const AdminDashboard: React.FC = () => {
                               <div className="text-[10px] font-semibold text-blue-700 font-mono">({pct}%)</div>
                               <div className="text-[9px] text-slate-500 font-semibold mt-0.5">
                                 Attempted: {r?.totalAttempted ?? (c.assessmentResult?.totalAttempted ?? (total ? total : 0))} / 45
+                              </div>
+                              <div className={`text-[9px] font-black uppercase tracking-wider mt-0.5 ${
+                                isPassed ? 'text-emerald-700' : 'text-rose-600'
+                              }`}>
+                                {isPassed ? '✓ PASS (>25)' : '✕ FAIL (≤25)'}
                               </div>
                             </div>
                           ) : (
@@ -1158,13 +1273,35 @@ export const AdminDashboard: React.FC = () => {
                         </td>
 
                         <td className="py-3.5 px-3 text-center">
-                          {c.performanceCategory || r?.performanceCategory ? (
-                            <span className="px-2 py-0.5 rounded text-[10px] font-bold bg-slate-100 text-slate-700 border border-slate-200">
-                              {c.performanceCategory || r?.performanceCategory}
+                          {c.recruitmentStage === 'Selected' || c.selectionStatus === 'Selected' ? (
+                            <span className="inline-block px-2.5 py-1 rounded-full text-[10px] font-black bg-blue-100 text-blue-800 border border-blue-200 shadow-sm">
+                              ★ Final Selected
+                            </span>
+                          ) : isPassed ? (
+                            <span className="inline-block px-2.5 py-1 rounded-full text-[10px] font-black bg-emerald-100 text-emerald-800 border border-emerald-200 shadow-sm">
+                              ✓ Selected for Next Round
                             </span>
                           ) : (
-                            <span className="text-slate-400">-</span>
+                            <span className="inline-block px-2.5 py-1 rounded-full text-[10px] font-black bg-rose-100 text-rose-800 border border-rose-200 shadow-sm">
+                              ✕ Rejected
+                            </span>
                           )}
+                          <div className="mt-1">
+                            <select
+                              value={c.recruitmentStage || (isPassed ? 'Selected for Next Round' : 'Rejected')}
+                              onChange={(e) => {
+                                api.updateCandidateStage(c._id, e.target.value).then(() => loadAllAdminData());
+                              }}
+                              className="px-1.5 py-0.5 rounded text-[10px] border border-slate-300 bg-white font-medium text-slate-700 hover:border-blue-400 focus:outline-none"
+                              title="Update Candidate Stage"
+                            >
+                              <option value="Selected for Next Round">Selected for Next Round</option>
+                              <option value="Selected">Final Selected</option>
+                              <option value="Interview Scheduled">Interview Scheduled</option>
+                              <option value="Under Review">Under Review</option>
+                              <option value="Rejected">Rejected</option>
+                            </select>
+                          </div>
                         </td>
 
                         <td className="py-3.5 px-4 text-right">
@@ -1354,6 +1491,7 @@ export const AdminDashboard: React.FC = () => {
                             <option value="Assessment Pending">Assessment Pending</option>
                             <option value="Under Review">Under Review</option>
                             <option value="Shortlisted">Shortlisted</option>
+                            <option value="Selected for Next Round">Selected for Next Round</option>
                             <option value="Interview Scheduled">Interview Scheduled</option>
                             <option value="Selected">Selected</option>
                             <option value="Rejected">Rejected</option>
@@ -1616,12 +1754,14 @@ export const AdminDashboard: React.FC = () => {
                 className={`px-3 py-1 rounded-full text-xs font-bold ${
                   selectedCandidate.assessmentStatus === 'Terminated'
                     ? 'bg-rose-100 text-rose-700'
-                    : selectedCandidate.totalScore >= 27
+                    : selectedCandidate.recruitmentStage === 'Selected'
+                    ? 'bg-blue-100 text-blue-700'
+                    : (selectedCandidate.totalScore > 25 || selectedCandidate.recruitmentStage === 'Selected for Next Round')
                     ? 'bg-emerald-100 text-emerald-700'
-                    : 'bg-amber-100 text-amber-800'
+                    : 'bg-rose-100 text-rose-700'
                 }`}
               >
-                {selectedCandidate.assessmentStatus || selectedCandidate.recruitmentStage}
+                {selectedCandidate.recruitmentStage || (selectedCandidate.totalScore > 25 ? 'Selected for Next Round' : 'Rejected')}
               </span>
             </div>
 
