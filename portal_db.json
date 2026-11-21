@@ -37,11 +37,11 @@
       "status": "deleted",
       "deletedAt": "2026-11-20T17:19:09.383Z",
       "assessmentStatus": "Completed",
-      "testAttempts": 2,
+      "testAttempts": 3,
       "createdAt": "2026-11-20T13:15:22.744Z",
       "updatedAt": "2026-11-20T14:11:55.596Z",
       "assessmentResult": {
-        "sessionId": "session-1795263099367",
+        "sessionId": "session-1795263100861",
         "candidateId": "INZ-CAND-2026-00001",
         "candidateDisplayId": "INZ-CAND-2026-00001",
         "candidateName": "Candidate",
@@ -60,7 +60,7 @@
         "passCutoff": "> 25",
         "performanceCategory": "Needs Improvement",
         "status": "Completed",
-        "certificateId": "INZ-CERT-2026-BDB576",
+        "certificateId": "INZ-CERT-2026-6506C9",
         "sectionScores": {
           "section-1": {
             "score": 0,
@@ -78,12 +78,12 @@
             "percentage": 0
           }
         },
-        "completedAt": "2026-11-21T12:11:39.367Z"
+        "completedAt": "2026-11-21T12:11:40.861Z"
       },
       "totalScore": 0,
       "percentage": 0,
-      "certificateId": "INZ-CERT-2026-BDB576",
-      "completedAt": "2026-11-21T12:11:39.367Z",
+      "certificateId": "INZ-CERT-2026-6506C9",
+      "completedAt": "2026-11-21T12:11:40.861Z",
       "isPassed": false,
       "examResult": "Fail"
     },
@@ -1656,7 +1656,7 @@
   ],
   "assessment_results": [
     {
-      "sessionId": "session-1795263099367",
+      "sessionId": "session-1795263100861",
       "candidateId": "INZ-CAND-2026-00001",
       "candidateDisplayId": "INZ-CAND-2026-00001",
       "candidateName": "Candidate",
@@ -1671,7 +1671,7 @@
       "percentage": 0,
       "performanceCategory": "Needs Improvement",
       "status": "Completed",
-      "certificateId": "INZ-CERT-2026-BDB576",
+      "certificateId": "INZ-CERT-2026-6506C9",
       "sectionScores": {
         "section-1": {
           "score": 0,
@@ -1689,7 +1689,7 @@
           "percentage": 0
         }
       },
-      "completedAt": "2026-11-21T12:11:39.367Z",
+      "completedAt": "2026-11-21T12:11:40.861Z",
       "isPassed": false,
       "examResult": "Fail",
       "selectionStatus": "Rejected",
@@ -2457,5 +2457,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-21T12:11:39.484Z"
+  "lastUpdated": "2026-11-21T12:11:41.003Z"
 }
