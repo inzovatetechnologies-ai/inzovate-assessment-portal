@@ -33,40 +33,44 @@
       "jobRoleId": "role-bde",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Deleted / Archived",
+      "recruitmentStage": "Rejected",
       "status": "deleted",
       "deletedAt": "2026-11-20T17:19:09.383Z",
       "assessmentStatus": "Completed",
-      "testAttempts": 1,
+      "testAttempts": 2,
       "createdAt": "2026-11-20T13:15:22.744Z",
       "updatedAt": "2026-11-20T14:11:55.596Z",
       "assessmentResult": {
-        "sessionId": "inz_cbt_b788992d-dd2d-46d7-bdf3-db34040b4a55",
+        "sessionId": "session-1795263099367",
         "candidateId": "INZ-CAND-2026-00001",
         "candidateDisplayId": "INZ-CAND-2026-00001",
-        "candidateName": "INZOVATE TECHNOLOGIES",
-        "jobRoleTitle": "Process Associate",
-        "collegeName": "Coimbatore Institute of Technology (CIT)",
-        "totalScore": 6,
+        "candidateName": "Candidate",
+        "jobRoleTitle": "Software Developer",
+        "collegeName": "Autonomous Engineering College",
+        "totalScore": 0,
         "maxScore": 45,
         "totalQuestions": 45,
-        "totalAttempted": 18,
-        "totalQuestionsAttempted": 18,
-        "unattempted": 27,
-        "percentage": 13,
+        "totalAttempted": 0,
+        "totalQuestionsAttempted": 0,
+        "unattempted": 45,
+        "percentage": 0,
+        "isPassed": false,
+        "examResult": "Fail",
+        "selectionStatus": "Rejected",
+        "passCutoff": "> 25",
         "performanceCategory": "Needs Improvement",
         "status": "Completed",
-        "certificateId": "INZ-CERT-2026-1E62DB",
+        "certificateId": "INZ-CERT-2026-BDB576",
         "sectionScores": {
           "section-1": {
-            "score": 5,
+            "score": 0,
             "total": 15,
-            "percentage": 33
+            "percentage": 0
           },
           "section-2": {
-            "score": 1,
+            "score": 0,
             "total": 15,
-            "percentage": 7
+            "percentage": 0
           },
           "section-3": {
             "score": 0,
@@ -74,12 +78,14 @@
             "percentage": 0
           }
         },
-        "completedAt": "2026-11-20T13:26:51.946Z"
+        "completedAt": "2026-11-21T12:11:39.367Z"
       },
-      "totalScore": 6,
-      "percentage": 13,
-      "certificateId": "INZ-CERT-2026-1E62DB",
-      "completedAt": "2026-11-20T13:26:51.946Z"
+      "totalScore": 0,
+      "percentage": 0,
+      "certificateId": "INZ-CERT-2026-BDB576",
+      "completedAt": "2026-11-21T12:11:39.367Z",
+      "isPassed": false,
+      "examResult": "Fail"
     },
     {
       "_id": "cand-4378e66f-decb-4ddc-9f12-e7d56b22f1c9",
@@ -1650,32 +1656,32 @@
   ],
   "assessment_results": [
     {
-      "sessionId": "inz_cbt_b788992d-dd2d-46d7-bdf3-db34040b4a55",
+      "sessionId": "session-1795263099367",
       "candidateId": "INZ-CAND-2026-00001",
       "candidateDisplayId": "INZ-CAND-2026-00001",
-      "candidateName": "INZOVATE TECHNOLOGIES",
-      "jobRoleTitle": "Process Associate",
-      "collegeName": "Coimbatore Institute of Technology (CIT)",
-      "totalScore": 6,
+      "candidateName": "Candidate",
+      "jobRoleTitle": "Software Developer",
+      "collegeName": "Autonomous Engineering College",
+      "totalScore": 0,
       "maxScore": 45,
       "totalQuestions": 45,
-      "totalAttempted": 18,
-      "totalQuestionsAttempted": 18,
-      "unattempted": 27,
-      "percentage": 13,
+      "totalAttempted": 0,
+      "totalQuestionsAttempted": 0,
+      "unattempted": 45,
+      "percentage": 0,
       "performanceCategory": "Needs Improvement",
       "status": "Completed",
-      "certificateId": "INZ-CERT-2026-1E62DB",
+      "certificateId": "INZ-CERT-2026-BDB576",
       "sectionScores": {
         "section-1": {
-          "score": 5,
+          "score": 0,
           "total": 15,
-          "percentage": 33
+          "percentage": 0
         },
         "section-2": {
-          "score": 1,
+          "score": 0,
           "total": 15,
-          "percentage": 7
+          "percentage": 0
         },
         "section-3": {
           "score": 0,
@@ -1683,7 +1689,11 @@
           "percentage": 0
         }
       },
-      "completedAt": "2026-11-20T13:26:51.946Z"
+      "completedAt": "2026-11-21T12:11:39.367Z",
+      "isPassed": false,
+      "examResult": "Fail",
+      "selectionStatus": "Rejected",
+      "passCutoff": "> 25"
     },
     {
       "sessionId": "session-1795183728927",
@@ -2447,5 +2457,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-20T17:19:09.383Z"
+  "lastUpdated": "2026-11-21T12:11:39.484Z"
 }
