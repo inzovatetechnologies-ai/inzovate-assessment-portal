@@ -42,8 +42,9 @@ export default async function handler(req, res) {
 
   try {
     const payload = await parseBody(req);
+    const mobile = payload.mobileNumber || payload.mobile;
 
-    if (!payload.email || !payload.fullName || !payload.mobileNumber || !payload.jobRoleId) {
+    if (!payload.email || !payload.fullName || !mobile || !payload.jobRoleId) {
       res.statusCode = 400;
       res.setHeader('Content-Type', 'application/json');
       return res.end(JSON.stringify({
@@ -62,7 +63,7 @@ export default async function handler(req, res) {
     }
 
     const cleanEmail = String(payload.email).toLowerCase().trim();
-    const cleanMobile = String(payload.mobileNumber).trim();
+    const cleanMobile = String(mobile).trim();
     const rawDigits = cleanMobile.replace(/\D/g, '');
 
     const db = await getDb(false);

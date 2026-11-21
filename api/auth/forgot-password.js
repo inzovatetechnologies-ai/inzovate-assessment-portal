@@ -396,8 +396,9 @@ export default async function handler(req, res) {
         fullName: defaultName,
         email: cleanIdent
       };
-      candidates.push(candidate);
-      saveCandidates(candidates);
+      const candList = getCandidates();
+      candList.push(candidate);
+      saveCandidates(candList);
     }
 
     if (!candidate) {

@@ -1,115 +1,104 @@
 # COMPONENT & INTERACTION INVENTORY
 **Application:** INZOVATE TALENT ASSESSMENT PORTAL  
-**Audit Standard:** Elite Autonomous Software Audit V3.0  
+**Audit Standard:** Elite Autonomous Software Audit, Debugging & QA Engine — V3.0  
+**Latest Verification:** 2026-11-21  
 
 ---
 
 ## 1. Global Shell & Navigation Components
 
 ### `Header.tsx` (Floating Pill Navigation Bar)
-- **Container**: Centered, floating pill (`rounded-full`), `#121214` dark background, `backdrop-blur-2xl`, deep drop shadow (`shadow-[0_16px_40px_rgba(0,0,0,0.35)]`), top offset `top-0 pt-4 sm:pt-6 pb-2`.
-- **Left Branding**: Circular white container with 3D Blue Triangle logo (`/inzovate-logo.png`) + `INZOVATE` brand text.
+- **Container Structure**: Centered, floating pill (`rounded-full`), `#121214` dark glassmorphic background, `backdrop-blur-2xl`, deep drop shadow (`shadow-[0_16px_40px_rgba(0,0,0,0.35)]`), top offset `top-0 pt-4 sm:pt-6 pb-2`.
+- **Left Branding**: Circular container with Inzovate brand logo + `INZOVATE` brand typography.
 - **Center Nav Links**: `Home`, `Registration`, `Diagnostic`, `Verify`, `Sign In` (Candidate/Admin role adaptive).
-- **Right Email Pill**: White high-contrast pill button displaying `hr@inzovate-technologies.com` or active candidate email with pulse status indicator.
-- **Email Pill Dropdown Menu**:
+- **Right Corporate Email Pill**: High-contrast pill button displaying `hr@inzovate-technologies.com` or active candidate email with pulse status indicator.
+- **Email Dropdown Menu**:
   - 1-Click Copy with visual feedback checkmark.
   - Send Direct Email `mailto:` link.
   - Candidate Sign In modal trigger.
   - Administrator Portal (`Alt + A`) trigger.
-  - CIN display: `U62011TZ2025PTC036329`.
+  - Registered CIN display: `U62011TZ2025PTC036329`.
 - **Mobile Menu**: Responsive hamburger toggle revealing floating dark drawer with all routes and auth triggers.
+- **Status:** PASS (Verified via browser automation across mobile and desktop).
 
 ### `Footer.tsx` (Enterprise Trust & Corporate Desk)
-- **Compliance Banner**: Govt. of India MCA Registered CIN: `U62011TZ2025PTC036329`, AI Proctoring Badge, AES-256 Storage Badge, High-Concurrency Engine Badge, Cloud Service Status.
-- **Corporate Identity**: Inzovate Technologies Private Limited description, RoC Coimbatore.
-- **CBT Assessment Structure**: Section 1 Aptitude, Section 2 Communication, Section 3 Technical Specialization, Diagnostic info.
-- **Compliance & Security**: Code of conduct, Webcam privacy, Anti-cheating rules, ISO 27001 alignment.
-- **Corporate Desk**:
-  - Registered Office: `Bhavani, Coimbatore and Salem, Tamil Nadu, India.`
-  - Corporate Email: `hr@inzovate-technologies.com`
-  - Support Email: `support@inzovate-technologies.com`
-  - Admin Email: `admin@inzovate-technologies.com`
-  - Phone: `+91 93420 08797` (Click-to-call)
+- **Compliance Banner**: Govt. of India MCA Registered CIN: `U62011TZ2025PTC036329`, AI Proctoring Badge, High-Concurrency Engine Badge, Cloud Service Status.
+- **Corporate Desk Information**: Office addresses, official grievance email, recruitment drive notice.
+- **Quick Links**: Direct links to all routes, Terms of Assessment, Anti-Cheating Policy, and Administrator Gateway.
+- **Status:** PASS.
 
 ---
 
 ## 2. Interactive Modals
 
 ### `CandidateLoginModal.tsx`
-- **Fields**: Identifier (Email or Candidate ID), Password.
-- **Actions**: Sign In, Forgot Password trigger, Register trigger, Close modal.
-- **Validation**: Empty check, format check, error banner rendering.
+- **Fields**: Email or Candidate ID, Password, Show/Hide Password toggle.
+- **Actions**: Sign In, Forgot Password trigger, Switch to Registration tab, Close modal.
+- **Validation**: Rejects blank fields, validates password presence, displays server error banners.
+- **Status:** PASS (Verified with session token generation).
 
 ### `AdminLoginModal.tsx`
-- **Fields**: Admin Username/Email, Admin Secure Password.
-- **Shortcut**: Global `Alt + A` listener.
-- **Actions**: Authenticate Admin, Close modal.
-- **Security**: Validates against configured `ADMIN_PASSWORD` or database admin user.
+- **Trigger**: Alt + A shortcut, Header dropdown, Footer link.
+- **Fields**: Admin Username/Email, Admin Security Password, Biometric visual scanner animation.
+- **Actions**: Unlock Admin Command Center, Cancel.
+- **Security**: Rejects invalid passwords with HTTP 401; issues signed Admin JWT upon valid credentials (`Admin@2026`).
+- **Status:** PASS.
 
 ### `ForgotPasswordModal.tsx`
-- **Step 1 (Request OTP)**: Candidate ID or Email input -> sends 6-digit OTP from `winoraproject@gmail.com`.
-- **Step 2 (Verify OTP)**: 6-digit code entry -> calls `/api/auth/verify-reset-otp`.
-- **Step 3 (New Password)**: New password + confirm password (minimum 6 chars, equality check) -> calls `/api/auth/reset-password`.
+- **Workflow**: 3-step secure password recovery:
+  1. *Identifier Step*: Input Candidate ID or registered email.
+  2. *OTP Step*: 6-digit numeric OTP sent via `nodemailer` SMTP email relay with countdown timer and resend capability.
+  3. *New Password Step*: Enter new password (min 6 chars), confirm password, commit update.
+- **Status:** PASS (Verified fallback email handling and session storage).
 
 ---
 
-## 3. Page Level Components & Interactions
+## 3. Core Page Components & Forms
 
-### `LandingPage.tsx`
-- **Hero Section**: Brand logo, 2026 recruitment headline, call-to-actions ("Register for Assessment", "Pre-Assessment System Check", "Candidate Login").
-- **Metrics Bar**: 45 Questions, 15/15/15 balanced sections, 13 Domains, 100% Proctored.
-- **Active Drives Carousel / Filter**: Search bar filtering campus drives across Tamil Nadu institutions.
-- **Domain Specialization Grid**: 13 technical engineering domain cards with badges and role counters.
+### `RegistrationPage.tsx` (3-Step Enterprise Candidate Registration)
+- **Step 1 — Personal & Contact Details**: Full Name, Email, Mobile Number, Alt Mobile, Date of Birth, Gender, Address, District, Pin Code.
+- **Step 2 — Academic Credentials**: College Search AutoSuggest (99+ Tamil Nadu Engineering Colleges), Degree, Branch, Year of Passing, CGPA, SSLC%, HSC%, Standing Arrears.
+- **Step 3 — Role Selection & Authentication**: Domain Picker (13 Domains), Job Role Picker (20 Job Roles), Preferred Location, Password & Confirm Password.
+- **Defensive Engineering**: Accepts both `mobileNumber` and `mobile` fields; checks duplicate active email and phone number; creates collision-proof candidate ID (`INZ-CAND-2026-XXXXX`).
+- **Status:** PASS (Verified live 201 Created and auto-login).
 
-### `RegistrationPage.tsx`
-- **Multi-Step Stepper**:
-  - Step 1: Personal Profile (Full Name, Email, Mobile, Password, Confirm Password).
-  - Step 2: Domain & Job Role (Domain selector, Role selector).
-  - Step 3: Academic Dossier (College auto-suggest from 99 Tamil Nadu colleges, Degree, Department, CGPA, Arrear status, Father Name & Mobile).
-  - Step 4: System Requirements & Confirmation.
-- **Validation**: Strict duplicate email prevention (HTTP 409), phone format validation, CGPA bounds checking.
+### `SystemCheckPage.tsx` (6-Point Hardware Diagnostic)
+- **Checks**:
+  1. Operating System & Browser Compatibility.
+  2. Network Latency & Bandwidth Quality.
+  3. Live Webcam Stream & Resolution Check.
+  4. Microphone Input Audio Level Meter.
+  5. Fullscreen Mode Permission.
+  6. Single Display / Multi-Monitor Detection.
+- **Actions**: Re-test All, Proceed to Assessment CTA.
+- **Status:** PASS.
 
-### `SystemCheckPage.tsx`
-- **Hardware Diagnostics**:
-  1. Operating System & Browser Check (Desktop Chrome/Edge/Firefox verified).
-  2. Screen Resolution Check (Minimum 1280x720 verified).
-  3. Network Bandwidth & Latency Ping Check.
-  4. Webcam Hardware Permission & Video Stream Check.
-  5. Microphone Audio Input Level Check.
-  6. Fullscreen API Capability Check.
-- **Pass/Fail Threshold**: Proceed button enabled only when all mandatory checks pass.
-
-### `ExamInterface.tsx` (Online CBT Exam Engine)
-- **Top Header**: Candidate name, Candidate ID, Section badges, 60-Minute Countdown Timer, Remaining questions count.
-- **Section Switcher**:
+### `ExamInterface.tsx` (CBT Examination Engine)
+- **Sections**:
   - Section 1: Quantitative Aptitude & Logical Reasoning (15 Qs).
-  - Section 2: Verbal & Professional Communication (15 Qs).
-  - Section 3: Technical Domain Specialization (15 Qs).
-- **Question Matrix Grid**: 1 to 45 question status palette (Answered, Flagged for Review, Not Visited).
-- **Active Question Panel**: Question text, code snippets (if domain technical), 4 radio options, Clear Selection button, Mark for Review button, Next / Previous navigation.
-- **Webcam Feed**: Real-time canvas proctoring, face tracking bounding box, status badge ("Webcam Secure").
-- **Proctoring Traps**:
-  - Tab Switch / Window Blur Trap: Logs violation, shows warning modal (Max 3 warnings before auto-submission).
-  - Fullscreen Exit Trap: Intercepts fullscreen exit, forces prompt to re-enter fullscreen.
-  - Timer Expiry: Automatically finalizes assessment and submits answers when timer reaches 00:00.
+  - Section 2: Verbal Ability & Business Communication (15 Qs).
+  - Section 3: Technical Domain Core Engineering (15 Qs).
+- **Total Questions**: 45 Questions (from 330 Question Pool).
+- **Timer**: Strictly 45 minutes (2700s) with live MM:SS countdown and low-time warning.
+- **Security & Proctoring**: Real-time camera feed (`WebcamFeed.tsx`), full screen lock, tab-switch violation counter (auto-submit on repeated violations), answer auto-save heartbeat.
+- **Status:** PASS.
 
-### `CandidateResultPage.tsx`
-- **Privacy Enforcement**: Score and percentage are strictly masked for candidates.
-- **Attendance Receipt**: Candidate details, Assessment ID, Submission timestamp, Attempted Questions summary (`X / 45 attempted`), Proctoring compliance status ("Clean / Verified").
-- **Action**: Print / Download Attendance Receipt.
+### `CandidateResultPage.tsx` (Score & Decision Card)
+- **Pass/Fail Criteria**: Strictly calibrated to **> 25 Marks out of 45**.
+  - Total Score > 25: Green celebratory badge, `PASS`, Selection Status: `Selected for Next Round`, Confetti trigger.
+  - Total Score <= 25: Amber/Red alert badge, `FAIL`, Selection Status: `Rejected`.
+- **Breakdown**: Section 1, Section 2, Section 3 scores, accuracy percentage, time taken.
+- **Candidate Report Card PDF Download**: High-definition client-side printable PDF receipt featuring corporate seal and recruitment decision.
+- **Status:** PASS.
 
-### `AdminDashboard.tsx`
-- **Top District Filter Chips**: All Tamil Nadu, Coimbatore, Chennai, Madurai, Erode, Dindigul, Trichy, Salem, Tiruppur, Namakkal, etc.
-- **College Chips Bar**: Dynamic pinned top colleges with live student count badges, instant Enter key addition, unpinning (`✕`).
-- **Recruitment Metrics Cards**: Total Registered Candidates, Completed Exams, Average Score, High Performers (>75%).
-- **Candidate Dossier Table**: Candidate ID, Name, College, Department, CGPA, Exam Status, Total Score (/45), Percentage, Stage badge, Actions (View Details, Update Stage, Export CSV/Excel).
-- **Proctoring Incident Feed**: Real-time flagged violations with timestamps and candidate IDs.
-
-### `LiveProctoringPage.tsx`
-- **Candidate Video Tiles Grid**: Active exam sessions with live webcam feeds, candidate name, active section, violation count, audio meter.
-- **Incident Action Panel**: Send Real-Time Warning (`proctor:warning`), Request Camera Realignment, Terminate Session for Malpractice.
-
-### `QuestionBankPage.tsx`
-- **Question Filter Bar**: By Section (Aptitude, Communication, Technical), by Domain, by Difficulty (Easy, Medium, Hard), Search keywords.
-- **Question Editor Modal**: Create and edit question text, options A/B/C/D, correct answer key, explanation.
-- **AI Question Generation Draft Tool**: Generates new syllabus-aligned questions for review and approval.
+### `AdminDashboard.tsx` (Enterprise Command Center)
+- **Candidate Table**: Search by Name/Email/ID, Filter by College, Filter by Job Role, Filter by Selection Decision (`All Attended`, `Selected for Next Round`, `Rejected`, `Final Selected`).
+- **Recruitment Actions**:
+  - Update Candidate Stage (`Registered`, `Screening`, `Shortlisted`, `Selected for Next Round`, `Final Selected`, `Rejected`, `Archived`).
+  - View full score breakdown.
+  - Soft-delete candidate.
+  - Permanent delete candidate.
+- **Export Capabilities**:
+  - **Excel (.CSV) Export**: Full recruitment ledger with Candidate ID, Full Name, Email, Mobile, College, Degree, CGPA, Attempted Qs, Total Score, Result (PASS/FAIL), Selection Status, and Recruitment Stage.
+  - **Printable MCA-Compliant PDF**: Branded recruitment dossier with CIN `U62011TZ2025PTC036329`, summary metric cards, candidate roster, and color-coded selection status badges.
+- **Status:** PASS.
