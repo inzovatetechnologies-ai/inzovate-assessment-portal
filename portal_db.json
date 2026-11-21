@@ -1686,13 +1686,59 @@
       "jobRoleId": "role-soft-dev",
       "jobRoleTitle": "Software Developer",
       "preferredLocation": "Chennai / Coimbatore",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Rejected",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-21T13:07:06.282Z",
-      "updatedAt": "2026-11-21T13:07:06.282Z"
+      "updatedAt": "2026-11-21T13:07:06.282Z",
+      "assessmentResult": {
+        "sessionId": "session-1795266431307",
+        "candidateId": "INZ-CAND-2026-00020",
+        "candidateDisplayId": "INZ-CAND-2026-00020",
+        "candidateName": "Audit Test Candidate PASS",
+        "jobRoleTitle": "Software Developer",
+        "collegeName": "Audit Engineering College",
+        "totalScore": 0,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 0,
+        "totalQuestionsAttempted": 0,
+        "unattempted": 45,
+        "percentage": 0,
+        "isPassed": false,
+        "examResult": "Fail",
+        "selectionStatus": "Rejected",
+        "passCutoff": "> 25",
+        "performanceCategory": "Needs Improvement",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-05C480",
+        "sectionScores": {
+          "section-1": {
+            "score": 0,
+            "total": 15,
+            "percentage": 0
+          },
+          "section-2": {
+            "score": 0,
+            "total": 15,
+            "percentage": 0
+          },
+          "section-3": {
+            "score": 0,
+            "total": 15,
+            "percentage": 0
+          }
+        },
+        "completedAt": "2026-11-21T13:07:11.307Z"
+      },
+      "totalScore": 0,
+      "percentage": 0,
+      "isPassed": false,
+      "examResult": "Fail",
+      "certificateId": "INZ-CERT-2026-05C480",
+      "completedAt": "2026-11-21T13:07:11.307Z"
     },
     {
       "_id": "cand-d4434d41-fe88-4ee3-a1e8-740beaac8a72",
@@ -2536,8 +2582,48 @@
         }
       },
       "completedAt": "2026-11-20T17:12:39.739Z"
+    },
+    {
+      "sessionId": "session-1795266431307",
+      "candidateId": "INZ-CAND-2026-00020",
+      "candidateDisplayId": "INZ-CAND-2026-00020",
+      "candidateName": "Audit Test Candidate PASS",
+      "jobRoleTitle": "Software Developer",
+      "collegeName": "Audit Engineering College",
+      "totalScore": 0,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 0,
+      "totalQuestionsAttempted": 0,
+      "unattempted": 45,
+      "percentage": 0,
+      "isPassed": false,
+      "examResult": "Fail",
+      "selectionStatus": "Rejected",
+      "passCutoff": "> 25",
+      "performanceCategory": "Needs Improvement",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-05C480",
+      "sectionScores": {
+        "section-1": {
+          "score": 0,
+          "total": 15,
+          "percentage": 0
+        },
+        "section-2": {
+          "score": 0,
+          "total": 15,
+          "percentage": 0
+        },
+        "section-3": {
+          "score": 0,
+          "total": 15,
+          "percentage": 0
+        }
+      },
+      "completedAt": "2026-11-21T13:07:11.307Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-21T13:07:07.718Z"
+  "lastUpdated": "2026-11-21T13:07:11.401Z"
 }
