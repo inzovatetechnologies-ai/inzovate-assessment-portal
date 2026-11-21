@@ -1652,6 +1652,47 @@
       "examResult": "Fail",
       "certificateId": "INZ-CERT-2026-CC3D63",
       "completedAt": "2026-11-20T17:12:39.744Z"
+    },
+    {
+      "_id": "cand-1d4477e9-8169-4270-9944-d3694312fc4f",
+      "candidateId": "INZ-CAND-2026-00020",
+      "fullName": "Audit Test Candidate PASS",
+      "email": "audit.pass.1795266425630@inzovate-test.com",
+      "password": "Password@2026",
+      "mobileNumber": "9876543210",
+      "altMobileNumber": "",
+      "dateOfBirth": "",
+      "gender": "Not Specified",
+      "residentialAddress": "",
+      "district": "",
+      "state": "Tamil Nadu",
+      "pinCode": "",
+      "collegeId": "",
+      "collegeName": "Audit Engineering College",
+      "universityRegisterNumber": "",
+      "degree": "B.E. Computer Science",
+      "branch": "CSE",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.8",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Software Developer",
+      "preferredLocation": "Chennai / Coimbatore",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-21T13:07:06.282Z",
+      "updatedAt": "2026-11-21T13:07:06.282Z"
     }
   ],
   "assessment_results": [
@@ -2457,5 +2498,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-21T13:06:10.227Z"
+  "lastUpdated": "2026-11-21T13:07:06.389Z"
 }
