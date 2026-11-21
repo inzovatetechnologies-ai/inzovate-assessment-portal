@@ -1652,6 +1652,47 @@
       "examResult": "Fail",
       "certificateId": "INZ-CERT-2026-CC3D63",
       "completedAt": "2026-11-20T17:12:39.744Z"
+    },
+    {
+      "_id": "cand-2b6119b6-4ecf-4af7-b0e2-a93ce1bbed90",
+      "candidateId": "INZ-CAND-2026-00020",
+      "fullName": "Lathika Lathi",
+      "email": "lathikalathisangameswaran2004@gmail.com",
+      "password": "Mousik@2001",
+      "mobileNumber": "9894877002",
+      "altMobileNumber": "",
+      "dateOfBirth": "2001-02-09",
+      "gender": "Male",
+      "residentialAddress": "Erode\n",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "638301",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.E. Computer Science and Engineering",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.5",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-10",
+      "domainName": "Software Development",
+      "jobRoleId": "role-seo-exec",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-21T13:32:46.068Z",
+      "updatedAt": "2026-11-21T13:32:46.068Z"
     }
   ],
   "assessment_results": [
@@ -2537,5 +2578,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-21T13:09:22.567Z"
+  "lastUpdated": "2026-11-21T13:32:46.162Z"
 }
