@@ -1686,13 +1686,13 @@
       "jobRoleId": "role-seo-exec",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Rejected",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
       "assessmentStatus": "Completed",
       "testAttempts": 1,
       "createdAt": "2026-11-21T13:32:46.068Z",
-      "updatedAt": "2026-11-21T13:32:46.068Z",
+      "updatedAt": "2026-11-21T13:38:32.812Z",
       "assessmentResult": {
         "sessionId": "inz_cbt_d13ac7e0-3ffa-4599-bab0-c1715fde6731",
         "candidateId": "INZ-CAND-2026-00020",
@@ -2664,5 +2664,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-21T13:36:44.859Z"
+  "lastUpdated": "2026-11-21T13:38:32.812Z"
 }
