@@ -1686,13 +1686,13 @@
       "jobRoleId": "role-soft-dev",
       "jobRoleTitle": "Software Developer",
       "preferredLocation": "Chennai / Coimbatore",
-      "recruitmentStage": "Rejected",
+      "recruitmentStage": "Final Selected",
       "status": "Registered",
       "deletedAt": null,
       "assessmentStatus": "Completed",
       "testAttempts": 1,
       "createdAt": "2026-11-21T13:07:06.282Z",
-      "updatedAt": "2026-11-21T13:07:06.282Z",
+      "updatedAt": "2026-11-21T13:07:15.393Z",
       "assessmentResult": {
         "sessionId": "session-1795266431307",
         "candidateId": "INZ-CAND-2026-00020",
@@ -2711,5 +2711,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-21T13:07:12.723Z"
+  "lastUpdated": "2026-11-21T13:07:15.393Z"
 }
