@@ -2,7 +2,7 @@
   "candidates": [
     {
       "_id": "cand-f8ced5dd-7942-44b7-8a0a-df2e8c788094",
-      "candidateId": "INZ-CAND-2026-00001",
+      "candidateId": "INZ-CAND-2026-00002",
       "fullName": "Mousik",
       "email": "mousikshankarsangameswaran@gmail.com",
       "password": "Mousik@2001",
@@ -44,5 +44,5 @@
   ],
   "assessment_results": [],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-22T14:29:22.773Z"
+  "lastUpdated": "2026-11-22T14:29:44.431Z"
 }
