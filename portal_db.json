@@ -8926,6 +8926,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:15:12.870Z",
       "updatedAt": "2026-11-23T04:15:12.870Z"
+    },
+    {
+      "_id": "cand-98f8a372-fe33-40c2-be76-1fb51cac5953",
+      "candidateId": "INZ-CAND-2026-00253",
+      "fullName": "Karthika R",
+      "email": "karthikarniv2011@gmail.com",
+      "password": "karthika20",
+      "mobileNumber": "+918072615210",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-11-20",
+      "gender": "Female",
+      "residentialAddress": "1/42\nKannadampatti,Rettiyarchatram,Dindigul",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "624622",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.E. Computer Science and Engineering",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.35",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:15:22.135Z",
+      "updatedAt": "2026-11-23T04:15:22.135Z"
     }
   ],
   "assessment_results": [
@@ -10011,5 +10052,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:15:13.175Z"
+  "lastUpdated": "2026-11-23T04:15:22.277Z"
 }
