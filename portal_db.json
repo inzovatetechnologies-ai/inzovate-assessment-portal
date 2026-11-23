@@ -5815,6 +5815,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:04:34.448Z",
       "updatedAt": "2026-11-23T04:04:34.448Z"
+    },
+    {
+      "_id": "cand-f0a45f65-c80b-44e0-ba67-70c47914f7c3",
+      "candidateId": "INZ-CAND-2026-00186",
+      "fullName": "NALINAJOTHI S",
+      "email": "nalinajothisenthilkumar@gmail.com",
+      "password": "nalinajothi21",
+      "mobileNumber": "9894051021",
+      "altMobileNumber": "",
+      "dateOfBirth": "2003-12-21",
+      "gender": "Female",
+      "residentialAddress": "19,lakshmipuram,ll road,madurai-11.",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "624622",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "MCA Master of Computer Application",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.43",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-02",
+      "domainName": "Software Development",
+      "jobRoleId": "role-data-analyst",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:04:50.933Z",
+      "updatedAt": "2026-11-23T04:04:50.933Z"
     }
   ],
   "assessment_results": [
@@ -6140,5 +6181,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:04:34.617Z"
+  "lastUpdated": "2026-11-23T04:04:51.065Z"
 }
