@@ -176,7 +176,7 @@
     },
     {
       "_id": "cand-4640185e-1b05-46b4-8c25-c4fafdb4a548",
-      "candidateId": "INZ-CAND-2026-00004",
+      "candidateId": "INZ-CAND-2026-00334",
       "fullName": "Priyadharshan T S",
       "email": "shanmugavelpryan@gmail.com",
       "password": "Priyan@6382",
@@ -207,7 +207,7 @@
       "jobRoleId": "role-soft-dev",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Selected for Next Round",
+      "recruitmentStage": "Registered",
       "status": "Registered",
       "deletedAt": null,
       "assessmentStatus": "Completed",
@@ -29159,5 +29159,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T05:22:45.049Z"
+  "lastUpdated": "2026-11-23T05:38:18.374Z"
 }
