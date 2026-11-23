@@ -6998,13 +6998,59 @@
       "jobRoleId": "role-fullstack",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T04:01:12.896Z",
-      "updatedAt": "2026-11-23T04:01:12.896Z"
+      "updatedAt": "2026-11-23T04:01:12.896Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_96d461b3-4695-4627-a62b-ca86b6de86df",
+        "candidateId": "INZ-CAND-2026-00144",
+        "candidateDisplayId": "INZ-CAND-2026-00144",
+        "candidateName": "Dhineshwaran P",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "PSNA College of Engineering and Technology",
+        "totalScore": 42,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 93,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Mastery (Outstanding)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-92BC3B",
+        "sectionScores": {
+          "section-1": {
+            "score": 13,
+            "total": 15,
+            "percentage": 87
+          },
+          "section-2": {
+            "score": 14,
+            "total": 15,
+            "percentage": 93
+          },
+          "section-3": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          }
+        },
+        "completedAt": "2026-11-23T04:28:16.922Z"
+      },
+      "totalScore": 42,
+      "percentage": 93,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-92BC3B",
+      "completedAt": "2026-11-23T04:28:16.922Z"
     },
     {
       "_id": "cand-58658142-88d0-4bb5-aa4d-e28a3b46e957",
@@ -15925,8 +15971,48 @@
         }
       },
       "completedAt": "2026-11-23T04:27:44.076Z"
+    },
+    {
+      "sessionId": "inz_cbt_96d461b3-4695-4627-a62b-ca86b6de86df",
+      "candidateId": "INZ-CAND-2026-00144",
+      "candidateDisplayId": "INZ-CAND-2026-00144",
+      "candidateName": "Dhineshwaran P",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "totalScore": 42,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 93,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Mastery (Outstanding)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-92BC3B",
+      "sectionScores": {
+        "section-1": {
+          "score": 13,
+          "total": 15,
+          "percentage": 87
+        },
+        "section-2": {
+          "score": 14,
+          "total": 15,
+          "percentage": 93
+        },
+        "section-3": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        }
+      },
+      "completedAt": "2026-11-23T04:28:16.922Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:27:44.205Z"
+  "lastUpdated": "2026-11-23T04:28:17.045Z"
 }
