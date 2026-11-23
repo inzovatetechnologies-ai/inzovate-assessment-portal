@@ -2825,7 +2825,7 @@
     },
     {
       "_id": "cand-d6ff05b2-4049-4789-9f9e-463df85cde1b",
-      "candidateId": "INZ-CAND-2026-00145",
+      "candidateId": "INZ-CAND-2026-00080",
       "fullName": "SIVIKA K",
       "email": "sivikak6@gmail.com",
       "password": "Sivi@123",
@@ -6878,5 +6878,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:06:57.910Z"
+  "lastUpdated": "2026-11-23T04:06:59.757Z"
 }
