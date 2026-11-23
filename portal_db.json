@@ -9681,7 +9681,7 @@
     },
     {
       "_id": "cand-aec7607b-d828-4b6f-a598-e46fbd0f04e4",
-      "candidateId": "INZ-CAND-2026-00264",
+      "candidateId": "INZ-CAND-2026-00268",
       "fullName": "Vijay Balaji P S",
       "email": "vijaybalajips@gmail.com",
       "password": "Vijay@2005",
@@ -11326,5 +11326,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:17:19.503Z"
+  "lastUpdated": "2026-11-23T04:17:24.588Z"
 }
