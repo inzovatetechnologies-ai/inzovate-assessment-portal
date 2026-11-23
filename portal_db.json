@@ -991,7 +991,7 @@
     },
     {
       "_id": "cand-beddf0d5-7cc8-47e8-9483-da52a43a9142",
-      "candidateId": "INZ-CAND-2026-00032",
+      "candidateId": "INZ-CAND-2026-00039",
       "fullName": "Jhai Vignesh A M",
       "email": "amjhaivignesh@gmail.com",
       "password": "jhai@2005",
@@ -1238,5 +1238,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:50:20.344Z"
+  "lastUpdated": "2026-11-23T03:50:27.619Z"
 }
