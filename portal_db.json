@@ -3848,13 +3848,59 @@
       "jobRoleId": "role-soft-dev",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T03:52:44.953Z",
-      "updatedAt": "2026-11-23T03:52:44.953Z"
+      "updatedAt": "2026-11-23T03:52:44.953Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_6eb3df0d-7c37-4adb-aaba-6246dd08505f",
+        "candidateId": "INZ-CAND-2026-00061",
+        "candidateDisplayId": "INZ-CAND-2026-00061",
+        "candidateName": "kishori K",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "PSNA College of Engineering and Technology",
+        "totalScore": 26,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 58,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Foundational (Competent)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-31E9BF",
+        "sectionScores": {
+          "section-1": {
+            "score": 8,
+            "total": 15,
+            "percentage": 53
+          },
+          "section-2": {
+            "score": 10,
+            "total": 15,
+            "percentage": 67
+          },
+          "section-3": {
+            "score": 8,
+            "total": 15,
+            "percentage": 53
+          }
+        },
+        "completedAt": "2026-11-23T04:34:25.108Z"
+      },
+      "totalScore": 26,
+      "percentage": 58,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-31E9BF",
+      "completedAt": "2026-11-23T04:34:25.108Z"
     },
     {
       "_id": "cand-d7c6b9f5-c205-4e63-a443-636c2789799d",
@@ -19517,8 +19563,48 @@
         }
       },
       "completedAt": "2026-11-23T04:34:18.648Z"
+    },
+    {
+      "sessionId": "inz_cbt_6eb3df0d-7c37-4adb-aaba-6246dd08505f",
+      "candidateId": "INZ-CAND-2026-00061",
+      "candidateDisplayId": "INZ-CAND-2026-00061",
+      "candidateName": "kishori K",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "totalScore": 26,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 58,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Foundational (Competent)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-31E9BF",
+      "sectionScores": {
+        "section-1": {
+          "score": 8,
+          "total": 15,
+          "percentage": 53
+        },
+        "section-2": {
+          "score": 10,
+          "total": 15,
+          "percentage": 67
+        },
+        "section-3": {
+          "score": 8,
+          "total": 15,
+          "percentage": 53
+        }
+      },
+      "completedAt": "2026-11-23T04:34:25.108Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:34:20.480Z"
+  "lastUpdated": "2026-11-23T04:34:25.276Z"
 }
