@@ -1345,7 +1345,7 @@
     },
     {
       "_id": "cand-19813472-ed00-45b8-a362-99d613bc9240",
-      "candidateId": "INZ-CAND-2026-00023",
+      "candidateId": "INZ-CAND-2026-00306",
       "fullName": "Lathika I",
       "email": "lathikai0210@gmail.com",
       "password": "L@thik@0210",
@@ -1376,7 +1376,7 @@
       "jobRoleId": "role-java-dev",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Selected for Next Round",
+      "recruitmentStage": "Registered",
       "status": "Registered",
       "deletedAt": null,
       "assessmentStatus": "Completed",
@@ -20923,5 +20923,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:36:54.306Z"
+  "lastUpdated": "2026-11-23T04:37:01.421Z"
 }
