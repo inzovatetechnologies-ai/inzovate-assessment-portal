@@ -2405,13 +2405,59 @@
       "jobRoleId": "role-soft-dev",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T03:50:55.779Z",
-      "updatedAt": "2026-11-23T03:50:55.779Z"
+      "updatedAt": "2026-11-23T03:50:55.779Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_6594b964-507d-4b15-8f88-84eb9a1b2d3d",
+        "candidateId": "INZ-CAND-2026-00032",
+        "candidateDisplayId": "INZ-CAND-2026-00032",
+        "candidateName": "JEREMIAH ANTON DAVID RAJ A IT student",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "PSNA College of Engineering and Technology",
+        "totalScore": 29,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 64,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Foundational (Competent)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-DB7135",
+        "sectionScores": {
+          "section-1": {
+            "score": 11,
+            "total": 15,
+            "percentage": 73
+          },
+          "section-2": {
+            "score": 8,
+            "total": 15,
+            "percentage": 53
+          },
+          "section-3": {
+            "score": 10,
+            "total": 15,
+            "percentage": 67
+          }
+        },
+        "completedAt": "2026-11-23T04:26:45.950Z"
+      },
+      "totalScore": 29,
+      "percentage": 64,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-DB7135",
+      "completedAt": "2026-11-23T04:26:45.950Z"
     },
     {
       "_id": "cand-58b8d679-7325-4040-9d4e-fc8b5d60ea63",
@@ -15155,8 +15201,48 @@
         }
       },
       "completedAt": "2026-11-23T04:26:33.782Z"
+    },
+    {
+      "sessionId": "inz_cbt_6594b964-507d-4b15-8f88-84eb9a1b2d3d",
+      "candidateId": "INZ-CAND-2026-00032",
+      "candidateDisplayId": "INZ-CAND-2026-00032",
+      "candidateName": "JEREMIAH ANTON DAVID RAJ A IT student",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "totalScore": 29,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 64,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Foundational (Competent)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-DB7135",
+      "sectionScores": {
+        "section-1": {
+          "score": 11,
+          "total": 15,
+          "percentage": 73
+        },
+        "section-2": {
+          "score": 8,
+          "total": 15,
+          "percentage": 53
+        },
+        "section-3": {
+          "score": 10,
+          "total": 15,
+          "percentage": 67
+        }
+      },
+      "completedAt": "2026-11-23T04:26:45.950Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:26:33.910Z"
+  "lastUpdated": "2026-11-23T04:26:46.077Z"
 }
