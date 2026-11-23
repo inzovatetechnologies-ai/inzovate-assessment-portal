@@ -8724,7 +8724,7 @@
     },
     {
       "_id": "cand-2db6f8bc-61c6-464b-ab2d-b4b48bb399cc",
-      "candidateId": "INZ-CAND-2026-00245",
+      "candidateId": "INZ-CAND-2026-00251",
       "fullName": "Naga Padma Devi M",
       "email": "nagapadma140@gmail.com",
       "password": "Devi@#23",
@@ -9970,5 +9970,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:15:03.693Z"
+  "lastUpdated": "2026-11-23T04:15:07.981Z"
 }
