@@ -3776,6 +3776,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T03:59:13.371Z",
       "updatedAt": "2026-11-23T03:59:13.371Z"
+    },
+    {
+      "_id": "cand-c23ab74e-a58f-43d7-9bf7-596df786ad30",
+      "candidateId": "INZ-CAND-2026-00129",
+      "fullName": "Yogaraj P",
+      "email": "rajaduraiyogaraj@gmail.com",
+      "password": "Luckyraj@21",
+      "mobileNumber": "+916382142325",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-06-21",
+      "gender": "Male",
+      "residentialAddress": "North Street,\nMalaipatti,vavidamaruthur(po),\nMadurai-625501",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "625501",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.Tech Information Technology",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.6",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-fullstack",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T03:59:30.146Z",
+      "updatedAt": "2026-11-23T03:59:30.146Z"
     }
   ],
   "assessment_results": [
@@ -3821,5 +3862,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:59:13.470Z"
+  "lastUpdated": "2026-11-23T03:59:30.250Z"
 }
