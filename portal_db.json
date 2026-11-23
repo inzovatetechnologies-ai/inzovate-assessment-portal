@@ -4278,6 +4278,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:00:49.976Z",
       "updatedAt": "2026-11-23T04:00:49.976Z"
+    },
+    {
+      "_id": "cand-0198a097-bb98-4595-9aff-a226a95df79e",
+      "candidateId": "INZ-CAND-2026-00102",
+      "fullName": "Pranav veer N",
+      "email": "pranav1july29@gmail.com",
+      "password": "Pran@129",
+      "mobileNumber": "7868821058",
+      "altMobileNumber": "",
+      "dateOfBirth": "2006-07-29",
+      "gender": "Male",
+      "residentialAddress": "15/10-2,Naduvalavu,Vallalapatti,Alagarkoil,Madurai",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "625301",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.E. Computer Science and Engineering",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "7.53",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-03",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:00:54.253Z",
+      "updatedAt": "2026-11-23T04:00:54.253Z"
     }
   ],
   "assessment_results": [
@@ -4403,5 +4444,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:00:50.107Z"
+  "lastUpdated": "2026-11-23T04:00:54.357Z"
 }
