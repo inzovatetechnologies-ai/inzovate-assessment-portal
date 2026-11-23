@@ -18115,13 +18115,59 @@
       "jobRoleId": "role-soft-dev",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T04:38:54.036Z",
-      "updatedAt": "2026-11-23T04:38:54.036Z"
+      "updatedAt": "2026-11-23T04:38:54.036Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_e1c89c5c-60db-4127-8e55-e5beaa9ec7f8",
+        "candidateId": "INZ-CAND-2026-00310",
+        "candidateDisplayId": "INZ-CAND-2026-00310",
+        "candidateName": "R.Srimathi",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "PSNA College of Engineering and Technology",
+        "totalScore": 44,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 98,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Mastery (Outstanding)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-28B8ED",
+        "sectionScores": {
+          "section-1": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-2": {
+            "score": 14,
+            "total": 15,
+            "percentage": 93
+          },
+          "section-3": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          }
+        },
+        "completedAt": "2026-11-23T04:53:32.376Z"
+      },
+      "totalScore": 44,
+      "percentage": 98,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-28B8ED",
+      "completedAt": "2026-11-23T04:53:32.376Z"
     },
     {
       "_id": "cand-2b4b0173-a3d4-4faf-b4d5-76001c0220ae",
@@ -27102,8 +27148,48 @@
         }
       },
       "completedAt": "2026-11-23T04:52:44.696Z"
+    },
+    {
+      "sessionId": "inz_cbt_e1c89c5c-60db-4127-8e55-e5beaa9ec7f8",
+      "candidateId": "INZ-CAND-2026-00310",
+      "candidateDisplayId": "INZ-CAND-2026-00310",
+      "candidateName": "R.Srimathi",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "totalScore": 44,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 98,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Mastery (Outstanding)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-28B8ED",
+      "sectionScores": {
+        "section-1": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-2": {
+          "score": 14,
+          "total": 15,
+          "percentage": 93
+        },
+        "section-3": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        }
+      },
+      "completedAt": "2026-11-23T04:53:32.376Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:53:21.794Z"
+  "lastUpdated": "2026-11-23T04:53:32.511Z"
 }
