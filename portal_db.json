@@ -8302,13 +8302,59 @@
       "jobRoleId": "role-hr-exec",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T04:07:32.080Z",
-      "updatedAt": "2026-11-23T04:07:32.080Z"
+      "updatedAt": "2026-11-23T04:07:32.080Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_82b83c17-d6f7-46d7-9fd4-62e27c64c306",
+        "candidateId": "INZ-CAND-2026-00159",
+        "candidateDisplayId": "INZ-CAND-2026-00159",
+        "candidateName": "Lena sri S",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "PSNA College of Engineering and Technology",
+        "totalScore": 45,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 100,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Mastery (Outstanding)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-5E0884",
+        "sectionScores": {
+          "section-1": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-2": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-3": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          }
+        },
+        "completedAt": "2026-11-23T04:18:58.177Z"
+      },
+      "totalScore": 45,
+      "percentage": 100,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-5E0884",
+      "completedAt": "2026-11-23T04:18:58.177Z"
     },
     {
       "_id": "cand-bde1e701-dfad-4641-aed8-8609821eb358",
@@ -12044,8 +12090,48 @@
         }
       },
       "completedAt": "2026-11-23T04:18:38.213Z"
+    },
+    {
+      "sessionId": "inz_cbt_82b83c17-d6f7-46d7-9fd4-62e27c64c306",
+      "candidateId": "INZ-CAND-2026-00159",
+      "candidateDisplayId": "INZ-CAND-2026-00159",
+      "candidateName": "Lena sri S",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "totalScore": 45,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 100,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Mastery (Outstanding)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-5E0884",
+      "sectionScores": {
+        "section-1": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-2": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-3": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        }
+      },
+      "completedAt": "2026-11-23T04:18:58.177Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:18:49.619Z"
+  "lastUpdated": "2026-11-23T04:18:58.302Z"
 }
