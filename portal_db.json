@@ -5774,6 +5774,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:04:16.171Z",
       "updatedAt": "2026-11-23T04:04:16.171Z"
+    },
+    {
+      "_id": "cand-6124c5e9-58f4-4b45-84ca-286419fd3ede",
+      "candidateId": "INZ-CAND-2026-00185",
+      "fullName": "Tahmidha M",
+      "email": "tahmidhaidris@gmail.com",
+      "password": "tahmi@1005",
+      "mobileNumber": "7904801328",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-10-28",
+      "gender": "Female",
+      "residentialAddress": "173/A, 4th cross street , Thirunagar,Palani",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "624601",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.Tech Computer Science and Business Systems",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "7.94",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-10",
+      "domainName": "Software Development",
+      "jobRoleId": "role-seo-exec",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:04:34.448Z",
+      "updatedAt": "2026-11-23T04:04:34.448Z"
     }
   ],
   "assessment_results": [
@@ -6099,5 +6140,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:04:21.002Z"
+  "lastUpdated": "2026-11-23T04:04:34.617Z"
 }
