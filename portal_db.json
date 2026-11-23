@@ -903,13 +903,59 @@
       "jobRoleId": "role-soft-dev",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T03:46:28.391Z",
-      "updatedAt": "2026-11-23T03:46:28.391Z"
+      "updatedAt": "2026-11-23T03:46:28.391Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_e697a932-4472-4d57-813c-e7c901303bce",
+        "candidateId": "INZ-CAND-2026-00014",
+        "candidateDisplayId": "INZ-CAND-2026-00014",
+        "candidateName": "Aksshita Sri",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "PSNA College of Engineering and Technology",
+        "totalScore": 35,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 78,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Proficient (Commendable)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-4B08D7",
+        "sectionScores": {
+          "section-1": {
+            "score": 11,
+            "total": 15,
+            "percentage": 73
+          },
+          "section-2": {
+            "score": 14,
+            "total": 15,
+            "percentage": 93
+          },
+          "section-3": {
+            "score": 10,
+            "total": 15,
+            "percentage": 67
+          }
+        },
+        "completedAt": "2026-11-23T04:40:29.298Z"
+      },
+      "totalScore": 35,
+      "percentage": 78,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-4B08D7",
+      "completedAt": "2026-11-23T04:40:29.298Z"
     },
     {
       "_id": "cand-686c43a8-388d-4111-b99c-96e04e41dacc",
@@ -23016,8 +23062,48 @@
         }
       },
       "completedAt": "2026-11-23T04:40:19.326Z"
+    },
+    {
+      "sessionId": "inz_cbt_e697a932-4472-4d57-813c-e7c901303bce",
+      "candidateId": "INZ-CAND-2026-00014",
+      "candidateDisplayId": "INZ-CAND-2026-00014",
+      "candidateName": "Aksshita Sri",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "totalScore": 35,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 78,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Proficient (Commendable)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-4B08D7",
+      "sectionScores": {
+        "section-1": {
+          "score": 11,
+          "total": 15,
+          "percentage": 73
+        },
+        "section-2": {
+          "score": 14,
+          "total": 15,
+          "percentage": 93
+        },
+        "section-3": {
+          "score": 10,
+          "total": 15,
+          "percentage": 67
+        }
+      },
+      "completedAt": "2026-11-23T04:40:29.298Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:40:21.093Z"
+  "lastUpdated": "2026-11-23T04:40:29.436Z"
 }
