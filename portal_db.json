@@ -578,6 +578,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T03:46:59.952Z",
       "updatedAt": "2026-11-23T03:46:59.952Z"
+    },
+    {
+      "_id": "cand-74fd50cd-1b07-4edd-a141-48086b700d4a",
+      "candidateId": "INZ-CAND-2026-00019",
+      "fullName": "Jothipriya P",
+      "email": "jothipriyap26@gmail.com",
+      "password": "Priya@2006",
+      "mobileNumber": "+918870475452",
+      "altMobileNumber": "",
+      "dateOfBirth": "2006-02-23",
+      "gender": "Female",
+      "residentialAddress": "B9/68 west street Kounr,Kounr post Dindigul",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "625705",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.TECH",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.5",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-03",
+      "domainName": "Software Development",
+      "jobRoleId": "role-ai-ml",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T03:47:35.143Z",
+      "updatedAt": "2026-11-23T03:47:35.143Z"
     }
   ],
   "assessment_results": [
@@ -623,5 +664,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:47:06.969Z"
+  "lastUpdated": "2026-11-23T03:47:35.260Z"
 }
