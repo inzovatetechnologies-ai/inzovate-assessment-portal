@@ -6348,6 +6348,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:06:47.257Z",
       "updatedAt": "2026-11-23T04:06:47.257Z"
+    },
+    {
+      "_id": "cand-e888bd87-d303-49af-abcf-009adb9a677e",
+      "candidateId": "INZ-CAND-2026-00148",
+      "fullName": "Arjhun O",
+      "email": "arjhun010905@gmail.com",
+      "password": "arjhun86100",
+      "mobileNumber": "8610051714",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-09-01",
+      "gender": "Male",
+      "residentialAddress": "59 arjhunisha illam,arunachaleswar 1st cross street H.M.S colony madurai-16",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "625016",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.E. Computer Science and Engineering",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "7.6",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:06:48.782Z",
+      "updatedAt": "2026-11-23T04:06:48.782Z"
     }
   ],
   "assessment_results": [
@@ -6673,5 +6714,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:06:47.368Z"
+  "lastUpdated": "2026-11-23T04:06:48.914Z"
 }
