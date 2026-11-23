@@ -3945,6 +3945,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T03:59:34.753Z",
       "updatedAt": "2026-11-23T03:59:34.753Z"
+    },
+    {
+      "_id": "cand-141977aa-8a66-4883-b4fe-c27e6ad4a897",
+      "candidateId": "INZ-CAND-2026-00132",
+      "fullName": "Latha J",
+      "email": "lathajeyaraman5@gmail.com",
+      "password": "Latha@2004",
+      "mobileNumber": "8870397072",
+      "altMobileNumber": "",
+      "dateOfBirth": "2004-12-22",
+      "gender": "Female",
+      "residentialAddress": "3/563 behind RI office, \nReddiyarchatram ,\npalani road ,\ndindigul",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "624622",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "Master of Computer Applications",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "9.06",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-python-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T03:59:37.827Z",
+      "updatedAt": "2026-11-23T03:59:37.827Z"
     }
   ],
   "assessment_results": [
@@ -4030,5 +4071,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:59:34.876Z"
+  "lastUpdated": "2026-11-23T03:59:37.963Z"
 }
