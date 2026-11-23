@@ -1073,7 +1073,7 @@
     },
     {
       "_id": "cand-7ad40391-4fcb-4757-b35c-99eed893c6dd",
-      "candidateId": "INZ-CAND-2026-00035",
+      "candidateId": "INZ-CAND-2026-00055",
       "fullName": "Gopika R",
       "email": "gopika2376@gmail.com",
       "password": "Gopi@2311",
@@ -1812,5 +1812,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:52:03.550Z"
+  "lastUpdated": "2026-11-23T03:52:04.784Z"
 }
