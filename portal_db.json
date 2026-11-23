@@ -12353,13 +12353,59 @@
       "jobRoleId": "role-java-dev",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T04:08:33.486Z",
-      "updatedAt": "2026-11-23T04:08:33.486Z"
+      "updatedAt": "2026-11-23T04:08:33.486Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_958c220a-7301-46de-8949-d470da93b9eb",
+        "candidateId": "INZ-CAND-2026-00220",
+        "candidateDisplayId": "INZ-CAND-2026-00220",
+        "candidateName": "Devadharshini S",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "PSNA College of Engineering and Technology",
+        "totalScore": 44,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 98,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Mastery (Outstanding)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-977614",
+        "sectionScores": {
+          "section-1": {
+            "score": 14,
+            "total": 15,
+            "percentage": 93
+          },
+          "section-2": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-3": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          }
+        },
+        "completedAt": "2026-11-23T04:38:25.913Z"
+      },
+      "totalScore": 44,
+      "percentage": 98,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-977614",
+      "completedAt": "2026-11-23T04:38:25.913Z"
     },
     {
       "_id": "cand-eb586cfb-8fb0-4784-a4ec-175757ba65a3",
@@ -21902,8 +21948,48 @@
         }
       },
       "completedAt": "2026-11-23T04:38:15.101Z"
+    },
+    {
+      "sessionId": "inz_cbt_958c220a-7301-46de-8949-d470da93b9eb",
+      "candidateId": "INZ-CAND-2026-00220",
+      "candidateDisplayId": "INZ-CAND-2026-00220",
+      "candidateName": "Devadharshini S",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "totalScore": 44,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 98,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Mastery (Outstanding)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-977614",
+      "sectionScores": {
+        "section-1": {
+          "score": 14,
+          "total": 15,
+          "percentage": 93
+        },
+        "section-2": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-3": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        }
+      },
+      "completedAt": "2026-11-23T04:38:25.913Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:38:24.487Z"
+  "lastUpdated": "2026-11-23T04:38:26.134Z"
 }
