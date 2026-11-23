@@ -1644,6 +1644,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T03:51:25.962Z",
       "updatedAt": "2026-11-23T03:51:25.962Z"
+    },
+    {
+      "_id": "cand-64df65f3-8ad8-4441-a54e-5e3b0eaae909",
+      "candidateId": "INZ-CAND-2026-00051",
+      "fullName": "Jeni Mithra J",
+      "email": "jenimithra2020@gmail.com",
+      "password": "Jeni@1102",
+      "mobileNumber": "8098950842",
+      "altMobileNumber": "",
+      "dateOfBirth": "2006-02-11",
+      "gender": "Female",
+      "residentialAddress": "1C BAGYA ILLAM THAMBI KONAR STREET YMR PATTI",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "624001",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.Tech Information Technology",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "7.3",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-03",
+      "domainName": "Software Development",
+      "jobRoleId": "role-ai-ml",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T03:51:29.605Z",
+      "updatedAt": "2026-11-23T03:51:29.605Z"
     }
   ],
   "assessment_results": [
@@ -1689,5 +1730,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:51:26.084Z"
+  "lastUpdated": "2026-11-23T03:51:29.697Z"
 }
