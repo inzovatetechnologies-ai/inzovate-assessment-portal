@@ -7982,6 +7982,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:11:04.443Z",
       "updatedAt": "2026-11-23T04:11:04.443Z"
+    },
+    {
+      "_id": "cand-127ddd71-f7fb-4eb0-97ee-92d82645d7b0",
+      "candidateId": "INZ-CAND-2026-00239",
+      "fullName": "ISHWARYA S",
+      "email": "ishwaryasakthivel216@gmail.com",
+      "password": "Ishu@2006",
+      "mobileNumber": "+91 8344211020",
+      "altMobileNumber": "",
+      "dateOfBirth": "2006-09-17",
+      "gender": "Female",
+      "residentialAddress": "34,Annai nagar 2nd street,ponnagaram,Dindigul",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "624003",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.E. Computer Science and Engineering",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.76",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-fullstack",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:11:18.152Z",
+      "updatedAt": "2026-11-23T04:11:18.152Z"
     }
   ],
   "assessment_results": [
@@ -8627,5 +8668,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:11:16.008Z"
+  "lastUpdated": "2026-11-23T04:11:18.262Z"
 }
