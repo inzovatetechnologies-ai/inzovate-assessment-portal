@@ -2792,6 +2792,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T03:55:00.299Z",
       "updatedAt": "2026-11-23T03:55:00.299Z"
+    },
+    {
+      "_id": "cand-bf14c1b6-44d8-4a7f-9ad6-f741adccfedc",
+      "candidateId": "INZ-CAND-2026-00090",
+      "fullName": "Vidyadar P",
+      "email": "pvidhyadar0@gmail.com",
+      "password": "Vidyavirat21#",
+      "mobileNumber": "8610115665",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-10-21",
+      "gender": "Male",
+      "residentialAddress": "6/61A Samandoor Padaiveedu Post namakkal district\nKumarapalayam taluka",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "637303",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.TECH. Computer Science and Business Systems",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "7.59",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-05",
+      "domainName": "Software Development",
+      "jobRoleId": "role-cloud-eng",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T03:55:04.887Z",
+      "updatedAt": "2026-11-23T03:55:04.887Z"
     }
   ],
   "assessment_results": [
@@ -2837,5 +2878,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:55:01.799Z"
+  "lastUpdated": "2026-11-23T03:55:04.992Z"
 }
