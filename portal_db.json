@@ -3325,6 +3325,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T03:56:47.899Z",
       "updatedAt": "2026-11-23T03:56:47.899Z"
+    },
+    {
+      "_id": "cand-eef4dab0-2fa2-4bd2-81b1-74c22c6765ac",
+      "candidateId": "INZ-CAND-2026-00108",
+      "fullName": "Vasika K",
+      "email": "vasikaluckyvasikalucky@gmail.com",
+      "password": "Vasika2005",
+      "mobileNumber": "9751975481",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-12-14",
+      "gender": "Female",
+      "residentialAddress": "29B pillaimar street,\nArappalayam, Madurai-16",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "625016",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.E. Computer Science and Engineering",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.1",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T03:57:05.196Z",
+      "updatedAt": "2026-11-23T03:57:05.196Z"
     }
   ],
   "assessment_results": [
@@ -3370,5 +3411,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:56:54.494Z"
+  "lastUpdated": "2026-11-23T03:57:05.401Z"
 }
