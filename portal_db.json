@@ -1111,6 +1111,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T03:50:13.054Z",
       "updatedAt": "2026-11-23T03:50:13.054Z"
+    },
+    {
+      "_id": "cand-409ee179-c38f-4fcf-a07d-7cc83d06d59c",
+      "candidateId": "INZ-CAND-2026-00037",
+      "fullName": "Thejashri T",
+      "email": "thejathina@gmail.com",
+      "password": "ThejaShri06",
+      "mobileNumber": "+919342543415",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-05-06",
+      "gender": "Female",
+      "residentialAddress": "10-6-22B2, Thalaisuruli 2nd Street, Palanichettipatti, Theni.",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "625531",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.Tech Information Technology",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.05",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-02",
+      "domainName": "Software Development",
+      "jobRoleId": "role-data-analyst",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T03:50:17.646Z",
+      "updatedAt": "2026-11-23T03:50:17.646Z"
     }
   ],
   "assessment_results": [
@@ -1156,5 +1197,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:50:14.449Z"
+  "lastUpdated": "2026-11-23T03:50:17.753Z"
 }
