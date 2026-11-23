@@ -3653,6 +3653,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T03:58:27.443Z",
       "updatedAt": "2026-11-23T03:58:27.443Z"
+    },
+    {
+      "_id": "cand-c6ddc6c5-16a0-455a-9cf3-0ca944fa18d4",
+      "candidateId": "INZ-CAND-2026-00122",
+      "fullName": "JASOTHARA R",
+      "email": "jasotharajaso@gmail.com",
+      "password": "in0723",
+      "mobileNumber": "8778116297",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-02-07",
+      "gender": "Female",
+      "residentialAddress": "RTO office opp,t.kallipatti,periyakulam,Theni.",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "625605",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "Master of Computer Application",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.35",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-03",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-python-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T03:58:30.228Z",
+      "updatedAt": "2026-11-23T03:58:30.228Z"
     }
   ],
   "assessment_results": [
@@ -3698,5 +3739,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:58:27.585Z"
+  "lastUpdated": "2026-11-23T03:58:30.328Z"
 }
