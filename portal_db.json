@@ -9233,6 +9233,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:15:23.885Z",
       "updatedAt": "2026-11-23T04:15:23.885Z"
+    },
+    {
+      "_id": "cand-7cb23fa5-a085-4e0b-85b9-d531977b4f25",
+      "candidateId": "INZ-CAND-2026-00260",
+      "fullName": "Devipriya M",
+      "email": "devipriyaa1012@gmail.com",
+      "password": "Devipriya@25",
+      "mobileNumber": "+917305725686",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-12-10",
+      "gender": "Female",
+      "residentialAddress": "64, Sengol nagar, main road, old vilangudi, madurai",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "625018",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.Tech Information Technology",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "7.97",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:15:55.066Z",
+      "updatedAt": "2026-11-23T04:15:55.066Z"
     }
   ],
   "assessment_results": [
@@ -10478,5 +10519,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:15:51.206Z"
+  "lastUpdated": "2026-11-23T04:15:55.177Z"
 }
