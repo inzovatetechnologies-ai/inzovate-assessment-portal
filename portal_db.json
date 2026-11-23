@@ -2505,6 +2505,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T03:53:53.659Z",
       "updatedAt": "2026-11-23T03:53:53.659Z"
+    },
+    {
+      "_id": "cand-f324cbb0-b0b5-4df5-b498-1f2eaa60cd15",
+      "candidateId": "INZ-CAND-2026-00078",
+      "fullName": "Sowndarya M",
+      "email": "sowndarya812006@gmail.com",
+      "password": "Sweety@8324***",
+      "mobileNumber": "7200281857",
+      "altMobileNumber": "",
+      "dateOfBirth": "2006-01-08",
+      "gender": "Female",
+      "residentialAddress": "154/p Panchayat Board Back Side,Kasimajor Puram",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "627802",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.Tech INFORMATION TECHNOLOGY",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.45",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T03:53:56.705Z",
+      "updatedAt": "2026-11-23T03:53:56.705Z"
     }
   ],
   "assessment_results": [
@@ -2550,5 +2591,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:53:53.766Z"
+  "lastUpdated": "2026-11-23T03:53:56.834Z"
 }
