@@ -335,13 +335,59 @@
       "jobRoleId": "role-soft-dev",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Rejected",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T03:43:11.616Z",
-      "updatedAt": "2026-11-23T03:43:11.616Z"
+      "updatedAt": "2026-11-23T03:43:11.616Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_1ac2616b-a4f1-4b90-818f-758883d29edd",
+        "candidateId": "INZ-CAND-2026-00009",
+        "candidateDisplayId": "INZ-CAND-2026-00009",
+        "candidateName": "Nanthini S",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "PSNA College of Engineering and Technology",
+        "totalScore": 23,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 51,
+        "isPassed": false,
+        "examResult": "Fail",
+        "selectionStatus": "Rejected",
+        "passCutoff": "> 25",
+        "performanceCategory": "Foundational (Competent)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-D159B0",
+        "sectionScores": {
+          "section-1": {
+            "score": 11,
+            "total": 15,
+            "percentage": 73
+          },
+          "section-2": {
+            "score": 5,
+            "total": 15,
+            "percentage": 33
+          },
+          "section-3": {
+            "score": 7,
+            "total": 15,
+            "percentage": 47
+          }
+        },
+        "completedAt": "2026-11-23T04:20:02.980Z"
+      },
+      "totalScore": 23,
+      "percentage": 51,
+      "isPassed": false,
+      "examResult": "Fail",
+      "certificateId": "INZ-CERT-2026-D159B0",
+      "completedAt": "2026-11-23T04:20:02.980Z"
     },
     {
       "_id": "cand-0489118d-b18a-449d-b439-c8d1eb62ec6e",
@@ -12257,8 +12303,48 @@
         }
       },
       "completedAt": "2026-11-23T04:19:32.755Z"
+    },
+    {
+      "sessionId": "inz_cbt_1ac2616b-a4f1-4b90-818f-758883d29edd",
+      "candidateId": "INZ-CAND-2026-00009",
+      "candidateDisplayId": "INZ-CAND-2026-00009",
+      "candidateName": "Nanthini S",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "totalScore": 23,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 51,
+      "isPassed": false,
+      "examResult": "Fail",
+      "selectionStatus": "Rejected",
+      "passCutoff": "> 25",
+      "performanceCategory": "Foundational (Competent)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-D159B0",
+      "sectionScores": {
+        "section-1": {
+          "score": 11,
+          "total": 15,
+          "percentage": 73
+        },
+        "section-2": {
+          "score": 5,
+          "total": 15,
+          "percentage": 33
+        },
+        "section-3": {
+          "score": 7,
+          "total": 15,
+          "percentage": 47
+        }
+      },
+      "completedAt": "2026-11-23T04:20:02.980Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:19:48.318Z"
+  "lastUpdated": "2026-11-23T04:20:03.124Z"
 }
