@@ -2218,6 +2218,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T03:53:19.190Z",
       "updatedAt": "2026-11-23T03:53:19.190Z"
+    },
+    {
+      "_id": "cand-b8f8fd0a-8708-45a7-a115-5a1676de554c",
+      "candidateId": "INZ-CAND-2026-00070",
+      "fullName": "Nithin Nirmal J",
+      "email": "jnithinnirmal@gmail.com",
+      "password": "Nithin@2006",
+      "mobileNumber": "9360181086",
+      "altMobileNumber": "",
+      "dateOfBirth": "2006-07-07",
+      "gender": "Male",
+      "residentialAddress": "Karamadai, Dindigul ",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "624705",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.E. Computer Science and Business Systems ",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "7.58",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T03:53:22.371Z",
+      "updatedAt": "2026-11-23T03:53:22.371Z"
     }
   ],
   "assessment_results": [
@@ -2263,5 +2304,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:53:20.355Z"
+  "lastUpdated": "2026-11-23T03:53:22.494Z"
 }
