@@ -8885,6 +8885,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:14:23.216Z",
       "updatedAt": "2026-11-23T04:14:23.216Z"
+    },
+    {
+      "_id": "cand-f5c79a04-09e7-4a66-b056-29f382aba18c",
+      "candidateId": "INZ-CAND-2026-00252",
+      "fullName": "Avila mary M",
+      "email": "avilamarch18m@gmail.com",
+      "password": "Avila@18",
+      "mobileNumber": "7358857310",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-03-18",
+      "gender": "Female",
+      "residentialAddress": "M.G.R Nagar,N.panjampatti,Dindigul",
+      "district": "",
+      "state": "Tamil Nadu",
+      "pinCode": "624 303",
+      "collegeId": "",
+      "collegeName": "PSNA  COLLEGE OF ENGINEERING & TECHNOLOGY",
+      "universityRegisterNumber": "",
+      "degree": "Master of Computer Application",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.19",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-03",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-frontend",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:15:12.870Z",
+      "updatedAt": "2026-11-23T04:15:12.870Z"
     }
   ],
   "assessment_results": [
@@ -9970,5 +10011,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:15:07.981Z"
+  "lastUpdated": "2026-11-23T04:15:13.175Z"
 }
