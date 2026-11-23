@@ -6382,13 +6382,59 @@
       "jobRoleId": "role-data-analyst",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Rejected",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T03:57:31.439Z",
-      "updatedAt": "2026-11-23T03:57:31.439Z"
+      "updatedAt": "2026-11-23T03:57:31.439Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_9d8a4105-fb03-497e-b0cf-4ba2377ea667",
+        "candidateId": "INZ-CAND-2026-00113",
+        "candidateDisplayId": "INZ-CAND-2026-00113",
+        "candidateName": "Keerthana",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "P.S.N.A College of Engineering and Technology",
+        "totalScore": 23,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 51,
+        "isPassed": false,
+        "examResult": "Fail",
+        "selectionStatus": "Rejected",
+        "passCutoff": "> 25",
+        "performanceCategory": "Foundational (Competent)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-D62752",
+        "sectionScores": {
+          "section-1": {
+            "score": 8,
+            "total": 15,
+            "percentage": 53
+          },
+          "section-2": {
+            "score": 11,
+            "total": 15,
+            "percentage": 73
+          },
+          "section-3": {
+            "score": 4,
+            "total": 15,
+            "percentage": 27
+          }
+        },
+        "completedAt": "2026-11-23T04:35:06.789Z"
+      },
+      "totalScore": 23,
+      "percentage": 51,
+      "isPassed": false,
+      "examResult": "Fail",
+      "certificateId": "INZ-CERT-2026-D62752",
+      "completedAt": "2026-11-23T04:35:06.789Z"
     },
     {
       "_id": "cand-a24f53a7-ff72-44da-a764-71a1f74dcdad",
@@ -19947,8 +19993,48 @@
         }
       },
       "completedAt": "2026-11-23T04:35:03.432Z"
+    },
+    {
+      "sessionId": "inz_cbt_9d8a4105-fb03-497e-b0cf-4ba2377ea667",
+      "candidateId": "INZ-CAND-2026-00113",
+      "candidateDisplayId": "INZ-CAND-2026-00113",
+      "candidateName": "Keerthana",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "P.S.N.A College of Engineering and Technology",
+      "totalScore": 23,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 51,
+      "isPassed": false,
+      "examResult": "Fail",
+      "selectionStatus": "Rejected",
+      "passCutoff": "> 25",
+      "performanceCategory": "Foundational (Competent)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-D62752",
+      "sectionScores": {
+        "section-1": {
+          "score": 8,
+          "total": 15,
+          "percentage": 53
+        },
+        "section-2": {
+          "score": 11,
+          "total": 15,
+          "percentage": 73
+        },
+        "section-3": {
+          "score": 4,
+          "total": 15,
+          "percentage": 27
+        }
+      },
+      "completedAt": "2026-11-23T04:35:06.789Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:35:05.522Z"
+  "lastUpdated": "2026-11-23T04:35:06.916Z"
 }
