@@ -19435,6 +19435,47 @@
       "examResult": "Pass",
       "certificateId": "INZ-CERT-2026-3E6D8C",
       "completedAt": "2026-11-23T05:02:33.877Z"
+    },
+    {
+      "_id": "cand-5a463f09-c03e-4b2c-8402-85d98cbeba95",
+      "candidateId": "INZ-CAND-2026-00244",
+      "fullName": "Hari Prakash K",
+      "email": "hariprakashk23cs@psnacet.edu.in",
+      "password": "hariprakash",
+      "mobileNumber": "8610799935",
+      "altMobileNumber": "",
+      "dateOfBirth": "2006-05-03",
+      "gender": "Male",
+      "residentialAddress": "5 B2, yusuf nagar,  5th street, marampadi road ,vedasandur",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "624710",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.E. Computer Science and Engineering",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "7.6",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T05:04:41.439Z",
+      "updatedAt": "2026-11-23T05:04:41.439Z"
     }
   ],
   "assessment_results": [
@@ -28480,5 +28521,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T05:02:34.049Z"
+  "lastUpdated": "2026-11-23T05:04:41.661Z"
 }
