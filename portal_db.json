@@ -3161,6 +3161,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T03:56:29.448Z",
       "updatedAt": "2026-11-23T03:56:29.448Z"
+    },
+    {
+      "_id": "cand-7dbc8acc-a529-4ea4-af6d-4bc8d19782b0",
+      "candidateId": "INZ-CAND-2026-00101",
+      "fullName": "SANIYA FARHIN",
+      "email": "saniyafargin12@gmail.com",
+      "password": "Saniya@123",
+      "mobileNumber": "+91 9043782689",
+      "altMobileNumber": "",
+      "dateOfBirth": "2006-03-18",
+      "gender": "Female",
+      "residentialAddress": "1/521 sendurai(po),didugal",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "624403",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.Tech Information Technology",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.34",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-03",
+      "domainName": "Software Development",
+      "jobRoleId": "role-ai-ml",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T03:56:32.203Z",
+      "updatedAt": "2026-11-23T03:56:32.203Z"
     }
   ],
   "assessment_results": [
@@ -3206,5 +3247,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:56:31.632Z"
+  "lastUpdated": "2026-11-23T03:56:32.797Z"
 }
