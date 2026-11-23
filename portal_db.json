@@ -8023,6 +8023,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:11:18.152Z",
       "updatedAt": "2026-11-23T04:11:18.152Z"
+    },
+    {
+      "_id": "cand-99ef474e-34b7-4ea0-8be0-0d66545bfb3c",
+      "candidateId": "INZ-CAND-2026-00240",
+      "fullName": "Nitheesh V",
+      "email": "nitheesh.v2005@gmail.com",
+      "password": "Nitheesh@1408",
+      "mobileNumber": "7530014493",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-08-14",
+      "gender": "Male",
+      "residentialAddress": "5/216 , south Street, Silukuvarpatty, nilakottai taluk, dindugal district, tamilnadu ",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "624215",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.E. Computer Science and Engineering",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "7.4",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:11:26.401Z",
+      "updatedAt": "2026-11-23T04:11:26.401Z"
     }
   ],
   "assessment_results": [
@@ -8668,5 +8709,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:11:18.262Z"
+  "lastUpdated": "2026-11-23T04:11:26.524Z"
 }
