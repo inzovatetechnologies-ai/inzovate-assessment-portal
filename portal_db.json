@@ -9842,6 +9842,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:17:36.160Z",
       "updatedAt": "2026-11-23T04:17:36.160Z"
+    },
+    {
+      "_id": "cand-228a05dd-214e-41b0-bcf2-919b877b8220",
+      "candidateId": "INZ-CAND-2026-00203",
+      "fullName": "SRINIDHI U",
+      "email": "sreejaasrinidhi2006@gmail.com",
+      "password": "Srinidhi@2006",
+      "mobileNumber": "+916385333135",
+      "altMobileNumber": "",
+      "dateOfBirth": "2006-01-12",
+      "gender": "Female",
+      "residentialAddress": "19/41- 1 Vivekananda Nagar Extension, Dindigul",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "624001",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.E. Computer Science and Engineering",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "9.09",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-frontend",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:17:45.477Z",
+      "updatedAt": "2026-11-23T04:17:45.477Z"
     }
   ],
   "assessment_results": [
@@ -11367,5 +11408,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:17:40.844Z"
+  "lastUpdated": "2026-11-23T04:17:45.595Z"
 }
