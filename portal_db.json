@@ -5436,6 +5436,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:03:48.366Z",
       "updatedAt": "2026-11-23T04:03:48.366Z"
+    },
+    {
+      "_id": "cand-4db0bc69-a2b0-4ff1-a2d0-738c3f0a6cf7",
+      "candidateId": "INZ-CAND-2026-00175",
+      "fullName": "Roobak Vijai",
+      "email": "rioroobakvijai1836@gmail.com",
+      "password": "inzovatevj09@",
+      "mobileNumber": "+916382688202",
+      "altMobileNumber": "",
+      "dateOfBirth": "2006-03-18",
+      "gender": "Male",
+      "residentialAddress": "34a,\nEzhil Nagar North, Rajiv Nagar, Round Road Pudhur, Dindigul",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "624005",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B. Tech IT",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.0",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:03:47.778Z",
+      "updatedAt": "2026-11-23T04:03:47.778Z"
     }
   ],
   "assessment_results": [
@@ -5681,5 +5722,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:03:50.066Z"
+  "lastUpdated": "2026-11-23T04:03:51.460Z"
 }
