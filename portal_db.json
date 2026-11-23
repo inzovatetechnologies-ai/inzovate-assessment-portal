@@ -8458,6 +8458,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:12:40.710Z",
       "updatedAt": "2026-11-23T04:12:40.710Z"
+    },
+    {
+      "_id": "cand-2381bf63-416c-49f1-9f68-fe98a9180789",
+      "candidateId": "INZ-CAND-2026-00186",
+      "fullName": "Arunkumar G",
+      "email": "arunkumargsa4600@gmail.com",
+      "password": "Arunkumar12@",
+      "mobileNumber": "+91 8072469644",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-12-14",
+      "gender": "Male",
+      "residentialAddress": "1/47 chellappanenthal ,thiruppuvanam taluk,ladanendal post,sivaganagai -630611",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "630611",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.Tech Computer Science and Business Systems",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "7.40",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-04",
+      "domainName": "Software Development",
+      "jobRoleId": "role-uiux",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:13:18.431Z",
+      "updatedAt": "2026-11-23T04:13:18.431Z"
     }
   ],
   "assessment_results": [
@@ -9343,5 +9384,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:13:08.245Z"
+  "lastUpdated": "2026-11-23T04:13:18.622Z"
 }
