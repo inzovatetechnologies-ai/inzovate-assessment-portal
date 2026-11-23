@@ -3448,6 +3448,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T03:57:31.439Z",
       "updatedAt": "2026-11-23T03:57:31.439Z"
+    },
+    {
+      "_id": "cand-a24f53a7-ff72-44da-a764-71a1f74dcdad",
+      "candidateId": "INZ-CAND-2026-00114",
+      "fullName": "Jeyalakshmi G",
+      "email": "jeyalakshmi172006@gmail.com",
+      "password": "Jeya2006",
+      "mobileNumber": "+918015739027",
+      "altMobileNumber": "",
+      "dateOfBirth": "2006-02-17",
+      "gender": "Female",
+      "residentialAddress": "3/27,West Street,Ramasamypatti,Kamuthi,Ramanathapuram,623603",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "623603",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.Tech Information Technology ",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.48",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T03:57:40.690Z",
+      "updatedAt": "2026-11-23T03:57:40.690Z"
     }
   ],
   "assessment_results": [
@@ -3493,5 +3534,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:57:31.537Z"
+  "lastUpdated": "2026-11-23T03:57:40.787Z"
 }
