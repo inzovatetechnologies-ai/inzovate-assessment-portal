@@ -3079,6 +3079,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T03:56:16.436Z",
       "updatedAt": "2026-11-23T03:56:16.436Z"
+    },
+    {
+      "_id": "cand-981262dc-9ca0-4f66-bf01-006a7f36602d",
+      "candidateId": "INZ-CAND-2026-00097",
+      "fullName": "Amrithavarshini P",
+      "email": "amrithavarshinipremkumar@gmail.com",
+      "password": "Amiha#0916",
+      "mobileNumber": "+917010399159",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-12-14",
+      "gender": "Female",
+      "residentialAddress": "7/1,kasthuri bai nagar melur",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "625106",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.E. Computer Science and Engineering",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.3",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T03:56:19.398Z",
+      "updatedAt": "2026-11-23T03:56:19.398Z"
     }
   ],
   "assessment_results": [
@@ -3124,5 +3165,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:56:16.548Z"
+  "lastUpdated": "2026-11-23T03:56:19.618Z"
 }
