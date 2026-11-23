@@ -4606,6 +4606,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:01:44.642Z",
       "updatedAt": "2026-11-23T04:01:44.642Z"
+    },
+    {
+      "_id": "cand-98cc7835-ddbe-4221-aed2-6131f552c4d4",
+      "candidateId": "INZ-CAND-2026-00110",
+      "fullName": "Yogapriya P",
+      "email": "yogapriyaperumal2005@gmail.com",
+      "password": "Yogapriya@2005",
+      "mobileNumber": "6383790936",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-11-06",
+      "gender": "Female",
+      "residentialAddress": "Pannaikadu,Dindigul",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "624210",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.Tech.Artificial Intelligence And DataScience",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.38",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-fullstack",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:01:44.926Z",
+      "updatedAt": "2026-11-23T04:01:44.926Z"
     }
   ],
   "assessment_results": [
@@ -4731,5 +4772,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:01:44.741Z"
+  "lastUpdated": "2026-11-23T04:01:46.175Z"
 }
