@@ -1212,7 +1212,7 @@
     },
     {
       "_id": "cand-61806a90-5a8c-4cc2-b48b-25dd309ec63d",
-      "candidateId": "INZ-CAND-2026-00022",
+      "candidateId": "INZ-CAND-2026-00295",
       "fullName": "MOHEMMED IBRAHIM M",
       "email": "mohemmedibrahimm55@gmail.com",
       "password": "Ibrahim_@262006",
@@ -1243,7 +1243,7 @@
       "jobRoleId": "role-soft-dev",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Selected for Next Round",
+      "recruitmentStage": "Registered",
       "status": "Registered",
       "deletedAt": null,
       "assessmentStatus": "Completed",
@@ -16616,5 +16616,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:29:14.499Z"
+  "lastUpdated": "2026-11-23T04:29:15.654Z"
 }
