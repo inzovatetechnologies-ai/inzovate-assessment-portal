@@ -7941,6 +7941,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:09:32.243Z",
       "updatedAt": "2026-11-23T04:09:32.243Z"
+    },
+    {
+      "_id": "cand-b71c0f6c-8731-45c8-8123-4dbbf82195b0",
+      "candidateId": "INZ-CAND-2026-00236",
+      "fullName": "Janani I",
+      "email": "jananiiyyappan25@gmail.com",
+      "password": "VJrabbit@2325",
+      "mobileNumber": "+91 9488628559",
+      "altMobileNumber": "",
+      "dateOfBirth": "2006-02-25",
+      "gender": "Female",
+      "residentialAddress": "A/101, Gandhigram Trust Quarters, Gandhigram, Dindigul-624302",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "624302",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.E. Computer Science and Engineering",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.41",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-fullstack",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:11:04.443Z",
+      "updatedAt": "2026-11-23T04:11:04.443Z"
     }
   ],
   "assessment_results": [
@@ -8586,5 +8627,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:10:48.528Z"
+  "lastUpdated": "2026-11-23T04:11:04.560Z"
 }
