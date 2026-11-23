@@ -15111,6 +15111,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:35:25.859Z",
       "updatedAt": "2026-11-23T04:35:25.859Z"
+    },
+    {
+      "_id": "cand-99581a1a-a001-4aa4-a9ed-7c11c28868e4",
+      "candidateId": "INZ-CAND-2026-00225",
+      "fullName": "solairajan  s",
+      "email": "solairajansaro@gmail.com",
+      "password": "solai@123",
+      "mobileNumber": "8072545761",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-09-15",
+      "gender": "Male",
+      "residentialAddress": "rajiv gadhi nagar,madurai",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "625107",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.E. Computer Science and Engineering",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "7.7",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:36:14.114Z",
+      "updatedAt": "2026-11-23T04:36:14.114Z"
     }
   ],
   "assessment_results": [
@@ -20716,5 +20757,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:36:10.752Z"
+  "lastUpdated": "2026-11-23T04:36:14.269Z"
 }
