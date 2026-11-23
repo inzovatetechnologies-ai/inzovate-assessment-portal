@@ -17594,7 +17594,7 @@
     },
     {
       "_id": "cand-00824517-9257-44b4-b52e-31dbd628dc20",
-      "candidateId": "INZ-CAND-2026-00289",
+      "candidateId": "INZ-CAND-2026-00216",
       "fullName": "Gavin Larsen Packiam S",
       "email": "gavinlarsenpackiam07@gmail.com",
       "password": "g@v!n007",
@@ -17628,10 +17628,53 @@
       "recruitmentStage": "Registered",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T04:24:26.362Z",
-      "updatedAt": "2026-11-23T04:24:26.362Z"
+      "updatedAt": "2026-11-23T04:24:26.362Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_e60a100c-7c05-4c55-a8ab-c97cfe3848d7",
+        "candidateId": "INZ-CAND-2026-00216",
+        "candidateDisplayId": "INZ-CAND-2026-00216",
+        "candidateName": "Candidate",
+        "jobRoleTitle": "Software Developer",
+        "collegeName": "Autonomous Engineering College",
+        "totalScore": 41,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 91,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Mastery (Outstanding)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-B322D7",
+        "sectionScores": {
+          "section-1": {
+            "score": 14,
+            "total": 15,
+            "percentage": 93
+          },
+          "section-2": {
+            "score": 14,
+            "total": 15,
+            "percentage": 93
+          },
+          "section-3": {
+            "score": 13,
+            "total": 15,
+            "percentage": 87
+          }
+        },
+        "completedAt": "2026-11-23T04:32:30.852Z"
+      },
+      "totalScore": 41,
+      "percentage": 91,
+      "certificateId": "INZ-CERT-2026-B322D7"
     },
     {
       "_id": "cand-1616166f-7f71-46ab-8d1c-5be67cab96ec",
@@ -29329,5 +29372,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T05:55:50.884Z"
+  "lastUpdated": "2026-11-23T06:02:32.228Z"
 }
