@@ -11126,6 +11126,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:22:51.693Z",
       "updatedAt": "2026-11-23T04:22:51.693Z"
+    },
+    {
+      "_id": "cand-790e7644-e0eb-4417-b6d1-d14f8b0b05b9",
+      "candidateId": "INZ-CAND-2026-00285",
+      "fullName": "Maheshwari V",
+      "email": "maheshwariv090@gmail.com",
+      "password": "Maheshwari@11",
+      "mobileNumber": "+916383055086",
+      "altMobileNumber": "",
+      "dateOfBirth": "2006-06-11",
+      "gender": "Female",
+      "residentialAddress": "1/155 post office street, Tirunelveli district pincode-627001",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "627001",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.E. Computer Science and Engineering",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.7",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:22:51.660Z",
+      "updatedAt": "2026-11-23T04:22:51.660Z"
     }
   ],
   "assessment_results": [
@@ -13451,5 +13492,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:22:51.818Z"
+  "lastUpdated": "2026-11-23T04:22:53.165Z"
 }
