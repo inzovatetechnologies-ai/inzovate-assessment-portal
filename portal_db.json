@@ -161,13 +161,59 @@
       "jobRoleId": "role-soft-dev",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T03:38:52.435Z",
-      "updatedAt": "2026-11-23T03:38:52.435Z"
+      "updatedAt": "2026-11-23T03:38:52.435Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_a8664f6d-5a5e-4e61-8e28-1e277a0fecfa",
+        "candidateId": "INZ-CAND-2026-00004",
+        "candidateDisplayId": "INZ-CAND-2026-00004",
+        "candidateName": "Priyadharshan T S",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "PSNA College of Engineering and Technology",
+        "totalScore": 27,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 60,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Foundational (Competent)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-F17474",
+        "sectionScores": {
+          "section-1": {
+            "score": 6,
+            "total": 15,
+            "percentage": 40
+          },
+          "section-2": {
+            "score": 12,
+            "total": 15,
+            "percentage": 80
+          },
+          "section-3": {
+            "score": 9,
+            "total": 15,
+            "percentage": 60
+          }
+        },
+        "completedAt": "2026-11-23T04:08:02.991Z"
+      },
+      "totalScore": 27,
+      "percentage": 60,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-F17474",
+      "completedAt": "2026-11-23T04:08:02.991Z"
     },
     {
       "_id": "cand-46309fea-5116-4d62-a422-02df897a1ddf",
@@ -7330,8 +7376,48 @@
         }
       },
       "completedAt": "2026-11-23T04:07:29.535Z"
+    },
+    {
+      "sessionId": "inz_cbt_a8664f6d-5a5e-4e61-8e28-1e277a0fecfa",
+      "candidateId": "INZ-CAND-2026-00004",
+      "candidateDisplayId": "INZ-CAND-2026-00004",
+      "candidateName": "Priyadharshan T S",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "totalScore": 27,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 60,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Foundational (Competent)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-F17474",
+      "sectionScores": {
+        "section-1": {
+          "score": 6,
+          "total": 15,
+          "percentage": 40
+        },
+        "section-2": {
+          "score": 12,
+          "total": 15,
+          "percentage": 80
+        },
+        "section-3": {
+          "score": 9,
+          "total": 15,
+          "percentage": 60
+        }
+      },
+      "completedAt": "2026-11-23T04:08:02.991Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:07:59.238Z"
+  "lastUpdated": "2026-11-23T04:08:03.108Z"
 }
