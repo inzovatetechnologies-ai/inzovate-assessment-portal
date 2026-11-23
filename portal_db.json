@@ -11085,6 +11085,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:21:27.132Z",
       "updatedAt": "2026-11-23T04:21:27.132Z"
+    },
+    {
+      "_id": "cand-b2a48386-3075-44aa-91f9-04b28c8a393b",
+      "candidateId": "INZ-CAND-2026-00284",
+      "fullName": "Karunyaa R",
+      "email": "karubecs@gmail.com",
+      "password": "Karu@2005",
+      "mobileNumber": "+917695936231",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-08-29",
+      "gender": "Female",
+      "residentialAddress": "PSNA College of Engineering and Technology (PSNACET)\nPSNA College of Engineering and Technology Kothandaraman Nag",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "622302",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.E. Computer Science and Engineering",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "7.43",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-02",
+      "domainName": "Software Development",
+      "jobRoleId": "role-data-analyst",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:22:51.693Z",
+      "updatedAt": "2026-11-23T04:22:51.693Z"
     }
   ],
   "assessment_results": [
@@ -13410,5 +13451,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:22:38.443Z"
+  "lastUpdated": "2026-11-23T04:22:51.818Z"
 }
