@@ -1852,13 +1852,59 @@
       "jobRoleId": "role-seo-exec",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T03:49:17.807Z",
-      "updatedAt": "2026-11-23T03:49:17.807Z"
+      "updatedAt": "2026-11-23T03:49:17.807Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_a29b3729-f001-409b-9816-942d24bcc73e",
+        "candidateId": "INZ-CAND-2026-00125",
+        "candidateDisplayId": "INZ-CAND-2026-00125",
+        "candidateName": "Kaviya P",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "PSNA College of Engineering and Technology",
+        "totalScore": 42,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 93,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Mastery (Outstanding)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-6D7DA4",
+        "sectionScores": {
+          "section-1": {
+            "score": 12,
+            "total": 15,
+            "percentage": 80
+          },
+          "section-2": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-3": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          }
+        },
+        "completedAt": "2026-11-23T04:32:35.632Z"
+      },
+      "totalScore": 42,
+      "percentage": 93,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-6D7DA4",
+      "completedAt": "2026-11-23T04:32:35.632Z"
     },
     {
       "_id": "cand-beddf0d5-7cc8-47e8-9483-da52a43a9142",
@@ -18616,8 +18662,48 @@
         }
       },
       "completedAt": "2026-11-23T04:32:30.852Z"
+    },
+    {
+      "sessionId": "inz_cbt_a29b3729-f001-409b-9816-942d24bcc73e",
+      "candidateId": "INZ-CAND-2026-00125",
+      "candidateDisplayId": "INZ-CAND-2026-00125",
+      "candidateName": "Kaviya P",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "totalScore": 42,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 93,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Mastery (Outstanding)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-6D7DA4",
+      "sectionScores": {
+        "section-1": {
+          "score": 12,
+          "total": 15,
+          "percentage": 80
+        },
+        "section-2": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-3": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        }
+      },
+      "completedAt": "2026-11-23T04:32:35.632Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:32:30.989Z"
+  "lastUpdated": "2026-11-23T04:32:35.802Z"
 }
