@@ -4734,6 +4734,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:01:53.332Z",
       "updatedAt": "2026-11-23T04:01:53.332Z"
+    },
+    {
+      "_id": "cand-c69e7200-2183-45ce-9d50-3ccb56b45690",
+      "candidateId": "INZ-CAND-2026-00152",
+      "fullName": "S Shashti Shree",
+      "email": "shreesankar3105@gmail.com",
+      "password": "031005",
+      "mobileNumber": "9363908393",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-10-03",
+      "gender": "Female",
+      "residentialAddress": "Amul raj nagar , Palani by pass , dindigul",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "624001",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "Btech Computer Science and business Systems",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.5",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-05",
+      "domainName": "Software Development",
+      "jobRoleId": "role-cloud-eng",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:02:08.088Z",
+      "updatedAt": "2026-11-23T04:02:08.088Z"
     }
   ],
   "assessment_results": [
@@ -4899,5 +4940,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:02:05.983Z"
+  "lastUpdated": "2026-11-23T04:02:08.259Z"
 }
