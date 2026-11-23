@@ -2833,6 +2833,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T03:55:04.887Z",
       "updatedAt": "2026-11-23T03:55:04.887Z"
+    },
+    {
+      "_id": "cand-62cde769-f32d-4ec0-928f-d222f23fbab3",
+      "candidateId": "INZ-CAND-2026-00069",
+      "fullName": "POOMANI N",
+      "email": "poomanin66005@gmail.com",
+      "password": "Poomani@1051",
+      "mobileNumber": "8610512242",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-06-16",
+      "gender": "Female",
+      "residentialAddress": "w4/245, Ottakovilpatty, Melur(tk), Madurai(district).",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "624105",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.E. Computer Science and Engineering(Cyber security)",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.3",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-07",
+      "domainName": "Software Development",
+      "jobRoleId": "role-cyber-analyst",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T03:55:13.301Z",
+      "updatedAt": "2026-11-23T03:55:13.301Z"
     }
   ],
   "assessment_results": [
@@ -2878,5 +2919,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:55:10.386Z"
+  "lastUpdated": "2026-11-23T03:55:13.428Z"
 }
