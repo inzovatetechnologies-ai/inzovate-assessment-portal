@@ -2874,6 +2874,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T03:55:13.301Z",
       "updatedAt": "2026-11-23T03:55:13.301Z"
+    },
+    {
+      "_id": "cand-32257917-4c74-4596-9494-26ea2febba0a",
+      "candidateId": "INZ-CAND-2026-00092",
+      "fullName": "Santhosh P S",
+      "email": "santhoshpsofficial@gmail.com",
+      "password": "@Santhosh369",
+      "mobileNumber": "+91 8925420849",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-12-09",
+      "gender": "Male",
+      "residentialAddress": "Plot no:11,Manikandan nagar main street,Villapuram,Madurai.",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "625012",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.E. CSE(Cybersecurity)",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.4",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-03",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-java-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T03:55:16.763Z",
+      "updatedAt": "2026-11-23T03:55:16.763Z"
     }
   ],
   "assessment_results": [
@@ -2919,5 +2960,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:55:13.428Z"
+  "lastUpdated": "2026-11-23T03:55:16.886Z"
 }
