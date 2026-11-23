@@ -12392,7 +12392,7 @@
     },
     {
       "_id": "cand-def63983-3e62-437b-8874-0a64f146fa91",
-      "candidateId": "INZ-CAND-2026-00292",
+      "candidateId": "INZ-CAND-2026-00294",
       "fullName": "AKCHAYA G",
       "email": "akshayag072006@gmailcom",
       "password": "Akchayag@07",
@@ -15756,5 +15756,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:27:30.587Z"
+  "lastUpdated": "2026-11-23T04:27:35.370Z"
 }
