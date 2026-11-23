@@ -8330,6 +8330,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:11:34.192Z",
       "updatedAt": "2026-11-23T04:11:34.192Z"
+    },
+    {
+      "_id": "cand-e3b97124-ce1e-43fa-8a2e-dc2f59409795",
+      "candidateId": "INZ-CAND-2026-00243",
+      "fullName": "Sneka S",
+      "email": "snekas23it@psnacet.edu.in",
+      "password": "Sneka@2005",
+      "mobileNumber": "7010745807",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-12-10",
+      "gender": "Female",
+      "residentialAddress": "24,Ayyappan nagar,vedasandur,Dindigul",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "624622",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B tech Information Technologu",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.4",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:12:35.116Z",
+      "updatedAt": "2026-11-23T04:12:35.116Z"
     }
   ],
   "assessment_results": [
@@ -9135,5 +9176,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:12:35.155Z"
+  "lastUpdated": "2026-11-23T04:12:36.521Z"
 }
