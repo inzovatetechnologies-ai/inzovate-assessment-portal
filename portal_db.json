@@ -10461,6 +10461,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:19:46.313Z",
       "updatedAt": "2026-11-23T04:19:46.313Z"
+    },
+    {
+      "_id": "cand-3b036c9e-8023-42a8-aa43-1e60612b52b8",
+      "candidateId": "INZ-CAND-2026-00279",
+      "fullName": "SRILEKA S",
+      "email": "srilekasenthil2006@gmail.com",
+      "password": "Sri@2006",
+      "mobileNumber": "9047567453",
+      "altMobileNumber": "",
+      "dateOfBirth": "2006-05-01",
+      "gender": "Female",
+      "residentialAddress": "81/3 kaliyamman kovil street ,Aandipatti vadipatti madurai",
+      "district": "",
+      "state": "Tamil Nadu",
+      "pinCode": "625218",
+      "collegeId": "",
+      "collegeName": "psna college of engineering and technology ",
+      "universityRegisterNumber": "",
+      "degree": "B.E. Computer Science and Engineering",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "7.57",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:20:17.591Z",
+      "updatedAt": "2026-11-23T04:20:17.591Z"
     }
   ],
   "assessment_results": [
@@ -12346,5 +12387,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:20:03.124Z"
+  "lastUpdated": "2026-11-23T04:20:17.719Z"
 }
