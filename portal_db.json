@@ -13638,13 +13638,59 @@
       "jobRoleId": "role-uiux",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T04:13:18.431Z",
-      "updatedAt": "2026-11-23T04:13:18.431Z"
+      "updatedAt": "2026-11-23T04:13:18.431Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_4cce6791-e784-435e-acc2-477c9c42d7f2",
+        "candidateId": "INZ-CAND-2026-00186",
+        "candidateDisplayId": "INZ-CAND-2026-00186",
+        "candidateName": "Arunkumar G",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "PSNA College of Engineering and Technology",
+        "totalScore": 39,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 87,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Mastery (Outstanding)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-FE9CE4",
+        "sectionScores": {
+          "section-1": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-2": {
+            "score": 13,
+            "total": 15,
+            "percentage": 87
+          },
+          "section-3": {
+            "score": 11,
+            "total": 15,
+            "percentage": 73
+          }
+        },
+        "completedAt": "2026-11-23T04:38:28.666Z"
+      },
+      "totalScore": 39,
+      "percentage": 87,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-FE9CE4",
+      "completedAt": "2026-11-23T04:38:28.666Z"
     },
     {
       "_id": "cand-b81c8b21-f04a-4650-a47e-5a6b4939c4fa",
@@ -22074,8 +22120,48 @@
         }
       },
       "completedAt": "2026-11-23T04:38:28.341Z"
+    },
+    {
+      "sessionId": "inz_cbt_4cce6791-e784-435e-acc2-477c9c42d7f2",
+      "candidateId": "INZ-CAND-2026-00186",
+      "candidateDisplayId": "INZ-CAND-2026-00186",
+      "candidateName": "Arunkumar G",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "totalScore": 39,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 87,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Mastery (Outstanding)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-FE9CE4",
+      "sectionScores": {
+        "section-1": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-2": {
+          "score": 13,
+          "total": 15,
+          "percentage": 87
+        },
+        "section-3": {
+          "score": 11,
+          "total": 15,
+          "percentage": 73
+        }
+      },
+      "completedAt": "2026-11-23T04:38:28.666Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:38:28.490Z"
+  "lastUpdated": "2026-11-23T04:38:30.347Z"
 }
