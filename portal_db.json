@@ -5574,13 +5574,59 @@
       "jobRoleId": "role-cyber-analyst",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T03:56:45.636Z",
-      "updatedAt": "2026-11-23T03:56:45.636Z"
+      "updatedAt": "2026-11-23T03:56:45.636Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_734128dd-3ad4-4e84-8a2c-2963620e93fb",
+        "candidateId": "INZ-CAND-2026-00103",
+        "candidateDisplayId": "INZ-CAND-2026-00103",
+        "candidateName": "Affra Hasin J",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "PSNA College of Engineering and Technology",
+        "totalScore": 41,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 91,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Mastery (Outstanding)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-D487FA",
+        "sectionScores": {
+          "section-1": {
+            "score": 14,
+            "total": 15,
+            "percentage": 93
+          },
+          "section-2": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-3": {
+            "score": 12,
+            "total": 15,
+            "percentage": 80
+          }
+        },
+        "completedAt": "2026-11-23T04:28:27.070Z"
+      },
+      "totalScore": 41,
+      "percentage": 91,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-D487FA",
+      "completedAt": "2026-11-23T04:28:27.070Z"
     },
     {
       "_id": "cand-4e634fac-c908-4915-acb5-34fd20afaf0c",
@@ -16011,8 +16057,48 @@
         }
       },
       "completedAt": "2026-11-23T04:28:16.922Z"
+    },
+    {
+      "sessionId": "inz_cbt_734128dd-3ad4-4e84-8a2c-2963620e93fb",
+      "candidateId": "INZ-CAND-2026-00103",
+      "candidateDisplayId": "INZ-CAND-2026-00103",
+      "candidateName": "Affra Hasin J",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "totalScore": 41,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 91,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Mastery (Outstanding)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-D487FA",
+      "sectionScores": {
+        "section-1": {
+          "score": 14,
+          "total": 15,
+          "percentage": 93
+        },
+        "section-2": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-3": {
+          "score": 12,
+          "total": 15,
+          "percentage": 80
+        }
+      },
+      "completedAt": "2026-11-23T04:28:27.070Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:28:17.045Z"
+  "lastUpdated": "2026-11-23T04:28:27.243Z"
 }
