@@ -10203,7 +10203,7 @@
     },
     {
       "_id": "cand-17bee882-afee-4c0e-a3fd-ffbbe06bfbf3",
-      "candidateId": "INZ-CAND-2026-00271",
+      "candidateId": "INZ-CAND-2026-00275",
       "fullName": "SHALINI.S",
       "email": "shaliniramlak@gmail.com",
       "password": "shalu@psna",
@@ -12047,5 +12047,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:18:39.575Z"
+  "lastUpdated": "2026-11-23T04:18:42.369Z"
 }
