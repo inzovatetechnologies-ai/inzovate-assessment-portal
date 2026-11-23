@@ -617,13 +617,59 @@
       "jobRoleId": "role-soft-dev",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T03:46:59.952Z",
-      "updatedAt": "2026-11-23T03:46:59.952Z"
+      "updatedAt": "2026-11-23T03:46:59.952Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_d19c0858-d7f2-4e1f-83a9-e24375396aee",
+        "candidateId": "INZ-CAND-2026-00036",
+        "candidateDisplayId": "INZ-CAND-2026-00036",
+        "candidateName": "Divya S",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "PSNA College of Engineering and Technology",
+        "totalScore": 45,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 100,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Mastery (Outstanding)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-B28FF0",
+        "sectionScores": {
+          "section-1": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-2": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-3": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          }
+        },
+        "completedAt": "2026-11-23T04:04:13.015Z"
+      },
+      "totalScore": 45,
+      "percentage": 100,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-B28FF0",
+      "completedAt": "2026-11-23T04:04:13.015Z"
     },
     {
       "_id": "cand-74fd50cd-1b07-4edd-a141-48086b700d4a",
@@ -5883,8 +5929,48 @@
         }
       },
       "completedAt": "2026-11-23T04:03:34.012Z"
+    },
+    {
+      "sessionId": "inz_cbt_d19c0858-d7f2-4e1f-83a9-e24375396aee",
+      "candidateId": "INZ-CAND-2026-00036",
+      "candidateDisplayId": "INZ-CAND-2026-00036",
+      "candidateName": "Divya S",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "totalScore": 45,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 100,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Mastery (Outstanding)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-B28FF0",
+      "sectionScores": {
+        "section-1": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-2": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-3": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        }
+      },
+      "completedAt": "2026-11-23T04:04:13.015Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:04:09.011Z"
+  "lastUpdated": "2026-11-23T04:04:13.129Z"
 }
