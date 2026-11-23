@@ -5518,6 +5518,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:03:53.162Z",
       "updatedAt": "2026-11-23T04:03:53.162Z"
+    },
+    {
+      "_id": "cand-f33cab00-6acc-4a70-99e2-eaa05331952f",
+      "candidateId": "INZ-CAND-2026-00177",
+      "fullName": "Sivaranjani S",
+      "email": "sivaranjniranjani@gmail.com",
+      "password": "Siva@1234",
+      "mobileNumber": "7845706125",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-11-07",
+      "gender": "Female",
+      "residentialAddress": "114,mariyamman kovil street,periyakkotumulai & po,vriddhachalam TK,cuddalore district ,PIN - 606 103",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "624001",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.E. Computer Science and Engineering",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "7.76",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-java-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:03:58.752Z",
+      "updatedAt": "2026-11-23T04:03:58.752Z"
     }
   ],
   "assessment_results": [
@@ -5763,5 +5804,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:03:53.303Z"
+  "lastUpdated": "2026-11-23T04:03:58.866Z"
 }
