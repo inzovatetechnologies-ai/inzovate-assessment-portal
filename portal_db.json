@@ -6408,13 +6408,59 @@
       "jobRoleId": "role-seo-exec",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Rejected",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T03:58:25.100Z",
-      "updatedAt": "2026-11-23T03:58:25.100Z"
+      "updatedAt": "2026-11-23T03:58:25.100Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_7cee6a50-4317-4d66-800b-e85c7a5beba0",
+        "candidateId": "INZ-CAND-2026-00127",
+        "candidateDisplayId": "INZ-CAND-2026-00127",
+        "candidateName": "BHARANISRI K S",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "PSNA College of Engineering and Technology",
+        "totalScore": 24,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 53,
+        "isPassed": false,
+        "examResult": "Fail",
+        "selectionStatus": "Rejected",
+        "passCutoff": "> 25",
+        "performanceCategory": "Foundational (Competent)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-502127",
+        "sectionScores": {
+          "section-1": {
+            "score": 11,
+            "total": 15,
+            "percentage": 73
+          },
+          "section-2": {
+            "score": 8,
+            "total": 15,
+            "percentage": 53
+          },
+          "section-3": {
+            "score": 5,
+            "total": 15,
+            "percentage": 33
+          }
+        },
+        "completedAt": "2026-11-23T04:33:39.113Z"
+      },
+      "totalScore": 24,
+      "percentage": 53,
+      "isPassed": false,
+      "examResult": "Fail",
+      "certificateId": "INZ-CERT-2026-502127",
+      "completedAt": "2026-11-23T04:33:39.113Z"
     },
     {
       "_id": "cand-befe50bb-b937-4881-ae64-1f18537a30ab",
@@ -19046,8 +19092,48 @@
         }
       },
       "completedAt": "2026-11-23T04:33:14.781Z"
+    },
+    {
+      "sessionId": "inz_cbt_7cee6a50-4317-4d66-800b-e85c7a5beba0",
+      "candidateId": "INZ-CAND-2026-00127",
+      "candidateDisplayId": "INZ-CAND-2026-00127",
+      "candidateName": "BHARANISRI K S",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "totalScore": 24,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 53,
+      "isPassed": false,
+      "examResult": "Fail",
+      "selectionStatus": "Rejected",
+      "passCutoff": "> 25",
+      "performanceCategory": "Foundational (Competent)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-502127",
+      "sectionScores": {
+        "section-1": {
+          "score": 11,
+          "total": 15,
+          "percentage": 73
+        },
+        "section-2": {
+          "score": 8,
+          "total": 15,
+          "percentage": 53
+        },
+        "section-3": {
+          "score": 5,
+          "total": 15,
+          "percentage": 33
+        }
+      },
+      "completedAt": "2026-11-23T04:33:39.113Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:33:14.912Z"
+  "lastUpdated": "2026-11-23T04:33:39.284Z"
 }
