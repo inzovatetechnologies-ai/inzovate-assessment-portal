@@ -6471,6 +6471,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:06:51.653Z",
       "updatedAt": "2026-11-23T04:06:51.653Z"
+    },
+    {
+      "_id": "cand-fc0a6363-91d7-4f2b-93e0-41f4b70aa5b1",
+      "candidateId": "INZ-CAND-2026-00205",
+      "fullName": "Vishwa Venkadesh M",
+      "email": "vishwavenkadesh@gmail.com",
+      "password": "Vishwa@2462006",
+      "mobileNumber": "+91 9345744525",
+      "altMobileNumber": "",
+      "dateOfBirth": "2006-06-24",
+      "gender": "Male",
+      "residentialAddress": "4/227 Ramayanpatti, P/O Meenatchi Naickanpatti",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "624002",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.Tech Artificial Intelligence and Data Science",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.49",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-fullstack",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:06:52.831Z",
+      "updatedAt": "2026-11-23T04:06:52.831Z"
     }
   ],
   "assessment_results": [
@@ -6796,5 +6837,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:06:53.035Z"
+  "lastUpdated": "2026-11-23T04:06:54.272Z"
 }
