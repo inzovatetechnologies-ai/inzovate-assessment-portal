@@ -6512,6 +6512,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:06:52.831Z",
       "updatedAt": "2026-11-23T04:06:52.831Z"
+    },
+    {
+      "_id": "cand-b7a930c1-ef42-454f-a9d6-d63d1c807f7f",
+      "candidateId": "INZ-CAND-2026-00207",
+      "fullName": "Jeni Christy M",
+      "email": "jenichristyraj02@gmail.com",
+      "password": "Jeni@02",
+      "mobileNumber": "+919597399479",
+      "altMobileNumber": "",
+      "dateOfBirth": "2004-09-02",
+      "gender": "Female",
+      "residentialAddress": "40,kamarajar 1st Street , Bethaniapuram, Madurai-16",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "625016",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.Tech Computer  Science and Business System",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.2",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-13",
+      "domainName": "Software Development",
+      "jobRoleId": "role-proc-assoc-direct",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:06:57.791Z",
+      "updatedAt": "2026-11-23T04:06:57.791Z"
     }
   ],
   "assessment_results": [
@@ -6837,5 +6878,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:06:56.826Z"
+  "lastUpdated": "2026-11-23T04:06:57.910Z"
 }
