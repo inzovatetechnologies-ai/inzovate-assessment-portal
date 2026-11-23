@@ -1114,7 +1114,7 @@
     },
     {
       "_id": "cand-409ee179-c38f-4fcf-a07d-7cc83d06d59c",
-      "candidateId": "INZ-CAND-2026-00037",
+      "candidateId": "INZ-CAND-2026-00058",
       "fullName": "Thejashri T",
       "email": "thejathina@gmail.com",
       "password": "ThejaShri06",
@@ -1853,5 +1853,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:52:12.217Z"
+  "lastUpdated": "2026-11-23T03:52:13.058Z"
 }
