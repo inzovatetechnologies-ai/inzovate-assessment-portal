@@ -13852,13 +13852,59 @@
       "jobRoleId": "role-fullstack",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T04:11:18.152Z",
-      "updatedAt": "2026-11-23T04:11:18.152Z"
+      "updatedAt": "2026-11-23T04:11:18.152Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_ed4198d1-ea1a-499e-ab92-52c5bbe3e020",
+        "candidateId": "INZ-CAND-2026-00239",
+        "candidateDisplayId": "INZ-CAND-2026-00239",
+        "candidateName": "ISHWARYA S",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "PSNA College of Engineering and Technology",
+        "totalScore": 45,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 100,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Mastery (Outstanding)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-348423",
+        "sectionScores": {
+          "section-1": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-2": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-3": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          }
+        },
+        "completedAt": "2026-11-23T04:41:07.056Z"
+      },
+      "totalScore": 45,
+      "percentage": 100,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-348423",
+      "completedAt": "2026-11-23T04:41:07.056Z"
     },
     {
       "_id": "cand-99ef474e-34b7-4ea0-8be0-0d66545bfb3c",
@@ -23401,8 +23447,48 @@
         }
       },
       "completedAt": "2026-11-23T04:41:02.872Z"
+    },
+    {
+      "sessionId": "inz_cbt_ed4198d1-ea1a-499e-ab92-52c5bbe3e020",
+      "candidateId": "INZ-CAND-2026-00239",
+      "candidateDisplayId": "INZ-CAND-2026-00239",
+      "candidateName": "ISHWARYA S",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "totalScore": 45,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 100,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Mastery (Outstanding)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-348423",
+      "sectionScores": {
+        "section-1": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-2": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-3": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        }
+      },
+      "completedAt": "2026-11-23T04:41:07.056Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:41:03.006Z"
+  "lastUpdated": "2026-11-23T04:41:07.197Z"
 }
