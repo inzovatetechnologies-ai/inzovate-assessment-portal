@@ -14853,13 +14853,59 @@
       "jobRoleId": "role-frontend",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T04:15:12.870Z",
-      "updatedAt": "2026-11-23T04:15:12.870Z"
+      "updatedAt": "2026-11-23T04:15:12.870Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_6770965c-15f2-4104-a280-e58b5c9fd01e",
+        "candidateId": "INZ-CAND-2026-00252",
+        "candidateDisplayId": "INZ-CAND-2026-00252",
+        "candidateName": "Avila mary M",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "PSNA  COLLEGE OF ENGINEERING & TECHNOLOGY",
+        "totalScore": 45,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 100,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Mastery (Outstanding)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-CAD872",
+        "sectionScores": {
+          "section-1": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-2": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-3": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          }
+        },
+        "completedAt": "2026-11-23T04:44:53.302Z"
+      },
+      "totalScore": 45,
+      "percentage": 100,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-CAD872",
+      "completedAt": "2026-11-23T04:44:53.302Z"
     },
     {
       "_id": "cand-98f8a372-fe33-40c2-be76-1fb51cac5953",
@@ -24598,8 +24644,48 @@
         }
       },
       "completedAt": "2026-11-23T04:44:01.966Z"
+    },
+    {
+      "sessionId": "inz_cbt_6770965c-15f2-4104-a280-e58b5c9fd01e",
+      "candidateId": "INZ-CAND-2026-00252",
+      "candidateDisplayId": "INZ-CAND-2026-00252",
+      "candidateName": "Avila mary M",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "PSNA  COLLEGE OF ENGINEERING & TECHNOLOGY",
+      "totalScore": 45,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 100,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Mastery (Outstanding)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-CAD872",
+      "sectionScores": {
+        "section-1": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-2": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-3": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        }
+      },
+      "completedAt": "2026-11-23T04:44:53.302Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:44:02.135Z"
+  "lastUpdated": "2026-11-23T04:44:53.462Z"
 }
