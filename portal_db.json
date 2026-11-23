@@ -3817,6 +3817,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T03:59:30.146Z",
       "updatedAt": "2026-11-23T03:59:30.146Z"
+    },
+    {
+      "_id": "cand-97548241-380f-4862-bcdf-e9e0288a3c7d",
+      "candidateId": "INZ-CAND-2026-00130",
+      "fullName": "Ajith Kumar B",
+      "email": "ajithtamilbrother@gmail.com",
+      "password": "6369699972",
+      "mobileNumber": "+916369699972",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-11-03",
+      "gender": "Male",
+      "residentialAddress": "101,TB West Street ,Bangalamedu,Theni",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "625531",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.Tech Information and Technology",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.1",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T03:59:32.097Z",
+      "updatedAt": "2026-11-23T03:59:32.097Z"
     }
   ],
   "assessment_results": [
@@ -3862,5 +3903,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:59:30.250Z"
+  "lastUpdated": "2026-11-23T03:59:32.225Z"
 }
