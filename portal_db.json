@@ -1975,13 +1975,59 @@
       "jobRoleId": "role-data-analyst",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T03:50:13.054Z",
-      "updatedAt": "2026-11-23T03:50:13.054Z"
+      "updatedAt": "2026-11-23T03:50:13.054Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_96870140-f820-4355-bf66-4f108f0e0ecb",
+        "candidateId": "INZ-CAND-2026-00055",
+        "candidateDisplayId": "INZ-CAND-2026-00055",
+        "candidateName": "Gopika R",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "PSNA College of Engineering and Technology",
+        "totalScore": 27,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 60,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Foundational (Competent)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-A2D13E",
+        "sectionScores": {
+          "section-1": {
+            "score": 10,
+            "total": 15,
+            "percentage": 67
+          },
+          "section-2": {
+            "score": 9,
+            "total": 15,
+            "percentage": 60
+          },
+          "section-3": {
+            "score": 8,
+            "total": 15,
+            "percentage": 53
+          }
+        },
+        "completedAt": "2026-11-23T04:27:30.448Z"
+      },
+      "totalScore": 27,
+      "percentage": 60,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-A2D13E",
+      "completedAt": "2026-11-23T04:27:30.448Z"
     },
     {
       "_id": "cand-409ee179-c38f-4fcf-a07d-7cc83d06d59c",
@@ -15667,8 +15713,48 @@
         }
       },
       "completedAt": "2026-11-23T04:27:28.917Z"
+    },
+    {
+      "sessionId": "inz_cbt_96870140-f820-4355-bf66-4f108f0e0ecb",
+      "candidateId": "INZ-CAND-2026-00055",
+      "candidateDisplayId": "INZ-CAND-2026-00055",
+      "candidateName": "Gopika R",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "totalScore": 27,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 60,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Foundational (Competent)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-A2D13E",
+      "sectionScores": {
+        "section-1": {
+          "score": 10,
+          "total": 15,
+          "percentage": 67
+        },
+        "section-2": {
+          "score": 9,
+          "total": 15,
+          "percentage": 60
+        },
+        "section-3": {
+          "score": 8,
+          "total": 15,
+          "percentage": 53
+        }
+      },
+      "completedAt": "2026-11-23T04:27:30.448Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:27:29.040Z"
+  "lastUpdated": "2026-11-23T04:27:30.587Z"
 }
