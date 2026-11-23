@@ -7210,13 +7210,59 @@
       "jobRoleId": "role-soft-dev",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T04:03:53.162Z",
-      "updatedAt": "2026-11-23T04:03:53.162Z"
+      "updatedAt": "2026-11-23T04:03:53.162Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_5a20767b-f4cd-4849-8325-fd0f1e982c4c",
+        "candidateId": "INZ-CAND-2026-00176",
+        "candidateDisplayId": "INZ-CAND-2026-00176",
+        "candidateName": "Akilan P",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "PSNA College of Engineering and Technology",
+        "totalScore": 41,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 91,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Mastery (Outstanding)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-7F5FE9",
+        "sectionScores": {
+          "section-1": {
+            "score": 13,
+            "total": 15,
+            "percentage": 87
+          },
+          "section-2": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-3": {
+            "score": 13,
+            "total": 15,
+            "percentage": 87
+          }
+        },
+        "completedAt": "2026-11-23T04:20:36.878Z"
+      },
+      "totalScore": 41,
+      "percentage": 91,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-7F5FE9",
+      "completedAt": "2026-11-23T04:20:36.878Z"
     },
     {
       "_id": "cand-f33cab00-6acc-4a70-99e2-eaa05331952f",
@@ -12642,8 +12688,48 @@
         }
       },
       "completedAt": "2026-11-23T04:20:33.404Z"
+    },
+    {
+      "sessionId": "inz_cbt_5a20767b-f4cd-4849-8325-fd0f1e982c4c",
+      "candidateId": "INZ-CAND-2026-00176",
+      "candidateDisplayId": "INZ-CAND-2026-00176",
+      "candidateName": "Akilan P",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "totalScore": 41,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 91,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Mastery (Outstanding)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-7F5FE9",
+      "sectionScores": {
+        "section-1": {
+          "score": 13,
+          "total": 15,
+          "percentage": 87
+        },
+        "section-2": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-3": {
+          "score": 13,
+          "total": 15,
+          "percentage": 87
+        }
+      },
+      "completedAt": "2026-11-23T04:20:36.878Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:20:33.561Z"
+  "lastUpdated": "2026-11-23T04:20:37.056Z"
 }
