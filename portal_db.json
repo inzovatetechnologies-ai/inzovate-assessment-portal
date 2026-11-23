@@ -74,18 +74,111 @@
       "jobRoleId": "role-ai-ml",
       "jobRoleTitle": "AI/ML Engineer",
       "preferredLocation": "Chennai / Coimbatore",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Rejected",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T15:08:15.558Z",
-      "updatedAt": "2026-11-23T15:08:15.558Z"
+      "updatedAt": "2026-11-23T15:08:15.558Z",
+      "assessmentResult": {
+        "sessionId": "session-1795446497364",
+        "candidateId": "INZ-CAND-2026-00002",
+        "candidateDisplayId": "INZ-CAND-2026-00002",
+        "candidateName": "Karthikeyan R",
+        "jobRoleId": "role-ai-ml",
+        "jobRoleTitle": "AI/ML Engineer",
+        "domainId": "dom-03",
+        "domainName": "Artificial Intelligence",
+        "collegeName": "PSG College of Technology",
+        "totalScore": 0,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 15,
+        "totalQuestionsAttempted": 15,
+        "unattempted": 30,
+        "percentage": 0,
+        "isPassed": false,
+        "examResult": "Fail",
+        "selectionStatus": "Rejected",
+        "passCutoff": "> 25",
+        "performanceCategory": "Needs Improvement",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-AB69C5",
+        "sectionScores": {
+          "section-1": {
+            "score": 0,
+            "total": 15,
+            "percentage": 0
+          },
+          "section-2": {
+            "score": 0,
+            "total": 15,
+            "percentage": 0
+          },
+          "section-3": {
+            "score": 0,
+            "total": 15,
+            "percentage": 0
+          }
+        },
+        "completedAt": "2026-11-23T15:08:17.365Z"
+      },
+      "totalScore": 0,
+      "percentage": 0,
+      "isPassed": false,
+      "examResult": "Fail",
+      "certificateId": "INZ-CERT-2026-AB69C5",
+      "completedAt": "2026-11-23T15:08:17.365Z"
     }
   ],
-  "assessment_results": [],
+  "assessment_results": [
+    {
+      "sessionId": "session-1795446497364",
+      "candidateId": "INZ-CAND-2026-00002",
+      "candidateDisplayId": "INZ-CAND-2026-00002",
+      "candidateName": "Karthikeyan R",
+      "jobRoleId": "role-ai-ml",
+      "jobRoleTitle": "AI/ML Engineer",
+      "domainId": "dom-03",
+      "domainName": "Artificial Intelligence",
+      "collegeName": "PSG College of Technology",
+      "totalScore": 0,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 15,
+      "totalQuestionsAttempted": 15,
+      "unattempted": 30,
+      "percentage": 0,
+      "isPassed": false,
+      "examResult": "Fail",
+      "selectionStatus": "Rejected",
+      "passCutoff": "> 25",
+      "performanceCategory": "Needs Improvement",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-AB69C5",
+      "sectionScores": {
+        "section-1": {
+          "score": 0,
+          "total": 15,
+          "percentage": 0
+        },
+        "section-2": {
+          "score": 0,
+          "total": 15,
+          "percentage": 0
+        },
+        "section-3": {
+          "score": 0,
+          "total": 15,
+          "percentage": 0
+        }
+      },
+      "completedAt": "2026-11-23T15:08:17.365Z"
+    }
+  ],
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:04:29.845Z",
   "status": "Fresh Clean State",
-  "lastUpdated": "2026-11-23T15:08:15.978Z"
+  "lastUpdated": "2026-11-23T15:08:17.820Z"
 }
