@@ -6845,6 +6845,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:07:17.428Z",
       "updatedAt": "2026-11-23T04:07:17.428Z"
+    },
+    {
+      "_id": "cand-c589accf-ad9b-41d2-ab5b-033b19a4c8e3",
+      "candidateId": "INZ-CAND-2026-00159",
+      "fullName": "Lena sri S",
+      "email": "lenasrii2005@gmail.com",
+      "password": "Len@2005",
+      "mobileNumber": "9150281603",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-10-18",
+      "gender": "Female",
+      "residentialAddress": "73, 74, MKM Nagar, TPK Road, Avaniyapuram, Madurai",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "625012",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.E. Computer Science and Engineering",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "7.5",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-12",
+      "domainName": "Software Development",
+      "jobRoleId": "role-hr-exec",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:07:32.080Z",
+      "updatedAt": "2026-11-23T04:07:32.080Z"
     }
   ],
   "assessment_results": [
@@ -7210,5 +7251,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:07:29.667Z"
+  "lastUpdated": "2026-11-23T04:07:32.191Z"
 }
