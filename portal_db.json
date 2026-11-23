@@ -2341,6 +2341,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T03:53:33.876Z",
       "updatedAt": "2026-11-23T03:53:33.876Z"
+    },
+    {
+      "_id": "cand-4aecc75f-137d-452d-9300-76d452d07194",
+      "candidateId": "INZ-CAND-2026-00073",
+      "fullName": "VIGNESH BABU S",
+      "email": "vigneshbabu232vb@gmail.com",
+      "password": "Vigneshbabu12@",
+      "mobileNumber": "+918754796510",
+      "altMobileNumber": "",
+      "dateOfBirth": "2006-06-23",
+      "gender": "Male",
+      "residentialAddress": "1/77B.NORTH STREET,VADIPATTI TALUK VTC:Adanur.\nSub District:Vadipatti,Distnict Madurai.",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "625503",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.Tech Computer Science and Business System ",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "7.3",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T03:53:34.680Z",
+      "updatedAt": "2026-11-23T03:53:34.680Z"
     }
   ],
   "assessment_results": [
@@ -2386,5 +2427,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:53:33.985Z"
+  "lastUpdated": "2026-11-23T03:53:35.232Z"
 }
