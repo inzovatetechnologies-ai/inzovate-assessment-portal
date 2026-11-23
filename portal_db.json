@@ -19000,13 +19000,59 @@
       "jobRoleId": "role-fullstack",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T04:47:27.459Z",
-      "updatedAt": "2026-11-23T04:47:27.459Z"
+      "updatedAt": "2026-11-23T04:47:27.459Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_05bc89a9-0bd2-43fe-ba21-d4e2912e7fdd",
+        "candidateId": "INZ-CAND-2026-00320",
+        "candidateDisplayId": "INZ-CAND-2026-00320",
+        "candidateName": "HARISH K",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "PSNA College of Engineering and Technology",
+        "totalScore": 45,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 100,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Mastery (Outstanding)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-8DEDFD",
+        "sectionScores": {
+          "section-1": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-2": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-3": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          }
+        },
+        "completedAt": "2026-11-23T04:59:23.876Z"
+      },
+      "totalScore": 45,
+      "percentage": 100,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-8DEDFD",
+      "completedAt": "2026-11-23T04:59:23.876Z"
     },
     {
       "_id": "cand-b886a491-1e83-4be8-8499-81aa1cb1d764",
@@ -28216,8 +28262,48 @@
         }
       },
       "completedAt": "2026-11-23T04:58:22.445Z"
+    },
+    {
+      "sessionId": "inz_cbt_05bc89a9-0bd2-43fe-ba21-d4e2912e7fdd",
+      "candidateId": "INZ-CAND-2026-00320",
+      "candidateDisplayId": "INZ-CAND-2026-00320",
+      "candidateName": "HARISH K",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "totalScore": 45,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 100,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Mastery (Outstanding)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-8DEDFD",
+      "sectionScores": {
+        "section-1": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-2": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-3": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        }
+      },
+      "completedAt": "2026-11-23T04:59:23.876Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:58:22.712Z"
+  "lastUpdated": "2026-11-23T04:59:24.036Z"
 }
