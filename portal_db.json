@@ -3904,6 +3904,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T03:59:32.097Z",
       "updatedAt": "2026-11-23T03:59:32.097Z"
+    },
+    {
+      "_id": "cand-1a1b191a-bba4-468e-ba60-0f807e3e72b8",
+      "candidateId": "INZ-CAND-2026-00131",
+      "fullName": "Ariram S",
+      "email": "ariramsasi@gmail.com",
+      "password": "Ariram@06",
+      "mobileNumber": "+91 9342625424",
+      "altMobileNumber": "",
+      "dateOfBirth": "2006-06-22",
+      "gender": "Male",
+      "residentialAddress": "231/2 , Poonsolai Street , Devarapanpatti post , Autur Taluk , Dindigul -624204 , Tamilnadu ",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "624204",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.E. Computer Science and Engineering",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "7.87",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-fullstack",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T03:59:34.753Z",
+      "updatedAt": "2026-11-23T03:59:34.753Z"
     }
   ],
   "assessment_results": [
@@ -3989,5 +4030,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:59:33.693Z"
+  "lastUpdated": "2026-11-23T03:59:34.876Z"
 }
