@@ -3164,13 +3164,59 @@
       "jobRoleId": "role-java-dev",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Rejected",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T03:53:28.258Z",
-      "updatedAt": "2026-11-23T03:53:28.258Z"
+      "updatedAt": "2026-11-23T03:53:28.258Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_d3136906-cf37-474b-b826-3e6aa1b00cfe",
+        "candidateId": "INZ-CAND-2026-00089",
+        "candidateDisplayId": "INZ-CAND-2026-00089",
+        "candidateName": "Dhivya Dharshini K S",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "PSNA College of Engineering and Technology",
+        "totalScore": 16,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 36,
+        "isPassed": false,
+        "examResult": "Fail",
+        "selectionStatus": "Rejected",
+        "passCutoff": "> 25",
+        "performanceCategory": "Needs Improvement",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-9A55B9",
+        "sectionScores": {
+          "section-1": {
+            "score": 7,
+            "total": 15,
+            "percentage": 47
+          },
+          "section-2": {
+            "score": 6,
+            "total": 15,
+            "percentage": 40
+          },
+          "section-3": {
+            "score": 3,
+            "total": 15,
+            "percentage": 20
+          }
+        },
+        "completedAt": "2026-11-23T04:15:29.834Z"
+      },
+      "totalScore": 16,
+      "percentage": 36,
+      "isPassed": false,
+      "examResult": "Fail",
+      "certificateId": "INZ-CERT-2026-9A55B9",
+      "completedAt": "2026-11-23T04:15:29.834Z"
     },
     {
       "_id": "cand-46a8192b-741f-47be-bc14-0e00614c61ac",
@@ -10217,8 +10263,48 @@
         }
       },
       "completedAt": "2026-11-23T04:15:22.845Z"
+    },
+    {
+      "sessionId": "inz_cbt_d3136906-cf37-474b-b826-3e6aa1b00cfe",
+      "candidateId": "INZ-CAND-2026-00089",
+      "candidateDisplayId": "INZ-CAND-2026-00089",
+      "candidateName": "Dhivya Dharshini K S",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "totalScore": 16,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 36,
+      "isPassed": false,
+      "examResult": "Fail",
+      "selectionStatus": "Rejected",
+      "passCutoff": "> 25",
+      "performanceCategory": "Needs Improvement",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-9A55B9",
+      "sectionScores": {
+        "section-1": {
+          "score": 7,
+          "total": 15,
+          "percentage": 47
+        },
+        "section-2": {
+          "score": 6,
+          "total": 15,
+          "percentage": 40
+        },
+        "section-3": {
+          "score": 3,
+          "total": 15,
+          "percentage": 20
+        }
+      },
+      "completedAt": "2026-11-23T04:15:29.834Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:15:29.682Z"
+  "lastUpdated": "2026-11-23T04:15:31.151Z"
 }
