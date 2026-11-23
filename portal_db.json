@@ -373,6 +373,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T03:44:54.793Z",
       "updatedAt": "2026-11-23T03:44:54.793Z"
+    },
+    {
+      "_id": "cand-050e3bfb-193f-4e03-8623-730644975c8c",
+      "candidateId": "INZ-CAND-2026-00012",
+      "fullName": "Vedha Sri P B",
+      "email": "pbvedha2006@gmail.com",
+      "password": "Vedhasripb@2006",
+      "mobileNumber": "+91 7904569030",
+      "altMobileNumber": "",
+      "dateOfBirth": "2006-05-28",
+      "gender": "Female",
+      "residentialAddress": "9A,9th Street Prasanna Colony,2nd cross Street,Avaniyapuram",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "625012",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.Tech Information Technology",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.0",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-fullstack",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T03:46:10.421Z",
+      "updatedAt": "2026-11-23T03:46:10.421Z"
     }
   ],
   "assessment_results": [
@@ -418,5 +459,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:45:40.392Z"
+  "lastUpdated": "2026-11-23T03:46:10.553Z"
 }
