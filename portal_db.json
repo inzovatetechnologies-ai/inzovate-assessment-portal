@@ -7955,13 +7955,59 @@
       "jobRoleId": "role-soft-dev",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T03:59:57.751Z",
-      "updatedAt": "2026-11-23T03:59:57.751Z"
+      "updatedAt": "2026-11-23T03:59:57.751Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_80820a2a-3545-49d2-ba57-169f3c5ddd24",
+        "candidateId": "INZ-CAND-2026-00099",
+        "candidateDisplayId": "INZ-CAND-2026-00099",
+        "candidateName": "SATHIYA K",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "PSNA College of Engineering and Technology",
+        "totalScore": 29,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 64,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Foundational (Competent)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-B7CCCE",
+        "sectionScores": {
+          "section-1": {
+            "score": 9,
+            "total": 15,
+            "percentage": 60
+          },
+          "section-2": {
+            "score": 10,
+            "total": 15,
+            "percentage": 67
+          },
+          "section-3": {
+            "score": 10,
+            "total": 15,
+            "percentage": 67
+          }
+        },
+        "completedAt": "2026-11-23T04:42:33.105Z"
+      },
+      "totalScore": 29,
+      "percentage": 64,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-B7CCCE",
+      "completedAt": "2026-11-23T04:42:33.105Z"
     },
     {
       "_id": "cand-f8e20d76-c3df-49e1-8568-a333845257e8",
@@ -24084,8 +24130,48 @@
         }
       },
       "completedAt": "2026-11-23T04:42:26.335Z"
+    },
+    {
+      "sessionId": "inz_cbt_80820a2a-3545-49d2-ba57-169f3c5ddd24",
+      "candidateId": "INZ-CAND-2026-00099",
+      "candidateDisplayId": "INZ-CAND-2026-00099",
+      "candidateName": "SATHIYA K",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "totalScore": 29,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 64,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Foundational (Competent)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-B7CCCE",
+      "sectionScores": {
+        "section-1": {
+          "score": 9,
+          "total": 15,
+          "percentage": 60
+        },
+        "section-2": {
+          "score": 10,
+          "total": 15,
+          "percentage": 67
+        },
+        "section-3": {
+          "score": 10,
+          "total": 15,
+          "percentage": 67
+        }
+      },
+      "completedAt": "2026-11-23T04:42:33.105Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:42:29.276Z"
+  "lastUpdated": "2026-11-23T04:42:33.329Z"
 }
