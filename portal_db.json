@@ -24558,8 +24558,48 @@
         }
       },
       "completedAt": "2026-11-23T04:43:35.124Z"
+    },
+    {
+      "sessionId": "inz_cbt_2ef3e679-43ae-4dde-b892-551ca3512d72",
+      "candidateId": "INZ-CAND-2026-00140",
+      "candidateDisplayId": "INZ-CAND-2026-00140",
+      "candidateName": "Candidate",
+      "jobRoleTitle": "Software Developer",
+      "collegeName": "Autonomous Engineering College",
+      "totalScore": 33,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 73,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Proficient (Commendable)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-6E56A0",
+      "sectionScores": {
+        "section-1": {
+          "score": 7,
+          "total": 15,
+          "percentage": 47
+        },
+        "section-2": {
+          "score": 11,
+          "total": 15,
+          "percentage": 73
+        },
+        "section-3": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        }
+      },
+      "completedAt": "2026-11-23T04:44:01.966Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:43:35.311Z"
+  "lastUpdated": "2026-11-23T04:44:02.135Z"
 }
