@@ -3300,7 +3300,7 @@
     },
     {
       "_id": "cand-64df65f3-8ad8-4441-a54e-5e3b0eaae909",
-      "candidateId": "INZ-CAND-2026-00124",
+      "candidateId": "INZ-CAND-2026-00051",
       "fullName": "Jeni Mithra J",
       "email": "jenimithra2020@gmail.com",
       "password": "Jeni@1102",
@@ -3331,11 +3331,11 @@
       "jobRoleId": "role-ai-ml",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Rejected",
+      "recruitmentStage": "Registered",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Completed",
-      "testAttempts": 1,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
       "createdAt": "2026-11-23T03:51:29.605Z",
       "updatedAt": "2026-11-23T03:51:29.605Z",
       "assessmentResult": {
@@ -22847,5 +22847,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:39:41.140Z"
+  "lastUpdated": "2026-11-23T04:39:45.183Z"
 }
