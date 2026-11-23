@@ -3694,6 +3694,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T03:58:30.228Z",
       "updatedAt": "2026-11-23T03:58:30.228Z"
+    },
+    {
+      "_id": "cand-f91319f9-0ba3-45c6-9f3f-a034c46aedaa",
+      "candidateId": "INZ-CAND-2026-00126",
+      "fullName": "Harini K",
+      "email": "harinikannan065@gmail.com",
+      "password": "hariniK@123",
+      "mobileNumber": "9245715348",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-05-15",
+      "gender": "Male",
+      "residentialAddress": "12/60A, Matchbox Company Street, Dippo Road, Bharathipuram, Dindigul",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "624003",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "MCA",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "9.06",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-java-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T03:59:00.315Z",
+      "updatedAt": "2026-11-23T03:59:00.315Z"
     }
   ],
   "assessment_results": [
@@ -3739,5 +3780,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:58:54.139Z"
+  "lastUpdated": "2026-11-23T03:59:00.415Z"
 }
