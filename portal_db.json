@@ -7224,6 +7224,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:08:20.604Z",
       "updatedAt": "2026-11-23T04:08:20.604Z"
+    },
+    {
+      "_id": "cand-6ebacf11-7f5b-436c-97c1-bbcc7ce88f46",
+      "candidateId": "INZ-CAND-2026-00219",
+      "fullName": "Selvin Jefre B",
+      "email": "selvinjefre20@gmail.com",
+      "password": "Selvin123",
+      "mobileNumber": "9442606440",
+      "altMobileNumber": "",
+      "dateOfBirth": "2026-09-20",
+      "gender": "Male",
+      "residentialAddress": "6/68, Melapatti, H.R.Kottai(po),Dindigul-624002",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "624002",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.E. Computer Science and Engineering",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "7.7",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:08:29.773Z",
+      "updatedAt": "2026-11-23T04:08:29.773Z"
     }
   ],
   "assessment_results": [
@@ -7669,5 +7710,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:08:24.359Z"
+  "lastUpdated": "2026-11-23T04:08:29.917Z"
 }
