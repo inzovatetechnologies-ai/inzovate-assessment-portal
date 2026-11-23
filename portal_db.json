@@ -7014,6 +7014,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:07:57.656Z",
       "updatedAt": "2026-11-23T04:07:57.656Z"
+    },
+    {
+      "_id": "cand-148be9c0-9d51-4704-86b5-bf49dafbe890",
+      "candidateId": "INZ-CAND-2026-00216",
+      "fullName": "Gowtham M",
+      "email": "bmgowtham06@gmail.com",
+      "password": "Gowtham@2006",
+      "mobileNumber": "6384868686",
+      "altMobileNumber": "",
+      "dateOfBirth": "2006-07-10",
+      "gender": "Male",
+      "residentialAddress": "41/12A Middle street,Keeraithurai,Madurai-625001",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "625001",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.E. Computer Science and Engineering",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "7.85",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:08:05.507Z",
+      "updatedAt": "2026-11-23T04:08:05.507Z"
     }
   ],
   "assessment_results": [
@@ -7419,5 +7460,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:08:04.454Z"
+  "lastUpdated": "2026-11-23T04:08:05.629Z"
 }
