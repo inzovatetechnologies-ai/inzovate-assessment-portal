@@ -16356,13 +16356,59 @@
       "jobRoleId": "role-soft-dev",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T04:31:47.617Z",
-      "updatedAt": "2026-11-23T04:31:47.617Z"
+      "updatedAt": "2026-11-23T04:31:47.617Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_43f8d830-a05e-4413-bd05-e7f4cb95095c",
+        "candidateId": "INZ-CAND-2026-00299",
+        "candidateDisplayId": "INZ-CAND-2026-00299",
+        "candidateName": "Gayathri M",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "PSNA College of Engineering and Technology",
+        "totalScore": 45,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 100,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Mastery (Outstanding)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-385D90",
+        "sectionScores": {
+          "section-1": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-2": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-3": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          }
+        },
+        "completedAt": "2026-11-23T04:41:17.485Z"
+      },
+      "totalScore": 45,
+      "percentage": 100,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-385D90",
+      "completedAt": "2026-11-23T04:41:17.485Z"
     },
     {
       "_id": "cand-c1138062-6e22-49d8-91d0-f2eaa0e24af9",
@@ -23613,8 +23659,48 @@
         }
       },
       "completedAt": "2026-11-23T04:41:13.349Z"
+    },
+    {
+      "sessionId": "inz_cbt_43f8d830-a05e-4413-bd05-e7f4cb95095c",
+      "candidateId": "INZ-CAND-2026-00299",
+      "candidateDisplayId": "INZ-CAND-2026-00299",
+      "candidateName": "Gayathri M",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "totalScore": 45,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 100,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Mastery (Outstanding)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-385D90",
+      "sectionScores": {
+        "section-1": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-2": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-3": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        }
+      },
+      "completedAt": "2026-11-23T04:41:17.485Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:41:13.602Z"
+  "lastUpdated": "2026-11-23T04:41:17.628Z"
 }
