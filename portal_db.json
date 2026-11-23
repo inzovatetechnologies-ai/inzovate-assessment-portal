@@ -18757,7 +18757,7 @@
     },
     {
       "_id": "cand-37d35da6-302b-4382-bbf6-beeb09878cf1",
-      "candidateId": "INZ-CAND-2026-00319",
+      "candidateId": "INZ-CAND-2026-00315",
       "fullName": "PARTHIBAN R",
       "email": "handballerparthiban@gmail.com",
       "password": "Asvitha@2006",
@@ -18788,11 +18788,11 @@
       "jobRoleId": "role-data-analyst",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Selected for Next Round",
+      "recruitmentStage": "Registered",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Completed",
-      "testAttempts": 1,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
       "createdAt": "2026-11-23T04:45:05.589Z",
       "updatedAt": "2026-11-23T04:45:05.589Z",
       "assessmentResult": {
@@ -28394,5 +28394,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T05:01:34.274Z"
+  "lastUpdated": "2026-11-23T05:02:04.086Z"
 }
