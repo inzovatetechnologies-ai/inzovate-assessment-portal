@@ -5231,6 +5231,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:03:13.419Z",
       "updatedAt": "2026-11-23T04:03:13.419Z"
+    },
+    {
+      "_id": "cand-9cfb48a9-c27f-4bbb-a07c-80133bbaf231",
+      "candidateId": "INZ-CAND-2026-00163",
+      "fullName": "Sanjay R",
+      "email": "sanjayravi1510@gmail.com",
+      "password": "150106",
+      "mobileNumber": "8838058742",
+      "altMobileNumber": "",
+      "dateOfBirth": "2006-01-15",
+      "gender": "Male",
+      "residentialAddress": "1/270c,Ponnagar,\nAlagappa puram post,",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "630003",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.Tech Information Technology",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "7.5",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:03:18.351Z",
+      "updatedAt": "2026-11-23T04:03:18.351Z"
     }
   ],
   "assessment_results": [
@@ -5436,5 +5477,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:03:18.212Z"
+  "lastUpdated": "2026-11-23T04:03:19.572Z"
 }
