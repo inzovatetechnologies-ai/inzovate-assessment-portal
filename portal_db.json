@@ -4857,6 +4857,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:02:17.020Z",
       "updatedAt": "2026-11-23T04:02:17.020Z"
+    },
+    {
+      "_id": "cand-ac2cf3d4-45ea-4645-addd-ec171482cdc7",
+      "candidateId": "INZ-CAND-2026-00155",
+      "fullName": "B Yuvan Govindasamy",
+      "email": "yuvanstars2005@gmail.com",
+      "password": "Yuvan@2005",
+      "mobileNumber": "+919994246601",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-06-21",
+      "gender": "Male",
+      "residentialAddress": "2a mani illam near skc mahal east ramamanthapuram dindigul",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "624001",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.Tech -  Artifical Intelligence and Data Science",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.75",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-02",
+      "domainName": "Software Development",
+      "jobRoleId": "role-data-analyst",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:02:22.873Z",
+      "updatedAt": "2026-11-23T04:02:22.873Z"
     }
   ],
   "assessment_results": [
@@ -5022,5 +5063,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:02:18.468Z"
+  "lastUpdated": "2026-11-23T04:02:22.990Z"
 }
