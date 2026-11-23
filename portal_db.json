@@ -5149,6 +5149,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:03:12.607Z",
       "updatedAt": "2026-11-23T04:03:12.607Z"
+    },
+    {
+      "_id": "cand-673544b4-a438-4b54-a921-f27ead81ff6d",
+      "candidateId": "INZ-CAND-2026-00121",
+      "fullName": "VASANTHAKUMAR C",
+      "email": "vasanth.official7904@gmail.com",
+      "password": "VK@2004#",
+      "mobileNumber": "8248833465",
+      "altMobileNumber": "",
+      "dateOfBirth": "2004-09-06",
+      "gender": "Male",
+      "residentialAddress": "2/6 VELAR STREET, AYANKURUVITHURAI,VADIPATTI(TK),MADURAI.",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "625207",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "PG/MASTER OF COMPUTER APPLICATION",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.38",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-java-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:03:13.182Z",
+      "updatedAt": "2026-11-23T04:03:13.182Z"
     }
   ],
   "assessment_results": [
@@ -5354,5 +5395,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:03:13.681Z"
+  "lastUpdated": "2026-11-23T04:03:15.056Z"
 }
