@@ -7557,6 +7557,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:08:52.585Z",
       "updatedAt": "2026-11-23T04:08:52.585Z"
+    },
+    {
+      "_id": "cand-801dec83-d028-4c55-82f6-8429590fffd0",
+      "candidateId": "INZ-CAND-2026-00229",
+      "fullName": "YUVAN RAJ A",
+      "email": "yuvanrajvemp123@gmail.com",
+      "password": "Yuvan@123",
+      "mobileNumber": "8270839457",
+      "altMobileNumber": "",
+      "dateOfBirth": "2006-09-30",
+      "gender": "Male",
+      "residentialAddress": "91,Northstreet,vemparali,Natham,Dindigul",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "624401",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.E. Computer Science and Engineering",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.65",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-02",
+      "domainName": "Software Development",
+      "jobRoleId": "role-data-analyst",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:08:55.385Z",
+      "updatedAt": "2026-11-23T04:08:55.385Z"
     }
   ],
   "assessment_results": [
@@ -8042,5 +8083,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:08:54.692Z"
+  "lastUpdated": "2026-11-23T04:08:56.005Z"
 }
