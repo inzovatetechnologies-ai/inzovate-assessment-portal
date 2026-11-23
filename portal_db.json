@@ -9251,13 +9251,59 @@
       "jobRoleId": "role-data-analyst",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T04:06:13.144Z",
-      "updatedAt": "2026-11-23T04:06:13.144Z"
+      "updatedAt": "2026-11-23T04:06:13.144Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_06c7566c-3577-48d4-8d7f-a96b314cdf0a",
+        "candidateId": "INZ-CAND-2026-00197",
+        "candidateDisplayId": "INZ-CAND-2026-00197",
+        "candidateName": "Harini S",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "PSNA College of Engineering and Technology",
+        "totalScore": 45,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 100,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Mastery (Outstanding)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-EDA9ED",
+        "sectionScores": {
+          "section-1": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-2": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-3": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          }
+        },
+        "completedAt": "2026-11-23T04:29:58.755Z"
+      },
+      "totalScore": 45,
+      "percentage": 100,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-EDA9ED",
+      "completedAt": "2026-11-23T04:29:58.755Z"
     },
     {
       "_id": "cand-a8ae4c24-67d1-4f9c-a9d8-4fd3077cc2c6",
@@ -17215,8 +17261,48 @@
         }
       },
       "completedAt": "2026-11-23T04:29:56.991Z"
+    },
+    {
+      "sessionId": "inz_cbt_06c7566c-3577-48d4-8d7f-a96b314cdf0a",
+      "candidateId": "INZ-CAND-2026-00197",
+      "candidateDisplayId": "INZ-CAND-2026-00197",
+      "candidateName": "Harini S",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "totalScore": 45,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 100,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Mastery (Outstanding)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-EDA9ED",
+      "sectionScores": {
+        "section-1": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-2": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-3": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        }
+      },
+      "completedAt": "2026-11-23T04:29:58.755Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:29:57.099Z"
+  "lastUpdated": "2026-11-23T04:29:58.963Z"
 }
