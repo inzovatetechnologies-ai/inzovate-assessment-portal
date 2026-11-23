@@ -4524,6 +4524,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:01:12.896Z",
       "updatedAt": "2026-11-23T04:01:12.896Z"
+    },
+    {
+      "_id": "cand-58658142-88d0-4bb5-aa4d-e28a3b46e957",
+      "candidateId": "INZ-CAND-2026-00108",
+      "fullName": "Jagadeeswaran A",
+      "email": "jagadeeswarancoc@gmail.com",
+      "password": "Jaga@2190",
+      "mobileNumber": "8903084863",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-04-03",
+      "gender": "Male",
+      "residentialAddress": "3/390A,KK Nagar Venkatachalapuram,Sattur-626203",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "626203",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.E. Computer Science and Engineering",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.1",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:01:29.191Z",
+      "updatedAt": "2026-11-23T04:01:29.191Z"
     }
   ],
   "assessment_results": [
@@ -4649,5 +4690,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:01:27.623Z"
+  "lastUpdated": "2026-11-23T04:01:29.341Z"
 }
