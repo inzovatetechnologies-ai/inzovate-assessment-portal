@@ -7735,13 +7735,59 @@
       "jobRoleId": "role-frontend",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Rejected",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T03:59:46.443Z",
-      "updatedAt": "2026-11-23T03:59:46.443Z"
+      "updatedAt": "2026-11-23T03:59:46.443Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_12981fc3-26e9-4b91-8547-83334bb365d9",
+        "candidateId": "INZ-CAND-2026-00134",
+        "candidateDisplayId": "INZ-CAND-2026-00134",
+        "candidateName": "Riyashini J",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "PSNA College of Engineering and Technology",
+        "totalScore": 20,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 44,
+        "isPassed": false,
+        "examResult": "Fail",
+        "selectionStatus": "Rejected",
+        "passCutoff": "> 25",
+        "performanceCategory": "Needs Improvement",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-D4AD97",
+        "sectionScores": {
+          "section-1": {
+            "score": 9,
+            "total": 15,
+            "percentage": 60
+          },
+          "section-2": {
+            "score": 7,
+            "total": 15,
+            "percentage": 47
+          },
+          "section-3": {
+            "score": 4,
+            "total": 15,
+            "percentage": 27
+          }
+        },
+        "completedAt": "2026-11-23T04:40:19.326Z"
+      },
+      "totalScore": 20,
+      "percentage": 44,
+      "isPassed": false,
+      "examResult": "Fail",
+      "certificateId": "INZ-CERT-2026-D4AD97",
+      "completedAt": "2026-11-23T04:40:19.326Z"
     },
     {
       "_id": "cand-4520a9fd-9041-4841-961c-fbe90ed5f99c",
@@ -22930,8 +22976,48 @@
         }
       },
       "completedAt": "2026-11-23T04:40:15.006Z"
+    },
+    {
+      "sessionId": "inz_cbt_12981fc3-26e9-4b91-8547-83334bb365d9",
+      "candidateId": "INZ-CAND-2026-00134",
+      "candidateDisplayId": "INZ-CAND-2026-00134",
+      "candidateName": "Riyashini J",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "totalScore": 20,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 44,
+      "isPassed": false,
+      "examResult": "Fail",
+      "selectionStatus": "Rejected",
+      "passCutoff": "> 25",
+      "performanceCategory": "Needs Improvement",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-D4AD97",
+      "sectionScores": {
+        "section-1": {
+          "score": 9,
+          "total": 15,
+          "percentage": 60
+        },
+        "section-2": {
+          "score": 7,
+          "total": 15,
+          "percentage": 47
+        },
+        "section-3": {
+          "score": 4,
+          "total": 15,
+          "percentage": 27
+        }
+      },
+      "completedAt": "2026-11-23T04:40:19.326Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:40:19.225Z"
+  "lastUpdated": "2026-11-23T04:40:21.093Z"
 }
