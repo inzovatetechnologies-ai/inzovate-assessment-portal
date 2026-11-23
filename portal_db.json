@@ -3346,7 +3346,7 @@
     },
     {
       "_id": "cand-64df65f3-8ad8-4441-a54e-5e3b0eaae909",
-      "candidateId": "INZ-CAND-2026-00051",
+      "candidateId": "INZ-CAND-2026-00313",
       "fullName": "Jeni Mithra J",
       "email": "jenimithra2020@gmail.com",
       "password": "Jeni@1102",
@@ -23743,5 +23743,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:41:26.036Z"
+  "lastUpdated": "2026-11-23T04:41:46.628Z"
 }
