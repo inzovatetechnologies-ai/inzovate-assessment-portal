@@ -6758,6 +6758,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:07:17.846Z",
       "updatedAt": "2026-11-23T04:07:17.846Z"
+    },
+    {
+      "_id": "cand-ec5b4ef9-9492-466b-bf1d-a27bca33f1f8",
+      "candidateId": "INZ-CAND-2026-00213",
+      "fullName": "SRI KISHORE S",
+      "email": "srikishores156@gmail.com",
+      "password": "150606",
+      "mobileNumber": "+91 7845199667",
+      "altMobileNumber": "",
+      "dateOfBirth": "2006-06-15",
+      "gender": "Male",
+      "residentialAddress": "5/22,Gangai street,Aathikulam,k.pudur,Madurai",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "625007",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.E. Computer Science and Business Systems Engineering",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "7.25",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-02",
+      "domainName": "Software Development",
+      "jobRoleId": "role-data-analyst",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:07:17.428Z",
+      "updatedAt": "2026-11-23T04:07:17.428Z"
     }
   ],
   "assessment_results": [
@@ -7083,5 +7124,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:07:18.015Z"
+  "lastUpdated": "2026-11-23T04:07:19.518Z"
 }
