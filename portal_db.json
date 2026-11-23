@@ -10183,13 +10183,59 @@
       "jobRoleId": "role-fullstack",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T04:05:31.001Z",
-      "updatedAt": "2026-11-23T04:05:31.001Z"
+      "updatedAt": "2026-11-23T04:05:31.001Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_1ae35cb9-d81f-4172-8215-8f9c6fbbcf5c",
+        "candidateId": "INZ-CAND-2026-00141",
+        "candidateDisplayId": "INZ-CAND-2026-00141",
+        "candidateName": "SARMATHI M",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "PSNA College of Engineering and Technology",
+        "totalScore": 44,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 98,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Mastery (Outstanding)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-0A4F62",
+        "sectionScores": {
+          "section-1": {
+            "score": 14,
+            "total": 15,
+            "percentage": 93
+          },
+          "section-2": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-3": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          }
+        },
+        "completedAt": "2026-11-23T04:35:33.921Z"
+      },
+      "totalScore": 44,
+      "percentage": 98,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-0A4F62",
+      "completedAt": "2026-11-23T04:35:33.921Z"
     },
     {
       "_id": "cand-4824dcf3-c48f-4213-ba14-3ff7897a09db",
@@ -20289,8 +20335,48 @@
         }
       },
       "completedAt": "2026-11-23T04:35:11.792Z"
+    },
+    {
+      "sessionId": "inz_cbt_1ae35cb9-d81f-4172-8215-8f9c6fbbcf5c",
+      "candidateId": "INZ-CAND-2026-00141",
+      "candidateDisplayId": "INZ-CAND-2026-00141",
+      "candidateName": "SARMATHI M",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "totalScore": 44,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 98,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Mastery (Outstanding)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-0A4F62",
+      "sectionScores": {
+        "section-1": {
+          "score": 14,
+          "total": 15,
+          "percentage": 93
+        },
+        "section-2": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-3": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        }
+      },
+      "completedAt": "2026-11-23T04:35:33.921Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:35:32.844Z"
+  "lastUpdated": "2026-11-23T04:35:34.084Z"
 }
