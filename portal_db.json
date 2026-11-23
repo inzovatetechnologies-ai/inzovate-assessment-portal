@@ -1972,6 +1972,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T03:52:44.953Z",
       "updatedAt": "2026-11-23T03:52:44.953Z"
+    },
+    {
+      "_id": "cand-d7c6b9f5-c205-4e63-a443-636c2789799d",
+      "candidateId": "INZ-CAND-2026-00063",
+      "fullName": "MOUNIKA T G",
+      "email": "tgmounika70@gmail.com",
+      "password": "mounika@10",
+      "mobileNumber": "+919994874821",
+      "altMobileNumber": "",
+      "dateOfBirth": "2004-10-10",
+      "gender": "Female",
+      "residentialAddress": "3400 , Mela Anppanadi, Housing Board, Madurai",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "625009",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "MCA",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "9.1",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-java-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T03:52:47.921Z",
+      "updatedAt": "2026-11-23T03:52:47.921Z"
     }
   ],
   "assessment_results": [
@@ -2017,5 +2058,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:52:47.006Z"
+  "lastUpdated": "2026-11-23T03:52:48.045Z"
 }
