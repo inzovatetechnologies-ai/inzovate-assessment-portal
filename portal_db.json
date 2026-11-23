@@ -455,6 +455,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T03:46:14.034Z",
       "updatedAt": "2026-11-23T03:46:14.034Z"
+    },
+    {
+      "_id": "cand-02eae84f-56e9-4afd-8a2f-76f70c3e2215",
+      "candidateId": "INZ-CAND-2026-00014",
+      "fullName": "Aksshita Sri",
+      "email": "aksshitasri@gmail.com",
+      "password": "Aksshi@3104",
+      "mobileNumber": "9940243042",
+      "altMobileNumber": "",
+      "dateOfBirth": "2004-10-03",
+      "gender": "Female",
+      "residentialAddress": "10/14,Lajapathi Roy Road,Chinna Chokkikulam,Madurai -02",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "625002",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "Master of Computer Applications",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.7",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T03:46:28.391Z",
+      "updatedAt": "2026-11-23T03:46:28.391Z"
     }
   ],
   "assessment_results": [
@@ -500,5 +541,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:46:14.169Z"
+  "lastUpdated": "2026-11-23T03:46:28.479Z"
 }
