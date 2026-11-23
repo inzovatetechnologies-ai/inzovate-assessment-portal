@@ -16011,6 +16011,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:38:46.157Z",
       "updatedAt": "2026-11-23T04:38:46.157Z"
+    },
+    {
+      "_id": "cand-b49af0c8-c8ef-4730-89c9-fa741006a7d0",
+      "candidateId": "INZ-CAND-2026-00310",
+      "fullName": "R.Srimathi",
+      "email": "srimathir023@gmail.com",
+      "password": "mathisri",
+      "mobileNumber": "8883020530",
+      "altMobileNumber": "",
+      "dateOfBirth": "2004-10-01",
+      "gender": "Female",
+      "residentialAddress": "no 67,A srimathi fruits and nuts\nnorth car street\nchinnamanur",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "625515",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "MCA Master of ComputerApplication",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "7.46",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:38:54.036Z",
+      "updatedAt": "2026-11-23T04:38:54.036Z"
     }
   ],
   "assessment_results": [
@@ -22376,5 +22417,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:38:53.691Z"
+  "lastUpdated": "2026-11-23T04:38:55.612Z"
 }
