@@ -15970,6 +15970,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:37:45.871Z",
       "updatedAt": "2026-11-23T04:37:45.871Z"
+    },
+    {
+      "_id": "cand-565cbe67-9d8b-46b4-a3ac-cf8804adef81",
+      "candidateId": "INZ-CAND-2026-00228",
+      "fullName": "Sri bavani.A",
+      "email": "sribavani2306@gmail.com",
+      "password": "23062005",
+      "mobileNumber": "9500527444",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-06-23",
+      "gender": "Female",
+      "residentialAddress": "incometax office backside ,M.S.S nagar palani road ,dindugul",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "624002",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "master of computer application",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "7.28",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-02",
+      "domainName": "Software Development",
+      "jobRoleId": "role-data-analyst",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:38:46.157Z",
+      "updatedAt": "2026-11-23T04:38:46.157Z"
     }
   ],
   "assessment_results": [
@@ -22335,5 +22376,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:38:40.869Z"
+  "lastUpdated": "2026-11-23T04:38:46.309Z"
 }
