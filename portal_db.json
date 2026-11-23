@@ -7150,13 +7150,59 @@
       "jobRoleId": "role-python-dev",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T03:59:37.827Z",
-      "updatedAt": "2026-11-23T03:59:37.827Z"
+      "updatedAt": "2026-11-23T03:59:37.827Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_f572404d-1901-4226-9441-20baadd15d83",
+        "candidateId": "INZ-CAND-2026-00184",
+        "candidateDisplayId": "INZ-CAND-2026-00184",
+        "candidateName": "Latha J",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "PSNA College of Engineering and Technology",
+        "totalScore": 45,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 100,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Mastery (Outstanding)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-701F7D",
+        "sectionScores": {
+          "section-1": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-2": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-3": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          }
+        },
+        "completedAt": "2026-11-23T04:34:51.585Z"
+      },
+      "totalScore": 45,
+      "percentage": 100,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-701F7D",
+      "completedAt": "2026-11-23T04:34:51.585Z"
     },
     {
       "_id": "cand-b338e26e-6b7b-4eff-aa78-b99088b279dc",
@@ -19689,8 +19735,48 @@
         }
       },
       "completedAt": "2026-11-23T04:34:40.132Z"
+    },
+    {
+      "sessionId": "inz_cbt_f572404d-1901-4226-9441-20baadd15d83",
+      "candidateId": "INZ-CAND-2026-00184",
+      "candidateDisplayId": "INZ-CAND-2026-00184",
+      "candidateName": "Latha J",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "totalScore": 45,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 100,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Mastery (Outstanding)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-701F7D",
+      "sectionScores": {
+        "section-1": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-2": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-3": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        }
+      },
+      "completedAt": "2026-11-23T04:34:51.585Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:34:40.270Z"
+  "lastUpdated": "2026-11-23T04:34:51.731Z"
 }
