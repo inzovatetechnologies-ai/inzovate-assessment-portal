@@ -18619,6 +18619,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:52:12.294Z",
       "updatedAt": "2026-11-23T04:52:12.294Z"
+    },
+    {
+      "_id": "cand-9bc68cde-910a-4965-96b4-28d53a289432",
+      "candidateId": "INZ-CAND-2026-00241",
+      "fullName": "MANISH KUMAR M",
+      "email": "m.manishkumar171105@gmail.com",
+      "password": "@MMANISH1723",
+      "mobileNumber": "976517822",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-11-17",
+      "gender": "Male",
+      "residentialAddress": "34 Annamal compound bose street sellur madurai 625002",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "625002",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.E. Computer Science and Engineering",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.6",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:53:09.666Z",
+      "updatedAt": "2026-11-23T04:53:09.666Z"
     }
   ],
   "assessment_results": [
@@ -27064,5 +27105,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:52:44.872Z"
+  "lastUpdated": "2026-11-23T04:53:09.816Z"
 }
