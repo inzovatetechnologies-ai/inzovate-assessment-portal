@@ -5062,6 +5062,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:03:09.184Z",
       "updatedAt": "2026-11-23T04:03:09.184Z"
+    },
+    {
+      "_id": "cand-aab6206c-9350-4d42-bf58-b06a7b24ccb8",
+      "candidateId": "INZ-CAND-2026-00120",
+      "fullName": "Srinivas J",
+      "email": "srinivasjeyakumar13@gmail.com",
+      "password": "Sri*1329",
+      "mobileNumber": "+916380447569",
+      "altMobileNumber": "",
+      "dateOfBirth": "2006-07-29",
+      "gender": "Male",
+      "residentialAddress": "149 a,emd nagar ,sikkandhar chavadi,\nMadurai -18",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "625018",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.E. Computer Science and Engineering",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "7.94",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-fullstack",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:03:12.607Z",
+      "updatedAt": "2026-11-23T04:03:12.607Z"
     }
   ],
   "assessment_results": [
@@ -5227,5 +5268,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:03:09.343Z"
+  "lastUpdated": "2026-11-23T04:03:12.713Z"
 }
