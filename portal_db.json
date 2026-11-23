@@ -1808,6 +1808,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T03:52:04.928Z",
       "updatedAt": "2026-11-23T03:52:04.928Z"
+    },
+    {
+      "_id": "cand-00bf5eb7-aefb-457e-9ede-69f169072ef9",
+      "candidateId": "INZ-CAND-2026-00044",
+      "fullName": "Gobi R",
+      "email": "gobir2345@gmail.com",
+      "password": "Gobi@2826",
+      "mobileNumber": "9345607443",
+      "altMobileNumber": "",
+      "dateOfBirth": "2006-02-28",
+      "gender": "Male",
+      "residentialAddress": "2/76,Silvarpatti,Dindigul,Tamilnadu",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "624709",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.Tech Information Technology",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.2",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-fullstack",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T03:52:32.136Z",
+      "updatedAt": "2026-11-23T03:52:32.136Z"
     }
   ],
   "assessment_results": [
@@ -1853,5 +1894,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:52:13.058Z"
+  "lastUpdated": "2026-11-23T03:52:32.229Z"
 }
