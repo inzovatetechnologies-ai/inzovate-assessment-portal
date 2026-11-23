@@ -5979,6 +5979,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:04:58.901Z",
       "updatedAt": "2026-11-23T04:04:58.901Z"
+    },
+    {
+      "_id": "cand-70e154aa-e58d-429b-83bf-ecd35f1d2437",
+      "candidateId": "INZ-CAND-2026-00192",
+      "fullName": "RAJANANDINI S",
+      "email": "nandinisivakumar2004@gmail.com",
+      "password": "Nandini",
+      "mobileNumber": "+919087215256",
+      "altMobileNumber": "",
+      "dateOfBirth": "2004-06-30",
+      "gender": "Female",
+      "residentialAddress": "E-77 The Ramco Cements Limited Alathiyur Ariyalur Dis",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "624622",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.E. Computer Science and Engineering",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "7.48",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-java-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:05:17.157Z",
+      "updatedAt": "2026-11-23T04:05:17.157Z"
     }
   ],
   "assessment_results": [
@@ -6304,5 +6345,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:05:07.755Z"
+  "lastUpdated": "2026-11-23T04:05:17.390Z"
 }
