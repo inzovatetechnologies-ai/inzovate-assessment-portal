@@ -6307,6 +6307,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:06:21.657Z",
       "updatedAt": "2026-11-23T04:06:21.657Z"
+    },
+    {
+      "_id": "cand-704faad0-f403-48d0-bde8-8c170c0d4384",
+      "candidateId": "INZ-CAND-2026-00201",
+      "fullName": "Rejo Solomon A",
+      "email": "rejosolomon2707@gmail.com",
+      "password": "Rejo@2707",
+      "mobileNumber": "7010102945",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-07-27",
+      "gender": "Male",
+      "residentialAddress": "68/13, Alagu Nagar, Mangalam Tower Opp, Mengles Road, Dindigul.624003",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "624003",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.E. Computer Science and Engineering",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "7.81",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-02",
+      "domainName": "Software Development",
+      "jobRoleId": "role-data-analyst",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:06:47.257Z",
+      "updatedAt": "2026-11-23T04:06:47.257Z"
     }
   ],
   "assessment_results": [
@@ -6632,5 +6673,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:06:23.853Z"
+  "lastUpdated": "2026-11-23T04:06:47.368Z"
 }
