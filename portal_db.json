@@ -8341,13 +8341,59 @@
       "jobRoleId": "role-ai-ml",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T04:05:40.556Z",
-      "updatedAt": "2026-11-23T04:05:40.556Z"
+      "updatedAt": "2026-11-23T04:05:40.556Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_f4ea7373-6abb-4cb1-b477-4079c49001d4",
+        "candidateId": "INZ-CAND-2026-00195",
+        "candidateDisplayId": "INZ-CAND-2026-00195",
+        "candidateName": "Monishma M",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "PSNA College of Engineering and Technology",
+        "totalScore": 44,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 98,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Mastery (Outstanding)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-19353C",
+        "sectionScores": {
+          "section-1": {
+            "score": 14,
+            "total": 15,
+            "percentage": 93
+          },
+          "section-2": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-3": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          }
+        },
+        "completedAt": "2026-11-23T04:23:31.178Z"
+      },
+      "totalScore": 44,
+      "percentage": 98,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-19353C",
+      "completedAt": "2026-11-23T04:23:31.178Z"
     },
     {
       "_id": "cand-12b365bc-9e04-4f30-bf21-79c2b17e03c7",
@@ -13960,8 +14006,48 @@
         }
       },
       "completedAt": "2026-11-23T04:23:22.604Z"
+    },
+    {
+      "sessionId": "inz_cbt_f4ea7373-6abb-4cb1-b477-4079c49001d4",
+      "candidateId": "INZ-CAND-2026-00195",
+      "candidateDisplayId": "INZ-CAND-2026-00195",
+      "candidateName": "Monishma M",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "totalScore": 44,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 98,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Mastery (Outstanding)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-19353C",
+      "sectionScores": {
+        "section-1": {
+          "score": 14,
+          "total": 15,
+          "percentage": 93
+        },
+        "section-2": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-3": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        }
+      },
+      "completedAt": "2026-11-23T04:23:31.178Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:23:26.656Z"
+  "lastUpdated": "2026-11-23T04:23:31.323Z"
 }
