@@ -5211,7 +5211,7 @@
     },
     {
       "_id": "cand-d6ff05b2-4049-4789-9f9e-463df85cde1b",
-      "candidateId": "INZ-CAND-2026-00246",
+      "candidateId": "INZ-CAND-2026-00080",
       "fullName": "SIVIKA K",
       "email": "sivikak6@gmail.com",
       "password": "Sivi@123",
@@ -5242,11 +5242,11 @@
       "jobRoleId": "role-data-analyst",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Selected for Next Round",
+      "recruitmentStage": "Registered",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Completed",
-      "testAttempts": 1,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
       "createdAt": "2026-11-23T03:54:02.305Z",
       "updatedAt": "2026-11-23T03:54:02.305Z",
       "assessmentResult": {
@@ -23829,5 +23829,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:41:53.708Z"
+  "lastUpdated": "2026-11-23T04:41:58.655Z"
 }
