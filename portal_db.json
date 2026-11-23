@@ -7771,13 +7771,59 @@
       "jobRoleId": "role-soft-dev",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T04:02:50.473Z",
-      "updatedAt": "2026-11-23T04:02:50.473Z"
+      "updatedAt": "2026-11-23T04:02:50.473Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_dfb398d3-e05f-44a5-a364-5c7875107097",
+        "candidateId": "INZ-CAND-2026-00171",
+        "candidateDisplayId": "INZ-CAND-2026-00171",
+        "candidateName": "Ragul M",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "PSNA College of Engineering and Technology",
+        "totalScore": 45,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 100,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Mastery (Outstanding)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-31E458",
+        "sectionScores": {
+          "section-1": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-2": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-3": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          }
+        },
+        "completedAt": "2026-11-23T04:30:02.831Z"
+      },
+      "totalScore": 45,
+      "percentage": 100,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-31E458",
+      "completedAt": "2026-11-23T04:30:02.831Z"
     },
     {
       "_id": "cand-c458c8cd-8d07-4bf5-8625-19d6e8c9e05b",
@@ -17301,8 +17347,48 @@
         }
       },
       "completedAt": "2026-11-23T04:29:58.755Z"
+    },
+    {
+      "sessionId": "inz_cbt_dfb398d3-e05f-44a5-a364-5c7875107097",
+      "candidateId": "INZ-CAND-2026-00171",
+      "candidateDisplayId": "INZ-CAND-2026-00171",
+      "candidateName": "Ragul M",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "totalScore": 45,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 100,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Mastery (Outstanding)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-31E458",
+      "sectionScores": {
+        "section-1": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-2": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-3": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        }
+      },
+      "completedAt": "2026-11-23T04:30:02.831Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:29:58.963Z"
+  "lastUpdated": "2026-11-23T04:30:02.953Z"
 }
