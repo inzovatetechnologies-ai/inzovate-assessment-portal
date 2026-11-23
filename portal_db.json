@@ -2423,6 +2423,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T03:53:37.167Z",
       "updatedAt": "2026-11-23T03:53:37.167Z"
+    },
+    {
+      "_id": "cand-83f55c45-6ea1-47d6-b595-5d7cdf280ac3",
+      "candidateId": "INZ-CAND-2026-00076",
+      "fullName": "Reyabalaveni",
+      "email": "reyabalavenip@gmail.com",
+      "password": "Reyaishu@0307",
+      "mobileNumber": "+91 8668169244",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-12-26",
+      "gender": "Female",
+      "residentialAddress": "95,Ram nagar 4th street ,shenbagathoppu road",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "626117",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.E. Computer Science and Engineering",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "7.5",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-07",
+      "domainName": "Software Development",
+      "jobRoleId": "role-cyber-analyst",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T03:53:49.712Z",
+      "updatedAt": "2026-11-23T03:53:49.712Z"
     }
   ],
   "assessment_results": [
@@ -2468,5 +2509,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:53:42.067Z"
+  "lastUpdated": "2026-11-23T03:53:49.838Z"
 }
