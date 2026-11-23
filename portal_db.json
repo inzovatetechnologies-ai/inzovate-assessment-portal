@@ -10501,13 +10501,59 @@
       "jobRoleId": "role-ai-ml",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T04:08:38.472Z",
-      "updatedAt": "2026-11-23T04:08:38.472Z"
+      "updatedAt": "2026-11-23T04:08:38.472Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_7ec6c0e0-3d55-42fb-b71f-6ad1b62b76d3",
+        "candidateId": "INZ-CAND-2026-00237",
+        "candidateDisplayId": "INZ-CAND-2026-00237",
+        "candidateName": "Preethika M",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "PSNA College of Engineering and Technology",
+        "totalScore": 43,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 96,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Mastery (Outstanding)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-617DE2",
+        "sectionScores": {
+          "section-1": {
+            "score": 13,
+            "total": 15,
+            "percentage": 87
+          },
+          "section-2": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-3": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          }
+        },
+        "completedAt": "2026-11-23T04:29:06.826Z"
+      },
+      "totalScore": 43,
+      "percentage": 96,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-617DE2",
+      "completedAt": "2026-11-23T04:29:06.826Z"
     },
     {
       "_id": "cand-35e77629-9c8c-448c-81b1-e167109d4cdd",
@@ -16355,8 +16401,48 @@
         }
       },
       "completedAt": "2026-11-23T04:28:52.621Z"
+    },
+    {
+      "sessionId": "inz_cbt_7ec6c0e0-3d55-42fb-b71f-6ad1b62b76d3",
+      "candidateId": "INZ-CAND-2026-00237",
+      "candidateDisplayId": "INZ-CAND-2026-00237",
+      "candidateName": "Preethika M",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "totalScore": 43,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 96,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Mastery (Outstanding)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-617DE2",
+      "sectionScores": {
+        "section-1": {
+          "score": 13,
+          "total": 15,
+          "percentage": 87
+        },
+        "section-2": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-3": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        }
+      },
+      "completedAt": "2026-11-23T04:29:06.826Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:28:52.736Z"
+  "lastUpdated": "2026-11-23T04:29:06.947Z"
 }
