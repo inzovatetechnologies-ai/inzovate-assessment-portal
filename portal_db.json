@@ -19346,13 +19346,59 @@
       "jobRoleId": "role-soft-dev",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T04:53:09.666Z",
-      "updatedAt": "2026-11-23T04:53:09.666Z"
+      "updatedAt": "2026-11-23T04:53:09.666Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_85ceba51-802b-4484-b972-487785119129",
+        "candidateId": "INZ-CAND-2026-00241",
+        "candidateDisplayId": "INZ-CAND-2026-00241",
+        "candidateName": "MANISH KUMAR M",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "PSNA College of Engineering and Technology",
+        "totalScore": 45,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 100,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Mastery (Outstanding)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-623EDD",
+        "sectionScores": {
+          "section-1": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-2": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-3": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          }
+        },
+        "completedAt": "2026-11-23T05:13:52.592Z"
+      },
+      "totalScore": 45,
+      "percentage": 100,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-623EDD",
+      "completedAt": "2026-11-23T05:13:52.592Z"
     },
     {
       "_id": "cand-094856ea-a5ff-4c46-92c0-c29da0ba8692",
@@ -28731,8 +28777,48 @@
         }
       },
       "completedAt": "2026-11-23T05:10:46.751Z"
+    },
+    {
+      "sessionId": "inz_cbt_85ceba51-802b-4484-b972-487785119129",
+      "candidateId": "INZ-CAND-2026-00241",
+      "candidateDisplayId": "INZ-CAND-2026-00241",
+      "candidateName": "MANISH KUMAR M",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "totalScore": 45,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 100,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Mastery (Outstanding)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-623EDD",
+      "sectionScores": {
+        "section-1": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-2": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-3": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        }
+      },
+      "completedAt": "2026-11-23T05:13:52.592Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T05:10:50.980Z"
+  "lastUpdated": "2026-11-23T05:13:53.053Z"
 }
