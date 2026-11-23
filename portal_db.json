@@ -2354,13 +2354,59 @@
       "jobRoleId": "role-soft-dev",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T03:50:55.883Z",
-      "updatedAt": "2026-11-23T03:50:55.883Z"
+      "updatedAt": "2026-11-23T03:50:55.883Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_22063e47-6d76-48df-8a8e-704746140e13",
+        "candidateId": "INZ-CAND-2026-00057",
+        "candidateDisplayId": "INZ-CAND-2026-00057",
+        "candidateName": "23/11/2005",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "PSNA College of Engineering and Technology",
+        "totalScore": 39,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 87,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Mastery (Outstanding)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-FCC574",
+        "sectionScores": {
+          "section-1": {
+            "score": 14,
+            "total": 15,
+            "percentage": 93
+          },
+          "section-2": {
+            "score": 12,
+            "total": 15,
+            "percentage": 80
+          },
+          "section-3": {
+            "score": 13,
+            "total": 15,
+            "percentage": 87
+          }
+        },
+        "completedAt": "2026-11-23T04:24:13.425Z"
+      },
+      "totalScore": 39,
+      "percentage": 87,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-FCC574",
+      "completedAt": "2026-11-23T04:24:13.425Z"
     },
     {
       "_id": "cand-1a3ea3fd-fa9c-4f7c-8bfe-248f361c7fc1",
@@ -14046,8 +14092,48 @@
         }
       },
       "completedAt": "2026-11-23T04:23:31.178Z"
+    },
+    {
+      "sessionId": "inz_cbt_22063e47-6d76-48df-8a8e-704746140e13",
+      "candidateId": "INZ-CAND-2026-00057",
+      "candidateDisplayId": "INZ-CAND-2026-00057",
+      "candidateName": "23/11/2005",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "totalScore": 39,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 87,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Mastery (Outstanding)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-FCC574",
+      "sectionScores": {
+        "section-1": {
+          "score": 14,
+          "total": 15,
+          "percentage": 93
+        },
+        "section-2": {
+          "score": 12,
+          "total": 15,
+          "percentage": 80
+        },
+        "section-3": {
+          "score": 13,
+          "total": 15,
+          "percentage": 87
+        }
+      },
+      "completedAt": "2026-11-23T04:24:13.425Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:23:31.323Z"
+  "lastUpdated": "2026-11-23T04:24:13.561Z"
 }
