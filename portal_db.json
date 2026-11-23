@@ -9964,56 +9964,59 @@
       "jobRoleId": "role-java-dev",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
       "assessmentStatus": "Completed",
-      "testAttempts": 1,
+      "testAttempts": 2,
       "createdAt": "2026-11-23T04:03:13.182Z",
       "updatedAt": "2026-11-23T04:03:13.182Z",
       "assessmentResult": {
-        "sessionId": "inz_cbt_c507822a-721b-4548-874e-8fd3ce898791",
+        "sessionId": "inz_cbt_e1673eae-eed8-48d7-9711-bb7d18008381",
         "candidateId": "INZ-CAND-2026-00121",
         "candidateDisplayId": "INZ-CAND-2026-00121",
-        "candidateName": "Candidate",
-        "jobRoleTitle": "Software Developer",
-        "collegeName": "Autonomous Engineering College",
-        "totalScore": 12,
+        "candidateName": "VASANTHAKUMAR C",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "PSNA College of Engineering and Technology",
+        "totalScore": 35,
         "maxScore": 45,
         "totalQuestions": 45,
         "totalAttempted": 45,
         "totalQuestionsAttempted": 45,
         "unattempted": 0,
-        "percentage": 27,
-        "isPassed": false,
-        "examResult": "Fail",
-        "selectionStatus": "Rejected",
+        "percentage": 78,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
         "passCutoff": "> 25",
-        "performanceCategory": "Needs Improvement",
+        "performanceCategory": "Proficient (Commendable)",
         "status": "Completed",
-        "certificateId": "INZ-CERT-2026-AC4184",
+        "certificateId": "INZ-CERT-2026-CED03D",
         "sectionScores": {
           "section-1": {
-            "score": 4,
+            "score": 12,
             "total": 15,
-            "percentage": 27
+            "percentage": 80
           },
           "section-2": {
-            "score": 7,
+            "score": 13,
             "total": 15,
-            "percentage": 47
+            "percentage": 87
           },
           "section-3": {
-            "score": 1,
+            "score": 10,
             "total": 15,
-            "percentage": 7
+            "percentage": 67
           }
         },
-        "completedAt": "2026-11-23T04:41:08.144Z"
+        "completedAt": "2026-11-23T04:59:25.590Z"
       },
-      "totalScore": 12,
-      "percentage": 27,
-      "certificateId": "INZ-CERT-2026-AC4184"
+      "totalScore": 35,
+      "percentage": 78,
+      "certificateId": "INZ-CERT-2026-CED03D",
+      "isPassed": true,
+      "examResult": "Pass",
+      "completedAt": "2026-11-23T04:59:25.590Z"
     },
     {
       "_id": "cand-0fa23ea6-d754-4bff-818f-9733c3c3e885",
@@ -26184,44 +26187,44 @@
       "completedAt": "2026-11-23T04:41:07.056Z"
     },
     {
-      "sessionId": "inz_cbt_c507822a-721b-4548-874e-8fd3ce898791",
+      "sessionId": "inz_cbt_e1673eae-eed8-48d7-9711-bb7d18008381",
       "candidateId": "INZ-CAND-2026-00121",
       "candidateDisplayId": "INZ-CAND-2026-00121",
-      "candidateName": "Candidate",
-      "jobRoleTitle": "Software Developer",
-      "collegeName": "Autonomous Engineering College",
-      "totalScore": 12,
+      "candidateName": "VASANTHAKUMAR C",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "totalScore": 35,
       "maxScore": 45,
       "totalQuestions": 45,
       "totalAttempted": 45,
       "totalQuestionsAttempted": 45,
       "unattempted": 0,
-      "percentage": 27,
-      "isPassed": false,
-      "examResult": "Fail",
-      "selectionStatus": "Rejected",
+      "percentage": 78,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
       "passCutoff": "> 25",
-      "performanceCategory": "Needs Improvement",
+      "performanceCategory": "Proficient (Commendable)",
       "status": "Completed",
-      "certificateId": "INZ-CERT-2026-AC4184",
+      "certificateId": "INZ-CERT-2026-CED03D",
       "sectionScores": {
         "section-1": {
-          "score": 4,
+          "score": 12,
           "total": 15,
-          "percentage": 27
+          "percentage": 80
         },
         "section-2": {
-          "score": 7,
+          "score": 13,
           "total": 15,
-          "percentage": 47
+          "percentage": 87
         },
         "section-3": {
-          "score": 1,
+          "score": 10,
           "total": 15,
-          "percentage": 7
+          "percentage": 67
         }
       },
-      "completedAt": "2026-11-23T04:41:08.144Z"
+      "completedAt": "2026-11-23T04:59:25.590Z"
     },
     {
       "sessionId": "inz_cbt_4b5050ac-2d16-48c9-a612-a1a88261f650",
@@ -28305,5 +28308,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:59:24.036Z"
+  "lastUpdated": "2026-11-23T04:59:25.873Z"
 }
