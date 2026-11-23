@@ -3530,6 +3530,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T03:57:52.691Z",
       "updatedAt": "2026-11-23T03:57:52.691Z"
+    },
+    {
+      "_id": "cand-81bfaef1-8487-4040-bbff-91dd47a352e9",
+      "candidateId": "INZ-CAND-2026-00117",
+      "fullName": "Meenadharshini K S",
+      "email": "12-4-4, govinda swamy street,mettupatti,chinnalapatti",
+      "password": "Meena04",
+      "mobileNumber": "+918610972533",
+      "altMobileNumber": "",
+      "dateOfBirth": "2004-05-04",
+      "gender": "Female",
+      "residentialAddress": "12-4-4, Govinda Swamy Street,Mettupatti,Chinnalapatti",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "624302",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "MCA",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.67",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-java-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T03:58:17.055Z",
+      "updatedAt": "2026-11-23T03:58:17.055Z"
     }
   ],
   "assessment_results": [
@@ -3575,5 +3616,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:58:14.263Z"
+  "lastUpdated": "2026-11-23T03:58:17.245Z"
 }
