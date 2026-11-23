@@ -335,7 +335,7 @@
     },
     {
       "_id": "cand-d7eac06c-65fe-430d-8209-4d81251a455f",
-      "candidateId": "INZ-CAND-2026-00010",
+      "candidateId": "INZ-CAND-2026-00025",
       "fullName": "S Dharshini",
       "email": "dharshinisankar13@gmail.com",
       "password": "inzovate",
@@ -828,5 +828,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:48:00.462Z"
+  "lastUpdated": "2026-11-23T03:48:01.899Z"
 }
