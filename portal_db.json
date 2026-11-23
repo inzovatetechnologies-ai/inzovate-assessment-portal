@@ -10149,6 +10149,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:18:07.329Z",
       "updatedAt": "2026-11-23T04:18:07.329Z"
+    },
+    {
+      "_id": "cand-c2fc8957-d6be-47c8-85fb-a795c4252c9b",
+      "candidateId": "INZ-CAND-2026-00274",
+      "fullName": "Janani B",
+      "email": "jananiboominathan2005@gmail.com",
+      "password": "Janani@2005",
+      "mobileNumber": "9342199314",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-11-24",
+      "gender": "Female",
+      "residentialAddress": "Bharathinagar,Thiruvadanai,Ramanathapuram",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "623407",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.Tech-Information Technology",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.39",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:18:34.342Z",
+      "updatedAt": "2026-11-23T04:18:34.342Z"
     }
   ],
   "assessment_results": [
@@ -11834,5 +11875,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:18:31.320Z"
+  "lastUpdated": "2026-11-23T04:18:34.455Z"
 }
