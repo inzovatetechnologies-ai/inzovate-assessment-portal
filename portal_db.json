@@ -6870,13 +6870,59 @@
       "jobRoleId": "role-java-dev",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T03:58:17.055Z",
-      "updatedAt": "2026-11-23T03:58:17.055Z"
+      "updatedAt": "2026-11-23T03:58:17.055Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_a175a092-f9e1-4886-9dc5-ced75de3cfa2",
+        "candidateId": "INZ-CAND-2026-00117",
+        "candidateDisplayId": "INZ-CAND-2026-00117",
+        "candidateName": "Meenadharshini K S",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "PSNA College of Engineering and Technology",
+        "totalScore": 28,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 62,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Foundational (Competent)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-F5E300",
+        "sectionScores": {
+          "section-1": {
+            "score": 14,
+            "total": 15,
+            "percentage": 93
+          },
+          "section-2": {
+            "score": 11,
+            "total": 15,
+            "percentage": 73
+          },
+          "section-3": {
+            "score": 3,
+            "total": 15,
+            "percentage": 20
+          }
+        },
+        "completedAt": "2026-11-23T04:39:22.896Z"
+      },
+      "totalScore": 28,
+      "percentage": 62,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-F5E300",
+      "completedAt": "2026-11-23T04:39:22.896Z"
     },
     {
       "_id": "cand-50ddc596-0501-47f1-b4e6-d953d6be27b9",
@@ -22672,8 +22718,48 @@
         }
       },
       "completedAt": "2026-11-23T04:39:08.455Z"
+    },
+    {
+      "sessionId": "inz_cbt_a175a092-f9e1-4886-9dc5-ced75de3cfa2",
+      "candidateId": "INZ-CAND-2026-00117",
+      "candidateDisplayId": "INZ-CAND-2026-00117",
+      "candidateName": "Meenadharshini K S",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "totalScore": 28,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 62,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Foundational (Competent)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-F5E300",
+      "sectionScores": {
+        "section-1": {
+          "score": 14,
+          "total": 15,
+          "percentage": 93
+        },
+        "section-2": {
+          "score": 11,
+          "total": 15,
+          "percentage": 73
+        },
+        "section-3": {
+          "score": 3,
+          "total": 15,
+          "percentage": 20
+        }
+      },
+      "completedAt": "2026-11-23T04:39:22.896Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:39:08.593Z"
+  "lastUpdated": "2026-11-23T04:39:23.070Z"
 }
