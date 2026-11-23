@@ -5354,6 +5354,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:03:29.262Z",
       "updatedAt": "2026-11-23T04:03:29.262Z"
+    },
+    {
+      "_id": "cand-6d01c1f0-18ef-4fe1-b7cf-ef2f79370c48",
+      "candidateId": "INZ-CAND-2026-00169",
+      "fullName": "Pranesh M",
+      "email": "praneshm8438@gmail.com",
+      "password": "PRAN@1209",
+      "mobileNumber": "+918438371209",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-09-12",
+      "gender": "Male",
+      "residentialAddress": "PRANESH M S/o M.Murugesan, 11D, PalanichamyIllam, MudhaliyarStreet,Natham,Dindigul-62440177083",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "624401",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.E. Computer Science and Engineering",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.04",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-fullstack",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:03:41.011Z",
+      "updatedAt": "2026-11-23T04:03:41.011Z"
     }
   ],
   "assessment_results": [
@@ -5599,5 +5640,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:03:36.832Z"
+  "lastUpdated": "2026-11-23T04:03:41.123Z"
 }
