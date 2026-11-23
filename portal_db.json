@@ -783,6 +783,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T03:48:00.350Z",
       "updatedAt": "2026-11-23T03:48:00.350Z"
+    },
+    {
+      "_id": "cand-4045557b-0f0d-4d9f-b645-6820adeeb055",
+      "candidateId": "INZ-CAND-2026-00026",
+      "fullName": "Deepadharshini K",
+      "email": "deepadharshinikumar2@gmail.com",
+      "password": "Deepa@2007",
+      "mobileNumber": "+91 8939086011",
+      "altMobileNumber": "",
+      "dateOfBirth": "2007-01-13",
+      "gender": "Female",
+      "residentialAddress": "222a, palardam near , balasamudram , palani",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "624601",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.TECH .INFORMATION TECHNOLOGY",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "7.4",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T03:48:13.791Z",
+      "updatedAt": "2026-11-23T03:48:13.791Z"
     }
   ],
   "assessment_results": [
@@ -828,5 +869,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:48:01.899Z"
+  "lastUpdated": "2026-11-23T03:48:13.892Z"
 }
