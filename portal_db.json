@@ -6146,7 +6146,7 @@
     },
     {
       "_id": "cand-12b365bc-9e04-4f30-bf21-79c2b17e03c7",
-      "candidateId": "INZ-CAND-2026-00143",
+      "candidateId": "INZ-CAND-2026-00200",
       "fullName": "VISHAL KUMAR M",
       "email": "vishalkumarm23it@psnacet.edu.in",
       "password": "Vishal@123",
@@ -6632,5 +6632,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:06:21.781Z"
+  "lastUpdated": "2026-11-23T04:06:23.853Z"
 }
