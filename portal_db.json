@@ -2061,13 +2061,59 @@
       "jobRoleId": "role-data-analyst",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T03:51:12.528Z",
-      "updatedAt": "2026-11-23T03:51:12.528Z"
+      "updatedAt": "2026-11-23T03:51:12.528Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_4cba1426-f884-42ff-8835-7584cd6b832a",
+        "candidateId": "INZ-CAND-2026-00048",
+        "candidateDisplayId": "INZ-CAND-2026-00048",
+        "candidateName": "P.T. BALAJI",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "PSNA College of Engineering and Technology",
+        "totalScore": 42,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 93,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Mastery (Outstanding)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-D08F8E",
+        "sectionScores": {
+          "section-1": {
+            "score": 14,
+            "total": 15,
+            "percentage": 93
+          },
+          "section-2": {
+            "score": 13,
+            "total": 15,
+            "percentage": 87
+          },
+          "section-3": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          }
+        },
+        "completedAt": "2026-11-23T04:12:32.309Z"
+      },
+      "totalScore": 42,
+      "percentage": 93,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-D08F8E",
+      "completedAt": "2026-11-23T04:12:32.309Z"
     },
     {
       "_id": "cand-9372bfa5-67dd-4658-aaf6-8bfab2ebb6fd",
@@ -8874,8 +8920,48 @@
         }
       },
       "completedAt": "2026-11-23T04:11:34.002Z"
+    },
+    {
+      "sessionId": "inz_cbt_4cba1426-f884-42ff-8835-7584cd6b832a",
+      "candidateId": "INZ-CAND-2026-00048",
+      "candidateDisplayId": "INZ-CAND-2026-00048",
+      "candidateName": "P.T. BALAJI",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "totalScore": 42,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 93,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Mastery (Outstanding)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-D08F8E",
+      "sectionScores": {
+        "section-1": {
+          "score": 14,
+          "total": 15,
+          "percentage": 93
+        },
+        "section-2": {
+          "score": 13,
+          "total": 15,
+          "percentage": 87
+        },
+        "section-3": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        }
+      },
+      "completedAt": "2026-11-23T04:12:32.309Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:11:47.298Z"
+  "lastUpdated": "2026-11-23T04:12:32.407Z"
 }
