@@ -4150,6 +4150,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T03:59:57.751Z",
       "updatedAt": "2026-11-23T03:59:57.751Z"
+    },
+    {
+      "_id": "cand-f8e20d76-c3df-49e1-8568-a333845257e8",
+      "candidateId": "INZ-CAND-2026-00136",
+      "fullName": "PREETHI S",
+      "email": "preethisrinivasan0735@gmail.com",
+      "password": "PREETHI",
+      "mobileNumber": "7092091831",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-03-07",
+      "gender": "Female",
+      "residentialAddress": "2A,Maniyakaara theru , Melur-625106, Madurai(dt).",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "625106",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "Master Of Computer Application",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.25",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-java-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:00:00.666Z",
+      "updatedAt": "2026-11-23T04:00:00.666Z"
     }
   ],
   "assessment_results": [
@@ -4235,5 +4276,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:59:57.906Z"
+  "lastUpdated": "2026-11-23T04:00:00.961Z"
 }
