@@ -9801,6 +9801,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:17:00.761Z",
       "updatedAt": "2026-11-23T04:17:00.761Z"
+    },
+    {
+      "_id": "cand-3b6d5262-db82-4cce-8de8-896d3ac575ca",
+      "candidateId": "INZ-CAND-2026-00202",
+      "fullName": "NAGARAJ S",
+      "email": "nagaraj2004.official@gmail.com",
+      "password": "Nj@2522004",
+      "mobileNumber": "9345787713",
+      "altMobileNumber": "",
+      "dateOfBirth": "2004-02-25",
+      "gender": "Male",
+      "residentialAddress": "21/5A,imayam nagar, S.Alangulam, Madurai.",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "625017",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "Master of Computer Application",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.17",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-09",
+      "domainName": "Software Development",
+      "jobRoleId": "role-mobile-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:17:36.160Z",
+      "updatedAt": "2026-11-23T04:17:36.160Z"
     }
   ],
   "assessment_results": [
@@ -11326,5 +11367,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:17:24.588Z"
+  "lastUpdated": "2026-11-23T04:17:36.299Z"
 }
