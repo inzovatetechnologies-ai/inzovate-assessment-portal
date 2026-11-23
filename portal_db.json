@@ -3489,6 +3489,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T03:57:40.690Z",
       "updatedAt": "2026-11-23T03:57:40.690Z"
+    },
+    {
+      "_id": "cand-4af414e3-9ff9-49c5-ae4e-764d694cb087",
+      "candidateId": "INZ-CAND-2026-00115",
+      "fullName": "Santhosh R",
+      "email": "santhoosh837@gmail.com",
+      "password": "123456",
+      "mobileNumber": "7010183512",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-09-28",
+      "gender": "Male",
+      "residentialAddress": "3A,Kadalaikara lane, Nethaji road , Madurai",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "625001",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.E. Computer Science and Engineering(Cyber Security)",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.2",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-07",
+      "domainName": "Software Development",
+      "jobRoleId": "role-cyber-analyst",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T03:57:52.691Z",
+      "updatedAt": "2026-11-23T03:57:52.691Z"
     }
   ],
   "assessment_results": [
@@ -3534,5 +3575,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:57:40.787Z"
+  "lastUpdated": "2026-11-23T03:57:52.806Z"
 }
