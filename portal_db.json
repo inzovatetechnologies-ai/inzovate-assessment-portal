@@ -11994,13 +11994,59 @@
       "jobRoleId": "role-data-analyst",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T04:07:01.772Z",
-      "updatedAt": "2026-11-23T04:07:01.772Z"
+      "updatedAt": "2026-11-23T04:07:01.772Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_b9b81c52-a7da-46ca-94d7-64f993aa64ea",
+        "candidateId": "INZ-CAND-2026-00209",
+        "candidateDisplayId": "INZ-CAND-2026-00209",
+        "candidateName": "Sri Dharsan S",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "PSNA College of Engineering and Technology",
+        "totalScore": 30,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 67,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Proficient (Commendable)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-03528C",
+        "sectionScores": {
+          "section-1": {
+            "score": 6,
+            "total": 15,
+            "percentage": 40
+          },
+          "section-2": {
+            "score": 13,
+            "total": 15,
+            "percentage": 87
+          },
+          "section-3": {
+            "score": 11,
+            "total": 15,
+            "percentage": 73
+          }
+        },
+        "completedAt": "2026-11-23T04:42:26.335Z"
+      },
+      "totalScore": 30,
+      "percentage": 67,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-03528C",
+      "completedAt": "2026-11-23T04:42:26.335Z"
     },
     {
       "_id": "cand-2db95b21-033d-4b05-a14b-33e4d4695755",
@@ -23998,8 +24044,48 @@
         }
       },
       "completedAt": "2026-11-23T04:42:19.579Z"
+    },
+    {
+      "sessionId": "inz_cbt_b9b81c52-a7da-46ca-94d7-64f993aa64ea",
+      "candidateId": "INZ-CAND-2026-00209",
+      "candidateDisplayId": "INZ-CAND-2026-00209",
+      "candidateName": "Sri Dharsan S",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "totalScore": 30,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 67,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Proficient (Commendable)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-03528C",
+      "sectionScores": {
+        "section-1": {
+          "score": 6,
+          "total": 15,
+          "percentage": 40
+        },
+        "section-2": {
+          "score": 13,
+          "total": 15,
+          "percentage": 87
+        },
+        "section-3": {
+          "score": 11,
+          "total": 15,
+          "percentage": 73
+        }
+      },
+      "completedAt": "2026-11-23T04:42:26.335Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:42:19.746Z"
+  "lastUpdated": "2026-11-23T04:42:26.487Z"
 }
