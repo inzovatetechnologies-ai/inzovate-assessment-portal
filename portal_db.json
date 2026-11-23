@@ -9883,6 +9883,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:17:45.477Z",
       "updatedAt": "2026-11-23T04:17:45.477Z"
+    },
+    {
+      "_id": "cand-8c8e3017-ec9a-45b0-b9a3-bf1aec339edb",
+      "candidateId": "INZ-CAND-2026-00270",
+      "fullName": "Rajapriya S",
+      "email": "rajapriyaias2006@gmail.com",
+      "password": "Raja@#2027",
+      "mobileNumber": "9944759634",
+      "altMobileNumber": "",
+      "dateOfBirth": "2006-03-17",
+      "gender": "Female",
+      "residentialAddress": "11-8-12A1,Devangar Boys High School (opp) Street,Chinnalapatti, Dindigul-624301",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "624301",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.E. Computer Science and Engineering",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "7.79",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-java-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:17:46.793Z",
+      "updatedAt": "2026-11-23T04:17:46.793Z"
     }
   ],
   "assessment_results": [
@@ -11408,5 +11449,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:17:45.595Z"
+  "lastUpdated": "2026-11-23T04:17:46.923Z"
 }
