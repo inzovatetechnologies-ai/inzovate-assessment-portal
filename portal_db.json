@@ -6083,13 +6083,59 @@
       "jobRoleId": "role-cyber-analyst",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T04:01:11.902Z",
-      "updatedAt": "2026-11-23T04:01:11.902Z"
+      "updatedAt": "2026-11-23T04:01:11.902Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_6dca6bd1-5893-4ff9-a635-d9e4e4a36672",
+        "candidateId": "INZ-CAND-2026-00150",
+        "candidateDisplayId": "INZ-CAND-2026-00150",
+        "candidateName": "Sabareeshwari S",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "PSNA College of Engineering and Technology",
+        "totalScore": 45,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 100,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Mastery (Outstanding)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-994CAE",
+        "sectionScores": {
+          "section-1": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-2": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-3": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          }
+        },
+        "completedAt": "2026-11-23T04:20:23.432Z"
+      },
+      "totalScore": 45,
+      "percentage": 100,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-994CAE",
+      "completedAt": "2026-11-23T04:20:23.432Z"
     },
     {
       "_id": "cand-9d356e43-66b9-4fb7-9517-33b78c78a503",
@@ -12470,8 +12516,48 @@
         }
       },
       "completedAt": "2026-11-23T04:20:17.873Z"
+    },
+    {
+      "sessionId": "inz_cbt_6dca6bd1-5893-4ff9-a635-d9e4e4a36672",
+      "candidateId": "INZ-CAND-2026-00150",
+      "candidateDisplayId": "INZ-CAND-2026-00150",
+      "candidateName": "Sabareeshwari S",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "totalScore": 45,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 100,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Mastery (Outstanding)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-994CAE",
+      "sectionScores": {
+        "section-1": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-2": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-3": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        }
+      },
+      "completedAt": "2026-11-23T04:20:23.432Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:20:19.225Z"
+  "lastUpdated": "2026-11-23T04:20:23.612Z"
 }
