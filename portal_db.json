@@ -1685,6 +1685,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T03:51:29.605Z",
       "updatedAt": "2026-11-23T03:51:29.605Z"
+    },
+    {
+      "_id": "cand-f964c4ad-3ffa-4193-93de-879e90eb0ad4",
+      "candidateId": "INZ-CAND-2026-00041",
+      "fullName": "THANYA T",
+      "email": "thanie1832006@gmail.com",
+      "password": "thanya@183",
+      "mobileNumber": "+919042430018",
+      "altMobileNumber": "",
+      "dateOfBirth": "2006-03-18",
+      "gender": "Female",
+      "residentialAddress": "20-A, Senthamarai nagar,\nAnaipatti road,\nNilakottai, Dindigul (Dt) - 624 208",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "624208",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.Tech Information Technology",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.5",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-02",
+      "domainName": "Software Development",
+      "jobRoleId": "role-data-analyst",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T03:51:43.637Z",
+      "updatedAt": "2026-11-23T03:51:43.637Z"
     }
   ],
   "assessment_results": [
@@ -1730,5 +1771,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:51:30.672Z"
+  "lastUpdated": "2026-11-23T03:51:43.749Z"
 }
