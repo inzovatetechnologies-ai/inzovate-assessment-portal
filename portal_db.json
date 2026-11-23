@@ -12932,13 +12932,59 @@
       "jobRoleId": "role-data-analyst",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T04:16:47.430Z",
-      "updatedAt": "2026-11-23T04:16:47.430Z"
+      "updatedAt": "2026-11-23T04:16:47.430Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_2d025e1a-529e-4458-b580-40954b1c9f15",
+        "candidateId": "INZ-CAND-2026-00268",
+        "candidateDisplayId": "INZ-CAND-2026-00268",
+        "candidateName": "Vijay Balaji P S",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "PSNA College of Engineering and Technology",
+        "totalScore": 45,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 100,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Mastery (Outstanding)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-788040",
+        "sectionScores": {
+          "section-1": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-2": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-3": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          }
+        },
+        "completedAt": "2026-11-23T04:32:22.996Z"
+      },
+      "totalScore": 45,
+      "percentage": 100,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-788040",
+      "completedAt": "2026-11-23T04:32:22.996Z"
     },
     {
       "_id": "cand-98f1f34a-ca0f-45c0-9ce5-3af516e8a6b2",
@@ -18490,8 +18536,48 @@
         }
       },
       "completedAt": "2026-11-23T04:32:07.370Z"
+    },
+    {
+      "sessionId": "inz_cbt_2d025e1a-529e-4458-b580-40954b1c9f15",
+      "candidateId": "INZ-CAND-2026-00268",
+      "candidateDisplayId": "INZ-CAND-2026-00268",
+      "candidateName": "Vijay Balaji P S",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "totalScore": 45,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 100,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Mastery (Outstanding)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-788040",
+      "sectionScores": {
+        "section-1": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-2": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-3": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        }
+      },
+      "completedAt": "2026-11-23T04:32:22.996Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:32:08.854Z"
+  "lastUpdated": "2026-11-23T04:32:23.124Z"
 }
