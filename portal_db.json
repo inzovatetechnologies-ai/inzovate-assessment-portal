@@ -2088,13 +2088,59 @@
       "jobRoleId": "role-soft-dev",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T03:50:46.665Z",
-      "updatedAt": "2026-11-23T03:50:46.665Z"
+      "updatedAt": "2026-11-23T03:50:46.665Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_fb2dc1e8-6522-4417-832b-80e2030d9c66",
+        "candidateId": "INZ-CAND-2026-00052",
+        "candidateDisplayId": "INZ-CAND-2026-00052",
+        "candidateName": "Hemadharshini K",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "PSNA College of Engineering and Technology",
+        "totalScore": 32,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 71,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Proficient (Commendable)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-E33720",
+        "sectionScores": {
+          "section-1": {
+            "score": 13,
+            "total": 15,
+            "percentage": 87
+          },
+          "section-2": {
+            "score": 10,
+            "total": 15,
+            "percentage": 67
+          },
+          "section-3": {
+            "score": 9,
+            "total": 15,
+            "percentage": 60
+          }
+        },
+        "completedAt": "2026-11-23T04:19:32.755Z"
+      },
+      "totalScore": 32,
+      "percentage": 71,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-E33720",
+      "completedAt": "2026-11-23T04:19:32.755Z"
     },
     {
       "_id": "cand-997c6703-1973-4a86-a543-46113f5b856f",
@@ -12130,8 +12176,48 @@
         }
       },
       "completedAt": "2026-11-23T04:18:58.177Z"
+    },
+    {
+      "sessionId": "inz_cbt_fb2dc1e8-6522-4417-832b-80e2030d9c66",
+      "candidateId": "INZ-CAND-2026-00052",
+      "candidateDisplayId": "INZ-CAND-2026-00052",
+      "candidateName": "Hemadharshini K",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "totalScore": 32,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 71,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Proficient (Commendable)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-E33720",
+      "sectionScores": {
+        "section-1": {
+          "score": 13,
+          "total": 15,
+          "percentage": 87
+        },
+        "section-2": {
+          "score": 10,
+          "total": 15,
+          "percentage": 67
+        },
+        "section-3": {
+          "score": 9,
+          "total": 15,
+          "percentage": 60
+        }
+      },
+      "completedAt": "2026-11-23T04:19:32.755Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:18:58.302Z"
+  "lastUpdated": "2026-11-23T04:19:32.918Z"
 }
