@@ -4860,7 +4860,7 @@
     },
     {
       "_id": "cand-ac2cf3d4-45ea-4645-addd-ec171482cdc7",
-      "candidateId": "INZ-CAND-2026-00155",
+      "candidateId": "INZ-CAND-2026-00157",
       "fullName": "B Yuvan Govindasamy",
       "email": "yuvanstars2005@gmail.com",
       "password": "Yuvan@2005",
@@ -5104,5 +5104,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:02:35.814Z"
+  "lastUpdated": "2026-11-23T04:02:41.579Z"
 }
