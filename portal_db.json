@@ -10773,6 +10773,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:20:43.790Z",
       "updatedAt": "2026-11-23T04:20:43.790Z"
+    },
+    {
+      "_id": "cand-933e66cf-9747-42da-9f8b-273e019c9db5",
+      "candidateId": "INZ-CAND-2026-00210",
+      "fullName": "Abhinaya D S",
+      "email": "dsabhinaya13@gmail.com",
+      "password": "13abhinaya",
+      "mobileNumber": "8015410634",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-08-13",
+      "gender": "Female",
+      "residentialAddress": "GN Pudhur, Sriramapuram post, Dindigul-624622",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "624622",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.E. Computer Science and Engineering",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "7.56",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:20:44.711Z",
+      "updatedAt": "2026-11-23T04:20:44.711Z"
     }
   ],
   "assessment_results": [
@@ -12858,5 +12899,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:20:43.954Z"
+  "lastUpdated": "2026-11-23T04:20:45.472Z"
 }
