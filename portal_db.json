@@ -4775,6 +4775,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:02:08.088Z",
       "updatedAt": "2026-11-23T04:02:08.088Z"
+    },
+    {
+      "_id": "cand-ccdca0cb-1e4f-4e68-a124-e5a47cc4deb8",
+      "candidateId": "INZ-CAND-2026-00154",
+      "fullName": "M.MANI SANKAR",
+      "email": "sankarji890@gmaoil.com",
+      "password": "Sankar1234@",
+      "mobileNumber": "7418272076",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-05-05",
+      "gender": "Male",
+      "residentialAddress": "4/22,jeeva street,poolathur,dindigul",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "624202",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.E. Computer Science and Engineering(Cyber Security)",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "7.75",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-java-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:02:16.459Z",
+      "updatedAt": "2026-11-23T04:02:16.459Z"
     }
   ],
   "assessment_results": [
@@ -4940,5 +4981,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:02:11.395Z"
+  "lastUpdated": "2026-11-23T04:02:16.609Z"
 }
