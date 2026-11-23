@@ -18353,6 +18353,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:50:29.986Z",
       "updatedAt": "2026-11-23T04:50:29.986Z"
+    },
+    {
+      "_id": "cand-7c0b5f21-94cb-42bb-817d-37cef921be54",
+      "candidateId": "INZ-CAND-2026-00324",
+      "fullName": "Jeya Surya V",
+      "email": "suryajeya.v@gmail,com",
+      "password": "Surya@2005",
+      "mobileNumber": "8072251696",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-09-14",
+      "gender": "Male",
+      "residentialAddress": "vallalpaarinagar,valakapatti pirivu,natham road,Dindigul ",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "624003",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.E. Computer Science and Engineering",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "7.3",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-fullstack",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:51:02.648Z",
+      "updatedAt": "2026-11-23T04:51:02.648Z"
     }
   ],
   "assessment_results": [
@@ -26598,5 +26639,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:50:45.749Z"
+  "lastUpdated": "2026-11-23T04:51:02.815Z"
 }
