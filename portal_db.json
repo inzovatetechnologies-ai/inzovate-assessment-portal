@@ -8151,6 +8151,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:11:31.668Z",
       "updatedAt": "2026-11-23T04:11:31.668Z"
+    },
+    {
+      "_id": "cand-6505b750-f9cd-45a9-9a78-6bc00e71b020",
+      "candidateId": "INZ-CAND-2026-00183",
+      "fullName": "JENI PRISHKILLAH K",
+      "email": "jeniprish11@gmail.com",
+      "password": "ammu@2025",
+      "mobileNumber": "6369272410",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-11-14",
+      "gender": "Female",
+      "residentialAddress": "79,WEST AROCKIYA MAHDHA STREET,NAGAL NAGAR,DINDIGUL.",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "624003",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.E. Computer Science and Engineering",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.03",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-03",
+      "domainId": "dom-03",
+      "domainName": "Software Development",
+      "jobRoleId": "role-ai-ml",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:11:34.192Z",
+      "updatedAt": "2026-11-23T04:11:34.192Z"
     }
   ],
   "assessment_results": [
@@ -8836,5 +8877,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:11:34.102Z"
+  "lastUpdated": "2026-11-23T04:11:35.352Z"
 }
