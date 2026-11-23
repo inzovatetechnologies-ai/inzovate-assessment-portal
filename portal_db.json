@@ -332,6 +332,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T03:44:26.225Z",
       "updatedAt": "2026-11-23T03:44:26.225Z"
+    },
+    {
+      "_id": "cand-d7eac06c-65fe-430d-8209-4d81251a455f",
+      "candidateId": "INZ-CAND-2026-00010",
+      "fullName": "S Dharshini",
+      "email": "dharshinisankar13@gmail.com",
+      "password": "inzovate",
+      "mobileNumber": "9342510901",
+      "altMobileNumber": "",
+      "dateOfBirth": "2006-03-13",
+      "gender": "Female",
+      "residentialAddress": "Malligai Street,vedasandur,dindigul",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "624710",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.Tech Artificial Intelligence and Data Science ",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.3",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-02",
+      "domainName": "Software Development",
+      "jobRoleId": "role-data-analyst",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T03:44:54.793Z",
+      "updatedAt": "2026-11-23T03:44:54.793Z"
     }
   ],
   "assessment_results": [
@@ -377,5 +418,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:44:28.222Z"
+  "lastUpdated": "2026-11-23T03:44:54.903Z"
 }
