@@ -7388,6 +7388,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:08:39.505Z",
       "updatedAt": "2026-11-23T04:08:39.505Z"
+    },
+    {
+      "_id": "cand-d3703d28-045d-44af-83a9-483e4e7aa3a1",
+      "candidateId": "INZ-CAND-2026-00225",
+      "fullName": "Preethika M",
+      "email": "preethika1605m@gmail.com",
+      "password": "Preethi@2808",
+      "mobileNumber": "+91 8122974179",
+      "altMobileNumber": "",
+      "dateOfBirth": "2006-05-16",
+      "gender": "Female",
+      "residentialAddress": "2/130 agraharam street, samayanallur, Madurai - 625402",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "625420",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.E. Computer Science and Engineering",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "7.77",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-03",
+      "domainName": "Software Development",
+      "jobRoleId": "role-ai-ml",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:08:38.472Z",
+      "updatedAt": "2026-11-23T04:08:38.472Z"
     }
   ],
   "assessment_results": [
@@ -7833,5 +7874,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:08:39.643Z"
+  "lastUpdated": "2026-11-23T04:08:40.970Z"
 }
