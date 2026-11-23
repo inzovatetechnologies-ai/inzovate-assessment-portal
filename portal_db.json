@@ -6594,6 +6594,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:07:01.588Z",
       "updatedAt": "2026-11-23T04:07:01.588Z"
+    },
+    {
+      "_id": "cand-c168fd2a-9446-4605-9462-0913afd3830b",
+      "candidateId": "INZ-CAND-2026-00208",
+      "fullName": "Sathya Eswari K",
+      "email": "sathyaeswari357@gmail.com",
+      "password": "sathya394906",
+      "mobileNumber": "+917339490685",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-07-04",
+      "gender": "Female",
+      "residentialAddress": "PSNA college of engineering and tecchnology,Kodhandaraman Nagar,NLH,Dindigul.\nPSNA college of engineering and tecchnology,Kodhandaraman Nagar,NLH,Dindigul.",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "624622",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.E. Computer Science and Engineering",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.2",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-fullstack",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:07:02.209Z",
+      "updatedAt": "2026-11-23T04:07:02.209Z"
     }
   ],
   "assessment_results": [
@@ -6919,5 +6960,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:07:01.692Z"
+  "lastUpdated": "2026-11-23T04:07:02.927Z"
 }
