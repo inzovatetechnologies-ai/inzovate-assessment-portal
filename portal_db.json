@@ -15561,6 +15561,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:37:33.829Z",
       "updatedAt": "2026-11-23T04:37:33.829Z"
+    },
+    {
+      "_id": "cand-d6b8de23-8e1b-48d9-969d-3fa6539a60c4",
+      "candidateId": "INZ-CAND-2026-00308",
+      "fullName": "Ashok S",
+      "email": "ashoksakthivel88@gmail.com",
+      "password": "Ashok@0703",
+      "mobileNumber": "8838223838",
+      "altMobileNumber": "",
+      "dateOfBirth": "2006-03-07",
+      "gender": "Male",
+      "residentialAddress": "3/36,Kanakkanpatti,Palani,Didigul",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "624613",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.Tech Information technology",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.3",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-java-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:37:45.871Z",
+      "updatedAt": "2026-11-23T04:37:45.871Z"
     }
   ],
   "assessment_results": [
@@ -21566,5 +21607,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:37:36.305Z"
+  "lastUpdated": "2026-11-23T04:37:46.001Z"
 }
