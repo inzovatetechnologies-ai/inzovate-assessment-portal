@@ -13749,6 +13749,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:31:44.923Z",
       "updatedAt": "2026-11-23T04:31:44.923Z"
+    },
+    {
+      "_id": "cand-201c45de-8b53-4b02-a0fd-5821a0bb4fa5",
+      "candidateId": "INZ-CAND-2026-00299",
+      "fullName": "Gayathri M",
+      "email": "murugangayathri672@gmail.com",
+      "password": "Gayathri@02",
+      "mobileNumber": "+918825985020",
+      "altMobileNumber": "",
+      "dateOfBirth": "2006-05-02",
+      "gender": "Female",
+      "residentialAddress": "1/107 , North Stree , Kuthilppai , 624712 Oddachatram , DIndigul",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "624712",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.Tech. Information Technology",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "7.82",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:31:47.617Z",
+      "updatedAt": "2026-11-23T04:31:47.617Z"
     }
   ],
   "assessment_results": [
@@ -18154,5 +18195,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:31:45.089Z"
+  "lastUpdated": "2026-11-23T04:31:47.781Z"
 }
