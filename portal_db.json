@@ -3612,6 +3612,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T03:58:25.100Z",
       "updatedAt": "2026-11-23T03:58:25.100Z"
+    },
+    {
+      "_id": "cand-befe50bb-b937-4881-ae64-1f18537a30ab",
+      "candidateId": "INZ-CAND-2026-00121",
+      "fullName": "Santhosh B",
+      "email": "santhoshbalaji2005@gmail.com",
+      "password": "Sant@2005",
+      "mobileNumber": "+919345641578",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-09-29",
+      "gender": "Male",
+      "residentialAddress": "87A College House road\nNagal nagar, Dindigul.",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "624003",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.Tech IT",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.4",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T03:58:27.443Z",
+      "updatedAt": "2026-11-23T03:58:27.443Z"
     }
   ],
   "assessment_results": [
@@ -3657,5 +3698,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:58:25.210Z"
+  "lastUpdated": "2026-11-23T03:58:27.585Z"
 }
