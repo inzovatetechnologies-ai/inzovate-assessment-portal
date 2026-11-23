@@ -209,6 +209,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T03:41:19.160Z",
       "updatedAt": "2026-11-23T03:41:19.160Z"
+    },
+    {
+      "_id": "cand-76109566-05b9-4d2c-98cd-cb58c16934fd",
+      "candidateId": "INZ-CAND-2026-00006",
+      "fullName": "Nanthini S",
+      "email": "nanthukuttimananthu@gmail.com",
+      "password": "@Nanthini10",
+      "mobileNumber": "8220774245",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-09-10",
+      "gender": "Female",
+      "residentialAddress": "Seelapadi Dindigul, TamilNadu",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "624004",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.Tech Information Technology",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "7.9",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T03:43:11.616Z",
+      "updatedAt": "2026-11-23T03:43:11.616Z"
     }
   ],
   "assessment_results": [
@@ -254,5 +295,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:41:19.276Z"
+  "lastUpdated": "2026-11-23T03:43:11.739Z"
 }
