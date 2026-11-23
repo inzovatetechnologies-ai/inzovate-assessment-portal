@@ -9494,6 +9494,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:16:08.404Z",
       "updatedAt": "2026-11-23T04:16:08.404Z"
+    },
+    {
+      "_id": "cand-aec7607b-d828-4b6f-a598-e46fbd0f04e4",
+      "candidateId": "INZ-CAND-2026-00264",
+      "fullName": "Vijay Balaji P S",
+      "email": "vijaybalajips@gmail.com",
+      "password": "Vijay@2005",
+      "mobileNumber": "+918778763095",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-06-06",
+      "gender": "Male",
+      "residentialAddress": "Plot no 3,Om Illam,Raveendran Street,Parasakthi Nagar Main Road,Avaniyapuram,Madurai-12",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "625012",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.E. Computer Science and Engineering",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.65",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-02",
+      "domainName": "Software Development",
+      "jobRoleId": "role-data-analyst",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:16:47.430Z",
+      "updatedAt": "2026-11-23T04:16:47.430Z"
     }
   ],
   "assessment_results": [
@@ -10859,5 +10900,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:16:37.393Z"
+  "lastUpdated": "2026-11-23T04:16:47.562Z"
 }
