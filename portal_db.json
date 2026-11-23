@@ -4898,6 +4898,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:02:22.873Z",
       "updatedAt": "2026-11-23T04:02:22.873Z"
+    },
+    {
+      "_id": "cand-253c6ad7-0e27-4b56-baf1-7fc3d5554c06",
+      "candidateId": "INZ-CAND-2026-00156",
+      "fullName": "Shrinidhi K S",
+      "email": "shrinidhisathya@gmail.com",
+      "password": "Shri@22",
+      "mobileNumber": "9790628480",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-08-22",
+      "gender": "Female",
+      "residentialAddress": "Plot no . 14 , rajakalliamman 1st street , N S nagar , Dindigul.",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "624001",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.Tech Information Technology",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.71",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-03",
+      "domainName": "Software Development",
+      "jobRoleId": "role-ai-ml",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:02:35.523Z",
+      "updatedAt": "2026-11-23T04:02:35.523Z"
     }
   ],
   "assessment_results": [
@@ -5063,5 +5104,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:02:22.990Z"
+  "lastUpdated": "2026-11-23T04:02:35.814Z"
 }
