@@ -2789,13 +2789,59 @@
       "jobRoleId": "role-soft-dev",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Rejected",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T03:51:14.842Z",
-      "updatedAt": "2026-11-23T03:51:14.842Z"
+      "updatedAt": "2026-11-23T03:51:14.842Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_a671ced7-de20-480f-8050-38c3f409512c",
+        "candidateId": "INZ-CAND-2026-00049",
+        "candidateDisplayId": "INZ-CAND-2026-00049",
+        "candidateName": "Abinaya L",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "PSNA College of Engineering and Technology",
+        "totalScore": 25,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 56,
+        "isPassed": false,
+        "examResult": "Fail",
+        "selectionStatus": "Rejected",
+        "passCutoff": "> 25",
+        "performanceCategory": "Foundational (Competent)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-F7DF58",
+        "sectionScores": {
+          "section-1": {
+            "score": 7,
+            "total": 15,
+            "percentage": 47
+          },
+          "section-2": {
+            "score": 12,
+            "total": 15,
+            "percentage": 80
+          },
+          "section-3": {
+            "score": 6,
+            "total": 15,
+            "percentage": 40
+          }
+        },
+        "completedAt": "2026-11-23T04:24:25.870Z"
+      },
+      "totalScore": 25,
+      "percentage": 56,
+      "isPassed": false,
+      "examResult": "Fail",
+      "certificateId": "INZ-CERT-2026-F7DF58",
+      "completedAt": "2026-11-23T04:24:25.870Z"
     },
     {
       "_id": "cand-82c4e533-634d-4326-a9a4-35d785669cfe",
@@ -14259,8 +14305,48 @@
         }
       },
       "completedAt": "2026-11-23T04:24:15.918Z"
+    },
+    {
+      "sessionId": "inz_cbt_a671ced7-de20-480f-8050-38c3f409512c",
+      "candidateId": "INZ-CAND-2026-00049",
+      "candidateDisplayId": "INZ-CAND-2026-00049",
+      "candidateName": "Abinaya L",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "totalScore": 25,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 56,
+      "isPassed": false,
+      "examResult": "Fail",
+      "selectionStatus": "Rejected",
+      "passCutoff": "> 25",
+      "performanceCategory": "Foundational (Competent)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-F7DF58",
+      "sectionScores": {
+        "section-1": {
+          "score": 7,
+          "total": 15,
+          "percentage": 47
+        },
+        "section-2": {
+          "score": 12,
+          "total": 15,
+          "percentage": 80
+        },
+        "section-3": {
+          "score": 6,
+          "total": 15,
+          "percentage": 40
+        }
+      },
+      "completedAt": "2026-11-23T04:24:25.870Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:24:17.896Z"
+  "lastUpdated": "2026-11-23T04:24:26.007Z"
 }
