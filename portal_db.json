@@ -3284,6 +3284,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T03:56:45.636Z",
       "updatedAt": "2026-11-23T03:56:45.636Z"
+    },
+    {
+      "_id": "cand-4e634fac-c908-4915-acb5-34fd20afaf0c",
+      "candidateId": "INZ-CAND-2026-00105",
+      "fullName": "Dharani I",
+      "email": "dharilango2006@gmail.com",
+      "password": "dharani2006",
+      "mobileNumber": "9092887084",
+      "altMobileNumber": "",
+      "dateOfBirth": "2006-07-10",
+      "gender": "Female",
+      "residentialAddress": "Chairman palanisamy street,Thiruppuvanam,sivaganga district",
+      "district": "",
+      "state": "Tamil Nadu",
+      "pinCode": "630611",
+      "collegeId": "",
+      "collegeName": "PSNA college of engineering and technology",
+      "universityRegisterNumber": "",
+      "degree": "B.E. Information technology",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.3",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T03:56:47.899Z",
+      "updatedAt": "2026-11-23T03:56:47.899Z"
     }
   ],
   "assessment_results": [
@@ -3329,5 +3370,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:56:47.296Z"
+  "lastUpdated": "2026-11-23T03:56:48.954Z"
 }
