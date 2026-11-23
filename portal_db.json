@@ -5190,6 +5190,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:03:13.182Z",
       "updatedAt": "2026-11-23T04:03:13.182Z"
+    },
+    {
+      "_id": "cand-0fa23ea6-d754-4bff-818f-9733c3c3e885",
+      "candidateId": "INZ-CAND-2026-00161",
+      "fullName": "Vikkas M A",
+      "email": "vikkasabraham.m@gmail.com",
+      "password": "Vikk@033",
+      "mobileNumber": "9025332577",
+      "altMobileNumber": "",
+      "dateOfBirth": "2004-03-02",
+      "gender": "Male",
+      "residentialAddress": "64/2A, Mullai street, Natarajnagar, Mudakusalai, Madurai.",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "625016",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "MCA",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "7.9",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-02",
+      "domainName": "Software Development",
+      "jobRoleId": "role-data-analyst",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:03:13.419Z",
+      "updatedAt": "2026-11-23T04:03:13.419Z"
     }
   ],
   "assessment_results": [
@@ -5395,5 +5436,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:03:15.056Z"
+  "lastUpdated": "2026-11-23T04:03:16.814Z"
 }
