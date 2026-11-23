@@ -1606,7 +1606,7 @@
     },
     {
       "_id": "cand-82c4e533-634d-4326-a9a4-35d785669cfe",
-      "candidateId": "INZ-CAND-2026-00050",
+      "candidateId": "INZ-CAND-2026-00123",
       "fullName": "LAVANYA S",
       "email": "lavanyasivakumar524@gmail.com",
       "password": "lavanya",
@@ -3739,5 +3739,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:58:30.328Z"
+  "lastUpdated": "2026-11-23T03:58:41.325Z"
 }
