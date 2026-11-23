@@ -10732,6 +10732,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:20:17.591Z",
       "updatedAt": "2026-11-23T04:20:17.591Z"
+    },
+    {
+      "_id": "cand-af684d6f-dd0a-4ba6-af39-14f3b523eae7",
+      "candidateId": "INZ-CAND-2026-00281",
+      "fullName": "Jeevitha V",
+      "email": "jeevi1492005@gmail.com",
+      "password": "jeevi@123",
+      "mobileNumber": "9150111275",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-09-14",
+      "gender": "Female",
+      "residentialAddress": "19/123B,kattabomman street,palani-624601",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "624601",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.E. Computer Science and Engineering",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "7.96",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:20:43.790Z",
+      "updatedAt": "2026-11-23T04:20:43.790Z"
     }
   ],
   "assessment_results": [
@@ -12817,5 +12858,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:20:40.746Z"
+  "lastUpdated": "2026-11-23T04:20:43.954Z"
 }
