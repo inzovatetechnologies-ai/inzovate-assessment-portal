@@ -16916,13 +16916,59 @@
       "jobRoleId": "role-data-analyst",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Rejected",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T04:31:44.923Z",
-      "updatedAt": "2026-11-23T04:31:44.923Z"
+      "updatedAt": "2026-11-23T04:31:44.923Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_8612a198-5171-4a97-9796-1624316c58b5",
+        "candidateId": "INZ-CAND-2026-00298",
+        "candidateDisplayId": "INZ-CAND-2026-00298",
+        "candidateName": "Gnanaprasannambika S",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "PSNA College of Engineering and Technology",
+        "totalScore": 14,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 31,
+        "isPassed": false,
+        "examResult": "Fail",
+        "selectionStatus": "Rejected",
+        "passCutoff": "> 25",
+        "performanceCategory": "Needs Improvement",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-C04B40",
+        "sectionScores": {
+          "section-1": {
+            "score": 5,
+            "total": 15,
+            "percentage": 33
+          },
+          "section-2": {
+            "score": 4,
+            "total": 15,
+            "percentage": 27
+          },
+          "section-3": {
+            "score": 5,
+            "total": 15,
+            "percentage": 33
+          }
+        },
+        "completedAt": "2026-11-23T04:45:38.242Z"
+      },
+      "totalScore": 14,
+      "percentage": 31,
+      "isPassed": false,
+      "examResult": "Fail",
+      "certificateId": "INZ-CERT-2026-C04B40",
+      "completedAt": "2026-11-23T04:45:38.242Z"
     },
     {
       "_id": "cand-201c45de-8b53-4b02-a0fd-5821a0bb4fa5",
@@ -25065,8 +25111,48 @@
         }
       },
       "completedAt": "2026-11-23T04:45:15.507Z"
+    },
+    {
+      "sessionId": "inz_cbt_8612a198-5171-4a97-9796-1624316c58b5",
+      "candidateId": "INZ-CAND-2026-00298",
+      "candidateDisplayId": "INZ-CAND-2026-00298",
+      "candidateName": "Gnanaprasannambika S",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "totalScore": 14,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 31,
+      "isPassed": false,
+      "examResult": "Fail",
+      "selectionStatus": "Rejected",
+      "passCutoff": "> 25",
+      "performanceCategory": "Needs Improvement",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-C04B40",
+      "sectionScores": {
+        "section-1": {
+          "score": 5,
+          "total": 15,
+          "percentage": 33
+        },
+        "section-2": {
+          "score": 4,
+          "total": 15,
+          "percentage": 27
+        },
+        "section-3": {
+          "score": 5,
+          "total": 15,
+          "percentage": 33
+        }
+      },
+      "completedAt": "2026-11-23T04:45:38.242Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:45:35.219Z"
+  "lastUpdated": "2026-11-23T04:45:38.396Z"
 }
