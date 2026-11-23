@@ -17639,13 +17639,59 @@
       "jobRoleId": "role-ai-ml",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T04:34:05.321Z",
-      "updatedAt": "2026-11-23T04:34:05.321Z"
+      "updatedAt": "2026-11-23T04:34:05.321Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_fb2d0b4a-e77b-4e5a-aec4-d96015f1ad5d",
+        "candidateId": "INZ-CAND-2026-00305",
+        "candidateDisplayId": "INZ-CAND-2026-00305",
+        "candidateName": "Mohamed Aslam K",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "PSNA College of Engineering and Technology",
+        "totalScore": 41,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 91,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Mastery (Outstanding)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-40E67F",
+        "sectionScores": {
+          "section-1": {
+            "score": 14,
+            "total": 15,
+            "percentage": 93
+          },
+          "section-2": {
+            "score": 14,
+            "total": 15,
+            "percentage": 93
+          },
+          "section-3": {
+            "score": 13,
+            "total": 15,
+            "percentage": 87
+          }
+        },
+        "completedAt": "2026-11-23T04:52:02.764Z"
+      },
+      "totalScore": 41,
+      "percentage": 91,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-40E67F",
+      "completedAt": "2026-11-23T04:52:02.764Z"
     },
     {
       "_id": "cand-5e2683e6-563b-49dd-88c9-0987397f472d",
@@ -26762,8 +26808,48 @@
         }
       },
       "completedAt": "2026-11-23T04:51:43.822Z"
+    },
+    {
+      "sessionId": "inz_cbt_fb2d0b4a-e77b-4e5a-aec4-d96015f1ad5d",
+      "candidateId": "INZ-CAND-2026-00305",
+      "candidateDisplayId": "INZ-CAND-2026-00305",
+      "candidateName": "Mohamed Aslam K",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "totalScore": 41,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 91,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Mastery (Outstanding)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-40E67F",
+      "sectionScores": {
+        "section-1": {
+          "score": 14,
+          "total": 15,
+          "percentage": 93
+        },
+        "section-2": {
+          "score": 14,
+          "total": 15,
+          "percentage": 93
+        },
+        "section-3": {
+          "score": 13,
+          "total": 15,
+          "percentage": 87
+        }
+      },
+      "completedAt": "2026-11-23T04:52:02.764Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:51:45.460Z"
+  "lastUpdated": "2026-11-23T04:52:02.918Z"
 }
