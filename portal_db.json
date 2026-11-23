@@ -17773,6 +17773,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:45:35.054Z",
       "updatedAt": "2026-11-23T04:45:35.054Z"
+    },
+    {
+      "_id": "cand-dc06daaa-bde6-4440-86de-e25f9abeb0c2",
+      "candidateId": "INZ-CAND-2026-00320",
+      "fullName": "HARISH K",
+      "email": "bavaharishkumar@gmail.com",
+      "password": "Harish@2006",
+      "mobileNumber": "6369151728",
+      "altMobileNumber": "",
+      "dateOfBirth": "2006-06-01",
+      "gender": "Male",
+      "residentialAddress": "7/6 veerapandiammankovail street dindigul",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "624001",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.E. Computer Science and Engineering",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-fullstack",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:47:27.459Z",
+      "updatedAt": "2026-11-23T04:47:27.459Z"
     }
   ],
   "assessment_results": [
@@ -25538,5 +25579,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:47:24.652Z"
+  "lastUpdated": "2026-11-23T04:47:27.604Z"
 }
