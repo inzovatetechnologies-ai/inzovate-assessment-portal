@@ -3707,7 +3707,7 @@
     },
     {
       "_id": "cand-befe50bb-b937-4881-ae64-1f18537a30ab",
-      "candidateId": "INZ-CAND-2026-00121",
+      "candidateId": "INZ-CAND-2026-00142",
       "fullName": "Santhosh B",
       "email": "santhoshbalaji2005@gmail.com",
       "password": "Sant@2005",
@@ -4567,5 +4567,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:01:04.490Z"
+  "lastUpdated": "2026-11-23T04:01:06.036Z"
 }
