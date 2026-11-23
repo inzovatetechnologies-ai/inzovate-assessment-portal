@@ -499,7 +499,7 @@
     },
     {
       "_id": "cand-686c43a8-388d-4111-b99c-96e04e41dacc",
-      "candidateId": "INZ-CAND-2026-00012",
+      "candidateId": "INZ-CAND-2026-00020",
       "fullName": "Afritha Banu S",
       "email": "afrithabanu18@gmail.com",
       "password": "Afritha@123",
@@ -664,5 +664,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:47:35.260Z"
+  "lastUpdated": "2026-11-23T03:47:40.613Z"
 }
