@@ -4237,6 +4237,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:00:00.666Z",
       "updatedAt": "2026-11-23T04:00:00.666Z"
+    },
+    {
+      "_id": "cand-c842c5e6-68ce-4c70-94ee-c33fb331583b",
+      "candidateId": "INZ-CAND-2026-00138",
+      "fullName": "Sugilkar B",
+      "email": "bsugeilkarbalu@gmail.com",
+      "password": "pikkachu",
+      "mobileNumber": "+91 9003523068",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-11-11",
+      "gender": "Male",
+      "residentialAddress": "320/2 , RVS Nagar , Palaiyavalavu , Paganeri , Sivaganga - 630 558",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "630 558",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.TECH Information Technology",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "6.5",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:00:49.976Z",
+      "updatedAt": "2026-11-23T04:00:49.976Z"
     }
   ],
   "assessment_results": [
@@ -4362,5 +4403,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:00:48.671Z"
+  "lastUpdated": "2026-11-23T04:00:50.107Z"
 }
