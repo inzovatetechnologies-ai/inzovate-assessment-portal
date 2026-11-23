@@ -3243,6 +3243,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T03:56:42.827Z",
       "updatedAt": "2026-11-23T03:56:42.827Z"
+    },
+    {
+      "_id": "cand-da3e7f76-561c-496e-b08e-d19215f5286a",
+      "candidateId": "INZ-CAND-2026-00103",
+      "fullName": "Affra Hasin J",
+      "email": "affrahasinj23cys@psnacet.edu.in",
+      "password": "123456",
+      "mobileNumber": "+91 8248885806",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-12-11",
+      "gender": "Female",
+      "residentialAddress": "Ellango nagar, Melur, Madurai, Tamil Nadu.",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.E. Computer Science and Engineering",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "7.5",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-03",
+      "domainId": "dom-07",
+      "domainName": "Software Development",
+      "jobRoleId": "role-cyber-analyst",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T03:56:45.636Z",
+      "updatedAt": "2026-11-23T03:56:45.636Z"
     }
   ],
   "assessment_results": [
@@ -3288,5 +3329,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:56:42.954Z"
+  "lastUpdated": "2026-11-23T03:56:45.750Z"
 }
