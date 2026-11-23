@@ -18798,6 +18798,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:53:09.666Z",
       "updatedAt": "2026-11-23T04:53:09.666Z"
+    },
+    {
+      "_id": "cand-094856ea-a5ff-4c46-92c0-c29da0ba8692",
+      "candidateId": "INZ-CAND-2026-00328",
+      "fullName": "Harish Pandian L",
+      "email": "ha25rish@gmail.com",
+      "password": "harish200525",
+      "mobileNumber": "7010184071",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-10-18",
+      "gender": "Male",
+      "residentialAddress": "1443,f/4, Pillaivayal Kaliamman Street,Sivagangai",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "630561",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.E. Computer Science and Engineering",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "7.33",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:54:21.619Z",
+      "updatedAt": "2026-11-23T04:54:21.619Z"
     }
   ],
   "assessment_results": [
@@ -27363,5 +27404,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:54:12.559Z"
+  "lastUpdated": "2026-11-23T04:54:21.860Z"
 }
