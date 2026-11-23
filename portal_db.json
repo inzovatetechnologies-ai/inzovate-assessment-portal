@@ -9533,13 +9533,59 @@
       "jobRoleId": "role-proc-assoc-direct",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T04:06:57.791Z",
-      "updatedAt": "2026-11-23T04:06:57.791Z"
+      "updatedAt": "2026-11-23T04:06:57.791Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_6c52dffe-8f74-4a93-b415-818de8b86760",
+        "candidateId": "INZ-CAND-2026-00207",
+        "candidateDisplayId": "INZ-CAND-2026-00207",
+        "candidateName": "Jeni Christy M",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "PSNA College of Engineering and Technology",
+        "totalScore": 45,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 100,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Mastery (Outstanding)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-778C48",
+        "sectionScores": {
+          "section-1": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-2": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-3": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          }
+        },
+        "completedAt": "2026-11-23T04:28:52.621Z"
+      },
+      "totalScore": 45,
+      "percentage": 100,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-778C48",
+      "completedAt": "2026-11-23T04:28:52.621Z"
     },
     {
       "_id": "cand-0542457f-22cb-4e00-b721-c6019a439701",
@@ -16269,8 +16315,48 @@
         }
       },
       "completedAt": "2026-11-23T04:28:30.853Z"
+    },
+    {
+      "sessionId": "inz_cbt_6c52dffe-8f74-4a93-b415-818de8b86760",
+      "candidateId": "INZ-CAND-2026-00207",
+      "candidateDisplayId": "INZ-CAND-2026-00207",
+      "candidateName": "Jeni Christy M",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "totalScore": 45,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 100,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Mastery (Outstanding)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-778C48",
+      "sectionScores": {
+        "section-1": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-2": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-3": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        }
+      },
+      "completedAt": "2026-11-23T04:28:52.621Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:28:31.015Z"
+  "lastUpdated": "2026-11-23T04:28:52.736Z"
 }
