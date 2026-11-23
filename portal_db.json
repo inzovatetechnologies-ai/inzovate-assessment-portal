@@ -8583,6 +8583,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:13:25.335Z",
       "updatedAt": "2026-11-23T04:13:25.335Z"
+    },
+    {
+      "_id": "cand-2db6f8bc-61c6-464b-ab2d-b4b48bb399cc",
+      "candidateId": "INZ-CAND-2026-00245",
+      "fullName": "Naga Padma Devi M",
+      "email": "nagapadma140@gmail.com",
+      "password": "Devi@#23",
+      "mobileNumber": "9043518270",
+      "altMobileNumber": "",
+      "dateOfBirth": "2003-10-23",
+      "gender": "Female",
+      "residentialAddress": "",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "624709",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "MCA",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "7.85",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-03",
+      "domainId": "dom-02",
+      "domainName": "Software Development",
+      "jobRoleId": "role-data-analyst",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:13:34.796Z",
+      "updatedAt": "2026-11-23T04:13:34.796Z"
     }
   ],
   "assessment_results": [
@@ -9468,5 +9509,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:13:29.029Z"
+  "lastUpdated": "2026-11-23T04:13:34.920Z"
 }
