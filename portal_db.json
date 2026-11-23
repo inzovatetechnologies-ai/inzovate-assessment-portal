@@ -8978,13 +8978,59 @@
       "jobRoleId": "role-data-analyst",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T04:03:29.262Z",
-      "updatedAt": "2026-11-23T04:03:29.262Z"
+      "updatedAt": "2026-11-23T04:03:29.262Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_3b599866-8de7-4622-9fdc-5efcc1b7404e",
+        "candidateId": "INZ-CAND-2026-00234",
+        "candidateDisplayId": "INZ-CAND-2026-00234",
+        "candidateName": "MOHANA ESWARI K",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "PSNA College of Engineering and Technology",
+        "totalScore": 41,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 91,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Mastery (Outstanding)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-4B8F83",
+        "sectionScores": {
+          "section-1": {
+            "score": 11,
+            "total": 15,
+            "percentage": 73
+          },
+          "section-2": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-3": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          }
+        },
+        "completedAt": "2026-11-23T04:35:03.432Z"
+      },
+      "totalScore": 41,
+      "percentage": 91,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-4B8F83",
+      "completedAt": "2026-11-23T04:35:03.432Z"
     },
     {
       "_id": "cand-6d01c1f0-18ef-4fe1-b7cf-ef2f79370c48",
@@ -19861,8 +19907,48 @@
         }
       },
       "completedAt": "2026-11-23T04:35:02.157Z"
+    },
+    {
+      "sessionId": "inz_cbt_3b599866-8de7-4622-9fdc-5efcc1b7404e",
+      "candidateId": "INZ-CAND-2026-00234",
+      "candidateDisplayId": "INZ-CAND-2026-00234",
+      "candidateName": "MOHANA ESWARI K",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "totalScore": 41,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 91,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Mastery (Outstanding)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-4B8F83",
+      "sectionScores": {
+        "section-1": {
+          "score": 11,
+          "total": 15,
+          "percentage": 73
+        },
+        "section-2": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-3": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        }
+      },
+      "completedAt": "2026-11-23T04:35:03.432Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:35:02.365Z"
+  "lastUpdated": "2026-11-23T04:35:03.606Z"
 }
