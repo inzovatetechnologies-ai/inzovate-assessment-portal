@@ -6143,6 +6143,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:05:40.556Z",
       "updatedAt": "2026-11-23T04:05:40.556Z"
+    },
+    {
+      "_id": "cand-12b365bc-9e04-4f30-bf21-79c2b17e03c7",
+      "candidateId": "INZ-CAND-2026-00143",
+      "fullName": "VISHAL KUMAR M",
+      "email": "vishalkumarm23it@psnacet.edu.in",
+      "password": "Vishal@123",
+      "mobileNumber": "+916383235145",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-01-30",
+      "gender": "Male",
+      "residentialAddress": "107/2,school street,agraharapatti,Nilakottai ,dindigul\n107/2,school street,agraharapatti.",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "624208",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "INFORMATION TECHNOLOGY",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "7.43",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:06:04.272Z",
+      "updatedAt": "2026-11-23T04:06:04.272Z"
     }
   ],
   "assessment_results": [
@@ -6468,5 +6509,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:05:40.668Z"
+  "lastUpdated": "2026-11-23T04:06:04.400Z"
 }
