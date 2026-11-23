@@ -729,7 +729,7 @@
     },
     {
       "_id": "cand-686c43a8-388d-4111-b99c-96e04e41dacc",
-      "candidateId": "INZ-CAND-2026-00020",
+      "candidateId": "INZ-CAND-2026-00012",
       "fullName": "Afritha Banu S",
       "email": "afrithabanu18@gmail.com",
       "password": "Afritha@123",
@@ -763,10 +763,53 @@
       "recruitmentStage": "Registered",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T03:46:59.106Z",
-      "updatedAt": "2026-11-23T03:46:59.106Z"
+      "updatedAt": "2026-11-23T03:46:59.106Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_b2dffd65-4907-446e-a213-3dfb2311f642",
+        "candidateId": "INZ-CAND-2026-00012",
+        "candidateDisplayId": "INZ-CAND-2026-00012",
+        "candidateName": "Candidate",
+        "jobRoleTitle": "Software Developer",
+        "collegeName": "Autonomous Engineering College",
+        "totalScore": 44,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 98,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Mastery (Outstanding)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-684AAB",
+        "sectionScores": {
+          "section-1": {
+            "score": 14,
+            "total": 15,
+            "percentage": 93
+          },
+          "section-2": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-3": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          }
+        },
+        "completedAt": "2026-11-23T04:03:34.012Z"
+      },
+      "totalScore": 44,
+      "percentage": 98,
+      "certificateId": "INZ-CERT-2026-684AAB"
     },
     {
       "_id": "cand-362a4ebb-112e-403e-afdf-b770583b5e67",
@@ -9425,5 +9468,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:13:26.355Z"
+  "lastUpdated": "2026-11-23T04:13:29.029Z"
 }
