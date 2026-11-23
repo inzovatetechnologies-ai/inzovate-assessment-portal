@@ -8499,6 +8499,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:13:18.431Z",
       "updatedAt": "2026-11-23T04:13:18.431Z"
+    },
+    {
+      "_id": "cand-b81c8b21-f04a-4650-a47e-5a6b4939c4fa",
+      "candidateId": "INZ-CAND-2026-00244",
+      "fullName": "Balaji S",
+      "email": "balajisenthil1955@gmail.com",
+      "password": "Balaji@27",
+      "mobileNumber": "8148092561",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-05-19",
+      "gender": "Male",
+      "residentialAddress": "Arumigu amman street, pudukkulum 2nd bit, balaranganathapuram,pykara,madurai",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "625003",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.E. Computer Science and Engineering",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "7.5",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-07",
+      "domainName": "Software Development",
+      "jobRoleId": "role-cyber-analyst",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:13:25.335Z",
+      "updatedAt": "2026-11-23T04:13:25.335Z"
     }
   ],
   "assessment_results": [
@@ -9384,5 +9425,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:13:18.622Z"
+  "lastUpdated": "2026-11-23T04:13:25.437Z"
 }
