@@ -2095,6 +2095,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T03:53:11.829Z",
       "updatedAt": "2026-11-23T03:53:11.829Z"
+    },
+    {
+      "_id": "cand-d36dbe3b-c113-4589-8e31-3614eafb0716",
+      "candidateId": "INZ-CAND-2026-00067",
+      "fullName": "DHARSAN B",
+      "email": "dharsanb2020.2021@gmail.com",
+      "password": "150201",
+      "mobileNumber": "7010455302",
+      "altMobileNumber": "",
+      "dateOfBirth": "2004-09-15",
+      "gender": "Male",
+      "residentialAddress": "19,kirthumal nagar  7th street , viraatipathu , madurai -16",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "625016",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.Tech Information Technology",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.0",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T03:53:16.084Z",
+      "updatedAt": "2026-11-23T03:53:16.084Z"
     }
   ],
   "assessment_results": [
@@ -2140,5 +2181,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:53:11.961Z"
+  "lastUpdated": "2026-11-23T03:53:16.183Z"
 }
