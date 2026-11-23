@@ -7663,13 +7663,59 @@
       "jobRoleId": "role-cloud-eng",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Rejected",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T04:02:08.088Z",
-      "updatedAt": "2026-11-23T04:02:08.088Z"
+      "updatedAt": "2026-11-23T04:02:08.088Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_b77133b3-85e1-499a-b5c6-37a9f2f1642f",
+        "candidateId": "INZ-CAND-2026-00152",
+        "candidateDisplayId": "INZ-CAND-2026-00152",
+        "candidateName": "S Shashti Shree",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "PSNA College of Engineering and Technology",
+        "totalScore": 23,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 51,
+        "isPassed": false,
+        "examResult": "Fail",
+        "selectionStatus": "Rejected",
+        "passCutoff": "> 25",
+        "performanceCategory": "Foundational (Competent)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-95AAD5",
+        "sectionScores": {
+          "section-1": {
+            "score": 10,
+            "total": 15,
+            "percentage": 67
+          },
+          "section-2": {
+            "score": 9,
+            "total": 15,
+            "percentage": 60
+          },
+          "section-3": {
+            "score": 4,
+            "total": 15,
+            "percentage": 27
+          }
+        },
+        "completedAt": "2026-11-23T04:32:07.370Z"
+      },
+      "totalScore": 23,
+      "percentage": 51,
+      "isPassed": false,
+      "examResult": "Fail",
+      "certificateId": "INZ-CERT-2026-95AAD5",
+      "completedAt": "2026-11-23T04:32:07.370Z"
     },
     {
       "_id": "cand-ccdca0cb-1e4f-4e68-a124-e5a47cc4deb8",
@@ -18404,8 +18450,48 @@
         }
       },
       "completedAt": "2026-11-23T04:32:07.345Z"
+    },
+    {
+      "sessionId": "inz_cbt_b77133b3-85e1-499a-b5c6-37a9f2f1642f",
+      "candidateId": "INZ-CAND-2026-00152",
+      "candidateDisplayId": "INZ-CAND-2026-00152",
+      "candidateName": "S Shashti Shree",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "totalScore": 23,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 51,
+      "isPassed": false,
+      "examResult": "Fail",
+      "selectionStatus": "Rejected",
+      "passCutoff": "> 25",
+      "performanceCategory": "Foundational (Competent)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-95AAD5",
+      "sectionScores": {
+        "section-1": {
+          "score": 10,
+          "total": 15,
+          "percentage": 67
+        },
+        "section-2": {
+          "score": 9,
+          "total": 15,
+          "percentage": 60
+        },
+        "section-3": {
+          "score": 4,
+          "total": 15,
+          "percentage": 27
+        }
+      },
+      "completedAt": "2026-11-23T04:32:07.370Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:32:07.482Z"
+  "lastUpdated": "2026-11-23T04:32:08.854Z"
 }
