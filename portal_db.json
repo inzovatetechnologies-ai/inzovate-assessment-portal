@@ -15337,13 +15337,59 @@
       "jobRoleId": "role-data-analyst",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T04:18:07.329Z",
-      "updatedAt": "2026-11-23T04:18:07.329Z"
+      "updatedAt": "2026-11-23T04:18:07.329Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_4b5050ac-2d16-48c9-a612-a1a88261f650",
+        "candidateId": "INZ-CAND-2026-00275",
+        "candidateDisplayId": "INZ-CAND-2026-00275",
+        "candidateName": "SHALINI.S",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "PSNA College of Engineering and Technology",
+        "totalScore": 44,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 98,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Mastery (Outstanding)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-2AE03B",
+        "sectionScores": {
+          "section-1": {
+            "score": 14,
+            "total": 15,
+            "percentage": 93
+          },
+          "section-2": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-3": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          }
+        },
+        "completedAt": "2026-11-23T04:41:13.349Z"
+      },
+      "totalScore": 44,
+      "percentage": 98,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-2AE03B",
+      "completedAt": "2026-11-23T04:41:13.349Z"
     },
     {
       "_id": "cand-c2fc8957-d6be-47c8-85fb-a795c4252c9b",
@@ -23527,8 +23573,48 @@
         }
       },
       "completedAt": "2026-11-23T04:41:08.144Z"
+    },
+    {
+      "sessionId": "inz_cbt_4b5050ac-2d16-48c9-a612-a1a88261f650",
+      "candidateId": "INZ-CAND-2026-00275",
+      "candidateDisplayId": "INZ-CAND-2026-00275",
+      "candidateName": "SHALINI.S",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "totalScore": 44,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 98,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Mastery (Outstanding)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-2AE03B",
+      "sectionScores": {
+        "section-1": {
+          "score": 14,
+          "total": 15,
+          "percentage": 93
+        },
+        "section-2": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-3": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        }
+      },
+      "completedAt": "2026-11-23T04:41:13.349Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:41:08.975Z"
+  "lastUpdated": "2026-11-23T04:41:13.602Z"
 }
