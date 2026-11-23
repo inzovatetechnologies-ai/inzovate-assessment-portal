@@ -6389,6 +6389,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:06:48.782Z",
       "updatedAt": "2026-11-23T04:06:48.782Z"
+    },
+    {
+      "_id": "cand-06dfc220-8a81-4c0b-a972-a13397ed855f",
+      "candidateId": "INZ-CAND-2026-00203",
+      "fullName": "Thirishika S",
+      "email": "thirishikaselvam3011@gmail.com",
+      "password": "Thirishika@2005",
+      "mobileNumber": "6369181515",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-11-30",
+      "gender": "Female",
+      "residentialAddress": "W/15, D/28, kanni kali puram theni, gudalur",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "625518",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.Tech Computer Science and Business Systems",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "7.88",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-10",
+      "domainName": "Software Development",
+      "jobRoleId": "role-seo-exec",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:06:49.420Z",
+      "updatedAt": "2026-11-23T04:06:49.420Z"
     }
   ],
   "assessment_results": [
@@ -6714,5 +6755,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:06:50.289Z"
+  "lastUpdated": "2026-11-23T04:06:51.867Z"
 }
