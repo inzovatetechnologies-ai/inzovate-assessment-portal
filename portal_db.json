@@ -5983,13 +5983,59 @@
       "jobRoleId": "role-soft-dev",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Rejected",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T03:56:47.899Z",
-      "updatedAt": "2026-11-23T03:56:47.899Z"
+      "updatedAt": "2026-11-23T03:56:47.899Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_175d979d-70b3-472c-b56e-c9960f9190ba",
+        "candidateId": "INZ-CAND-2026-00105",
+        "candidateDisplayId": "INZ-CAND-2026-00105",
+        "candidateName": "Dharani I",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "PSNA college of engineering and technology",
+        "totalScore": 23,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 51,
+        "isPassed": false,
+        "examResult": "Fail",
+        "selectionStatus": "Rejected",
+        "passCutoff": "> 25",
+        "performanceCategory": "Foundational (Competent)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-3607F3",
+        "sectionScores": {
+          "section-1": {
+            "score": 4,
+            "total": 15,
+            "percentage": 27
+          },
+          "section-2": {
+            "score": 10,
+            "total": 15,
+            "percentage": 67
+          },
+          "section-3": {
+            "score": 9,
+            "total": 15,
+            "percentage": 60
+          }
+        },
+        "completedAt": "2026-11-23T04:33:54.178Z"
+      },
+      "totalScore": 23,
+      "percentage": 51,
+      "isPassed": false,
+      "examResult": "Fail",
+      "certificateId": "INZ-CERT-2026-3607F3",
+      "completedAt": "2026-11-23T04:33:54.178Z"
     },
     {
       "_id": "cand-eef4dab0-2fa2-4bd2-81b1-74c22c6765ac",
@@ -19218,8 +19264,48 @@
         }
       },
       "completedAt": "2026-11-23T04:33:41.955Z"
+    },
+    {
+      "sessionId": "inz_cbt_175d979d-70b3-472c-b56e-c9960f9190ba",
+      "candidateId": "INZ-CAND-2026-00105",
+      "candidateDisplayId": "INZ-CAND-2026-00105",
+      "candidateName": "Dharani I",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "PSNA college of engineering and technology",
+      "totalScore": 23,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 51,
+      "isPassed": false,
+      "examResult": "Fail",
+      "selectionStatus": "Rejected",
+      "passCutoff": "> 25",
+      "performanceCategory": "Foundational (Competent)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-3607F3",
+      "sectionScores": {
+        "section-1": {
+          "score": 4,
+          "total": 15,
+          "percentage": 27
+        },
+        "section-2": {
+          "score": 10,
+          "total": 15,
+          "percentage": 67
+        },
+        "section-3": {
+          "score": 9,
+          "total": 15,
+          "percentage": 60
+        }
+      },
+      "completedAt": "2026-11-23T04:33:54.178Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:33:50.821Z"
+  "lastUpdated": "2026-11-23T04:33:54.308Z"
 }
