@@ -5897,6 +5897,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:04:57.504Z",
       "updatedAt": "2026-11-23T04:04:57.504Z"
+    },
+    {
+      "_id": "cand-c5ae4fa8-af50-4030-8335-1c2771d13406",
+      "candidateId": "INZ-CAND-2026-00188",
+      "fullName": "sabarna.p",
+      "email": "sabarna142006@gmail.com",
+      "password": "sabarna1407",
+      "mobileNumber": "8838006983",
+      "altMobileNumber": "",
+      "dateOfBirth": "2006-07-14",
+      "gender": "Female",
+      "residentialAddress": "m.pudupatti mnadimagalam solavandan road madurai",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "625207",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.tech artifical intellgence and data science",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.40",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-08",
+      "domainName": "Software Development",
+      "jobRoleId": "role-qa-eng",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:04:58.993Z",
+      "updatedAt": "2026-11-23T04:04:58.993Z"
     }
   ],
   "assessment_results": [
@@ -6222,5 +6263,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:04:57.621Z"
+  "lastUpdated": "2026-11-23T04:04:59.126Z"
 }
