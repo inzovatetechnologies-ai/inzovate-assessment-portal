@@ -8545,7 +8545,7 @@
     },
     {
       "_id": "cand-b81c8b21-f04a-4650-a47e-5a6b4939c4fa",
-      "candidateId": "INZ-CAND-2026-00244",
+      "candidateId": "INZ-CAND-2026-00250",
       "fullName": "Balaji S",
       "email": "balajisenthil1955@gmail.com",
       "password": "Balaji@27",
@@ -9712,5 +9712,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:14:23.346Z"
+  "lastUpdated": "2026-11-23T04:14:35.056Z"
 }
