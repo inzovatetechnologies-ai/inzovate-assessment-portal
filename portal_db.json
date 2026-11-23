@@ -537,6 +537,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T03:46:59.106Z",
       "updatedAt": "2026-11-23T03:46:59.106Z"
+    },
+    {
+      "_id": "cand-362a4ebb-112e-403e-afdf-b770583b5e67",
+      "candidateId": "INZ-CAND-2026-00016",
+      "fullName": "Divya S",
+      "email": "divya978793@gmail.com",
+      "password": "divya123",
+      "mobileNumber": "+919342026347",
+      "altMobileNumber": "",
+      "dateOfBirth": "2004-10-17",
+      "gender": "Female",
+      "residentialAddress": "1/357,TNEB Quarters, Sempatty Dindigul.\n1/357,TNEB Quarters, Sempatty Dindigul.",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "624707",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.Tech. Artificial Intelligence and Data Science",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.36",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T03:46:59.952Z",
+      "updatedAt": "2026-11-23T03:46:59.952Z"
     }
   ],
   "assessment_results": [
@@ -582,5 +623,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:46:59.199Z"
+  "lastUpdated": "2026-11-23T03:47:00.066Z"
 }
