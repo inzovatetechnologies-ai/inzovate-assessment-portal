@@ -1931,6 +1931,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T03:52:42.509Z",
       "updatedAt": "2026-11-23T03:52:42.509Z"
+    },
+    {
+      "_id": "cand-fb9650b7-d852-4dd8-9204-2ca19859a873",
+      "candidateId": "INZ-CAND-2026-00061",
+      "fullName": "kishori K",
+      "email": "kishorikasinath@gmail.com",
+      "password": "kishori",
+      "mobileNumber": "8098330188",
+      "altMobileNumber": "",
+      "dateOfBirth": "2026-11-18",
+      "gender": "Female",
+      "residentialAddress": "10, AMMU ILLAM, BALAJI NAGAR, GOLDEN CITY",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "625107",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "Btech-Information technology",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.47",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T03:52:44.953Z",
+      "updatedAt": "2026-11-23T03:52:44.953Z"
     }
   ],
   "assessment_results": [
@@ -1976,5 +2017,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:52:42.614Z"
+  "lastUpdated": "2026-11-23T03:52:45.084Z"
 }
