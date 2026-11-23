@@ -127,6 +127,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T03:38:52.273Z",
       "updatedAt": "2026-11-23T03:38:52.273Z"
+    },
+    {
+      "_id": "cand-4640185e-1b05-46b4-8c25-c4fafdb4a548",
+      "candidateId": "INZ-CAND-2026-00004",
+      "fullName": "Priyadharshan T S",
+      "email": "shanmugavelpryan@gmail.com",
+      "password": "Priyan@6382",
+      "mobileNumber": "+916382887421",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-10-29",
+      "gender": "Male",
+      "residentialAddress": "7/74D,West street, Marungapuri, Marungapuri(Tk)",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "621305",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B. Tech & Artificial Intelligence and Data Science",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "7.4",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T03:38:52.435Z",
+      "updatedAt": "2026-11-23T03:38:52.435Z"
     }
   ],
   "assessment_results": [
@@ -172,5 +213,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:38:52.383Z"
+  "lastUpdated": "2026-11-23T03:38:53.502Z"
 }
