@@ -3213,7 +3213,7 @@
     },
     {
       "_id": "cand-82c4e533-634d-4326-a9a4-35d785669cfe",
-      "candidateId": "INZ-CAND-2026-00123",
+      "candidateId": "INZ-CAND-2026-00050",
       "fullName": "LAVANYA S",
       "email": "lavanyasivakumar524@gmail.com",
       "password": "lavanya",
@@ -3244,11 +3244,11 @@
       "jobRoleId": "role-ai-ml",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Rejected",
+      "recruitmentStage": "Registered",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Completed",
-      "testAttempts": 1,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
       "createdAt": "2026-11-23T03:51:25.962Z",
       "updatedAt": "2026-11-23T03:51:25.962Z",
       "assessmentResult": {
@@ -21353,5 +21353,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:37:22.505Z"
+  "lastUpdated": "2026-11-23T04:37:23.812Z"
 }
