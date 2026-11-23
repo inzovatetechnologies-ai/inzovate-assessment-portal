@@ -9924,6 +9924,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:17:46.793Z",
       "updatedAt": "2026-11-23T04:17:46.793Z"
+    },
+    {
+      "_id": "cand-17bee882-afee-4c0e-a3fd-ffbbe06bfbf3",
+      "candidateId": "INZ-CAND-2026-00271",
+      "fullName": "SHALINI.S",
+      "email": "shaliniramlak@gmail.com",
+      "password": "shalu@psna",
+      "mobileNumber": "9944921879",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-04-13",
+      "gender": "Female",
+      "residentialAddress": "486-A east rajiv nagar,balakrishnapuram,dindigul-624005",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "624005",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "master of computer application",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.4",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-02",
+      "domainName": "Software Development",
+      "jobRoleId": "role-data-analyst",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:18:07.329Z",
+      "updatedAt": "2026-11-23T04:18:07.329Z"
     }
   ],
   "assessment_results": [
@@ -11449,5 +11490,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:17:46.923Z"
+  "lastUpdated": "2026-11-23T04:18:07.462Z"
 }
