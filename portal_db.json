@@ -13309,7 +13309,7 @@
       "status": "Registered",
       "deletedAt": null,
       "assessmentStatus": "Completed",
-      "testAttempts": 1,
+      "testAttempts": 2,
       "createdAt": "2026-11-23T04:11:04.443Z",
       "updatedAt": "2026-11-23T04:11:04.443Z",
       "assessmentResult": {
@@ -13332,7 +13332,7 @@
         "passCutoff": "> 25",
         "performanceCategory": "Mastery (Outstanding)",
         "status": "Completed",
-        "certificateId": "INZ-CERT-2026-281800",
+        "certificateId": "INZ-CERT-2026-2E203E",
         "sectionScores": {
           "section-1": {
             "score": 14,
@@ -13350,14 +13350,14 @@
             "percentage": 73
           }
         },
-        "completedAt": "2026-11-23T04:37:20.355Z"
+        "completedAt": "2026-11-23T04:38:53.194Z"
       },
       "totalScore": 39,
       "percentage": 87,
       "isPassed": true,
       "examResult": "Pass",
-      "certificateId": "INZ-CERT-2026-281800",
-      "completedAt": "2026-11-23T04:37:20.355Z"
+      "certificateId": "INZ-CERT-2026-2E203E",
+      "completedAt": "2026-11-23T04:38:53.194Z"
     },
     {
       "_id": "cand-127ddd71-f7fb-4eb0-97ee-92d82645d7b0",
@@ -21874,7 +21874,7 @@
       "passCutoff": "> 25",
       "performanceCategory": "Mastery (Outstanding)",
       "status": "Completed",
-      "certificateId": "INZ-CERT-2026-281800",
+      "certificateId": "INZ-CERT-2026-2E203E",
       "sectionScores": {
         "section-1": {
           "score": 14,
@@ -21892,7 +21892,7 @@
           "percentage": 73
         }
       },
-      "completedAt": "2026-11-23T04:37:20.355Z"
+      "completedAt": "2026-11-23T04:38:53.194Z"
     },
     {
       "sessionId": "inz_cbt_79e03455-6d3f-412c-a4a3-79e3053b7a42",
@@ -22376,5 +22376,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:38:46.309Z"
+  "lastUpdated": "2026-11-23T04:38:53.691Z"
 }
