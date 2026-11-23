@@ -1193,6 +1193,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T03:50:20.236Z",
       "updatedAt": "2026-11-23T03:50:20.236Z"
+    },
+    {
+      "_id": "cand-2b8f51cc-a798-4dc2-aa65-9805fb6e2c83",
+      "candidateId": "INZ-CAND-2026-00040",
+      "fullName": "Vibhu Vardhann V",
+      "email": "vibhuvardhann814@gmail.com",
+      "password": "Vibhu#007",
+      "mobileNumber": "9345612177",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-07-31",
+      "gender": "Male",
+      "residentialAddress": "pandi nagar,parasurampatti road,moondrumavadi,k pudur,madurai 625007",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "625007",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.Tech Computer Science And Business Systems",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "7.5",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-02",
+      "domainName": "Software Development",
+      "jobRoleId": "role-data-analyst",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T03:50:43.715Z",
+      "updatedAt": "2026-11-23T03:50:43.715Z"
     }
   ],
   "assessment_results": [
@@ -1238,5 +1279,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:50:27.619Z"
+  "lastUpdated": "2026-11-23T03:50:43.904Z"
 }
