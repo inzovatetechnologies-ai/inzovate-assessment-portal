@@ -5687,6 +5687,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:04:06.963Z",
       "updatedAt": "2026-11-23T04:04:06.963Z"
+    },
+    {
+      "_id": "cand-0187b74f-bb0e-4108-9443-11ee02de9052",
+      "candidateId": "INZ-CAND-2026-00183",
+      "fullName": "Nandini S R",
+      "email": "srnandini2006@gmail.com",
+      "password": "Nandhu@12",
+      "mobileNumber": "8248679620",
+      "altMobileNumber": "",
+      "dateOfBirth": "2006-04-15",
+      "gender": "Female",
+      "residentialAddress": "29/1 Bharathipuram Deport Road,Bharathipuram,Dindigul.",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "624003",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.E. Computer Science and Engineering",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.25",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-fullstack",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:04:16.171Z",
+      "updatedAt": "2026-11-23T04:04:16.171Z"
     }
   ],
   "assessment_results": [
@@ -5972,5 +6013,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:04:13.129Z"
+  "lastUpdated": "2026-11-23T04:04:16.274Z"
 }
