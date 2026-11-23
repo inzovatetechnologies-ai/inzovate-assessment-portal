@@ -1316,6 +1316,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T03:50:46.665Z",
       "updatedAt": "2026-11-23T03:50:46.665Z"
+    },
+    {
+      "_id": "cand-997c6703-1973-4a86-a543-46113f5b856f",
+      "candidateId": "INZ-CAND-2026-00032",
+      "fullName": "JEREMIAH ANTON DAVID RAJ A IT student",
+      "email": "jeremiahantondavidraja23it@psnacet.edu.in",
+      "password": "Jeremiah@2006",
+      "mobileNumber": "8122693960",
+      "altMobileNumber": "",
+      "dateOfBirth": "2006-01-04",
+      "gender": "Male",
+      "residentialAddress": "Achampthu alagu pillai nagar plot no 21 \nmadurai -625019",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "625019",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.Tech Information Technology",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.22",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T03:50:55.779Z",
+      "updatedAt": "2026-11-23T03:50:55.779Z"
     }
   ],
   "assessment_results": [
@@ -1361,5 +1402,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:50:47.992Z"
+  "lastUpdated": "2026-11-23T03:50:55.913Z"
 }
