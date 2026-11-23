@@ -7598,6 +7598,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:08:55.385Z",
       "updatedAt": "2026-11-23T04:08:55.385Z"
+    },
+    {
+      "_id": "cand-ba9dead5-2f25-4cf9-9579-ad2c36b2bcff",
+      "candidateId": "INZ-CAND-2026-00230",
+      "fullName": "Bavana D",
+      "email": "bavanadhasa16@gmail.com",
+      "password": "bavana_04",
+      "mobileNumber": "9952233084",
+      "altMobileNumber": "",
+      "dateOfBirth": "2006-04-20",
+      "gender": "Female",
+      "residentialAddress": "34/54 bazaar street ,Allinagaram , Theni-625531",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "625531",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.Tech Computer Science and Business systems",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "7.76",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-03",
+      "domainName": "Software Development",
+      "jobRoleId": "role-ai-ml",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:08:56.113Z",
+      "updatedAt": "2026-11-23T04:08:56.113Z"
     }
   ],
   "assessment_results": [
@@ -8083,5 +8124,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:08:56.005Z"
+  "lastUpdated": "2026-11-23T04:08:57.315Z"
 }
