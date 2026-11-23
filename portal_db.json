@@ -3301,13 +3301,59 @@
       "jobRoleId": "role-soft-dev",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T03:54:37.561Z",
-      "updatedAt": "2026-11-23T03:54:37.561Z"
+      "updatedAt": "2026-11-23T03:54:37.561Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_d7ac6b23-7ba1-4b4e-a42f-a7a9134f372f",
+        "candidateId": "INZ-CAND-2026-00085",
+        "candidateDisplayId": "INZ-CAND-2026-00085",
+        "candidateName": "Dinakar S",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "PSNA College of Engineering and Technology",
+        "totalScore": 44,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 98,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Mastery (Outstanding)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-D182DA",
+        "sectionScores": {
+          "section-1": {
+            "score": 14,
+            "total": 15,
+            "percentage": 93
+          },
+          "section-2": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-3": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          }
+        },
+        "completedAt": "2026-11-23T04:12:32.919Z"
+      },
+      "totalScore": 44,
+      "percentage": 98,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-D182DA",
+      "completedAt": "2026-11-23T04:12:32.919Z"
     },
     {
       "_id": "cand-718cf398-f435-47d5-a9a4-e145c004056a",
@@ -8960,8 +9006,48 @@
         }
       },
       "completedAt": "2026-11-23T04:12:32.309Z"
+    },
+    {
+      "sessionId": "inz_cbt_d7ac6b23-7ba1-4b4e-a42f-a7a9134f372f",
+      "candidateId": "INZ-CAND-2026-00085",
+      "candidateDisplayId": "INZ-CAND-2026-00085",
+      "candidateName": "Dinakar S",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "totalScore": 44,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 98,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Mastery (Outstanding)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-D182DA",
+      "sectionScores": {
+        "section-1": {
+          "score": 14,
+          "total": 15,
+          "percentage": 93
+        },
+        "section-2": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-3": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        }
+      },
+      "completedAt": "2026-11-23T04:12:32.919Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:12:32.407Z"
+  "lastUpdated": "2026-11-23T04:12:33.507Z"
 }
