@@ -13621,6 +13621,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:27:15.809Z",
       "updatedAt": "2026-11-23T04:27:15.809Z"
+    },
+    {
+      "_id": "cand-64d3e603-fa83-468a-b4b3-d7fdf4a1f174",
+      "candidateId": "INZ-CAND-2026-00297",
+      "fullName": "HARIHARAN N",
+      "email": "nharihara7@gmail.com",
+      "password": "23CR018",
+      "mobileNumber": "8015050067",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-05-24",
+      "gender": "Male",
+      "residentialAddress": "lakshminagar,kanchanayakanpatti ,Aruppukottai,Virudunagar",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "626101",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.E. Computer Science and Engineering",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "7.9",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-07",
+      "domainName": "Software Development",
+      "jobRoleId": "role-cyber-analyst",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:31:21.332Z",
+      "updatedAt": "2026-11-23T04:31:21.332Z"
     }
   ],
   "assessment_results": [
@@ -17946,5 +17987,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:31:18.672Z"
+  "lastUpdated": "2026-11-23T04:31:21.453Z"
 }
