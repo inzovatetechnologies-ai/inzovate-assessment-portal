@@ -4027,6 +4027,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T03:59:45.073Z",
       "updatedAt": "2026-11-23T03:59:45.073Z"
+    },
+    {
+      "_id": "cand-ada27aaf-e123-4975-b76b-8d28f36c5b51",
+      "candidateId": "INZ-CAND-2026-00134",
+      "fullName": "Riyashini J",
+      "email": "riyashini1762005@gmail.com",
+      "password": "Riya@17",
+      "mobileNumber": "+919363123880",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-06-17",
+      "gender": "Female",
+      "residentialAddress": "2/12,Annai Nagar,SPM Nagar, kallukadai, Vakkampatty Dindigul",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "624303",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "Mater of computer application",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.33 CGPA",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-frontend",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T03:59:46.443Z",
+      "updatedAt": "2026-11-23T03:59:46.443Z"
     }
   ],
   "assessment_results": [
@@ -4112,5 +4153,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:59:45.183Z"
+  "lastUpdated": "2026-11-23T03:59:46.562Z"
 }
