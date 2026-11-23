@@ -6020,6 +6020,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:05:17.157Z",
       "updatedAt": "2026-11-23T04:05:17.157Z"
+    },
+    {
+      "_id": "cand-ad1839c9-3166-4e7f-abe8-c98a3d406442",
+      "candidateId": "INZ-CAND-2026-00140",
+      "fullName": "VIMAL KUMAR S",
+      "email": "vimalkumars2504@gmail.com",
+      "password": "Vimal@2004",
+      "mobileNumber": "6374122883",
+      "altMobileNumber": "",
+      "dateOfBirth": "2004-12-25",
+      "gender": "Male",
+      "residentialAddress": "Murugabavanam,Palani road,Dindigul",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "624001",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "MCA",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.38",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-fullstack",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:05:18.217Z",
+      "updatedAt": "2026-11-23T04:05:18.217Z"
     }
   ],
   "assessment_results": [
@@ -6345,5 +6386,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:05:17.390Z"
+  "lastUpdated": "2026-11-23T04:05:18.396Z"
 }
