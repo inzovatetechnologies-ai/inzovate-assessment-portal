@@ -6266,6 +6266,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:06:15.019Z",
       "updatedAt": "2026-11-23T04:06:15.019Z"
+    },
+    {
+      "_id": "cand-abb9a171-5ba8-4990-a31b-5a33f154716e",
+      "candidateId": "INZ-CAND-2026-00199",
+      "fullName": "Yuvaveerapandi v",
+      "email": "yuvaraj4335@gmail.com",
+      "password": "#Yuvaraj.10",
+      "mobileNumber": "6379474124",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-03-03",
+      "gender": "Male",
+      "residentialAddress": "24/12/338 H5 TV nagar 3rd street, paramakudi, ramanathapuram.",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "623707",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.Tech Computer Science and Buisness Systems",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "7.49",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-04",
+      "domainName": "Software Development",
+      "jobRoleId": "role-uiux",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:06:21.657Z",
+      "updatedAt": "2026-11-23T04:06:21.657Z"
     }
   ],
   "assessment_results": [
@@ -6591,5 +6632,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:06:15.219Z"
+  "lastUpdated": "2026-11-23T04:06:21.781Z"
 }
