@@ -3152,13 +3152,59 @@
       "jobRoleId": "role-ai-ml",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Rejected",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T03:51:25.962Z",
-      "updatedAt": "2026-11-23T03:51:25.962Z"
+      "updatedAt": "2026-11-23T03:51:25.962Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_8899599d-8854-4e5b-883b-c0d5eac3cf9e",
+        "candidateId": "INZ-CAND-2026-00123",
+        "candidateDisplayId": "INZ-CAND-2026-00123",
+        "candidateName": "LAVANYA S",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "PSNA College of Engineering and Technology",
+        "totalScore": 20,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 44,
+        "isPassed": false,
+        "examResult": "Fail",
+        "selectionStatus": "Rejected",
+        "passCutoff": "> 25",
+        "performanceCategory": "Needs Improvement",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-AFFF92",
+        "sectionScores": {
+          "section-1": {
+            "score": 5,
+            "total": 15,
+            "percentage": 33
+          },
+          "section-2": {
+            "score": 7,
+            "total": 15,
+            "percentage": 47
+          },
+          "section-3": {
+            "score": 8,
+            "total": 15,
+            "percentage": 53
+          }
+        },
+        "completedAt": "2026-11-23T04:31:36.879Z"
+      },
+      "totalScore": 20,
+      "percentage": 44,
+      "isPassed": false,
+      "examResult": "Fail",
+      "certificateId": "INZ-CERT-2026-AFFF92",
+      "completedAt": "2026-11-23T04:31:36.879Z"
     },
     {
       "_id": "cand-64df65f3-8ad8-4441-a54e-5e3b0eaae909",
@@ -18024,8 +18070,48 @@
         }
       },
       "completedAt": "2026-11-23T04:31:28.648Z"
+    },
+    {
+      "sessionId": "inz_cbt_8899599d-8854-4e5b-883b-c0d5eac3cf9e",
+      "candidateId": "INZ-CAND-2026-00123",
+      "candidateDisplayId": "INZ-CAND-2026-00123",
+      "candidateName": "LAVANYA S",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "totalScore": 20,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 44,
+      "isPassed": false,
+      "examResult": "Fail",
+      "selectionStatus": "Rejected",
+      "passCutoff": "> 25",
+      "performanceCategory": "Needs Improvement",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-AFFF92",
+      "sectionScores": {
+        "section-1": {
+          "score": 5,
+          "total": 15,
+          "percentage": 33
+        },
+        "section-2": {
+          "score": 7,
+          "total": 15,
+          "percentage": 47
+        },
+        "section-3": {
+          "score": 8,
+          "total": 15,
+          "percentage": 53
+        }
+      },
+      "completedAt": "2026-11-23T04:31:36.879Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:31:28.777Z"
+  "lastUpdated": "2026-11-23T04:31:36.998Z"
 }
