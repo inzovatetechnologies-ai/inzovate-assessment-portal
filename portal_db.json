@@ -89,7 +89,7 @@
     },
     {
       "_id": "cand-bd5a2fa5-e544-4832-8ea2-d89f820c9100",
-      "candidateId": "INZ-CAND-2026-00003",
+      "candidateId": "INZ-CAND-2026-00028",
       "fullName": "Mohamed Aasiq A",
       "email": "aasiqmohamed6@gmail.com",
       "password": "MD.Aasiq786",
@@ -910,5 +910,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:48:21.220Z"
+  "lastUpdated": "2026-11-23T03:48:41.848Z"
 }
