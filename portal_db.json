@@ -14730,13 +14730,59 @@
       "jobRoleId": "role-fullstack",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T04:13:59.631Z",
-      "updatedAt": "2026-11-23T04:13:59.631Z"
+      "updatedAt": "2026-11-23T04:13:59.631Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_f66b140a-2f34-46d4-82b8-8dee4a6117be",
+        "candidateId": "INZ-CAND-2026-00273",
+        "candidateDisplayId": "INZ-CAND-2026-00273",
+        "candidateName": "Naresh Balaji G V",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "PSNA College of Engineering and Technology",
+        "totalScore": 42,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 93,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Mastery (Outstanding)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-F87FEB",
+        "sectionScores": {
+          "section-1": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-2": {
+            "score": 12,
+            "total": 15,
+            "percentage": 80
+          },
+          "section-3": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          }
+        },
+        "completedAt": "2026-11-23T04:45:10.681Z"
+      },
+      "totalScore": 42,
+      "percentage": 93,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-F87FEB",
+      "completedAt": "2026-11-23T04:45:10.681Z"
     },
     {
       "_id": "cand-b81cea2a-2aee-4c7e-ac77-e39ecebde61e",
@@ -24811,8 +24857,48 @@
         }
       },
       "completedAt": "2026-11-23T04:44:58.027Z"
+    },
+    {
+      "sessionId": "inz_cbt_f66b140a-2f34-46d4-82b8-8dee4a6117be",
+      "candidateId": "INZ-CAND-2026-00273",
+      "candidateDisplayId": "INZ-CAND-2026-00273",
+      "candidateName": "Naresh Balaji G V",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "totalScore": 42,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 93,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Mastery (Outstanding)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-F87FEB",
+      "sectionScores": {
+        "section-1": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-2": {
+          "score": 12,
+          "total": 15,
+          "percentage": 80
+        },
+        "section-3": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        }
+      },
+      "completedAt": "2026-11-23T04:45:10.681Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:45:05.825Z"
+  "lastUpdated": "2026-11-23T04:45:10.809Z"
 }
