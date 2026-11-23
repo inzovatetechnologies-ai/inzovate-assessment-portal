@@ -3706,13 +3706,59 @@
       "jobRoleId": "role-cyber-analyst",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T03:56:29.448Z",
-      "updatedAt": "2026-11-23T03:56:29.448Z"
+      "updatedAt": "2026-11-23T03:56:29.448Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_fd50b367-774a-414d-9bcc-02eb1c5f782c",
+        "candidateId": "INZ-CAND-2026-00118",
+        "candidateDisplayId": "INZ-CAND-2026-00118",
+        "candidateName": "SIROPHIN T. X",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "PSNA College of Engineering and Technology",
+        "totalScore": 45,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 100,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Mastery (Outstanding)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-CD4C3F",
+        "sectionScores": {
+          "section-1": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-2": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-3": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          }
+        },
+        "completedAt": "2026-11-23T04:11:34.002Z"
+      },
+      "totalScore": 45,
+      "percentage": 100,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-CD4C3F",
+      "completedAt": "2026-11-23T04:11:34.002Z"
     },
     {
       "_id": "cand-7dbc8acc-a529-4ea4-af6d-4bc8d19782b0",
@@ -8747,8 +8793,48 @@
         }
       },
       "completedAt": "2026-11-23T04:10:45.116Z"
+    },
+    {
+      "sessionId": "inz_cbt_fd50b367-774a-414d-9bcc-02eb1c5f782c",
+      "candidateId": "INZ-CAND-2026-00118",
+      "candidateDisplayId": "INZ-CAND-2026-00118",
+      "candidateName": "SIROPHIN T. X",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "totalScore": 45,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 100,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Mastery (Outstanding)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-CD4C3F",
+      "sectionScores": {
+        "section-1": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-2": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-3": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        }
+      },
+      "completedAt": "2026-11-23T04:11:34.002Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:11:31.779Z"
+  "lastUpdated": "2026-11-23T04:11:34.102Z"
 }
