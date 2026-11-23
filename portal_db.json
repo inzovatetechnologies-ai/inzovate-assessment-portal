@@ -18179,6 +18179,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:47:27.459Z",
       "updatedAt": "2026-11-23T04:47:27.459Z"
+    },
+    {
+      "_id": "cand-b886a491-1e83-4be8-8499-81aa1cb1d764",
+      "candidateId": "INZ-CAND-2026-00322",
+      "fullName": "Hariraj M",
+      "email": "mhariraj2005@gmail.com",
+      "password": "HARIRAJ-12raj@45",
+      "mobileNumber": "6381467734",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-08-31",
+      "gender": "Male",
+      "residentialAddress": "Plotno.19,Alagiri gaundnoor,seelapadi,Dndigul",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "624005",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.E. Computer Science and Engineering",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "7.6",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-java-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:50:06.556Z",
+      "updatedAt": "2026-11-23T04:50:06.556Z"
     }
   ],
   "assessment_results": [
@@ -26304,5 +26345,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:50:05.652Z"
+  "lastUpdated": "2026-11-23T04:50:06.773Z"
 }
