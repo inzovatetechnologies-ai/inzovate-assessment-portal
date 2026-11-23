@@ -168,6 +168,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T03:38:52.435Z",
       "updatedAt": "2026-11-23T03:38:52.435Z"
+    },
+    {
+      "_id": "cand-46309fea-5116-4d62-a422-02df897a1ddf",
+      "candidateId": "INZ-CAND-2026-00005",
+      "fullName": "Abinaya E",
+      "email": "aabi95853@gmail.com",
+      "password": "Abi@131205",
+      "mobileNumber": "+919043404389",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-12-13",
+      "gender": "Female",
+      "residentialAddress": "Masilamanipuram Dindigul Tamil Nadu India",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "624005",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "BTech Artificial Intelligence and Data Science",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.2",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T03:41:19.160Z",
+      "updatedAt": "2026-11-23T03:41:19.160Z"
     }
   ],
   "assessment_results": [
@@ -213,5 +254,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:38:53.502Z"
+  "lastUpdated": "2026-11-23T03:41:19.276Z"
 }
