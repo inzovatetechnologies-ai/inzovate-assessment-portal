@@ -8624,6 +8624,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:13:34.796Z",
       "updatedAt": "2026-11-23T04:13:34.796Z"
+    },
+    {
+      "_id": "cand-94cff38a-e508-442a-a9d6-24fb6d056b39",
+      "candidateId": "INZ-CAND-2026-00248",
+      "fullName": "Naresh Balaji G V",
+      "email": "nareshbalaji246@gmail.com",
+      "password": "Nb2401@cse",
+      "mobileNumber": "6381293073",
+      "altMobileNumber": "",
+      "dateOfBirth": "2006-01-24",
+      "gender": "Male",
+      "residentialAddress": "Selvi nagar, Surveyor Colony,K.pudur,Madurai",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "625007",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.E. Computer Science and Engineering",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "7.4",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-fullstack",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:13:59.631Z",
+      "updatedAt": "2026-11-23T04:13:59.631Z"
     }
   ],
   "assessment_results": [
@@ -9549,5 +9590,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:13:57.557Z"
+  "lastUpdated": "2026-11-23T04:13:59.774Z"
 }
