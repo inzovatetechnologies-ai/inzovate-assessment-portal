@@ -7739,7 +7739,7 @@
     },
     {
       "_id": "cand-ba9dead5-2f25-4cf9-9579-ad2c36b2bcff",
-      "candidateId": "INZ-CAND-2026-00230",
+      "candidateId": "INZ-CAND-2026-00238",
       "fullName": "Bavana D",
       "email": "bavanadhasa16@gmail.com",
       "password": "bavana_04",
@@ -8627,5 +8627,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:11:14.704Z"
+  "lastUpdated": "2026-11-23T04:11:16.008Z"
 }
