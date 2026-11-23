@@ -92,7 +92,7 @@
     },
     {
       "_id": "cand-84c243c3-caf9-4183-9f9f-ae3cc8c96f2e",
-      "candidateId": "INZ-CAND-2026-00003",
+      "candidateId": "INZ-CAND-2026-00004",
       "fullName": "SARATHI M",
       "email": "madheshsarathi3@gmail.com",
       "password": "Admin@2026",
@@ -180,5 +180,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-23T17:11:04.656Z"
+  "lastUpdated": "2026-11-23T17:11:32.757Z"
 }
