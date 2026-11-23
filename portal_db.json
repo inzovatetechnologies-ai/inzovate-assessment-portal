@@ -8665,6 +8665,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:13:59.631Z",
       "updatedAt": "2026-11-23T04:13:59.631Z"
+    },
+    {
+      "_id": "cand-b81cea2a-2aee-4c7e-ac77-e39ecebde61e",
+      "candidateId": "INZ-CAND-2026-00249",
+      "fullName": "Peer Mohamed M",
+      "email": "mpeemu2006@gmail.com",
+      "password": "peemu2006",
+      "mobileNumber": "6374456133",
+      "altMobileNumber": "",
+      "dateOfBirth": "2006-04-29",
+      "gender": "Male",
+      "residentialAddress": "24,Big Mosque Street,cumbum,theni dt.",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "625516",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.E. Computer Science and Engineering",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "6.8",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-fullstack",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:14:21.734Z",
+      "updatedAt": "2026-11-23T04:14:21.734Z"
     }
   ],
   "assessment_results": [
@@ -9630,5 +9671,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:14:09.211Z"
+  "lastUpdated": "2026-11-23T04:14:21.909Z"
 }
