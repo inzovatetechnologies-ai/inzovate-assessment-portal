@@ -14364,13 +14364,59 @@
       "jobRoleId": "role-data-analyst",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Rejected",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T04:13:34.796Z",
-      "updatedAt": "2026-11-23T04:13:34.796Z"
+      "updatedAt": "2026-11-23T04:13:34.796Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_f5791c8c-2e23-4fde-8c96-21bcf489b957",
+        "candidateId": "INZ-CAND-2026-00251",
+        "candidateDisplayId": "INZ-CAND-2026-00251",
+        "candidateName": "Naga Padma Devi M",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "PSNA College of Engineering and Technology",
+        "totalScore": 17,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 38,
+        "isPassed": false,
+        "examResult": "Fail",
+        "selectionStatus": "Rejected",
+        "passCutoff": "> 25",
+        "performanceCategory": "Needs Improvement",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-B6D070",
+        "sectionScores": {
+          "section-1": {
+            "score": 7,
+            "total": 15,
+            "percentage": 47
+          },
+          "section-2": {
+            "score": 7,
+            "total": 15,
+            "percentage": 47
+          },
+          "section-3": {
+            "score": 3,
+            "total": 15,
+            "percentage": 20
+          }
+        },
+        "completedAt": "2026-11-23T04:42:05.003Z"
+      },
+      "totalScore": 17,
+      "percentage": 38,
+      "isPassed": false,
+      "examResult": "Fail",
+      "certificateId": "INZ-CERT-2026-B6D070",
+      "completedAt": "2026-11-23T04:42:05.003Z"
     },
     {
       "_id": "cand-94cff38a-e508-442a-a9d6-24fb6d056b39",
@@ -23826,8 +23872,48 @@
         }
       },
       "completedAt": "2026-11-23T04:41:53.541Z"
+    },
+    {
+      "sessionId": "inz_cbt_f5791c8c-2e23-4fde-8c96-21bcf489b957",
+      "candidateId": "INZ-CAND-2026-00251",
+      "candidateDisplayId": "INZ-CAND-2026-00251",
+      "candidateName": "Naga Padma Devi M",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "totalScore": 17,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 38,
+      "isPassed": false,
+      "examResult": "Fail",
+      "selectionStatus": "Rejected",
+      "passCutoff": "> 25",
+      "performanceCategory": "Needs Improvement",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-B6D070",
+      "sectionScores": {
+        "section-1": {
+          "score": 7,
+          "total": 15,
+          "percentage": 47
+        },
+        "section-2": {
+          "score": 7,
+          "total": 15,
+          "percentage": 47
+        },
+        "section-3": {
+          "score": 3,
+          "total": 15,
+          "percentage": 20
+        }
+      },
+      "completedAt": "2026-11-23T04:42:05.003Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:41:58.655Z"
+  "lastUpdated": "2026-11-23T04:42:05.143Z"
 }
