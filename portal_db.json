@@ -660,6 +660,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T03:47:43.912Z",
       "updatedAt": "2026-11-23T03:47:43.912Z"
+    },
+    {
+      "_id": "cand-61806a90-5a8c-4cc2-b48b-25dd309ec63d",
+      "candidateId": "INZ-CAND-2026-00022",
+      "fullName": "MOHEMMED IBRAHIM M",
+      "email": "mohemmedibrahimm55@gmail.com",
+      "password": "Ibrahim_@262006",
+      "mobileNumber": "9361750018",
+      "altMobileNumber": "",
+      "dateOfBirth": "2006-05-11",
+      "gender": "Male",
+      "residentialAddress": "230/1 MUSLIM STREET NORTH,\nSANARPATTY.\nDINDIGUL",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "624304",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.Tech Information Technology",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.63",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T03:47:44.012Z",
+      "updatedAt": "2026-11-23T03:47:44.012Z"
     }
   ],
   "assessment_results": [
@@ -705,5 +746,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:47:44.003Z"
+  "lastUpdated": "2026-11-23T03:47:45.164Z"
 }
