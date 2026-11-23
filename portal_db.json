@@ -11576,6 +11576,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:23:26.503Z",
       "updatedAt": "2026-11-23T04:23:26.503Z"
+    },
+    {
+      "_id": "cand-6050e9cb-38a4-461d-ae3f-85321e0b1916",
+      "candidateId": "INZ-CAND-2026-00288",
+      "fullName": "Dharani N",
+      "email": "dharanivj2006@gmail.com",
+      "password": "Dharani@2006",
+      "mobileNumber": "+918838899052",
+      "altMobileNumber": "",
+      "dateOfBirth": "2006-02-24",
+      "gender": "Female",
+      "residentialAddress": "PSNA COLLEGE OF ENGINEERING AND TECHNOLOGY",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "624622",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.E. Computer Science and Engineering(cyber security)",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "7.5",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-python-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:24:16.546Z",
+      "updatedAt": "2026-11-23T04:24:16.546Z"
     }
   ],
   "assessment_results": [
@@ -14221,5 +14262,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:24:16.099Z"
+  "lastUpdated": "2026-11-23T04:24:17.896Z"
 }
