@@ -619,6 +619,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T03:47:35.143Z",
       "updatedAt": "2026-11-23T03:47:35.143Z"
+    },
+    {
+      "_id": "cand-5ce68517-67f2-47d2-9a45-48c3dd929b88",
+      "candidateId": "INZ-CAND-2026-00021",
+      "fullName": "Karthika G",
+      "email": "karthikadivi13@gmail.com",
+      "password": "karthika13@",
+      "mobileNumber": "8270340204",
+      "altMobileNumber": "",
+      "dateOfBirth": "2006-01-13",
+      "gender": "Female",
+      "residentialAddress": "12,Rice Mill Street,Pasumalai,Madurai -4.",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "625004",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.Tech ARTIFICIAL INTELLIGENCE & DATA SCIENCE",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.5",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-03",
+      "domainName": "Software Development",
+      "jobRoleId": "role-ai-ml",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T03:47:43.912Z",
+      "updatedAt": "2026-11-23T03:47:43.912Z"
     }
   ],
   "assessment_results": [
@@ -664,5 +705,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:47:40.613Z"
+  "lastUpdated": "2026-11-23T03:47:44.003Z"
 }
