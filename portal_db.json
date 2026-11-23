@@ -678,13 +678,59 @@
       "jobRoleId": "role-soft-dev",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Rejected",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T03:46:14.034Z",
-      "updatedAt": "2026-11-23T03:46:14.034Z"
+      "updatedAt": "2026-11-23T03:46:14.034Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_b4dbc680-b667-40dd-a19b-bce1339fa57c",
+        "candidateId": "INZ-CAND-2026-00018",
+        "candidateDisplayId": "INZ-CAND-2026-00018",
+        "candidateName": "Jannathul Firthoush M",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "PSNA College of Engineering and Technology",
+        "totalScore": 20,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 44,
+        "isPassed": false,
+        "examResult": "Fail",
+        "selectionStatus": "Rejected",
+        "passCutoff": "> 25",
+        "performanceCategory": "Needs Improvement",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-CF06E1",
+        "sectionScores": {
+          "section-1": {
+            "score": 5,
+            "total": 15,
+            "percentage": 33
+          },
+          "section-2": {
+            "score": 6,
+            "total": 15,
+            "percentage": 40
+          },
+          "section-3": {
+            "score": 9,
+            "total": 15,
+            "percentage": 60
+          }
+        },
+        "completedAt": "2026-11-23T04:14:58.677Z"
+      },
+      "totalScore": 20,
+      "percentage": 44,
+      "isPassed": false,
+      "examResult": "Fail",
+      "certificateId": "INZ-CERT-2026-CF06E1",
+      "completedAt": "2026-11-23T04:14:58.677Z"
     },
     {
       "_id": "cand-02eae84f-56e9-4afd-8a2f-76f70c3e2215",
@@ -9709,8 +9755,48 @@
         }
       },
       "completedAt": "2026-11-23T04:14:09.044Z"
+    },
+    {
+      "sessionId": "inz_cbt_b4dbc680-b667-40dd-a19b-bce1339fa57c",
+      "candidateId": "INZ-CAND-2026-00018",
+      "candidateDisplayId": "INZ-CAND-2026-00018",
+      "candidateName": "Jannathul Firthoush M",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "totalScore": 20,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 44,
+      "isPassed": false,
+      "examResult": "Fail",
+      "selectionStatus": "Rejected",
+      "passCutoff": "> 25",
+      "performanceCategory": "Needs Improvement",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-CF06E1",
+      "sectionScores": {
+        "section-1": {
+          "score": 5,
+          "total": 15,
+          "percentage": 33
+        },
+        "section-2": {
+          "score": 6,
+          "total": 15,
+          "percentage": 40
+        },
+        "section-3": {
+          "score": 9,
+          "total": 15,
+          "percentage": 60
+        }
+      },
+      "completedAt": "2026-11-23T04:14:58.677Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:14:35.056Z"
+  "lastUpdated": "2026-11-23T04:14:58.825Z"
 }
