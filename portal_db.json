@@ -9888,13 +9888,59 @@
       "jobRoleId": "role-data-analyst",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T04:08:55.385Z",
-      "updatedAt": "2026-11-23T04:08:55.385Z"
+      "updatedAt": "2026-11-23T04:08:55.385Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_901e5d2c-6508-4a7c-8c72-19fdcfc9b34e",
+        "candidateId": "INZ-CAND-2026-00229",
+        "candidateDisplayId": "INZ-CAND-2026-00229",
+        "candidateName": "YUVAN RAJ A",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "PSNA College of Engineering and Technology",
+        "totalScore": 44,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 98,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Mastery (Outstanding)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-0CE177",
+        "sectionScores": {
+          "section-1": {
+            "score": 14,
+            "total": 15,
+            "percentage": 93
+          },
+          "section-2": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-3": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          }
+        },
+        "completedAt": "2026-11-23T04:24:38.380Z"
+      },
+      "totalScore": 44,
+      "percentage": 98,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-0CE177",
+      "completedAt": "2026-11-23T04:24:38.380Z"
     },
     {
       "_id": "cand-ba9dead5-2f25-4cf9-9579-ad2c36b2bcff",
@@ -14472,8 +14518,48 @@
         }
       },
       "completedAt": "2026-11-23T04:24:37.293Z"
+    },
+    {
+      "sessionId": "inz_cbt_901e5d2c-6508-4a7c-8c72-19fdcfc9b34e",
+      "candidateId": "INZ-CAND-2026-00229",
+      "candidateDisplayId": "INZ-CAND-2026-00229",
+      "candidateName": "YUVAN RAJ A",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "totalScore": 44,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 98,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Mastery (Outstanding)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-0CE177",
+      "sectionScores": {
+        "section-1": {
+          "score": 14,
+          "total": 15,
+          "percentage": 93
+        },
+        "section-2": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-3": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        }
+      },
+      "completedAt": "2026-11-23T04:24:38.380Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:24:37.410Z"
+  "lastUpdated": "2026-11-23T04:24:38.530Z"
 }
