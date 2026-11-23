@@ -12297,6 +12297,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:25:21.146Z",
       "updatedAt": "2026-11-23T04:25:21.146Z"
+    },
+    {
+      "_id": "cand-def63983-3e62-437b-8874-0a64f146fa91",
+      "candidateId": "INZ-CAND-2026-00292",
+      "fullName": "AKCHAYA G",
+      "email": "akshayag072006@gmailcom",
+      "password": "Akchayag@07",
+      "mobileNumber": "9042780972",
+      "altMobileNumber": "",
+      "dateOfBirth": "2006-07-07",
+      "gender": "Female",
+      "residentialAddress": "APK main road geetha hospital street,valayankulam-madurai ",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "625022",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.E. Computer Science and Engineering",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.2",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-07",
+      "domainName": "Software Development",
+      "jobRoleId": "role-cyber-analyst",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:27:14.694Z",
+      "updatedAt": "2026-11-23T04:27:14.694Z"
     }
   ],
   "assessment_results": [
@@ -15502,5 +15543,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:27:01.912Z"
+  "lastUpdated": "2026-11-23T04:27:14.852Z"
 }
