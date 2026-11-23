@@ -10374,6 +10374,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:18:34.342Z",
       "updatedAt": "2026-11-23T04:18:34.342Z"
+    },
+    {
+      "_id": "cand-ace7fef2-c23a-464c-bad0-f742b4be75ea",
+      "candidateId": "INZ-CAND-2026-00277",
+      "fullName": "Preethi sm",
+      "email": "preethism23it@psnacet.edu.in",
+      "password": "preethislife2",
+      "mobileNumber": "9342154362",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-10-29",
+      "gender": "Female",
+      "residentialAddress": "kairasi nagar, palani road, oddanchatram,dindigul district",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "624619",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.tech Information Technology",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "7.14",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-03",
+      "domainName": "Software Development",
+      "jobRoleId": "role-ai-ml",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:19:46.313Z",
+      "updatedAt": "2026-11-23T04:19:46.313Z"
     }
   ],
   "assessment_results": [
@@ -12219,5 +12260,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:19:32.918Z"
+  "lastUpdated": "2026-11-23T04:19:46.433Z"
 }
