@@ -6430,6 +6430,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:06:49.420Z",
       "updatedAt": "2026-11-23T04:06:49.420Z"
+    },
+    {
+      "_id": "cand-103d5d17-9860-4c5e-8d3a-7a3681cdc6c0",
+      "candidateId": "INZ-CAND-2026-00204",
+      "fullName": "Sanjay M",
+      "email": "sanjaymohan6088@gmail.com",
+      "password": "@&Sanju10",
+      "mobileNumber": "+91 6384927714",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-08-10",
+      "gender": "Male",
+      "residentialAddress": "No : 1, Bharathiyar Nagar, Universal School Street, Velliyankadu, Tiruppur - 641604",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "641604",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B TECH Information Technology",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "7.5",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-python-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:06:51.653Z",
+      "updatedAt": "2026-11-23T04:06:51.653Z"
     }
   ],
   "assessment_results": [
@@ -6755,5 +6796,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:06:51.867Z"
+  "lastUpdated": "2026-11-23T04:06:53.035Z"
 }
