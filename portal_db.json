@@ -33,18 +33,111 @@
       "jobRoleId": "role-data-analyst",
       "jobRoleTitle": "Data Analyst",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Rejected",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T15:17:43.854Z",
-      "updatedAt": "2026-11-23T15:17:43.854Z"
+      "updatedAt": "2026-11-23T15:17:43.854Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_a29a6ea2-b095-437e-9dd9-f35743e76f1a",
+        "candidateId": "INZ-CAND-2026-00002",
+        "candidateDisplayId": "INZ-CAND-2026-00002",
+        "candidateName": "Mousik Shankar",
+        "jobRoleId": "role-data-analyst",
+        "jobRoleTitle": "Data Analyst",
+        "domainId": "dom-02",
+        "domainName": "Data & Analytics",
+        "collegeName": "Kongu Engineering College",
+        "totalScore": 2,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 4,
+        "totalQuestionsAttempted": 4,
+        "unattempted": 41,
+        "percentage": 4,
+        "isPassed": false,
+        "examResult": "Fail",
+        "selectionStatus": "Rejected",
+        "passCutoff": "> 25",
+        "performanceCategory": "Needs Improvement",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-5C8533",
+        "sectionScores": {
+          "section-1": {
+            "score": 2,
+            "total": 15,
+            "percentage": 13
+          },
+          "section-2": {
+            "score": 0,
+            "total": 15,
+            "percentage": 0
+          },
+          "section-3": {
+            "score": 0,
+            "total": 15,
+            "percentage": 0
+          }
+        },
+        "completedAt": "2026-11-23T15:18:57.693Z"
+      },
+      "totalScore": 2,
+      "percentage": 4,
+      "isPassed": false,
+      "examResult": "Fail",
+      "certificateId": "INZ-CERT-2026-5C8533",
+      "completedAt": "2026-11-23T15:18:57.693Z"
     }
   ],
-  "assessment_results": [],
+  "assessment_results": [
+    {
+      "sessionId": "inz_cbt_a29a6ea2-b095-437e-9dd9-f35743e76f1a",
+      "candidateId": "INZ-CAND-2026-00002",
+      "candidateDisplayId": "INZ-CAND-2026-00002",
+      "candidateName": "Mousik Shankar",
+      "jobRoleId": "role-data-analyst",
+      "jobRoleTitle": "Data Analyst",
+      "domainId": "dom-02",
+      "domainName": "Data & Analytics",
+      "collegeName": "Kongu Engineering College",
+      "totalScore": 2,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 4,
+      "totalQuestionsAttempted": 4,
+      "unattempted": 41,
+      "percentage": 4,
+      "isPassed": false,
+      "examResult": "Fail",
+      "selectionStatus": "Rejected",
+      "passCutoff": "> 25",
+      "performanceCategory": "Needs Improvement",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-5C8533",
+      "sectionScores": {
+        "section-1": {
+          "score": 2,
+          "total": 15,
+          "percentage": 13
+        },
+        "section-2": {
+          "score": 0,
+          "total": 15,
+          "percentage": 0
+        },
+        "section-3": {
+          "score": 0,
+          "total": 15,
+          "percentage": 0
+        }
+      },
+      "completedAt": "2026-11-23T15:18:57.693Z"
+    }
+  ],
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-23T15:18:29.240Z"
+  "lastUpdated": "2026-11-23T15:18:57.801Z"
 }
