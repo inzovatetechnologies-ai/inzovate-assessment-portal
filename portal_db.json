@@ -3038,6 +3038,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T03:55:58.945Z",
       "updatedAt": "2026-11-23T03:55:58.945Z"
+    },
+    {
+      "_id": "cand-acd1634b-2e20-4922-8cda-4ef15e489911",
+      "candidateId": "INZ-CAND-2026-00074",
+      "fullName": "SABARIGANESH C",
+      "email": "sabariganesh28032006@gmail.com",
+      "password": "sabari",
+      "mobileNumber": "+918667308645",
+      "altMobileNumber": "",
+      "dateOfBirth": "2006-03-28",
+      "gender": "Male",
+      "residentialAddress": "35, Sivaji Ganesan nagar ,\n1st Street , .",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "624002",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.E. Computer Science and Engineering",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "7.5",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T03:56:16.436Z",
+      "updatedAt": "2026-11-23T03:56:16.436Z"
     }
   ],
   "assessment_results": [
@@ -3083,5 +3124,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:56:12.796Z"
+  "lastUpdated": "2026-11-23T03:56:16.548Z"
 }
