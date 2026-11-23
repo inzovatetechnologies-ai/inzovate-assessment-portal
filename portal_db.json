@@ -414,6 +414,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T03:46:10.421Z",
       "updatedAt": "2026-11-23T03:46:10.421Z"
+    },
+    {
+      "_id": "cand-a3f54500-dfdb-41cb-9911-5cf6ddb7a21f",
+      "candidateId": "INZ-CAND-2026-00013",
+      "fullName": "Jannathul Firthoush M",
+      "email": "jannathulfirthoushfirtho@gmail.com",
+      "password": "Jaanfirtho@12",
+      "mobileNumber": "8925390040",
+      "altMobileNumber": "",
+      "dateOfBirth": "2006-02-13",
+      "gender": "Male",
+      "residentialAddress": "3/13,weststreet,melkaraipatti,dindigul,melkaraipatti,tamil nadu,624617",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "624617",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.Tech Information Technology",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.82",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T03:46:14.034Z",
+      "updatedAt": "2026-11-23T03:46:14.034Z"
     }
   ],
   "assessment_results": [
@@ -459,5 +500,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:46:10.553Z"
+  "lastUpdated": "2026-11-23T03:46:14.169Z"
 }
