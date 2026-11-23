@@ -15359,13 +15359,59 @@
       "jobRoleId": "role-soft-dev",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T04:27:15.809Z",
-      "updatedAt": "2026-11-23T04:27:15.809Z"
+      "updatedAt": "2026-11-23T04:27:15.809Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_d5040310-f074-47f6-8830-73c59a545571",
+        "candidateId": "INZ-CAND-2026-00293",
+        "candidateDisplayId": "INZ-CAND-2026-00293",
+        "candidateName": "Sriram S",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "PSNA College of Engineering and Technology",
+        "totalScore": 45,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 100,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Mastery (Outstanding)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-1F63AF",
+        "sectionScores": {
+          "section-1": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-2": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-3": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          }
+        },
+        "completedAt": "2026-11-23T04:38:06.711Z"
+      },
+      "totalScore": 45,
+      "percentage": 100,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-1F63AF",
+      "completedAt": "2026-11-23T04:38:06.711Z"
     },
     {
       "_id": "cand-64d3e603-fa83-468a-b4b3-d7fdf4a1f174",
@@ -21776,8 +21822,48 @@
         }
       },
       "completedAt": "2026-11-23T04:37:53.363Z"
+    },
+    {
+      "sessionId": "inz_cbt_d5040310-f074-47f6-8830-73c59a545571",
+      "candidateId": "INZ-CAND-2026-00293",
+      "candidateDisplayId": "INZ-CAND-2026-00293",
+      "candidateName": "Sriram S",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "totalScore": 45,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 100,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Mastery (Outstanding)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-1F63AF",
+      "sectionScores": {
+        "section-1": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-2": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-3": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        }
+      },
+      "completedAt": "2026-11-23T04:38:06.711Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:37:53.499Z"
+  "lastUpdated": "2026-11-23T04:38:06.861Z"
 }
