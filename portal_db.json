@@ -5395,6 +5395,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:03:41.011Z",
       "updatedAt": "2026-11-23T04:03:41.011Z"
+    },
+    {
+      "_id": "cand-24d92382-15e5-4001-8855-8579171eb46a",
+      "candidateId": "INZ-CAND-2026-00173",
+      "fullName": "Deepika",
+      "email": "deepikakasirajan12@gmail.com",
+      "password": "deepikakasirajan",
+      "mobileNumber": "8122515401",
+      "altMobileNumber": "",
+      "dateOfBirth": "2006-06-29",
+      "gender": "Female",
+      "residentialAddress": "Melur,Madurai",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "6251056",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.E. Computer Science and Engineering",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.4",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-04",
+      "domainName": "Software Development",
+      "jobRoleId": "role-uiux",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:03:48.366Z",
+      "updatedAt": "2026-11-23T04:03:48.366Z"
     }
   ],
   "assessment_results": [
@@ -5640,5 +5681,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:03:47.563Z"
+  "lastUpdated": "2026-11-23T04:03:48.496Z"
 }
