@@ -18266,6 +18266,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:50:06.556Z",
       "updatedAt": "2026-11-23T04:50:06.556Z"
+    },
+    {
+      "_id": "cand-2f872691-37ed-4fdd-824b-421778dc5f3d",
+      "candidateId": "INZ-CAND-2026-00323",
+      "fullName": "Kabilan A S",
+      "email": "csr.kabilan.as@gmail.com",
+      "password": "PAULKABI",
+      "mobileNumber": "8072077178",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-12-16",
+      "gender": "Male",
+      "residentialAddress": "Plot no 1 Mahatma gandhi 8th,street,SRV Nagar,Thirunagar,Madurai-6",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "625006",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.E. Computer Science and Engineering",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "7.54",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-java-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:50:29.986Z",
+      "updatedAt": "2026-11-23T04:50:29.986Z"
     }
   ],
   "assessment_results": [
@@ -26431,5 +26472,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:50:26.179Z"
+  "lastUpdated": "2026-11-23T04:50:30.228Z"
 }
