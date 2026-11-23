@@ -1360,7 +1360,7 @@
     },
     {
       "_id": "cand-58b8d679-7325-4040-9d4e-fc8b5d60ea63",
-      "candidateId": "INZ-CAND-2026-00043",
+      "candidateId": "INZ-CAND-2026-00057",
       "fullName": "23/11/2005",
       "email": "dhineshwaran2311@gmail.com",
       "password": "$Thaladhinesh",
@@ -1853,5 +1853,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:52:06.042Z"
+  "lastUpdated": "2026-11-23T03:52:12.217Z"
 }
