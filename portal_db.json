@@ -1439,6 +1439,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T03:51:05.945Z",
       "updatedAt": "2026-11-23T03:51:05.945Z"
+    },
+    {
+      "_id": "cand-4196ef79-8a42-4430-bcf5-2ba003d818c3",
+      "candidateId": "INZ-CAND-2026-00046",
+      "fullName": "Gnanesh K T",
+      "email": "gnaneshkt23cb@psnacet.edu.in",
+      "password": "Gnanu@866",
+      "mobileNumber": "8667066695",
+      "altMobileNumber": "",
+      "dateOfBirth": "2006-04-23",
+      "gender": "Male",
+      "residentialAddress": "26/4c.1 Nethaji Nagar, Nagal Nagar, Dindigul",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "624003",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.Tech Computer Science and Business Systems",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.45",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T03:51:09.981Z",
+      "updatedAt": "2026-11-23T03:51:09.981Z"
     }
   ],
   "assessment_results": [
@@ -1484,5 +1525,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:51:06.952Z"
+  "lastUpdated": "2026-11-23T03:51:10.128Z"
 }
