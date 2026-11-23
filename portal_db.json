@@ -6760,13 +6760,59 @@
       "jobRoleId": "role-uiux",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T04:03:48.366Z",
-      "updatedAt": "2026-11-23T04:03:48.366Z"
+      "updatedAt": "2026-11-23T04:03:48.366Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_94c2d7e4-9090-4a35-89b6-9a9c52936913",
+        "candidateId": "INZ-CAND-2026-00173",
+        "candidateDisplayId": "INZ-CAND-2026-00173",
+        "candidateName": "Deepika",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "PSNA College of Engineering and Technology",
+        "totalScore": 43,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 96,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Mastery (Outstanding)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-3BF728",
+        "sectionScores": {
+          "section-1": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-2": {
+            "score": 14,
+            "total": 15,
+            "percentage": 93
+          },
+          "section-3": {
+            "score": 14,
+            "total": 15,
+            "percentage": 93
+          }
+        },
+        "completedAt": "2026-11-23T04:18:25.306Z"
+      },
+      "totalScore": 43,
+      "percentage": 96,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-3BF728",
+      "completedAt": "2026-11-23T04:18:25.306Z"
     },
     {
       "_id": "cand-4db0bc69-a2b0-4ff1-a2d0-738c3f0a6cf7",
@@ -11659,8 +11705,48 @@
         }
       },
       "completedAt": "2026-11-23T04:18:24.781Z"
+    },
+    {
+      "sessionId": "inz_cbt_94c2d7e4-9090-4a35-89b6-9a9c52936913",
+      "candidateId": "INZ-CAND-2026-00173",
+      "candidateDisplayId": "INZ-CAND-2026-00173",
+      "candidateName": "Deepika",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "totalScore": 43,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 96,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Mastery (Outstanding)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-3BF728",
+      "sectionScores": {
+        "section-1": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-2": {
+          "score": 14,
+          "total": 15,
+          "percentage": 93
+        },
+        "section-3": {
+          "score": 14,
+          "total": 15,
+          "percentage": 93
+        }
+      },
+      "completedAt": "2026-11-23T04:18:25.306Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:18:25.046Z"
+  "lastUpdated": "2026-11-23T04:18:26.595Z"
 }
