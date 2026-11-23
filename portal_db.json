@@ -3986,6 +3986,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T03:59:37.827Z",
       "updatedAt": "2026-11-23T03:59:37.827Z"
+    },
+    {
+      "_id": "cand-b338e26e-6b7b-4eff-aa78-b99088b279dc",
+      "candidateId": "INZ-CAND-2026-00096",
+      "fullName": "THAARANI S",
+      "email": "thaaranis04@gmail.com",
+      "password": "Thaarani",
+      "mobileNumber": "9952888657",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-05-04",
+      "gender": "Female",
+      "residentialAddress": "Flat no 67, vasantham nagar, kovilpapakudi,madurai-18.",
+      "district": "Tirunelveli",
+      "state": "Tamil Nadu",
+      "pinCode": "625018",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "MCA",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.33",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T03:59:45.073Z",
+      "updatedAt": "2026-11-23T03:59:45.073Z"
     }
   ],
   "assessment_results": [
@@ -4071,5 +4112,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:59:42.248Z"
+  "lastUpdated": "2026-11-23T03:59:45.183Z"
 }
