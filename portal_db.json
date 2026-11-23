@@ -2626,13 +2626,59 @@
       "jobRoleId": "role-soft-dev",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T03:52:04.928Z",
-      "updatedAt": "2026-11-23T03:52:04.928Z"
+      "updatedAt": "2026-11-23T03:52:04.928Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_f286a58a-21f0-4c2c-82dc-072cdd857d5e",
+        "candidateId": "INZ-CAND-2026-00056",
+        "candidateDisplayId": "INZ-CAND-2026-00056",
+        "candidateName": "Kavya Muralitharan",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "PSNA College of Engineering and Technology",
+        "totalScore": 37,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 82,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Mastery (Outstanding)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-0B3198",
+        "sectionScores": {
+          "section-1": {
+            "score": 13,
+            "total": 15,
+            "percentage": 87
+          },
+          "section-2": {
+            "score": 14,
+            "total": 15,
+            "percentage": 93
+          },
+          "section-3": {
+            "score": 10,
+            "total": 15,
+            "percentage": 67
+          }
+        },
+        "completedAt": "2026-11-23T04:15:42.539Z"
+      },
+      "totalScore": 37,
+      "percentage": 82,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-0B3198",
+      "completedAt": "2026-11-23T04:15:42.539Z"
     },
     {
       "_id": "cand-00bf5eb7-aefb-457e-9ede-69f169072ef9",
@@ -10303,8 +10349,48 @@
         }
       },
       "completedAt": "2026-11-23T04:15:29.834Z"
+    },
+    {
+      "sessionId": "inz_cbt_f286a58a-21f0-4c2c-82dc-072cdd857d5e",
+      "candidateId": "INZ-CAND-2026-00056",
+      "candidateDisplayId": "INZ-CAND-2026-00056",
+      "candidateName": "Kavya Muralitharan",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "totalScore": 37,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 82,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Mastery (Outstanding)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-0B3198",
+      "sectionScores": {
+        "section-1": {
+          "score": 13,
+          "total": 15,
+          "percentage": 87
+        },
+        "section-2": {
+          "score": 14,
+          "total": 15,
+          "percentage": 93
+        },
+        "section-3": {
+          "score": 10,
+          "total": 15,
+          "percentage": 67
+        }
+      },
+      "completedAt": "2026-11-23T04:15:42.539Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:15:31.151Z"
+  "lastUpdated": "2026-11-23T04:15:42.642Z"
 }
