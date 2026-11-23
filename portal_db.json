@@ -1726,6 +1726,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T03:51:43.637Z",
       "updatedAt": "2026-11-23T03:51:43.637Z"
+    },
+    {
+      "_id": "cand-30ddb54c-02aa-410b-bbe9-20015fb6d91d",
+      "candidateId": "INZ-CAND-2026-00053",
+      "fullName": "Janani S",
+      "email": "sjanani3023@gmail.com",
+      "password": "Janani@3008",
+      "mobileNumber": "9025541200",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-08-30",
+      "gender": "Female",
+      "residentialAddress": "9-2-7A agrahram ,sholavandhan,Madurai ,Tamil nadu",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "625214",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.E. Computer Science and Engineering",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.5",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-07",
+      "domainName": "Software Development",
+      "jobRoleId": "role-cyber-analyst",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T03:51:55.937Z",
+      "updatedAt": "2026-11-23T03:51:55.937Z"
     }
   ],
   "assessment_results": [
@@ -1771,5 +1812,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:51:43.749Z"
+  "lastUpdated": "2026-11-23T03:51:56.043Z"
 }
