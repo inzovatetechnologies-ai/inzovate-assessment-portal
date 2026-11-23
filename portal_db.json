@@ -458,7 +458,7 @@
     },
     {
       "_id": "cand-02eae84f-56e9-4afd-8a2f-76f70c3e2215",
-      "candidateId": "INZ-CAND-2026-00014",
+      "candidateId": "INZ-CAND-2026-00110",
       "fullName": "Aksshita Sri",
       "email": "aksshitasri@gmail.com",
       "password": "Aksshi@3104",
@@ -3452,5 +3452,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:57:15.304Z"
+  "lastUpdated": "2026-11-23T03:57:19.575Z"
 }
