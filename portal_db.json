@@ -742,6 +742,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T03:47:56.083Z",
       "updatedAt": "2026-11-23T03:47:56.083Z"
+    },
+    {
+      "_id": "cand-f83b1184-c737-4560-b535-7f9d977c99e0",
+      "candidateId": "INZ-CAND-2026-00024",
+      "fullName": "Rahul A",
+      "email": "rahularu2005@gmail.com",
+      "password": "Rahul@2005",
+      "mobileNumber": "+919043747972",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-10-22",
+      "gender": "Male",
+      "residentialAddress": "273,Pandiyammal street, Nataraj Nagar\nKochadai",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "625016",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.TECH. INFORMATION TECHNOLOGY",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "7.8",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T03:48:00.350Z",
+      "updatedAt": "2026-11-23T03:48:00.350Z"
     }
   ],
   "assessment_results": [
@@ -787,5 +828,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:47:56.166Z"
+  "lastUpdated": "2026-11-23T03:48:00.462Z"
 }
