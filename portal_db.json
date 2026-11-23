@@ -3174,13 +3174,59 @@
       "jobRoleId": "role-cyber-analyst",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T03:53:19.190Z",
-      "updatedAt": "2026-11-23T03:53:19.190Z"
+      "updatedAt": "2026-11-23T03:53:19.190Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_6759ba3e-b85c-451a-8f72-16c5973f9c3b",
+        "candidateId": "INZ-CAND-2026-00083",
+        "candidateDisplayId": "INZ-CAND-2026-00083",
+        "candidateName": "Muthu Diana R",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "PSNA College of Engineering and Technology",
+        "totalScore": 45,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 100,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Mastery (Outstanding)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-EF821C",
+        "sectionScores": {
+          "section-1": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-2": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-3": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          }
+        },
+        "completedAt": "2026-11-23T04:16:05.447Z"
+      },
+      "totalScore": 45,
+      "percentage": 100,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-EF821C",
+      "completedAt": "2026-11-23T04:16:05.447Z"
     },
     {
       "_id": "cand-b8f8fd0a-8708-45a7-a115-5a1676de554c",
@@ -10643,8 +10689,48 @@
         }
       },
       "completedAt": "2026-11-23T04:15:59.236Z"
+    },
+    {
+      "sessionId": "inz_cbt_6759ba3e-b85c-451a-8f72-16c5973f9c3b",
+      "candidateId": "INZ-CAND-2026-00083",
+      "candidateDisplayId": "INZ-CAND-2026-00083",
+      "candidateName": "Muthu Diana R",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "totalScore": 45,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 100,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Mastery (Outstanding)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-EF821C",
+      "sectionScores": {
+        "section-1": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-2": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-3": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        }
+      },
+      "completedAt": "2026-11-23T04:16:05.447Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:16:04.784Z"
+  "lastUpdated": "2026-11-23T04:16:06.042Z"
 }
