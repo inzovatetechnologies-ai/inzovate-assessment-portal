@@ -253,7 +253,7 @@
     },
     {
       "_id": "cand-0489118d-b18a-449d-b439-c8d1eb62ec6e",
-      "candidateId": "INZ-CAND-2026-00007",
+      "candidateId": "INZ-CAND-2026-00017",
       "fullName": "Arjun",
       "email": "arjunp25mca@psnacet.edu.in",
       "password": "psna@1212",
@@ -623,5 +623,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:47:00.066Z"
+  "lastUpdated": "2026-11-23T03:47:01.534Z"
 }
