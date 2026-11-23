@@ -6635,6 +6635,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:07:02.209Z",
       "updatedAt": "2026-11-23T04:07:02.209Z"
+    },
+    {
+      "_id": "cand-c74d0c8c-0cd7-4946-85a1-52943df9b188",
+      "candidateId": "INZ-CAND-2026-00155",
+      "fullName": "PREETHI GOVIKAR G",
+      "email": "preethi200621@gmail.com",
+      "password": "Preethi@21",
+      "mobileNumber": "8778442673",
+      "altMobileNumber": "",
+      "dateOfBirth": "2006-01-21",
+      "gender": "Female",
+      "residentialAddress": "PLOT NO:3 Island 1st cross street, Aathikulam Madurai-625007",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "625007",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.TECH COMPUTER SCIENCE AND BUSINESS SYSTEMS",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.05",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-13",
+      "domainName": "Software Development",
+      "jobRoleId": "role-proc-assoc-direct",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:07:04.237Z",
+      "updatedAt": "2026-11-23T04:07:04.237Z"
     }
   ],
   "assessment_results": [
@@ -6960,5 +7001,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:07:02.927Z"
+  "lastUpdated": "2026-11-23T04:07:04.351Z"
 }
