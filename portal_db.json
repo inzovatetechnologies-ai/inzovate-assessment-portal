@@ -8064,6 +8064,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:11:26.401Z",
       "updatedAt": "2026-11-23T04:11:26.401Z"
+    },
+    {
+      "_id": "cand-23eb96ad-d7c5-4997-ae62-a51472b84aae",
+      "candidateId": "INZ-CAND-2026-00241",
+      "fullName": "Shanmugaraja E",
+      "email": "shanmugaraja8072@gmail.com",
+      "password": "200905",
+      "mobileNumber": "+918072890517",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-09-20",
+      "gender": "Male",
+      "residentialAddress": "2/175, pasumpon nagar, Perungudi, Madurai",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "625022",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.Tech Information Technology",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "7.6",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:11:31.668Z",
+      "updatedAt": "2026-11-23T04:11:31.668Z"
     }
   ],
   "assessment_results": [
@@ -8709,5 +8750,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:11:26.524Z"
+  "lastUpdated": "2026-11-23T04:11:31.779Z"
 }
