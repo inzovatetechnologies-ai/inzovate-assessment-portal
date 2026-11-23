@@ -2177,6 +2177,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T03:53:19.076Z",
       "updatedAt": "2026-11-23T03:53:19.076Z"
+    },
+    {
+      "_id": "cand-f977cd98-3fe9-4467-b13c-a822ca950b90",
+      "candidateId": "INZ-CAND-2026-00069",
+      "fullName": "Muthu Diana R",
+      "email": "muthudianar81@gmail.com",
+      "password": "Muthudianar@81",
+      "mobileNumber": "9994064495",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-03-22",
+      "gender": "Female",
+      "residentialAddress": "Paramakudi, Ramanathapuram Dt.",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "623707",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.E. Computer Science and Engineering(Cyber Security)",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.08",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-07",
+      "domainName": "Software Development",
+      "jobRoleId": "role-cyber-analyst",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T03:53:19.190Z",
+      "updatedAt": "2026-11-23T03:53:19.190Z"
     }
   ],
   "assessment_results": [
@@ -2222,5 +2263,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:53:19.183Z"
+  "lastUpdated": "2026-11-23T03:53:20.355Z"
 }
