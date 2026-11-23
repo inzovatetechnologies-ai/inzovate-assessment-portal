@@ -9763,7 +9763,7 @@
     },
     {
       "_id": "cand-120a728c-8a74-42b4-906e-3d50595a4f17",
-      "candidateId": "INZ-CAND-2026-00267",
+      "candidateId": "INZ-CAND-2026-00269",
       "fullName": "TANUSH R",
       "email": "rtanushjeeva2005@gmail.com",
       "password": "Tanush@2005",
@@ -11367,5 +11367,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:17:36.299Z"
+  "lastUpdated": "2026-11-23T04:17:40.844Z"
 }
