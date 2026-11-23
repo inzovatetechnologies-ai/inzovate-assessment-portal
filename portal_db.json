@@ -3571,6 +3571,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T03:58:17.055Z",
       "updatedAt": "2026-11-23T03:58:17.055Z"
+    },
+    {
+      "_id": "cand-50ddc596-0501-47f1-b4e6-d953d6be27b9",
+      "candidateId": "INZ-CAND-2026-00120",
+      "fullName": "BHARANISRI K S",
+      "email": "bharanisri675@gmail.com",
+      "password": "Bharanisri@21",
+      "mobileNumber": "6374981813",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-04-21",
+      "gender": "Female",
+      "residentialAddress": "58,Indiragandhi Street,Mahalakshmi Colony,Thirunagar,Madurai.",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "625006",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "Master of Computer Applications",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.97",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-10",
+      "domainName": "Software Development",
+      "jobRoleId": "role-seo-exec",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T03:58:25.100Z",
+      "updatedAt": "2026-11-23T03:58:25.100Z"
     }
   ],
   "assessment_results": [
@@ -3616,5 +3657,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:58:23.022Z"
+  "lastUpdated": "2026-11-23T03:58:25.210Z"
 }
