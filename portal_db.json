@@ -6184,6 +6184,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:06:04.272Z",
       "updatedAt": "2026-11-23T04:06:04.272Z"
+    },
+    {
+      "_id": "cand-f6f75583-b89b-4064-b1bf-33ec95855978",
+      "candidateId": "INZ-CAND-2026-00197",
+      "fullName": "Harini S",
+      "email": "harinisk36@gmail.com",
+      "password": "Harini@2602",
+      "mobileNumber": "8667672455",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-12-26",
+      "gender": "Female",
+      "residentialAddress": "3/193 kaliyamman kovil street, Natchikulam, vadipatti taluk, madurai district\n",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "625205",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.Tech. Artificial Intelligence and Data Science",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "7.8",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-02",
+      "domainName": "Software Development",
+      "jobRoleId": "role-data-analyst",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:06:13.144Z",
+      "updatedAt": "2026-11-23T04:06:13.144Z"
     }
   ],
   "assessment_results": [
@@ -6509,5 +6550,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:06:06.785Z"
+  "lastUpdated": "2026-11-23T04:06:13.277Z"
 }
