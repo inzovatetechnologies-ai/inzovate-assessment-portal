@@ -7125,13 +7125,59 @@
       "jobRoleId": "role-java-dev",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Rejected",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T04:00:00.666Z",
-      "updatedAt": "2026-11-23T04:00:00.666Z"
+      "updatedAt": "2026-11-23T04:00:00.666Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_2e6220b4-1443-4417-a711-cc5d81e900bb",
+        "candidateId": "INZ-CAND-2026-00182",
+        "candidateDisplayId": "INZ-CAND-2026-00182",
+        "candidateName": "PREETHI S",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "PSNA College of Engineering and Technology",
+        "totalScore": 17,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 38,
+        "isPassed": false,
+        "examResult": "Fail",
+        "selectionStatus": "Rejected",
+        "passCutoff": "> 25",
+        "performanceCategory": "Needs Improvement",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-4CD0A2",
+        "sectionScores": {
+          "section-1": {
+            "score": 2,
+            "total": 15,
+            "percentage": 13
+          },
+          "section-2": {
+            "score": 10,
+            "total": 15,
+            "percentage": 67
+          },
+          "section-3": {
+            "score": 5,
+            "total": 15,
+            "percentage": 33
+          }
+        },
+        "completedAt": "2026-11-23T04:33:41.955Z"
+      },
+      "totalScore": 17,
+      "percentage": 38,
+      "isPassed": false,
+      "examResult": "Fail",
+      "certificateId": "INZ-CERT-2026-4CD0A2",
+      "completedAt": "2026-11-23T04:33:41.955Z"
     },
     {
       "_id": "cand-c842c5e6-68ce-4c70-94ee-c33fb331583b",
@@ -19132,8 +19178,48 @@
         }
       },
       "completedAt": "2026-11-23T04:33:39.113Z"
+    },
+    {
+      "sessionId": "inz_cbt_2e6220b4-1443-4417-a711-cc5d81e900bb",
+      "candidateId": "INZ-CAND-2026-00182",
+      "candidateDisplayId": "INZ-CAND-2026-00182",
+      "candidateName": "PREETHI S",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "totalScore": 17,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 38,
+      "isPassed": false,
+      "examResult": "Fail",
+      "selectionStatus": "Rejected",
+      "passCutoff": "> 25",
+      "performanceCategory": "Needs Improvement",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-4CD0A2",
+      "sectionScores": {
+        "section-1": {
+          "score": 2,
+          "total": 15,
+          "percentage": 13
+        },
+        "section-2": {
+          "score": 10,
+          "total": 15,
+          "percentage": 67
+        },
+        "section-3": {
+          "score": 5,
+          "total": 15,
+          "percentage": 33
+        }
+      },
+      "completedAt": "2026-11-23T04:33:41.955Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:33:39.284Z"
+  "lastUpdated": "2026-11-23T04:33:42.156Z"
 }
