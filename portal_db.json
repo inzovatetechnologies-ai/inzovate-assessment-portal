@@ -9867,13 +9867,59 @@
       "jobRoleId": "role-data-analyst",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T04:03:13.419Z",
-      "updatedAt": "2026-11-23T04:03:13.419Z"
+      "updatedAt": "2026-11-23T04:03:13.419Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_7daca5cf-7ae9-481d-8c69-65463d4cd8a3",
+        "candidateId": "INZ-CAND-2026-00161",
+        "candidateDisplayId": "INZ-CAND-2026-00161",
+        "candidateName": "Vikkas M A",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "PSNA College of Engineering and Technology",
+        "totalScore": 27,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 60,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Foundational (Competent)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-3C2319",
+        "sectionScores": {
+          "section-1": {
+            "score": 8,
+            "total": 15,
+            "percentage": 53
+          },
+          "section-2": {
+            "score": 12,
+            "total": 15,
+            "percentage": 80
+          },
+          "section-3": {
+            "score": 7,
+            "total": 15,
+            "percentage": 47
+          }
+        },
+        "completedAt": "2026-11-23T04:48:04.084Z"
+      },
+      "totalScore": 27,
+      "percentage": 60,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-3C2319",
+      "completedAt": "2026-11-23T04:48:04.084Z"
     },
     {
       "_id": "cand-9cfb48a9-c27f-4bbb-a07c-80133bbaf231",
@@ -25662,8 +25708,48 @@
         }
       },
       "completedAt": "2026-11-23T04:48:03.969Z"
+    },
+    {
+      "sessionId": "inz_cbt_7daca5cf-7ae9-481d-8c69-65463d4cd8a3",
+      "candidateId": "INZ-CAND-2026-00161",
+      "candidateDisplayId": "INZ-CAND-2026-00161",
+      "candidateName": "Vikkas M A",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "totalScore": 27,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 60,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Foundational (Competent)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-3C2319",
+      "sectionScores": {
+        "section-1": {
+          "score": 8,
+          "total": 15,
+          "percentage": 53
+        },
+        "section-2": {
+          "score": 12,
+          "total": 15,
+          "percentage": 80
+        },
+        "section-3": {
+          "score": 7,
+          "total": 15,
+          "percentage": 47
+        }
+      },
+      "completedAt": "2026-11-23T04:48:04.084Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:48:04.112Z"
+  "lastUpdated": "2026-11-23T04:48:05.617Z"
 }
