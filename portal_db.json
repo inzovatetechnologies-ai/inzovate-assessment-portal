@@ -1278,7 +1278,7 @@
     },
     {
       "_id": "cand-56e32242-ff7e-4970-b72e-04761e2b6a8d",
-      "candidateId": "INZ-CAND-2026-00041",
+      "candidateId": "INZ-CAND-2026-00052",
       "fullName": "Hemadharshini K",
       "email": "hemadharshini837@gmail.com",
       "password": "hema@5123",
@@ -1730,5 +1730,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:51:29.697Z"
+  "lastUpdated": "2026-11-23T03:51:30.672Z"
 }
