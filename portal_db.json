@@ -4483,6 +4483,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:01:11.902Z",
       "updatedAt": "2026-11-23T04:01:11.902Z"
+    },
+    {
+      "_id": "cand-9d356e43-66b9-4fb7-9517-33b78c78a503",
+      "candidateId": "INZ-CAND-2026-00144",
+      "fullName": "Dhineshwaran P",
+      "email": "apkpdhinesh2005@gmail.com",
+      "password": "Dhinesh@123",
+      "mobileNumber": "9344519865",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-04-06",
+      "gender": "Male",
+      "residentialAddress": "5-23-101/9 ,Sanglichettiyar Street , Ceylon colony main road , Palyampatti , Aruppukottai - 626112",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "626 112",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.E. Computer Science and Engineering",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.55",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-fullstack",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:01:12.896Z",
+      "updatedAt": "2026-11-23T04:01:12.896Z"
     }
   ],
   "assessment_results": [
@@ -4608,5 +4649,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:01:12.004Z"
+  "lastUpdated": "2026-11-23T04:01:13.063Z"
 }
