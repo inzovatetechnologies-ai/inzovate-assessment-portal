@@ -13403,13 +13403,59 @@
       "jobRoleId": "role-soft-dev",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T04:18:34.342Z",
-      "updatedAt": "2026-11-23T04:18:34.342Z"
+      "updatedAt": "2026-11-23T04:18:34.342Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_1ad45580-fe4d-48b9-87ac-090b1b784b2a",
+        "candidateId": "INZ-CAND-2026-00274",
+        "candidateDisplayId": "INZ-CAND-2026-00274",
+        "candidateName": "Janani B",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "PSNA College of Engineering and Technology",
+        "totalScore": 45,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 100,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Mastery (Outstanding)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-F1B27F",
+        "sectionScores": {
+          "section-1": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-2": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-3": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          }
+        },
+        "completedAt": "2026-11-23T04:33:07.980Z"
+      },
+      "totalScore": 45,
+      "percentage": 100,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-F1B27F",
+      "completedAt": "2026-11-23T04:33:07.980Z"
     },
     {
       "_id": "cand-ace7fef2-c23a-464c-bad0-f742b4be75ea",
@@ -18788,8 +18834,48 @@
         }
       },
       "completedAt": "2026-11-23T04:32:44.587Z"
+    },
+    {
+      "sessionId": "inz_cbt_1ad45580-fe4d-48b9-87ac-090b1b784b2a",
+      "candidateId": "INZ-CAND-2026-00274",
+      "candidateDisplayId": "INZ-CAND-2026-00274",
+      "candidateName": "Janani B",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "totalScore": 45,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 100,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Mastery (Outstanding)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-F1B27F",
+      "sectionScores": {
+        "section-1": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-2": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-3": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        }
+      },
+      "completedAt": "2026-11-23T04:33:07.980Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:33:06.440Z"
+  "lastUpdated": "2026-11-23T04:33:08.113Z"
 }
