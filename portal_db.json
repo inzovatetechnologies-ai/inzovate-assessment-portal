@@ -7767,6 +7767,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:09:01.268Z",
       "updatedAt": "2026-11-23T04:09:01.268Z"
+    },
+    {
+      "_id": "cand-7f059a7d-2562-42df-b913-07ce10b9890e",
+      "candidateId": "INZ-CAND-2026-00233",
+      "fullName": "Pranav Raj T G",
+      "email": "pranavrajtg@gmail.com",
+      "password": "934567",
+      "mobileNumber": "+91 8754780823",
+      "altMobileNumber": "",
+      "dateOfBirth": "2006-06-22",
+      "gender": "Male",
+      "residentialAddress": "4/209 1-AB, Rukmani Nagar 1st Street, Melaputhery, Nagercoil-629001",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "629001",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.E. Computer Science and Engineering",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "7.94",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-java-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:09:26.360Z",
+      "updatedAt": "2026-11-23T04:09:26.360Z"
     }
   ],
   "assessment_results": [
@@ -8292,5 +8333,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:09:25.100Z"
+  "lastUpdated": "2026-11-23T04:09:26.491Z"
 }
