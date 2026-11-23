@@ -10780,7 +10780,7 @@
     },
     {
       "_id": "cand-f0a45f65-c80b-44e0-ba67-70c47914f7c3",
-      "candidateId": "INZ-CAND-2026-00206",
+      "candidateId": "INZ-CAND-2026-00321",
       "fullName": "NALINAJOTHI S",
       "email": "nalinajothisenthilkumar@gmail.com",
       "password": "nalinajothi21",
@@ -10811,11 +10811,11 @@
       "jobRoleId": "role-data-analyst",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Selected for Next Round",
+      "recruitmentStage": "Registered",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Completed",
-      "testAttempts": 1,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
       "createdAt": "2026-11-23T04:04:50.933Z",
       "updatedAt": "2026-11-23T04:04:50.933Z",
       "assessmentResult": {
@@ -25834,5 +25834,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:48:15.873Z"
+  "lastUpdated": "2026-11-23T04:48:17.426Z"
 }
