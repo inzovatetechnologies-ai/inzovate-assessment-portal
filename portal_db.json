@@ -2136,6 +2136,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T03:53:16.084Z",
       "updatedAt": "2026-11-23T03:53:16.084Z"
+    },
+    {
+      "_id": "cand-f512052d-62c4-4147-987c-d8b0f247b1f1",
+      "candidateId": "INZ-CAND-2026-00068",
+      "fullName": "Gokul S",
+      "email": "srgokul632@gmail.com",
+      "password": "@gokul2005",
+      "mobileNumber": "7904306185",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-11-10",
+      "gender": "Male",
+      "residentialAddress": "Karruppana pillai street, Ashok nagar,Natham,Dindigul",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "624401",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.Tech Information Technology",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.11",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-frontend",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T03:53:19.076Z",
+      "updatedAt": "2026-11-23T03:53:19.076Z"
     }
   ],
   "assessment_results": [
@@ -2181,5 +2222,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:53:16.183Z"
+  "lastUpdated": "2026-11-23T03:53:19.183Z"
 }
