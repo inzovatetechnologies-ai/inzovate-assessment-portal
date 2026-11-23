@@ -15461,13 +15461,59 @@
       "jobRoleId": "role-fullstack",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T04:25:21.146Z",
-      "updatedAt": "2026-11-23T04:25:21.146Z"
+      "updatedAt": "2026-11-23T04:25:21.146Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_fa91bdc7-1732-483f-96d9-a93f3006a314",
+        "candidateId": "INZ-CAND-2026-00290",
+        "candidateDisplayId": "INZ-CAND-2026-00290",
+        "candidateName": "SAKTHI SANJAY M K",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "PSNA College of Engineering and Technology",
+        "totalScore": 44,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 98,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Mastery (Outstanding)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-B9CF37",
+        "sectionScores": {
+          "section-1": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-2": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-3": {
+            "score": 14,
+            "total": 15,
+            "percentage": 93
+          }
+        },
+        "completedAt": "2026-11-23T04:38:40.589Z"
+      },
+      "totalScore": 44,
+      "percentage": 98,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-B9CF37",
+      "completedAt": "2026-11-23T04:38:40.589Z"
     },
     {
       "_id": "cand-def63983-3e62-437b-8874-0a64f146fa91",
@@ -22246,8 +22292,48 @@
         }
       },
       "completedAt": "2026-11-23T04:38:37.541Z"
+    },
+    {
+      "sessionId": "inz_cbt_fa91bdc7-1732-483f-96d9-a93f3006a314",
+      "candidateId": "INZ-CAND-2026-00290",
+      "candidateDisplayId": "INZ-CAND-2026-00290",
+      "candidateName": "SAKTHI SANJAY M K",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "totalScore": 44,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 98,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Mastery (Outstanding)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-B9CF37",
+      "sectionScores": {
+        "section-1": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-2": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-3": {
+          "score": 14,
+          "total": 15,
+          "percentage": 93
+        }
+      },
+      "completedAt": "2026-11-23T04:38:40.589Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:38:37.706Z"
+  "lastUpdated": "2026-11-23T04:38:40.869Z"
 }
