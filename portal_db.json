@@ -2169,7 +2169,7 @@
     },
     {
       "_id": "cand-409ee179-c38f-4fcf-a07d-7cc83d06d59c",
-      "candidateId": "INZ-CAND-2026-00058",
+      "candidateId": "INZ-CAND-2026-00037",
       "fullName": "Thejashri T",
       "email": "thejathina@gmail.com",
       "password": "ThejaShri06",
@@ -2200,11 +2200,11 @@
       "jobRoleId": "role-data-analyst",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Rejected",
+      "recruitmentStage": "Registered",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Completed",
-      "testAttempts": 1,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
       "createdAt": "2026-11-23T03:50:17.646Z",
       "updatedAt": "2026-11-23T03:50:17.646Z",
       "assessmentResult": {
@@ -18791,5 +18791,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:32:44.735Z"
+  "lastUpdated": "2026-11-23T04:32:49.732Z"
 }
