@@ -14100,13 +14100,59 @@
       "jobRoleId": "role-java-dev",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Rejected",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T04:09:26.360Z",
-      "updatedAt": "2026-11-23T04:09:26.360Z"
+      "updatedAt": "2026-11-23T04:09:26.360Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_8b4e0016-f20c-4137-9334-160e64e5d7b2",
+        "candidateId": "INZ-CAND-2026-00233",
+        "candidateDisplayId": "INZ-CAND-2026-00233",
+        "candidateName": "Pranav Raj T G",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "PSNA College of Engineering and Technology",
+        "totalScore": 25,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 56,
+        "isPassed": false,
+        "examResult": "Fail",
+        "selectionStatus": "Rejected",
+        "passCutoff": "> 25",
+        "performanceCategory": "Foundational (Competent)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-CD6CA5",
+        "sectionScores": {
+          "section-1": {
+            "score": 10,
+            "total": 15,
+            "percentage": 67
+          },
+          "section-2": {
+            "score": 10,
+            "total": 15,
+            "percentage": 67
+          },
+          "section-3": {
+            "score": 5,
+            "total": 15,
+            "percentage": 33
+          }
+        },
+        "completedAt": "2026-11-23T04:47:24.475Z"
+      },
+      "totalScore": 25,
+      "percentage": 56,
+      "isPassed": false,
+      "examResult": "Fail",
+      "certificateId": "INZ-CERT-2026-CD6CA5",
+      "completedAt": "2026-11-23T04:47:24.475Z"
     },
     {
       "_id": "cand-ceabc3f1-d1a4-49f9-ac8b-ed551bcce676",
@@ -25449,8 +25495,48 @@
         }
       },
       "completedAt": "2026-11-23T04:47:05.580Z"
+    },
+    {
+      "sessionId": "inz_cbt_8b4e0016-f20c-4137-9334-160e64e5d7b2",
+      "candidateId": "INZ-CAND-2026-00233",
+      "candidateDisplayId": "INZ-CAND-2026-00233",
+      "candidateName": "Pranav Raj T G",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "totalScore": 25,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 56,
+      "isPassed": false,
+      "examResult": "Fail",
+      "selectionStatus": "Rejected",
+      "passCutoff": "> 25",
+      "performanceCategory": "Foundational (Competent)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-CD6CA5",
+      "sectionScores": {
+        "section-1": {
+          "score": 10,
+          "total": 15,
+          "percentage": 67
+        },
+        "section-2": {
+          "score": 10,
+          "total": 15,
+          "percentage": 67
+        },
+        "section-3": {
+          "score": 5,
+          "total": 15,
+          "percentage": 33
+        }
+      },
+      "completedAt": "2026-11-23T04:47:24.475Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:47:05.742Z"
+  "lastUpdated": "2026-11-23T04:47:24.652Z"
 }
