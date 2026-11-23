@@ -6725,13 +6725,59 @@
       "jobRoleId": "role-soft-dev",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T03:58:27.443Z",
-      "updatedAt": "2026-11-23T03:58:27.443Z"
+      "updatedAt": "2026-11-23T03:58:27.443Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_5ef9ea60-f00a-4f20-99ac-b6c243baad34",
+        "candidateId": "INZ-CAND-2026-00142",
+        "candidateDisplayId": "INZ-CAND-2026-00142",
+        "candidateName": "Santhosh B",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "PSNA College of Engineering and Technology",
+        "totalScore": 30,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 67,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Proficient (Commendable)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-8FCBE5",
+        "sectionScores": {
+          "section-1": {
+            "score": 11,
+            "total": 15,
+            "percentage": 73
+          },
+          "section-2": {
+            "score": 11,
+            "total": 15,
+            "percentage": 73
+          },
+          "section-3": {
+            "score": 8,
+            "total": 15,
+            "percentage": 53
+          }
+        },
+        "completedAt": "2026-11-23T04:35:10.615Z"
+      },
+      "totalScore": 30,
+      "percentage": 67,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-8FCBE5",
+      "completedAt": "2026-11-23T04:35:10.615Z"
     },
     {
       "_id": "cand-c6ddc6c5-16a0-455a-9cf3-0ca944fa18d4",
@@ -20033,8 +20079,48 @@
         }
       },
       "completedAt": "2026-11-23T04:35:06.789Z"
+    },
+    {
+      "sessionId": "inz_cbt_5ef9ea60-f00a-4f20-99ac-b6c243baad34",
+      "candidateId": "INZ-CAND-2026-00142",
+      "candidateDisplayId": "INZ-CAND-2026-00142",
+      "candidateName": "Santhosh B",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "totalScore": 30,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 67,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Proficient (Commendable)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-8FCBE5",
+      "sectionScores": {
+        "section-1": {
+          "score": 11,
+          "total": 15,
+          "percentage": 73
+        },
+        "section-2": {
+          "score": 11,
+          "total": 15,
+          "percentage": 73
+        },
+        "section-3": {
+          "score": 8,
+          "total": 15,
+          "percentage": 53
+        }
+      },
+      "completedAt": "2026-11-23T04:35:10.615Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:35:06.916Z"
+  "lastUpdated": "2026-11-23T04:35:10.761Z"
 }
