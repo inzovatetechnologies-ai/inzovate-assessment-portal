@@ -6901,13 +6901,59 @@
       "jobRoleId": "role-python-dev",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Rejected",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T03:58:30.228Z",
-      "updatedAt": "2026-11-23T03:58:30.228Z"
+      "updatedAt": "2026-11-23T03:58:30.228Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_16210b2c-3232-4bd6-ac21-1aa53eb55d47",
+        "candidateId": "INZ-CAND-2026-00170",
+        "candidateDisplayId": "INZ-CAND-2026-00170",
+        "candidateName": "JASOTHARA R",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "PSNA College of Engineering and Technology",
+        "totalScore": 16,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 36,
+        "isPassed": false,
+        "examResult": "Fail",
+        "selectionStatus": "Rejected",
+        "passCutoff": "> 25",
+        "performanceCategory": "Needs Improvement",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-BED2E3",
+        "sectionScores": {
+          "section-1": {
+            "score": 5,
+            "total": 15,
+            "percentage": 33
+          },
+          "section-2": {
+            "score": 5,
+            "total": 15,
+            "percentage": 33
+          },
+          "section-3": {
+            "score": 6,
+            "total": 15,
+            "percentage": 40
+          }
+        },
+        "completedAt": "2026-11-23T04:36:16.518Z"
+      },
+      "totalScore": 16,
+      "percentage": 36,
+      "isPassed": false,
+      "examResult": "Fail",
+      "certificateId": "INZ-CERT-2026-BED2E3",
+      "completedAt": "2026-11-23T04:36:16.518Z"
     },
     {
       "_id": "cand-f91319f9-0ba3-45c6-9f3f-a034c46aedaa",
@@ -20754,8 +20800,48 @@
         }
       },
       "completedAt": "2026-11-23T04:36:10.627Z"
+    },
+    {
+      "sessionId": "inz_cbt_16210b2c-3232-4bd6-ac21-1aa53eb55d47",
+      "candidateId": "INZ-CAND-2026-00170",
+      "candidateDisplayId": "INZ-CAND-2026-00170",
+      "candidateName": "JASOTHARA R",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "totalScore": 16,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 36,
+      "isPassed": false,
+      "examResult": "Fail",
+      "selectionStatus": "Rejected",
+      "passCutoff": "> 25",
+      "performanceCategory": "Needs Improvement",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-BED2E3",
+      "sectionScores": {
+        "section-1": {
+          "score": 5,
+          "total": 15,
+          "percentage": 33
+        },
+        "section-2": {
+          "score": 5,
+          "total": 15,
+          "percentage": 33
+        },
+        "section-3": {
+          "score": 6,
+          "total": 15,
+          "percentage": 40
+        }
+      },
+      "completedAt": "2026-11-23T04:36:16.518Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:36:14.269Z"
+  "lastUpdated": "2026-11-23T04:36:16.682Z"
 }
