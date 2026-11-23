@@ -4851,13 +4851,59 @@
       "jobRoleId": "role-soft-dev",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Rejected",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T03:53:37.167Z",
-      "updatedAt": "2026-11-23T03:53:37.167Z"
+      "updatedAt": "2026-11-23T03:53:37.167Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_d7afa2c1-462a-4a64-9747-6d04a2472de0",
+        "candidateId": "INZ-CAND-2026-00087",
+        "candidateDisplayId": "INZ-CAND-2026-00087",
+        "candidateName": "SATHVIGA V",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "PSNA College of Engineering and Technology",
+        "totalScore": 25,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 56,
+        "isPassed": false,
+        "examResult": "Fail",
+        "selectionStatus": "Rejected",
+        "passCutoff": "> 25",
+        "performanceCategory": "Foundational (Competent)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-C4F6FD",
+        "sectionScores": {
+          "section-1": {
+            "score": 8,
+            "total": 15,
+            "percentage": 53
+          },
+          "section-2": {
+            "score": 13,
+            "total": 15,
+            "percentage": 87
+          },
+          "section-3": {
+            "score": 4,
+            "total": 15,
+            "percentage": 27
+          }
+        },
+        "completedAt": "2026-11-23T04:37:25.662Z"
+      },
+      "totalScore": 25,
+      "percentage": 56,
+      "isPassed": false,
+      "examResult": "Fail",
+      "certificateId": "INZ-CERT-2026-C4F6FD",
+      "completedAt": "2026-11-23T04:37:25.662Z"
     },
     {
       "_id": "cand-83f55c45-6ea1-47d6-b595-5d7cdf280ac3",
@@ -21350,8 +21396,48 @@
         }
       },
       "completedAt": "2026-11-23T04:37:19.296Z"
+    },
+    {
+      "sessionId": "inz_cbt_d7afa2c1-462a-4a64-9747-6d04a2472de0",
+      "candidateId": "INZ-CAND-2026-00087",
+      "candidateDisplayId": "INZ-CAND-2026-00087",
+      "candidateName": "SATHVIGA V",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "totalScore": 25,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 56,
+      "isPassed": false,
+      "examResult": "Fail",
+      "selectionStatus": "Rejected",
+      "passCutoff": "> 25",
+      "performanceCategory": "Foundational (Competent)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-C4F6FD",
+      "sectionScores": {
+        "section-1": {
+          "score": 8,
+          "total": 15,
+          "percentage": 53
+        },
+        "section-2": {
+          "score": 13,
+          "total": 15,
+          "percentage": 87
+        },
+        "section-3": {
+          "score": 4,
+          "total": 15,
+          "percentage": 27
+        }
+      },
+      "completedAt": "2026-11-23T04:37:25.662Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:37:23.812Z"
+  "lastUpdated": "2026-11-23T04:37:25.884Z"
 }
