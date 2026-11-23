@@ -12338,6 +12338,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:27:14.694Z",
       "updatedAt": "2026-11-23T04:27:14.694Z"
+    },
+    {
+      "_id": "cand-7346517a-eaa1-46fd-81ff-548dad0060f7",
+      "candidateId": "INZ-CAND-2026-00293",
+      "fullName": "Sriram S",
+      "email": "iamramm8@gmail.com",
+      "password": "9361123688",
+      "mobileNumber": "93611236688",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-04-19",
+      "gender": "Male",
+      "residentialAddress": "madurai,vilangudi",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "625018",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.E. Computer Science and Engineering",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "6.88",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:27:15.809Z",
+      "updatedAt": "2026-11-23T04:27:15.809Z"
     }
   ],
   "assessment_results": [
@@ -15543,5 +15584,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:27:14.852Z"
+  "lastUpdated": "2026-11-23T04:27:15.965Z"
 }
