@@ -5600,6 +5600,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:04:03.420Z",
       "updatedAt": "2026-11-23T04:04:03.420Z"
+    },
+    {
+      "_id": "cand-06c63c61-e978-4cd0-808a-871ee8495174",
+      "candidateId": "INZ-CAND-2026-00181",
+      "fullName": "Jeeva N",
+      "email": "ninjeeva@gmail.com",
+      "password": "password@123",
+      "mobileNumber": "+919787787916",
+      "altMobileNumber": "",
+      "dateOfBirth": "",
+      "gender": "Male",
+      "residentialAddress": "plot 25, M.M.Kovilur privu\nAkshaya Nagar, seelapadi",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "624005",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.Tech Artificial Intelligence and Data Science",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "7.74",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-02",
+      "domainName": "Software Development",
+      "jobRoleId": "role-data-analyst",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:04:06.963Z",
+      "updatedAt": "2026-11-23T04:04:06.963Z"
     }
   ],
   "assessment_results": [
@@ -5845,5 +5886,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:04:06.343Z"
+  "lastUpdated": "2026-11-23T04:04:07.549Z"
 }
