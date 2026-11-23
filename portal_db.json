@@ -906,6 +906,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T03:48:46.294Z",
       "updatedAt": "2026-11-23T03:48:46.294Z"
+    },
+    {
+      "_id": "cand-4e2fe38c-4632-4a63-af8b-a11b215a5d1b",
+      "candidateId": "INZ-CAND-2026-00030",
+      "fullName": "HEMAVARSHINI G",
+      "email": "hemavarshinivarsh@gmail.com",
+      "password": "Hema@2809",
+      "mobileNumber": "9442991887",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-09-28",
+      "gender": "Female",
+      "residentialAddress": "29/12,Rayapuram main road, Tirupur",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "641601",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.Tech Information Technology",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.6",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-java-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T03:49:01.425Z",
+      "updatedAt": "2026-11-23T03:49:01.425Z"
     }
   ],
   "assessment_results": [
@@ -951,5 +992,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:48:46.402Z"
+  "lastUpdated": "2026-11-23T03:49:01.519Z"
 }
