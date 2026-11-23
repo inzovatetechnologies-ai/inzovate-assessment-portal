@@ -3120,6 +3120,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T03:56:19.398Z",
       "updatedAt": "2026-11-23T03:56:19.398Z"
+    },
+    {
+      "_id": "cand-0c314f95-9f33-4461-af8f-003056dc6437",
+      "candidateId": "INZ-CAND-2026-00099",
+      "fullName": "SIROPHIN T. X",
+      "email": "sirophintx@gmail.com",
+      "password": "Siro@2005",
+      "mobileNumber": "+919150375051",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-06-26",
+      "gender": "Female",
+      "residentialAddress": "2/225 school road",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "614803",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.E. Computer Science and Engineering",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.6",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-07",
+      "domainName": "Software Development",
+      "jobRoleId": "role-cyber-analyst",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T03:56:29.448Z",
+      "updatedAt": "2026-11-23T03:56:29.448Z"
     }
   ],
   "assessment_results": [
@@ -3165,5 +3206,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:56:21.047Z"
+  "lastUpdated": "2026-11-23T03:56:29.553Z"
 }
