@@ -3327,13 +3327,59 @@
       "jobRoleId": "role-frontend",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T03:53:11.829Z",
-      "updatedAt": "2026-11-23T03:53:11.829Z"
+      "updatedAt": "2026-11-23T03:53:11.829Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_93e52106-703c-4649-b2c0-92db12059ddb",
+        "candidateId": "INZ-CAND-2026-00086",
+        "candidateDisplayId": "INZ-CAND-2026-00086",
+        "candidateName": "VENUGOPAL P",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "PSNA College of Engineering and Technology",
+        "totalScore": 43,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 96,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Mastery (Outstanding)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-A4E847",
+        "sectionScores": {
+          "section-1": {
+            "score": 14,
+            "total": 15,
+            "percentage": 93
+          },
+          "section-2": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-3": {
+            "score": 14,
+            "total": 15,
+            "percentage": 93
+          }
+        },
+        "completedAt": "2026-11-23T04:20:58.231Z"
+      },
+      "totalScore": 43,
+      "percentage": 96,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-A4E847",
+      "completedAt": "2026-11-23T04:20:58.231Z"
     },
     {
       "_id": "cand-d36dbe3b-c113-4589-8e31-3614eafb0716",
@@ -13068,8 +13114,48 @@
         }
       },
       "completedAt": "2026-11-23T04:20:52.434Z"
+    },
+    {
+      "sessionId": "inz_cbt_93e52106-703c-4649-b2c0-92db12059ddb",
+      "candidateId": "INZ-CAND-2026-00086",
+      "candidateDisplayId": "INZ-CAND-2026-00086",
+      "candidateName": "VENUGOPAL P",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "totalScore": 43,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 96,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Mastery (Outstanding)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-A4E847",
+      "sectionScores": {
+        "section-1": {
+          "score": 14,
+          "total": 15,
+          "percentage": 93
+        },
+        "section-2": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-3": {
+          "score": 14,
+          "total": 15,
+          "percentage": 93
+        }
+      },
+      "completedAt": "2026-11-23T04:20:58.231Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:20:52.569Z"
+  "lastUpdated": "2026-11-23T04:20:58.395Z"
 }
