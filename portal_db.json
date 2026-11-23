@@ -4933,13 +4933,59 @@
       "jobRoleId": "role-data-analyst",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Rejected",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T03:53:53.659Z",
-      "updatedAt": "2026-11-23T03:53:53.659Z"
+      "updatedAt": "2026-11-23T03:53:53.659Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_9eb464f6-7534-467e-b3be-82ac80bed75a",
+        "candidateId": "INZ-CAND-2026-00077",
+        "candidateDisplayId": "INZ-CAND-2026-00077",
+        "candidateName": "Jai Nithin",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "PSNA College of Engineering and Technology",
+        "totalScore": 24,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 53,
+        "isPassed": false,
+        "examResult": "Fail",
+        "selectionStatus": "Rejected",
+        "passCutoff": "> 25",
+        "performanceCategory": "Foundational (Competent)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-14CD57",
+        "sectionScores": {
+          "section-1": {
+            "score": 3,
+            "total": 15,
+            "percentage": 20
+          },
+          "section-2": {
+            "score": 9,
+            "total": 15,
+            "percentage": 60
+          },
+          "section-3": {
+            "score": 12,
+            "total": 15,
+            "percentage": 80
+          }
+        },
+        "completedAt": "2026-11-23T04:36:06.555Z"
+      },
+      "totalScore": 24,
+      "percentage": 53,
+      "isPassed": false,
+      "examResult": "Fail",
+      "certificateId": "INZ-CERT-2026-14CD57",
+      "completedAt": "2026-11-23T04:36:06.555Z"
     },
     {
       "_id": "cand-f324cbb0-b0b5-4df5-b498-1f2eaa60cd15",
@@ -20501,8 +20547,48 @@
         }
       },
       "completedAt": "2026-11-23T04:36:03.360Z"
+    },
+    {
+      "sessionId": "inz_cbt_9eb464f6-7534-467e-b3be-82ac80bed75a",
+      "candidateId": "INZ-CAND-2026-00077",
+      "candidateDisplayId": "INZ-CAND-2026-00077",
+      "candidateName": "Jai Nithin",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "totalScore": 24,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 53,
+      "isPassed": false,
+      "examResult": "Fail",
+      "selectionStatus": "Rejected",
+      "passCutoff": "> 25",
+      "performanceCategory": "Foundational (Competent)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-14CD57",
+      "sectionScores": {
+        "section-1": {
+          "score": 3,
+          "total": 15,
+          "percentage": 20
+        },
+        "section-2": {
+          "score": 9,
+          "total": 15,
+          "percentage": 60
+        },
+        "section-3": {
+          "score": 12,
+          "total": 15,
+          "percentage": 80
+        }
+      },
+      "completedAt": "2026-11-23T04:36:06.555Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:36:03.524Z"
+  "lastUpdated": "2026-11-23T04:36:06.694Z"
 }
