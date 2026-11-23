@@ -4301,7 +4301,7 @@
     },
     {
       "_id": "cand-4520a9fd-9041-4841-961c-fbe90ed5f99c",
-      "candidateId": "INZ-CAND-2026-00135",
+      "candidateId": "INZ-CAND-2026-00190",
       "fullName": "Vaishnavi K",
       "email": "vaishukanagaraj18@gmail.com",
       "password": "vaishu18",
@@ -6304,5 +6304,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:05:00.333Z"
+  "lastUpdated": "2026-11-23T04:05:01.756Z"
 }
