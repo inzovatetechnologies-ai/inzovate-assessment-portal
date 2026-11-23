@@ -5158,20 +5158,20 @@
       "jobRoleId": "role-soft-dev",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Rejected",
       "status": "Registered",
       "deletedAt": null,
       "assessmentStatus": "Completed",
-      "testAttempts": 1,
+      "testAttempts": 2,
       "createdAt": "2026-11-23T03:53:56.705Z",
       "updatedAt": "2026-11-23T03:53:56.705Z",
       "assessmentResult": {
-        "sessionId": "inz_cbt_55adfee0-c7da-43bd-9b67-aff3c25fd5c7",
+        "sessionId": "inz_cbt_7ebf5d3b-e90a-44f5-a30f-66fb080a02df",
         "candidateId": "INZ-CAND-2026-00078",
         "candidateDisplayId": "INZ-CAND-2026-00078",
-        "candidateName": "Candidate",
-        "jobRoleTitle": "Software Developer",
-        "collegeName": "Autonomous Engineering College",
+        "candidateName": "Sowndarya M",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "PSNA College of Engineering and Technology",
         "totalScore": 23,
         "maxScore": 45,
         "totalQuestions": 45,
@@ -5185,17 +5185,17 @@
         "passCutoff": "> 25",
         "performanceCategory": "Foundational (Competent)",
         "status": "Completed",
-        "certificateId": "INZ-CERT-2026-025212",
+        "certificateId": "INZ-CERT-2026-3A8489",
         "sectionScores": {
           "section-1": {
-            "score": 6,
+            "score": 7,
             "total": 15,
-            "percentage": 40
+            "percentage": 47
           },
           "section-2": {
-            "score": 9,
+            "score": 8,
             "total": 15,
-            "percentage": 60
+            "percentage": 53
           },
           "section-3": {
             "score": 8,
@@ -5203,11 +5203,14 @@
             "percentage": 53
           }
         },
-        "completedAt": "2026-11-23T04:30:33.377Z"
+        "completedAt": "2026-11-23T04:43:05.288Z"
       },
       "totalScore": 23,
       "percentage": 51,
-      "certificateId": "INZ-CERT-2026-025212"
+      "certificateId": "INZ-CERT-2026-3A8489",
+      "isPassed": false,
+      "examResult": "Fail",
+      "completedAt": "2026-11-23T04:43:05.288Z"
     },
     {
       "_id": "cand-d6ff05b2-4049-4789-9f9e-463df85cde1b",
@@ -21184,12 +21187,12 @@
       "completedAt": "2026-11-23T04:30:11.484Z"
     },
     {
-      "sessionId": "inz_cbt_55adfee0-c7da-43bd-9b67-aff3c25fd5c7",
+      "sessionId": "inz_cbt_7ebf5d3b-e90a-44f5-a30f-66fb080a02df",
       "candidateId": "INZ-CAND-2026-00078",
       "candidateDisplayId": "INZ-CAND-2026-00078",
-      "candidateName": "Candidate",
-      "jobRoleTitle": "Software Developer",
-      "collegeName": "Autonomous Engineering College",
+      "candidateName": "Sowndarya M",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "PSNA College of Engineering and Technology",
       "totalScore": 23,
       "maxScore": 45,
       "totalQuestions": 45,
@@ -21203,17 +21206,17 @@
       "passCutoff": "> 25",
       "performanceCategory": "Foundational (Competent)",
       "status": "Completed",
-      "certificateId": "INZ-CERT-2026-025212",
+      "certificateId": "INZ-CERT-2026-3A8489",
       "sectionScores": {
         "section-1": {
-          "score": 6,
+          "score": 7,
           "total": 15,
-          "percentage": 40
+          "percentage": 47
         },
         "section-2": {
-          "score": 9,
+          "score": 8,
           "total": 15,
-          "percentage": 60
+          "percentage": 53
         },
         "section-3": {
           "score": 8,
@@ -21221,7 +21224,7 @@
           "percentage": 53
         }
       },
-      "completedAt": "2026-11-23T04:30:33.377Z"
+      "completedAt": "2026-11-23T04:43:05.288Z"
     },
     {
       "sessionId": "inz_cbt_3170de0e-2a0f-49e1-bb78-ea00661a1765",
@@ -24345,5 +24348,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:42:57.978Z"
+  "lastUpdated": "2026-11-23T04:43:05.449Z"
 }
