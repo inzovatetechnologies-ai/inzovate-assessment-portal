@@ -1767,6 +1767,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T03:51:55.937Z",
       "updatedAt": "2026-11-23T03:51:55.937Z"
+    },
+    {
+      "_id": "cand-b733ce72-edd0-452f-92e7-92c7d80164c1",
+      "candidateId": "INZ-CAND-2026-00056",
+      "fullName": "Kavya Muralitharan",
+      "email": "kavyamuralitharan2006@gmail.com",
+      "password": "Kavya2006!",
+      "mobileNumber": "+919791734715",
+      "altMobileNumber": "",
+      "dateOfBirth": "2006-02-08",
+      "gender": "Female",
+      "residentialAddress": "143,jamal hussain nagar,Thanjavur",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "613006",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.E. Computer Science and Engineering and cyber security",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.47",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T03:52:04.928Z",
+      "updatedAt": "2026-11-23T03:52:04.928Z"
     }
   ],
   "assessment_results": [
@@ -1812,5 +1853,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:52:04.784Z"
+  "lastUpdated": "2026-11-23T03:52:06.042Z"
 }
