@@ -1754,13 +1754,59 @@
       "jobRoleId": "role-data-analyst",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T03:51:05.945Z",
-      "updatedAt": "2026-11-23T03:51:05.945Z"
+      "updatedAt": "2026-11-23T03:51:05.945Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_938de46f-6625-4dd1-8093-fa58de476f4f",
+        "candidateId": "INZ-CAND-2026-00075",
+        "candidateDisplayId": "INZ-CAND-2026-00075",
+        "candidateName": "Jaishree R",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "PSNA College of Engineering and Technology",
+        "totalScore": 45,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 100,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Mastery (Outstanding)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-D6E66E",
+        "sectionScores": {
+          "section-1": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-2": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-3": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          }
+        },
+        "completedAt": "2026-11-23T04:08:54.518Z"
+      },
+      "totalScore": 45,
+      "percentage": 100,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-D6E66E",
+      "completedAt": "2026-11-23T04:08:54.518Z"
     },
     {
       "_id": "cand-4196ef79-8a42-4430-bcf5-2ba003d818c3",
@@ -7953,8 +7999,48 @@
         }
       },
       "completedAt": "2026-11-23T04:08:24.244Z"
+    },
+    {
+      "sessionId": "inz_cbt_938de46f-6625-4dd1-8093-fa58de476f4f",
+      "candidateId": "INZ-CAND-2026-00075",
+      "candidateDisplayId": "INZ-CAND-2026-00075",
+      "candidateName": "Jaishree R",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "totalScore": 45,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 100,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Mastery (Outstanding)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-D6E66E",
+      "sectionScores": {
+        "section-1": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-2": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-3": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        }
+      },
+      "completedAt": "2026-11-23T04:08:54.518Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:08:52.708Z"
+  "lastUpdated": "2026-11-23T04:08:54.692Z"
 }
