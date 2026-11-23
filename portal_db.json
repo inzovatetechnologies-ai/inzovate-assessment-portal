@@ -9320,6 +9320,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:15:55.066Z",
       "updatedAt": "2026-11-23T04:15:55.066Z"
+    },
+    {
+      "_id": "cand-d74c61cb-de22-43d0-b3b7-e5d3bade80cb",
+      "candidateId": "INZ-CAND-2026-00261",
+      "fullName": "VARSHINI A",
+      "email": "varshinialagar472@gmail.com",
+      "password": "varshini@1234",
+      "mobileNumber": "898585429",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-09-23",
+      "gender": "Female",
+      "residentialAddress": "M.Maniyakaranpatty,Madur post,Siluvathur via,Dindigul,624306",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "624306",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.TECH.ARTIFICIAL INTELLIGENCE AND DATA SCIENCE",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.05",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-02",
+      "domainName": "Software Development",
+      "jobRoleId": "role-data-analyst",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:16:00.771Z",
+      "updatedAt": "2026-11-23T04:16:00.771Z"
     }
   ],
   "assessment_results": [
@@ -10605,5 +10646,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:15:59.360Z"
+  "lastUpdated": "2026-11-23T04:16:00.949Z"
 }
