@@ -1275,6 +1275,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T03:50:44.256Z",
       "updatedAt": "2026-11-23T03:50:44.256Z"
+    },
+    {
+      "_id": "cand-56e32242-ff7e-4970-b72e-04761e2b6a8d",
+      "candidateId": "INZ-CAND-2026-00041",
+      "fullName": "Hemadharshini K",
+      "email": "hemadharshini837@gmail.com",
+      "password": "hema@5123",
+      "mobileNumber": "+919787353816",
+      "altMobileNumber": "",
+      "dateOfBirth": "2006-06-09",
+      "gender": "Female",
+      "residentialAddress": "Silvarpatti, Silvarpatti Post, Thadicombu(via),\nDindigul - 624709",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "624709",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.Tech Information Technology",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "9.4",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T03:50:46.665Z",
+      "updatedAt": "2026-11-23T03:50:46.665Z"
     }
   ],
   "assessment_results": [
@@ -1320,5 +1361,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:50:45.184Z"
+  "lastUpdated": "2026-11-23T03:50:46.776Z"
 }
