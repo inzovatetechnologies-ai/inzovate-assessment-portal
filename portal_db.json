@@ -5516,7 +5516,7 @@
     },
     {
       "_id": "cand-718cf398-f435-47d5-a9a4-e145c004056a",
-      "candidateId": "INZ-CAND-2026-00098",
+      "candidateId": "INZ-CAND-2026-00066",
       "fullName": "Balashanmugam K S",
       "email": "ksbalashanmugam74@gmail.com",
       "password": "Bala@2006",
@@ -5550,10 +5550,53 @@
       "recruitmentStage": "Registered",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T03:54:54.052Z",
-      "updatedAt": "2026-11-23T03:54:54.052Z"
+      "updatedAt": "2026-11-23T03:54:54.052Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_df193c79-f800-445a-9fa5-f50986da9fa4",
+        "candidateId": "INZ-CAND-2026-00066",
+        "candidateDisplayId": "INZ-CAND-2026-00066",
+        "candidateName": "Candidate",
+        "jobRoleTitle": "Software Developer",
+        "collegeName": "Autonomous Engineering College",
+        "totalScore": 45,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 100,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Mastery (Outstanding)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-6E1A59",
+        "sectionScores": {
+          "section-1": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-2": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-3": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          }
+        },
+        "completedAt": "2026-11-23T04:10:45.116Z"
+      },
+      "totalScore": 45,
+      "percentage": 100,
+      "certificateId": "INZ-CERT-2026-6E1A59"
     },
     {
       "_id": "cand-bf4010d8-60fa-450a-832b-ff7160c0ce7d",
@@ -29286,5 +29329,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T05:52:27.649Z"
+  "lastUpdated": "2026-11-23T05:55:50.884Z"
 }
