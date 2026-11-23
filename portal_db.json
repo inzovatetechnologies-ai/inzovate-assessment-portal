@@ -2713,7 +2713,7 @@
     },
     {
       "_id": "cand-718cf398-f435-47d5-a9a4-e145c004056a",
-      "candidateId": "INZ-CAND-2026-00066",
+      "candidateId": "INZ-CAND-2026-00098",
       "fullName": "Balashanmugam K S",
       "email": "ksbalashanmugam74@gmail.com",
       "password": "Bala@2006",
@@ -3165,5 +3165,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:56:19.618Z"
+  "lastUpdated": "2026-11-23T03:56:21.047Z"
 }
