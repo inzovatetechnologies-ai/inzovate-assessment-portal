@@ -291,6 +291,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T03:43:58.238Z",
       "updatedAt": "2026-11-23T03:43:58.238Z"
+    },
+    {
+      "_id": "cand-7e3f42a9-3b01-4a5e-bccb-b1726924e192",
+      "candidateId": "INZ-CAND-2026-00008",
+      "fullName": "Gayathri T K",
+      "email": "gaya3krish17@gmail.com",
+      "password": "gayuthimma",
+      "mobileNumber": "+91 73394 56393",
+      "altMobileNumber": "",
+      "dateOfBirth": "2006-07-17",
+      "gender": "Female",
+      "residentialAddress": "05, Panthadi Cross street, Madurai-625001.",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "625001",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.Tech Information Technology",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "9.34",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T03:44:26.225Z",
+      "updatedAt": "2026-11-23T03:44:26.225Z"
     }
   ],
   "assessment_results": [
@@ -336,5 +377,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:43:58.330Z"
+  "lastUpdated": "2026-11-23T03:44:26.323Z"
 }
