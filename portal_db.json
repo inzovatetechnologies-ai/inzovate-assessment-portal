@@ -250,6 +250,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T03:43:11.616Z",
       "updatedAt": "2026-11-23T03:43:11.616Z"
+    },
+    {
+      "_id": "cand-0489118d-b18a-449d-b439-c8d1eb62ec6e",
+      "candidateId": "INZ-CAND-2026-00007",
+      "fullName": "Arjun",
+      "email": "arjunp25mca@psnacet.edu.in",
+      "password": "psna@1212",
+      "mobileNumber": "8098946054",
+      "altMobileNumber": "",
+      "dateOfBirth": "2004-04-12",
+      "gender": "Male",
+      "residentialAddress": "3983, TNHB Colony, Villapuram, Madurai-11",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "625011",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "Master of Computer Applications",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "7.56",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T03:43:58.238Z",
+      "updatedAt": "2026-11-23T03:43:58.238Z"
     }
   ],
   "assessment_results": [
@@ -295,5 +336,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:43:11.739Z"
+  "lastUpdated": "2026-11-23T03:43:58.330Z"
 }
