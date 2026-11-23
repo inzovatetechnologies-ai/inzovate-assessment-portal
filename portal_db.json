@@ -7347,6 +7347,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:08:37.186Z",
       "updatedAt": "2026-11-23T04:08:37.186Z"
+    },
+    {
+      "_id": "cand-562f0224-9812-4c64-b05d-23894ec7e51a",
+      "candidateId": "INZ-CAND-2026-00224",
+      "fullName": "DEVADHARSHNI S",
+      "email": "devadharshnisakthivel@gmail.com",
+      "password": "dEVADHARSHNI@19",
+      "mobileNumber": "6374849038",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-09-19",
+      "gender": "Female",
+      "residentialAddress": "5/268,Peumal Kovil street,Kovilur",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "624706",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.E. Computer Science and Engineering",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.3",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-frontend",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:08:39.505Z",
+      "updatedAt": "2026-11-23T04:08:39.505Z"
     }
   ],
   "assessment_results": [
@@ -7792,5 +7833,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:08:38.521Z"
+  "lastUpdated": "2026-11-23T04:08:39.643Z"
 }
