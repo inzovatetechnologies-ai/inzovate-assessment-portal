@@ -19305,13 +19305,59 @@
       "jobRoleId": "role-soft-dev",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T04:52:12.294Z",
-      "updatedAt": "2026-11-23T04:52:12.294Z"
+      "updatedAt": "2026-11-23T04:52:12.294Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_4b07812e-2e33-42b8-9273-e8eb07ef5eff",
+        "candidateId": "INZ-CAND-2026-00327",
+        "candidateDisplayId": "INZ-CAND-2026-00327",
+        "candidateName": "MATHESHWARAN A S",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "PSNA College of Engineering and Technology",
+        "totalScore": 45,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 100,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Mastery (Outstanding)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-CF2B7D",
+        "sectionScores": {
+          "section-1": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-2": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-3": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          }
+        },
+        "completedAt": "2026-11-23T05:14:02.113Z"
+      },
+      "totalScore": 45,
+      "percentage": 100,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-CF2B7D",
+      "completedAt": "2026-11-23T05:14:02.113Z"
     },
     {
       "_id": "cand-9bc68cde-910a-4965-96b4-28d53a289432",
@@ -28817,8 +28863,48 @@
         }
       },
       "completedAt": "2026-11-23T05:13:52.592Z"
+    },
+    {
+      "sessionId": "inz_cbt_4b07812e-2e33-42b8-9273-e8eb07ef5eff",
+      "candidateId": "INZ-CAND-2026-00327",
+      "candidateDisplayId": "INZ-CAND-2026-00327",
+      "candidateName": "MATHESHWARAN A S",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "totalScore": 45,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 100,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Mastery (Outstanding)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-CF2B7D",
+      "sectionScores": {
+        "section-1": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-2": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-3": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        }
+      },
+      "completedAt": "2026-11-23T05:14:02.113Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T05:13:53.053Z"
+  "lastUpdated": "2026-11-23T05:14:02.288Z"
 }
