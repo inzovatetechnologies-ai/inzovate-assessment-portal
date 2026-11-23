@@ -6717,6 +6717,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:07:01.772Z",
       "updatedAt": "2026-11-23T04:07:01.772Z"
+    },
+    {
+      "_id": "cand-2db95b21-033d-4b05-a14b-33e4d4695755",
+      "candidateId": "INZ-CAND-2026-00158",
+      "fullName": "Rohith R",
+      "email": "rohithr23it@psnacet.edu.in",
+      "password": "@Rohith",
+      "mobileNumber": "9345726530",
+      "altMobileNumber": "",
+      "dateOfBirth": "2006-05-22",
+      "gender": "Male",
+      "residentialAddress": "105 plot ,Sabari garden ,Kumaram ,Madurai.",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "625018",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B Tech Information Technology",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.06",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-fullstack",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:07:17.846Z",
+      "updatedAt": "2026-11-23T04:07:17.846Z"
     }
   ],
   "assessment_results": [
@@ -7042,5 +7083,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:07:16.630Z"
+  "lastUpdated": "2026-11-23T04:07:18.015Z"
 }
