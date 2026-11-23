@@ -15668,13 +15668,13 @@
       "jobRoleId": "role-data-analyst",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected",
       "status": "Registered",
       "deletedAt": null,
       "assessmentStatus": "Ready",
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:15:22.888Z",
-      "updatedAt": "2026-11-23T04:15:22.888Z"
+      "updatedAt": "2026-11-23T04:53:21.794Z"
     },
     {
       "_id": "cand-d5cbdc1f-2af1-4b58-8392-85bcaa3003b3",
@@ -27105,5 +27105,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:53:09.816Z"
+  "lastUpdated": "2026-11-23T04:53:21.794Z"
 }
