@@ -17397,13 +17397,59 @@
       "jobRoleId": "role-soft-dev",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T04:37:33.829Z",
-      "updatedAt": "2026-11-23T04:37:33.829Z"
+      "updatedAt": "2026-11-23T04:37:33.829Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_63bb1203-5646-40cd-ae95-b5c0788f1206",
+        "candidateId": "INZ-CAND-2026-00307",
+        "candidateDisplayId": "INZ-CAND-2026-00307",
+        "candidateName": "Haritha M",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "PSNA College of Engineering and Technology",
+        "totalScore": 45,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 100,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Mastery (Outstanding)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-CDA661",
+        "sectionScores": {
+          "section-1": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-2": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-3": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          }
+        },
+        "completedAt": "2026-11-23T04:48:03.969Z"
+      },
+      "totalScore": 45,
+      "percentage": 100,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-CDA661",
+      "completedAt": "2026-11-23T04:48:03.969Z"
     },
     {
       "_id": "cand-d6b8de23-8e1b-48d9-969d-3fa6539a60c4",
@@ -25576,8 +25622,48 @@
         }
       },
       "completedAt": "2026-11-23T04:47:24.475Z"
+    },
+    {
+      "sessionId": "inz_cbt_63bb1203-5646-40cd-ae95-b5c0788f1206",
+      "candidateId": "INZ-CAND-2026-00307",
+      "candidateDisplayId": "INZ-CAND-2026-00307",
+      "candidateName": "Haritha M",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "totalScore": 45,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 100,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Mastery (Outstanding)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-CDA661",
+      "sectionScores": {
+        "section-1": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-2": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-3": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        }
+      },
+      "completedAt": "2026-11-23T04:48:03.969Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:47:27.604Z"
+  "lastUpdated": "2026-11-23T04:48:04.112Z"
 }
