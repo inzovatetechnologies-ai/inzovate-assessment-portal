@@ -2016,7 +2016,7 @@
     },
     {
       "_id": "cand-871bfb25-ac81-4cbd-9684-034938da055f",
-      "candidateId": "INZ-CAND-2026-00065",
+      "candidateId": "INZ-CAND-2026-00106",
       "fullName": "Divyaprabha P",
       "email": "divyaprabha805@gmail.com",
       "password": "divya@12",
@@ -3370,5 +3370,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:56:48.954Z"
+  "lastUpdated": "2026-11-23T03:56:50.863Z"
 }
