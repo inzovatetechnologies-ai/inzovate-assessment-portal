@@ -1521,6 +1521,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T03:51:11.626Z",
       "updatedAt": "2026-11-23T03:51:11.626Z"
+    },
+    {
+      "_id": "cand-4f189a10-3740-4b7b-871c-0fedc128ddbc",
+      "candidateId": "INZ-CAND-2026-00048",
+      "fullName": "P.T. BALAJI",
+      "email": "balajithirukkumaran@gmail.com",
+      "password": "Balaji@2005",
+      "mobileNumber": "+919361763339",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-10-18",
+      "gender": "Male",
+      "residentialAddress": "K.4.POLICE QUARTERS SEELAPADI (PO) TRICHY ROAD,\nDINDIGUL-624005",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "624005",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.Tech - Computer Science And Business Systems",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.00",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-02",
+      "domainName": "Software Development",
+      "jobRoleId": "role-data-analyst",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T03:51:12.528Z",
+      "updatedAt": "2026-11-23T03:51:12.528Z"
     }
   ],
   "assessment_results": [
@@ -1566,5 +1607,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:51:11.772Z"
+  "lastUpdated": "2026-11-23T03:51:13.166Z"
 }
