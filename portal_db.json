@@ -17149,6 +17149,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:41:25.884Z",
       "updatedAt": "2026-11-23T04:41:25.884Z"
+    },
+    {
+      "_id": "cand-830f6c00-3af0-4980-bc41-a25de143ee20",
+      "candidateId": "INZ-CAND-2026-00314",
+      "fullName": "Harini M",
+      "email": "harini05mani@gmail.com",
+      "password": "Harini@30",
+      "mobileNumber": "8807472536",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-08-30",
+      "gender": "Female",
+      "residentialAddress": "2/396,Ramasamy Colony, Raj Nagar, Collectorate (P.O) , Dindigul.",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "624004",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.Tech Information Technology",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.20",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:43:21.034Z",
+      "updatedAt": "2026-11-23T04:43:21.034Z"
     }
   ],
   "assessment_results": [
@@ -24434,5 +24475,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:43:17.993Z"
+  "lastUpdated": "2026-11-23T04:43:21.181Z"
 }
