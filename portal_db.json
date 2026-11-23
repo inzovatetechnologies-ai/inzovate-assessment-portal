@@ -947,6 +947,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T03:49:01.425Z",
       "updatedAt": "2026-11-23T03:49:01.425Z"
+    },
+    {
+      "_id": "cand-e9aa2257-5fa8-4767-88ee-33450e5d2bbd",
+      "candidateId": "INZ-CAND-2026-00031",
+      "fullName": "Kaviya P",
+      "email": "kaviyasarathi05@gmail.com",
+      "password": "kaviya@2005",
+      "mobileNumber": "6382239095",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-06-08",
+      "gender": "Female",
+      "residentialAddress": "Seelpadi, Byepass, Trichy road, Dindigul.",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "624005",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "Master of Computer Application",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.5",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-10",
+      "domainName": "Software Development",
+      "jobRoleId": "role-seo-exec",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T03:49:17.807Z",
+      "updatedAt": "2026-11-23T03:49:17.807Z"
     }
   ],
   "assessment_results": [
@@ -992,5 +1033,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:49:01.519Z"
+  "lastUpdated": "2026-11-23T03:49:17.917Z"
 }
