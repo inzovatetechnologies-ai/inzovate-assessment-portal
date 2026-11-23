@@ -13658,13 +13658,59 @@
       "jobRoleId": "role-soft-dev",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T04:17:00.761Z",
-      "updatedAt": "2026-11-23T04:17:00.761Z"
+      "updatedAt": "2026-11-23T04:17:00.761Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_f973f062-df49-4510-8eaa-406aa148f36c",
+        "candidateId": "INZ-CAND-2026-00269",
+        "candidateDisplayId": "INZ-CAND-2026-00269",
+        "candidateName": "TANUSH R",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "PSNA College of Engineering and Technology",
+        "totalScore": 45,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 100,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Mastery (Outstanding)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-A30ADB",
+        "sectionScores": {
+          "section-1": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-2": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-3": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          }
+        },
+        "completedAt": "2026-11-23T04:35:02.157Z"
+      },
+      "totalScore": 45,
+      "percentage": 100,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-A30ADB",
+      "completedAt": "2026-11-23T04:35:02.157Z"
     },
     {
       "_id": "cand-3b6d5262-db82-4cce-8de8-896d3ac575ca",
@@ -19775,8 +19821,48 @@
         }
       },
       "completedAt": "2026-11-23T04:34:51.585Z"
+    },
+    {
+      "sessionId": "inz_cbt_f973f062-df49-4510-8eaa-406aa148f36c",
+      "candidateId": "INZ-CAND-2026-00269",
+      "candidateDisplayId": "INZ-CAND-2026-00269",
+      "candidateName": "TANUSH R",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "totalScore": 45,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 100,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Mastery (Outstanding)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-A30ADB",
+      "sectionScores": {
+        "section-1": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-2": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-3": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        }
+      },
+      "completedAt": "2026-11-23T04:35:02.157Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:34:51.731Z"
+  "lastUpdated": "2026-11-23T04:35:02.365Z"
 }
