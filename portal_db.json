@@ -6341,7 +6341,7 @@
     },
     {
       "_id": "cand-4af414e3-9ff9-49c5-ae4e-764d694cb087",
-      "candidateId": "INZ-CAND-2026-00115",
+      "candidateId": "INZ-CAND-2026-00301",
       "fullName": "Santhosh R",
       "email": "santhoosh837@gmail.com",
       "password": "123456",
@@ -6372,7 +6372,7 @@
       "jobRoleId": "role-cyber-analyst",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Selected for Next Round",
+      "recruitmentStage": "Registered",
       "status": "Registered",
       "deletedAt": null,
       "assessmentStatus": "Completed",
@@ -19520,5 +19520,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:34:18.876Z"
+  "lastUpdated": "2026-11-23T04:34:20.480Z"
 }
