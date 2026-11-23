@@ -9518,13 +9518,59 @@
       "jobRoleId": "role-proc-assoc-direct",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T04:07:04.237Z",
-      "updatedAt": "2026-11-23T04:07:04.237Z"
+      "updatedAt": "2026-11-23T04:07:04.237Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_176f0dce-c373-4a82-9698-cf43ef60afca",
+        "candidateId": "INZ-CAND-2026-00155",
+        "candidateDisplayId": "INZ-CAND-2026-00155",
+        "candidateName": "PREETHI GOVIKAR G",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "PSNA College of Engineering and Technology",
+        "totalScore": 44,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 98,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Mastery (Outstanding)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-1CDC56",
+        "sectionScores": {
+          "section-1": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-2": {
+            "score": 14,
+            "total": 15,
+            "percentage": 93
+          },
+          "section-3": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          }
+        },
+        "completedAt": "2026-11-23T04:27:44.076Z"
+      },
+      "totalScore": 44,
+      "percentage": 98,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-1CDC56",
+      "completedAt": "2026-11-23T04:27:44.076Z"
     },
     {
       "_id": "cand-403f398a-1b22-4948-81d2-737a4bef609a",
@@ -15839,8 +15885,48 @@
         }
       },
       "completedAt": "2026-11-23T04:27:36.314Z"
+    },
+    {
+      "sessionId": "inz_cbt_176f0dce-c373-4a82-9698-cf43ef60afca",
+      "candidateId": "INZ-CAND-2026-00155",
+      "candidateDisplayId": "INZ-CAND-2026-00155",
+      "candidateName": "PREETHI GOVIKAR G",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "totalScore": 44,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 98,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Mastery (Outstanding)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-1CDC56",
+      "sectionScores": {
+        "section-1": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-2": {
+          "score": 14,
+          "total": 15,
+          "percentage": 93
+        },
+        "section-3": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        }
+      },
+      "completedAt": "2026-11-23T04:27:44.076Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:27:36.474Z"
+  "lastUpdated": "2026-11-23T04:27:44.205Z"
 }
