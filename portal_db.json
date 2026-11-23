@@ -11303,13 +11303,59 @@
       "jobRoleId": "role-data-analyst",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T04:06:47.257Z",
-      "updatedAt": "2026-11-23T04:06:47.257Z"
+      "updatedAt": "2026-11-23T04:06:47.257Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_1907b937-37f3-42a9-b733-07763414e34f",
+        "candidateId": "INZ-CAND-2026-00201",
+        "candidateDisplayId": "INZ-CAND-2026-00201",
+        "candidateName": "Rejo Solomon A",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "PSNA College of Engineering and Technology",
+        "totalScore": 34,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 76,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Proficient (Commendable)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-4840F6",
+        "sectionScores": {
+          "section-1": {
+            "score": 9,
+            "total": 15,
+            "percentage": 60
+          },
+          "section-2": {
+            "score": 13,
+            "total": 15,
+            "percentage": 87
+          },
+          "section-3": {
+            "score": 12,
+            "total": 15,
+            "percentage": 80
+          }
+        },
+        "completedAt": "2026-11-23T04:42:19.579Z"
+      },
+      "totalScore": 34,
+      "percentage": 76,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-4840F6",
+      "completedAt": "2026-11-23T04:42:19.579Z"
     },
     {
       "_id": "cand-e888bd87-d303-49af-abcf-009adb9a677e",
@@ -23912,8 +23958,48 @@
         }
       },
       "completedAt": "2026-11-23T04:42:05.003Z"
+    },
+    {
+      "sessionId": "inz_cbt_1907b937-37f3-42a9-b733-07763414e34f",
+      "candidateId": "INZ-CAND-2026-00201",
+      "candidateDisplayId": "INZ-CAND-2026-00201",
+      "candidateName": "Rejo Solomon A",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "totalScore": 34,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 76,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Proficient (Commendable)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-4840F6",
+      "sectionScores": {
+        "section-1": {
+          "score": 9,
+          "total": 15,
+          "percentage": 60
+        },
+        "section-2": {
+          "score": 13,
+          "total": 15,
+          "percentage": 87
+        },
+        "section-3": {
+          "score": 12,
+          "total": 15,
+          "percentage": 80
+        }
+      },
+      "completedAt": "2026-11-23T04:42:19.579Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:42:05.143Z"
+  "lastUpdated": "2026-11-23T04:42:19.746Z"
 }
