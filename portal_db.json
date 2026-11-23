@@ -3735,6 +3735,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T03:59:00.315Z",
       "updatedAt": "2026-11-23T03:59:00.315Z"
+    },
+    {
+      "_id": "cand-250e7146-7bff-4c26-97c3-8495e56f752d",
+      "candidateId": "INZ-CAND-2026-00128",
+      "fullName": "SANTHANA ESWARI A",
+      "email": "santhanaeswariabi@gmail.com",
+      "password": "Suseela@123",
+      "mobileNumber": "9600332914",
+      "altMobileNumber": "",
+      "dateOfBirth": "2006-04-15",
+      "gender": "Female",
+      "residentialAddress": "14-1-1 A ,Velupillai Street , Ayyampalayam , Dindigul.",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "624204",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.Tech Information Technology",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.2",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-07",
+      "domainName": "Software Development",
+      "jobRoleId": "role-cyber-analyst",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T03:59:13.371Z",
+      "updatedAt": "2026-11-23T03:59:13.371Z"
     }
   ],
   "assessment_results": [
@@ -3780,5 +3821,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:59:08.759Z"
+  "lastUpdated": "2026-11-23T03:59:13.470Z"
 }
