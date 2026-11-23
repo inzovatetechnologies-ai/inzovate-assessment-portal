@@ -7306,6 +7306,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:08:33.486Z",
       "updatedAt": "2026-11-23T04:08:33.486Z"
+    },
+    {
+      "_id": "cand-eb586cfb-8fb0-4784-a4ec-175757ba65a3",
+      "candidateId": "INZ-CAND-2026-00222",
+      "fullName": "Rajesh R",
+      "email": "rajeshravichandran182005@gmail.com",
+      "password": "rajesh@08",
+      "mobileNumber": "9384218083",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-01-08",
+      "gender": "Male",
+      "residentialAddress": "5,Shanmuga Nagar near yadava gents college,new natham road,thiruppalai,madurai",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "625014",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.E. Computer Science and Engineering",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.14",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-fullstack",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:08:37.186Z",
+      "updatedAt": "2026-11-23T04:08:37.186Z"
     }
   ],
   "assessment_results": [
@@ -7751,5 +7792,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:08:35.076Z"
+  "lastUpdated": "2026-11-23T04:08:37.299Z"
 }
