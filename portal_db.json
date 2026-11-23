@@ -4319,6 +4319,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:00:54.253Z",
       "updatedAt": "2026-11-23T04:00:54.253Z"
+    },
+    {
+      "_id": "cand-d9e8f1d7-9050-420c-b5c0-617f70f54aa9",
+      "candidateId": "INZ-CAND-2026-00139",
+      "fullName": "Palani Velavan",
+      "email": "palanivelavanvijay82@gmail.com",
+      "password": "001_Sharmitha@inz",
+      "mobileNumber": "6379768483",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-10-22",
+      "gender": "Male",
+      "residentialAddress": "289B, Pudhu nagar, Thattankulam, Palani.",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "624601",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.E. Computer Science and Engineering",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.53",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-fullstack",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:00:58.188Z",
+      "updatedAt": "2026-11-23T04:00:58.188Z"
     }
   ],
   "assessment_results": [
@@ -4444,5 +4485,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:00:54.357Z"
+  "lastUpdated": "2026-11-23T04:00:58.304Z"
 }
