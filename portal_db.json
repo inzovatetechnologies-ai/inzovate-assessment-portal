@@ -6927,6 +6927,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:07:57.768Z",
       "updatedAt": "2026-11-23T04:07:57.768Z"
+    },
+    {
+      "_id": "cand-ef039d44-f2fd-4cfa-b932-ec175a74b6f7",
+      "candidateId": "INZ-CAND-2026-00214",
+      "fullName": "ARUNACHALAM S",
+      "email": "arunsowmi@gmail.com",
+      "password": "Arun@13579#",
+      "mobileNumber": "+91 9698217544",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-09-22",
+      "gender": "Male",
+      "residentialAddress": "6/20a,ambalakara street,paramakudi-623707",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "623707",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.E. Computer Science and Engineering(Cyber Security)",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "6.9",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-07",
+      "domainName": "Software Development",
+      "jobRoleId": "role-cyber-analyst",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:07:57.656Z",
+      "updatedAt": "2026-11-23T04:07:57.656Z"
     }
   ],
   "assessment_results": [
@@ -7292,5 +7333,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:07:57.951Z"
+  "lastUpdated": "2026-11-23T04:07:59.238Z"
 }
