@@ -1070,6 +1070,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T03:49:33.189Z",
       "updatedAt": "2026-11-23T03:49:33.189Z"
+    },
+    {
+      "_id": "cand-7ad40391-4fcb-4757-b35c-99eed893c6dd",
+      "candidateId": "INZ-CAND-2026-00035",
+      "fullName": "Gopika R",
+      "email": "gopika2376@gmail.com",
+      "password": "Gopi@2311",
+      "mobileNumber": "8838889066",
+      "altMobileNumber": "",
+      "dateOfBirth": "2004-11-23",
+      "gender": "Female",
+      "residentialAddress": "4/25,Middle Street, Mela thattaparai , Thoothukudi",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "628304",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.Tech Information Technology",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.51",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-02",
+      "domainName": "Software Development",
+      "jobRoleId": "role-data-analyst",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T03:50:13.054Z",
+      "updatedAt": "2026-11-23T03:50:13.054Z"
     }
   ],
   "assessment_results": [
@@ -1115,5 +1156,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:49:48.266Z"
+  "lastUpdated": "2026-11-23T03:50:13.191Z"
 }
