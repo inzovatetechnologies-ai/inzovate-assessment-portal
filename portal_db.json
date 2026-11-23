@@ -10757,13 +10757,59 @@
       "jobRoleId": "role-ai-ml",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T04:08:56.113Z",
-      "updatedAt": "2026-11-23T04:08:56.113Z"
+      "updatedAt": "2026-11-23T04:08:56.113Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_5292dcaa-2094-4c85-a3d8-538cde267d73",
+        "candidateId": "INZ-CAND-2026-00238",
+        "candidateDisplayId": "INZ-CAND-2026-00238",
+        "candidateName": "Bavana D",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "PSNA College of Engineering and Technology",
+        "totalScore": 43,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 96,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Mastery (Outstanding)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-F08968",
+        "sectionScores": {
+          "section-1": {
+            "score": 13,
+            "total": 15,
+            "percentage": 87
+          },
+          "section-2": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-3": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          }
+        },
+        "completedAt": "2026-11-23T04:29:09.787Z"
+      },
+      "totalScore": 43,
+      "percentage": 96,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-F08968",
+      "completedAt": "2026-11-23T04:29:09.787Z"
     },
     {
       "_id": "cand-b7c5abb9-40cc-4bfb-8384-6061292ba701",
@@ -16441,8 +16487,48 @@
         }
       },
       "completedAt": "2026-11-23T04:29:06.826Z"
+    },
+    {
+      "sessionId": "inz_cbt_5292dcaa-2094-4c85-a3d8-538cde267d73",
+      "candidateId": "INZ-CAND-2026-00238",
+      "candidateDisplayId": "INZ-CAND-2026-00238",
+      "candidateName": "Bavana D",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "totalScore": 43,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 96,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Mastery (Outstanding)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-F08968",
+      "sectionScores": {
+        "section-1": {
+          "score": 13,
+          "total": 15,
+          "percentage": 87
+        },
+        "section-2": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-3": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        }
+      },
+      "completedAt": "2026-11-23T04:29:09.787Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:29:06.947Z"
+  "lastUpdated": "2026-11-23T04:29:09.942Z"
 }
