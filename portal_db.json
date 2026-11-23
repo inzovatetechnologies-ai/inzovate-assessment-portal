@@ -1029,6 +1029,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T03:49:21.901Z",
       "updatedAt": "2026-11-23T03:49:21.901Z"
+    },
+    {
+      "_id": "cand-c712a30f-eb83-4e4d-8df3-b2de95645ce2",
+      "candidateId": "INZ-CAND-2026-00033",
+      "fullName": "PSNA College of Engineering and technology",
+      "email": "sivas22102005@gmail.com",
+      "password": "Siva@2005",
+      "mobileNumber": "9655895658",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-10-22",
+      "gender": "Male",
+      "residentialAddress": "1/129 Sadaiyandi kovil street, vadipatti Taluk ,T.Anipatti post , T. Andipatti, Madurai - 624218",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "624622",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.E. Artificial Intelligence and Data Science",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-03",
+      "domainName": "Software Development",
+      "jobRoleId": "role-ai-ml",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T03:49:33.189Z",
+      "updatedAt": "2026-11-23T03:49:33.189Z"
     }
   ],
   "assessment_results": [
@@ -1074,5 +1115,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:49:21.995Z"
+  "lastUpdated": "2026-11-23T03:49:33.294Z"
 }
