@@ -7684,13 +7684,59 @@
       "jobRoleId": "role-python-dev",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Rejected",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T03:59:53.386Z",
-      "updatedAt": "2026-11-23T03:59:53.386Z"
+      "updatedAt": "2026-11-23T03:59:53.386Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_e80d45b6-b3c7-4259-952a-07e5c3c71492",
+        "candidateId": "INZ-CAND-2026-00190",
+        "candidateDisplayId": "INZ-CAND-2026-00190",
+        "candidateName": "Vaishnavi K",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "PSNA College of Engineering and Technology",
+        "totalScore": 16,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 36,
+        "isPassed": false,
+        "examResult": "Fail",
+        "selectionStatus": "Rejected",
+        "passCutoff": "> 25",
+        "performanceCategory": "Needs Improvement",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-D79EA1",
+        "sectionScores": {
+          "section-1": {
+            "score": 5,
+            "total": 15,
+            "percentage": 33
+          },
+          "section-2": {
+            "score": 7,
+            "total": 15,
+            "percentage": 47
+          },
+          "section-3": {
+            "score": 4,
+            "total": 15,
+            "percentage": 27
+          }
+        },
+        "completedAt": "2026-11-23T04:38:28.341Z"
+      },
+      "totalScore": 16,
+      "percentage": 36,
+      "isPassed": false,
+      "examResult": "Fail",
+      "certificateId": "INZ-CERT-2026-D79EA1",
+      "completedAt": "2026-11-23T04:38:28.341Z"
     },
     {
       "_id": "cand-e2567c17-cc63-45bc-9651-fb8142c6eff9",
@@ -21988,8 +22034,48 @@
         }
       },
       "completedAt": "2026-11-23T04:38:25.913Z"
+    },
+    {
+      "sessionId": "inz_cbt_e80d45b6-b3c7-4259-952a-07e5c3c71492",
+      "candidateId": "INZ-CAND-2026-00190",
+      "candidateDisplayId": "INZ-CAND-2026-00190",
+      "candidateName": "Vaishnavi K",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "totalScore": 16,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 36,
+      "isPassed": false,
+      "examResult": "Fail",
+      "selectionStatus": "Rejected",
+      "passCutoff": "> 25",
+      "performanceCategory": "Needs Improvement",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-D79EA1",
+      "sectionScores": {
+        "section-1": {
+          "score": 5,
+          "total": 15,
+          "percentage": 33
+        },
+        "section-2": {
+          "score": 7,
+          "total": 15,
+          "percentage": 47
+        },
+        "section-3": {
+          "score": 4,
+          "total": 15,
+          "percentage": 27
+        }
+      },
+      "completedAt": "2026-11-23T04:38:28.341Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:38:26.134Z"
+  "lastUpdated": "2026-11-23T04:38:28.490Z"
 }
