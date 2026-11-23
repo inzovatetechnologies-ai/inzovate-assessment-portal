@@ -14356,13 +14356,59 @@
       "jobRoleId": "role-soft-dev",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T04:20:17.591Z",
-      "updatedAt": "2026-11-23T04:20:17.591Z"
+      "updatedAt": "2026-11-23T04:20:17.591Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_1aa70fd0-732f-4eff-bab6-26679e977d61",
+        "candidateId": "INZ-CAND-2026-00279",
+        "candidateDisplayId": "INZ-CAND-2026-00279",
+        "candidateName": "SRILEKA S",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "psna college of engineering and technology ",
+        "totalScore": 44,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 98,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Mastery (Outstanding)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-D03184",
+        "sectionScores": {
+          "section-1": {
+            "score": 14,
+            "total": 15,
+            "percentage": 93
+          },
+          "section-2": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-3": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          }
+        },
+        "completedAt": "2026-11-23T04:36:10.627Z"
+      },
+      "totalScore": 44,
+      "percentage": 98,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-D03184",
+      "completedAt": "2026-11-23T04:36:10.627Z"
     },
     {
       "_id": "cand-af684d6f-dd0a-4ba6-af39-14f3b523eae7",
@@ -20627,8 +20673,48 @@
         }
       },
       "completedAt": "2026-11-23T04:36:06.480Z"
+    },
+    {
+      "sessionId": "inz_cbt_1aa70fd0-732f-4eff-bab6-26679e977d61",
+      "candidateId": "INZ-CAND-2026-00279",
+      "candidateDisplayId": "INZ-CAND-2026-00279",
+      "candidateName": "SRILEKA S",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "psna college of engineering and technology ",
+      "totalScore": 44,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 98,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Mastery (Outstanding)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-D03184",
+      "sectionScores": {
+        "section-1": {
+          "score": 14,
+          "total": 15,
+          "percentage": 93
+        },
+        "section-2": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-3": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        }
+      },
+      "completedAt": "2026-11-23T04:36:10.627Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:36:08.084Z"
+  "lastUpdated": "2026-11-23T04:36:10.752Z"
 }
