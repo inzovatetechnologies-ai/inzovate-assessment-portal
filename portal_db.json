@@ -3236,13 +3236,59 @@
       "jobRoleId": "role-cyber-analyst",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T03:53:49.712Z",
-      "updatedAt": "2026-11-23T03:53:49.712Z"
+      "updatedAt": "2026-11-23T03:53:49.712Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_3334b509-ffa9-4be8-a407-d2d15da4dbd0",
+        "candidateId": "INZ-CAND-2026-00076",
+        "candidateDisplayId": "INZ-CAND-2026-00076",
+        "candidateName": "Reyabalaveni",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "PSNA College of Engineering and Technology",
+        "totalScore": 44,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 98,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Mastery (Outstanding)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-E00B42",
+        "sectionScores": {
+          "section-1": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-2": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-3": {
+            "score": 14,
+            "total": 15,
+            "percentage": 93
+          }
+        },
+        "completedAt": "2026-11-23T04:14:59.977Z"
+      },
+      "totalScore": 44,
+      "percentage": 98,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-E00B42",
+      "completedAt": "2026-11-23T04:14:59.977Z"
     },
     {
       "_id": "cand-a385b84f-038f-493a-bbc2-ce5cc38859a0",
@@ -9795,8 +9841,48 @@
         }
       },
       "completedAt": "2026-11-23T04:14:58.677Z"
+    },
+    {
+      "sessionId": "inz_cbt_3334b509-ffa9-4be8-a407-d2d15da4dbd0",
+      "candidateId": "INZ-CAND-2026-00076",
+      "candidateDisplayId": "INZ-CAND-2026-00076",
+      "candidateName": "Reyabalaveni",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "totalScore": 44,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 98,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Mastery (Outstanding)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-E00B42",
+      "sectionScores": {
+        "section-1": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-2": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-3": {
+          "score": 14,
+          "total": 15,
+          "percentage": 93
+        }
+      },
+      "completedAt": "2026-11-23T04:14:59.977Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:14:58.825Z"
+  "lastUpdated": "2026-11-23T04:15:00.103Z"
 }
