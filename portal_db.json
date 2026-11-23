@@ -11916,7 +11916,7 @@
     },
     {
       "_id": "cand-b2a48386-3075-44aa-91f9-04b28c8a393b",
-      "candidateId": "INZ-CAND-2026-00284",
+      "candidateId": "INZ-CAND-2026-00291",
       "fullName": "Karunyaa R",
       "email": "karubecs@gmail.com",
       "password": "Karu@2005",
@@ -15244,5 +15244,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:26:46.077Z"
+  "lastUpdated": "2026-11-23T04:26:47.726Z"
 }
