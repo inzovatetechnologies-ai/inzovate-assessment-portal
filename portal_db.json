@@ -4980,6 +4980,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:02:48.994Z",
       "updatedAt": "2026-11-23T04:02:48.994Z"
+    },
+    {
+      "_id": "cand-84435fbd-8508-4d06-b3bc-4142f8af8710",
+      "candidateId": "INZ-CAND-2026-00159",
+      "fullName": "Ragul M",
+      "email": "ragulm3110@gmail.com",
+      "password": "Ragul2005",
+      "mobileNumber": "9566978704",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-10-31",
+      "gender": "Male",
+      "residentialAddress": "8/148 pandian street, gandhi nagar,\nbatlagundu -624202",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "624202",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.E. Computer Science and Engineering",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "7.65",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-03",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:02:50.473Z",
+      "updatedAt": "2026-11-23T04:02:50.473Z"
     }
   ],
   "assessment_results": [
@@ -5145,5 +5186,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:02:49.106Z"
+  "lastUpdated": "2026-11-23T04:02:50.601Z"
 }
