@@ -1603,6 +1603,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T03:51:14.842Z",
       "updatedAt": "2026-11-23T03:51:14.842Z"
+    },
+    {
+      "_id": "cand-82c4e533-634d-4326-a9a4-35d785669cfe",
+      "candidateId": "INZ-CAND-2026-00050",
+      "fullName": "LAVANYA S",
+      "email": "lavanyasivakumar524@gmail.com",
+      "password": "lavanya",
+      "mobileNumber": "+918015330336",
+      "altMobileNumber": "",
+      "dateOfBirth": "2006-05-24",
+      "gender": "Female",
+      "residentialAddress": "12/13 karuppana devar st, neikkarapatti,palani",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "624615",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.Tech Information Technology ",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.0",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-03",
+      "domainName": "Software Development",
+      "jobRoleId": "role-ai-ml",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T03:51:25.962Z",
+      "updatedAt": "2026-11-23T03:51:25.962Z"
     }
   ],
   "assessment_results": [
@@ -1648,5 +1689,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:51:14.980Z"
+  "lastUpdated": "2026-11-23T03:51:26.084Z"
 }
