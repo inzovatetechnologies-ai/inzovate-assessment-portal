@@ -3407,6 +3407,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T03:57:15.180Z",
       "updatedAt": "2026-11-23T03:57:15.180Z"
+    },
+    {
+      "_id": "cand-cdf59452-c4bd-4a49-a74d-7e9a130f5779",
+      "candidateId": "INZ-CAND-2026-00113",
+      "fullName": "Keerthana",
+      "email": "keerthypandian27@gmail.com",
+      "password": "keerthana@27",
+      "mobileNumber": "8610777611",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-08-10",
+      "gender": "Female",
+      "residentialAddress": "11-1-51 Sri Ram Nagar ,Anna Nagar, Pattiveeranpatti ,Dindugal",
+      "district": "",
+      "state": "Tamil Nadu",
+      "pinCode": "624211",
+      "collegeId": "",
+      "collegeName": "P.S.N.A College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.Tech Information Technology",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.34",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-02",
+      "domainName": "Software Development",
+      "jobRoleId": "role-data-analyst",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T03:57:31.439Z",
+      "updatedAt": "2026-11-23T03:57:31.439Z"
     }
   ],
   "assessment_results": [
@@ -3452,5 +3493,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:57:30.404Z"
+  "lastUpdated": "2026-11-23T03:57:31.537Z"
 }
