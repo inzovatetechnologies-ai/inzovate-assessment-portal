@@ -1401,7 +1401,7 @@
     },
     {
       "_id": "cand-1a3ea3fd-fa9c-4f7c-8bfe-248f361c7fc1",
-      "candidateId": "INZ-CAND-2026-00054",
+      "candidateId": "INZ-CAND-2026-00075",
       "fullName": "Jaishree R",
       "email": "jaishreeravichandran44@gmail.com",
       "password": "JSFeb050",
@@ -2468,5 +2468,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:53:40.700Z"
+  "lastUpdated": "2026-11-23T03:53:42.067Z"
 }
