@@ -1890,6 +1890,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T03:52:36.363Z",
       "updatedAt": "2026-11-23T03:52:36.363Z"
+    },
+    {
+      "_id": "cand-107e7b5f-72bb-4607-a584-8afad271cac3",
+      "candidateId": "INZ-CAND-2026-00060",
+      "fullName": "VIKRAMAN K",
+      "email": "vikramvikram7787@gmail.com",
+      "password": "Vikram@7787",
+      "mobileNumber": "9489182526",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-10-20",
+      "gender": "Male",
+      "residentialAddress": "Plot no : 3152 TNHB COLONY,MELA ANUPPANADI, Madurai.",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "625009",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.E. Computer Science and Business System ",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "7.4",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T03:52:42.509Z",
+      "updatedAt": "2026-11-23T03:52:42.509Z"
     }
   ],
   "assessment_results": [
@@ -1935,5 +1976,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:52:36.449Z"
+  "lastUpdated": "2026-11-23T03:52:42.614Z"
 }
