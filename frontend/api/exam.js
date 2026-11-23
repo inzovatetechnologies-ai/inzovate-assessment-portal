@@ -2,6 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import crypto from 'crypto';
 import { getDb, saveExamResultToDb } from './_data/cloudDb.js';
+import { getRoleTitleById, getDomainNameById, getDomainByRoleId } from './_data/rolesData.js';
 
 function loadAllQuestions() {
   const seedPaths = [
@@ -62,9 +63,10 @@ export default async function handler(req, res) {
   const url = new URL(req.url, 'http://localhost');
   const pathParam = url.searchParams.get('path') || '';
   const typeParam = url.searchParams.get('type') || '';
+  const actionParam = url.searchParams.get('action') || '';
   const rawPath = url.pathname.replace(/^\/api\//, '');
 
-  const effectiveRoute = pathParam || typeParam || rawPath;
+  const effectiveRoute = pathParam || typeParam || actionParam || rawPath;
 
   // 1. Question Bank Query
   if (effectiveRoute.includes('question') || typeParam === 'questions') {
@@ -208,13 +210,29 @@ export default async function handler(req, res) {
 
     const certificateId = 'INZ-CERT-2026-' + crypto.randomBytes(3).toString('hex').toUpperCase();
 
+    const resolvedRoleTitle =
+      candidate.jobRoleTitle ||
+      payload.jobRoleTitle ||
+      getRoleTitleById(candidate.jobRoleId || payload.jobRoleId) ||
+      'Software Developer';
+
+    const resolvedDomainName =
+      candidate.domainName ||
+      payload.domainName ||
+      getDomainNameById(candidate.domainId || payload.domainId) ||
+      getDomainByRoleId(candidate.jobRoleId || payload.jobRoleId) ||
+      'Software Development';
+
     const result = {
       sessionId: payload.sessionId || 'session-' + Date.now(),
       candidateId: candidate.candidateId || candidateId || 'INZ-CAND-2026-00001',
       candidateDisplayId: candidate.candidateId || candidateId || 'INZ-CAND-2026-00001',
       candidateName: candidate.fullName || payload.candidateName || 'Candidate',
-      jobRoleTitle: candidate.jobRoleTitle || 'Software Developer',
-      collegeName: candidate.collegeName || 'Autonomous Engineering College',
+      jobRoleId: candidate.jobRoleId || payload.jobRoleId || 'role-soft-dev',
+      jobRoleTitle: resolvedRoleTitle,
+      domainId: candidate.domainId || payload.domainId || 'dom-01',
+      domainName: resolvedDomainName,
+      collegeName: candidate.collegeName || payload.collegeName || 'Autonomous Engineering College',
       totalScore,
       maxScore: 45,
       totalQuestions: 45,

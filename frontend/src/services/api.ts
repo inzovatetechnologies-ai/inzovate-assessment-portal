@@ -425,7 +425,7 @@ export const api = {
     }
   },
 
-  async submitExam(payload: { sessionId?: string; candidateId?: string; submissionType?: string; answers?: any }) {
+  async submitExam(payload: { sessionId?: string; candidateId?: string; submissionType?: string; answers?: any; [key: string]: any }) {
     let res: any;
     try {
       const response = await fetch(`${API_BASE}/exam/submit`, {
@@ -450,6 +450,10 @@ export const api = {
           stored[idx].percentage = res.result.percentage;
           stored[idx].certificateId = res.result.certificateId;
           stored[idx].testAttempts = 1;
+          if (res.result.jobRoleTitle) stored[idx].jobRoleTitle = res.result.jobRoleTitle;
+          if (res.result.domainName) stored[idx].domainName = res.result.domainName;
+          if (res.result.jobRoleId) stored[idx].jobRoleId = res.result.jobRoleId;
+          if (res.result.domainId) stored[idx].domainId = res.result.domainId;
           localStorage.setItem('inzovate_registered_candidates', JSON.stringify(stored));
         }
       } catch (e) {}

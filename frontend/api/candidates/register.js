@@ -3,6 +3,7 @@ import path from 'path';
 import os from 'os';
 import crypto from 'crypto';
 import { getDb, addCandidateToDb } from '../_data/cloudDb.js';
+import { getRoleTitleById, getDomainNameById, getDomainByRoleId } from '../_data/rolesData.js';
 
 const TMP_DIR = path.join(os.tmpdir(), 'inzovate-portal-data');
 if (!fs.existsSync(TMP_DIR)) {
@@ -102,6 +103,17 @@ export default async function handler(req, res) {
     const candidateId = `INZ-CAND-2026-${sequence}`;
     const now = new Date().toISOString();
 
+    const resolvedRoleTitle =
+      payload.jobRoleTitle ||
+      getRoleTitleById(payload.jobRoleId) ||
+      'Software Developer';
+
+    const resolvedDomainName =
+      payload.domainName ||
+      getDomainNameById(payload.domainId) ||
+      getDomainByRoleId(payload.jobRoleId) ||
+      'Software Development';
+
     const newCandidate = {
       _id: 'cand-' + crypto.randomUUID(),
       candidateId,
@@ -131,9 +143,9 @@ export default async function handler(req, res) {
       historyOfArrears: payload.historyOfArrears || '0',
       driveId: payload.driveId || 'INZ-DRIVE-2026-01',
       domainId: payload.domainId || 'dom-01',
-      domainName: payload.domainName || 'Software Development',
+      domainName: resolvedDomainName,
       jobRoleId: payload.jobRoleId,
-      jobRoleTitle: payload.jobRoleTitle || 'Process Associate',
+      jobRoleTitle: resolvedRoleTitle,
       preferredLocation: payload.preferredLocation || 'Chennai / Coimbatore',
       recruitmentStage: 'Registered',
       status: 'Registered',

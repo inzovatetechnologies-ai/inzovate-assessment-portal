@@ -97,7 +97,8 @@ export const CandidateResultPage: React.FC<CandidateResultPageProps> = ({
 
   const candidateName = result?.candidateName || currentUser?.fullName || 'Registered Candidate';
   const candidateId = result?.candidateDisplayId || currentUser?.candidateId || 'INZ-CAND-2026-00001';
-  const jobRole = result?.jobRoleTitle || (currentUser as any)?.domain || 'Software Development Engineer';
+  const jobRole = result?.jobRoleTitle || (currentUser as any)?.jobRoleTitle || (currentUser as any)?.domain || 'Software Developer';
+  const domainName = result?.domainName || (currentUser as any)?.domainName || 'Software Development';
   const collegeName = result?.collegeName || (currentUser as any)?.collegeName || currentUser?.collegeId || 'Autonomous Engineering College';
   const certificateId = result?.certificateId || 'INZ-CERT-2026-PENDING';
   const dateStr = new Date().toLocaleDateString('en-US', { day: 'numeric', month: 'long', year: 'numeric' });
@@ -170,6 +171,10 @@ export const CandidateResultPage: React.FC<CandidateResultPageProps> = ({
           <div class="info-item">
             <strong>Applied Role</strong>
             <span>${jobRole}</span>
+          </div>
+          <div class="info-item">
+            <strong>Target Domain</strong>
+            <span style="color: #0066FF; font-weight: 700;">${domainName}</span>
           </div>
           <div class="info-item">
             <strong>College / Institution</strong>
@@ -391,12 +396,12 @@ export const CandidateResultPage: React.FC<CandidateResultPageProps> = ({
             </div>
 
             <div className="p-4 rounded-xl bg-slate-50 border border-slate-100 space-y-1">
-              <span className="text-[11px] font-medium text-slate-400 uppercase tracking-wide">Applied Role</span>
+              <span className="text-[11px] font-medium text-slate-400 uppercase tracking-wide">Applied Role & Domain</span>
               <p className="text-sm font-bold text-slate-800 flex items-center">
-                <Briefcase className="w-3.5 h-3.5 mr-1.5 text-blue-600" />
-                {jobRole}
+                <Briefcase className="w-3.5 h-3.5 mr-1.5 text-blue-600 shrink-0" />
+                <span>{jobRole}</span>
               </p>
-              <p className="text-xs text-slate-500">Campus Fresher Recruitment 2026</p>
+              <p className="text-xs text-sky-600 font-semibold">{domainName}</p>
             </div>
 
             <div className="p-4 rounded-xl bg-slate-50 border border-slate-100 space-y-1">

@@ -241,6 +241,7 @@ export const AdminDashboard: React.FC = () => {
       (c.email && c.email.toLowerCase().includes(q)) ||
       (c.mobileNumber && c.mobileNumber.toLowerCase().includes(q)) ||
       (c.jobRoleTitle && c.jobRoleTitle.toLowerCase().includes(q)) ||
+      (c.domainName && c.domainName.toLowerCase().includes(q)) ||
       (c.collegeName && c.collegeName.toLowerCase().includes(q));
 
     const matchesStage = stageFilter ? c.recruitmentStage === stageFilter : true;
@@ -347,6 +348,7 @@ export const AdminDashboard: React.FC = () => {
       'Degree',
       'Department',
       'Job Role',
+      'Target Domain',
       'Questions Attempted (/45)',
       'Questions Unattempted (/45)',
       'Aptitude (/15)',
@@ -391,6 +393,7 @@ export const AdminDashboard: React.FC = () => {
         `"${c.degree || ''}"`,
         `"${c.department || ''}"`,
         `"${c.jobRoleTitle || ''}"`,
+        `"${c.domainName || ''}"`,
         attempted,
         unattempted,
         sec1,
@@ -483,7 +486,10 @@ export const AdminDashboard: React.FC = () => {
               <div style="font-size: 11px; color: #64748B;">${c.email}</div>
             </td>
             <td style="padding: 10px; font-size: 11px; color: #334155;">${c.collegeName}</td>
-            <td style="padding: 10px; font-size: 11px; color: #334155;">${c.jobRoleTitle}</td>
+            <td style="padding: 10px; font-size: 11px; color: #334155;">
+              <div style="font-weight: 700; color: #0F172A;">${c.jobRoleTitle || 'Software Developer'}</div>
+              ${c.domainName ? `<div style="font-size: 10px; color: #0284C7; font-weight: 600;">${c.domainName}</div>` : ''}
+            </td>
             <td style="padding: 10px; text-align: center; font-family: monospace; font-weight: bold; color: #0284C7;">${r?.totalAttempted ?? (c.assessmentResult?.totalAttempted ?? (total ? total : 0))}</td>
             <td style="padding: 10px; text-align: center; font-family: monospace;">${sec1}</td>
             <td style="padding: 10px; text-align: center; font-family: monospace;">${sec2}</td>
@@ -576,7 +582,7 @@ export const AdminDashboard: React.FC = () => {
               <th style="width: 120px;">Candidate ID</th>
               <th>Candidate Name & Email</th>
               <th>College</th>
-              <th>Applied Role</th>
+              <th>Applied Role & Domain</th>
               <th style="text-align: center;">Att (/45)</th>
               <th style="text-align: center;">Apt (/15)</th>
               <th style="text-align: center;">Comm (/15)</th>
@@ -1216,10 +1222,11 @@ export const AdminDashboard: React.FC = () => {
                         </td>
 
                         <td className="py-3.5 px-4">
-                          <span className="font-semibold text-slate-800 block">{c.jobRoleTitle}</span>
-                          <span className="text-[11px] text-slate-500 flex items-center space-x-1 mt-0.5">
-                            <GraduationCap className="w-3 h-3 text-slate-400" />
-                            <span>{c.collegeName}</span>
+                          <span className="font-bold text-slate-900 block leading-tight">{c.jobRoleTitle || 'Software Developer'}</span>
+                          <span className="text-[10px] font-semibold text-sky-600 block mt-0.5">{c.domainName || 'Software Development'}</span>
+                          <span className="text-[11px] text-slate-500 flex items-center space-x-1 mt-1">
+                            <GraduationCap className="w-3 h-3 text-slate-400 shrink-0" />
+                            <span className="truncate max-w-[160px]">{c.collegeName}</span>
                           </span>
                         </td>
 
@@ -1254,6 +1261,11 @@ export const AdminDashboard: React.FC = () => {
                                 isPassed ? 'text-emerald-700' : 'text-rose-600'
                               }`}>
                                 {isPassed ? '✓ PASS (>25)' : '✕ FAIL (≤25)'}
+                              </div>
+                              <div className="mt-1">
+                                <span className="inline-block px-1.5 py-0.5 rounded text-[9px] font-bold bg-sky-50 text-sky-700 border border-sky-200 truncate max-w-[130px]" title={c.jobRoleTitle || c.domainName}>
+                                  {c.jobRoleTitle || c.domainName || 'Software Developer'}
+                                </span>
                               </div>
                             </div>
                           ) : (
@@ -1293,6 +1305,11 @@ export const AdminDashboard: React.FC = () => {
                               ✕ Rejected
                             </span>
                           )}
+                          <div className="mt-1">
+                            <span className="inline-block px-1.5 py-0.5 rounded text-[9px] font-semibold text-slate-600 bg-slate-100 border border-slate-200 max-w-[130px] truncate" title={c.domainName || c.jobRoleTitle}>
+                              {c.domainName || c.jobRoleTitle || 'Software Development'}
+                            </span>
+                          </div>
                           <div className="mt-1">
                             <select
                               value={c.recruitmentStage || (isPassed ? 'Selected for Next Round' : 'Rejected')}
@@ -1478,8 +1495,8 @@ export const AdminDashboard: React.FC = () => {
                       </td>
 
                       <td className="py-3.5 px-4">
-                        <span className="font-semibold text-slate-800 block">{c.jobRoleTitle}</span>
-                        <span className="text-[10px] text-sky-600 font-medium">{c.domainName}</span>
+                        <span className="font-semibold text-slate-800 block">{c.jobRoleTitle || 'Software Developer'}</span>
+                        <span className="text-[10px] text-sky-600 font-medium">{c.domainName || 'Software Development'}</span>
                       </td>
 
                       <td className="py-3.5 px-3 text-center">
@@ -1811,10 +1828,10 @@ export const AdminDashboard: React.FC = () => {
               <div className="p-3.5 rounded-xl bg-slate-50 border border-slate-100 space-y-1">
                 <span className="font-bold text-slate-500 uppercase text-[10px]">Recruitment Application</span>
                 <p>
-                  <strong>Applied Role:</strong> {selectedCandidate.jobRoleTitle}
+                  <strong>Applied Role:</strong> {selectedCandidate.jobRoleTitle || 'Software Developer'}
                 </p>
                 <p>
-                  <strong>Domain:</strong> {selectedCandidate.domainName}
+                  <strong>Domain:</strong> {selectedCandidate.domainName || 'Software Development'}
                 </p>
                 <p>
                   <strong>Preferred Location:</strong> {selectedCandidate.preferredLocation || 'Pan-India'}

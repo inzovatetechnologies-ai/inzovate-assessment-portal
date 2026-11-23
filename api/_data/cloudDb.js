@@ -219,6 +219,10 @@ export async function saveExamResultToDb(candidateId, result) {
       const stage = isPassed ? 'Selected for Next Round' : 'Rejected';
       db.candidates[candIdx] = {
         ...db.candidates[candIdx],
+        jobRoleTitle: result.jobRoleTitle || db.candidates[candIdx].jobRoleTitle,
+        domainName: result.domainName || db.candidates[candIdx].domainName,
+        jobRoleId: result.jobRoleId || db.candidates[candIdx].jobRoleId,
+        domainId: result.domainId || db.candidates[candIdx].domainId,
         assessmentStatus: 'Completed',
         assessmentResult: result,
         totalScore: result.totalScore,

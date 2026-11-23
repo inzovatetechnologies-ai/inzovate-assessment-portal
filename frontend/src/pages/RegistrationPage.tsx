@@ -93,7 +93,9 @@ export const RegistrationPage: React.FC<RegistrationPageProps> = ({
     // Step 4: Recruitment
     driveId: 'INZ-DRIVE-2026-01',
     domainId: 'dom-01',
+    domainName: 'Software Development',
     jobRoleId: 'role-soft-dev',
+    jobRoleTitle: 'Software Developer',
     technicalSkills: 'Data Structures, Algorithms, SQL, Java',
     programmingLanguages: 'Java, Python, C++',
     preferredLocation: 'Chennai / Bengaluru / Hybrid',
@@ -195,11 +197,28 @@ export const RegistrationPage: React.FC<RegistrationPageProps> = ({
 
   const handleDomainSelect = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const domId = e.target.value;
-    const matchedRole = jobRoles.find((r) => r.domainId === domId);
+    const matchedDomain = domains.find((d) => d._id === domId);
+    const domainRoles = jobRoles.filter((r) => r.domainId === domId);
+    const matchedRole = domainRoles[0] || jobRoles.find((r) => r.domainId === domId);
     setFormData((prev) => ({
       ...prev,
       domainId: domId,
+      domainName: matchedDomain ? matchedDomain.name : prev.domainName,
       jobRoleId: matchedRole ? matchedRole._id : prev.jobRoleId,
+      jobRoleTitle: matchedRole ? matchedRole.title : prev.jobRoleTitle,
+    }));
+  };
+
+  const handleRoleSelect = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    const roleId = e.target.value;
+    const matchedRole = jobRoles.find((r) => r._id === roleId);
+    const matchedDomain = matchedRole ? domains.find((d) => d._id === matchedRole.domainId) : null;
+    setFormData((prev) => ({
+      ...prev,
+      jobRoleId: roleId,
+      jobRoleTitle: matchedRole ? matchedRole.title : prev.jobRoleTitle,
+      domainId: matchedDomain ? matchedDomain._id : prev.domainId,
+      domainName: matchedDomain ? matchedDomain.name : prev.domainName,
     }));
   };
 
@@ -232,18 +251,38 @@ export const RegistrationPage: React.FC<RegistrationPageProps> = ({
     setLoading(true);
     setErrorMsg(null);
     try {
+      const selectedRole = jobRoles.find((r) => r._id === formData.jobRoleId);
+      const selectedDomain = domains.find((d) => d._id === (selectedRole?.domainId || formData.domainId));
+      const roleTitle = selectedRole?.title || formData.jobRoleTitle || 'Software Developer';
+      const domainName = selectedDomain?.name || formData.domainName || 'Software Development';
+
       const res = await api.registerCandidate({
         ...formData,
+        jobRoleId: selectedRole?._id || formData.jobRoleId,
+        jobRoleTitle: roleTitle,
+        domainId: selectedDomain?._id || formData.domainId,
+        domainName: domainName,
         isEmailVerified: true,
         isMobileVerified: true,
       });
 
       if (res.success) {
+        const enrichedCandidate = {
+          ...(res.candidate || {}),
+          candidateId: res.candidateId || res.candidate?.candidateId,
+          fullName: formData.fullName,
+          email: formData.email,
+          jobRoleId: selectedRole?._id || formData.jobRoleId,
+          jobRoleTitle: roleTitle,
+          domainId: selectedDomain?._id || formData.domainId,
+          domainName: domainName,
+          collegeName: formData.collegeName,
+        };
         setSuccessInfo({
           candidateId: res.candidateId,
           fullName: formData.fullName,
           email: formData.email,
-          candidateObj: res.candidate,
+          candidateObj: enrichedCandidate,
         });
       } else {
         setErrorMsg(res.message);
@@ -802,7 +841,7 @@ export const RegistrationPage: React.FC<RegistrationPageProps> = ({
                 <select
                   name="jobRoleId"
                   value={formData.jobRoleId}
-                  onChange={handleChange}
+                  onChange={handleRoleSelect}
                   className="w-full px-3.5 py-2.5 rounded-lg border border-blue-400 bg-blue-50/50 text-xs font-semibold text-blue-900 focus:ring-2 focus:ring-blue-500 focus:outline-none"
                 >
                   {filteredRoles.length > 0 ? (
@@ -812,7 +851,7 @@ export const RegistrationPage: React.FC<RegistrationPageProps> = ({
                       </option>
                     ))
                   ) : (
-                    <option value="role-process-assoc">Process Associate (ROLE-PA-2026)</option>
+                    <option value="role-soft-dev">Software Developer (SD-01)</option>
                   )}
                 </select>
               </div>
@@ -871,7 +910,7 @@ export const RegistrationPage: React.FC<RegistrationPageProps> = ({
                 <div className="p-2.5 rounded-lg bg-white/80 border border-blue-100">
                   <span className="text-slate-400 block text-[10px] font-semibold">APPLIED ROLE & DOMAIN</span>
                   <span className="font-bold text-blue-700">
-                    {selectedRole ? selectedRole.title : 'Software Developer / Process Associate'}
+                    {selectedRole ? selectedRole.title : (formData.jobRoleTitle || 'Software Developer')} • {domains.find(d => d._id === formData.domainId)?.name || (formData.domainName || 'Software Development')}
                   </span>
                 </div>
               </div>

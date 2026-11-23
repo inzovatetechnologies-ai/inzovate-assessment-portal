@@ -318,10 +318,20 @@ export const ExamInterface: React.FC<ExamInterfaceProps> = ({ currentUser, onExa
     const activeSessionId = sessionId || localStorage.getItem('inzovate_session_id');
     const activeCandidateId = candidateMeta?.id || currentUser?.candidateId;
 
+    const activeRoleTitle = candidateMeta?.jobRoleTitle || (currentUser as any)?.jobRoleTitle || 'Software Developer';
+    const activeDomainName = candidateMeta?.domainName || (currentUser as any)?.domainName || 'Software Development';
+    const activeRoleId = candidateMeta?.jobRoleId || (currentUser as any)?.jobRoleId || 'role-soft-dev';
+    const activeDomainId = candidateMeta?.domainId || (currentUser as any)?.domainId || 'dom-01';
+
     try {
       const res = await api.submitExam({
         sessionId: activeSessionId || undefined,
         candidateId: activeCandidateId,
+        candidateName: candidateMeta?.fullName || currentUser?.fullName,
+        jobRoleId: activeRoleId,
+        jobRoleTitle: activeRoleTitle,
+        domainId: activeDomainId,
+        domainName: activeDomainName,
         submissionType: reason,
         answers: answers
       });
@@ -341,7 +351,10 @@ export const ExamInterface: React.FC<ExamInterfaceProps> = ({ currentUser, onExa
           onExamComplete(res?.result || {
             candidateDisplayId: activeCandidateId,
             candidateName: candidateMeta?.fullName || currentUser?.fullName,
-            jobRoleTitle: candidateMeta?.jobRoleTitle,
+            jobRoleId: activeRoleId,
+            jobRoleTitle: activeRoleTitle,
+            domainId: activeDomainId,
+            domainName: activeDomainName,
             status: 'Completed'
           });
         } else {
@@ -387,7 +400,7 @@ export const ExamInterface: React.FC<ExamInterfaceProps> = ({ currentUser, onExa
               <div className="p-3 bg-slate-900/80 rounded-xl border border-slate-800 text-[11px] text-slate-400 space-y-1 text-left mt-3">
                 <p><span className="text-slate-500">Candidate:</span> <strong className="text-white">{initError.candidate?.fullName || currentUser?.fullName || 'Registered Candidate'}</strong></p>
                 <p><span className="text-slate-500">Candidate ID:</span> <strong className="text-sky-400 font-mono">{initError.candidate?.id || currentUser?.candidateId || 'INZ-CAND-2026-XXXXX'}</strong></p>
-                <p><span className="text-slate-500">Applied Role:</span> <strong className="text-white">{initError.candidate?.jobRoleTitle || 'Process Associate'}</strong></p>
+                <p><span className="text-slate-500">Applied Role:</span> <strong className="text-white">{initError.candidate?.jobRoleTitle || (currentUser as any)?.jobRoleTitle || 'Software Developer'}</strong></p>
               </div>
               <p className="text-[11px] text-slate-400 pt-2">
                 Your responses and proctoring telemetry have been safely recorded in the Inzovate Assessment Engine. Re-attempting is strictly restricted.
@@ -481,7 +494,7 @@ export const ExamInterface: React.FC<ExamInterfaceProps> = ({ currentUser, onExa
               </span>
             </div>
             <p className="text-[11px] text-slate-400">
-              {candidateMeta?.fullName || currentUser?.fullName || 'Candidate'} • ID: {candidateMeta?.id || currentUser?.candidateId || 'N/A'} • Role: {candidateMeta?.jobRoleTitle || 'Process Associate'}
+              {candidateMeta?.fullName || currentUser?.fullName || 'Candidate'} • ID: {candidateMeta?.id || currentUser?.candidateId || 'N/A'} • Role: {candidateMeta?.jobRoleTitle || (currentUser as any)?.jobRoleTitle || 'Software Developer'}
             </p>
           </div>
         </div>
