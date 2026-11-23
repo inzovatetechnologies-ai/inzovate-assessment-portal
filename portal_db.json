@@ -1849,6 +1849,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T03:52:32.136Z",
       "updatedAt": "2026-11-23T03:52:32.136Z"
+    },
+    {
+      "_id": "cand-ea2273a3-d8fc-466a-9140-1c9aac6a7943",
+      "candidateId": "INZ-CAND-2026-00059",
+      "fullName": "Balavignesh B",
+      "email": "balavigneshbharat@gmail.com",
+      "password": "Biriyani@5",
+      "mobileNumber": "9042487929",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-11-05",
+      "gender": "Male",
+      "residentialAddress": "6/38, Asari lane, Nagal Nagar, Dindigul",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "624003",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.Tech Artificial Intellligence and Data Science",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "7.72",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T03:52:36.363Z",
+      "updatedAt": "2026-11-23T03:52:36.363Z"
     }
   ],
   "assessment_results": [
@@ -1894,5 +1935,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:52:32.229Z"
+  "lastUpdated": "2026-11-23T03:52:36.449Z"
 }
