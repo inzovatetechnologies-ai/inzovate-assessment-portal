@@ -14388,6 +14388,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:31:47.617Z",
       "updatedAt": "2026-11-23T04:31:47.617Z"
+    },
+    {
+      "_id": "cand-c1138062-6e22-49d8-91d0-f2eaa0e24af9",
+      "candidateId": "INZ-CAND-2026-00300",
+      "fullName": "Mohamed Aslam K",
+      "email": "www.aslam123456m.k@gmail.com",
+      "password": "Mohamedaslam@28122005",
+      "mobileNumber": "9361311866",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-12-28",
+      "gender": "Male",
+      "residentialAddress": "thiruvegadam nagar, mettupatti,dindigul",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "624002",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.Tech Artificial Intelligence and Data Science",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "7.3",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-03",
+      "domainName": "Software Development",
+      "jobRoleId": "role-ai-ml",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:34:05.321Z",
+      "updatedAt": "2026-11-23T04:34:05.321Z"
     }
   ],
   "assessment_results": [
@@ -19393,5 +19434,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:33:56.534Z"
+  "lastUpdated": "2026-11-23T04:34:05.486Z"
 }
