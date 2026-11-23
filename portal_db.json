@@ -4939,6 +4939,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:02:35.523Z",
       "updatedAt": "2026-11-23T04:02:35.523Z"
+    },
+    {
+      "_id": "cand-eb41aef0-6314-4fda-9d1a-b358b9ae19ae",
+      "candidateId": "INZ-CAND-2026-00158",
+      "fullName": "Dhanaprabha M",
+      "email": "dhanaprabhaprabha@gmail.com",
+      "password": "dhana@2005",
+      "mobileNumber": "+917339045056",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-10-15",
+      "gender": "Female",
+      "residentialAddress": "V.S.K.Kurumpapatti",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "624306",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.Tech Artificial Intelligence and Data Science",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.22",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-03",
+      "domainName": "Software Development",
+      "jobRoleId": "role-ai-ml",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:02:48.994Z",
+      "updatedAt": "2026-11-23T04:02:48.994Z"
     }
   ],
   "assessment_results": [
@@ -5104,5 +5145,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:02:41.579Z"
+  "lastUpdated": "2026-11-23T04:02:49.106Z"
 }
