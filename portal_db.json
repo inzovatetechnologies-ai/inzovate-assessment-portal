@@ -6553,6 +6553,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:06:57.791Z",
       "updatedAt": "2026-11-23T04:06:57.791Z"
+    },
+    {
+      "_id": "cand-0542457f-22cb-4e00-b721-c6019a439701",
+      "candidateId": "INZ-CAND-2026-00153",
+      "fullName": "Muthu Ayyanar S",
+      "email": "muthuayyanarselvaraj@gmail.com",
+      "password": "Muthu@123",
+      "mobileNumber": "9025529291",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-04-21",
+      "gender": "Male",
+      "residentialAddress": "5/17,East Street\nK Ayyapatty",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "624308",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B Tech Computer Science and Business System",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.26",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:07:01.588Z",
+      "updatedAt": "2026-11-23T04:07:01.588Z"
     }
   ],
   "assessment_results": [
@@ -6878,5 +6919,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:06:59.757Z"
+  "lastUpdated": "2026-11-23T04:07:01.692Z"
 }
