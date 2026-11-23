@@ -2915,6 +2915,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T03:55:16.763Z",
       "updatedAt": "2026-11-23T03:55:16.763Z"
+    },
+    {
+      "_id": "cand-1515c049-4073-40af-af5b-35d5cb3cf654",
+      "candidateId": "INZ-CAND-2026-00071",
+      "fullName": "Jayapriya S",
+      "email": "jp2006802@gmail.com",
+      "password": "9442857966",
+      "mobileNumber": "8072689434",
+      "altMobileNumber": "",
+      "dateOfBirth": "2006-03-25",
+      "gender": "Female",
+      "residentialAddress": "VF3M+297\nNH-226\nRajaduraisingham",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "630561",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.E. Computer Science and Engineering",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.6",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T03:55:19.286Z",
+      "updatedAt": "2026-11-23T03:55:19.286Z"
     }
   ],
   "assessment_results": [
@@ -2960,5 +3001,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:55:16.886Z"
+  "lastUpdated": "2026-11-23T03:55:19.431Z"
 }
