@@ -9841,13 +9841,59 @@
       "jobRoleId": "role-fullstack",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T04:08:11.041Z",
-      "updatedAt": "2026-11-23T04:08:11.041Z"
+      "updatedAt": "2026-11-23T04:08:11.041Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_73595580-7cba-43d1-b8c5-73026ba11b3c",
+        "candidateId": "INZ-CAND-2026-00217",
+        "candidateDisplayId": "INZ-CAND-2026-00217",
+        "candidateName": "Vijay Praveen",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "PSNA College of Engineering and Technology",
+        "totalScore": 44,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 98,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Mastery (Outstanding)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-E627FD",
+        "sectionScores": {
+          "section-1": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-2": {
+            "score": 14,
+            "total": 15,
+            "percentage": 93
+          },
+          "section-3": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          }
+        },
+        "completedAt": "2026-11-23T04:27:01.780Z"
+      },
+      "totalScore": 44,
+      "percentage": 98,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-E627FD",
+      "completedAt": "2026-11-23T04:27:01.780Z"
     },
     {
       "_id": "cand-f3f02f63-cae2-4b9b-8386-fb8862e26855",
@@ -15413,8 +15459,48 @@
         }
       },
       "completedAt": "2026-11-23T04:26:55.851Z"
+    },
+    {
+      "sessionId": "inz_cbt_73595580-7cba-43d1-b8c5-73026ba11b3c",
+      "candidateId": "INZ-CAND-2026-00217",
+      "candidateDisplayId": "INZ-CAND-2026-00217",
+      "candidateName": "Vijay Praveen",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "totalScore": 44,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 98,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Mastery (Outstanding)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-E627FD",
+      "sectionScores": {
+        "section-1": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-2": {
+          "score": 14,
+          "total": 15,
+          "percentage": 93
+        },
+        "section-3": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        }
+      },
+      "completedAt": "2026-11-23T04:27:01.780Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:26:55.982Z"
+  "lastUpdated": "2026-11-23T04:27:01.912Z"
 }
