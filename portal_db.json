@@ -13708,6 +13708,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:31:21.332Z",
       "updatedAt": "2026-11-23T04:31:21.332Z"
+    },
+    {
+      "_id": "cand-ccf0dc83-cd6d-4b2d-b52d-2ef5d342a88f",
+      "candidateId": "INZ-CAND-2026-00298",
+      "fullName": "Gnanaprasannambika S",
+      "email": "gnanaprasannambika2206@gmail.com",
+      "password": "Prasanna@2122",
+      "mobileNumber": "6374104868",
+      "altMobileNumber": "",
+      "dateOfBirth": "2006-06-22",
+      "gender": "Female",
+      "residentialAddress": "Periyappa Nagar, Palani.",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "624601",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.E. Computer Science and Engineering",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "9.04",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-03",
+      "domainId": "dom-02",
+      "domainName": "Software Development",
+      "jobRoleId": "role-data-analyst",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:31:44.923Z",
+      "updatedAt": "2026-11-23T04:31:44.923Z"
     }
   ],
   "assessment_results": [
@@ -18113,5 +18154,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:31:36.998Z"
+  "lastUpdated": "2026-11-23T04:31:45.089Z"
 }
