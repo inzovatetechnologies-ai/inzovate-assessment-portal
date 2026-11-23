@@ -6676,6 +6676,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:07:04.237Z",
       "updatedAt": "2026-11-23T04:07:04.237Z"
+    },
+    {
+      "_id": "cand-403f398a-1b22-4948-81d2-737a4bef609a",
+      "candidateId": "INZ-CAND-2026-00209",
+      "fullName": "Sri Dharsan S",
+      "email": "sridharsan006@gmail.com",
+      "password": "sridhar@006",
+      "mobileNumber": "7708104144",
+      "altMobileNumber": "",
+      "dateOfBirth": "2006-02-03",
+      "gender": "Male",
+      "residentialAddress": "Rajeshwari Apartment,A.R.Nagar,Mengles Road,Dindigul-624001",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "624001",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.E. Computer Science and Engineering",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "7.58",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-02",
+      "domainName": "Software Development",
+      "jobRoleId": "role-data-analyst",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:07:01.772Z",
+      "updatedAt": "2026-11-23T04:07:01.772Z"
     }
   ],
   "assessment_results": [
@@ -7001,5 +7042,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:07:04.351Z"
+  "lastUpdated": "2026-11-23T04:07:05.889Z"
 }
