@@ -1234,6 +1234,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T03:50:43.715Z",
       "updatedAt": "2026-11-23T03:50:43.715Z"
+    },
+    {
+      "_id": "cand-2face88f-96f1-43f3-977f-92c8b56968dc",
+      "candidateId": "INZ-CAND-2026-00030",
+      "fullName": "Hemalatha G",
+      "email": "hemagovind04@gmail.com",
+      "password": "hema1482",
+      "mobileNumber": "9363645985",
+      "altMobileNumber": "",
+      "dateOfBirth": "2004-08-14",
+      "gender": "Female",
+      "residentialAddress": "peritakaliamman street,Nilakottai.",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "641004",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "Master of computer Application",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "7.8",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-02",
+      "domainName": "Software Development",
+      "jobRoleId": "role-data-analyst",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T03:50:44.256Z",
+      "updatedAt": "2026-11-23T03:50:44.256Z"
     }
   ],
   "assessment_results": [
@@ -1279,5 +1320,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:50:43.904Z"
+  "lastUpdated": "2026-11-23T03:50:45.184Z"
 }
