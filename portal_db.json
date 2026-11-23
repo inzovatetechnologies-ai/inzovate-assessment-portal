@@ -10848,13 +10848,59 @@
       "jobRoleId": "role-uiux",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T04:06:21.657Z",
-      "updatedAt": "2026-11-23T04:06:21.657Z"
+      "updatedAt": "2026-11-23T04:06:21.657Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_950fe255-c530-4645-8178-3b98a667f765",
+        "candidateId": "INZ-CAND-2026-00199",
+        "candidateDisplayId": "INZ-CAND-2026-00199",
+        "candidateName": "Yuvaveerapandi v",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "PSNA College of Engineering and Technology",
+        "totalScore": 42,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 93,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Mastery (Outstanding)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-AE9061",
+        "sectionScores": {
+          "section-1": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-2": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-3": {
+            "score": 12,
+            "total": 15,
+            "percentage": 80
+          }
+        },
+        "completedAt": "2026-11-23T04:37:47.024Z"
+      },
+      "totalScore": 42,
+      "percentage": 93,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-AE9061",
+      "completedAt": "2026-11-23T04:37:47.024Z"
     },
     {
       "_id": "cand-704faad0-f403-48d0-bde8-8c170c0d4384",
@@ -21604,8 +21650,48 @@
         }
       },
       "completedAt": "2026-11-23T04:37:36.159Z"
+    },
+    {
+      "sessionId": "inz_cbt_950fe255-c530-4645-8178-3b98a667f765",
+      "candidateId": "INZ-CAND-2026-00199",
+      "candidateDisplayId": "INZ-CAND-2026-00199",
+      "candidateName": "Yuvaveerapandi v",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "totalScore": 42,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 93,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Mastery (Outstanding)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-AE9061",
+      "sectionScores": {
+        "section-1": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-2": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-3": {
+          "score": 12,
+          "total": 15,
+          "percentage": 80
+        }
+      },
+      "completedAt": "2026-11-23T04:37:47.024Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:37:46.001Z"
+  "lastUpdated": "2026-11-23T04:37:47.218Z"
 }
