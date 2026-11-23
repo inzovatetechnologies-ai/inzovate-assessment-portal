@@ -2464,6 +2464,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T03:53:49.712Z",
       "updatedAt": "2026-11-23T03:53:49.712Z"
+    },
+    {
+      "_id": "cand-a385b84f-038f-493a-bbc2-ce5cc38859a0",
+      "candidateId": "INZ-CAND-2026-00077",
+      "fullName": "Jai Nithin",
+      "email": "jainithin.2026@gmail.com",
+      "password": "nithin@05",
+      "mobileNumber": "9150437918",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-09-15",
+      "gender": "Male",
+      "residentialAddress": "38 Engineers colony,valluvar colony madurai ",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "625017",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.Tech Computer Science and Business systems",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "6.56",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-02",
+      "domainName": "Software Development",
+      "jobRoleId": "role-data-analyst",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T03:53:53.659Z",
+      "updatedAt": "2026-11-23T03:53:53.659Z"
     }
   ],
   "assessment_results": [
@@ -2509,5 +2550,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:53:49.838Z"
+  "lastUpdated": "2026-11-23T03:53:53.766Z"
 }
