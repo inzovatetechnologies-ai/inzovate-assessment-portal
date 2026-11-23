@@ -2710,6 +2710,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T03:54:37.561Z",
       "updatedAt": "2026-11-23T03:54:37.561Z"
+    },
+    {
+      "_id": "cand-718cf398-f435-47d5-a9a4-e145c004056a",
+      "candidateId": "INZ-CAND-2026-00066",
+      "fullName": "Balashanmugam K S",
+      "email": "ksbalashanmugam74@gmail.com",
+      "password": "Bala@2006",
+      "mobileNumber": "+918668031689",
+      "altMobileNumber": "",
+      "dateOfBirth": "2006-01-20",
+      "gender": "Male",
+      "residentialAddress": "17,Thalaiyari gurunathan kovil street,Madurai-625001",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "625001",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.E. Computer Science and Engineering&Cyber Security",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.7",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-03",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-java-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T03:54:54.052Z",
+      "updatedAt": "2026-11-23T03:54:54.052Z"
     }
   ],
   "assessment_results": [
@@ -2755,5 +2796,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:54:39.398Z"
+  "lastUpdated": "2026-11-23T03:54:54.149Z"
 }
