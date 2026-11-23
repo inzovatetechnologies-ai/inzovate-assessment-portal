@@ -11663,6 +11663,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:24:16.546Z",
       "updatedAt": "2026-11-23T04:24:16.546Z"
+    },
+    {
+      "_id": "cand-00824517-9257-44b4-b52e-31dbd628dc20",
+      "candidateId": "INZ-CAND-2026-00216",
+      "fullName": "Gavin Larsen Packiam S",
+      "email": "gavinlarsenpackiam07@gmail.com",
+      "password": "g@v!n007",
+      "mobileNumber": "+916380669490",
+      "altMobileNumber": "",
+      "dateOfBirth": "2006-01-11",
+      "gender": "Male",
+      "residentialAddress": "5/593,Ramar Colony , NGO Colony, Dindigul\n",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "624005",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.Tech. Artificial Intelligence and Data Science",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "6.9",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-02",
+      "domainName": "Software Development",
+      "jobRoleId": "role-data-analyst",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:24:26.362Z",
+      "updatedAt": "2026-11-23T04:24:26.362Z"
     }
   ],
   "assessment_results": [
@@ -14348,5 +14389,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:24:26.007Z"
+  "lastUpdated": "2026-11-23T04:24:27.790Z"
 }
