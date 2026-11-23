@@ -4109,6 +4109,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T03:59:53.386Z",
       "updatedAt": "2026-11-23T03:59:53.386Z"
+    },
+    {
+      "_id": "cand-e2567c17-cc63-45bc-9651-fb8142c6eff9",
+      "candidateId": "INZ-CAND-2026-00099",
+      "fullName": "SATHIYA K",
+      "email": "sathiyakrishnamoorthy81@gmail.com",
+      "password": "sathiya2006",
+      "mobileNumber": "+918610608903",
+      "altMobileNumber": "",
+      "dateOfBirth": "2006-07-29",
+      "gender": "Female",
+      "residentialAddress": "3/60,SOUTH STREET, V ALANGULAM\nVIRUDHUNAGAR",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "626612",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.TECH INFORMATION TECHNOLOGY",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "8.6",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T03:59:57.751Z",
+      "updatedAt": "2026-11-23T03:59:57.751Z"
     }
   ],
   "assessment_results": [
@@ -4194,5 +4235,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:59:53.491Z"
+  "lastUpdated": "2026-11-23T03:59:57.906Z"
 }
