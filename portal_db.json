@@ -4647,6 +4647,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:01:44.926Z",
       "updatedAt": "2026-11-23T04:01:44.926Z"
+    },
+    {
+      "_id": "cand-2356c39a-1328-46c0-9ff7-0156a351afa6",
+      "candidateId": "INZ-CAND-2026-00148",
+      "fullName": "SAHANA S",
+      "email": "sahanasrinivasan1010@gmail.com",
+      "password": "Sahana10",
+      "mobileNumber": "+91 9345616600",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-10-10",
+      "gender": "Female",
+      "residentialAddress": "4,Ezhil Nagar-I, Nannilam, Thiruvarur",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "610105",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.E. Computer Science and Engineering",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "7.96",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-java-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:01:53.332Z",
+      "updatedAt": "2026-11-23T04:01:53.332Z"
     }
   ],
   "assessment_results": [
@@ -4772,5 +4813,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:01:46.175Z"
+  "lastUpdated": "2026-11-23T04:01:53.433Z"
 }
