@@ -591,13 +591,59 @@
       "jobRoleId": "role-fullstack",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Rejected",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T03:46:10.421Z",
-      "updatedAt": "2026-11-23T03:46:10.421Z"
+      "updatedAt": "2026-11-23T03:46:10.421Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_f09ebe7f-32ca-422a-885b-1379faa6270d",
+        "candidateId": "INZ-CAND-2026-00015",
+        "candidateDisplayId": "INZ-CAND-2026-00015",
+        "candidateName": "Vedha Sri P B",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "PSNA College of Engineering and Technology",
+        "totalScore": 25,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 56,
+        "isPassed": false,
+        "examResult": "Fail",
+        "selectionStatus": "Rejected",
+        "passCutoff": "> 25",
+        "performanceCategory": "Foundational (Competent)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-59D0DB",
+        "sectionScores": {
+          "section-1": {
+            "score": 13,
+            "total": 15,
+            "percentage": 87
+          },
+          "section-2": {
+            "score": 7,
+            "total": 15,
+            "percentage": 47
+          },
+          "section-3": {
+            "score": 5,
+            "total": 15,
+            "percentage": 33
+          }
+        },
+        "completedAt": "2026-11-23T04:10:39.529Z"
+      },
+      "totalScore": 25,
+      "percentage": 56,
+      "isPassed": false,
+      "examResult": "Fail",
+      "certificateId": "INZ-CERT-2026-59D0DB",
+      "completedAt": "2026-11-23T04:10:39.529Z"
     },
     {
       "_id": "cand-a3f54500-dfdb-41cb-9911-5cf6ddb7a21f",
@@ -8457,8 +8503,48 @@
         }
       },
       "completedAt": "2026-11-23T04:10:37.539Z"
+    },
+    {
+      "sessionId": "inz_cbt_f09ebe7f-32ca-422a-885b-1379faa6270d",
+      "candidateId": "INZ-CAND-2026-00015",
+      "candidateDisplayId": "INZ-CAND-2026-00015",
+      "candidateName": "Vedha Sri P B",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "totalScore": 25,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 56,
+      "isPassed": false,
+      "examResult": "Fail",
+      "selectionStatus": "Rejected",
+      "passCutoff": "> 25",
+      "performanceCategory": "Foundational (Competent)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-59D0DB",
+      "sectionScores": {
+        "section-1": {
+          "score": 13,
+          "total": 15,
+          "percentage": 87
+        },
+        "section-2": {
+          "score": 7,
+          "total": 15,
+          "percentage": 47
+        },
+        "section-3": {
+          "score": 5,
+          "total": 15,
+          "percentage": 33
+        }
+      },
+      "completedAt": "2026-11-23T04:10:39.529Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:10:37.711Z"
+  "lastUpdated": "2026-11-23T04:10:39.663Z"
 }
