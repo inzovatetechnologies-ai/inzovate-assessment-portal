@@ -6102,6 +6102,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T04:05:31.001Z",
       "updatedAt": "2026-11-23T04:05:31.001Z"
+    },
+    {
+      "_id": "cand-4824dcf3-c48f-4213-ba14-3ff7897a09db",
+      "candidateId": "INZ-CAND-2026-00195",
+      "fullName": "Monishma M",
+      "email": "ishumonishma@gmail.com",
+      "password": "Ishu_@_2006",
+      "mobileNumber": "+916381141301",
+      "altMobileNumber": "",
+      "dateOfBirth": "2026-11-23",
+      "gender": "Female",
+      "residentialAddress": "52, Palayam bazar road, woraiyur, Trichy -3.",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "620003",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.Tech Artificial Intelligence and Data Science",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "9.19",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-03",
+      "domainName": "Software Development",
+      "jobRoleId": "role-ai-ml",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T04:05:40.556Z",
+      "updatedAt": "2026-11-23T04:05:40.556Z"
     }
   ],
   "assessment_results": [
@@ -6427,5 +6468,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:05:31.101Z"
+  "lastUpdated": "2026-11-23T04:05:40.668Z"
 }
