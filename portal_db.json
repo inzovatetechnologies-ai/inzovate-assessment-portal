@@ -865,6 +865,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T03:48:21.103Z",
       "updatedAt": "2026-11-23T03:48:21.103Z"
+    },
+    {
+      "_id": "cand-e8f30d50-aa5f-4be7-b5ef-9cadc5768289",
+      "candidateId": "INZ-CAND-2026-00029",
+      "fullName": "Dharun Kumar K",
+      "email": "hdharun2209@gmail.com",
+      "password": "Maxverstappen@3",
+      "mobileNumber": "7708496869",
+      "altMobileNumber": "",
+      "dateOfBirth": "2006-05-22",
+      "gender": "Male",
+      "residentialAddress": "13/1/283 Janagai illam , Abigarden ,Oormetchikulam ,Samaynallur ,Madurai -625402",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "625402",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.Tech Information Technology",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "7.62",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T03:48:46.294Z",
+      "updatedAt": "2026-11-23T03:48:46.294Z"
     }
   ],
   "assessment_results": [
@@ -910,5 +951,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:48:41.848Z"
+  "lastUpdated": "2026-11-23T03:48:46.402Z"
 }
