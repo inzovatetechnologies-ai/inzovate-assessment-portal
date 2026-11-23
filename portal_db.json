@@ -5926,13 +5926,59 @@
       "jobRoleId": "role-soft-dev",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T03:55:58.945Z",
-      "updatedAt": "2026-11-23T03:55:58.945Z"
+      "updatedAt": "2026-11-23T03:55:58.945Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_b2b038f0-032d-49c3-94a4-2fb866dc96ca",
+        "candidateId": "INZ-CAND-2026-00094",
+        "candidateDisplayId": "INZ-CAND-2026-00094",
+        "candidateName": "Yuvashree S",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "PSNA College of Engineering and Technology",
+        "totalScore": 31,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 69,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Proficient (Commendable)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-B8D6DB",
+        "sectionScores": {
+          "section-1": {
+            "score": 11,
+            "total": 15,
+            "percentage": 73
+          },
+          "section-2": {
+            "score": 11,
+            "total": 15,
+            "percentage": 73
+          },
+          "section-3": {
+            "score": 9,
+            "total": 15,
+            "percentage": 60
+          }
+        },
+        "completedAt": "2026-11-23T04:44:58.027Z"
+      },
+      "totalScore": 31,
+      "percentage": 69,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-B8D6DB",
+      "completedAt": "2026-11-23T04:44:58.027Z"
     },
     {
       "_id": "cand-acd1634b-2e20-4922-8cda-4ef15e489911",
@@ -24684,8 +24730,48 @@
         }
       },
       "completedAt": "2026-11-23T04:44:53.302Z"
+    },
+    {
+      "sessionId": "inz_cbt_b2b038f0-032d-49c3-94a4-2fb866dc96ca",
+      "candidateId": "INZ-CAND-2026-00094",
+      "candidateDisplayId": "INZ-CAND-2026-00094",
+      "candidateName": "Yuvashree S",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "totalScore": 31,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 69,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Proficient (Commendable)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-B8D6DB",
+      "sectionScores": {
+        "section-1": {
+          "score": 11,
+          "total": 15,
+          "percentage": 73
+        },
+        "section-2": {
+          "score": 11,
+          "total": 15,
+          "percentage": 73
+        },
+        "section-3": {
+          "score": 9,
+          "total": 15,
+          "percentage": 60
+        }
+      },
+      "completedAt": "2026-11-23T04:44:58.027Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:44:53.462Z"
+  "lastUpdated": "2026-11-23T04:44:58.167Z"
 }
