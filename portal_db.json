@@ -3577,13 +3577,59 @@
       "jobRoleId": "role-soft-dev",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T03:52:42.509Z",
-      "updatedAt": "2026-11-23T03:52:42.509Z"
+      "updatedAt": "2026-11-23T03:52:42.509Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_7aa5e550-bb09-4a7d-8345-71c7ce0afa73",
+        "candidateId": "INZ-CAND-2026-00060",
+        "candidateDisplayId": "INZ-CAND-2026-00060",
+        "candidateName": "VIKRAMAN K",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "PSNA College of Engineering and Technology",
+        "totalScore": 45,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 100,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Mastery (Outstanding)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-BB0EC9",
+        "sectionScores": {
+          "section-1": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-2": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-3": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          }
+        },
+        "completedAt": "2026-11-23T04:29:20.243Z"
+      },
+      "totalScore": 45,
+      "percentage": 100,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-BB0EC9",
+      "completedAt": "2026-11-23T04:29:20.243Z"
     },
     {
       "_id": "cand-fb9650b7-d852-4dd8-9204-2ca19859a873",
@@ -16613,8 +16659,48 @@
         }
       },
       "completedAt": "2026-11-23T04:29:14.295Z"
+    },
+    {
+      "sessionId": "inz_cbt_7aa5e550-bb09-4a7d-8345-71c7ce0afa73",
+      "candidateId": "INZ-CAND-2026-00060",
+      "candidateDisplayId": "INZ-CAND-2026-00060",
+      "candidateName": "VIKRAMAN K",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "totalScore": 45,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 100,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Mastery (Outstanding)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-BB0EC9",
+      "sectionScores": {
+        "section-1": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-2": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-3": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        }
+      },
+      "completedAt": "2026-11-23T04:29:20.243Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:29:15.654Z"
+  "lastUpdated": "2026-11-23T04:29:20.406Z"
 }
