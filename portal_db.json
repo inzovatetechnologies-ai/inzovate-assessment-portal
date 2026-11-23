@@ -15627,13 +15627,59 @@
       "jobRoleId": "role-soft-dev",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Rejected",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T04:15:22.135Z",
-      "updatedAt": "2026-11-23T04:15:22.135Z"
+      "updatedAt": "2026-11-23T04:15:22.135Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_e5124fb1-7d06-40d0-b6c0-f20cfb8df02b",
+        "candidateId": "INZ-CAND-2026-00253",
+        "candidateDisplayId": "INZ-CAND-2026-00253",
+        "candidateName": "Karthika R",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "PSNA College of Engineering and Technology",
+        "totalScore": 24,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 53,
+        "isPassed": false,
+        "examResult": "Fail",
+        "selectionStatus": "Rejected",
+        "passCutoff": "> 25",
+        "performanceCategory": "Foundational (Competent)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-14CB32",
+        "sectionScores": {
+          "section-1": {
+            "score": 5,
+            "total": 15,
+            "percentage": 33
+          },
+          "section-2": {
+            "score": 9,
+            "total": 15,
+            "percentage": 60
+          },
+          "section-3": {
+            "score": 10,
+            "total": 15,
+            "percentage": 67
+          }
+        },
+        "completedAt": "2026-11-23T04:53:48.191Z"
+      },
+      "totalScore": 24,
+      "percentage": 53,
+      "isPassed": false,
+      "examResult": "Fail",
+      "certificateId": "INZ-CERT-2026-14CB32",
+      "completedAt": "2026-11-23T04:53:48.191Z"
     },
     {
       "_id": "cand-63f4cb82-a28f-45d6-b357-0a6390bbb759",
@@ -27188,8 +27234,48 @@
         }
       },
       "completedAt": "2026-11-23T04:53:32.376Z"
+    },
+    {
+      "sessionId": "inz_cbt_e5124fb1-7d06-40d0-b6c0-f20cfb8df02b",
+      "candidateId": "INZ-CAND-2026-00253",
+      "candidateDisplayId": "INZ-CAND-2026-00253",
+      "candidateName": "Karthika R",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "totalScore": 24,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 53,
+      "isPassed": false,
+      "examResult": "Fail",
+      "selectionStatus": "Rejected",
+      "passCutoff": "> 25",
+      "performanceCategory": "Foundational (Competent)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-14CB32",
+      "sectionScores": {
+        "section-1": {
+          "score": 5,
+          "total": 15,
+          "percentage": 33
+        },
+        "section-2": {
+          "score": 9,
+          "total": 15,
+          "percentage": 60
+        },
+        "section-3": {
+          "score": 10,
+          "total": 15,
+          "percentage": 67
+        }
+      },
+      "completedAt": "2026-11-23T04:53:48.191Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:53:32.511Z"
+  "lastUpdated": "2026-11-23T04:53:48.330Z"
 }
