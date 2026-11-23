@@ -6626,13 +6626,59 @@
       "jobRoleId": "role-ai-ml",
       "jobRoleTitle": "Process Associate",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-23T04:02:48.994Z",
-      "updatedAt": "2026-11-23T04:02:48.994Z"
+      "updatedAt": "2026-11-23T04:02:48.994Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_23f11c40-9e26-49e9-aaaf-24619c368fee",
+        "candidateId": "INZ-CAND-2026-00174",
+        "candidateDisplayId": "INZ-CAND-2026-00174",
+        "candidateName": "Dhanaprabha M",
+        "jobRoleTitle": "Process Associate",
+        "collegeName": "PSNA College of Engineering and Technology",
+        "totalScore": 45,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 100,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Mastery (Outstanding)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-A4A2FC",
+        "sectionScores": {
+          "section-1": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-2": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-3": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          }
+        },
+        "completedAt": "2026-11-23T04:20:33.404Z"
+      },
+      "totalScore": 45,
+      "percentage": 100,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-A4A2FC",
+      "completedAt": "2026-11-23T04:20:33.404Z"
     },
     {
       "_id": "cand-84435fbd-8508-4d06-b3bc-4142f8af8710",
@@ -12556,8 +12602,48 @@
         }
       },
       "completedAt": "2026-11-23T04:20:23.432Z"
+    },
+    {
+      "sessionId": "inz_cbt_23f11c40-9e26-49e9-aaaf-24619c368fee",
+      "candidateId": "INZ-CAND-2026-00174",
+      "candidateDisplayId": "INZ-CAND-2026-00174",
+      "candidateName": "Dhanaprabha M",
+      "jobRoleTitle": "Process Associate",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "totalScore": 45,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 100,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Mastery (Outstanding)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-A4A2FC",
+      "sectionScores": {
+        "section-1": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-2": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-3": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        }
+      },
+      "completedAt": "2026-11-23T04:20:33.404Z"
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T04:20:26.500Z"
+  "lastUpdated": "2026-11-23T04:20:33.561Z"
 }
