@@ -1480,6 +1480,47 @@
       "testAttempts": 0,
       "createdAt": "2026-11-23T03:51:09.981Z",
       "updatedAt": "2026-11-23T03:51:09.981Z"
+    },
+    {
+      "_id": "cand-738f31f8-d2b9-45e6-a267-d51c2cdeb7a5",
+      "candidateId": "INZ-CAND-2026-00047",
+      "fullName": "Karthikeyan S",
+      "email": "karthikeyankk0059@gmail.com",
+      "password": "Karthi@6745",
+      "mobileNumber": "9629734930",
+      "altMobileNumber": "",
+      "dateOfBirth": "2005-02-05",
+      "gender": "Male",
+      "residentialAddress": "No-185, Muniyandi Kovil Street, Potramarai nagar, vilangudi, Madurai,Tamil Nadu",
+      "district": "Dindigul",
+      "state": "Tamil Nadu",
+      "pinCode": "625018",
+      "collegeId": "col-25",
+      "collegeName": "PSNA College of Engineering and Technology",
+      "universityRegisterNumber": "",
+      "degree": "B.Tech Computer Science and Business Systems",
+      "branch": "Engineering",
+      "yearOfPassing": "2026",
+      "graduationYear": "2026",
+      "cgpa": "7.20",
+      "sslcPercentage": "",
+      "hscPercentage": "",
+      "standingArrears": "0",
+      "arrearStatus": "No History",
+      "historyOfArrears": "0",
+      "driveId": "INZ-DRIVE-2026-01",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Process Associate",
+      "preferredLocation": "Chennai / Bengaluru / Hybrid",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
+      "createdAt": "2026-11-23T03:51:11.626Z",
+      "updatedAt": "2026-11-23T03:51:11.626Z"
     }
   ],
   "assessment_results": [
@@ -1525,5 +1566,5 @@
     }
   ],
   "exam_sessions": [],
-  "lastUpdated": "2026-11-23T03:51:10.128Z"
+  "lastUpdated": "2026-11-23T03:51:11.772Z"
 }
