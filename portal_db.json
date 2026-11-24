@@ -6865,7 +6865,7 @@
     },
     {
       "_id": "cand-ec481334-a5df-4070-b4fc-7072f74a6254",
-      "candidateId": "INZ-CAND-2026-00199",
+      "candidateId": "INZ-CAND-2026-00213",
       "fullName": "Mahendra Kumar T",
       "email": "mahendrakumart46@gmail.com",
       "password": "Kumar@.1234",
@@ -7447,5 +7447,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T04:58:17.715Z"
+  "lastUpdated": "2026-11-24T04:58:27.464Z"
 }
