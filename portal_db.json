@@ -4610,7 +4610,7 @@
     },
     {
       "_id": "cand-954d662e-110d-47af-a9f2-ab85c46a6113",
-      "candidateId": "INZ-CAND-2026-00123",
+      "candidateId": "INZ-CAND-2026-00154",
       "fullName": "Kaushik C",
       "email": "kaushikchandrasekar1103@gmail.com",
       "password": "Kaushik@03",
@@ -5889,5 +5889,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T04:53:20.804Z"
+  "lastUpdated": "2026-11-24T04:53:22.448Z"
 }
