@@ -12365,13 +12365,62 @@
       "jobRoleId": "role-bde",
       "jobRoleTitle": "Business Development Executive",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Rejected",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-24T04:59:37.793Z",
-      "updatedAt": "2026-11-24T04:59:37.793Z"
+      "updatedAt": "2026-11-24T04:59:37.793Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_e116d4c9-70fd-4786-8944-71aafeab3de2",
+        "candidateId": "INZ-CAND-2026-00199",
+        "candidateDisplayId": "INZ-CAND-2026-00199",
+        "candidateName": "Nithesh S",
+        "jobRoleId": "role-bde",
+        "jobRoleTitle": "Business Development Executive",
+        "domainId": "dom-11",
+        "domainName": "Business & Sales",
+        "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+        "totalScore": 13,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 23,
+        "totalQuestionsAttempted": 23,
+        "unattempted": 22,
+        "percentage": 29,
+        "isPassed": false,
+        "examResult": "Fail",
+        "selectionStatus": "Rejected",
+        "passCutoff": "> 25",
+        "performanceCategory": "Needs Improvement",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-E5D2D8",
+        "sectionScores": {
+          "section-1": {
+            "score": 6,
+            "total": 15,
+            "percentage": 40
+          },
+          "section-2": {
+            "score": 4,
+            "total": 15,
+            "percentage": 27
+          },
+          "section-3": {
+            "score": 3,
+            "total": 15,
+            "percentage": 20
+          }
+        },
+        "completedAt": "2026-11-24T05:29:45.568Z"
+      },
+      "totalScore": 13,
+      "percentage": 29,
+      "isPassed": false,
+      "examResult": "Fail",
+      "certificateId": "INZ-CERT-2026-E5D2D8",
+      "completedAt": "2026-11-24T05:29:45.568Z"
     },
     {
       "_id": "cand-39161680-6ae4-4110-8f16-de1550a29ffa",
@@ -19624,10 +19673,53 @@
         }
       },
       "completedAt": "2026-11-24T05:29:26.494Z"
+    },
+    {
+      "sessionId": "inz_cbt_e116d4c9-70fd-4786-8944-71aafeab3de2",
+      "candidateId": "INZ-CAND-2026-00199",
+      "candidateDisplayId": "INZ-CAND-2026-00199",
+      "candidateName": "Nithesh S",
+      "jobRoleId": "role-bde",
+      "jobRoleTitle": "Business Development Executive",
+      "domainId": "dom-11",
+      "domainName": "Business & Sales",
+      "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+      "totalScore": 13,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 23,
+      "totalQuestionsAttempted": 23,
+      "unattempted": 22,
+      "percentage": 29,
+      "isPassed": false,
+      "examResult": "Fail",
+      "selectionStatus": "Rejected",
+      "passCutoff": "> 25",
+      "performanceCategory": "Needs Improvement",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-E5D2D8",
+      "sectionScores": {
+        "section-1": {
+          "score": 6,
+          "total": 15,
+          "percentage": 40
+        },
+        "section-2": {
+          "score": 4,
+          "total": 15,
+          "percentage": 27
+        },
+        "section-3": {
+          "score": 3,
+          "total": 15,
+          "percentage": 20
+        }
+      },
+      "completedAt": "2026-11-24T05:29:45.568Z"
     }
   ],
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:29:26.637Z"
+  "lastUpdated": "2026-11-24T05:29:45.728Z"
 }
