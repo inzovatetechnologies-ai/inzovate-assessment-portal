@@ -4266,15 +4266,15 @@
       "jobRoleId": "role-soft-dev",
       "jobRoleTitle": "Software Developer",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Selected for Next Round",
+      "recruitmentStage": "Rejected",
       "status": "Registered",
       "deletedAt": null,
       "assessmentStatus": "Completed",
-      "testAttempts": 1,
+      "testAttempts": 2,
       "createdAt": "2026-11-24T04:47:19.596Z",
       "updatedAt": "2026-11-24T04:47:19.596Z",
       "assessmentResult": {
-        "sessionId": "inz_cbt_a2e07a22-3485-4778-93e8-7fc8960da31a",
+        "sessionId": "inz_cbt_8379fa8c-4cd7-4590-ba6b-cd135bded33c",
         "candidateId": "INZ-CAND-2026-00071",
         "candidateDisplayId": "INZ-CAND-2026-00071",
         "candidateName": "Dharanisri S",
@@ -4283,45 +4283,45 @@
         "domainId": "dom-01",
         "domainName": "Software Development",
         "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
-        "totalScore": 37,
+        "totalScore": 12,
         "maxScore": 45,
         "totalQuestions": 45,
         "totalAttempted": 45,
         "totalQuestionsAttempted": 45,
         "unattempted": 0,
-        "percentage": 82,
-        "isPassed": true,
-        "examResult": "Pass",
-        "selectionStatus": "Selected for Next Round",
+        "percentage": 27,
+        "isPassed": false,
+        "examResult": "Fail",
+        "selectionStatus": "Rejected",
         "passCutoff": "> 25",
-        "performanceCategory": "Mastery (Outstanding)",
+        "performanceCategory": "Needs Improvement",
         "status": "Completed",
-        "certificateId": "INZ-CERT-2026-F8573F",
+        "certificateId": "INZ-CERT-2026-4F3D5E",
         "sectionScores": {
           "section-1": {
-            "score": 13,
+            "score": 4,
             "total": 15,
-            "percentage": 87
+            "percentage": 27
           },
           "section-2": {
-            "score": 14,
+            "score": 4,
             "total": 15,
-            "percentage": 93
+            "percentage": 27
           },
           "section-3": {
-            "score": 10,
+            "score": 4,
             "total": 15,
-            "percentage": 67
+            "percentage": 27
           }
         },
-        "completedAt": "2026-11-24T05:16:18.157Z"
+        "completedAt": "2026-11-24T05:20:23.090Z"
       },
-      "totalScore": 37,
-      "percentage": 82,
-      "isPassed": true,
-      "examResult": "Pass",
-      "certificateId": "INZ-CERT-2026-F8573F",
-      "completedAt": "2026-11-24T05:16:18.157Z"
+      "totalScore": 12,
+      "percentage": 27,
+      "isPassed": false,
+      "examResult": "Fail",
+      "certificateId": "INZ-CERT-2026-4F3D5E",
+      "completedAt": "2026-11-24T05:20:23.090Z"
     },
     {
       "_id": "cand-d842b63b-93e0-4f09-810c-e4786cd02377",
@@ -14331,7 +14331,7 @@
       "completedAt": "2026-11-24T05:16:11.533Z"
     },
     {
-      "sessionId": "inz_cbt_a2e07a22-3485-4778-93e8-7fc8960da31a",
+      "sessionId": "inz_cbt_8379fa8c-4cd7-4590-ba6b-cd135bded33c",
       "candidateId": "INZ-CAND-2026-00071",
       "candidateDisplayId": "INZ-CAND-2026-00071",
       "candidateName": "Dharanisri S",
@@ -14340,38 +14340,38 @@
       "domainId": "dom-01",
       "domainName": "Software Development",
       "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
-      "totalScore": 37,
+      "totalScore": 12,
       "maxScore": 45,
       "totalQuestions": 45,
       "totalAttempted": 45,
       "totalQuestionsAttempted": 45,
       "unattempted": 0,
-      "percentage": 82,
-      "isPassed": true,
-      "examResult": "Pass",
-      "selectionStatus": "Selected for Next Round",
+      "percentage": 27,
+      "isPassed": false,
+      "examResult": "Fail",
+      "selectionStatus": "Rejected",
       "passCutoff": "> 25",
-      "performanceCategory": "Mastery (Outstanding)",
+      "performanceCategory": "Needs Improvement",
       "status": "Completed",
-      "certificateId": "INZ-CERT-2026-F8573F",
+      "certificateId": "INZ-CERT-2026-4F3D5E",
       "sectionScores": {
         "section-1": {
-          "score": 13,
+          "score": 4,
           "total": 15,
-          "percentage": 87
+          "percentage": 27
         },
         "section-2": {
-          "score": 14,
+          "score": 4,
           "total": 15,
-          "percentage": 93
+          "percentage": 27
         },
         "section-3": {
-          "score": 10,
+          "score": 4,
           "total": 15,
-          "percentage": 67
+          "percentage": 27
         }
       },
-      "completedAt": "2026-11-24T05:16:18.157Z"
+      "completedAt": "2026-11-24T05:20:23.090Z"
     },
     {
       "sessionId": "inz_cbt_feba455d-fe4e-4180-8bb8-9d487444c291",
@@ -15280,5 +15280,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:20:15.447Z"
+  "lastUpdated": "2026-11-24T05:20:23.264Z"
 }
