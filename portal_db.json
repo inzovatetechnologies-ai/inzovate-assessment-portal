@@ -9404,13 +9404,62 @@
       "jobRoleId": "role-ai-ml",
       "jobRoleTitle": "AI/ML Engineer",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Rejected",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-24T04:51:35.518Z",
-      "updatedAt": "2026-11-24T04:51:35.518Z"
+      "updatedAt": "2026-11-24T04:51:35.518Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_456f8774-aae5-402a-86a3-f93396385289",
+        "candidateId": "INZ-CAND-2026-00134",
+        "candidateDisplayId": "INZ-CAND-2026-00134",
+        "candidateName": "Aswin Christo C A",
+        "jobRoleId": "role-ai-ml",
+        "jobRoleTitle": "AI/ML Engineer",
+        "domainId": "dom-03",
+        "domainName": "Artificial Intelligence",
+        "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+        "totalScore": 14,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 31,
+        "isPassed": false,
+        "examResult": "Fail",
+        "selectionStatus": "Rejected",
+        "passCutoff": "> 25",
+        "performanceCategory": "Needs Improvement",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-60AB29",
+        "sectionScores": {
+          "section-1": {
+            "score": 6,
+            "total": 15,
+            "percentage": 40
+          },
+          "section-2": {
+            "score": 3,
+            "total": 15,
+            "percentage": 20
+          },
+          "section-3": {
+            "score": 5,
+            "total": 15,
+            "percentage": 33
+          }
+        },
+        "completedAt": "2026-11-24T05:37:20.361Z"
+      },
+      "totalScore": 14,
+      "percentage": 31,
+      "isPassed": false,
+      "examResult": "Fail",
+      "certificateId": "INZ-CERT-2026-60AB29",
+      "completedAt": "2026-11-24T05:37:20.361Z"
     },
     {
       "_id": "cand-9dd76f01-a417-4567-a191-29608fa46f98",
@@ -24507,10 +24556,53 @@
         }
       },
       "completedAt": "2026-11-24T05:37:09.397Z"
+    },
+    {
+      "sessionId": "inz_cbt_456f8774-aae5-402a-86a3-f93396385289",
+      "candidateId": "INZ-CAND-2026-00134",
+      "candidateDisplayId": "INZ-CAND-2026-00134",
+      "candidateName": "Aswin Christo C A",
+      "jobRoleId": "role-ai-ml",
+      "jobRoleTitle": "AI/ML Engineer",
+      "domainId": "dom-03",
+      "domainName": "Artificial Intelligence",
+      "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+      "totalScore": 14,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 31,
+      "isPassed": false,
+      "examResult": "Fail",
+      "selectionStatus": "Rejected",
+      "passCutoff": "> 25",
+      "performanceCategory": "Needs Improvement",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-60AB29",
+      "sectionScores": {
+        "section-1": {
+          "score": 6,
+          "total": 15,
+          "percentage": 40
+        },
+        "section-2": {
+          "score": 3,
+          "total": 15,
+          "percentage": 20
+        },
+        "section-3": {
+          "score": 5,
+          "total": 15,
+          "percentage": 33
+        }
+      },
+      "completedAt": "2026-11-24T05:37:20.361Z"
     }
   ],
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:37:09.602Z"
+  "lastUpdated": "2026-11-24T05:37:20.560Z"
 }
