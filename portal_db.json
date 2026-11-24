@@ -1377,13 +1377,62 @@
       "jobRoleId": "role-soft-dev",
       "jobRoleTitle": "Software Developer",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-24T04:43:15.326Z",
-      "updatedAt": "2026-11-24T04:43:15.326Z"
+      "updatedAt": "2026-11-24T04:43:15.326Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_b03a32a0-824d-4d18-81de-bd4a9fd905ef",
+        "candidateId": "INZ-CAND-2026-00033",
+        "candidateDisplayId": "INZ-CAND-2026-00033",
+        "candidateName": "Viswa Deepthi T",
+        "jobRoleId": "role-soft-dev",
+        "jobRoleTitle": "Software Developer",
+        "domainId": "dom-01",
+        "domainName": "Software Development",
+        "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+        "totalScore": 36,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 80,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Mastery (Outstanding)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-F702B1",
+        "sectionScores": {
+          "section-1": {
+            "score": 13,
+            "total": 15,
+            "percentage": 87
+          },
+          "section-2": {
+            "score": 13,
+            "total": 15,
+            "percentage": 87
+          },
+          "section-3": {
+            "score": 10,
+            "total": 15,
+            "percentage": 67
+          }
+        },
+        "completedAt": "2026-11-24T05:09:21.756Z"
+      },
+      "totalScore": 36,
+      "percentage": 80,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-F702B1",
+      "completedAt": "2026-11-24T05:09:21.756Z"
     },
     {
       "_id": "cand-46e2f6d6-1a52-4134-9713-edae9858936c",
@@ -11862,10 +11911,53 @@
         }
       },
       "completedAt": "2026-11-24T05:09:13.411Z"
+    },
+    {
+      "sessionId": "inz_cbt_b03a32a0-824d-4d18-81de-bd4a9fd905ef",
+      "candidateId": "INZ-CAND-2026-00033",
+      "candidateDisplayId": "INZ-CAND-2026-00033",
+      "candidateName": "Viswa Deepthi T",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Software Developer",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+      "totalScore": 36,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 80,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Mastery (Outstanding)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-F702B1",
+      "sectionScores": {
+        "section-1": {
+          "score": 13,
+          "total": 15,
+          "percentage": 87
+        },
+        "section-2": {
+          "score": 13,
+          "total": 15,
+          "percentage": 87
+        },
+        "section-3": {
+          "score": 10,
+          "total": 15,
+          "percentage": 67
+        }
+      },
+      "completedAt": "2026-11-24T05:09:21.756Z"
     }
   ],
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:09:13.547Z"
+  "lastUpdated": "2026-11-24T05:09:21.888Z"
 }
