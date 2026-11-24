@@ -15399,47 +15399,47 @@
       "completedAt": "2026-11-24T05:19:13.228Z"
     },
     {
-      "sessionId": "inz_cbt_e8228c3f-a66a-4ee4-8350-948a520af7ae",
+      "sessionId": "inz_cbt_0e19e164-38d2-4ca4-a9b9-8fc8d08cc043",
       "candidateId": "INZ-CAND-2026-00024",
       "candidateDisplayId": "INZ-CAND-2026-00024",
-      "candidateName": "Subhaleha",
+      "candidateName": "Nishasri",
       "jobRoleId": "role-soft-dev",
       "jobRoleTitle": "Software Developer",
       "domainId": "dom-01",
       "domainName": "Software Development",
       "collegeName": "Autonomous Engineering College",
-      "totalScore": 30,
+      "totalScore": 26,
       "maxScore": 45,
       "totalQuestions": 45,
-      "totalAttempted": 44,
-      "totalQuestionsAttempted": 44,
-      "unattempted": 1,
-      "percentage": 67,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 58,
       "isPassed": true,
       "examResult": "Pass",
       "selectionStatus": "Selected for Next Round",
       "passCutoff": "> 25",
-      "performanceCategory": "Proficient (Commendable)",
+      "performanceCategory": "Foundational (Competent)",
       "status": "Completed",
-      "certificateId": "INZ-CERT-2026-CB204B",
+      "certificateId": "INZ-CERT-2026-68B65C",
       "sectionScores": {
         "section-1": {
-          "score": 10,
+          "score": 9,
           "total": 15,
-          "percentage": 67
+          "percentage": 60
         },
         "section-2": {
-          "score": 13,
+          "score": 11,
           "total": 15,
-          "percentage": 87
+          "percentage": 73
         },
         "section-3": {
-          "score": 7,
+          "score": 6,
           "total": 15,
-          "percentage": 47
+          "percentage": 40
         }
       },
-      "completedAt": "2026-11-24T05:19:18.198Z"
+      "completedAt": "2026-11-24T05:22:00.479Z"
     },
     {
       "sessionId": "inz_cbt_3d0e9bb6-3922-4689-abce-f86e2b9b7f3b",
@@ -15832,5 +15832,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:21:38.477Z"
+  "lastUpdated": "2026-11-24T05:22:00.613Z"
 }
