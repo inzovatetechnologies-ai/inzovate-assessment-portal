@@ -7316,7 +7316,7 @@
     },
     {
       "_id": "cand-1d73f736-c56d-473b-87c5-83f88bcdfffe",
-      "candidateId": "INZ-CAND-2026-00212",
+      "candidateId": "INZ-CAND-2026-00336",
       "fullName": "Pugazhenthi K",
       "email": "pugazhfamepride@gmail.com",
       "password": "Pugazh@2005",
@@ -10973,5 +10973,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:05:44.284Z"
+  "lastUpdated": "2026-11-24T05:05:47.656Z"
 }
