@@ -3876,11 +3876,11 @@
       "status": "Registered",
       "deletedAt": null,
       "assessmentStatus": "Completed",
-      "testAttempts": 1,
+      "testAttempts": 2,
       "createdAt": "2026-11-24T04:46:14.290Z",
       "updatedAt": "2026-11-24T04:46:14.290Z",
       "assessmentResult": {
-        "sessionId": "inz_cbt_16d2c3af-8007-4af1-b5c2-85060b54f41b",
+        "sessionId": "inz_cbt_a33e6dbe-8195-400d-8592-71f02b2d7004",
         "candidateId": "INZ-CAND-2026-00094",
         "candidateDisplayId": "INZ-CAND-2026-00094",
         "candidateName": "Mohanapriyan T C C",
@@ -3889,20 +3889,20 @@
         "domainId": "dom-01",
         "domainName": "Software Development",
         "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
-        "totalScore": 45,
+        "totalScore": 39,
         "maxScore": 45,
         "totalQuestions": 45,
         "totalAttempted": 45,
         "totalQuestionsAttempted": 45,
         "unattempted": 0,
-        "percentage": 100,
+        "percentage": 87,
         "isPassed": true,
         "examResult": "Pass",
         "selectionStatus": "Selected for Next Round",
         "passCutoff": "> 25",
         "performanceCategory": "Mastery (Outstanding)",
         "status": "Completed",
-        "certificateId": "INZ-CERT-2026-E9FCE5",
+        "certificateId": "INZ-CERT-2026-749B11",
         "sectionScores": {
           "section-1": {
             "score": 15,
@@ -3910,24 +3910,24 @@
             "percentage": 100
           },
           "section-2": {
-            "score": 15,
+            "score": 14,
             "total": 15,
-            "percentage": 100
+            "percentage": 93
           },
           "section-3": {
-            "score": 15,
+            "score": 10,
             "total": 15,
-            "percentage": 100
+            "percentage": 67
           }
         },
-        "completedAt": "2026-11-24T05:07:51.039Z"
+        "completedAt": "2026-11-24T05:24:26.383Z"
       },
-      "totalScore": 45,
-      "percentage": 100,
+      "totalScore": 39,
+      "percentage": 87,
       "isPassed": true,
       "examResult": "Pass",
-      "certificateId": "INZ-CERT-2026-E9FCE5",
-      "completedAt": "2026-11-24T05:07:51.039Z"
+      "certificateId": "INZ-CERT-2026-749B11",
+      "completedAt": "2026-11-24T05:24:26.383Z"
     },
     {
       "_id": "cand-d68887fd-2a41-4dee-a047-0bb1969d0539",
@@ -14365,7 +14365,7 @@
       "completedAt": "2026-11-24T05:07:47.869Z"
     },
     {
-      "sessionId": "inz_cbt_16d2c3af-8007-4af1-b5c2-85060b54f41b",
+      "sessionId": "inz_cbt_a33e6dbe-8195-400d-8592-71f02b2d7004",
       "candidateId": "INZ-CAND-2026-00094",
       "candidateDisplayId": "INZ-CAND-2026-00094",
       "candidateName": "Mohanapriyan T C C",
@@ -14374,20 +14374,20 @@
       "domainId": "dom-01",
       "domainName": "Software Development",
       "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
-      "totalScore": 45,
+      "totalScore": 39,
       "maxScore": 45,
       "totalQuestions": 45,
       "totalAttempted": 45,
       "totalQuestionsAttempted": 45,
       "unattempted": 0,
-      "percentage": 100,
+      "percentage": 87,
       "isPassed": true,
       "examResult": "Pass",
       "selectionStatus": "Selected for Next Round",
       "passCutoff": "> 25",
       "performanceCategory": "Mastery (Outstanding)",
       "status": "Completed",
-      "certificateId": "INZ-CERT-2026-E9FCE5",
+      "certificateId": "INZ-CERT-2026-749B11",
       "sectionScores": {
         "section-1": {
           "score": 15,
@@ -14395,17 +14395,17 @@
           "percentage": 100
         },
         "section-2": {
-          "score": 15,
+          "score": 14,
           "total": 15,
-          "percentage": 100
+          "percentage": 93
         },
         "section-3": {
-          "score": 15,
+          "score": 10,
           "total": 15,
-          "percentage": 100
+          "percentage": 67
         }
       },
-      "completedAt": "2026-11-24T05:07:51.039Z"
+      "completedAt": "2026-11-24T05:24:26.383Z"
     },
     {
       "sessionId": "inz_cbt_df529c80-3e5d-4d0a-ab8f-91f49076f18a",
@@ -17206,5 +17206,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:24:24.118Z"
+  "lastUpdated": "2026-11-24T05:24:26.536Z"
 }
