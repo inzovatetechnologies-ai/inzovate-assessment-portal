@@ -223,7 +223,7 @@
     },
     {
       "_id": "cand-87056267-c3bf-4fe8-a441-8eaa02c006cf",
-      "candidateId": "INZ-CAND-2026-00005",
+      "candidateId": "INZ-CAND-2026-00023",
       "fullName": "Lathika J",
       "email": "jlathika2005@gmail.com",
       "password": "Lathikacm@123",
@@ -969,5 +969,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T04:42:23.882Z"
+  "lastUpdated": "2026-11-24T04:42:36.422Z"
 }
