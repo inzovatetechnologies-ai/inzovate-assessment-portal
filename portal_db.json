@@ -10227,7 +10227,7 @@
     },
     {
       "_id": "cand-41e19acc-21f2-49b0-93ee-f760290daa79",
-      "candidateId": "INZ-CAND-2026-00301",
+      "candidateId": "INZ-CAND-2026-00324",
       "fullName": "Vijayaraj R",
       "email": "vijayaraj026@gmail.com",
       "password": "Vijay10",
@@ -10768,5 +10768,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:04:34.024Z"
+  "lastUpdated": "2026-11-24T05:04:35.320Z"
 }
