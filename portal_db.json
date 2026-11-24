@@ -6660,7 +6660,7 @@
     },
     {
       "_id": "cand-79463cf3-a60e-4fbf-a19a-2b64e7046a70",
-      "candidateId": "INZ-CAND-2026-00191",
+      "candidateId": "INZ-CAND-2026-00195",
       "fullName": "Dharnesh Kalaiselvan",
       "email": "dharneshkalaiselvan@gmail.com",
       "password": "Dharn@2228",
@@ -6873,5 +6873,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T04:57:14.009Z"
+  "lastUpdated": "2026-11-24T04:57:18.361Z"
 }
