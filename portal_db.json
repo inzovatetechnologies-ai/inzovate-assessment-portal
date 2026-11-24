@@ -19504,13 +19504,62 @@
       "jobRoleId": "role-ai-ml",
       "jobRoleTitle": "AI/ML Engineer",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-24T05:04:04.924Z",
-      "updatedAt": "2026-11-24T05:04:04.924Z"
+      "updatedAt": "2026-11-24T05:04:04.924Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_dcf9a614-299c-4816-832a-b0b86fd3cae9",
+        "candidateId": "INZ-CAND-2026-00331",
+        "candidateDisplayId": "INZ-CAND-2026-00331",
+        "candidateName": "Gowthami R",
+        "jobRoleId": "role-ai-ml",
+        "jobRoleTitle": "AI/ML Engineer",
+        "domainId": "dom-03",
+        "domainName": "Artificial Intelligence",
+        "collegeName": "Dr Mahalingam college of engineering and technology ",
+        "totalScore": 36,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 80,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Mastery (Outstanding)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-0D7420",
+        "sectionScores": {
+          "section-1": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-2": {
+            "score": 7,
+            "total": 15,
+            "percentage": 47
+          },
+          "section-3": {
+            "score": 14,
+            "total": 15,
+            "percentage": 93
+          }
+        },
+        "completedAt": "2026-11-24T05:49:24.287Z"
+      },
+      "totalScore": 36,
+      "percentage": 80,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-0D7420",
+      "completedAt": "2026-11-24T05:49:24.287Z"
     },
     {
       "_id": "cand-a7b61be8-ae38-435f-8d3d-0561205f1f10",
@@ -30353,10 +30402,53 @@
         }
       },
       "completedAt": "2026-11-24T05:48:15.056Z"
+    },
+    {
+      "sessionId": "inz_cbt_dcf9a614-299c-4816-832a-b0b86fd3cae9",
+      "candidateId": "INZ-CAND-2026-00331",
+      "candidateDisplayId": "INZ-CAND-2026-00331",
+      "candidateName": "Gowthami R",
+      "jobRoleId": "role-ai-ml",
+      "jobRoleTitle": "AI/ML Engineer",
+      "domainId": "dom-03",
+      "domainName": "Artificial Intelligence",
+      "collegeName": "Dr Mahalingam college of engineering and technology ",
+      "totalScore": 36,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 80,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Mastery (Outstanding)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-0D7420",
+      "sectionScores": {
+        "section-1": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-2": {
+          "score": 7,
+          "total": 15,
+          "percentage": 47
+        },
+        "section-3": {
+          "score": 14,
+          "total": 15,
+          "percentage": 93
+        }
+      },
+      "completedAt": "2026-11-24T05:49:24.287Z"
     }
   ],
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:48:15.249Z"
+  "lastUpdated": "2026-11-24T05:49:24.453Z"
 }
