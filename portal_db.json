@@ -3479,13 +3479,62 @@
       "jobRoleId": "role-soft-dev",
       "jobRoleTitle": "Software Developer",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-24T04:45:47.116Z",
-      "updatedAt": "2026-11-24T04:45:47.116Z"
+      "updatedAt": "2026-11-24T04:45:47.116Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_743de05a-8a95-4613-871a-2afdf5d805cb",
+        "candidateId": "INZ-CAND-2026-00053",
+        "candidateDisplayId": "INZ-CAND-2026-00053",
+        "candidateName": "Susindran N",
+        "jobRoleId": "role-soft-dev",
+        "jobRoleTitle": "Software Developer",
+        "domainId": "dom-01",
+        "domainName": "Software Development",
+        "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+        "totalScore": 44,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 98,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Mastery (Outstanding)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-A26C4C",
+        "sectionScores": {
+          "section-1": {
+            "score": 14,
+            "total": 15,
+            "percentage": 93
+          },
+          "section-2": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-3": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          }
+        },
+        "completedAt": "2026-11-24T05:22:58.458Z"
+      },
+      "totalScore": 44,
+      "percentage": 98,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-A26C4C",
+      "completedAt": "2026-11-24T05:22:58.458Z"
     },
     {
       "_id": "cand-1707fd3e-6b92-49f2-9cf2-8a63eb8a75bb",
@@ -16379,10 +16428,53 @@
         }
       },
       "completedAt": "2026-11-24T05:22:58.128Z"
+    },
+    {
+      "sessionId": "inz_cbt_743de05a-8a95-4613-871a-2afdf5d805cb",
+      "candidateId": "INZ-CAND-2026-00053",
+      "candidateDisplayId": "INZ-CAND-2026-00053",
+      "candidateName": "Susindran N",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Software Developer",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+      "totalScore": 44,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 98,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Mastery (Outstanding)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-A26C4C",
+      "sectionScores": {
+        "section-1": {
+          "score": 14,
+          "total": 15,
+          "percentage": 93
+        },
+        "section-2": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-3": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        }
+      },
+      "completedAt": "2026-11-24T05:22:58.458Z"
     }
   ],
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:22:58.250Z"
+  "lastUpdated": "2026-11-24T05:22:59.910Z"
 }
