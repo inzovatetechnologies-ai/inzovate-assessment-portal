@@ -10419,15 +10419,15 @@
       "jobRoleId": "role-java-dev",
       "jobRoleTitle": "Java Developer",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Selected for Next Round",
+      "recruitmentStage": "Rejected",
       "status": "Registered",
       "deletedAt": null,
       "assessmentStatus": "Completed",
-      "testAttempts": 1,
+      "testAttempts": 2,
       "createdAt": "2026-11-24T04:52:59.828Z",
       "updatedAt": "2026-11-24T04:52:59.828Z",
       "assessmentResult": {
-        "sessionId": "inz_cbt_d47b93a1-f91d-4173-bfa3-a561567982e3",
+        "sessionId": "inz_cbt_12d245bb-2ddf-4f80-9e31-ad02bae968a7",
         "candidateId": "INZ-CAND-2026-00167",
         "candidateDisplayId": "INZ-CAND-2026-00167",
         "candidateName": "Mehavarshini M",
@@ -10436,45 +10436,45 @@
         "domainId": "dom-01",
         "domainName": "Software Development",
         "collegeName": "Dr Mahalingam College Of Engineering And Technology(MCET)",
-        "totalScore": 26,
+        "totalScore": 19,
         "maxScore": 45,
         "totalQuestions": 45,
         "totalAttempted": 45,
         "totalQuestionsAttempted": 45,
         "unattempted": 0,
-        "percentage": 58,
-        "isPassed": true,
-        "examResult": "Pass",
-        "selectionStatus": "Selected for Next Round",
+        "percentage": 42,
+        "isPassed": false,
+        "examResult": "Fail",
+        "selectionStatus": "Rejected",
         "passCutoff": "> 25",
-        "performanceCategory": "Foundational (Competent)",
+        "performanceCategory": "Needs Improvement",
         "status": "Completed",
-        "certificateId": "INZ-CERT-2026-756EB9",
+        "certificateId": "INZ-CERT-2026-BBD260",
         "sectionScores": {
           "section-1": {
-            "score": 11,
+            "score": 8,
             "total": 15,
-            "percentage": 73
+            "percentage": 53
           },
           "section-2": {
-            "score": 10,
+            "score": 7,
             "total": 15,
-            "percentage": 67
+            "percentage": 47
           },
           "section-3": {
-            "score": 5,
+            "score": 4,
             "total": 15,
-            "percentage": 33
+            "percentage": 27
           }
         },
-        "completedAt": "2026-11-24T05:27:17.880Z"
+        "completedAt": "2026-11-24T05:37:26.535Z"
       },
-      "totalScore": 26,
-      "percentage": 58,
-      "isPassed": true,
-      "examResult": "Pass",
-      "certificateId": "INZ-CERT-2026-756EB9",
-      "completedAt": "2026-11-24T05:27:17.880Z"
+      "totalScore": 19,
+      "percentage": 42,
+      "isPassed": false,
+      "examResult": "Fail",
+      "certificateId": "INZ-CERT-2026-BBD260",
+      "completedAt": "2026-11-24T05:37:26.535Z"
     },
     {
       "_id": "cand-54328621-f6de-4b75-aed4-bf0f6097a5ef",
@@ -21511,7 +21511,7 @@
       "completedAt": "2026-11-24T05:27:07.955Z"
     },
     {
-      "sessionId": "inz_cbt_d47b93a1-f91d-4173-bfa3-a561567982e3",
+      "sessionId": "inz_cbt_12d245bb-2ddf-4f80-9e31-ad02bae968a7",
       "candidateId": "INZ-CAND-2026-00167",
       "candidateDisplayId": "INZ-CAND-2026-00167",
       "candidateName": "Mehavarshini M",
@@ -21520,38 +21520,38 @@
       "domainId": "dom-01",
       "domainName": "Software Development",
       "collegeName": "Dr Mahalingam College Of Engineering And Technology(MCET)",
-      "totalScore": 26,
+      "totalScore": 19,
       "maxScore": 45,
       "totalQuestions": 45,
       "totalAttempted": 45,
       "totalQuestionsAttempted": 45,
       "unattempted": 0,
-      "percentage": 58,
-      "isPassed": true,
-      "examResult": "Pass",
-      "selectionStatus": "Selected for Next Round",
+      "percentage": 42,
+      "isPassed": false,
+      "examResult": "Fail",
+      "selectionStatus": "Rejected",
       "passCutoff": "> 25",
-      "performanceCategory": "Foundational (Competent)",
+      "performanceCategory": "Needs Improvement",
       "status": "Completed",
-      "certificateId": "INZ-CERT-2026-756EB9",
+      "certificateId": "INZ-CERT-2026-BBD260",
       "sectionScores": {
         "section-1": {
-          "score": 11,
+          "score": 8,
           "total": 15,
-          "percentage": 73
+          "percentage": 53
         },
         "section-2": {
-          "score": 10,
+          "score": 7,
           "total": 15,
-          "percentage": 67
+          "percentage": 47
         },
         "section-3": {
-          "score": 5,
+          "score": 4,
           "total": 15,
-          "percentage": 33
+          "percentage": 27
         }
       },
-      "completedAt": "2026-11-24T05:27:17.880Z"
+      "completedAt": "2026-11-24T05:37:26.535Z"
     },
     {
       "sessionId": "inz_cbt_fb9f36a3-ee4e-4ee1-b7fc-cad8a17c2eac",
@@ -24696,5 +24696,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:37:22.076Z"
+  "lastUpdated": "2026-11-24T05:37:26.718Z"
 }
