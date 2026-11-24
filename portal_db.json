@@ -17935,13 +17935,62 @@
       "jobRoleId": "role-data-analyst",
       "jobRoleTitle": "Data Analyst",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Rejected",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-24T05:03:03.692Z",
-      "updatedAt": "2026-11-24T05:03:03.692Z"
+      "updatedAt": "2026-11-24T05:03:03.692Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_4bf4b5e1-bd54-4639-b12b-b5c65deb782f",
+        "candidateId": "INZ-CAND-2026-00330",
+        "candidateDisplayId": "INZ-CAND-2026-00330",
+        "candidateName": "Balaji DV",
+        "jobRoleId": "role-data-analyst",
+        "jobRoleTitle": "Data Analyst",
+        "domainId": "dom-02",
+        "domainName": "Data & Analytics",
+        "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+        "totalScore": 18,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 40,
+        "isPassed": false,
+        "examResult": "Fail",
+        "selectionStatus": "Rejected",
+        "passCutoff": "> 25",
+        "performanceCategory": "Needs Improvement",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-799B3C",
+        "sectionScores": {
+          "section-1": {
+            "score": 6,
+            "total": 15,
+            "percentage": 40
+          },
+          "section-2": {
+            "score": 7,
+            "total": 15,
+            "percentage": 47
+          },
+          "section-3": {
+            "score": 5,
+            "total": 15,
+            "percentage": 33
+          }
+        },
+        "completedAt": "2026-11-24T05:41:00.508Z"
+      },
+      "totalScore": 18,
+      "percentage": 40,
+      "isPassed": false,
+      "examResult": "Fail",
+      "certificateId": "INZ-CERT-2026-799B3C",
+      "completedAt": "2026-11-24T05:41:00.508Z"
     },
     {
       "_id": "cand-432a5c26-beb5-42d6-ac5f-49abef2dab37",
@@ -27525,10 +27574,53 @@
         }
       },
       "completedAt": "2026-11-24T05:40:50.727Z"
+    },
+    {
+      "sessionId": "inz_cbt_4bf4b5e1-bd54-4639-b12b-b5c65deb782f",
+      "candidateId": "INZ-CAND-2026-00330",
+      "candidateDisplayId": "INZ-CAND-2026-00330",
+      "candidateName": "Balaji DV",
+      "jobRoleId": "role-data-analyst",
+      "jobRoleTitle": "Data Analyst",
+      "domainId": "dom-02",
+      "domainName": "Data & Analytics",
+      "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+      "totalScore": 18,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 40,
+      "isPassed": false,
+      "examResult": "Fail",
+      "selectionStatus": "Rejected",
+      "passCutoff": "> 25",
+      "performanceCategory": "Needs Improvement",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-799B3C",
+      "sectionScores": {
+        "section-1": {
+          "score": 6,
+          "total": 15,
+          "percentage": 40
+        },
+        "section-2": {
+          "score": 7,
+          "total": 15,
+          "percentage": 47
+        },
+        "section-3": {
+          "score": 5,
+          "total": 15,
+          "percentage": 33
+        }
+      },
+      "completedAt": "2026-11-24T05:41:00.508Z"
     }
   ],
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:40:56.515Z"
+  "lastUpdated": "2026-11-24T05:41:00.646Z"
 }
