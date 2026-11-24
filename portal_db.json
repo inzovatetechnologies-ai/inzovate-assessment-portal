@@ -14409,13 +14409,62 @@
       "jobRoleId": "role-soft-dev",
       "jobRoleTitle": "Software Developer",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-24T05:00:22.633Z",
-      "updatedAt": "2026-11-24T05:00:22.633Z"
+      "updatedAt": "2026-11-24T05:00:22.633Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_557d0cdb-f945-4453-9e19-fe20463ac2b6",
+        "candidateId": "INZ-CAND-2026-00251",
+        "candidateDisplayId": "INZ-CAND-2026-00251",
+        "candidateName": "Siddharth P",
+        "jobRoleId": "role-soft-dev",
+        "jobRoleTitle": "Software Developer",
+        "domainId": "dom-01",
+        "domainName": "Software Development",
+        "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+        "totalScore": 41,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 91,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Mastery (Outstanding)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-B39956",
+        "sectionScores": {
+          "section-1": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-2": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-3": {
+            "score": 11,
+            "total": 15,
+            "percentage": 73
+          }
+        },
+        "completedAt": "2026-11-24T05:35:28.415Z"
+      },
+      "totalScore": 41,
+      "percentage": 91,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-B39956",
+      "completedAt": "2026-11-24T05:35:28.415Z"
     },
     {
       "_id": "cand-f787348b-a44d-464e-9d9a-ad861e8e7610",
@@ -23317,10 +23366,53 @@
         }
       },
       "completedAt": "2026-11-24T05:35:26.068Z"
+    },
+    {
+      "sessionId": "inz_cbt_557d0cdb-f945-4453-9e19-fe20463ac2b6",
+      "candidateId": "INZ-CAND-2026-00251",
+      "candidateDisplayId": "INZ-CAND-2026-00251",
+      "candidateName": "Siddharth P",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Software Developer",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+      "totalScore": 41,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 91,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Mastery (Outstanding)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-B39956",
+      "sectionScores": {
+        "section-1": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-2": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-3": {
+          "score": 11,
+          "total": 15,
+          "percentage": 73
+        }
+      },
+      "completedAt": "2026-11-24T05:35:28.415Z"
     }
   ],
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:35:27.939Z"
+  "lastUpdated": "2026-11-24T05:35:29.879Z"
 }
