@@ -8300,13 +8300,62 @@
       "jobRoleId": "role-bde",
       "jobRoleTitle": "Business Development Executive",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-24T04:50:51.062Z",
-      "updatedAt": "2026-11-24T04:50:51.062Z"
+      "updatedAt": "2026-11-24T04:50:51.062Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_64ac0150-22ac-4cac-b7e5-7f109a0e38b9",
+        "candidateId": "INZ-CAND-2026-00139",
+        "candidateDisplayId": "INZ-CAND-2026-00139",
+        "candidateName": "ganeshkumar",
+        "jobRoleId": "role-bde",
+        "jobRoleTitle": "Business Development Executive",
+        "domainId": "dom-11",
+        "domainName": "Business & Sales",
+        "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+        "totalScore": 28,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 62,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Foundational (Competent)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-19E336",
+        "sectionScores": {
+          "section-1": {
+            "score": 11,
+            "total": 15,
+            "percentage": 73
+          },
+          "section-2": {
+            "score": 9,
+            "total": 15,
+            "percentage": 60
+          },
+          "section-3": {
+            "score": 8,
+            "total": 15,
+            "percentage": 53
+          }
+        },
+        "completedAt": "2026-11-24T05:28:43.545Z"
+      },
+      "totalScore": 28,
+      "percentage": 62,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-19E336",
+      "completedAt": "2026-11-24T05:28:43.545Z"
     },
     {
       "_id": "cand-315d8147-6845-4aff-ab3c-e55e86c6c88d",
@@ -19072,10 +19121,53 @@
         }
       },
       "completedAt": "2026-11-24T05:28:39.685Z"
+    },
+    {
+      "sessionId": "inz_cbt_64ac0150-22ac-4cac-b7e5-7f109a0e38b9",
+      "candidateId": "INZ-CAND-2026-00139",
+      "candidateDisplayId": "INZ-CAND-2026-00139",
+      "candidateName": "ganeshkumar",
+      "jobRoleId": "role-bde",
+      "jobRoleTitle": "Business Development Executive",
+      "domainId": "dom-11",
+      "domainName": "Business & Sales",
+      "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+      "totalScore": 28,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 62,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Foundational (Competent)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-19E336",
+      "sectionScores": {
+        "section-1": {
+          "score": 11,
+          "total": 15,
+          "percentage": 73
+        },
+        "section-2": {
+          "score": 9,
+          "total": 15,
+          "percentage": 60
+        },
+        "section-3": {
+          "score": 8,
+          "total": 15,
+          "percentage": 53
+        }
+      },
+      "completedAt": "2026-11-24T05:28:43.545Z"
     }
   ],
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:28:39.886Z"
+  "lastUpdated": "2026-11-24T05:28:43.685Z"
 }
