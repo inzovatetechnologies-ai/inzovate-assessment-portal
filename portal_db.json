@@ -18747,11 +18747,11 @@
       "status": "Registered",
       "deletedAt": null,
       "assessmentStatus": "Completed",
-      "testAttempts": 1,
+      "testAttempts": 2,
       "createdAt": "2026-11-24T05:02:50.823Z",
       "updatedAt": "2026-11-24T05:02:50.823Z",
       "assessmentResult": {
-        "sessionId": "inz_cbt_79ba567a-cc73-4088-b836-0ca3aeb34445",
+        "sessionId": "inz_cbt_734dc4a3-2e38-4c57-bf9e-17531ea60169",
         "candidateId": "INZ-CAND-2026-00247",
         "candidateDisplayId": "INZ-CAND-2026-00247",
         "candidateName": "Surya K",
@@ -18760,45 +18760,45 @@
         "domainId": "dom-01",
         "domainName": "Software Development",
         "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
-        "totalScore": 33,
+        "totalScore": 31,
         "maxScore": 45,
         "totalQuestions": 45,
         "totalAttempted": 45,
         "totalQuestionsAttempted": 45,
         "unattempted": 0,
-        "percentage": 73,
+        "percentage": 69,
         "isPassed": true,
         "examResult": "Pass",
         "selectionStatus": "Selected for Next Round",
         "passCutoff": "> 25",
         "performanceCategory": "Proficient (Commendable)",
         "status": "Completed",
-        "certificateId": "INZ-CERT-2026-B34BDC",
+        "certificateId": "INZ-CERT-2026-03F84B",
         "sectionScores": {
           "section-1": {
-            "score": 10,
+            "score": 11,
             "total": 15,
-            "percentage": 67
+            "percentage": 73
           },
           "section-2": {
-            "score": 13,
+            "score": 11,
             "total": 15,
-            "percentage": 87
+            "percentage": 73
           },
           "section-3": {
-            "score": 10,
+            "score": 9,
             "total": 15,
-            "percentage": 67
+            "percentage": 60
           }
         },
-        "completedAt": "2026-11-24T05:42:57.201Z"
+        "completedAt": "2026-11-24T05:46:50.850Z"
       },
-      "totalScore": 33,
-      "percentage": 73,
+      "totalScore": 31,
+      "percentage": 69,
       "isPassed": true,
       "examResult": "Pass",
-      "certificateId": "INZ-CERT-2026-B34BDC",
-      "completedAt": "2026-11-24T05:42:57.201Z"
+      "certificateId": "INZ-CERT-2026-03F84B",
+      "completedAt": "2026-11-24T05:46:50.850Z"
     },
     {
       "_id": "cand-41e19acc-21f2-49b0-93ee-f760290daa79",
@@ -29434,7 +29434,7 @@
       "completedAt": "2026-11-24T05:42:55.862Z"
     },
     {
-      "sessionId": "inz_cbt_79ba567a-cc73-4088-b836-0ca3aeb34445",
+      "sessionId": "inz_cbt_734dc4a3-2e38-4c57-bf9e-17531ea60169",
       "candidateId": "INZ-CAND-2026-00247",
       "candidateDisplayId": "INZ-CAND-2026-00247",
       "candidateName": "Surya K",
@@ -29443,38 +29443,38 @@
       "domainId": "dom-01",
       "domainName": "Software Development",
       "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
-      "totalScore": 33,
+      "totalScore": 31,
       "maxScore": 45,
       "totalQuestions": 45,
       "totalAttempted": 45,
       "totalQuestionsAttempted": 45,
       "unattempted": 0,
-      "percentage": 73,
+      "percentage": 69,
       "isPassed": true,
       "examResult": "Pass",
       "selectionStatus": "Selected for Next Round",
       "passCutoff": "> 25",
       "performanceCategory": "Proficient (Commendable)",
       "status": "Completed",
-      "certificateId": "INZ-CERT-2026-B34BDC",
+      "certificateId": "INZ-CERT-2026-03F84B",
       "sectionScores": {
         "section-1": {
-          "score": 10,
+          "score": 11,
           "total": 15,
-          "percentage": 67
+          "percentage": 73
         },
         "section-2": {
-          "score": 13,
+          "score": 11,
           "total": 15,
-          "percentage": 87
+          "percentage": 73
         },
         "section-3": {
-          "score": 10,
+          "score": 9,
           "total": 15,
-          "percentage": 67
+          "percentage": 60
         }
       },
-      "completedAt": "2026-11-24T05:42:57.201Z"
+      "completedAt": "2026-11-24T05:46:50.850Z"
     },
     {
       "sessionId": "inz_cbt_f12ac95b-a4dc-480f-bea3-8c1e531b20cb",
@@ -30082,5 +30082,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:45:45.763Z"
+  "lastUpdated": "2026-11-24T05:46:51.019Z"
 }
