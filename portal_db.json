@@ -16330,13 +16330,62 @@
       "jobRoleId": "role-soft-dev",
       "jobRoleTitle": "Software Developer",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Deleted / Archived",
+      "recruitmentStage": "Selected for Next Round",
       "status": "deleted",
       "deletedAt": "2026-11-24T05:07:55.922Z",
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-24T05:00:57.315Z",
-      "updatedAt": "2026-11-24T05:00:57.315Z"
+      "updatedAt": "2026-11-24T05:00:57.315Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_a447324f-16d1-4ad6-94a2-da414068564e",
+        "candidateId": "INZ-CAND-2026-00267",
+        "candidateDisplayId": "INZ-CAND-2026-00267",
+        "candidateName": "Santhosh C",
+        "jobRoleId": "role-soft-dev",
+        "jobRoleTitle": "Software Developer",
+        "domainId": "dom-01",
+        "domainName": "Software Development",
+        "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+        "totalScore": 30,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 67,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Proficient (Commendable)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-7076E7",
+        "sectionScores": {
+          "section-1": {
+            "score": 12,
+            "total": 15,
+            "percentage": 80
+          },
+          "section-2": {
+            "score": 10,
+            "total": 15,
+            "percentage": 67
+          },
+          "section-3": {
+            "score": 8,
+            "total": 15,
+            "percentage": 53
+          }
+        },
+        "completedAt": "2026-11-24T05:40:14.092Z"
+      },
+      "totalScore": 30,
+      "percentage": 67,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-7076E7",
+      "completedAt": "2026-11-24T05:40:14.092Z"
     },
     {
       "_id": "cand-03c55380-7d7f-4408-a582-b2c120f6a5ee",
@@ -26660,10 +26709,53 @@
         }
       },
       "completedAt": "2026-11-24T05:40:11.181Z"
+    },
+    {
+      "sessionId": "inz_cbt_a447324f-16d1-4ad6-94a2-da414068564e",
+      "candidateId": "INZ-CAND-2026-00267",
+      "candidateDisplayId": "INZ-CAND-2026-00267",
+      "candidateName": "Santhosh C",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Software Developer",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+      "totalScore": 30,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 67,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Proficient (Commendable)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-7076E7",
+      "sectionScores": {
+        "section-1": {
+          "score": 12,
+          "total": 15,
+          "percentage": 80
+        },
+        "section-2": {
+          "score": 10,
+          "total": 15,
+          "percentage": 67
+        },
+        "section-3": {
+          "score": 8,
+          "total": 15,
+          "percentage": 53
+        }
+      },
+      "completedAt": "2026-11-24T05:40:14.092Z"
     }
   ],
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:40:11.554Z"
+  "lastUpdated": "2026-11-24T05:40:14.297Z"
 }
