@@ -25005,47 +25005,47 @@
       "completedAt": "2026-11-24T05:31:02.932Z"
     },
     {
-      "sessionId": "inz_cbt_321784c4-217d-4c11-b127-0fc0e4635b3b",
+      "sessionId": "inz_cbt_304eea33-42ce-4b89-9da3-0af4e06c7ade",
       "candidateId": "INZ-CAND-2026-00263",
       "candidateDisplayId": "INZ-CAND-2026-00263",
-      "candidateName": "Thaslima Nasrin S",
-      "jobRoleId": "role-data-analyst",
-      "jobRoleTitle": "Data Analyst",
-      "domainId": "dom-02",
-      "domainName": "Data & Analytics",
-      "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
-      "totalScore": 45,
+      "candidateName": "Dharanish Kannan",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Software Developer",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "collegeName": "Autonomous Engineering College",
+      "totalScore": 29,
       "maxScore": 45,
       "totalQuestions": 45,
       "totalAttempted": 45,
       "totalQuestionsAttempted": 45,
       "unattempted": 0,
-      "percentage": 100,
+      "percentage": 64,
       "isPassed": true,
       "examResult": "Pass",
       "selectionStatus": "Selected for Next Round",
       "passCutoff": "> 25",
-      "performanceCategory": "Mastery (Outstanding)",
+      "performanceCategory": "Foundational (Competent)",
       "status": "Completed",
-      "certificateId": "INZ-CERT-2026-C61852",
+      "certificateId": "INZ-CERT-2026-AE0D3C",
       "sectionScores": {
         "section-1": {
-          "score": 15,
+          "score": 9,
           "total": 15,
-          "percentage": 100
+          "percentage": 60
         },
         "section-2": {
-          "score": 15,
+          "score": 11,
           "total": 15,
-          "percentage": 100
+          "percentage": 73
         },
         "section-3": {
-          "score": 15,
+          "score": 9,
           "total": 15,
-          "percentage": 100
+          "percentage": 60
         }
       },
-      "completedAt": "2026-11-24T05:31:12.034Z"
+      "completedAt": "2026-11-24T05:45:45.608Z"
     },
     {
       "sessionId": "inz_cbt_bfacf832-e04e-4bbb-8bdf-caaf1dd7d4ab",
@@ -30082,5 +30082,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:45:42.882Z"
+  "lastUpdated": "2026-11-24T05:45:45.763Z"
 }
