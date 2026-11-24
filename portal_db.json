@@ -7425,7 +7425,7 @@
     },
     {
       "_id": "cand-b0ed79d0-e683-4120-9c8b-10fbcb3edb97",
-      "candidateId": "INZ-CAND-2026-00361",
+      "candidateId": "INZ-CAND-2026-00106",
       "fullName": "Logeswari",
       "email": "slogeswari753@gmail.com",
       "password": "#Sabalogesh123",
@@ -19813,5 +19813,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:30:03.654Z"
+  "lastUpdated": "2026-11-24T05:30:10.319Z"
 }
