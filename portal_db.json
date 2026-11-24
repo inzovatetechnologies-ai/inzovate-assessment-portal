@@ -14349,13 +14349,62 @@
       "jobRoleId": "role-data-analyst",
       "jobRoleTitle": "Data Analyst",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Rejected",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-24T04:59:21.980Z",
-      "updatedAt": "2026-11-24T04:59:21.980Z"
+      "updatedAt": "2026-11-24T04:59:21.980Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_0ab3f97a-98fb-46fa-8808-300e9672f40d",
+        "candidateId": "INZ-CAND-2026-00230",
+        "candidateDisplayId": "INZ-CAND-2026-00230",
+        "candidateName": "Nirmal kumar S",
+        "jobRoleId": "role-data-analyst",
+        "jobRoleTitle": "Data Analyst",
+        "domainId": "dom-02",
+        "domainName": "Data & Analytics",
+        "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+        "totalScore": 11,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 30,
+        "totalQuestionsAttempted": 30,
+        "unattempted": 15,
+        "percentage": 24,
+        "isPassed": false,
+        "examResult": "Fail",
+        "selectionStatus": "Rejected",
+        "passCutoff": "> 25",
+        "performanceCategory": "Needs Improvement",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-43CF25",
+        "sectionScores": {
+          "section-1": {
+            "score": 4,
+            "total": 15,
+            "percentage": 27
+          },
+          "section-2": {
+            "score": 7,
+            "total": 15,
+            "percentage": 47
+          },
+          "section-3": {
+            "score": 0,
+            "total": 15,
+            "percentage": 0
+          }
+        },
+        "completedAt": "2026-11-24T05:39:51.866Z"
+      },
+      "totalScore": 11,
+      "percentage": 24,
+      "isPassed": false,
+      "examResult": "Fail",
+      "certificateId": "INZ-CERT-2026-43CF25",
+      "completedAt": "2026-11-24T05:39:51.866Z"
     },
     {
       "_id": "cand-652680fd-494d-4be8-a58e-c4f07be19d19",
@@ -26292,10 +26341,53 @@
         }
       },
       "completedAt": "2026-11-24T05:39:48.290Z"
+    },
+    {
+      "sessionId": "inz_cbt_0ab3f97a-98fb-46fa-8808-300e9672f40d",
+      "candidateId": "INZ-CAND-2026-00230",
+      "candidateDisplayId": "INZ-CAND-2026-00230",
+      "candidateName": "Nirmal kumar S",
+      "jobRoleId": "role-data-analyst",
+      "jobRoleTitle": "Data Analyst",
+      "domainId": "dom-02",
+      "domainName": "Data & Analytics",
+      "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+      "totalScore": 11,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 30,
+      "totalQuestionsAttempted": 30,
+      "unattempted": 15,
+      "percentage": 24,
+      "isPassed": false,
+      "examResult": "Fail",
+      "selectionStatus": "Rejected",
+      "passCutoff": "> 25",
+      "performanceCategory": "Needs Improvement",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-43CF25",
+      "sectionScores": {
+        "section-1": {
+          "score": 4,
+          "total": 15,
+          "percentage": 27
+        },
+        "section-2": {
+          "score": 7,
+          "total": 15,
+          "percentage": 47
+        },
+        "section-3": {
+          "score": 0,
+          "total": 15,
+          "percentage": 0
+        }
+      },
+      "completedAt": "2026-11-24T05:39:51.866Z"
     }
   ],
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:39:48.524Z"
+  "lastUpdated": "2026-11-24T05:39:52.041Z"
 }
