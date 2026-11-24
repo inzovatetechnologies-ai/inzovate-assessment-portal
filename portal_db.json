@@ -10022,7 +10022,7 @@
     },
     {
       "_id": "cand-3ebfd95b-b54c-4701-8450-67671e3e3ffc",
-      "candidateId": "INZ-CAND-2026-00243",
+      "candidateId": "INZ-CAND-2026-00309",
       "fullName": "Thanmaanan R",
       "email": "thanmaanan09@gmail.com",
       "password": "Than@2006",
@@ -10522,5 +10522,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:03:23.356Z"
+  "lastUpdated": "2026-11-24T05:03:24.990Z"
 }
