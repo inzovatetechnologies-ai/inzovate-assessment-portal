@@ -5512,7 +5512,7 @@
     },
     {
       "_id": "cand-8a9f730e-b7c0-4850-a6f9-58919e9e2f26",
-      "candidateId": "INZ-CAND-2026-00147",
+      "candidateId": "INZ-CAND-2026-00188",
       "fullName": "Parthiv Kumar",
       "email": "sparthivkumar0812@gmail.com",
       "password": "081005",
@@ -6668,5 +6668,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T04:56:18.086Z"
+  "lastUpdated": "2026-11-24T04:56:21.525Z"
 }
