@@ -9677,13 +9677,62 @@
       "jobRoleId": "role-java-dev",
       "jobRoleTitle": "Java Developer",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-24T04:54:04.780Z",
-      "updatedAt": "2026-11-24T04:54:04.780Z"
+      "updatedAt": "2026-11-24T04:54:04.780Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_8f6e778b-23a9-4f25-9c6b-26f3e9c6ec88",
+        "candidateId": "INZ-CAND-2026-00175",
+        "candidateDisplayId": "INZ-CAND-2026-00175",
+        "candidateName": "Sneka R",
+        "jobRoleId": "role-java-dev",
+        "jobRoleTitle": "Java Developer",
+        "domainId": "dom-01",
+        "domainName": "Software Development",
+        "collegeName": "Dr.Mahalingam collage of engineering and technology",
+        "totalScore": 26,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 58,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Foundational (Competent)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-982E2E",
+        "sectionScores": {
+          "section-1": {
+            "score": 7,
+            "total": 15,
+            "percentage": 47
+          },
+          "section-2": {
+            "score": 10,
+            "total": 15,
+            "percentage": 67
+          },
+          "section-3": {
+            "score": 9,
+            "total": 15,
+            "percentage": 60
+          }
+        },
+        "completedAt": "2026-11-24T05:28:29.867Z"
+      },
+      "totalScore": 26,
+      "percentage": 58,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-982E2E",
+      "completedAt": "2026-11-24T05:28:29.867Z"
     },
     {
       "_id": "cand-73f66a0c-3594-436f-8963-d1523efc4436",
@@ -18888,10 +18937,53 @@
         }
       },
       "completedAt": "2026-11-24T05:27:52.301Z"
+    },
+    {
+      "sessionId": "inz_cbt_8f6e778b-23a9-4f25-9c6b-26f3e9c6ec88",
+      "candidateId": "INZ-CAND-2026-00175",
+      "candidateDisplayId": "INZ-CAND-2026-00175",
+      "candidateName": "Sneka R",
+      "jobRoleId": "role-java-dev",
+      "jobRoleTitle": "Java Developer",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "collegeName": "Dr.Mahalingam collage of engineering and technology",
+      "totalScore": 26,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 58,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Foundational (Competent)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-982E2E",
+      "sectionScores": {
+        "section-1": {
+          "score": 7,
+          "total": 15,
+          "percentage": 47
+        },
+        "section-2": {
+          "score": 10,
+          "total": 15,
+          "percentage": 67
+        },
+        "section-3": {
+          "score": 9,
+          "total": 15,
+          "percentage": 60
+        }
+      },
+      "completedAt": "2026-11-24T05:28:29.867Z"
     }
   ],
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:27:52.465Z"
+  "lastUpdated": "2026-11-24T05:28:29.999Z"
 }
