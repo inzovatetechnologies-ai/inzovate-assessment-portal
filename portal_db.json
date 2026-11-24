@@ -9284,7 +9284,7 @@
     },
     {
       "_id": "cand-03c55380-7d7f-4408-a582-b2c120f6a5ee",
-      "candidateId": "INZ-CAND-2026-00269",
+      "candidateId": "INZ-CAND-2026-00296",
       "fullName": "Harish G",
       "email": "harisgm027@gmail.com",
       "password": "Hari@2006",
@@ -10235,5 +10235,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:02:41.940Z"
+  "lastUpdated": "2026-11-24T05:02:44.647Z"
 }
