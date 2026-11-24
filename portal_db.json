@@ -9817,7 +9817,7 @@
     },
     {
       "_id": "cand-b107be82-3115-4878-8472-0152527ea735",
-      "candidateId": "INZ-CAND-2026-00283",
+      "candidateId": "INZ-CAND-2026-00300",
       "fullName": "Akilesh.C",
       "email": "akileshchellamuthu96@gmail.com",
       "password": "Renithi@14",
@@ -10317,5 +10317,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:02:50.938Z"
+  "lastUpdated": "2026-11-24T05:02:52.643Z"
 }
