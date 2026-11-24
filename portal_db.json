@@ -10432,7 +10432,7 @@
     },
     {
       "_id": "cand-1b3833c5-f9b7-4621-b624-57ef8a593f8a",
-      "candidateId": "INZ-CAND-2026-00311",
+      "candidateId": "INZ-CAND-2026-00316",
       "fullName": "Nithish Kumar B",
       "email": "nithishkumarbmg@gmail.com",
       "password": "Nithish",
@@ -10645,5 +10645,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:03:52.778Z"
+  "lastUpdated": "2026-11-24T05:04:00.286Z"
 }
