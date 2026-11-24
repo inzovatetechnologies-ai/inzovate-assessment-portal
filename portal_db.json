@@ -8324,13 +8324,62 @@
       "jobRoleId": "role-data-analyst",
       "jobRoleTitle": "Data Analyst",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Rejected",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-24T04:50:37.651Z",
-      "updatedAt": "2026-11-24T04:50:37.651Z"
+      "updatedAt": "2026-11-24T04:50:37.651Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_1eeab3e0-ec47-47ce-8602-c23fd415d77c",
+        "candidateId": "INZ-CAND-2026-00122",
+        "candidateDisplayId": "INZ-CAND-2026-00122",
+        "candidateName": "Deekshaa NK",
+        "jobRoleId": "role-data-analyst",
+        "jobRoleTitle": "Data Analyst",
+        "domainId": "dom-02",
+        "domainName": "Data & Analytics",
+        "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+        "totalScore": 12,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 27,
+        "isPassed": false,
+        "examResult": "Fail",
+        "selectionStatus": "Rejected",
+        "passCutoff": "> 25",
+        "performanceCategory": "Needs Improvement",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-89D1EC",
+        "sectionScores": {
+          "section-1": {
+            "score": 5,
+            "total": 15,
+            "percentage": 33
+          },
+          "section-2": {
+            "score": 2,
+            "total": 15,
+            "percentage": 13
+          },
+          "section-3": {
+            "score": 5,
+            "total": 15,
+            "percentage": 33
+          }
+        },
+        "completedAt": "2026-11-24T05:35:00.441Z"
+      },
+      "totalScore": 12,
+      "percentage": 27,
+      "isPassed": false,
+      "examResult": "Fail",
+      "certificateId": "INZ-CERT-2026-89D1EC",
+      "completedAt": "2026-11-24T05:35:00.441Z"
     },
     {
       "_id": "cand-954d662e-110d-47af-a9f2-ab85c46a6113",
@@ -22446,10 +22495,53 @@
         }
       },
       "completedAt": "2026-11-24T05:34:58.861Z"
+    },
+    {
+      "sessionId": "inz_cbt_1eeab3e0-ec47-47ce-8602-c23fd415d77c",
+      "candidateId": "INZ-CAND-2026-00122",
+      "candidateDisplayId": "INZ-CAND-2026-00122",
+      "candidateName": "Deekshaa NK",
+      "jobRoleId": "role-data-analyst",
+      "jobRoleTitle": "Data Analyst",
+      "domainId": "dom-02",
+      "domainName": "Data & Analytics",
+      "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+      "totalScore": 12,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 27,
+      "isPassed": false,
+      "examResult": "Fail",
+      "selectionStatus": "Rejected",
+      "passCutoff": "> 25",
+      "performanceCategory": "Needs Improvement",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-89D1EC",
+      "sectionScores": {
+        "section-1": {
+          "score": 5,
+          "total": 15,
+          "percentage": 33
+        },
+        "section-2": {
+          "score": 2,
+          "total": 15,
+          "percentage": 13
+        },
+        "section-3": {
+          "score": 5,
+          "total": 15,
+          "percentage": 33
+        }
+      },
+      "completedAt": "2026-11-24T05:35:00.441Z"
     }
   ],
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:34:59.066Z"
+  "lastUpdated": "2026-11-24T05:35:00.605Z"
 }
