@@ -1854,11 +1854,11 @@
       "status": "Registered",
       "deletedAt": null,
       "assessmentStatus": "Completed",
-      "testAttempts": 1,
+      "testAttempts": 2,
       "createdAt": "2026-11-24T04:43:00.286Z",
       "updatedAt": "2026-11-24T04:43:00.286Z",
       "assessmentResult": {
-        "sessionId": "inz_cbt_50149db2-fdd3-4e7d-be18-fac6f84d92e5",
+        "sessionId": "inz_cbt_b9ec9a17-03d1-4b82-8d0e-df2842ec4ed0",
         "candidateId": "INZ-CAND-2026-00029",
         "candidateDisplayId": "INZ-CAND-2026-00029",
         "candidateName": "Mohamed Thamemul Ansahee A",
@@ -1867,25 +1867,25 @@
         "domainId": "dom-01",
         "domainName": "Software Development",
         "collegeName": "  Dr. Mahalingam College of Engineering and Technology",
-        "totalScore": 40,
+        "totalScore": 42,
         "maxScore": 45,
         "totalQuestions": 45,
         "totalAttempted": 45,
         "totalQuestionsAttempted": 45,
         "unattempted": 0,
-        "percentage": 89,
+        "percentage": 93,
         "isPassed": true,
         "examResult": "Pass",
         "selectionStatus": "Selected for Next Round",
         "passCutoff": "> 25",
         "performanceCategory": "Mastery (Outstanding)",
         "status": "Completed",
-        "certificateId": "INZ-CERT-2026-3681EA",
+        "certificateId": "INZ-CERT-2026-62D7DD",
         "sectionScores": {
           "section-1": {
-            "score": 11,
+            "score": 13,
             "total": 15,
-            "percentage": 73
+            "percentage": 87
           },
           "section-2": {
             "score": 14,
@@ -1898,14 +1898,14 @@
             "percentage": 100
           }
         },
-        "completedAt": "2026-11-24T05:25:35.305Z"
+        "completedAt": "2026-11-24T05:25:39.729Z"
       },
-      "totalScore": 40,
-      "percentage": 89,
+      "totalScore": 42,
+      "percentage": 93,
       "isPassed": true,
       "examResult": "Pass",
-      "certificateId": "INZ-CERT-2026-3681EA",
-      "completedAt": "2026-11-24T05:25:35.305Z"
+      "certificateId": "INZ-CERT-2026-62D7DD",
+      "completedAt": "2026-11-24T05:25:39.729Z"
     },
     {
       "_id": "cand-2fc9e5c3-ce53-4708-9885-57310af6a9a6",
@@ -17663,7 +17663,7 @@
       "completedAt": "2026-11-24T05:25:14.520Z"
     },
     {
-      "sessionId": "inz_cbt_50149db2-fdd3-4e7d-be18-fac6f84d92e5",
+      "sessionId": "inz_cbt_b9ec9a17-03d1-4b82-8d0e-df2842ec4ed0",
       "candidateId": "INZ-CAND-2026-00029",
       "candidateDisplayId": "INZ-CAND-2026-00029",
       "candidateName": "Mohamed Thamemul Ansahee A",
@@ -17672,25 +17672,25 @@
       "domainId": "dom-01",
       "domainName": "Software Development",
       "collegeName": "  Dr. Mahalingam College of Engineering and Technology",
-      "totalScore": 40,
+      "totalScore": 42,
       "maxScore": 45,
       "totalQuestions": 45,
       "totalAttempted": 45,
       "totalQuestionsAttempted": 45,
       "unattempted": 0,
-      "percentage": 89,
+      "percentage": 93,
       "isPassed": true,
       "examResult": "Pass",
       "selectionStatus": "Selected for Next Round",
       "passCutoff": "> 25",
       "performanceCategory": "Mastery (Outstanding)",
       "status": "Completed",
-      "certificateId": "INZ-CERT-2026-3681EA",
+      "certificateId": "INZ-CERT-2026-62D7DD",
       "sectionScores": {
         "section-1": {
-          "score": 11,
+          "score": 13,
           "total": 15,
-          "percentage": 73
+          "percentage": 87
         },
         "section-2": {
           "score": 14,
@@ -17703,7 +17703,7 @@
           "percentage": 100
         }
       },
-      "completedAt": "2026-11-24T05:25:35.305Z"
+      "completedAt": "2026-11-24T05:25:39.729Z"
     },
     {
       "sessionId": "inz_cbt_0701a621-d50a-4bea-b420-9e6e9b5fd852",
@@ -17752,5 +17752,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:25:37.541Z"
+  "lastUpdated": "2026-11-24T05:25:39.854Z"
 }
