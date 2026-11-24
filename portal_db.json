@@ -16974,10 +16974,53 @@
         }
       },
       "completedAt": "2026-11-24T05:23:39.396Z"
+    },
+    {
+      "sessionId": "inz_cbt_e2e85993-359c-4ad9-b439-fa464ac89f5e",
+      "candidateId": "INZ-CAND-2026-00160",
+      "candidateDisplayId": "INZ-CAND-2026-00160",
+      "candidateName": "Sridevi N",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Software Developer",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "collegeName": "Autonomous Engineering College",
+      "totalScore": 23,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 51,
+      "isPassed": false,
+      "examResult": "Fail",
+      "selectionStatus": "Rejected",
+      "passCutoff": "> 25",
+      "performanceCategory": "Foundational (Competent)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-BC35A2",
+      "sectionScores": {
+        "section-1": {
+          "score": 6,
+          "total": 15,
+          "percentage": 40
+        },
+        "section-2": {
+          "score": 9,
+          "total": 15,
+          "percentage": 60
+        },
+        "section-3": {
+          "score": 8,
+          "total": 15,
+          "percentage": 53
+        }
+      },
+      "completedAt": "2026-11-24T05:23:43.328Z"
     }
   ],
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:23:39.594Z"
+  "lastUpdated": "2026-11-24T05:23:43.460Z"
 }
