@@ -8103,13 +8103,62 @@
       "jobRoleId": "role-data-analyst",
       "jobRoleTitle": "Data Analyst",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Rejected",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-24T04:50:32.407Z",
-      "updatedAt": "2026-11-24T04:50:32.407Z"
+      "updatedAt": "2026-11-24T04:50:32.407Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_274aa0f3-bff3-4ae5-82f7-cccab9a7a583",
+        "candidateId": "INZ-CAND-2026-00119",
+        "candidateDisplayId": "INZ-CAND-2026-00119",
+        "candidateName": "Karthika V",
+        "jobRoleId": "role-data-analyst",
+        "jobRoleTitle": "Data Analyst",
+        "domainId": "dom-02",
+        "domainName": "Data & Analytics",
+        "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+        "totalScore": 9,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 20,
+        "isPassed": false,
+        "examResult": "Fail",
+        "selectionStatus": "Rejected",
+        "passCutoff": "> 25",
+        "performanceCategory": "Needs Improvement",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-4A172B",
+        "sectionScores": {
+          "section-1": {
+            "score": 4,
+            "total": 15,
+            "percentage": 27
+          },
+          "section-2": {
+            "score": 4,
+            "total": 15,
+            "percentage": 27
+          },
+          "section-3": {
+            "score": 1,
+            "total": 15,
+            "percentage": 7
+          }
+        },
+        "completedAt": "2026-11-24T05:34:00.926Z"
+      },
+      "totalScore": 9,
+      "percentage": 20,
+      "isPassed": false,
+      "examResult": "Fail",
+      "certificateId": "INZ-CERT-2026-4A172B",
+      "completedAt": "2026-11-24T05:34:00.926Z"
     },
     {
       "_id": "cand-dcf778ba-cda2-41f7-8905-710a4115f589",
@@ -21630,10 +21679,53 @@
         }
       },
       "completedAt": "2026-11-24T05:33:50.904Z"
+    },
+    {
+      "sessionId": "inz_cbt_274aa0f3-bff3-4ae5-82f7-cccab9a7a583",
+      "candidateId": "INZ-CAND-2026-00119",
+      "candidateDisplayId": "INZ-CAND-2026-00119",
+      "candidateName": "Karthika V",
+      "jobRoleId": "role-data-analyst",
+      "jobRoleTitle": "Data Analyst",
+      "domainId": "dom-02",
+      "domainName": "Data & Analytics",
+      "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+      "totalScore": 9,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 20,
+      "isPassed": false,
+      "examResult": "Fail",
+      "selectionStatus": "Rejected",
+      "passCutoff": "> 25",
+      "performanceCategory": "Needs Improvement",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-4A172B",
+      "sectionScores": {
+        "section-1": {
+          "score": 4,
+          "total": 15,
+          "percentage": 27
+        },
+        "section-2": {
+          "score": 4,
+          "total": 15,
+          "percentage": 27
+        },
+        "section-3": {
+          "score": 1,
+          "total": 15,
+          "percentage": 7
+        }
+      },
+      "completedAt": "2026-11-24T05:34:00.926Z"
     }
   ],
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:33:51.033Z"
+  "lastUpdated": "2026-11-24T05:34:01.085Z"
 }
