@@ -11242,7 +11242,7 @@
     },
     {
       "_id": "cand-00a55443-ccec-42f5-9e37-c7c608e736ef",
-      "candidateId": "INZ-CAND-2026-00334",
+      "candidateId": "INZ-CAND-2026-00347",
       "fullName": "Chiradeep",
       "email": "chiradeep634@gmail.com",
       "password": "Chira@1653",
@@ -12176,5 +12176,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:11:33.490Z"
+  "lastUpdated": "2026-11-24T05:11:47.397Z"
 }
