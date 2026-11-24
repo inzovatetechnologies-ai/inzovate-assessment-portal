@@ -6496,7 +6496,7 @@
     },
     {
       "_id": "cand-6e7e1de9-e382-4828-a14d-419dacad7ca8",
-      "candidateId": "INZ-CAND-2026-00186",
+      "candidateId": "INZ-CAND-2026-00299",
       "fullName": "Madhumitha.V",
       "email": "madhumitha17012006@gmail.com",
       "password": "Madhu17@2006",
@@ -10276,5 +10276,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:02:48.345Z"
+  "lastUpdated": "2026-11-24T05:02:49.779Z"
 }
