@@ -9653,7 +9653,7 @@
     },
     {
       "_id": "cand-792cf68f-e937-40ba-bbb8-3fb2666b5bd5",
-      "candidateId": "INZ-CAND-2026-00234",
+      "candidateId": "INZ-CAND-2026-00312",
       "fullName": "Sruthi K",
       "email": "sruthikunjumon19@gmail.com",
       "password": "Sruthi@19",
@@ -10563,5 +10563,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:03:28.329Z"
+  "lastUpdated": "2026-11-24T05:03:29.925Z"
 }
