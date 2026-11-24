@@ -6537,7 +6537,7 @@
     },
     {
       "_id": "cand-0f42cb50-f4c7-4776-90bd-88d3829c1575",
-      "candidateId": "INZ-CAND-2026-00187",
+      "candidateId": "INZ-CAND-2026-00202",
       "fullName": "Naveen R",
       "email": "nrk162006@gmail.com",
       "password": "Naveen1625!",
@@ -7119,5 +7119,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T04:57:55.516Z"
+  "lastUpdated": "2026-11-24T04:57:56.681Z"
 }
