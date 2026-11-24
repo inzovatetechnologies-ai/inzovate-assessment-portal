@@ -10865,7 +10865,7 @@
     },
     {
       "_id": "cand-c88141ff-3ba1-4121-85e3-179cd61765a7",
-      "candidateId": "INZ-CAND-2026-00314",
+      "candidateId": "INZ-CAND-2026-00344",
       "fullName": "N.L Sabarinathan",
       "email": "sabarisrv07@gmail.com",
       "password": "Sabari",
@@ -11959,5 +11959,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:09:36.227Z"
+  "lastUpdated": "2026-11-24T05:09:38.350Z"
 }
