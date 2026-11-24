@@ -6797,11 +6797,11 @@
       "status": "Registered",
       "deletedAt": null,
       "assessmentStatus": "Completed",
-      "testAttempts": 2,
+      "testAttempts": 3,
       "createdAt": "2026-11-24T04:48:42.036Z",
       "updatedAt": "2026-11-24T04:48:42.036Z",
       "assessmentResult": {
-        "sessionId": "inz_cbt_2b5cfef5-bbfc-468e-87cb-d31f61ef8886",
+        "sessionId": "inz_cbt_994813c0-7293-483e-83b6-307e5afa5f04",
         "candidateId": "INZ-CAND-2026-00107",
         "candidateDisplayId": "INZ-CAND-2026-00107",
         "candidateName": "Suriya A",
@@ -6823,32 +6823,32 @@
         "passCutoff": "> 25",
         "performanceCategory": "Foundational (Competent)",
         "status": "Completed",
-        "certificateId": "INZ-CERT-2026-3F42F5",
+        "certificateId": "INZ-CERT-2026-39615D",
         "sectionScores": {
           "section-1": {
-            "score": 9,
-            "total": 15,
-            "percentage": 60
-          },
-          "section-2": {
             "score": 13,
             "total": 15,
             "percentage": 87
           },
-          "section-3": {
-            "score": 7,
+          "section-2": {
+            "score": 10,
             "total": 15,
-            "percentage": 47
+            "percentage": 67
+          },
+          "section-3": {
+            "score": 6,
+            "total": 15,
+            "percentage": 40
           }
         },
-        "completedAt": "2026-11-24T05:22:39.776Z"
+        "completedAt": "2026-11-24T05:30:21.237Z"
       },
       "totalScore": 29,
       "percentage": 64,
       "isPassed": true,
       "examResult": "Pass",
-      "certificateId": "INZ-CERT-2026-3F42F5",
-      "completedAt": "2026-11-24T05:22:39.776Z"
+      "certificateId": "INZ-CERT-2026-39615D",
+      "completedAt": "2026-11-24T05:30:21.237Z"
     },
     {
       "_id": "cand-6a771917-85ca-4bf2-8db5-f976b7081e8e",
@@ -17918,7 +17918,7 @@
       "completedAt": "2026-11-24T05:22:30.840Z"
     },
     {
-      "sessionId": "inz_cbt_2b5cfef5-bbfc-468e-87cb-d31f61ef8886",
+      "sessionId": "inz_cbt_994813c0-7293-483e-83b6-307e5afa5f04",
       "candidateId": "INZ-CAND-2026-00107",
       "candidateDisplayId": "INZ-CAND-2026-00107",
       "candidateName": "Suriya A",
@@ -17940,25 +17940,25 @@
       "passCutoff": "> 25",
       "performanceCategory": "Foundational (Competent)",
       "status": "Completed",
-      "certificateId": "INZ-CERT-2026-3F42F5",
+      "certificateId": "INZ-CERT-2026-39615D",
       "sectionScores": {
         "section-1": {
-          "score": 9,
-          "total": 15,
-          "percentage": 60
-        },
-        "section-2": {
           "score": 13,
           "total": 15,
           "percentage": 87
         },
-        "section-3": {
-          "score": 7,
+        "section-2": {
+          "score": 10,
           "total": 15,
-          "percentage": 47
+          "percentage": 67
+        },
+        "section-3": {
+          "score": 6,
+          "total": 15,
+          "percentage": 40
         }
       },
-      "completedAt": "2026-11-24T05:22:39.776Z"
+      "completedAt": "2026-11-24T05:30:21.237Z"
     },
     {
       "sessionId": "inz_cbt_31dab967-8d3e-48ea-9de7-b4de56d2e6af",
@@ -19856,5 +19856,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:30:19.524Z"
+  "lastUpdated": "2026-11-24T05:30:21.485Z"
 }
