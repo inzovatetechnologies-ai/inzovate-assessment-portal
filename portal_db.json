@@ -18031,13 +18031,62 @@
       "jobRoleId": "role-fullstack",
       "jobRoleTitle": "Full Stack Developer",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-24T05:02:08.312Z",
-      "updatedAt": "2026-11-24T05:02:08.312Z"
+      "updatedAt": "2026-11-24T05:02:08.312Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_6a4d6518-fd83-4e53-a157-50c356f877df",
+        "candidateId": "INZ-CAND-2026-00300",
+        "candidateDisplayId": "INZ-CAND-2026-00300",
+        "candidateName": "Akilesh.C",
+        "jobRoleId": "role-fullstack",
+        "jobRoleTitle": "Full Stack Developer",
+        "domainId": "dom-01",
+        "domainName": "Software Development",
+        "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+        "totalScore": 33,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 73,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Proficient (Commendable)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-123015",
+        "sectionScores": {
+          "section-1": {
+            "score": 11,
+            "total": 15,
+            "percentage": 73
+          },
+          "section-2": {
+            "score": 11,
+            "total": 15,
+            "percentage": 73
+          },
+          "section-3": {
+            "score": 11,
+            "total": 15,
+            "percentage": 73
+          }
+        },
+        "completedAt": "2026-11-24T05:43:22.132Z"
+      },
+      "totalScore": 33,
+      "percentage": 73,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-123015",
+      "completedAt": "2026-11-24T05:43:22.132Z"
     },
     {
       "_id": "cand-3e417222-5b02-4f09-a37c-67a31de5fa98",
@@ -29488,10 +29537,53 @@
         }
       },
       "completedAt": "2026-11-24T05:43:23.580Z"
+    },
+    {
+      "sessionId": "inz_cbt_6a4d6518-fd83-4e53-a157-50c356f877df",
+      "candidateId": "INZ-CAND-2026-00300",
+      "candidateDisplayId": "INZ-CAND-2026-00300",
+      "candidateName": "Akilesh.C",
+      "jobRoleId": "role-fullstack",
+      "jobRoleTitle": "Full Stack Developer",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+      "totalScore": 33,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 73,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Proficient (Commendable)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-123015",
+      "sectionScores": {
+        "section-1": {
+          "score": 11,
+          "total": 15,
+          "percentage": 73
+        },
+        "section-2": {
+          "score": 11,
+          "total": 15,
+          "percentage": 73
+        },
+        "section-3": {
+          "score": 11,
+          "total": 15,
+          "percentage": 73
+        }
+      },
+      "completedAt": "2026-11-24T05:43:22.132Z"
     }
   ],
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:43:23.735Z"
+  "lastUpdated": "2026-11-24T05:43:25.580Z"
 }
