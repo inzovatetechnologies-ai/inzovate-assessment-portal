@@ -7603,7 +7603,7 @@
     },
     {
       "_id": "cand-b640656c-8b81-4d01-9516-f995c282fa07",
-      "candidateId": "INZ-CAND-2026-00220",
+      "candidateId": "INZ-CAND-2026-00263",
       "fullName": "Thaslima Nasrin S",
       "email": "thaslimanasrinsyednisar130106@gmail.com",
       "password": "Nasrin@2006",
@@ -9251,5 +9251,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:00:50.401Z"
+  "lastUpdated": "2026-11-24T05:00:51.807Z"
 }
