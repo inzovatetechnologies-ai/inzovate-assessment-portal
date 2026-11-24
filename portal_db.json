@@ -2244,13 +2244,62 @@
       "jobRoleId": "role-uiux",
       "jobRoleTitle": "UI/UX Designer",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-24T04:44:07.847Z",
-      "updatedAt": "2026-11-24T04:44:07.847Z"
+      "updatedAt": "2026-11-24T04:44:07.847Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_156e5cd8-e755-4352-8945-db3e93c8d2a0",
+        "candidateId": "INZ-CAND-2026-00041",
+        "candidateDisplayId": "INZ-CAND-2026-00041",
+        "candidateName": "Subiksha",
+        "jobRoleId": "role-uiux",
+        "jobRoleTitle": "UI/UX Designer",
+        "domainId": "dom-04",
+        "domainName": "UI/UX & Design",
+        "collegeName": "DrMahalingam college of engineering and technology ",
+        "totalScore": 38,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 84,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Mastery (Outstanding)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-571374",
+        "sectionScores": {
+          "section-1": {
+            "score": 14,
+            "total": 15,
+            "percentage": 93
+          },
+          "section-2": {
+            "score": 11,
+            "total": 15,
+            "percentage": 73
+          },
+          "section-3": {
+            "score": 13,
+            "total": 15,
+            "percentage": 87
+          }
+        },
+        "completedAt": "2026-11-24T05:16:50.386Z"
+      },
+      "totalScore": 38,
+      "percentage": 84,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-571374",
+      "completedAt": "2026-11-24T05:16:50.386Z"
     },
     {
       "_id": "cand-e48c4767-d41c-4d30-9751-d73b0ed0da8f",
@@ -13584,10 +13633,53 @@
         }
       },
       "completedAt": "2026-11-24T05:16:48.453Z"
+    },
+    {
+      "sessionId": "inz_cbt_156e5cd8-e755-4352-8945-db3e93c8d2a0",
+      "candidateId": "INZ-CAND-2026-00041",
+      "candidateDisplayId": "INZ-CAND-2026-00041",
+      "candidateName": "Subiksha",
+      "jobRoleId": "role-uiux",
+      "jobRoleTitle": "UI/UX Designer",
+      "domainId": "dom-04",
+      "domainName": "UI/UX & Design",
+      "collegeName": "DrMahalingam college of engineering and technology ",
+      "totalScore": 38,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 84,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Mastery (Outstanding)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-571374",
+      "sectionScores": {
+        "section-1": {
+          "score": 14,
+          "total": 15,
+          "percentage": 93
+        },
+        "section-2": {
+          "score": 11,
+          "total": 15,
+          "percentage": 73
+        },
+        "section-3": {
+          "score": 13,
+          "total": 15,
+          "percentage": 87
+        }
+      },
+      "completedAt": "2026-11-24T05:16:50.386Z"
     }
   ],
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:16:49.973Z"
+  "lastUpdated": "2026-11-24T05:16:51.854Z"
 }
