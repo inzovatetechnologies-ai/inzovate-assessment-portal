@@ -18351,13 +18351,62 @@
       "jobRoleId": "role-soft-dev",
       "jobRoleTitle": "Software Developer",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-24T05:02:50.823Z",
-      "updatedAt": "2026-11-24T05:02:50.823Z"
+      "updatedAt": "2026-11-24T05:02:50.823Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_79ba567a-cc73-4088-b836-0ca3aeb34445",
+        "candidateId": "INZ-CAND-2026-00247",
+        "candidateDisplayId": "INZ-CAND-2026-00247",
+        "candidateName": "Surya K",
+        "jobRoleId": "role-soft-dev",
+        "jobRoleTitle": "Software Developer",
+        "domainId": "dom-01",
+        "domainName": "Software Development",
+        "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+        "totalScore": 33,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 73,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Proficient (Commendable)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-B34BDC",
+        "sectionScores": {
+          "section-1": {
+            "score": 10,
+            "total": 15,
+            "percentage": 67
+          },
+          "section-2": {
+            "score": 13,
+            "total": 15,
+            "percentage": 87
+          },
+          "section-3": {
+            "score": 10,
+            "total": 15,
+            "percentage": 67
+          }
+        },
+        "completedAt": "2026-11-24T05:42:57.201Z"
+      },
+      "totalScore": 33,
+      "percentage": 73,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-B34BDC",
+      "completedAt": "2026-11-24T05:42:57.201Z"
     },
     {
       "_id": "cand-41e19acc-21f2-49b0-93ee-f760290daa79",
@@ -28893,10 +28942,53 @@
         }
       },
       "completedAt": "2026-11-24T05:42:55.862Z"
+    },
+    {
+      "sessionId": "inz_cbt_79ba567a-cc73-4088-b836-0ca3aeb34445",
+      "candidateId": "INZ-CAND-2026-00247",
+      "candidateDisplayId": "INZ-CAND-2026-00247",
+      "candidateName": "Surya K",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Software Developer",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+      "totalScore": 33,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 73,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Proficient (Commendable)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-B34BDC",
+      "sectionScores": {
+        "section-1": {
+          "score": 10,
+          "total": 15,
+          "percentage": 67
+        },
+        "section-2": {
+          "score": 13,
+          "total": 15,
+          "percentage": 87
+        },
+        "section-3": {
+          "score": 10,
+          "total": 15,
+          "percentage": 67
+        }
+      },
+      "completedAt": "2026-11-24T05:42:57.201Z"
     }
   ],
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:42:57.872Z"
+  "lastUpdated": "2026-11-24T05:42:59.658Z"
 }
