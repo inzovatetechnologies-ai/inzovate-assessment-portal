@@ -14193,13 +14193,62 @@
       "jobRoleId": "role-soft-dev",
       "jobRoleTitle": "Software Developer",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Rejected",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-24T04:59:04.254Z",
-      "updatedAt": "2026-11-24T04:59:04.254Z"
+      "updatedAt": "2026-11-24T04:59:04.254Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_d9cd7f6c-1f43-4344-b96a-a1d6caf4e31e",
+        "candidateId": "INZ-CAND-2026-00191",
+        "candidateDisplayId": "INZ-CAND-2026-00191",
+        "candidateName": "Navin N",
+        "jobRoleId": "role-soft-dev",
+        "jobRoleTitle": "Software Developer",
+        "domainId": "dom-01",
+        "domainName": "Software Development",
+        "collegeName": "Dr mahalingam college of engineering and technology",
+        "totalScore": 14,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 31,
+        "isPassed": false,
+        "examResult": "Fail",
+        "selectionStatus": "Rejected",
+        "passCutoff": "> 25",
+        "performanceCategory": "Needs Improvement",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-709731",
+        "sectionScores": {
+          "section-1": {
+            "score": 7,
+            "total": 15,
+            "percentage": 47
+          },
+          "section-2": {
+            "score": 2,
+            "total": 15,
+            "percentage": 13
+          },
+          "section-3": {
+            "score": 5,
+            "total": 15,
+            "percentage": 33
+          }
+        },
+        "completedAt": "2026-11-24T05:40:19.786Z"
+      },
+      "totalScore": 14,
+      "percentage": 31,
+      "isPassed": false,
+      "examResult": "Fail",
+      "certificateId": "INZ-CERT-2026-709731",
+      "completedAt": "2026-11-24T05:40:19.786Z"
     },
     {
       "_id": "cand-fc4f9ed2-5078-4c33-809d-04c2370bfd8a",
@@ -26936,10 +26985,53 @@
         }
       },
       "completedAt": "2026-11-24T05:40:18.466Z"
+    },
+    {
+      "sessionId": "inz_cbt_d9cd7f6c-1f43-4344-b96a-a1d6caf4e31e",
+      "candidateId": "INZ-CAND-2026-00191",
+      "candidateDisplayId": "INZ-CAND-2026-00191",
+      "candidateName": "Navin N",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Software Developer",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "collegeName": "Dr mahalingam college of engineering and technology",
+      "totalScore": 14,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 31,
+      "isPassed": false,
+      "examResult": "Fail",
+      "selectionStatus": "Rejected",
+      "passCutoff": "> 25",
+      "performanceCategory": "Needs Improvement",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-709731",
+      "sectionScores": {
+        "section-1": {
+          "score": 7,
+          "total": 15,
+          "percentage": 47
+        },
+        "section-2": {
+          "score": 2,
+          "total": 15,
+          "percentage": 13
+        },
+        "section-3": {
+          "score": 5,
+          "total": 15,
+          "percentage": 33
+        }
+      },
+      "completedAt": "2026-11-24T05:40:19.786Z"
     }
   ],
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:40:20.073Z"
+  "lastUpdated": "2026-11-24T05:40:21.840Z"
 }
