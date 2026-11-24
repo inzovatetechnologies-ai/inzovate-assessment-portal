@@ -22814,10 +22814,53 @@
         }
       },
       "completedAt": "2026-11-24T05:35:02.349Z"
+    },
+    {
+      "sessionId": "inz_cbt_e431abca-ac99-4584-bf46-dc8b0665e596",
+      "candidateId": "INZ-CAND-2026-00208",
+      "candidateDisplayId": "INZ-CAND-2026-00208",
+      "candidateName": "Kirisan S",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Software Developer",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "collegeName": "Autonomous Engineering College",
+      "totalScore": 20,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 44,
+      "isPassed": false,
+      "examResult": "Fail",
+      "selectionStatus": "Rejected",
+      "passCutoff": "> 25",
+      "performanceCategory": "Needs Improvement",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-F1735E",
+      "sectionScores": {
+        "section-1": {
+          "score": 10,
+          "total": 15,
+          "percentage": 67
+        },
+        "section-2": {
+          "score": 3,
+          "total": 15,
+          "percentage": 20
+        },
+        "section-3": {
+          "score": 7,
+          "total": 15,
+          "percentage": 47
+        }
+      },
+      "completedAt": "2026-11-24T05:35:06.690Z"
     }
   ],
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:35:05.515Z"
+  "lastUpdated": "2026-11-24T05:35:06.844Z"
 }
