@@ -7152,7 +7152,7 @@
     },
     {
       "_id": "cand-9ae64112-0bf8-492e-a992-4e943cde2b42",
-      "candidateId": "INZ-CAND-2026-00207",
+      "candidateId": "INZ-CAND-2026-00274",
       "fullName": "Dakshinesh.S",
       "email": "ddakshinesh21@gmail.com",
       "password": "Dakshinesh@1",
@@ -9497,5 +9497,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:01:27.549Z"
+  "lastUpdated": "2026-11-24T05:01:28.836Z"
 }
