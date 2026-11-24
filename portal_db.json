@@ -15894,13 +15894,62 @@
       "jobRoleId": "role-soft-dev",
       "jobRoleTitle": "Software Developer",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-24T05:03:48.763Z",
-      "updatedAt": "2026-11-24T05:03:48.763Z"
+      "updatedAt": "2026-11-24T05:03:48.763Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_cd01f6d4-cc01-4616-96c6-fedcbdd442db",
+        "candidateId": "INZ-CAND-2026-00314",
+        "candidateDisplayId": "INZ-CAND-2026-00314",
+        "candidateName": "N.L Sabarinathan",
+        "jobRoleId": "role-soft-dev",
+        "jobRoleTitle": "Software Developer",
+        "domainId": "dom-01",
+        "domainName": "Software Development",
+        "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+        "totalScore": 43,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 96,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Mastery (Outstanding)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-8DBA8C",
+        "sectionScores": {
+          "section-1": {
+            "score": 13,
+            "total": 15,
+            "percentage": 87
+          },
+          "section-2": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-3": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          }
+        },
+        "completedAt": "2026-11-24T05:35:01.776Z"
+      },
+      "totalScore": 43,
+      "percentage": 96,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-8DBA8C",
+      "completedAt": "2026-11-24T05:35:01.776Z"
     },
     {
       "_id": "cand-b05215aa-242f-4fd4-ba7a-4662db4afb12",
@@ -22538,10 +22587,53 @@
         }
       },
       "completedAt": "2026-11-24T05:35:00.441Z"
+    },
+    {
+      "sessionId": "inz_cbt_cd01f6d4-cc01-4616-96c6-fedcbdd442db",
+      "candidateId": "INZ-CAND-2026-00314",
+      "candidateDisplayId": "INZ-CAND-2026-00314",
+      "candidateName": "N.L Sabarinathan",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Software Developer",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+      "totalScore": 43,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 96,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Mastery (Outstanding)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-8DBA8C",
+      "sectionScores": {
+        "section-1": {
+          "score": 13,
+          "total": 15,
+          "percentage": 87
+        },
+        "section-2": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-3": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        }
+      },
+      "completedAt": "2026-11-24T05:35:01.776Z"
     }
   ],
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:35:00.605Z"
+  "lastUpdated": "2026-11-24T05:35:01.922Z"
 }
