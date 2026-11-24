@@ -12657,13 +12657,62 @@
       "jobRoleId": "role-bde",
       "jobRoleTitle": "Business Development Executive",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-24T04:58:49.741Z",
-      "updatedAt": "2026-11-24T04:58:49.741Z"
+      "updatedAt": "2026-11-24T04:58:49.741Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_170e78f0-12df-412b-9cc5-8562d2dd097f",
+        "candidateId": "INZ-CAND-2026-00187",
+        "candidateDisplayId": "INZ-CAND-2026-00187",
+        "candidateName": "Sasikala K",
+        "jobRoleId": "role-bde",
+        "jobRoleTitle": "Business Development Executive",
+        "domainId": "dom-11",
+        "domainName": "Business & Sales",
+        "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+        "totalScore": 37,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 82,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Mastery (Outstanding)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-581A4A",
+        "sectionScores": {
+          "section-1": {
+            "score": 12,
+            "total": 15,
+            "percentage": 80
+          },
+          "section-2": {
+            "score": 10,
+            "total": 15,
+            "percentage": 67
+          },
+          "section-3": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          }
+        },
+        "completedAt": "2026-11-24T05:34:20.311Z"
+      },
+      "totalScore": 37,
+      "percentage": 82,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-581A4A",
+      "completedAt": "2026-11-24T05:34:20.311Z"
     },
     {
       "_id": "cand-40a98f31-40a6-4274-913f-b2c17f17ebac",
@@ -21857,10 +21906,53 @@
         }
       },
       "completedAt": "2026-11-24T05:34:15.589Z"
+    },
+    {
+      "sessionId": "inz_cbt_170e78f0-12df-412b-9cc5-8562d2dd097f",
+      "candidateId": "INZ-CAND-2026-00187",
+      "candidateDisplayId": "INZ-CAND-2026-00187",
+      "candidateName": "Sasikala K",
+      "jobRoleId": "role-bde",
+      "jobRoleTitle": "Business Development Executive",
+      "domainId": "dom-11",
+      "domainName": "Business & Sales",
+      "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+      "totalScore": 37,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 82,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Mastery (Outstanding)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-581A4A",
+      "sectionScores": {
+        "section-1": {
+          "score": 12,
+          "total": 15,
+          "percentage": 80
+        },
+        "section-2": {
+          "score": 10,
+          "total": 15,
+          "percentage": 67
+        },
+        "section-3": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        }
+      },
+      "completedAt": "2026-11-24T05:34:20.311Z"
     }
   ],
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:34:15.733Z"
+  "lastUpdated": "2026-11-24T05:34:20.441Z"
 }
