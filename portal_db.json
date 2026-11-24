@@ -3270,11 +3270,11 @@
       "status": "Registered",
       "deletedAt": null,
       "assessmentStatus": "Completed",
-      "testAttempts": 2,
+      "testAttempts": 3,
       "createdAt": "2026-11-24T04:45:10.137Z",
       "updatedAt": "2026-11-24T04:45:10.137Z",
       "assessmentResult": {
-        "sessionId": "inz_cbt_b6c08b75-1f86-4827-8c9f-98ab29602d65",
+        "sessionId": "inz_cbt_0695487e-56ea-49fc-85c2-b86a8fa02876",
         "candidateId": "INZ-CAND-2026-00049",
         "candidateDisplayId": "INZ-CAND-2026-00049",
         "candidateName": "Kavin.P",
@@ -3296,7 +3296,7 @@
         "passCutoff": "> 25",
         "performanceCategory": "Mastery (Outstanding)",
         "status": "Completed",
-        "certificateId": "INZ-CERT-2026-10AF4F",
+        "certificateId": "INZ-CERT-2026-AF1D18",
         "sectionScores": {
           "section-1": {
             "score": 14,
@@ -3314,14 +3314,14 @@
             "percentage": 100
           }
         },
-        "completedAt": "2026-11-24T05:22:03.898Z"
+        "completedAt": "2026-11-24T05:25:20.791Z"
       },
       "totalScore": 44,
       "percentage": 98,
       "isPassed": true,
       "examResult": "Pass",
-      "certificateId": "INZ-CERT-2026-10AF4F",
-      "completedAt": "2026-11-24T05:22:03.898Z"
+      "certificateId": "INZ-CERT-2026-AF1D18",
+      "completedAt": "2026-11-24T05:25:20.791Z"
     },
     {
       "_id": "cand-8c2a8f52-70fb-4262-a7e0-6bfc82e13efd",
@@ -15421,7 +15421,7 @@
       "completedAt": "2026-11-24T05:15:36.597Z"
     },
     {
-      "sessionId": "inz_cbt_b6c08b75-1f86-4827-8c9f-98ab29602d65",
+      "sessionId": "inz_cbt_0695487e-56ea-49fc-85c2-b86a8fa02876",
       "candidateId": "INZ-CAND-2026-00049",
       "candidateDisplayId": "INZ-CAND-2026-00049",
       "candidateName": "Kavin.P",
@@ -15443,7 +15443,7 @@
       "passCutoff": "> 25",
       "performanceCategory": "Mastery (Outstanding)",
       "status": "Completed",
-      "certificateId": "INZ-CERT-2026-10AF4F",
+      "certificateId": "INZ-CERT-2026-AF1D18",
       "sectionScores": {
         "section-1": {
           "score": 14,
@@ -15461,7 +15461,7 @@
           "percentage": 100
         }
       },
-      "completedAt": "2026-11-24T05:22:03.898Z"
+      "completedAt": "2026-11-24T05:25:20.791Z"
     },
     {
       "sessionId": "inz_cbt_eaa2ddfa-3fc9-429b-be66-4cd04e8f1555",
@@ -17617,5 +17617,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:25:14.667Z"
+  "lastUpdated": "2026-11-24T05:25:20.945Z"
 }
