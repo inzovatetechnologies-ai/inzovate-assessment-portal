@@ -3151,13 +3151,62 @@
       "jobRoleId": "role-data-analyst",
       "jobRoleTitle": "Data Analyst",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Rejected",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-24T04:44:27.358Z",
-      "updatedAt": "2026-11-24T04:44:27.358Z"
+      "updatedAt": "2026-11-24T04:44:27.358Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_86506cb3-20c7-4b9f-b62c-ba172b6e1119",
+        "candidateId": "INZ-CAND-2026-00044",
+        "candidateDisplayId": "INZ-CAND-2026-00044",
+        "candidateName": "Sivapriya R",
+        "jobRoleId": "role-data-analyst",
+        "jobRoleTitle": "Data Analyst",
+        "domainId": "dom-02",
+        "domainName": "Data & Analytics",
+        "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+        "totalScore": 21,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 47,
+        "isPassed": false,
+        "examResult": "Fail",
+        "selectionStatus": "Rejected",
+        "passCutoff": "> 25",
+        "performanceCategory": "Needs Improvement",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-7B7BCA",
+        "sectionScores": {
+          "section-1": {
+            "score": 7,
+            "total": 15,
+            "percentage": 47
+          },
+          "section-2": {
+            "score": 11,
+            "total": 15,
+            "percentage": 73
+          },
+          "section-3": {
+            "score": 3,
+            "total": 15,
+            "percentage": 20
+          }
+        },
+        "completedAt": "2026-11-24T05:27:04.165Z"
+      },
+      "totalScore": 21,
+      "percentage": 47,
+      "isPassed": false,
+      "examResult": "Fail",
+      "certificateId": "INZ-CERT-2026-7B7BCA",
+      "completedAt": "2026-11-24T05:27:04.165Z"
     },
     {
       "_id": "cand-adadfcf1-fca4-47e3-837c-3b9996ac0a06",
@@ -18207,10 +18256,53 @@
         }
       },
       "completedAt": "2026-11-24T05:27:03.482Z"
+    },
+    {
+      "sessionId": "inz_cbt_86506cb3-20c7-4b9f-b62c-ba172b6e1119",
+      "candidateId": "INZ-CAND-2026-00044",
+      "candidateDisplayId": "INZ-CAND-2026-00044",
+      "candidateName": "Sivapriya R",
+      "jobRoleId": "role-data-analyst",
+      "jobRoleTitle": "Data Analyst",
+      "domainId": "dom-02",
+      "domainName": "Data & Analytics",
+      "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+      "totalScore": 21,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 47,
+      "isPassed": false,
+      "examResult": "Fail",
+      "selectionStatus": "Rejected",
+      "passCutoff": "> 25",
+      "performanceCategory": "Needs Improvement",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-7B7BCA",
+      "sectionScores": {
+        "section-1": {
+          "score": 7,
+          "total": 15,
+          "percentage": 47
+        },
+        "section-2": {
+          "score": 11,
+          "total": 15,
+          "percentage": 73
+        },
+        "section-3": {
+          "score": 3,
+          "total": 15,
+          "percentage": 20
+        }
+      },
+      "completedAt": "2026-11-24T05:27:04.165Z"
     }
   ],
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:27:03.752Z"
+  "lastUpdated": "2026-11-24T05:27:05.870Z"
 }
