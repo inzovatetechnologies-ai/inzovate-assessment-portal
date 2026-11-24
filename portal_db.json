@@ -6576,11 +6576,11 @@
       "status": "Registered",
       "deletedAt": null,
       "assessmentStatus": "Completed",
-      "testAttempts": 1,
+      "testAttempts": 2,
       "createdAt": "2026-11-24T04:48:28.453Z",
       "updatedAt": "2026-11-24T04:48:28.453Z",
       "assessmentResult": {
-        "sessionId": "inz_cbt_332e3991-1788-49cf-8eea-610672231d86",
+        "sessionId": "inz_cbt_f4dbb387-9e3c-4a8c-b798-2207e8756d55",
         "candidateId": "INZ-CAND-2026-00090",
         "candidateDisplayId": "INZ-CAND-2026-00090",
         "candidateName": "Nirupa Lakshmi M",
@@ -6589,45 +6589,45 @@
         "domainId": "dom-01",
         "domainName": "Software Development",
         "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
-        "totalScore": 28,
+        "totalScore": 43,
         "maxScore": 45,
         "totalQuestions": 45,
         "totalAttempted": 45,
         "totalQuestionsAttempted": 45,
         "unattempted": 0,
-        "percentage": 62,
+        "percentage": 96,
         "isPassed": true,
         "examResult": "Pass",
         "selectionStatus": "Selected for Next Round",
         "passCutoff": "> 25",
-        "performanceCategory": "Foundational (Competent)",
+        "performanceCategory": "Mastery (Outstanding)",
         "status": "Completed",
-        "certificateId": "INZ-CERT-2026-EF947A",
+        "certificateId": "INZ-CERT-2026-70A580",
         "sectionScores": {
           "section-1": {
-            "score": 10,
+            "score": 14,
             "total": 15,
-            "percentage": 67
+            "percentage": 93
           },
           "section-2": {
-            "score": 9,
+            "score": 14,
             "total": 15,
-            "percentage": 60
+            "percentage": 93
           },
           "section-3": {
-            "score": 9,
+            "score": 15,
             "total": 15,
-            "percentage": 60
+            "percentage": 100
           }
         },
-        "completedAt": "2026-11-24T05:23:28.624Z"
+        "completedAt": "2026-11-24T05:30:17.510Z"
       },
-      "totalScore": 28,
-      "percentage": 62,
+      "totalScore": 43,
+      "percentage": 96,
       "isPassed": true,
       "examResult": "Pass",
-      "certificateId": "INZ-CERT-2026-EF947A",
-      "completedAt": "2026-11-24T05:23:28.624Z"
+      "certificateId": "INZ-CERT-2026-70A580",
+      "completedAt": "2026-11-24T05:30:17.510Z"
     },
     {
       "_id": "cand-85a2c18d-e6d5-4fef-a639-ad7b302f8177",
@@ -18219,7 +18219,7 @@
       "completedAt": "2026-11-24T05:23:05.358Z"
     },
     {
-      "sessionId": "inz_cbt_332e3991-1788-49cf-8eea-610672231d86",
+      "sessionId": "inz_cbt_f4dbb387-9e3c-4a8c-b798-2207e8756d55",
       "candidateId": "INZ-CAND-2026-00090",
       "candidateDisplayId": "INZ-CAND-2026-00090",
       "candidateName": "Nirupa Lakshmi M",
@@ -18228,38 +18228,38 @@
       "domainId": "dom-01",
       "domainName": "Software Development",
       "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
-      "totalScore": 28,
+      "totalScore": 43,
       "maxScore": 45,
       "totalQuestions": 45,
       "totalAttempted": 45,
       "totalQuestionsAttempted": 45,
       "unattempted": 0,
-      "percentage": 62,
+      "percentage": 96,
       "isPassed": true,
       "examResult": "Pass",
       "selectionStatus": "Selected for Next Round",
       "passCutoff": "> 25",
-      "performanceCategory": "Foundational (Competent)",
+      "performanceCategory": "Mastery (Outstanding)",
       "status": "Completed",
-      "certificateId": "INZ-CERT-2026-EF947A",
+      "certificateId": "INZ-CERT-2026-70A580",
       "sectionScores": {
         "section-1": {
-          "score": 10,
+          "score": 14,
           "total": 15,
-          "percentage": 67
+          "percentage": 93
         },
         "section-2": {
-          "score": 9,
+          "score": 14,
           "total": 15,
-          "percentage": 60
+          "percentage": 93
         },
         "section-3": {
-          "score": 9,
+          "score": 15,
           "total": 15,
-          "percentage": 60
+          "percentage": 100
         }
       },
-      "completedAt": "2026-11-24T05:23:28.624Z"
+      "completedAt": "2026-11-24T05:30:17.510Z"
     },
     {
       "sessionId": "inz_cbt_7ca11bd2-30ce-4c56-aeb1-69b4f1fe5f49",
@@ -19856,5 +19856,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:30:11.958Z"
+  "lastUpdated": "2026-11-24T05:30:17.647Z"
 }
