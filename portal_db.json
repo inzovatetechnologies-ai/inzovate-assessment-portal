@@ -4752,11 +4752,11 @@
       "status": "Registered",
       "deletedAt": null,
       "assessmentStatus": "Completed",
-      "testAttempts": 1,
+      "testAttempts": 2,
       "createdAt": "2026-11-24T04:47:24.288Z",
       "updatedAt": "2026-11-24T04:47:24.288Z",
       "assessmentResult": {
-        "sessionId": "inz_cbt_f3230aaa-ebf2-471e-8a96-8b8f9f6ddf30",
+        "sessionId": "inz_cbt_df529c80-3e5d-4d0a-ab8f-91f49076f18a",
         "candidateId": "INZ-CAND-2026-00073",
         "candidateDisplayId": "INZ-CAND-2026-00073",
         "candidateName": "Paramesh M",
@@ -4765,45 +4765,45 @@
         "domainId": "dom-01",
         "domainName": "Software Development",
         "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
-        "totalScore": 44,
+        "totalScore": 28,
         "maxScore": 45,
         "totalQuestions": 45,
         "totalAttempted": 45,
         "totalQuestionsAttempted": 45,
         "unattempted": 0,
-        "percentage": 98,
+        "percentage": 62,
         "isPassed": true,
         "examResult": "Pass",
         "selectionStatus": "Selected for Next Round",
         "passCutoff": "> 25",
-        "performanceCategory": "Mastery (Outstanding)",
+        "performanceCategory": "Foundational (Competent)",
         "status": "Completed",
-        "certificateId": "INZ-CERT-2026-6E81E0",
+        "certificateId": "INZ-CERT-2026-F24675",
         "sectionScores": {
           "section-1": {
-            "score": 15,
+            "score": 8,
             "total": 15,
-            "percentage": 100
+            "percentage": 53
           },
           "section-2": {
-            "score": 14,
+            "score": 13,
             "total": 15,
-            "percentage": 93
+            "percentage": 87
           },
           "section-3": {
-            "score": 15,
+            "score": 7,
             "total": 15,
-            "percentage": 100
+            "percentage": 47
           }
         },
-        "completedAt": "2026-11-24T05:07:56.072Z"
+        "completedAt": "2026-11-24T05:23:23.801Z"
       },
-      "totalScore": 44,
-      "percentage": 98,
+      "totalScore": 28,
+      "percentage": 62,
       "isPassed": true,
       "examResult": "Pass",
-      "certificateId": "INZ-CERT-2026-6E81E0",
-      "completedAt": "2026-11-24T05:07:56.072Z"
+      "certificateId": "INZ-CERT-2026-F24675",
+      "completedAt": "2026-11-24T05:23:23.801Z"
     },
     {
       "_id": "cand-aac450f0-34d8-4282-afce-ac9cf2543062",
@@ -14163,7 +14163,7 @@
       "completedAt": "2026-11-24T05:07:51.039Z"
     },
     {
-      "sessionId": "inz_cbt_f3230aaa-ebf2-471e-8a96-8b8f9f6ddf30",
+      "sessionId": "inz_cbt_df529c80-3e5d-4d0a-ab8f-91f49076f18a",
       "candidateId": "INZ-CAND-2026-00073",
       "candidateDisplayId": "INZ-CAND-2026-00073",
       "candidateName": "Paramesh M",
@@ -14172,38 +14172,38 @@
       "domainId": "dom-01",
       "domainName": "Software Development",
       "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
-      "totalScore": 44,
+      "totalScore": 28,
       "maxScore": 45,
       "totalQuestions": 45,
       "totalAttempted": 45,
       "totalQuestionsAttempted": 45,
       "unattempted": 0,
-      "percentage": 98,
+      "percentage": 62,
       "isPassed": true,
       "examResult": "Pass",
       "selectionStatus": "Selected for Next Round",
       "passCutoff": "> 25",
-      "performanceCategory": "Mastery (Outstanding)",
+      "performanceCategory": "Foundational (Competent)",
       "status": "Completed",
-      "certificateId": "INZ-CERT-2026-6E81E0",
+      "certificateId": "INZ-CERT-2026-F24675",
       "sectionScores": {
         "section-1": {
-          "score": 15,
+          "score": 8,
           "total": 15,
-          "percentage": 100
+          "percentage": 53
         },
         "section-2": {
-          "score": 14,
+          "score": 13,
           "total": 15,
-          "percentage": 93
+          "percentage": 87
         },
         "section-3": {
-          "score": 15,
+          "score": 7,
           "total": 15,
-          "percentage": 100
+          "percentage": 47
         }
       },
-      "completedAt": "2026-11-24T05:07:56.072Z"
+      "completedAt": "2026-11-24T05:23:23.801Z"
     },
     {
       "sessionId": "inz_cbt_f5cc433a-5c98-4656-bec2-cc37f19449c8",
@@ -16703,5 +16703,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:23:08.830Z"
+  "lastUpdated": "2026-11-24T05:23:23.945Z"
 }
