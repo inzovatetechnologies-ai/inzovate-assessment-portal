@@ -13522,13 +13522,62 @@
       "jobRoleId": "role-data-analyst",
       "jobRoleTitle": "Data Analyst",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-24T04:58:42.807Z",
-      "updatedAt": "2026-11-24T04:58:42.807Z"
+      "updatedAt": "2026-11-24T04:58:42.807Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_8d9a0044-26a5-4da6-b3a2-7939ee56cd31",
+        "candidateId": "INZ-CAND-2026-00183",
+        "candidateDisplayId": "INZ-CAND-2026-00183",
+        "candidateName": "Janani B",
+        "jobRoleId": "role-data-analyst",
+        "jobRoleTitle": "Data Analyst",
+        "domainId": "dom-02",
+        "domainName": "Data & Analytics",
+        "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+        "totalScore": 33,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 73,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Proficient (Commendable)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-F64E38",
+        "sectionScores": {
+          "section-1": {
+            "score": 10,
+            "total": 15,
+            "percentage": 67
+          },
+          "section-2": {
+            "score": 13,
+            "total": 15,
+            "percentage": 87
+          },
+          "section-3": {
+            "score": 10,
+            "total": 15,
+            "percentage": 67
+          }
+        },
+        "completedAt": "2026-11-24T05:39:10.918Z"
+      },
+      "totalScore": 33,
+      "percentage": 73,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-F64E38",
+      "completedAt": "2026-11-24T05:39:10.918Z"
     },
     {
       "_id": "cand-b640656c-8b81-4d01-9516-f995c282fa07",
@@ -26016,10 +26065,53 @@
         }
       },
       "completedAt": "2026-11-24T05:39:06.892Z"
+    },
+    {
+      "sessionId": "inz_cbt_8d9a0044-26a5-4da6-b3a2-7939ee56cd31",
+      "candidateId": "INZ-CAND-2026-00183",
+      "candidateDisplayId": "INZ-CAND-2026-00183",
+      "candidateName": "Janani B",
+      "jobRoleId": "role-data-analyst",
+      "jobRoleTitle": "Data Analyst",
+      "domainId": "dom-02",
+      "domainName": "Data & Analytics",
+      "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+      "totalScore": 33,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 73,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Proficient (Commendable)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-F64E38",
+      "sectionScores": {
+        "section-1": {
+          "score": 10,
+          "total": 15,
+          "percentage": 67
+        },
+        "section-2": {
+          "score": 13,
+          "total": 15,
+          "percentage": 87
+        },
+        "section-3": {
+          "score": 10,
+          "total": 15,
+          "percentage": 67
+        }
+      },
+      "completedAt": "2026-11-24T05:39:10.918Z"
     }
   ],
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:39:07.058Z"
+  "lastUpdated": "2026-11-24T05:39:11.058Z"
 }
