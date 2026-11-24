@@ -10480,11 +10480,11 @@
       "status": "Registered",
       "deletedAt": null,
       "assessmentStatus": "Completed",
-      "testAttempts": 1,
+      "testAttempts": 2,
       "createdAt": "2026-11-24T04:52:46.016Z",
       "updatedAt": "2026-11-24T04:52:46.016Z",
       "assessmentResult": {
-        "sessionId": "inz_cbt_bb4f492f-ac85-4854-9456-67f0d1dbb6e6",
+        "sessionId": "inz_cbt_f3cebc15-4a0d-419f-8682-ed3bd36cf255",
         "candidateId": "INZ-CAND-2026-00164",
         "candidateDisplayId": "INZ-CAND-2026-00164",
         "candidateName": "Sruthi Sree S",
@@ -10506,32 +10506,32 @@
         "passCutoff": "> 25",
         "performanceCategory": "Proficient (Commendable)",
         "status": "Completed",
-        "certificateId": "INZ-CERT-2026-9B94FC",
+        "certificateId": "INZ-CERT-2026-506ACA",
         "sectionScores": {
           "section-1": {
-            "score": 11,
-            "total": 15,
-            "percentage": 73
-          },
-          "section-2": {
             "score": 12,
             "total": 15,
             "percentage": 80
           },
-          "section-3": {
+          "section-2": {
             "score": 10,
             "total": 15,
             "percentage": 67
+          },
+          "section-3": {
+            "score": 11,
+            "total": 15,
+            "percentage": 73
           }
         },
-        "completedAt": "2026-11-24T05:35:20.848Z"
+        "completedAt": "2026-11-24T05:42:56.352Z"
       },
       "totalScore": 33,
       "percentage": 73,
       "isPassed": true,
       "examResult": "Pass",
-      "certificateId": "INZ-CERT-2026-9B94FC",
-      "completedAt": "2026-11-24T05:35:20.848Z"
+      "certificateId": "INZ-CERT-2026-506ACA",
+      "completedAt": "2026-11-24T05:42:56.352Z"
     },
     {
       "_id": "cand-ea5a87b6-ab3e-4aeb-86e2-abdf4fbfce1c",
@@ -25885,7 +25885,7 @@
       "completedAt": "2026-11-24T05:35:19.242Z"
     },
     {
-      "sessionId": "inz_cbt_bb4f492f-ac85-4854-9456-67f0d1dbb6e6",
+      "sessionId": "inz_cbt_f3cebc15-4a0d-419f-8682-ed3bd36cf255",
       "candidateId": "INZ-CAND-2026-00164",
       "candidateDisplayId": "INZ-CAND-2026-00164",
       "candidateName": "Sruthi Sree S",
@@ -25907,25 +25907,25 @@
       "passCutoff": "> 25",
       "performanceCategory": "Proficient (Commendable)",
       "status": "Completed",
-      "certificateId": "INZ-CERT-2026-9B94FC",
+      "certificateId": "INZ-CERT-2026-506ACA",
       "sectionScores": {
         "section-1": {
-          "score": 11,
-          "total": 15,
-          "percentage": 73
-        },
-        "section-2": {
           "score": 12,
           "total": 15,
           "percentage": 80
         },
-        "section-3": {
+        "section-2": {
           "score": 10,
           "total": 15,
           "percentage": 67
+        },
+        "section-3": {
+          "score": 11,
+          "total": 15,
+          "percentage": 73
         }
       },
-      "completedAt": "2026-11-24T05:35:20.848Z"
+      "completedAt": "2026-11-24T05:42:56.352Z"
     },
     {
       "sessionId": "inz_cbt_c5f63dcf-a285-4426-9d73-59ff1d333d58",
@@ -28898,5 +28898,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:42:56.068Z"
+  "lastUpdated": "2026-11-24T05:42:57.872Z"
 }
