@@ -7111,7 +7111,7 @@
     },
     {
       "_id": "cand-5fa9bbce-b383-4f60-8d4d-222429fe5e3d",
-      "candidateId": "INZ-CAND-2026-00205",
+      "candidateId": "INZ-CAND-2026-00290",
       "fullName": "Pradeep Kumar G",
       "email": "gpradeepk715@gmail.com",
       "password": "Pradeep@2006",
@@ -9989,5 +9989,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:02:23.308Z"
+  "lastUpdated": "2026-11-24T05:02:25.348Z"
 }
