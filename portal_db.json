@@ -10768,7 +10768,7 @@
     },
     {
       "_id": "cand-3bc6dd88-f22d-45c3-b585-de5274227318",
-      "candidateId": "INZ-CAND-2026-00328",
+      "candidateId": "INZ-CAND-2026-00339",
       "fullName": "ESHALINI S",
       "email": "eshalinis06@gmail.com",
       "password": "esha125",
@@ -11106,5 +11106,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:06:34.646Z"
+  "lastUpdated": "2026-11-24T05:06:45.345Z"
 }
