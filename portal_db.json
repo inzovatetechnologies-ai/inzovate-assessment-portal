@@ -9325,7 +9325,7 @@
     },
     {
       "_id": "cand-e4c05947-0752-47d9-90fb-c5f93e707146",
-      "candidateId": "INZ-CAND-2026-00226",
+      "candidateId": "INZ-CAND-2026-00286",
       "fullName": "N.S.Dhanista",
       "email": "dhanistanataraj@gmail.com",
       "password": "Dhanu@0607",
@@ -9948,5 +9948,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:02:15.659Z"
+  "lastUpdated": "2026-11-24T05:02:17.037Z"
 }
