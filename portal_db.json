@@ -11149,7 +11149,7 @@
     },
     {
       "_id": "cand-073c929c-cbcd-4806-bf3e-fb1171173523",
-      "candidateId": "INZ-CAND-2026-00176",
+      "candidateId": "INZ-CAND-2026-00168",
       "fullName": "Ajay GMR",
       "email": "ajayrajesh159@gmail.com",
       "password": "Anjohaaland@10",
@@ -11180,11 +11180,11 @@
       "jobRoleId": "role-data-analyst",
       "jobRoleTitle": "Data Analyst",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Selected for Next Round",
+      "recruitmentStage": "Registered",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Completed",
-      "testAttempts": 1,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
       "createdAt": "2026-11-24T04:54:44.516Z",
       "updatedAt": "2026-11-24T04:54:44.516Z",
       "assessmentResult": {
@@ -25659,5 +25659,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:38:27.365Z"
+  "lastUpdated": "2026-11-24T05:38:37.379Z"
 }
