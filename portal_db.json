@@ -1367,13 +1367,62 @@
       "jobRoleId": "role-data-analyst",
       "jobRoleTitle": "Data Analyst",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-24T04:42:22.450Z",
-      "updatedAt": "2026-11-24T04:42:22.450Z"
+      "updatedAt": "2026-11-24T04:42:22.450Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_93ba626c-5a1f-46b8-b83e-124d6002de38",
+        "candidateId": "INZ-CAND-2026-00045",
+        "candidateDisplayId": "INZ-CAND-2026-00045",
+        "candidateName": "Pradeepa",
+        "jobRoleId": "role-data-analyst",
+        "jobRoleTitle": "Data Analyst",
+        "domainId": "dom-02",
+        "domainName": "Data & Analytics",
+        "collegeName": "Dr.Mahalingam College of engineering and technology",
+        "totalScore": 39,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 87,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Mastery (Outstanding)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-224E6D",
+        "sectionScores": {
+          "section-1": {
+            "score": 13,
+            "total": 15,
+            "percentage": 87
+          },
+          "section-2": {
+            "score": 13,
+            "total": 15,
+            "percentage": 87
+          },
+          "section-3": {
+            "score": 13,
+            "total": 15,
+            "percentage": 87
+          }
+        },
+        "completedAt": "2026-11-24T05:27:01.242Z"
+      },
+      "totalScore": 39,
+      "percentage": 87,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-224E6D",
+      "completedAt": "2026-11-24T05:27:01.242Z"
     },
     {
       "_id": "cand-348087a9-27a6-4f81-a2b3-519c43560e4c",
@@ -18023,10 +18072,53 @@
         }
       },
       "completedAt": "2026-11-24T05:26:55.917Z"
+    },
+    {
+      "sessionId": "inz_cbt_93ba626c-5a1f-46b8-b83e-124d6002de38",
+      "candidateId": "INZ-CAND-2026-00045",
+      "candidateDisplayId": "INZ-CAND-2026-00045",
+      "candidateName": "Pradeepa",
+      "jobRoleId": "role-data-analyst",
+      "jobRoleTitle": "Data Analyst",
+      "domainId": "dom-02",
+      "domainName": "Data & Analytics",
+      "collegeName": "Dr.Mahalingam College of engineering and technology",
+      "totalScore": 39,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 87,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Mastery (Outstanding)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-224E6D",
+      "sectionScores": {
+        "section-1": {
+          "score": 13,
+          "total": 15,
+          "percentage": 87
+        },
+        "section-2": {
+          "score": 13,
+          "total": 15,
+          "percentage": 87
+        },
+        "section-3": {
+          "score": 13,
+          "total": 15,
+          "percentage": 87
+        }
+      },
+      "completedAt": "2026-11-24T05:27:01.242Z"
     }
   ],
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:26:56.130Z"
+  "lastUpdated": "2026-11-24T05:27:01.389Z"
 }
