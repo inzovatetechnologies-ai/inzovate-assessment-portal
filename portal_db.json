@@ -4997,7 +4997,7 @@
       "candidateId": "INZ-CAND-2026-00068",
       "fullName": "Pavithra R",
       "email": "pavithraradhu2005@gmail.com",
-      "password": "Pavithra22005",
+      "password": "Pavi@2005",
       "mobileNumber": "8675223372",
       "altMobileNumber": "",
       "dateOfBirth": "2005-03-09",
@@ -30450,5 +30450,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:49:24.453Z"
+  "lastUpdated": "2026-11-24T06:06:29.011Z"
 }
