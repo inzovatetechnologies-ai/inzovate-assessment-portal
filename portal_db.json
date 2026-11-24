@@ -1146,13 +1146,62 @@
       "jobRoleId": "role-soft-dev",
       "jobRoleTitle": "Software Developer",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-24T04:41:33.601Z",
-      "updatedAt": "2026-11-24T04:41:33.601Z"
+      "updatedAt": "2026-11-24T04:41:33.601Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_07f1d369-44a9-4f1b-b509-61e47e64458f",
+        "candidateId": "INZ-CAND-2026-00017",
+        "candidateDisplayId": "INZ-CAND-2026-00017",
+        "candidateName": "Sri Arjun",
+        "jobRoleId": "role-soft-dev",
+        "jobRoleTitle": "Software Developer",
+        "domainId": "dom-01",
+        "domainName": "Software Development",
+        "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+        "totalScore": 39,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 87,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Mastery (Outstanding)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-CAE38E",
+        "sectionScores": {
+          "section-1": {
+            "score": 12,
+            "total": 15,
+            "percentage": 80
+          },
+          "section-2": {
+            "score": 13,
+            "total": 15,
+            "percentage": 87
+          },
+          "section-3": {
+            "score": 14,
+            "total": 15,
+            "percentage": 93
+          }
+        },
+        "completedAt": "2026-11-24T05:20:10.157Z"
+      },
+      "totalScore": 39,
+      "percentage": 87,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-CAE38E",
+      "completedAt": "2026-11-24T05:20:10.157Z"
     },
     {
       "_id": "cand-670cd42c-3912-4099-961e-e581bd304d9e",
@@ -15183,10 +15232,53 @@
         }
       },
       "completedAt": "2026-11-24T05:19:53.961Z"
+    },
+    {
+      "sessionId": "inz_cbt_07f1d369-44a9-4f1b-b509-61e47e64458f",
+      "candidateId": "INZ-CAND-2026-00017",
+      "candidateDisplayId": "INZ-CAND-2026-00017",
+      "candidateName": "Sri Arjun",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Software Developer",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+      "totalScore": 39,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 87,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Mastery (Outstanding)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-CAE38E",
+      "sectionScores": {
+        "section-1": {
+          "score": 12,
+          "total": 15,
+          "percentage": 80
+        },
+        "section-2": {
+          "score": 13,
+          "total": 15,
+          "percentage": 87
+        },
+        "section-3": {
+          "score": 14,
+          "total": 15,
+          "percentage": 93
+        }
+      },
+      "completedAt": "2026-11-24T05:20:10.157Z"
     }
   ],
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:19:54.072Z"
+  "lastUpdated": "2026-11-24T05:20:10.277Z"
 }
