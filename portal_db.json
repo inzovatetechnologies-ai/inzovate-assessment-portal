@@ -21311,10 +21311,53 @@
         }
       },
       "completedAt": "2026-11-24T05:33:29.987Z"
+    },
+    {
+      "sessionId": "inz_cbt_0dfd5ced-af52-4409-bcca-5f8e04f3f8cb",
+      "candidateId": "INZ-CAND-2026-00220",
+      "candidateDisplayId": "INZ-CAND-2026-00220",
+      "candidateName": "Gokul K",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Software Developer",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "collegeName": "Autonomous Engineering College",
+      "totalScore": 35,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 78,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Proficient (Commendable)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-678DDF",
+      "sectionScores": {
+        "section-1": {
+          "score": 14,
+          "total": 15,
+          "percentage": 93
+        },
+        "section-2": {
+          "score": 10,
+          "total": 15,
+          "percentage": 67
+        },
+        "section-3": {
+          "score": 11,
+          "total": 15,
+          "percentage": 73
+        }
+      },
+      "completedAt": "2026-11-24T05:33:29.884Z"
     }
   ],
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:33:30.173Z"
+  "lastUpdated": "2026-11-24T05:33:31.421Z"
 }
