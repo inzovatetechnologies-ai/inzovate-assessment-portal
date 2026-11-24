@@ -18483,10 +18483,53 @@
         }
       },
       "completedAt": "2026-11-24T05:27:07.326Z"
+    },
+    {
+      "sessionId": "inz_cbt_4a392cd5-2f62-480b-aa7e-d9a49e5d0b0f",
+      "candidateId": "INZ-CAND-2026-00110",
+      "candidateDisplayId": "INZ-CAND-2026-00110",
+      "candidateName": "Deekshaa NK",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Software Developer",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "collegeName": "Autonomous Engineering College",
+      "totalScore": 20,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 44,
+      "isPassed": false,
+      "examResult": "Fail",
+      "selectionStatus": "Rejected",
+      "passCutoff": "> 25",
+      "performanceCategory": "Needs Improvement",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-603436",
+      "sectionScores": {
+        "section-1": {
+          "score": 5,
+          "total": 15,
+          "percentage": 33
+        },
+        "section-2": {
+          "score": 11,
+          "total": 15,
+          "percentage": 73
+        },
+        "section-3": {
+          "score": 4,
+          "total": 15,
+          "percentage": 27
+        }
+      },
+      "completedAt": "2026-11-24T05:27:06.097Z"
     }
   ],
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:27:09.378Z"
+  "lastUpdated": "2026-11-24T05:27:11.352Z"
 }
