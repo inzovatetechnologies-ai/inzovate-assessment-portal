@@ -1713,13 +1713,62 @@
       "jobRoleId": "role-bde",
       "jobRoleTitle": "Business Development Executive",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-24T04:44:07.537Z",
-      "updatedAt": "2026-11-24T04:44:07.537Z"
+      "updatedAt": "2026-11-24T04:44:07.537Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_b790222c-2c44-47b4-b030-cfe4de48633d",
+        "candidateId": "INZ-CAND-2026-00040",
+        "candidateDisplayId": "INZ-CAND-2026-00040",
+        "candidateName": "THANUSH A P",
+        "jobRoleId": "role-bde",
+        "jobRoleTitle": "Business Development Executive",
+        "domainId": "dom-11",
+        "domainName": "Business & Sales",
+        "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+        "totalScore": 30,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 67,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Proficient (Commendable)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-84808F",
+        "sectionScores": {
+          "section-1": {
+            "score": 10,
+            "total": 15,
+            "percentage": 67
+          },
+          "section-2": {
+            "score": 11,
+            "total": 15,
+            "percentage": 73
+          },
+          "section-3": {
+            "score": 9,
+            "total": 15,
+            "percentage": 60
+          }
+        },
+        "completedAt": "2026-11-24T05:12:15.248Z"
+      },
+      "totalScore": 30,
+      "percentage": 67,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-84808F",
+      "completedAt": "2026-11-24T05:12:15.248Z"
     },
     {
       "_id": "cand-4a4f446c-bbb8-4d5c-ba81-7614289f70f8",
@@ -12171,10 +12220,53 @@
         }
       },
       "completedAt": "2026-11-24T05:11:20.522Z"
+    },
+    {
+      "sessionId": "inz_cbt_b790222c-2c44-47b4-b030-cfe4de48633d",
+      "candidateId": "INZ-CAND-2026-00040",
+      "candidateDisplayId": "INZ-CAND-2026-00040",
+      "candidateName": "THANUSH A P",
+      "jobRoleId": "role-bde",
+      "jobRoleTitle": "Business Development Executive",
+      "domainId": "dom-11",
+      "domainName": "Business & Sales",
+      "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+      "totalScore": 30,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 67,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Proficient (Commendable)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-84808F",
+      "sectionScores": {
+        "section-1": {
+          "score": 10,
+          "total": 15,
+          "percentage": 67
+        },
+        "section-2": {
+          "score": 11,
+          "total": 15,
+          "percentage": 73
+        },
+        "section-3": {
+          "score": 9,
+          "total": 15,
+          "percentage": 60
+        }
+      },
+      "completedAt": "2026-11-24T05:12:15.248Z"
     }
   ],
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:11:59.532Z"
+  "lastUpdated": "2026-11-24T05:12:15.362Z"
 }
