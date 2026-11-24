@@ -15252,11 +15252,11 @@
       "status": "Registered",
       "deletedAt": null,
       "assessmentStatus": "Completed",
-      "testAttempts": 1,
+      "testAttempts": 2,
       "createdAt": "2026-11-24T04:59:38.690Z",
       "updatedAt": "2026-11-24T04:59:38.690Z",
       "assessmentResult": {
-        "sessionId": "inz_cbt_19a0a67c-1f66-4263-90ff-b6972dde8989",
+        "sessionId": "inz_cbt_ba30dcbd-6a15-4a3a-9a72-2fd4dea6144e",
         "candidateId": "INZ-CAND-2026-00259",
         "candidateDisplayId": "INZ-CAND-2026-00259",
         "candidateName": "Vivin K",
@@ -15265,45 +15265,45 @@
         "domainId": "dom-02",
         "domainName": "Data & Analytics",
         "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
-        "totalScore": 41,
+        "totalScore": 30,
         "maxScore": 45,
         "totalQuestions": 45,
         "totalAttempted": 45,
         "totalQuestionsAttempted": 45,
         "unattempted": 0,
-        "percentage": 91,
+        "percentage": 67,
         "isPassed": true,
         "examResult": "Pass",
         "selectionStatus": "Selected for Next Round",
         "passCutoff": "> 25",
-        "performanceCategory": "Mastery (Outstanding)",
+        "performanceCategory": "Proficient (Commendable)",
         "status": "Completed",
-        "certificateId": "INZ-CERT-2026-5EE853",
+        "certificateId": "INZ-CERT-2026-86BF07",
         "sectionScores": {
           "section-1": {
-            "score": 14,
+            "score": 11,
             "total": 15,
-            "percentage": 93
+            "percentage": 73
           },
           "section-2": {
-            "score": 15,
+            "score": 10,
             "total": 15,
-            "percentage": 100
+            "percentage": 67
           },
           "section-3": {
-            "score": 12,
+            "score": 9,
             "total": 15,
-            "percentage": 80
+            "percentage": 60
           }
         },
-        "completedAt": "2026-11-24T05:38:20.797Z"
+        "completedAt": "2026-11-24T05:42:28.249Z"
       },
-      "totalScore": 41,
-      "percentage": 91,
+      "totalScore": 30,
+      "percentage": 67,
       "isPassed": true,
       "examResult": "Pass",
-      "certificateId": "INZ-CERT-2026-5EE853",
-      "completedAt": "2026-11-24T05:38:20.797Z"
+      "certificateId": "INZ-CERT-2026-86BF07",
+      "completedAt": "2026-11-24T05:42:28.249Z"
     },
     {
       "_id": "cand-908d38e5-733b-4ffa-97b9-229209dc9dc1",
@@ -26948,7 +26948,7 @@
       "completedAt": "2026-11-24T05:38:07.341Z"
     },
     {
-      "sessionId": "inz_cbt_19a0a67c-1f66-4263-90ff-b6972dde8989",
+      "sessionId": "inz_cbt_ba30dcbd-6a15-4a3a-9a72-2fd4dea6144e",
       "candidateId": "INZ-CAND-2026-00259",
       "candidateDisplayId": "INZ-CAND-2026-00259",
       "candidateName": "Vivin K",
@@ -26957,38 +26957,38 @@
       "domainId": "dom-02",
       "domainName": "Data & Analytics",
       "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
-      "totalScore": 41,
+      "totalScore": 30,
       "maxScore": 45,
       "totalQuestions": 45,
       "totalAttempted": 45,
       "totalQuestionsAttempted": 45,
       "unattempted": 0,
-      "percentage": 91,
+      "percentage": 67,
       "isPassed": true,
       "examResult": "Pass",
       "selectionStatus": "Selected for Next Round",
       "passCutoff": "> 25",
-      "performanceCategory": "Mastery (Outstanding)",
+      "performanceCategory": "Proficient (Commendable)",
       "status": "Completed",
-      "certificateId": "INZ-CERT-2026-5EE853",
+      "certificateId": "INZ-CERT-2026-86BF07",
       "sectionScores": {
         "section-1": {
-          "score": 14,
+          "score": 11,
           "total": 15,
-          "percentage": 93
+          "percentage": 73
         },
         "section-2": {
-          "score": 15,
+          "score": 10,
           "total": 15,
-          "percentage": 100
+          "percentage": 67
         },
         "section-3": {
-          "score": 12,
+          "score": 9,
           "total": 15,
-          "percentage": 80
+          "percentage": 60
         }
       },
-      "completedAt": "2026-11-24T05:38:20.797Z"
+      "completedAt": "2026-11-24T05:42:28.249Z"
     },
     {
       "sessionId": "inz_cbt_d93deabb-bcf1-4100-a934-4a6a1fb55d08",
@@ -28628,5 +28628,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:42:21.967Z"
+  "lastUpdated": "2026-11-24T05:42:28.402Z"
 }
