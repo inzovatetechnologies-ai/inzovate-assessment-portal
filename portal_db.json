@@ -4095,13 +4095,62 @@
       "jobRoleId": "role-soft-dev",
       "jobRoleTitle": "Software Developer",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-24T04:47:33.076Z",
-      "updatedAt": "2026-11-24T04:47:33.076Z"
+      "updatedAt": "2026-11-24T04:47:33.076Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_ca5d5096-d629-45c7-a7de-5c288770fd99",
+        "candidateId": "INZ-CAND-2026-00075",
+        "candidateDisplayId": "INZ-CAND-2026-00075",
+        "candidateName": "Saairam V",
+        "jobRoleId": "role-soft-dev",
+        "jobRoleTitle": "Software Developer",
+        "domainId": "dom-01",
+        "domainName": "Software Development",
+        "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+        "totalScore": 28,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 62,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Foundational (Competent)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-EA1E16",
+        "sectionScores": {
+          "section-1": {
+            "score": 8,
+            "total": 15,
+            "percentage": 53
+          },
+          "section-2": {
+            "score": 10,
+            "total": 15,
+            "percentage": 67
+          },
+          "section-3": {
+            "score": 10,
+            "total": 15,
+            "percentage": 67
+          }
+        },
+        "completedAt": "2026-11-24T05:17:41.085Z"
+      },
+      "totalScore": 28,
+      "percentage": 62,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-EA1E16",
+      "completedAt": "2026-11-24T05:17:41.085Z"
     },
     {
       "_id": "cand-8546ac91-76c0-4976-a4ed-41d9fd2776df",
@@ -13860,10 +13909,53 @@
         }
       },
       "completedAt": "2026-11-24T05:17:34.618Z"
+    },
+    {
+      "sessionId": "inz_cbt_ca5d5096-d629-45c7-a7de-5c288770fd99",
+      "candidateId": "INZ-CAND-2026-00075",
+      "candidateDisplayId": "INZ-CAND-2026-00075",
+      "candidateName": "Saairam V",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Software Developer",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+      "totalScore": 28,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 62,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Foundational (Competent)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-EA1E16",
+      "sectionScores": {
+        "section-1": {
+          "score": 8,
+          "total": 15,
+          "percentage": 53
+        },
+        "section-2": {
+          "score": 10,
+          "total": 15,
+          "percentage": 67
+        },
+        "section-3": {
+          "score": 10,
+          "total": 15,
+          "percentage": 67
+        }
+      },
+      "completedAt": "2026-11-24T05:17:41.085Z"
     }
   ],
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:17:34.771Z"
+  "lastUpdated": "2026-11-24T05:17:41.234Z"
 }
