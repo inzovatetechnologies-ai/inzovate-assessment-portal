@@ -11313,13 +11313,62 @@
       "jobRoleId": "role-data-analyst",
       "jobRoleTitle": "Data Analyst",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Rejected",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-24T04:56:38.548Z",
-      "updatedAt": "2026-11-24T04:56:38.548Z"
+      "updatedAt": "2026-11-24T04:56:38.548Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_57233a32-7d0b-4337-a70e-fd9e69e7c324",
+        "candidateId": "INZ-CAND-2026-00206",
+        "candidateDisplayId": "INZ-CAND-2026-00206",
+        "candidateName": "Tamil Azghan",
+        "jobRoleId": "role-data-analyst",
+        "jobRoleTitle": "Data Analyst",
+        "domainId": "dom-02",
+        "domainName": "Data & Analytics",
+        "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+        "totalScore": 17,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 38,
+        "isPassed": false,
+        "examResult": "Fail",
+        "selectionStatus": "Rejected",
+        "passCutoff": "> 25",
+        "performanceCategory": "Needs Improvement",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-A69A78",
+        "sectionScores": {
+          "section-1": {
+            "score": 6,
+            "total": 15,
+            "percentage": 40
+          },
+          "section-2": {
+            "score": 6,
+            "total": 15,
+            "percentage": 40
+          },
+          "section-3": {
+            "score": 5,
+            "total": 15,
+            "percentage": 33
+          }
+        },
+        "completedAt": "2026-11-24T05:34:42.749Z"
+      },
+      "totalScore": 17,
+      "percentage": 38,
+      "isPassed": false,
+      "examResult": "Fail",
+      "certificateId": "INZ-CERT-2026-A69A78",
+      "completedAt": "2026-11-24T05:34:42.749Z"
     },
     {
       "_id": "cand-0d913cc9-4525-4247-9b9a-8c1e4ade2a14",
@@ -22084,10 +22133,53 @@
         }
       },
       "completedAt": "2026-11-24T05:34:42.800Z"
+    },
+    {
+      "sessionId": "inz_cbt_57233a32-7d0b-4337-a70e-fd9e69e7c324",
+      "candidateId": "INZ-CAND-2026-00206",
+      "candidateDisplayId": "INZ-CAND-2026-00206",
+      "candidateName": "Tamil Azghan",
+      "jobRoleId": "role-data-analyst",
+      "jobRoleTitle": "Data Analyst",
+      "domainId": "dom-02",
+      "domainName": "Data & Analytics",
+      "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+      "totalScore": 17,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 38,
+      "isPassed": false,
+      "examResult": "Fail",
+      "selectionStatus": "Rejected",
+      "passCutoff": "> 25",
+      "performanceCategory": "Needs Improvement",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-A69A78",
+      "sectionScores": {
+        "section-1": {
+          "score": 6,
+          "total": 15,
+          "percentage": 40
+        },
+        "section-2": {
+          "score": 6,
+          "total": 15,
+          "percentage": 40
+        },
+        "section-3": {
+          "score": 5,
+          "total": 15,
+          "percentage": 33
+        }
+      },
+      "completedAt": "2026-11-24T05:34:42.749Z"
     }
   ],
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:34:43.010Z"
+  "lastUpdated": "2026-11-24T05:34:44.731Z"
 }
