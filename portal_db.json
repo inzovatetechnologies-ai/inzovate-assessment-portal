@@ -9899,7 +9899,7 @@
     },
     {
       "_id": "cand-2fda4e03-40a1-43a0-b544-c5a00ce72a8d",
-      "candidateId": "INZ-CAND-2026-00291",
+      "candidateId": "INZ-CAND-2026-00308",
       "fullName": "Harini S",
       "email": "harinisakthivel2005@gmail.com",
       "password": "Harini@123",
@@ -10522,5 +10522,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:03:18.026Z"
+  "lastUpdated": "2026-11-24T05:03:23.356Z"
 }
