@@ -8587,7 +8587,7 @@
     },
     {
       "_id": "cand-c928beca-bd57-483a-a3e0-860cec17fd05",
-      "candidateId": "INZ-CAND-2026-00221",
+      "candidateId": "INZ-CAND-2026-00284",
       "fullName": "BHUVANESHWARI M",
       "email": "bhuvaabilli@gmail.com",
       "password": "vj@2002",
@@ -9948,5 +9948,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:02:08.433Z"
+  "lastUpdated": "2026-11-24T05:02:11.748Z"
 }
