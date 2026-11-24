@@ -15903,9 +15903,9 @@
       "domainId": "dom-11",
       "domainName": "Business & Sales",
       "driveId": "INZ-DRIVE-2026-01",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
-      "assessmentStatus": "Ready",
+      "assessmentStatus": "Completed",
       "arrearStatus": "No History",
       "altMobileNumber": "",
       "dateOfBirth": "2005-11-27",
@@ -15923,9 +15923,58 @@
       "historyOfArrears": "0",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
       "deletedAt": null,
-      "testAttempts": 0,
+      "testAttempts": 1,
       "createdAt": "2026-11-24T04:58:42.764Z",
-      "updatedAt": "2026-11-24T04:58:42.764Z"
+      "updatedAt": "2026-11-24T04:58:42.764Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_66a4e776-a9a0-4edc-a927-ab3ae6e3110f",
+        "candidateId": "INZ-CAND-2026-00221",
+        "candidateDisplayId": "INZ-CAND-2026-00221",
+        "candidateName": "BHUVANESHWARI M",
+        "jobRoleId": "role-bde",
+        "jobRoleTitle": "Business Development Executive",
+        "domainId": "dom-11",
+        "domainName": "Business & Sales",
+        "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+        "totalScore": 33,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 73,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Proficient (Commendable)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-E6FDCD",
+        "sectionScores": {
+          "section-1": {
+            "score": 13,
+            "total": 15,
+            "percentage": 87
+          },
+          "section-2": {
+            "score": 7,
+            "total": 15,
+            "percentage": 47
+          },
+          "section-3": {
+            "score": 13,
+            "total": 15,
+            "percentage": 87
+          }
+        },
+        "completedAt": "2026-11-24T05:43:03.906Z"
+      },
+      "totalScore": 33,
+      "percentage": 73,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-E6FDCD",
+      "completedAt": "2026-11-24T05:43:03.906Z"
     },
     {
       "_id": "cand-3206b6d6-c462-4d8e-9cfb-e353e0847d6c",
@@ -29028,10 +29077,53 @@
         }
       },
       "completedAt": "2026-11-24T05:42:53.485Z"
+    },
+    {
+      "sessionId": "inz_cbt_66a4e776-a9a0-4edc-a927-ab3ae6e3110f",
+      "candidateId": "INZ-CAND-2026-00221",
+      "candidateDisplayId": "INZ-CAND-2026-00221",
+      "candidateName": "BHUVANESHWARI M",
+      "jobRoleId": "role-bde",
+      "jobRoleTitle": "Business Development Executive",
+      "domainId": "dom-11",
+      "domainName": "Business & Sales",
+      "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+      "totalScore": 33,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 73,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Proficient (Commendable)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-E6FDCD",
+      "sectionScores": {
+        "section-1": {
+          "score": 13,
+          "total": 15,
+          "percentage": 87
+        },
+        "section-2": {
+          "score": 7,
+          "total": 15,
+          "percentage": 47
+        },
+        "section-3": {
+          "score": 13,
+          "total": 15,
+          "percentage": 87
+        }
+      },
+      "completedAt": "2026-11-24T05:43:03.906Z"
     }
   ],
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:43:02.383Z"
+  "lastUpdated": "2026-11-24T05:43:04.099Z"
 }
