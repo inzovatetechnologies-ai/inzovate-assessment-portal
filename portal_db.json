@@ -9571,7 +9571,7 @@
     },
     {
       "_id": "cand-e27a8f09-c639-4958-b21a-3cfa2ce33c8c",
-      "candidateId": "INZ-CAND-2026-00278",
+      "candidateId": "INZ-CAND-2026-00332",
       "fullName": "Rohini P",
       "email": "rohinipanjalingam@gmail.com",
       "password": "rogup@2006",
@@ -10850,5 +10850,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:05:05.278Z"
+  "lastUpdated": "2026-11-24T05:05:08.491Z"
 }
