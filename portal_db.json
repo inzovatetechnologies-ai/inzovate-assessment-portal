@@ -9602,13 +9602,62 @@
       "jobRoleId": "role-ai-ml",
       "jobRoleTitle": "AI/ML Engineer",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Rejected",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-24T04:52:44.279Z",
-      "updatedAt": "2026-11-24T04:52:44.279Z"
+      "updatedAt": "2026-11-24T04:52:44.279Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_7bfb51b4-ef83-430f-b7fb-56ee9fba2547",
+        "candidateId": "INZ-CAND-2026-00148",
+        "candidateDisplayId": "INZ-CAND-2026-00148",
+        "candidateName": "Mathankumar M",
+        "jobRoleId": "role-ai-ml",
+        "jobRoleTitle": "AI/ML Engineer",
+        "domainId": "dom-03",
+        "domainName": "Artificial Intelligence",
+        "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+        "totalScore": 16,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 36,
+        "isPassed": false,
+        "examResult": "Fail",
+        "selectionStatus": "Rejected",
+        "passCutoff": "> 25",
+        "performanceCategory": "Needs Improvement",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-55C0AD",
+        "sectionScores": {
+          "section-1": {
+            "score": 3,
+            "total": 15,
+            "percentage": 20
+          },
+          "section-2": {
+            "score": 6,
+            "total": 15,
+            "percentage": 40
+          },
+          "section-3": {
+            "score": 7,
+            "total": 15,
+            "percentage": 47
+          }
+        },
+        "completedAt": "2026-11-24T05:32:04.759Z"
+      },
+      "totalScore": 16,
+      "percentage": 36,
+      "isPassed": false,
+      "examResult": "Fail",
+      "certificateId": "INZ-CERT-2026-55C0AD",
+      "completedAt": "2026-11-24T05:32:04.759Z"
     },
     {
       "_id": "cand-b5276c7d-5125-442b-acd2-086768335f4e",
@@ -20673,10 +20722,53 @@
         }
       },
       "completedAt": "2026-11-24T05:31:47.971Z"
+    },
+    {
+      "sessionId": "inz_cbt_7bfb51b4-ef83-430f-b7fb-56ee9fba2547",
+      "candidateId": "INZ-CAND-2026-00148",
+      "candidateDisplayId": "INZ-CAND-2026-00148",
+      "candidateName": "Mathankumar M",
+      "jobRoleId": "role-ai-ml",
+      "jobRoleTitle": "AI/ML Engineer",
+      "domainId": "dom-03",
+      "domainName": "Artificial Intelligence",
+      "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+      "totalScore": 16,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 36,
+      "isPassed": false,
+      "examResult": "Fail",
+      "selectionStatus": "Rejected",
+      "passCutoff": "> 25",
+      "performanceCategory": "Needs Improvement",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-55C0AD",
+      "sectionScores": {
+        "section-1": {
+          "score": 3,
+          "total": 15,
+          "percentage": 20
+        },
+        "section-2": {
+          "score": 6,
+          "total": 15,
+          "percentage": 40
+        },
+        "section-3": {
+          "score": 7,
+          "total": 15,
+          "percentage": 47
+        }
+      },
+      "completedAt": "2026-11-24T05:32:04.759Z"
     }
   ],
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:32:00.733Z"
+  "lastUpdated": "2026-11-24T05:32:04.911Z"
 }
