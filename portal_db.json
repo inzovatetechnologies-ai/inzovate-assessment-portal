@@ -4692,7 +4692,7 @@
     },
     {
       "_id": "cand-6ca5c84f-c90d-4059-9122-07424ae96223",
-      "candidateId": "INZ-CAND-2026-00125",
+      "candidateId": "INZ-CAND-2026-00139",
       "fullName": "ganeshkumar",
       "email": "ganeshkumar.23297@gmail.com",
       "password": "G@nesh3259",
@@ -5356,5 +5356,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T04:51:55.063Z"
+  "lastUpdated": "2026-11-24T04:51:56.466Z"
 }
