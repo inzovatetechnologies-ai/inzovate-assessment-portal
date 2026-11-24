@@ -8505,7 +8505,7 @@
     },
     {
       "_id": "cand-18dedb2c-729f-4684-80fb-fb6f85cb8c15",
-      "candidateId": "INZ-CAND-2026-00239",
+      "candidateId": "INZ-CAND-2026-00313",
       "fullName": "Mahavarshini M",
       "email": "varshinimuthukumaran2011@gmail.com",
       "password": "Maha@data123",
@@ -10563,5 +10563,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:03:29.925Z"
+  "lastUpdated": "2026-11-24T05:03:32.093Z"
 }
