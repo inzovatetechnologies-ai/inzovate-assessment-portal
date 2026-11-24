@@ -22041,10 +22041,53 @@
         }
       },
       "completedAt": "2026-11-24T05:34:37.165Z"
+    },
+    {
+      "sessionId": "inz_cbt_e60483f2-ca4b-41bd-97c8-c731b9e1ebd7",
+      "candidateId": "INZ-CAND-2026-00149",
+      "candidateDisplayId": "INZ-CAND-2026-00149",
+      "candidateName": "Rohini K S",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Software Developer",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "collegeName": "Autonomous Engineering College",
+      "totalScore": 16,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 36,
+      "isPassed": false,
+      "examResult": "Fail",
+      "selectionStatus": "Rejected",
+      "passCutoff": "> 25",
+      "performanceCategory": "Needs Improvement",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-C625FB",
+      "sectionScores": {
+        "section-1": {
+          "score": 5,
+          "total": 15,
+          "percentage": 33
+        },
+        "section-2": {
+          "score": 5,
+          "total": 15,
+          "percentage": 33
+        },
+        "section-3": {
+          "score": 6,
+          "total": 15,
+          "percentage": 40
+        }
+      },
+      "completedAt": "2026-11-24T05:34:42.800Z"
     }
   ],
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:34:37.394Z"
+  "lastUpdated": "2026-11-24T05:34:43.010Z"
 }
