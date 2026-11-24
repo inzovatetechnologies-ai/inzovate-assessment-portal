@@ -24004,10 +24004,53 @@
         }
       },
       "completedAt": "2026-11-24T05:36:30.803Z"
+    },
+    {
+      "sessionId": "inz_cbt_2eb3618f-2ea4-4d2e-8fe1-fd277a2f1df9",
+      "candidateId": "INZ-CAND-2026-00237",
+      "candidateDisplayId": "INZ-CAND-2026-00237",
+      "candidateName": "Nandha Kishore A T",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Software Developer",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "collegeName": "Autonomous Engineering College",
+      "totalScore": 22,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 49,
+      "isPassed": false,
+      "examResult": "Fail",
+      "selectionStatus": "Rejected",
+      "passCutoff": "> 25",
+      "performanceCategory": "Needs Improvement",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-2AF2AE",
+      "sectionScores": {
+        "section-1": {
+          "score": 9,
+          "total": 15,
+          "percentage": 60
+        },
+        "section-2": {
+          "score": 6,
+          "total": 15,
+          "percentage": 40
+        },
+        "section-3": {
+          "score": 7,
+          "total": 15,
+          "percentage": 47
+        }
+      },
+      "completedAt": "2026-11-24T05:36:38.841Z"
     }
   ],
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:36:30.965Z"
+  "lastUpdated": "2026-11-24T05:36:39.021Z"
 }
