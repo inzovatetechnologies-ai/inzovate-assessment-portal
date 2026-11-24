@@ -33,9 +33,9 @@
       "jobRoleId": "role-data-analyst",
       "jobRoleTitle": "Data Analyst",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Rejected",
-      "status": "Registered",
-      "deletedAt": null,
+      "recruitmentStage": "Deleted / Archived",
+      "status": "deleted",
+      "deletedAt": "2026-11-24T05:14:42.761Z",
       "assessmentStatus": "Completed",
       "testAttempts": 1,
       "createdAt": "2026-11-23T15:17:43.854Z",
@@ -12812,5 +12812,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:14:26.063Z"
+  "lastUpdated": "2026-11-24T05:14:42.761Z"
 }
