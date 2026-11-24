@@ -6045,7 +6045,7 @@
     },
     {
       "_id": "cand-977a7113-7b18-4d1d-845e-e1aad45c901b",
-      "candidateId": "INZ-CAND-2026-00146",
+      "candidateId": "INZ-CAND-2026-00177",
       "fullName": "Priyadharshini M",
       "email": "pridharshini065@gmail.com",
       "password": "150306",
@@ -6340,5 +6340,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T04:55:28.704Z"
+  "lastUpdated": "2026-11-24T04:55:30.499Z"
 }
