@@ -3790,13 +3790,62 @@
       "jobRoleId": "role-data-analyst",
       "jobRoleTitle": "Data Analyst",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-24T04:46:11.582Z",
-      "updatedAt": "2026-11-24T04:46:11.582Z"
+      "updatedAt": "2026-11-24T04:46:11.582Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_496519ec-ec9f-4aaf-bc9c-26f15c35b8b9",
+        "candidateId": "INZ-CAND-2026-00057",
+        "candidateDisplayId": "INZ-CAND-2026-00057",
+        "candidateName": "Vishnu prashad S",
+        "jobRoleId": "role-data-analyst",
+        "jobRoleTitle": "Data Analyst",
+        "domainId": "dom-02",
+        "domainName": "Data & Analytics",
+        "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+        "totalScore": 31,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 69,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Proficient (Commendable)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-94A97E",
+        "sectionScores": {
+          "section-1": {
+            "score": 13,
+            "total": 15,
+            "percentage": 87
+          },
+          "section-2": {
+            "score": 8,
+            "total": 15,
+            "percentage": 53
+          },
+          "section-3": {
+            "score": 10,
+            "total": 15,
+            "percentage": 67
+          }
+        },
+        "completedAt": "2026-11-24T05:25:14.520Z"
+      },
+      "totalScore": 31,
+      "percentage": 69,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-94A97E",
+      "completedAt": "2026-11-24T05:25:14.520Z"
     },
     {
       "_id": "cand-b0bbf584-4700-4e4b-92ff-e476d6e185cf",
@@ -17520,10 +17569,53 @@
         }
       },
       "completedAt": "2026-11-24T05:25:13.049Z"
+    },
+    {
+      "sessionId": "inz_cbt_496519ec-ec9f-4aaf-bc9c-26f15c35b8b9",
+      "candidateId": "INZ-CAND-2026-00057",
+      "candidateDisplayId": "INZ-CAND-2026-00057",
+      "candidateName": "Vishnu prashad S",
+      "jobRoleId": "role-data-analyst",
+      "jobRoleTitle": "Data Analyst",
+      "domainId": "dom-02",
+      "domainName": "Data & Analytics",
+      "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+      "totalScore": 31,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 69,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Proficient (Commendable)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-94A97E",
+      "sectionScores": {
+        "section-1": {
+          "score": 13,
+          "total": 15,
+          "percentage": 87
+        },
+        "section-2": {
+          "score": 8,
+          "total": 15,
+          "percentage": 53
+        },
+        "section-3": {
+          "score": 10,
+          "total": 15,
+          "percentage": 67
+        }
+      },
+      "completedAt": "2026-11-24T05:25:14.520Z"
     }
   ],
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:25:13.217Z"
+  "lastUpdated": "2026-11-24T05:25:14.667Z"
 }
