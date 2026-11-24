@@ -3294,11 +3294,11 @@
       "status": "Registered",
       "deletedAt": null,
       "assessmentStatus": "Completed",
-      "testAttempts": 1,
+      "testAttempts": 2,
       "createdAt": "2026-11-24T04:44:30.907Z",
       "updatedAt": "2026-11-24T04:44:30.907Z",
       "assessmentResult": {
-        "sessionId": "inz_cbt_251cc3db-7ca4-4c94-885d-52410fa909e9",
+        "sessionId": "inz_cbt_169011a6-2052-4ef2-a540-f525ab9967a0",
         "candidateId": "INZ-CAND-2026-00096",
         "candidateDisplayId": "INZ-CAND-2026-00096",
         "candidateName": "SriRam Vivekananthan",
@@ -3307,45 +3307,45 @@
         "domainId": "dom-01",
         "domainName": "Software Development",
         "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
-        "totalScore": 43,
+        "totalScore": 38,
         "maxScore": 45,
         "totalQuestions": 45,
         "totalAttempted": 45,
         "totalQuestionsAttempted": 45,
         "unattempted": 0,
-        "percentage": 96,
+        "percentage": 84,
         "isPassed": true,
         "examResult": "Pass",
         "selectionStatus": "Selected for Next Round",
         "passCutoff": "> 25",
         "performanceCategory": "Mastery (Outstanding)",
         "status": "Completed",
-        "certificateId": "INZ-CERT-2026-DB94F9",
+        "certificateId": "INZ-CERT-2026-740242",
         "sectionScores": {
           "section-1": {
-            "score": 14,
+            "score": 12,
             "total": 15,
-            "percentage": 93
+            "percentage": 80
           },
           "section-2": {
-            "score": 15,
-            "total": 15,
-            "percentage": 100
-          },
-          "section-3": {
             "score": 14,
             "total": 15,
             "percentage": 93
+          },
+          "section-3": {
+            "score": 12,
+            "total": 15,
+            "percentage": 80
           }
         },
-        "completedAt": "2026-11-24T05:09:13.411Z"
+        "completedAt": "2026-11-24T05:27:35.936Z"
       },
-      "totalScore": 43,
-      "percentage": 96,
+      "totalScore": 38,
+      "percentage": 84,
       "isPassed": true,
       "examResult": "Pass",
-      "certificateId": "INZ-CERT-2026-DB94F9",
-      "completedAt": "2026-11-24T05:09:13.411Z"
+      "certificateId": "INZ-CERT-2026-740242",
+      "completedAt": "2026-11-24T05:27:35.936Z"
     },
     {
       "_id": "cand-17bc7848-d6e1-4b25-8afb-6465604a4fa1",
@@ -15358,7 +15358,7 @@
       "completedAt": "2026-11-24T05:08:42.859Z"
     },
     {
-      "sessionId": "inz_cbt_251cc3db-7ca4-4c94-885d-52410fa909e9",
+      "sessionId": "inz_cbt_169011a6-2052-4ef2-a540-f525ab9967a0",
       "candidateId": "INZ-CAND-2026-00096",
       "candidateDisplayId": "INZ-CAND-2026-00096",
       "candidateName": "SriRam Vivekananthan",
@@ -15367,38 +15367,38 @@
       "domainId": "dom-01",
       "domainName": "Software Development",
       "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
-      "totalScore": 43,
+      "totalScore": 38,
       "maxScore": 45,
       "totalQuestions": 45,
       "totalAttempted": 45,
       "totalQuestionsAttempted": 45,
       "unattempted": 0,
-      "percentage": 96,
+      "percentage": 84,
       "isPassed": true,
       "examResult": "Pass",
       "selectionStatus": "Selected for Next Round",
       "passCutoff": "> 25",
       "performanceCategory": "Mastery (Outstanding)",
       "status": "Completed",
-      "certificateId": "INZ-CERT-2026-DB94F9",
+      "certificateId": "INZ-CERT-2026-740242",
       "sectionScores": {
         "section-1": {
-          "score": 14,
+          "score": 12,
           "total": 15,
-          "percentage": 93
+          "percentage": 80
         },
         "section-2": {
-          "score": 15,
-          "total": 15,
-          "percentage": 100
-        },
-        "section-3": {
           "score": 14,
           "total": 15,
           "percentage": 93
+        },
+        "section-3": {
+          "score": 12,
+          "total": 15,
+          "percentage": 80
         }
       },
-      "completedAt": "2026-11-24T05:09:13.411Z"
+      "completedAt": "2026-11-24T05:27:35.936Z"
     },
     {
       "sessionId": "inz_cbt_b03a32a0-824d-4d18-81de-bd4a9fd905ef",
@@ -18758,5 +18758,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:27:35.134Z"
+  "lastUpdated": "2026-11-24T05:27:37.499Z"
 }
