@@ -7070,7 +7070,7 @@
     },
     {
       "_id": "cand-aac3fea1-2a7e-43f3-ac11-7927912757da",
-      "candidateId": "INZ-CAND-2026-00204",
+      "candidateId": "INZ-CAND-2026-00219",
       "fullName": "Manivel N",
       "email": "manivelnagarajan17@gmail.com",
       "password": "Manivel@21",
@@ -7693,5 +7693,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T04:58:43.425Z"
+  "lastUpdated": "2026-11-24T04:58:44.407Z"
 }
