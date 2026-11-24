@@ -18394,13 +18394,62 @@
       "jobRoleId": "role-soft-dev",
       "jobRoleTitle": "Software Developer",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Rejected",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-24T05:04:55.613Z",
-      "updatedAt": "2026-11-24T05:04:55.613Z"
+      "updatedAt": "2026-11-24T05:04:55.613Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_c019b2e1-5b29-4421-9230-cb576ab516e3",
+        "candidateId": "INZ-CAND-2026-00339",
+        "candidateDisplayId": "INZ-CAND-2026-00339",
+        "candidateName": "ESHALINI S",
+        "jobRoleId": "role-soft-dev",
+        "jobRoleTitle": "Software Developer",
+        "domainId": "dom-01",
+        "domainName": "Software Development",
+        "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+        "totalScore": 25,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 56,
+        "isPassed": false,
+        "examResult": "Fail",
+        "selectionStatus": "Rejected",
+        "passCutoff": "> 25",
+        "performanceCategory": "Foundational (Competent)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-66A00C",
+        "sectionScores": {
+          "section-1": {
+            "score": 9,
+            "total": 15,
+            "percentage": 60
+          },
+          "section-2": {
+            "score": 4,
+            "total": 15,
+            "percentage": 27
+          },
+          "section-3": {
+            "score": 12,
+            "total": 15,
+            "percentage": 80
+          }
+        },
+        "completedAt": "2026-11-24T05:40:43.056Z"
+      },
+      "totalScore": 25,
+      "percentage": 56,
+      "isPassed": false,
+      "examResult": "Fail",
+      "certificateId": "INZ-CERT-2026-66A00C",
+      "completedAt": "2026-11-24T05:40:43.056Z"
     },
     {
       "_id": "cand-456fac63-8f6e-462b-ad1d-d590df7114ff",
@@ -27028,10 +27077,53 @@
         }
       },
       "completedAt": "2026-11-24T05:40:19.786Z"
+    },
+    {
+      "sessionId": "inz_cbt_c019b2e1-5b29-4421-9230-cb576ab516e3",
+      "candidateId": "INZ-CAND-2026-00339",
+      "candidateDisplayId": "INZ-CAND-2026-00339",
+      "candidateName": "ESHALINI S",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Software Developer",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+      "totalScore": 25,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 56,
+      "isPassed": false,
+      "examResult": "Fail",
+      "selectionStatus": "Rejected",
+      "passCutoff": "> 25",
+      "performanceCategory": "Foundational (Competent)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-66A00C",
+      "sectionScores": {
+        "section-1": {
+          "score": 9,
+          "total": 15,
+          "percentage": 60
+        },
+        "section-2": {
+          "score": 4,
+          "total": 15,
+          "percentage": 27
+        },
+        "section-3": {
+          "score": 12,
+          "total": 15,
+          "percentage": 80
+        }
+      },
+      "completedAt": "2026-11-24T05:40:43.056Z"
     }
   ],
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:40:31.557Z"
+  "lastUpdated": "2026-11-24T05:40:43.198Z"
 }
