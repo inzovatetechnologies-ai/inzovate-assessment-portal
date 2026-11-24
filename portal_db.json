@@ -14357,13 +14357,62 @@
       "jobRoleId": "role-data-analyst",
       "jobRoleTitle": "Data Analyst",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Rejected",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-24T04:59:19.431Z",
-      "updatedAt": "2026-11-24T04:59:19.431Z"
+      "updatedAt": "2026-11-24T04:59:19.431Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_311f7e5e-7ec6-4e40-8d33-e174787260d0",
+        "candidateId": "INZ-CAND-2026-00229",
+        "candidateDisplayId": "INZ-CAND-2026-00229",
+        "candidateName": "Sridharan G",
+        "jobRoleId": "role-data-analyst",
+        "jobRoleTitle": "Data Analyst",
+        "domainId": "dom-02",
+        "domainName": "Data & Analytics",
+        "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+        "totalScore": 17,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 38,
+        "isPassed": false,
+        "examResult": "Fail",
+        "selectionStatus": "Rejected",
+        "passCutoff": "> 25",
+        "performanceCategory": "Needs Improvement",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-9AAFA5",
+        "sectionScores": {
+          "section-1": {
+            "score": 5,
+            "total": 15,
+            "percentage": 33
+          },
+          "section-2": {
+            "score": 9,
+            "total": 15,
+            "percentage": 60
+          },
+          "section-3": {
+            "score": 3,
+            "total": 15,
+            "percentage": 20
+          }
+        },
+        "completedAt": "2026-11-24T05:40:18.319Z"
+      },
+      "totalScore": 17,
+      "percentage": 38,
+      "isPassed": false,
+      "examResult": "Fail",
+      "certificateId": "INZ-CERT-2026-9AAFA5",
+      "completedAt": "2026-11-24T05:40:18.319Z"
     },
     {
       "_id": "cand-208c3172-f7b8-469e-ab70-43a5517ee0fb",
@@ -26752,10 +26801,53 @@
         }
       },
       "completedAt": "2026-11-24T05:40:14.092Z"
+    },
+    {
+      "sessionId": "inz_cbt_311f7e5e-7ec6-4e40-8d33-e174787260d0",
+      "candidateId": "INZ-CAND-2026-00229",
+      "candidateDisplayId": "INZ-CAND-2026-00229",
+      "candidateName": "Sridharan G",
+      "jobRoleId": "role-data-analyst",
+      "jobRoleTitle": "Data Analyst",
+      "domainId": "dom-02",
+      "domainName": "Data & Analytics",
+      "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+      "totalScore": 17,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 38,
+      "isPassed": false,
+      "examResult": "Fail",
+      "selectionStatus": "Rejected",
+      "passCutoff": "> 25",
+      "performanceCategory": "Needs Improvement",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-9AAFA5",
+      "sectionScores": {
+        "section-1": {
+          "score": 5,
+          "total": 15,
+          "percentage": 33
+        },
+        "section-2": {
+          "score": 9,
+          "total": 15,
+          "percentage": 60
+        },
+        "section-3": {
+          "score": 3,
+          "total": 15,
+          "percentage": 20
+        }
+      },
+      "completedAt": "2026-11-24T05:40:18.319Z"
     }
   ],
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:40:16.247Z"
+  "lastUpdated": "2026-11-24T05:40:18.478Z"
 }
