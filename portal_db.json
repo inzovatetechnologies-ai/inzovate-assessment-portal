@@ -6846,13 +6846,62 @@
       "jobRoleId": "role-bde",
       "jobRoleTitle": "Business Development Executive",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-24T04:50:40.221Z",
-      "updatedAt": "2026-11-24T04:50:40.221Z"
+      "updatedAt": "2026-11-24T04:50:40.221Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_5a23a835-a220-457a-8409-142713e7244e",
+        "candidateId": "INZ-CAND-2026-00154",
+        "candidateDisplayId": "INZ-CAND-2026-00154",
+        "candidateName": "Kaushik C",
+        "jobRoleId": "role-bde",
+        "jobRoleTitle": "Business Development Executive",
+        "domainId": "dom-11",
+        "domainName": "Business & Sales",
+        "collegeName": "Dr.Mahalingam college of engineering and technoloy",
+        "totalScore": 30,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 67,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Proficient (Commendable)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-CF907C",
+        "sectionScores": {
+          "section-1": {
+            "score": 12,
+            "total": 15,
+            "percentage": 80
+          },
+          "section-2": {
+            "score": 11,
+            "total": 15,
+            "percentage": 73
+          },
+          "section-3": {
+            "score": 7,
+            "total": 15,
+            "percentage": 47
+          }
+        },
+        "completedAt": "2026-11-24T05:22:14.926Z"
+      },
+      "totalScore": 30,
+      "percentage": 67,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-CF907C",
+      "completedAt": "2026-11-24T05:22:14.926Z"
     },
     {
       "_id": "cand-b9ab357c-682c-441d-b12c-f1d2a52ebfad",
@@ -15827,10 +15876,53 @@
         }
       },
       "completedAt": "2026-11-24T05:21:20.889Z"
+    },
+    {
+      "sessionId": "inz_cbt_5a23a835-a220-457a-8409-142713e7244e",
+      "candidateId": "INZ-CAND-2026-00154",
+      "candidateDisplayId": "INZ-CAND-2026-00154",
+      "candidateName": "Kaushik C",
+      "jobRoleId": "role-bde",
+      "jobRoleTitle": "Business Development Executive",
+      "domainId": "dom-11",
+      "domainName": "Business & Sales",
+      "collegeName": "Dr.Mahalingam college of engineering and technoloy",
+      "totalScore": 30,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 67,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Proficient (Commendable)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-CF907C",
+      "sectionScores": {
+        "section-1": {
+          "score": 12,
+          "total": 15,
+          "percentage": 80
+        },
+        "section-2": {
+          "score": 11,
+          "total": 15,
+          "percentage": 73
+        },
+        "section-3": {
+          "score": 7,
+          "total": 15,
+          "percentage": 47
+        }
+      },
+      "completedAt": "2026-11-24T05:22:14.926Z"
     }
   ],
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:22:04.022Z"
+  "lastUpdated": "2026-11-24T05:22:15.055Z"
 }
