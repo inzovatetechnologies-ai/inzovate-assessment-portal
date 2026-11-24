@@ -10555,7 +10555,7 @@
     },
     {
       "_id": "cand-5e7b0202-a064-4ebb-8e80-fe87273563fd",
-      "candidateId": "INZ-CAND-2026-00256",
+      "candidateId": "INZ-CAND-2026-00331",
       "fullName": "Gowthami R",
       "email": "gowthamiragupathi790@gmail.com",
       "password": "Gowme@123",
@@ -10850,5 +10850,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:05:02.343Z"
+  "lastUpdated": "2026-11-24T05:05:05.278Z"
 }
