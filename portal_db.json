@@ -8628,7 +8628,7 @@
     },
     {
       "_id": "cand-3206b6d6-c462-4d8e-9cfb-e353e0847d6c",
-      "candidateId": "INZ-CAND-2026-00208",
+      "candidateId": "INZ-CAND-2026-00268",
       "fullName": "Kirisan S",
       "email": "kirisank15@gmail.com",
       "password": "Kirisan@12345",
@@ -9374,5 +9374,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:00:58.887Z"
+  "lastUpdated": "2026-11-24T05:01:01.073Z"
 }
