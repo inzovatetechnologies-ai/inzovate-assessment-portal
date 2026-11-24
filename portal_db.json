@@ -14367,13 +14367,62 @@
       "jobRoleId": "role-soft-dev",
       "jobRoleTitle": "Software Developer",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Rejected",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-24T04:59:57.437Z",
-      "updatedAt": "2026-11-24T04:59:57.437Z"
+      "updatedAt": "2026-11-24T04:59:57.437Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_0f65e6f5-0877-4064-9065-abcd2fbf5f14",
+        "candidateId": "INZ-CAND-2026-00313",
+        "candidateDisplayId": "INZ-CAND-2026-00313",
+        "candidateName": "Mahavarshini M",
+        "jobRoleId": "role-soft-dev",
+        "jobRoleTitle": "Software Developer",
+        "domainId": "dom-01",
+        "domainName": "Software Development",
+        "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+        "totalScore": 21,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 47,
+        "isPassed": false,
+        "examResult": "Fail",
+        "selectionStatus": "Rejected",
+        "passCutoff": "> 25",
+        "performanceCategory": "Needs Improvement",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-633C56",
+        "sectionScores": {
+          "section-1": {
+            "score": 3,
+            "total": 15,
+            "percentage": 20
+          },
+          "section-2": {
+            "score": 12,
+            "total": 15,
+            "percentage": 80
+          },
+          "section-3": {
+            "score": 6,
+            "total": 15,
+            "percentage": 40
+          }
+        },
+        "completedAt": "2026-11-24T05:36:46.592Z"
+      },
+      "totalScore": 21,
+      "percentage": 47,
+      "isPassed": false,
+      "examResult": "Fail",
+      "certificateId": "INZ-CERT-2026-633C56",
+      "completedAt": "2026-11-24T05:36:46.592Z"
     },
     {
       "_id": "cand-0bd6c77a-de45-4b94-9078-96f273549056",
@@ -24139,10 +24188,53 @@
         }
       },
       "completedAt": "2026-11-24T05:36:46.370Z"
+    },
+    {
+      "sessionId": "inz_cbt_0f65e6f5-0877-4064-9065-abcd2fbf5f14",
+      "candidateId": "INZ-CAND-2026-00313",
+      "candidateDisplayId": "INZ-CAND-2026-00313",
+      "candidateName": "Mahavarshini M",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Software Developer",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+      "totalScore": 21,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 47,
+      "isPassed": false,
+      "examResult": "Fail",
+      "selectionStatus": "Rejected",
+      "passCutoff": "> 25",
+      "performanceCategory": "Needs Improvement",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-633C56",
+      "sectionScores": {
+        "section-1": {
+          "score": 3,
+          "total": 15,
+          "percentage": 20
+        },
+        "section-2": {
+          "score": 12,
+          "total": 15,
+          "percentage": 80
+        },
+        "section-3": {
+          "score": 6,
+          "total": 15,
+          "percentage": 40
+        }
+      },
+      "completedAt": "2026-11-24T05:36:46.592Z"
     }
   ],
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:36:46.525Z"
+  "lastUpdated": "2026-11-24T05:36:48.134Z"
 }
