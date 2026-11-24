@@ -5107,13 +5107,62 @@
       "jobRoleId": "role-data-analyst",
       "jobRoleTitle": "Data Analyst",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-24T04:47:16.395Z",
-      "updatedAt": "2026-11-24T04:47:16.395Z"
+      "updatedAt": "2026-11-24T04:47:16.395Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_8a56e231-1c7d-4661-89b4-95d46eaa4f8b",
+        "candidateId": "INZ-CAND-2026-00156",
+        "candidateDisplayId": "INZ-CAND-2026-00156",
+        "candidateName": "R.Sugitha Ranjani",
+        "jobRoleId": "role-data-analyst",
+        "jobRoleTitle": "Data Analyst",
+        "domainId": "dom-02",
+        "domainName": "Data & Analytics",
+        "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+        "totalScore": 38,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 84,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Mastery (Outstanding)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-EA7875",
+        "sectionScores": {
+          "section-1": {
+            "score": 14,
+            "total": 15,
+            "percentage": 93
+          },
+          "section-2": {
+            "score": 12,
+            "total": 15,
+            "percentage": 80
+          },
+          "section-3": {
+            "score": 12,
+            "total": 15,
+            "percentage": 80
+          }
+        },
+        "completedAt": "2026-11-24T05:36:23.178Z"
+      },
+      "totalScore": 38,
+      "percentage": 84,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-EA7875",
+      "completedAt": "2026-11-24T05:36:23.178Z"
     },
     {
       "_id": "cand-38369540-0016-4517-bc94-918adbf5f16e",
@@ -23728,10 +23777,53 @@
         }
       },
       "completedAt": "2026-11-24T05:36:23.139Z"
+    },
+    {
+      "sessionId": "inz_cbt_8a56e231-1c7d-4661-89b4-95d46eaa4f8b",
+      "candidateId": "INZ-CAND-2026-00156",
+      "candidateDisplayId": "INZ-CAND-2026-00156",
+      "candidateName": "R.Sugitha Ranjani",
+      "jobRoleId": "role-data-analyst",
+      "jobRoleTitle": "Data Analyst",
+      "domainId": "dom-02",
+      "domainName": "Data & Analytics",
+      "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+      "totalScore": 38,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 84,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Mastery (Outstanding)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-EA7875",
+      "sectionScores": {
+        "section-1": {
+          "score": 14,
+          "total": 15,
+          "percentage": 93
+        },
+        "section-2": {
+          "score": 12,
+          "total": 15,
+          "percentage": 80
+        },
+        "section-3": {
+          "score": 12,
+          "total": 15,
+          "percentage": 80
+        }
+      },
+      "completedAt": "2026-11-24T05:36:23.178Z"
     }
   ],
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:36:23.284Z"
+  "lastUpdated": "2026-11-24T05:36:24.917Z"
 }
