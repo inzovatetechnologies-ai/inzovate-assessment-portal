@@ -1740,7 +1740,7 @@
     },
     {
       "_id": "cand-adadfcf1-fca4-47e3-837c-3b9996ac0a06",
-      "candidateId": "INZ-CAND-2026-00046",
+      "candidateId": "INZ-CAND-2026-00096",
       "fullName": "SriRam Vivekananthan",
       "email": "sriram.kv11@gmail.com",
       "password": "Sriram@8341",
@@ -3757,5 +3757,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T04:48:54.300Z"
+  "lastUpdated": "2026-11-24T04:48:58.482Z"
 }
