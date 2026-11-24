@@ -8062,13 +8062,62 @@
       "jobRoleId": "role-uiux",
       "jobRoleTitle": "UI/UX Designer",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Rejected",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-24T04:50:32.008Z",
-      "updatedAt": "2026-11-24T04:50:32.008Z"
+      "updatedAt": "2026-11-24T04:50:32.008Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_c5cc13ad-6a0a-4fda-8c0b-954698a65aad",
+        "candidateId": "INZ-CAND-2026-00118",
+        "candidateDisplayId": "INZ-CAND-2026-00118",
+        "candidateName": "Gaayathri J S",
+        "jobRoleId": "role-uiux",
+        "jobRoleTitle": "UI/UX Designer",
+        "domainId": "dom-04",
+        "domainName": "UI/UX & Design",
+        "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+        "totalScore": 7,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 16,
+        "isPassed": false,
+        "examResult": "Fail",
+        "selectionStatus": "Rejected",
+        "passCutoff": "> 25",
+        "performanceCategory": "Needs Improvement",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-CF5CBC",
+        "sectionScores": {
+          "section-1": {
+            "score": 4,
+            "total": 15,
+            "percentage": 27
+          },
+          "section-2": {
+            "score": 3,
+            "total": 15,
+            "percentage": 20
+          },
+          "section-3": {
+            "score": 0,
+            "total": 15,
+            "percentage": 0
+          }
+        },
+        "completedAt": "2026-11-24T05:34:50.837Z"
+      },
+      "totalScore": 7,
+      "percentage": 16,
+      "isPassed": false,
+      "examResult": "Fail",
+      "certificateId": "INZ-CERT-2026-CF5CBC",
+      "completedAt": "2026-11-24T05:34:50.837Z"
     },
     {
       "_id": "cand-7515892e-857c-4145-9467-ba5779c56574",
@@ -22219,10 +22268,53 @@
         }
       },
       "completedAt": "2026-11-24T05:34:47.463Z"
+    },
+    {
+      "sessionId": "inz_cbt_c5cc13ad-6a0a-4fda-8c0b-954698a65aad",
+      "candidateId": "INZ-CAND-2026-00118",
+      "candidateDisplayId": "INZ-CAND-2026-00118",
+      "candidateName": "Gaayathri J S",
+      "jobRoleId": "role-uiux",
+      "jobRoleTitle": "UI/UX Designer",
+      "domainId": "dom-04",
+      "domainName": "UI/UX & Design",
+      "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+      "totalScore": 7,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 16,
+      "isPassed": false,
+      "examResult": "Fail",
+      "selectionStatus": "Rejected",
+      "passCutoff": "> 25",
+      "performanceCategory": "Needs Improvement",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-CF5CBC",
+      "sectionScores": {
+        "section-1": {
+          "score": 4,
+          "total": 15,
+          "percentage": 27
+        },
+        "section-2": {
+          "score": 3,
+          "total": 15,
+          "percentage": 20
+        },
+        "section-3": {
+          "score": 0,
+          "total": 15,
+          "percentage": 0
+        }
+      },
+      "completedAt": "2026-11-24T05:34:50.837Z"
     }
   ],
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:34:47.641Z"
+  "lastUpdated": "2026-11-24T05:34:50.974Z"
 }
