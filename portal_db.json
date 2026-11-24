@@ -886,7 +886,7 @@
     },
     {
       "_id": "cand-880e0a97-c568-4150-98ab-3d3052129037",
-      "candidateId": "INZ-CAND-2026-00015",
+      "candidateId": "INZ-CAND-2026-00352",
       "fullName": "Hari prakash K",
       "email": "hariprakash1026@gmail.com",
       "password": "Prakash@33",
@@ -917,11 +917,11 @@
       "jobRoleId": "role-soft-dev",
       "jobRoleTitle": "Software Developer",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Selected for Next Round",
+      "recruitmentStage": "Registered",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Completed",
-      "testAttempts": 1,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
       "createdAt": "2026-11-24T04:41:20.352Z",
       "updatedAt": "2026-11-24T04:41:20.352Z",
       "assessmentResult": {
@@ -14736,5 +14736,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:18:28.306Z"
+  "lastUpdated": "2026-11-24T05:18:53.187Z"
 }
