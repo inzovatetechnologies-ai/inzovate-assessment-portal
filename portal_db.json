@@ -11577,11 +11577,11 @@
       "status": "Registered",
       "deletedAt": null,
       "assessmentStatus": "Completed",
-      "testAttempts": 1,
+      "testAttempts": 2,
       "createdAt": "2026-11-24T04:55:34.639Z",
       "updatedAt": "2026-11-24T04:55:34.639Z",
       "assessmentResult": {
-        "sessionId": "inz_cbt_e538d761-fe28-4770-978e-9bda258a1a60",
+        "sessionId": "inz_cbt_739ab6c9-22af-4217-a909-5d5dc6c1b438",
         "candidateId": "INZ-CAND-2026-00178",
         "candidateDisplayId": "INZ-CAND-2026-00178",
         "candidateName": "koushikan mk",
@@ -11590,45 +11590,45 @@
         "domainId": "dom-01",
         "domainName": "Software Development",
         "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
-        "totalScore": 44,
+        "totalScore": 29,
         "maxScore": 45,
         "totalQuestions": 45,
         "totalAttempted": 45,
         "totalQuestionsAttempted": 45,
         "unattempted": 0,
-        "percentage": 98,
+        "percentage": 64,
         "isPassed": true,
         "examResult": "Pass",
         "selectionStatus": "Selected for Next Round",
         "passCutoff": "> 25",
-        "performanceCategory": "Mastery (Outstanding)",
+        "performanceCategory": "Foundational (Competent)",
         "status": "Completed",
-        "certificateId": "INZ-CERT-2026-47A8E2",
+        "certificateId": "INZ-CERT-2026-C1B09F",
         "sectionScores": {
           "section-1": {
-            "score": 14,
+            "score": 10,
             "total": 15,
-            "percentage": 93
+            "percentage": 67
           },
           "section-2": {
-            "score": 15,
+            "score": 10,
             "total": 15,
-            "percentage": 100
+            "percentage": 67
           },
           "section-3": {
-            "score": 15,
+            "score": 9,
             "total": 15,
-            "percentage": 100
+            "percentage": 60
           }
         },
-        "completedAt": "2026-11-24T05:35:18.384Z"
+        "completedAt": "2026-11-24T05:41:26.253Z"
       },
-      "totalScore": 44,
-      "percentage": 98,
+      "totalScore": 29,
+      "percentage": 64,
       "isPassed": true,
       "examResult": "Pass",
-      "certificateId": "INZ-CERT-2026-47A8E2",
-      "completedAt": "2026-11-24T05:35:18.384Z"
+      "certificateId": "INZ-CERT-2026-C1B09F",
+      "completedAt": "2026-11-24T05:41:26.253Z"
     },
     {
       "_id": "cand-7fd2e7e8-7de3-4d3d-bd21-19512a031e28",
@@ -25456,7 +25456,7 @@
       "completedAt": "2026-11-24T05:35:06.690Z"
     },
     {
-      "sessionId": "inz_cbt_e538d761-fe28-4770-978e-9bda258a1a60",
+      "sessionId": "inz_cbt_739ab6c9-22af-4217-a909-5d5dc6c1b438",
       "candidateId": "INZ-CAND-2026-00178",
       "candidateDisplayId": "INZ-CAND-2026-00178",
       "candidateName": "koushikan mk",
@@ -25465,38 +25465,38 @@
       "domainId": "dom-01",
       "domainName": "Software Development",
       "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
-      "totalScore": 44,
+      "totalScore": 29,
       "maxScore": 45,
       "totalQuestions": 45,
       "totalAttempted": 45,
       "totalQuestionsAttempted": 45,
       "unattempted": 0,
-      "percentage": 98,
+      "percentage": 64,
       "isPassed": true,
       "examResult": "Pass",
       "selectionStatus": "Selected for Next Round",
       "passCutoff": "> 25",
-      "performanceCategory": "Mastery (Outstanding)",
+      "performanceCategory": "Foundational (Competent)",
       "status": "Completed",
-      "certificateId": "INZ-CERT-2026-47A8E2",
+      "certificateId": "INZ-CERT-2026-C1B09F",
       "sectionScores": {
         "section-1": {
-          "score": 14,
+          "score": 10,
           "total": 15,
-          "percentage": 93
+          "percentage": 67
         },
         "section-2": {
-          "score": 15,
+          "score": 10,
           "total": 15,
-          "percentage": 100
+          "percentage": 67
         },
         "section-3": {
-          "score": 15,
+          "score": 9,
           "total": 15,
-          "percentage": 100
+          "percentage": 60
         }
       },
-      "completedAt": "2026-11-24T05:35:18.384Z"
+      "completedAt": "2026-11-24T05:41:26.253Z"
     },
     {
       "sessionId": "inz_cbt_1ed9b785-35b4-495e-8382-27b2c9a1cd28",
@@ -28082,5 +28082,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:41:25.773Z"
+  "lastUpdated": "2026-11-24T05:41:27.868Z"
 }
