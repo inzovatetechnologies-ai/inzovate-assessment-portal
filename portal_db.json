@@ -2402,13 +2402,62 @@
       "jobRoleId": "role-fullstack",
       "jobRoleTitle": "Full Stack Developer",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-24T04:46:14.290Z",
-      "updatedAt": "2026-11-24T04:46:14.290Z"
+      "updatedAt": "2026-11-24T04:46:14.290Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_16d2c3af-8007-4af1-b5c2-85060b54f41b",
+        "candidateId": "INZ-CAND-2026-00094",
+        "candidateDisplayId": "INZ-CAND-2026-00094",
+        "candidateName": "Mohanapriyan T C C",
+        "jobRoleId": "role-fullstack",
+        "jobRoleTitle": "Full Stack Developer",
+        "domainId": "dom-01",
+        "domainName": "Software Development",
+        "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+        "totalScore": 45,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 100,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Mastery (Outstanding)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-E9FCE5",
+        "sectionScores": {
+          "section-1": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-2": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-3": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          }
+        },
+        "completedAt": "2026-11-24T05:07:51.039Z"
+      },
+      "totalScore": 45,
+      "percentage": 100,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-E9FCE5",
+      "completedAt": "2026-11-24T05:07:51.039Z"
     },
     {
       "_id": "cand-d68887fd-2a41-4dee-a047-0bb1969d0539",
@@ -11316,10 +11365,53 @@
         }
       },
       "completedAt": "2026-11-24T05:07:47.869Z"
+    },
+    {
+      "sessionId": "inz_cbt_16d2c3af-8007-4af1-b5c2-85060b54f41b",
+      "candidateId": "INZ-CAND-2026-00094",
+      "candidateDisplayId": "INZ-CAND-2026-00094",
+      "candidateName": "Mohanapriyan T C C",
+      "jobRoleId": "role-fullstack",
+      "jobRoleTitle": "Full Stack Developer",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+      "totalScore": 45,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 100,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Mastery (Outstanding)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-E9FCE5",
+      "sectionScores": {
+        "section-1": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-2": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-3": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        }
+      },
+      "completedAt": "2026-11-24T05:07:51.039Z"
     }
   ],
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:07:50.907Z"
+  "lastUpdated": "2026-11-24T05:07:52.762Z"
 }
