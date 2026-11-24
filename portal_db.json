@@ -9448,7 +9448,7 @@
     },
     {
       "_id": "cand-1f671ce3-aa31-4732-af0c-7a07637b7e2a",
-      "candidateId": "INZ-CAND-2026-00229",
+      "candidateId": "INZ-CAND-2026-00281",
       "fullName": "Pranesh",
       "email": "pranesh.siva.05@gmail.com",
       "password": "qwert7",
@@ -9866,5 +9866,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:01:44.463Z"
+  "lastUpdated": "2026-11-24T05:01:45.887Z"
 }
