@@ -15819,13 +15819,62 @@
       "jobRoleId": "role-data-analyst",
       "jobRoleTitle": "Data Analyst",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-24T05:02:40.730Z",
-      "updatedAt": "2026-11-24T05:02:40.730Z"
+      "updatedAt": "2026-11-24T05:02:40.730Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_67a4b6bc-add6-401a-b706-6a5c4e836919",
+        "candidateId": "INZ-CAND-2026-00245",
+        "candidateDisplayId": "INZ-CAND-2026-00245",
+        "candidateName": "PRAVEENAA M S",
+        "jobRoleId": "role-data-analyst",
+        "jobRoleTitle": "Data Analyst",
+        "domainId": "dom-02",
+        "domainName": "Data & Analytics",
+        "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+        "totalScore": 42,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 93,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Mastery (Outstanding)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-8B1D1D",
+        "sectionScores": {
+          "section-1": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-2": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-3": {
+            "score": 12,
+            "total": 15,
+            "percentage": 80
+          }
+        },
+        "completedAt": "2026-11-24T05:35:26.068Z"
+      },
+      "totalScore": 42,
+      "percentage": 93,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-8B1D1D",
+      "completedAt": "2026-11-24T05:35:26.068Z"
     },
     {
       "_id": "cand-61a24891-d25e-42f2-b6db-2433cc087c9c",
@@ -23225,10 +23274,53 @@
         }
       },
       "completedAt": "2026-11-24T05:35:23.605Z"
+    },
+    {
+      "sessionId": "inz_cbt_67a4b6bc-add6-401a-b706-6a5c4e836919",
+      "candidateId": "INZ-CAND-2026-00245",
+      "candidateDisplayId": "INZ-CAND-2026-00245",
+      "candidateName": "PRAVEENAA M S",
+      "jobRoleId": "role-data-analyst",
+      "jobRoleTitle": "Data Analyst",
+      "domainId": "dom-02",
+      "domainName": "Data & Analytics",
+      "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+      "totalScore": 42,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 93,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Mastery (Outstanding)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-8B1D1D",
+      "sectionScores": {
+        "section-1": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-2": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-3": {
+          "score": 12,
+          "total": 15,
+          "percentage": 80
+        }
+      },
+      "completedAt": "2026-11-24T05:35:26.068Z"
     }
   ],
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:35:26.208Z"
+  "lastUpdated": "2026-11-24T05:35:27.939Z"
 }
