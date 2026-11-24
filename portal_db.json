@@ -16655,10 +16655,53 @@
         }
       },
       "completedAt": "2026-11-24T05:23:03.353Z"
+    },
+    {
+      "sessionId": "inz_cbt_4a0a20be-8fa6-4532-87b5-a8b31d1730c0",
+      "candidateId": "INZ-CAND-2026-00059",
+      "candidateDisplayId": "INZ-CAND-2026-00059",
+      "candidateName": "Kowsalyadevi G",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Software Developer",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "collegeName": "Autonomous Engineering College",
+      "totalScore": 18,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 40,
+      "isPassed": false,
+      "examResult": "Fail",
+      "selectionStatus": "Rejected",
+      "passCutoff": "> 25",
+      "performanceCategory": "Needs Improvement",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-488141",
+      "sectionScores": {
+        "section-1": {
+          "score": 8,
+          "total": 15,
+          "percentage": 53
+        },
+        "section-2": {
+          "score": 5,
+          "total": 15,
+          "percentage": 33
+        },
+        "section-3": {
+          "score": 5,
+          "total": 15,
+          "percentage": 33
+        }
+      },
+      "completedAt": "2026-11-24T05:23:05.358Z"
     }
   ],
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:23:03.474Z"
+  "lastUpdated": "2026-11-24T05:23:05.508Z"
 }
