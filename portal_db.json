@@ -8938,13 +8938,62 @@
       "jobRoleId": "role-ai-ml",
       "jobRoleTitle": "AI/ML Engineer",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-24T04:51:28.021Z",
-      "updatedAt": "2026-11-24T04:51:28.021Z"
+      "updatedAt": "2026-11-24T04:51:28.021Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_b6fe8396-1248-4d6a-addf-4dce794bb7ce",
+        "candidateId": "INZ-CAND-2026-00131",
+        "candidateDisplayId": "INZ-CAND-2026-00131",
+        "candidateName": "Sri Sakthi S",
+        "jobRoleId": "role-ai-ml",
+        "jobRoleTitle": "AI/ML Engineer",
+        "domainId": "dom-03",
+        "domainName": "Artificial Intelligence",
+        "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+        "totalScore": 31,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 69,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Proficient (Commendable)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-03D5EA",
+        "sectionScores": {
+          "section-1": {
+            "score": 13,
+            "total": 15,
+            "percentage": 87
+          },
+          "section-2": {
+            "score": 12,
+            "total": 15,
+            "percentage": 80
+          },
+          "section-3": {
+            "score": 6,
+            "total": 15,
+            "percentage": 40
+          }
+        },
+        "completedAt": "2026-11-24T05:34:15.589Z"
+      },
+      "totalScore": 31,
+      "percentage": 69,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-03D5EA",
+      "completedAt": "2026-11-24T05:34:15.589Z"
     },
     {
       "_id": "cand-0be137e1-5efa-4630-bce0-50f7a3cb1440",
@@ -21765,10 +21814,53 @@
         }
       },
       "completedAt": "2026-11-24T05:34:02.463Z"
+    },
+    {
+      "sessionId": "inz_cbt_b6fe8396-1248-4d6a-addf-4dce794bb7ce",
+      "candidateId": "INZ-CAND-2026-00131",
+      "candidateDisplayId": "INZ-CAND-2026-00131",
+      "candidateName": "Sri Sakthi S",
+      "jobRoleId": "role-ai-ml",
+      "jobRoleTitle": "AI/ML Engineer",
+      "domainId": "dom-03",
+      "domainName": "Artificial Intelligence",
+      "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+      "totalScore": 31,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 69,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Proficient (Commendable)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-03D5EA",
+      "sectionScores": {
+        "section-1": {
+          "score": 13,
+          "total": 15,
+          "percentage": 87
+        },
+        "section-2": {
+          "score": 12,
+          "total": 15,
+          "percentage": 80
+        },
+        "section-3": {
+          "score": 6,
+          "total": 15,
+          "percentage": 40
+        }
+      },
+      "completedAt": "2026-11-24T05:34:15.589Z"
     }
   ],
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:34:06.949Z"
+  "lastUpdated": "2026-11-24T05:34:15.733Z"
 }
