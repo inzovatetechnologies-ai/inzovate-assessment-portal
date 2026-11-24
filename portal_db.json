@@ -11602,13 +11602,62 @@
       "jobRoleId": "role-ai-ml",
       "jobRoleTitle": "AI/ML Engineer",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Rejected",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-24T04:58:37.094Z",
-      "updatedAt": "2026-11-24T04:58:37.094Z"
+      "updatedAt": "2026-11-24T04:58:37.094Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_0275f54b-0e83-49dc-bc03-021623150d89",
+        "candidateId": "INZ-CAND-2026-00214",
+        "candidateDisplayId": "INZ-CAND-2026-00214",
+        "candidateName": "KAPIL RAJKUMAR A",
+        "jobRoleId": "role-ai-ml",
+        "jobRoleTitle": "AI/ML Engineer",
+        "domainId": "dom-03",
+        "domainName": "Artificial Intelligence",
+        "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+        "totalScore": 18,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 40,
+        "isPassed": false,
+        "examResult": "Fail",
+        "selectionStatus": "Rejected",
+        "passCutoff": "> 25",
+        "performanceCategory": "Needs Improvement",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-4E9AC9",
+        "sectionScores": {
+          "section-1": {
+            "score": 7,
+            "total": 15,
+            "percentage": 47
+          },
+          "section-2": {
+            "score": 6,
+            "total": 15,
+            "percentage": 40
+          },
+          "section-3": {
+            "score": 5,
+            "total": 15,
+            "percentage": 33
+          }
+        },
+        "completedAt": "2026-11-24T05:30:35.435Z"
+      },
+      "totalScore": 18,
+      "percentage": 40,
+      "isPassed": false,
+      "examResult": "Fail",
+      "certificateId": "INZ-CERT-2026-4E9AC9",
+      "completedAt": "2026-11-24T05:30:35.435Z"
     },
     {
       "_id": "cand-9ac3b9b9-a6b8-418b-a937-ebb89b9a466c",
@@ -20035,10 +20084,53 @@
         }
       },
       "completedAt": "2026-11-24T05:30:31.562Z"
+    },
+    {
+      "sessionId": "inz_cbt_0275f54b-0e83-49dc-bc03-021623150d89",
+      "candidateId": "INZ-CAND-2026-00214",
+      "candidateDisplayId": "INZ-CAND-2026-00214",
+      "candidateName": "KAPIL RAJKUMAR A",
+      "jobRoleId": "role-ai-ml",
+      "jobRoleTitle": "AI/ML Engineer",
+      "domainId": "dom-03",
+      "domainName": "Artificial Intelligence",
+      "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+      "totalScore": 18,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 40,
+      "isPassed": false,
+      "examResult": "Fail",
+      "selectionStatus": "Rejected",
+      "passCutoff": "> 25",
+      "performanceCategory": "Needs Improvement",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-4E9AC9",
+      "sectionScores": {
+        "section-1": {
+          "score": 7,
+          "total": 15,
+          "percentage": 47
+        },
+        "section-2": {
+          "score": 6,
+          "total": 15,
+          "percentage": 40
+        },
+        "section-3": {
+          "score": 5,
+          "total": 15,
+          "percentage": 33
+        }
+      },
+      "completedAt": "2026-11-24T05:30:35.435Z"
     }
   ],
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:30:31.722Z"
+  "lastUpdated": "2026-11-24T05:30:35.602Z"
 }
