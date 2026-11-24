@@ -22403,10 +22403,53 @@
         }
       },
       "completedAt": "2026-11-24T05:34:52.294Z"
+    },
+    {
+      "sessionId": "inz_cbt_cd5feb42-1f95-4355-8d58-0630bdf0b38b",
+      "candidateId": "INZ-CAND-2026-00153",
+      "candidateDisplayId": "INZ-CAND-2026-00153",
+      "candidateName": "Yuvan Shankar U K",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Software Developer",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "collegeName": "Autonomous Engineering College",
+      "totalScore": 42,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 93,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Mastery (Outstanding)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-A84D61",
+      "sectionScores": {
+        "section-1": {
+          "score": 14,
+          "total": 15,
+          "percentage": 93
+        },
+        "section-2": {
+          "score": 13,
+          "total": 15,
+          "percentage": 87
+        },
+        "section-3": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        }
+      },
+      "completedAt": "2026-11-24T05:34:58.861Z"
     }
   ],
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:34:54.307Z"
+  "lastUpdated": "2026-11-24T05:34:59.066Z"
 }
