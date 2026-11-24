@@ -18753,10 +18753,53 @@
         }
       },
       "completedAt": "2026-11-24T05:27:32.350Z"
+    },
+    {
+      "sessionId": "inz_cbt_f3e19e37-0860-45a4-b3d6-582a82518609",
+      "candidateId": "INZ-CAND-2026-00129",
+      "candidateDisplayId": "INZ-CAND-2026-00129",
+      "candidateName": "LOGESHWARAN E",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Software Developer",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "collegeName": "Autonomous Engineering College",
+      "totalScore": 40,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 89,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Mastery (Outstanding)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-AF2AB2",
+      "sectionScores": {
+        "section-1": {
+          "score": 13,
+          "total": 15,
+          "percentage": 87
+        },
+        "section-2": {
+          "score": 14,
+          "total": 15,
+          "percentage": 93
+        },
+        "section-3": {
+          "score": 13,
+          "total": 15,
+          "percentage": 87
+        }
+      },
+      "completedAt": "2026-11-24T05:27:47.701Z"
     }
   ],
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:27:37.499Z"
+  "lastUpdated": "2026-11-24T05:27:47.866Z"
 }
