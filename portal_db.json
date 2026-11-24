@@ -6606,13 +6606,62 @@
       "jobRoleId": "role-data-analyst",
       "jobRoleTitle": "Data Analyst",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Rejected",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-24T04:49:12.528Z",
-      "updatedAt": "2026-11-24T04:49:12.528Z"
+      "updatedAt": "2026-11-24T04:49:12.528Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_28e7513d-0325-4fdc-bb55-c6a4d3a65c1a",
+        "candidateId": "INZ-CAND-2026-00101",
+        "candidateDisplayId": "INZ-CAND-2026-00101",
+        "candidateName": "TARUNIKA K",
+        "jobRoleId": "role-data-analyst",
+        "jobRoleTitle": "Data Analyst",
+        "domainId": "dom-02",
+        "domainName": "Data & Analytics",
+        "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+        "totalScore": 18,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 40,
+        "isPassed": false,
+        "examResult": "Fail",
+        "selectionStatus": "Rejected",
+        "passCutoff": "> 25",
+        "performanceCategory": "Needs Improvement",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-0FF787",
+        "sectionScores": {
+          "section-1": {
+            "score": 8,
+            "total": 15,
+            "percentage": 53
+          },
+          "section-2": {
+            "score": 6,
+            "total": 15,
+            "percentage": 40
+          },
+          "section-3": {
+            "score": 4,
+            "total": 15,
+            "percentage": 27
+          }
+        },
+        "completedAt": "2026-11-24T05:24:23.990Z"
+      },
+      "totalScore": 18,
+      "percentage": 40,
+      "isPassed": false,
+      "examResult": "Fail",
+      "certificateId": "INZ-CERT-2026-0FF787",
+      "completedAt": "2026-11-24T05:24:23.990Z"
     },
     {
       "_id": "cand-8e58f31c-54ca-4c7c-a197-0983e1e65f03",
@@ -17109,10 +17158,53 @@
         }
       },
       "completedAt": "2026-11-24T05:24:04.282Z"
+    },
+    {
+      "sessionId": "inz_cbt_28e7513d-0325-4fdc-bb55-c6a4d3a65c1a",
+      "candidateId": "INZ-CAND-2026-00101",
+      "candidateDisplayId": "INZ-CAND-2026-00101",
+      "candidateName": "TARUNIKA K",
+      "jobRoleId": "role-data-analyst",
+      "jobRoleTitle": "Data Analyst",
+      "domainId": "dom-02",
+      "domainName": "Data & Analytics",
+      "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+      "totalScore": 18,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 40,
+      "isPassed": false,
+      "examResult": "Fail",
+      "selectionStatus": "Rejected",
+      "passCutoff": "> 25",
+      "performanceCategory": "Needs Improvement",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-0FF787",
+      "sectionScores": {
+        "section-1": {
+          "score": 8,
+          "total": 15,
+          "percentage": 53
+        },
+        "section-2": {
+          "score": 6,
+          "total": 15,
+          "percentage": 40
+        },
+        "section-3": {
+          "score": 4,
+          "total": 15,
+          "percentage": 27
+        }
+      },
+      "completedAt": "2026-11-24T05:24:23.990Z"
     }
   ],
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:24:04.415Z"
+  "lastUpdated": "2026-11-24T05:24:24.118Z"
 }
