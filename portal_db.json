@@ -6797,11 +6797,11 @@
       "status": "Registered",
       "deletedAt": null,
       "assessmentStatus": "Completed",
-      "testAttempts": 3,
+      "testAttempts": 4,
       "createdAt": "2026-11-24T04:48:42.036Z",
       "updatedAt": "2026-11-24T04:48:42.036Z",
       "assessmentResult": {
-        "sessionId": "inz_cbt_994813c0-7293-483e-83b6-307e5afa5f04",
+        "sessionId": "inz_cbt_f4e8a1b3-4c2d-4e76-859d-2a978eea4115",
         "candidateId": "INZ-CAND-2026-00107",
         "candidateDisplayId": "INZ-CAND-2026-00107",
         "candidateName": "Suriya A",
@@ -6810,45 +6810,45 @@
         "domainId": "dom-02",
         "domainName": "Data & Analytics",
         "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
-        "totalScore": 29,
+        "totalScore": 35,
         "maxScore": 45,
         "totalQuestions": 45,
         "totalAttempted": 45,
         "totalQuestionsAttempted": 45,
         "unattempted": 0,
-        "percentage": 64,
+        "percentage": 78,
         "isPassed": true,
         "examResult": "Pass",
         "selectionStatus": "Selected for Next Round",
         "passCutoff": "> 25",
-        "performanceCategory": "Foundational (Competent)",
+        "performanceCategory": "Proficient (Commendable)",
         "status": "Completed",
-        "certificateId": "INZ-CERT-2026-39615D",
+        "certificateId": "INZ-CERT-2026-EF830C",
         "sectionScores": {
           "section-1": {
-            "score": 13,
+            "score": 15,
             "total": 15,
-            "percentage": 87
+            "percentage": 100
           },
           "section-2": {
-            "score": 10,
+            "score": 12,
             "total": 15,
-            "percentage": 67
+            "percentage": 80
           },
           "section-3": {
-            "score": 6,
+            "score": 8,
             "total": 15,
-            "percentage": 40
+            "percentage": 53
           }
         },
-        "completedAt": "2026-11-24T05:30:21.237Z"
+        "completedAt": "2026-11-24T05:33:15.589Z"
       },
-      "totalScore": 29,
-      "percentage": 64,
+      "totalScore": 35,
+      "percentage": 78,
       "isPassed": true,
       "examResult": "Pass",
-      "certificateId": "INZ-CERT-2026-39615D",
-      "completedAt": "2026-11-24T05:30:21.237Z"
+      "certificateId": "INZ-CERT-2026-EF830C",
+      "completedAt": "2026-11-24T05:33:15.589Z"
     },
     {
       "_id": "cand-6a771917-85ca-4bf2-8db5-f976b7081e8e",
@@ -18555,7 +18555,7 @@
       "completedAt": "2026-11-24T05:22:30.840Z"
     },
     {
-      "sessionId": "inz_cbt_994813c0-7293-483e-83b6-307e5afa5f04",
+      "sessionId": "inz_cbt_f4e8a1b3-4c2d-4e76-859d-2a978eea4115",
       "candidateId": "INZ-CAND-2026-00107",
       "candidateDisplayId": "INZ-CAND-2026-00107",
       "candidateName": "Suriya A",
@@ -18564,38 +18564,38 @@
       "domainId": "dom-02",
       "domainName": "Data & Analytics",
       "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
-      "totalScore": 29,
+      "totalScore": 35,
       "maxScore": 45,
       "totalQuestions": 45,
       "totalAttempted": 45,
       "totalQuestionsAttempted": 45,
       "unattempted": 0,
-      "percentage": 64,
+      "percentage": 78,
       "isPassed": true,
       "examResult": "Pass",
       "selectionStatus": "Selected for Next Round",
       "passCutoff": "> 25",
-      "performanceCategory": "Foundational (Competent)",
+      "performanceCategory": "Proficient (Commendable)",
       "status": "Completed",
-      "certificateId": "INZ-CERT-2026-39615D",
+      "certificateId": "INZ-CERT-2026-EF830C",
       "sectionScores": {
         "section-1": {
-          "score": 13,
+          "score": 15,
           "total": 15,
-          "percentage": 87
+          "percentage": 100
         },
         "section-2": {
-          "score": 10,
+          "score": 12,
           "total": 15,
-          "percentage": 67
+          "percentage": 80
         },
         "section-3": {
-          "score": 6,
+          "score": 8,
           "total": 15,
-          "percentage": 40
+          "percentage": 53
         }
       },
-      "completedAt": "2026-11-24T05:30:21.237Z"
+      "completedAt": "2026-11-24T05:33:15.589Z"
     },
     {
       "sessionId": "inz_cbt_31dab967-8d3e-48ea-9de7-b4de56d2e6af",
@@ -21224,5 +21224,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:33:07.198Z"
+  "lastUpdated": "2026-11-24T05:33:15.730Z"
 }
