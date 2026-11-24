@@ -426,15 +426,15 @@
       "jobRoleId": "role-data-analyst",
       "jobRoleTitle": "Data Analyst",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Rejected",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
       "assessmentStatus": "Completed",
-      "testAttempts": 1,
+      "testAttempts": 2,
       "createdAt": "2026-11-24T04:39:46.488Z",
       "updatedAt": "2026-11-24T04:39:46.488Z",
       "assessmentResult": {
-        "sessionId": "inz_cbt_01ce6f86-a51c-4e50-811f-e87315bde2d6",
+        "sessionId": "inz_cbt_a5045024-1967-47c2-9815-a88ca036730e",
         "candidateId": "INZ-CAND-2026-00019",
         "candidateDisplayId": "INZ-CAND-2026-00019",
         "candidateName": "Janani Rajagopalan",
@@ -443,45 +443,45 @@
         "domainId": "dom-02",
         "domainName": "Data & Analytics",
         "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
-        "totalScore": 3,
+        "totalScore": 30,
         "maxScore": 45,
         "totalQuestions": 45,
-        "totalAttempted": 26,
-        "totalQuestionsAttempted": 26,
-        "unattempted": 19,
-        "percentage": 7,
-        "isPassed": false,
-        "examResult": "Fail",
-        "selectionStatus": "Rejected",
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 67,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
         "passCutoff": "> 25",
-        "performanceCategory": "Needs Improvement",
+        "performanceCategory": "Proficient (Commendable)",
         "status": "Completed",
-        "certificateId": "INZ-CERT-2026-D70F96",
+        "certificateId": "INZ-CERT-2026-2B2669",
         "sectionScores": {
           "section-1": {
-            "score": 0,
+            "score": 10,
             "total": 15,
-            "percentage": 0
+            "percentage": 67
           },
           "section-2": {
-            "score": 1,
+            "score": 11,
             "total": 15,
-            "percentage": 7
+            "percentage": 73
           },
           "section-3": {
-            "score": 2,
+            "score": 9,
             "total": 15,
-            "percentage": 13
+            "percentage": 60
           }
         },
-        "completedAt": "2026-11-24T05:16:48.453Z"
+        "completedAt": "2026-11-24T05:17:50.289Z"
       },
-      "totalScore": 3,
-      "percentage": 7,
-      "isPassed": false,
-      "examResult": "Fail",
-      "certificateId": "INZ-CERT-2026-D70F96",
-      "completedAt": "2026-11-24T05:16:48.453Z"
+      "totalScore": 30,
+      "percentage": 67,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-2B2669",
+      "completedAt": "2026-11-24T05:17:50.289Z"
     },
     {
       "_id": "cand-f1e14fb8-63d1-4224-8413-683b20b8be55",
@@ -13739,7 +13739,7 @@
       "completedAt": "2026-11-24T05:16:47.885Z"
     },
     {
-      "sessionId": "inz_cbt_01ce6f86-a51c-4e50-811f-e87315bde2d6",
+      "sessionId": "inz_cbt_a5045024-1967-47c2-9815-a88ca036730e",
       "candidateId": "INZ-CAND-2026-00019",
       "candidateDisplayId": "INZ-CAND-2026-00019",
       "candidateName": "Janani Rajagopalan",
@@ -13748,38 +13748,38 @@
       "domainId": "dom-02",
       "domainName": "Data & Analytics",
       "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
-      "totalScore": 3,
+      "totalScore": 30,
       "maxScore": 45,
       "totalQuestions": 45,
-      "totalAttempted": 26,
-      "totalQuestionsAttempted": 26,
-      "unattempted": 19,
-      "percentage": 7,
-      "isPassed": false,
-      "examResult": "Fail",
-      "selectionStatus": "Rejected",
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 67,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
       "passCutoff": "> 25",
-      "performanceCategory": "Needs Improvement",
+      "performanceCategory": "Proficient (Commendable)",
       "status": "Completed",
-      "certificateId": "INZ-CERT-2026-D70F96",
+      "certificateId": "INZ-CERT-2026-2B2669",
       "sectionScores": {
         "section-1": {
-          "score": 0,
+          "score": 10,
           "total": 15,
-          "percentage": 0
+          "percentage": 67
         },
         "section-2": {
-          "score": 1,
+          "score": 11,
           "total": 15,
-          "percentage": 7
+          "percentage": 73
         },
         "section-3": {
-          "score": 2,
+          "score": 9,
           "total": 15,
-          "percentage": 13
+          "percentage": 60
         }
       },
-      "completedAt": "2026-11-24T05:16:48.453Z"
+      "completedAt": "2026-11-24T05:17:50.289Z"
     },
     {
       "sessionId": "inz_cbt_156e5cd8-e755-4352-8945-db3e93c8d2a0",
@@ -13957,5 +13957,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:17:47.905Z"
+  "lastUpdated": "2026-11-24T05:17:50.403Z"
 }
