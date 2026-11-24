@@ -5332,11 +5332,11 @@
       "status": "Registered",
       "deletedAt": null,
       "assessmentStatus": "Completed",
-      "testAttempts": 1,
+      "testAttempts": 2,
       "createdAt": "2026-11-24T04:47:28.794Z",
       "updatedAt": "2026-11-24T04:47:28.794Z",
       "assessmentResult": {
-        "sessionId": "inz_cbt_c2297e30-b914-4033-9c24-b66e2dffb861",
+        "sessionId": "inz_cbt_0a6187a0-35de-4951-9e53-c5ffd04ce880",
         "candidateId": "INZ-CAND-2026-00095",
         "candidateDisplayId": "INZ-CAND-2026-00095",
         "candidateName": "kishor A.S",
@@ -5345,45 +5345,45 @@
         "domainId": "dom-01",
         "domainName": "Software Development",
         "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
-        "totalScore": 43,
+        "totalScore": 42,
         "maxScore": 45,
         "totalQuestions": 45,
         "totalAttempted": 45,
         "totalQuestionsAttempted": 45,
         "unattempted": 0,
-        "percentage": 96,
+        "percentage": 93,
         "isPassed": true,
         "examResult": "Pass",
         "selectionStatus": "Selected for Next Round",
         "passCutoff": "> 25",
         "performanceCategory": "Mastery (Outstanding)",
         "status": "Completed",
-        "certificateId": "INZ-CERT-2026-DA14FB",
+        "certificateId": "INZ-CERT-2026-CF8545",
         "sectionScores": {
           "section-1": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-2": {
+            "score": 14,
+            "total": 15,
+            "percentage": 93
+          },
+          "section-3": {
             "score": 13,
             "total": 15,
             "percentage": 87
-          },
-          "section-2": {
-            "score": 15,
-            "total": 15,
-            "percentage": 100
-          },
-          "section-3": {
-            "score": 15,
-            "total": 15,
-            "percentage": 100
           }
         },
-        "completedAt": "2026-11-24T05:13:14.489Z"
+        "completedAt": "2026-11-24T05:27:35.005Z"
       },
-      "totalScore": 43,
-      "percentage": 96,
+      "totalScore": 42,
+      "percentage": 93,
       "isPassed": true,
       "examResult": "Pass",
-      "certificateId": "INZ-CERT-2026-DA14FB",
-      "completedAt": "2026-11-24T05:13:14.489Z"
+      "certificateId": "INZ-CERT-2026-CF8545",
+      "completedAt": "2026-11-24T05:27:35.005Z"
     },
     {
       "_id": "cand-043a5d27-cae6-49c1-9588-56afbe6e0994",
@@ -15616,7 +15616,7 @@
       "completedAt": "2026-11-24T05:15:51.313Z"
     },
     {
-      "sessionId": "inz_cbt_c2297e30-b914-4033-9c24-b66e2dffb861",
+      "sessionId": "inz_cbt_0a6187a0-35de-4951-9e53-c5ffd04ce880",
       "candidateId": "INZ-CAND-2026-00095",
       "candidateDisplayId": "INZ-CAND-2026-00095",
       "candidateName": "kishor A.S",
@@ -15625,38 +15625,38 @@
       "domainId": "dom-01",
       "domainName": "Software Development",
       "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
-      "totalScore": 43,
+      "totalScore": 42,
       "maxScore": 45,
       "totalQuestions": 45,
       "totalAttempted": 45,
       "totalQuestionsAttempted": 45,
       "unattempted": 0,
-      "percentage": 96,
+      "percentage": 93,
       "isPassed": true,
       "examResult": "Pass",
       "selectionStatus": "Selected for Next Round",
       "passCutoff": "> 25",
       "performanceCategory": "Mastery (Outstanding)",
       "status": "Completed",
-      "certificateId": "INZ-CERT-2026-DA14FB",
+      "certificateId": "INZ-CERT-2026-CF8545",
       "sectionScores": {
         "section-1": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-2": {
+          "score": 14,
+          "total": 15,
+          "percentage": 93
+        },
+        "section-3": {
           "score": 13,
           "total": 15,
           "percentage": 87
-        },
-        "section-2": {
-          "score": 15,
-          "total": 15,
-          "percentage": 100
-        },
-        "section-3": {
-          "score": 15,
-          "total": 15,
-          "percentage": 100
         }
       },
-      "completedAt": "2026-11-24T05:13:14.489Z"
+      "completedAt": "2026-11-24T05:27:35.005Z"
     },
     {
       "sessionId": "inz_cbt_6306155c-0b69-4e07-abac-43ac7bc015ad",
@@ -18758,5 +18758,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:27:32.494Z"
+  "lastUpdated": "2026-11-24T05:27:35.134Z"
 }
