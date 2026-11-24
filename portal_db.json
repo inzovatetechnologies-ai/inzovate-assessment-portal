@@ -8177,7 +8177,7 @@
     },
     {
       "_id": "cand-1cdf3fdc-1dec-46ec-9e22-a9d61e2991cf",
-      "candidateId": "INZ-CAND-2026-00232",
+      "candidateId": "INZ-CAND-2026-00320",
       "fullName": "Kaviya R",
       "email": "kaviyarrvb2022@gmail.com",
       "password": "Kaviya@836",
@@ -10727,5 +10727,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:04:25.102Z"
+  "lastUpdated": "2026-11-24T05:04:26.692Z"
 }
