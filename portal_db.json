@@ -4183,13 +4183,62 @@
       "jobRoleId": "role-soft-dev",
       "jobRoleTitle": "Software Developer",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-24T04:46:25.371Z",
-      "updatedAt": "2026-11-24T04:46:25.371Z"
+      "updatedAt": "2026-11-24T04:46:25.371Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_20c2dff6-b6b6-497d-a9a8-5a9f65232cbf",
+        "candidateId": "INZ-CAND-2026-00063",
+        "candidateDisplayId": "INZ-CAND-2026-00063",
+        "candidateName": "DHARANI KR",
+        "jobRoleId": "role-soft-dev",
+        "jobRoleTitle": "Software Developer",
+        "domainId": "dom-01",
+        "domainName": "Software Development",
+        "collegeName": "DR MAHALINGAM COLLEGE OF ENGINEERING AND TECHNOLOGY",
+        "totalScore": 26,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 58,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Foundational (Competent)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-6849E4",
+        "sectionScores": {
+          "section-1": {
+            "score": 8,
+            "total": 15,
+            "percentage": 53
+          },
+          "section-2": {
+            "score": 8,
+            "total": 15,
+            "percentage": 53
+          },
+          "section-3": {
+            "score": 10,
+            "total": 15,
+            "percentage": 67
+          }
+        },
+        "completedAt": "2026-11-24T05:23:00.959Z"
+      },
+      "totalScore": 26,
+      "percentage": 58,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-6849E4",
+      "completedAt": "2026-11-24T05:23:00.959Z"
     },
     {
       "_id": "cand-51f978b0-7318-45c7-98fd-7a816b2a1687",
@@ -16471,10 +16520,53 @@
         }
       },
       "completedAt": "2026-11-24T05:22:58.458Z"
+    },
+    {
+      "sessionId": "inz_cbt_20c2dff6-b6b6-497d-a9a8-5a9f65232cbf",
+      "candidateId": "INZ-CAND-2026-00063",
+      "candidateDisplayId": "INZ-CAND-2026-00063",
+      "candidateName": "DHARANI KR",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Software Developer",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "collegeName": "DR MAHALINGAM COLLEGE OF ENGINEERING AND TECHNOLOGY",
+      "totalScore": 26,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 58,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Foundational (Competent)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-6849E4",
+      "sectionScores": {
+        "section-1": {
+          "score": 8,
+          "total": 15,
+          "percentage": 53
+        },
+        "section-2": {
+          "score": 8,
+          "total": 15,
+          "percentage": 53
+        },
+        "section-3": {
+          "score": 10,
+          "total": 15,
+          "percentage": 67
+        }
+      },
+      "completedAt": "2026-11-24T05:23:00.959Z"
     }
   ],
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:22:59.910Z"
+  "lastUpdated": "2026-11-24T05:23:01.115Z"
 }
