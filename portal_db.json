@@ -6209,7 +6209,7 @@
     },
     {
       "_id": "cand-dd4177b7-e6f4-455e-ae4d-92f55a322a7d",
-      "candidateId": "INZ-CAND-2026-00150",
+      "candidateId": "INZ-CAND-2026-00180",
       "fullName": "Aravindan C",
       "email": "caravindan2005@gmail.com",
       "password": "Aravind@87",
@@ -6422,5 +6422,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T04:55:37.217Z"
+  "lastUpdated": "2026-11-24T04:55:46.545Z"
 }
