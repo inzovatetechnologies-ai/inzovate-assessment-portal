@@ -680,13 +680,62 @@
       "jobRoleId": "role-soft-dev",
       "jobRoleTitle": "Software Developer",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Rejected",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-24T04:41:09.505Z",
-      "updatedAt": "2026-11-24T04:41:09.505Z"
+      "updatedAt": "2026-11-24T04:41:09.505Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_feba455d-fe4e-4180-8bb8-9d487444c291",
+        "candidateId": "INZ-CAND-2026-00014",
+        "candidateDisplayId": "INZ-CAND-2026-00014",
+        "candidateName": "Gunasekaran K",
+        "jobRoleId": "role-soft-dev",
+        "jobRoleTitle": "Software Developer",
+        "domainId": "dom-01",
+        "domainName": "Software Development",
+        "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+        "totalScore": 22,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 49,
+        "isPassed": false,
+        "examResult": "Fail",
+        "selectionStatus": "Rejected",
+        "passCutoff": "> 25",
+        "performanceCategory": "Needs Improvement",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-8104BB",
+        "sectionScores": {
+          "section-1": {
+            "score": 14,
+            "total": 15,
+            "percentage": 93
+          },
+          "section-2": {
+            "score": 2,
+            "total": 15,
+            "percentage": 13
+          },
+          "section-3": {
+            "score": 6,
+            "total": 15,
+            "percentage": 40
+          }
+        },
+        "completedAt": "2026-11-24T05:16:47.885Z"
+      },
+      "totalScore": 22,
+      "percentage": 49,
+      "isPassed": false,
+      "examResult": "Fail",
+      "certificateId": "INZ-CERT-2026-8104BB",
+      "completedAt": "2026-11-24T05:16:47.885Z"
     },
     {
       "_id": "cand-880e0a97-c568-4150-98ab-3d3052129037",
@@ -13400,10 +13449,53 @@
         }
       },
       "completedAt": "2026-11-24T05:16:18.157Z"
+    },
+    {
+      "sessionId": "inz_cbt_feba455d-fe4e-4180-8bb8-9d487444c291",
+      "candidateId": "INZ-CAND-2026-00014",
+      "candidateDisplayId": "INZ-CAND-2026-00014",
+      "candidateName": "Gunasekaran K",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Software Developer",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+      "totalScore": 22,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 49,
+      "isPassed": false,
+      "examResult": "Fail",
+      "selectionStatus": "Rejected",
+      "passCutoff": "> 25",
+      "performanceCategory": "Needs Improvement",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-8104BB",
+      "sectionScores": {
+        "section-1": {
+          "score": 14,
+          "total": 15,
+          "percentage": 93
+        },
+        "section-2": {
+          "score": 2,
+          "total": 15,
+          "percentage": 13
+        },
+        "section-3": {
+          "score": 6,
+          "total": 15,
+          "percentage": 40
+        }
+      },
+      "completedAt": "2026-11-24T05:16:47.885Z"
     }
   ],
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:16:39.460Z"
+  "lastUpdated": "2026-11-24T05:16:48.025Z"
 }
