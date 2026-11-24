@@ -28758,10 +28758,53 @@
         }
       },
       "completedAt": "2026-11-24T05:42:53.090Z"
+    },
+    {
+      "sessionId": "inz_cbt_5dcad1c1-e030-4c3f-b5b8-3db26416696a",
+      "candidateId": "INZ-CAND-2026-00235",
+      "candidateDisplayId": "INZ-CAND-2026-00235",
+      "candidateName": "Yoganithi S R",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Software Developer",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "collegeName": "Autonomous Engineering College",
+      "totalScore": 28,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 62,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Foundational (Competent)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-2291F9",
+      "sectionScores": {
+        "section-1": {
+          "score": 10,
+          "total": 15,
+          "percentage": 67
+        },
+        "section-2": {
+          "score": 10,
+          "total": 15,
+          "percentage": 67
+        },
+        "section-3": {
+          "score": 8,
+          "total": 15,
+          "percentage": 53
+        }
+      },
+      "completedAt": "2026-11-24T05:42:54.652Z"
     }
   ],
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:42:53.299Z"
+  "lastUpdated": "2026-11-24T05:42:54.810Z"
 }
