@@ -5471,7 +5471,7 @@
     },
     {
       "_id": "cand-cac7ddf2-5ece-4d5e-ae69-50fb0f45f049",
-      "candidateId": "INZ-CAND-2026-00146",
+      "candidateId": "INZ-CAND-2026-00171",
       "fullName": "Tharunika P",
       "email": "tharunikaperiyasamy2862005@gmail.com",
       "password": "Tharu@123",
@@ -6135,5 +6135,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T04:54:52.569Z"
+  "lastUpdated": "2026-11-24T04:54:59.129Z"
 }
