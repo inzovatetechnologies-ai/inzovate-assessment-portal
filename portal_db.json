@@ -4774,7 +4774,7 @@
     },
     {
       "_id": "cand-65848832-7102-4a71-a1a0-7f555dff25da",
-      "candidateId": "INZ-CAND-2026-00127",
+      "candidateId": "INZ-CAND-2026-00143",
       "fullName": "Yashwanth AJ",
       "email": "yashwanth9865@gmail.com",
       "password": "Y@shwanth98",
@@ -5479,5 +5479,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T04:52:09.043Z"
+  "lastUpdated": "2026-11-24T04:52:11.036Z"
 }
