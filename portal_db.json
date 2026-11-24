@@ -2228,7 +2228,7 @@
     },
     {
       "_id": "cand-5ef2fba0-463d-4994-a4fa-9fa4b2ee2d48",
-      "candidateId": "INZ-CAND-2026-00362",
+      "candidateId": "INZ-CAND-2026-00033",
       "fullName": "Viswa Deepthi T",
       "email": "deepthithangaraj814@gmail.com",
       "password": "Deepthi@2006",
@@ -23506,5 +23506,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:36:06.247Z"
+  "lastUpdated": "2026-11-24T05:36:08.358Z"
 }
