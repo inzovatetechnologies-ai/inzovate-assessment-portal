@@ -2337,10 +2337,59 @@
       "recruitmentStage": "Rejected",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-24T04:44:12.616Z",
-      "updatedAt": "2026-11-24T05:02:23.308Z"
+      "updatedAt": "2026-11-24T05:02:23.308Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_17b15e23-8392-4dc4-ae0d-53c7b792bcae",
+        "candidateId": "INZ-CAND-2026-00042",
+        "candidateDisplayId": "INZ-CAND-2026-00042",
+        "candidateName": "Sahana M",
+        "jobRoleId": "role-soft-dev",
+        "jobRoleTitle": "Software Developer",
+        "domainId": "dom-01",
+        "domainName": "Software Development",
+        "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+        "totalScore": 24,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 53,
+        "isPassed": false,
+        "examResult": "Fail",
+        "selectionStatus": "Rejected",
+        "passCutoff": "> 25",
+        "performanceCategory": "Foundational (Competent)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-C9FB8B",
+        "sectionScores": {
+          "section-1": {
+            "score": 7,
+            "total": 15,
+            "percentage": 47
+          },
+          "section-2": {
+            "score": 8,
+            "total": 15,
+            "percentage": 53
+          },
+          "section-3": {
+            "score": 9,
+            "total": 15,
+            "percentage": 60
+          }
+        },
+        "completedAt": "2026-11-24T05:17:34.618Z"
+      },
+      "totalScore": 24,
+      "percentage": 53,
+      "isPassed": false,
+      "examResult": "Fail",
+      "certificateId": "INZ-CERT-2026-C9FB8B",
+      "completedAt": "2026-11-24T05:17:34.618Z"
     },
     {
       "_id": "cand-8d073f01-0bad-46bd-b380-7e2f42ffaa4d",
@@ -13768,10 +13817,53 @@
         }
       },
       "completedAt": "2026-11-24T05:17:33.165Z"
+    },
+    {
+      "sessionId": "inz_cbt_17b15e23-8392-4dc4-ae0d-53c7b792bcae",
+      "candidateId": "INZ-CAND-2026-00042",
+      "candidateDisplayId": "INZ-CAND-2026-00042",
+      "candidateName": "Sahana M",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Software Developer",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+      "totalScore": 24,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 53,
+      "isPassed": false,
+      "examResult": "Fail",
+      "selectionStatus": "Rejected",
+      "passCutoff": "> 25",
+      "performanceCategory": "Foundational (Competent)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-C9FB8B",
+      "sectionScores": {
+        "section-1": {
+          "score": 7,
+          "total": 15,
+          "percentage": 47
+        },
+        "section-2": {
+          "score": 8,
+          "total": 15,
+          "percentage": 53
+        },
+        "section-3": {
+          "score": 9,
+          "total": 15,
+          "percentage": 60
+        }
+      },
+      "completedAt": "2026-11-24T05:17:34.618Z"
     }
   ],
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:17:33.292Z"
+  "lastUpdated": "2026-11-24T05:17:34.771Z"
 }
