@@ -1648,13 +1648,13 @@
       "jobRoleId": "role-soft-dev",
       "jobRoleTitle": "Software Developer",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Rejected",
       "status": "Registered",
       "deletedAt": null,
       "assessmentStatus": "Ready",
       "testAttempts": 0,
       "createdAt": "2026-11-24T04:44:12.616Z",
-      "updatedAt": "2026-11-24T04:44:12.616Z"
+      "updatedAt": "2026-11-24T05:02:23.308Z"
     },
     {
       "_id": "cand-8d073f01-0bad-46bd-b380-7e2f42ffaa4d",
@@ -9989,5 +9989,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:02:21.776Z"
+  "lastUpdated": "2026-11-24T05:02:23.308Z"
 }
