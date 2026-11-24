@@ -2273,7 +2273,7 @@
     },
     {
       "_id": "cand-d1b86f5c-c02e-452a-8abc-fa1928e150cc",
-      "candidateId": "INZ-CAND-2026-00059",
+      "candidateId": "INZ-CAND-2026-00094",
       "fullName": "Mohanapriyan T C C",
       "email": "mohanapriyan.1436@gmail.com",
       "password": "Mohan@14",
@@ -3757,5 +3757,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T04:48:42.151Z"
+  "lastUpdated": "2026-11-24T04:48:45.426Z"
 }
