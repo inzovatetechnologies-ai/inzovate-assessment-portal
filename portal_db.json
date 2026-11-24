@@ -9905,13 +9905,62 @@
       "jobRoleId": "role-data-scientist",
       "jobRoleTitle": "Data Scientist",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Rejected",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-24T04:53:20.678Z",
-      "updatedAt": "2026-11-24T04:53:20.678Z"
+      "updatedAt": "2026-11-24T04:53:20.678Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_0f7a4878-c40f-4126-bd29-f38032e0d287",
+        "candidateId": "INZ-CAND-2026-00170",
+        "candidateDisplayId": "INZ-CAND-2026-00170",
+        "candidateName": "Aiswarya M",
+        "jobRoleId": "role-data-scientist",
+        "jobRoleTitle": "Data Scientist",
+        "domainId": "dom-02",
+        "domainName": "Data & Analytics",
+        "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+        "totalScore": 25,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 56,
+        "isPassed": false,
+        "examResult": "Fail",
+        "selectionStatus": "Rejected",
+        "passCutoff": "> 25",
+        "performanceCategory": "Foundational (Competent)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-50295E",
+        "sectionScores": {
+          "section-1": {
+            "score": 8,
+            "total": 15,
+            "percentage": 53
+          },
+          "section-2": {
+            "score": 10,
+            "total": 15,
+            "percentage": 67
+          },
+          "section-3": {
+            "score": 7,
+            "total": 15,
+            "percentage": 47
+          }
+        },
+        "completedAt": "2026-11-24T05:32:30.152Z"
+      },
+      "totalScore": 25,
+      "percentage": 56,
+      "isPassed": false,
+      "examResult": "Fail",
+      "certificateId": "INZ-CERT-2026-50295E",
+      "completedAt": "2026-11-24T05:32:30.152Z"
     },
     {
       "_id": "cand-d40cc333-3944-4ac6-af11-bc60ae81fca4",
@@ -20851,10 +20900,53 @@
         }
       },
       "completedAt": "2026-11-24T05:32:16.337Z"
+    },
+    {
+      "sessionId": "inz_cbt_0f7a4878-c40f-4126-bd29-f38032e0d287",
+      "candidateId": "INZ-CAND-2026-00170",
+      "candidateDisplayId": "INZ-CAND-2026-00170",
+      "candidateName": "Aiswarya M",
+      "jobRoleId": "role-data-scientist",
+      "jobRoleTitle": "Data Scientist",
+      "domainId": "dom-02",
+      "domainName": "Data & Analytics",
+      "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+      "totalScore": 25,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 56,
+      "isPassed": false,
+      "examResult": "Fail",
+      "selectionStatus": "Rejected",
+      "passCutoff": "> 25",
+      "performanceCategory": "Foundational (Competent)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-50295E",
+      "sectionScores": {
+        "section-1": {
+          "score": 8,
+          "total": 15,
+          "percentage": 53
+        },
+        "section-2": {
+          "score": 10,
+          "total": 15,
+          "percentage": 67
+        },
+        "section-3": {
+          "score": 7,
+          "total": 15,
+          "percentage": 47
+        }
+      },
+      "completedAt": "2026-11-24T05:32:30.152Z"
     }
   ],
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:32:16.604Z"
+  "lastUpdated": "2026-11-24T05:32:30.302Z"
 }
