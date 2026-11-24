@@ -1951,7 +1951,7 @@
     },
     {
       "_id": "cand-170e1621-7096-49ae-923b-3bdf834f23d6",
-      "candidateId": "INZ-CAND-2026-00350",
+      "candidateId": "INZ-CAND-2026-00037",
       "fullName": "Nivetha Banu",
       "email": "nivethabanu2005@gmail.com",
       "password": "Nibi@2005",
@@ -13957,5 +13957,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:17:41.234Z"
+  "lastUpdated": "2026-11-24T05:17:47.905Z"
 }
