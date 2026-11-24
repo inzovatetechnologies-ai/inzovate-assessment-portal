@@ -8341,7 +8341,7 @@
     },
     {
       "_id": "cand-827cf742-a428-4feb-b49b-56547b72effd",
-      "candidateId": "INZ-CAND-2026-00235",
+      "candidateId": "INZ-CAND-2026-00257",
       "fullName": "krithik raj",
       "email": "krithikdharun@gmail.com",
       "password": "krithik@2525.",
@@ -9087,5 +9087,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:00:38.521Z"
+  "lastUpdated": "2026-11-24T05:00:40.452Z"
 }
