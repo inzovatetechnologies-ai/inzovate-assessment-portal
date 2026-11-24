@@ -7480,7 +7480,7 @@
     },
     {
       "_id": "cand-9b1781c3-d9d9-4c69-93a3-20a693dbfef8",
-      "candidateId": "INZ-CAND-2026-00217",
+      "candidateId": "INZ-CAND-2026-00241",
       "fullName": "Dhinesh kumar S",
       "email": "sdhineshkumar7576@gmail.com",
       "password": "Dhinesh@8122005",
@@ -8636,5 +8636,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:00:00.865Z"
+  "lastUpdated": "2026-11-24T05:00:02.528Z"
 }
