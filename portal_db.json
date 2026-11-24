@@ -8054,7 +8054,7 @@
     },
     {
       "_id": "cand-cdb54fea-116e-44e3-9808-4e9ffa370dc0",
-      "candidateId": "INZ-CAND-2026-00237",
+      "candidateId": "INZ-CAND-2026-00229",
       "fullName": "Sridharan G",
       "email": "srig3506@gmail.com",
       "password": "Srig@63820",
@@ -9948,5 +9948,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:02:14.169Z"
+  "lastUpdated": "2026-11-24T05:02:15.659Z"
 }
