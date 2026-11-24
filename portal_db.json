@@ -6364,7 +6364,7 @@
     },
     {
       "_id": "cand-7377d2fb-0fb1-46cb-ad6b-7e3bef66949a",
-      "candidateId": "INZ-CAND-2026-00113",
+      "candidateId": "INZ-CAND-2026-00356",
       "fullName": "KUMARATHAL.P",
       "email": "ponnusamykumarathal@gmail.com",
       "password": "Inzovate@129",
@@ -15832,5 +15832,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:21:21.033Z"
+  "lastUpdated": "2026-11-24T05:21:38.477Z"
 }
