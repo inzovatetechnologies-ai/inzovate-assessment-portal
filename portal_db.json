@@ -14366,13 +14366,62 @@
       "jobRoleId": "role-data-analyst",
       "jobRoleTitle": "Data Analyst",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-24T04:59:38.690Z",
-      "updatedAt": "2026-11-24T04:59:38.690Z"
+      "updatedAt": "2026-11-24T04:59:38.690Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_19a0a67c-1f66-4263-90ff-b6972dde8989",
+        "candidateId": "INZ-CAND-2026-00259",
+        "candidateDisplayId": "INZ-CAND-2026-00259",
+        "candidateName": "Vivin K",
+        "jobRoleId": "role-data-analyst",
+        "jobRoleTitle": "Data Analyst",
+        "domainId": "dom-02",
+        "domainName": "Data & Analytics",
+        "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+        "totalScore": 41,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 91,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Mastery (Outstanding)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-5EE853",
+        "sectionScores": {
+          "section-1": {
+            "score": 14,
+            "total": 15,
+            "percentage": 93
+          },
+          "section-2": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-3": {
+            "score": 12,
+            "total": 15,
+            "percentage": 80
+          }
+        },
+        "completedAt": "2026-11-24T05:38:20.797Z"
+      },
+      "totalScore": 41,
+      "percentage": 91,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-5EE853",
+      "completedAt": "2026-11-24T05:38:20.797Z"
     },
     {
       "_id": "cand-908d38e5-733b-4ffa-97b9-229209dc9dc1",
@@ -25378,10 +25427,53 @@
         }
       },
       "completedAt": "2026-11-24T05:38:07.341Z"
+    },
+    {
+      "sessionId": "inz_cbt_19a0a67c-1f66-4263-90ff-b6972dde8989",
+      "candidateId": "INZ-CAND-2026-00259",
+      "candidateDisplayId": "INZ-CAND-2026-00259",
+      "candidateName": "Vivin K",
+      "jobRoleId": "role-data-analyst",
+      "jobRoleTitle": "Data Analyst",
+      "domainId": "dom-02",
+      "domainName": "Data & Analytics",
+      "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+      "totalScore": 41,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 91,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Mastery (Outstanding)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-5EE853",
+      "sectionScores": {
+        "section-1": {
+          "score": 14,
+          "total": 15,
+          "percentage": 93
+        },
+        "section-2": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-3": {
+          "score": 12,
+          "total": 15,
+          "percentage": 80
+        }
+      },
+      "completedAt": "2026-11-24T05:38:20.797Z"
     }
   ],
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:38:08.245Z"
+  "lastUpdated": "2026-11-24T05:38:20.929Z"
 }
