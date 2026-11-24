@@ -8751,7 +8751,7 @@
     },
     {
       "_id": "cand-70e39dae-c1ad-48be-8c47-ff7b031b660c",
-      "candidateId": "INZ-CAND-2026-00248",
+      "candidateId": "INZ-CAND-2026-00302",
       "fullName": "Ajay Mani",
       "email": "ajaymani201005@gmail.com",
       "password": "Ajay@123",
@@ -10358,5 +10358,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:02:57.848Z"
+  "lastUpdated": "2026-11-24T05:02:59.900Z"
 }
