@@ -9579,7 +9579,7 @@
     },
     {
       "_id": "cand-d0cfece3-80bf-49fe-8843-0311ec6d9bf6",
-      "candidateId": "INZ-CAND-2026-00277",
+      "candidateId": "INZ-CAND-2026-00342",
       "fullName": "Aswin kumar k",
       "email": "aswin10052006@gmail.com",
       "password": "aswin10",
@@ -11229,5 +11229,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:07:27.869Z"
+  "lastUpdated": "2026-11-24T05:07:33.782Z"
 }
