@@ -8300,7 +8300,7 @@
     },
     {
       "_id": "cand-908d38e5-733b-4ffa-97b9-229209dc9dc1",
-      "candidateId": "INZ-CAND-2026-00234",
+      "candidateId": "INZ-CAND-2026-00250",
       "fullName": "Madhavan",
       "email": "mr.madhavan1010@gmail.com",
       "password": "Maddy@007",
@@ -8882,5 +8882,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:00:23.770Z"
+  "lastUpdated": "2026-11-24T05:00:25.336Z"
 }
