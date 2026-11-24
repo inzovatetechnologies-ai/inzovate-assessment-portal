@@ -12542,47 +12542,47 @@
       "completedAt": "2026-11-24T05:16:01.107Z"
     },
     {
-      "sessionId": "inz_cbt_43c3f062-295f-40cf-aedd-7cd1e2791cb8",
+      "sessionId": "inz_cbt_ff606115-38c4-4b59-b339-0e1694ce92b4",
       "candidateId": "INZ-CAND-2026-00021",
       "candidateDisplayId": "INZ-CAND-2026-00021",
-      "candidateName": "Aravind C",
+      "candidateName": "Pradeepa",
       "jobRoleId": "role-soft-dev",
       "jobRoleTitle": "Software Developer",
       "domainId": "dom-01",
       "domainName": "Software Development",
       "collegeName": "Autonomous Engineering College",
-      "totalScore": 41,
+      "totalScore": 36,
       "maxScore": 45,
       "totalQuestions": 45,
       "totalAttempted": 45,
       "totalQuestionsAttempted": 45,
       "unattempted": 0,
-      "percentage": 91,
+      "percentage": 80,
       "isPassed": true,
       "examResult": "Pass",
       "selectionStatus": "Selected for Next Round",
       "passCutoff": "> 25",
       "performanceCategory": "Mastery (Outstanding)",
       "status": "Completed",
-      "certificateId": "INZ-CERT-2026-58CF43",
+      "certificateId": "INZ-CERT-2026-E9A15C",
       "sectionScores": {
         "section-1": {
+          "score": 12,
+          "total": 15,
+          "percentage": 80
+        },
+        "section-2": {
+          "score": 13,
+          "total": 15,
+          "percentage": 87
+        },
+        "section-3": {
           "score": 11,
           "total": 15,
           "percentage": 73
-        },
-        "section-2": {
-          "score": 15,
-          "total": 15,
-          "percentage": 100
-        },
-        "section-3": {
-          "score": 15,
-          "total": 15,
-          "percentage": 100
         }
       },
-      "completedAt": "2026-11-24T05:07:57.934Z"
+      "completedAt": "2026-11-24T05:16:39.318Z"
     },
     {
       "sessionId": "inz_cbt_f5261fd8-bd55-49bd-a908-de66550fb2ae",
@@ -13405,5 +13405,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:16:20.379Z"
+  "lastUpdated": "2026-11-24T05:16:39.460Z"
 }
