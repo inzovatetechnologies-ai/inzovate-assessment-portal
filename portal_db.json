@@ -14079,13 +14079,62 @@
       "jobRoleId": "role-ai-ml",
       "jobRoleTitle": "AI/ML Engineer",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-24T04:59:13.087Z",
-      "updatedAt": "2026-11-24T04:59:13.087Z"
+      "updatedAt": "2026-11-24T04:59:13.087Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_b763d8b3-526f-4176-8678-707aae82b7a1",
+        "candidateId": "INZ-CAND-2026-00227",
+        "candidateDisplayId": "INZ-CAND-2026-00227",
+        "candidateName": "PRASANNA KUMAR E",
+        "jobRoleId": "role-ai-ml",
+        "jobRoleTitle": "AI/ML Engineer",
+        "domainId": "dom-03",
+        "domainName": "Artificial Intelligence",
+        "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+        "totalScore": 31,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 69,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Proficient (Commendable)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-08AFB7",
+        "sectionScores": {
+          "section-1": {
+            "score": 12,
+            "total": 15,
+            "percentage": 80
+          },
+          "section-2": {
+            "score": 12,
+            "total": 15,
+            "percentage": 80
+          },
+          "section-3": {
+            "score": 7,
+            "total": 15,
+            "percentage": 47
+          }
+        },
+        "completedAt": "2026-11-24T05:38:52.842Z"
+      },
+      "totalScore": 31,
+      "percentage": 69,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-08AFB7",
+      "completedAt": "2026-11-24T05:38:52.842Z"
     },
     {
       "_id": "cand-f4cea81a-d7b8-44d3-b7fc-43f792b1a61a",
@@ -25654,10 +25703,53 @@
         }
       },
       "completedAt": "2026-11-24T05:38:27.217Z"
+    },
+    {
+      "sessionId": "inz_cbt_b763d8b3-526f-4176-8678-707aae82b7a1",
+      "candidateId": "INZ-CAND-2026-00227",
+      "candidateDisplayId": "INZ-CAND-2026-00227",
+      "candidateName": "PRASANNA KUMAR E",
+      "jobRoleId": "role-ai-ml",
+      "jobRoleTitle": "AI/ML Engineer",
+      "domainId": "dom-03",
+      "domainName": "Artificial Intelligence",
+      "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+      "totalScore": 31,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 69,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Proficient (Commendable)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-08AFB7",
+      "sectionScores": {
+        "section-1": {
+          "score": 12,
+          "total": 15,
+          "percentage": 80
+        },
+        "section-2": {
+          "score": 12,
+          "total": 15,
+          "percentage": 80
+        },
+        "section-3": {
+          "score": 7,
+          "total": 15,
+          "percentage": 47
+        }
+      },
+      "completedAt": "2026-11-24T05:38:52.842Z"
     }
   ],
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:38:37.379Z"
+  "lastUpdated": "2026-11-24T05:38:53.065Z"
 }
