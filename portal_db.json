@@ -1015,62 +1015,62 @@
       "jobRoleId": "role-soft-dev",
       "jobRoleTitle": "Software Developer",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Rejected",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-24T04:41:20.352Z",
       "updatedAt": "2026-11-24T04:41:20.352Z",
       "assessmentResult": {
-        "sessionId": "inz_cbt_84ed4c35-4990-4f59-b407-939a39090dc7",
-        "candidateId": "INZ-CAND-2026-00015",
-        "candidateDisplayId": "INZ-CAND-2026-00015",
+        "sessionId": "inz_cbt_c43031f8-fa3c-4193-8267-3f4b4a6fa492",
+        "candidateId": "INZ-CAND-2026-00352",
+        "candidateDisplayId": "INZ-CAND-2026-00352",
         "candidateName": "Hari prakash K",
         "jobRoleId": "role-soft-dev",
         "jobRoleTitle": "Software Developer",
         "domainId": "dom-01",
         "domainName": "Software Development",
         "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
-        "totalScore": 43,
+        "totalScore": 0,
         "maxScore": 45,
         "totalQuestions": 45,
-        "totalAttempted": 45,
-        "totalQuestionsAttempted": 45,
-        "unattempted": 0,
-        "percentage": 96,
-        "isPassed": true,
-        "examResult": "Pass",
-        "selectionStatus": "Selected for Next Round",
+        "totalAttempted": 0,
+        "totalQuestionsAttempted": 0,
+        "unattempted": 45,
+        "percentage": 0,
+        "isPassed": false,
+        "examResult": "Fail",
+        "selectionStatus": "Rejected",
         "passCutoff": "> 25",
-        "performanceCategory": "Mastery (Outstanding)",
+        "performanceCategory": "Needs Improvement",
         "status": "Completed",
-        "certificateId": "INZ-CERT-2026-D9D183",
+        "certificateId": "INZ-CERT-2026-522A9D",
         "sectionScores": {
           "section-1": {
-            "score": 14,
+            "score": 0,
             "total": 15,
-            "percentage": 93
+            "percentage": 0
           },
           "section-2": {
-            "score": 15,
+            "score": 0,
             "total": 15,
-            "percentage": 100
+            "percentage": 0
           },
           "section-3": {
-            "score": 14,
+            "score": 0,
             "total": 15,
-            "percentage": 93
+            "percentage": 0
           }
         },
-        "completedAt": "2026-11-24T05:13:56.917Z"
+        "completedAt": "2026-11-24T05:27:07.955Z"
       },
-      "totalScore": 43,
-      "percentage": 96,
-      "isPassed": true,
-      "examResult": "Pass",
-      "certificateId": "INZ-CERT-2026-D9D183",
-      "completedAt": "2026-11-24T05:13:56.917Z"
+      "totalScore": 0,
+      "percentage": 0,
+      "isPassed": false,
+      "examResult": "Fail",
+      "certificateId": "INZ-CERT-2026-522A9D",
+      "completedAt": "2026-11-24T05:27:07.955Z"
     },
     {
       "_id": "cand-95260c93-c515-460c-b753-f448fb1ed123",
@@ -18526,10 +18526,53 @@
         }
       },
       "completedAt": "2026-11-24T05:27:06.097Z"
+    },
+    {
+      "sessionId": "inz_cbt_c43031f8-fa3c-4193-8267-3f4b4a6fa492",
+      "candidateId": "INZ-CAND-2026-00352",
+      "candidateDisplayId": "INZ-CAND-2026-00352",
+      "candidateName": "Hari prakash K",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Software Developer",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+      "totalScore": 0,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 0,
+      "totalQuestionsAttempted": 0,
+      "unattempted": 45,
+      "percentage": 0,
+      "isPassed": false,
+      "examResult": "Fail",
+      "selectionStatus": "Rejected",
+      "passCutoff": "> 25",
+      "performanceCategory": "Needs Improvement",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-522A9D",
+      "sectionScores": {
+        "section-1": {
+          "score": 0,
+          "total": 15,
+          "percentage": 0
+        },
+        "section-2": {
+          "score": 0,
+          "total": 15,
+          "percentage": 0
+        },
+        "section-3": {
+          "score": 0,
+          "total": 15,
+          "percentage": 0
+        }
+      },
+      "completedAt": "2026-11-24T05:27:07.955Z"
     }
   ],
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:27:11.352Z"
+  "lastUpdated": "2026-11-24T05:27:13.309Z"
 }
