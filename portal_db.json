@@ -11790,11 +11790,11 @@
       "status": "Registered",
       "deletedAt": null,
       "assessmentStatus": "Completed",
-      "testAttempts": 1,
+      "testAttempts": 2,
       "createdAt": "2026-11-24T04:55:55.858Z",
       "updatedAt": "2026-11-24T04:55:55.858Z",
       "assessmentResult": {
-        "sessionId": "inz_cbt_2d9ce759-3b36-4892-86c8-b3b0b2a6aa9a",
+        "sessionId": "inz_cbt_fda2b8f0-8967-4ac4-b8a8-131088422f92",
         "candidateId": "INZ-CAND-2026-00190",
         "candidateDisplayId": "INZ-CAND-2026-00190",
         "candidateName": "Venmathi V",
@@ -11803,20 +11803,20 @@
         "domainId": "dom-01",
         "domainName": "Software Development",
         "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
-        "totalScore": 34,
+        "totalScore": 27,
         "maxScore": 45,
         "totalQuestions": 45,
         "totalAttempted": 45,
         "totalQuestionsAttempted": 45,
         "unattempted": 0,
-        "percentage": 76,
+        "percentage": 60,
         "isPassed": true,
         "examResult": "Pass",
         "selectionStatus": "Selected for Next Round",
         "passCutoff": "> 25",
-        "performanceCategory": "Proficient (Commendable)",
+        "performanceCategory": "Foundational (Competent)",
         "status": "Completed",
-        "certificateId": "INZ-CERT-2026-D0AED5",
+        "certificateId": "INZ-CERT-2026-7A5681",
         "sectionScores": {
           "section-1": {
             "score": 12,
@@ -11829,19 +11829,19 @@
             "percentage": 67
           },
           "section-3": {
-            "score": 12,
+            "score": 5,
             "total": 15,
-            "percentage": 80
+            "percentage": 33
           }
         },
-        "completedAt": "2026-11-24T05:35:01.669Z"
+        "completedAt": "2026-11-24T05:40:29.016Z"
       },
-      "totalScore": 34,
-      "percentage": 76,
+      "totalScore": 27,
+      "percentage": 60,
       "isPassed": true,
       "examResult": "Pass",
-      "certificateId": "INZ-CERT-2026-D0AED5",
-      "completedAt": "2026-11-24T05:35:01.669Z"
+      "certificateId": "INZ-CERT-2026-7A5681",
+      "completedAt": "2026-11-24T05:40:29.016Z"
     },
     {
       "_id": "cand-3b097b70-9f29-42ef-bd62-2dca5056a7d0",
@@ -24837,7 +24837,7 @@
       "completedAt": "2026-11-24T05:35:01.776Z"
     },
     {
-      "sessionId": "inz_cbt_2d9ce759-3b36-4892-86c8-b3b0b2a6aa9a",
+      "sessionId": "inz_cbt_fda2b8f0-8967-4ac4-b8a8-131088422f92",
       "candidateId": "INZ-CAND-2026-00190",
       "candidateDisplayId": "INZ-CAND-2026-00190",
       "candidateName": "Venmathi V",
@@ -24846,20 +24846,20 @@
       "domainId": "dom-01",
       "domainName": "Software Development",
       "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
-      "totalScore": 34,
+      "totalScore": 27,
       "maxScore": 45,
       "totalQuestions": 45,
       "totalAttempted": 45,
       "totalQuestionsAttempted": 45,
       "unattempted": 0,
-      "percentage": 76,
+      "percentage": 60,
       "isPassed": true,
       "examResult": "Pass",
       "selectionStatus": "Selected for Next Round",
       "passCutoff": "> 25",
-      "performanceCategory": "Proficient (Commendable)",
+      "performanceCategory": "Foundational (Competent)",
       "status": "Completed",
-      "certificateId": "INZ-CERT-2026-D0AED5",
+      "certificateId": "INZ-CERT-2026-7A5681",
       "sectionScores": {
         "section-1": {
           "score": 12,
@@ -24872,12 +24872,12 @@
           "percentage": 67
         },
         "section-3": {
-          "score": 12,
+          "score": 5,
           "total": 15,
-          "percentage": 80
+          "percentage": 33
         }
       },
-      "completedAt": "2026-11-24T05:35:01.669Z"
+      "completedAt": "2026-11-24T05:40:29.016Z"
     },
     {
       "sessionId": "inz_cbt_cc6d63ab-92b1-4eb9-9398-dc1c337c761e",
@@ -27033,5 +27033,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:40:21.840Z"
+  "lastUpdated": "2026-11-24T05:40:29.182Z"
 }
