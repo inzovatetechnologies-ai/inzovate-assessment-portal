@@ -14956,10 +14956,53 @@
         }
       },
       "completedAt": "2026-11-24T05:19:13.228Z"
+    },
+    {
+      "sessionId": "inz_cbt_e8228c3f-a66a-4ee4-8350-948a520af7ae",
+      "candidateId": "INZ-CAND-2026-00024",
+      "candidateDisplayId": "INZ-CAND-2026-00024",
+      "candidateName": "Subhaleha",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Software Developer",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "collegeName": "Autonomous Engineering College",
+      "totalScore": 30,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 44,
+      "totalQuestionsAttempted": 44,
+      "unattempted": 1,
+      "percentage": 67,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Proficient (Commendable)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-CB204B",
+      "sectionScores": {
+        "section-1": {
+          "score": 10,
+          "total": 15,
+          "percentage": 67
+        },
+        "section-2": {
+          "score": 13,
+          "total": 15,
+          "percentage": 87
+        },
+        "section-3": {
+          "score": 7,
+          "total": 15,
+          "percentage": 47
+        }
+      },
+      "completedAt": "2026-11-24T05:19:18.198Z"
     }
   ],
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:19:13.382Z"
+  "lastUpdated": "2026-11-24T05:19:18.305Z"
 }
