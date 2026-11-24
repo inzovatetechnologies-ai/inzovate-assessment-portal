@@ -16360,9 +16360,9 @@
       "domainId": "dom-01",
       "domainName": "Software Development",
       "driveId": "INZ-DRIVE-2026-01",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
-      "assessmentStatus": "Ready",
+      "assessmentStatus": "Completed",
       "arrearStatus": "No History",
       "altMobileNumber": "",
       "dateOfBirth": "2006-02-14",
@@ -16380,9 +16380,58 @@
       "historyOfArrears": "0",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
       "deletedAt": null,
-      "testAttempts": 0,
+      "testAttempts": 1,
       "createdAt": "2026-11-24T05:00:34.776Z",
-      "updatedAt": "2026-11-24T05:00:34.776Z"
+      "updatedAt": "2026-11-24T05:00:34.776Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_1cdee6eb-bdad-4711-bade-69ebfcb400ce",
+        "candidateId": "INZ-CAND-2026-00217",
+        "candidateDisplayId": "INZ-CAND-2026-00217",
+        "candidateName": "Suriyakala M",
+        "jobRoleId": "role-soft-dev",
+        "jobRoleTitle": "Software Developer",
+        "domainId": "dom-01",
+        "domainName": "Software Development",
+        "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+        "totalScore": 35,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 78,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Proficient (Commendable)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-E7FD71",
+        "sectionScores": {
+          "section-1": {
+            "score": 12,
+            "total": 15,
+            "percentage": 80
+          },
+          "section-2": {
+            "score": 12,
+            "total": 15,
+            "percentage": 80
+          },
+          "section-3": {
+            "score": 11,
+            "total": 15,
+            "percentage": 73
+          }
+        },
+        "completedAt": "2026-11-24T05:36:06.108Z"
+      },
+      "totalScore": 35,
+      "percentage": 78,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-E7FD71",
+      "completedAt": "2026-11-24T05:36:06.108Z"
     },
     {
       "_id": "cand-5e7b0202-a064-4ebb-8e80-fe87273563fd",
@@ -23409,10 +23458,53 @@
         }
       },
       "completedAt": "2026-11-24T05:35:28.415Z"
+    },
+    {
+      "sessionId": "inz_cbt_1cdee6eb-bdad-4711-bade-69ebfcb400ce",
+      "candidateId": "INZ-CAND-2026-00217",
+      "candidateDisplayId": "INZ-CAND-2026-00217",
+      "candidateName": "Suriyakala M",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Software Developer",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+      "totalScore": 35,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 78,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Proficient (Commendable)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-E7FD71",
+      "sectionScores": {
+        "section-1": {
+          "score": 12,
+          "total": 15,
+          "percentage": 80
+        },
+        "section-2": {
+          "score": 12,
+          "total": 15,
+          "percentage": 80
+        },
+        "section-3": {
+          "score": 11,
+          "total": 15,
+          "percentage": 73
+        }
+      },
+      "completedAt": "2026-11-24T05:36:06.108Z"
     }
   ],
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:35:35.851Z"
+  "lastUpdated": "2026-11-24T05:36:06.247Z"
 }
