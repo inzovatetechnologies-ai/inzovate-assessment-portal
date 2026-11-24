@@ -15709,13 +15709,62 @@
       "jobRoleId": "role-data-analyst",
       "jobRoleTitle": "Data Analyst",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-24T05:00:46.358Z",
-      "updatedAt": "2026-11-24T05:00:46.358Z"
+      "updatedAt": "2026-11-24T05:00:46.358Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_9870102a-6c0e-463f-9df5-6b4117496b91",
+        "candidateId": "INZ-CAND-2026-00264",
+        "candidateDisplayId": "INZ-CAND-2026-00264",
+        "candidateName": "Gokul K",
+        "jobRoleId": "role-data-analyst",
+        "jobRoleTitle": "Data Analyst",
+        "domainId": "dom-02",
+        "domainName": "Data & Analytics",
+        "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+        "totalScore": 42,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 93,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Mastery (Outstanding)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-CB9BB6",
+        "sectionScores": {
+          "section-1": {
+            "score": 14,
+            "total": 15,
+            "percentage": 93
+          },
+          "section-2": {
+            "score": 13,
+            "total": 15,
+            "percentage": 87
+          },
+          "section-3": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          }
+        },
+        "completedAt": "2026-11-24T05:38:07.341Z"
+      },
+      "totalScore": 42,
+      "percentage": 93,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-CB9BB6",
+      "completedAt": "2026-11-24T05:38:07.341Z"
     },
     {
       "_id": "cand-4d86477e-f309-41d4-a512-108babda9a42",
@@ -25286,10 +25335,53 @@
         }
       },
       "completedAt": "2026-11-24T05:38:06.498Z"
+    },
+    {
+      "sessionId": "inz_cbt_9870102a-6c0e-463f-9df5-6b4117496b91",
+      "candidateId": "INZ-CAND-2026-00264",
+      "candidateDisplayId": "INZ-CAND-2026-00264",
+      "candidateName": "Gokul K",
+      "jobRoleId": "role-data-analyst",
+      "jobRoleTitle": "Data Analyst",
+      "domainId": "dom-02",
+      "domainName": "Data & Analytics",
+      "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+      "totalScore": 42,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 93,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Mastery (Outstanding)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-CB9BB6",
+      "sectionScores": {
+        "section-1": {
+          "score": 14,
+          "total": 15,
+          "percentage": 93
+        },
+        "section-2": {
+          "score": 13,
+          "total": 15,
+          "percentage": 87
+        },
+        "section-3": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        }
+      },
+      "completedAt": "2026-11-24T05:38:07.341Z"
     }
   ],
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:38:06.683Z"
+  "lastUpdated": "2026-11-24T05:38:08.245Z"
 }
