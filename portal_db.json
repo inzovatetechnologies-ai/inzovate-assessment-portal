@@ -2263,13 +2263,62 @@
       "jobRoleId": "role-fullstack",
       "jobRoleTitle": "Full Stack Developer",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-24T04:46:13.098Z",
-      "updatedAt": "2026-11-24T04:46:13.098Z"
+      "updatedAt": "2026-11-24T04:46:13.098Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_47197b4d-7934-481a-9b3a-e016baeec58a",
+        "candidateId": "INZ-CAND-2026-00058",
+        "candidateDisplayId": "INZ-CAND-2026-00058",
+        "candidateName": "Raja R",
+        "jobRoleId": "role-fullstack",
+        "jobRoleTitle": "Full Stack Developer",
+        "domainId": "dom-01",
+        "domainName": "Software Development",
+        "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+        "totalScore": 42,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 93,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Mastery (Outstanding)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-F75521",
+        "sectionScores": {
+          "section-1": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-2": {
+            "score": 12,
+            "total": 15,
+            "percentage": 80
+          },
+          "section-3": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          }
+        },
+        "completedAt": "2026-11-24T05:06:25.220Z"
+      },
+      "totalScore": 42,
+      "percentage": 93,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-F75521",
+      "completedAt": "2026-11-24T05:06:25.220Z"
     },
     {
       "_id": "cand-d1b86f5c-c02e-452a-8abc-fa1928e150cc",
@@ -10968,10 +11017,53 @@
         }
       },
       "completedAt": "2026-11-23T17:12:32.755Z"
+    },
+    {
+      "sessionId": "inz_cbt_47197b4d-7934-481a-9b3a-e016baeec58a",
+      "candidateId": "INZ-CAND-2026-00058",
+      "candidateDisplayId": "INZ-CAND-2026-00058",
+      "candidateName": "Raja R",
+      "jobRoleId": "role-fullstack",
+      "jobRoleTitle": "Full Stack Developer",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+      "totalScore": 42,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 93,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Mastery (Outstanding)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-F75521",
+      "sectionScores": {
+        "section-1": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-2": {
+          "score": 12,
+          "total": 15,
+          "percentage": 80
+        },
+        "section-3": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        }
+      },
+      "completedAt": "2026-11-24T05:06:25.220Z"
     }
   ],
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:05:51.155Z"
+  "lastUpdated": "2026-11-24T05:06:25.348Z"
 }
