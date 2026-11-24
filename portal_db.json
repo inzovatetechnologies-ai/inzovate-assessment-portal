@@ -8710,7 +8710,7 @@
     },
     {
       "_id": "cand-e6c828e6-7c6a-46ad-9de6-88e0718ee50c",
-      "candidateId": "INZ-CAND-2026-00247",
+      "candidateId": "INZ-CAND-2026-00271",
       "fullName": "Ananthi M",
       "email": "ananthimaruthai13@gmail.com",
       "password": "Ananthi#_13",
@@ -9415,5 +9415,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:01:08.721Z"
+  "lastUpdated": "2026-11-24T05:01:14.549Z"
 }
