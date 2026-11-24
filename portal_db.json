@@ -9694,7 +9694,7 @@
     },
     {
       "_id": "cand-da1b8018-1a7e-45e3-8688-0854efce11f2",
-      "candidateId": "INZ-CAND-2026-00235",
+      "candidateId": "INZ-CAND-2026-00287",
       "fullName": "Yoganithi S R",
       "email": "senthilarasuyoganithi@gmail.com",
       "password": "Yoganithi@19",
@@ -9948,5 +9948,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:02:17.037Z"
+  "lastUpdated": "2026-11-24T05:02:18.402Z"
 }
