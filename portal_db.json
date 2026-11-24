@@ -879,7 +879,7 @@
     },
     {
       "_id": "cand-7efecc3e-a08c-4f67-a625-c89a0eeda0f0",
-      "candidateId": "INZ-CAND-2026-00024",
+      "candidateId": "INZ-CAND-2026-00072",
       "fullName": "Subhaleha",
       "email": "23bcs190subhaleha@gmail.com",
       "password": "Mcet@12345",
@@ -2896,5 +2896,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T04:47:20.451Z"
+  "lastUpdated": "2026-11-24T04:47:22.663Z"
 }
