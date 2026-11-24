@@ -14332,13 +14332,62 @@
       "jobRoleId": "role-uiux",
       "jobRoleTitle": "UI/UX Designer",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-24T04:59:09.567Z",
-      "updatedAt": "2026-11-24T04:59:09.567Z"
+      "updatedAt": "2026-11-24T04:59:09.567Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_bed0a150-73cd-4584-bf5d-2d30f4b4f4e2",
+        "candidateId": "INZ-CAND-2026-00240",
+        "candidateDisplayId": "INZ-CAND-2026-00240",
+        "candidateName": "THABITHA V",
+        "jobRoleId": "role-uiux",
+        "jobRoleTitle": "UI/UX Designer",
+        "domainId": "dom-04",
+        "domainName": "UI/UX & Design",
+        "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+        "totalScore": 35,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 78,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Proficient (Commendable)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-8D581A",
+        "sectionScores": {
+          "section-1": {
+            "score": 14,
+            "total": 15,
+            "percentage": 93
+          },
+          "section-2": {
+            "score": 11,
+            "total": 15,
+            "percentage": 73
+          },
+          "section-3": {
+            "score": 10,
+            "total": 15,
+            "percentage": 67
+          }
+        },
+        "completedAt": "2026-11-24T05:40:50.727Z"
+      },
+      "totalScore": 35,
+      "percentage": 78,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-8D581A",
+      "completedAt": "2026-11-24T05:40:50.727Z"
     },
     {
       "_id": "cand-cede2bed-bd25-4056-875a-b46b5e7259ac",
@@ -27433,10 +27482,53 @@
         }
       },
       "completedAt": "2026-11-24T05:40:54.350Z"
+    },
+    {
+      "sessionId": "inz_cbt_bed0a150-73cd-4584-bf5d-2d30f4b4f4e2",
+      "candidateId": "INZ-CAND-2026-00240",
+      "candidateDisplayId": "INZ-CAND-2026-00240",
+      "candidateName": "THABITHA V",
+      "jobRoleId": "role-uiux",
+      "jobRoleTitle": "UI/UX Designer",
+      "domainId": "dom-04",
+      "domainName": "UI/UX & Design",
+      "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+      "totalScore": 35,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 78,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Proficient (Commendable)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-8D581A",
+      "sectionScores": {
+        "section-1": {
+          "score": 14,
+          "total": 15,
+          "percentage": 93
+        },
+        "section-2": {
+          "score": 11,
+          "total": 15,
+          "percentage": 73
+        },
+        "section-3": {
+          "score": 10,
+          "total": 15,
+          "percentage": 67
+        }
+      },
+      "completedAt": "2026-11-24T05:40:50.727Z"
     }
   ],
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:40:54.523Z"
+  "lastUpdated": "2026-11-24T05:40:56.515Z"
 }
