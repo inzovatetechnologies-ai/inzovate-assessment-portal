@@ -5840,7 +5840,7 @@
     },
     {
       "_id": "cand-b8f5da2a-d4cd-4a6b-b96e-5c33724b89a6",
-      "candidateId": "INZ-CAND-2026-00160",
+      "candidateId": "INZ-CAND-2026-00166",
       "fullName": "Mohamed Haneef A",
       "email": "haneefsharief2005@gmail.com",
       "password": "Afuma@2005",
@@ -6094,5 +6094,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T04:54:35.263Z"
+  "lastUpdated": "2026-11-24T04:54:37.086Z"
 }
