@@ -12405,7 +12405,7 @@
     },
     {
       "_id": "cand-b640656c-8b81-4d01-9516-f995c282fa07",
-      "candidateId": "INZ-CAND-2026-00263",
+      "candidateId": "INZ-CAND-2026-00220",
       "fullName": "Thaslima Nasrin S",
       "email": "thaslimanasrinsyednisar130106@gmail.com",
       "password": "Nasrin@2006",
@@ -12436,11 +12436,11 @@
       "jobRoleId": "role-data-analyst",
       "jobRoleTitle": "Data Analyst",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Selected for Next Round",
+      "recruitmentStage": "Registered",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Completed",
-      "testAttempts": 1,
+      "assessmentStatus": "Ready",
+      "testAttempts": 0,
       "createdAt": "2026-11-24T04:58:43.384Z",
       "updatedAt": "2026-11-24T04:58:43.384Z",
       "assessmentResult": {
@@ -21770,5 +21770,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:34:02.650Z"
+  "lastUpdated": "2026-11-24T05:34:06.949Z"
 }
