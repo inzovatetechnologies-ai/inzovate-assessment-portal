@@ -182,7 +182,7 @@
     },
     {
       "_id": "cand-af35a048-619b-47b9-95d5-e597a8f1950f",
-      "candidateId": "INZ-CAND-2026-00004",
+      "candidateId": "INZ-CAND-2026-00348",
       "fullName": "Sithesh",
       "email": "sithesh04@gmail.com",
       "password": "Sithesh04",
@@ -12495,5 +12495,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:13:30.195Z"
+  "lastUpdated": "2026-11-24T05:13:39.555Z"
 }
