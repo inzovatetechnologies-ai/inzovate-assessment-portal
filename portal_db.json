@@ -9224,15 +9224,15 @@
       "jobRoleId": "role-data-analyst",
       "jobRoleTitle": "Data Analyst",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Selected for Next Round",
+      "recruitmentStage": "Rejected",
       "status": "Registered",
       "deletedAt": null,
       "assessmentStatus": "Completed",
-      "testAttempts": 1,
+      "testAttempts": 2,
       "createdAt": "2026-11-24T04:51:31.498Z",
       "updatedAt": "2026-11-24T04:51:31.498Z",
       "assessmentResult": {
-        "sessionId": "inz_cbt_57f435be-004c-4375-9620-da19bf4459b6",
+        "sessionId": "inz_cbt_9f08f3e1-a5d4-482b-a79b-6f4fef4a0f79",
         "candidateId": "INZ-CAND-2026-00169",
         "candidateDisplayId": "INZ-CAND-2026-00169",
         "candidateName": "Rohith k",
@@ -9241,45 +9241,45 @@
         "domainId": "dom-02",
         "domainName": "Data & Analytics",
         "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
-        "totalScore": 34,
+        "totalScore": 6,
         "maxScore": 45,
         "totalQuestions": 45,
         "totalAttempted": 45,
         "totalQuestionsAttempted": 45,
         "unattempted": 0,
-        "percentage": 76,
-        "isPassed": true,
-        "examResult": "Pass",
-        "selectionStatus": "Selected for Next Round",
+        "percentage": 13,
+        "isPassed": false,
+        "examResult": "Fail",
+        "selectionStatus": "Rejected",
         "passCutoff": "> 25",
-        "performanceCategory": "Proficient (Commendable)",
+        "performanceCategory": "Needs Improvement",
         "status": "Completed",
-        "certificateId": "INZ-CERT-2026-2DFDAA",
+        "certificateId": "INZ-CERT-2026-CE81D1",
         "sectionScores": {
           "section-1": {
-            "score": 12,
+            "score": 2,
             "total": 15,
-            "percentage": 80
+            "percentage": 13
           },
           "section-2": {
-            "score": 13,
+            "score": 2,
             "total": 15,
-            "percentage": 87
+            "percentage": 13
           },
           "section-3": {
-            "score": 9,
+            "score": 2,
             "total": 15,
-            "percentage": 60
+            "percentage": 13
           }
         },
-        "completedAt": "2026-11-24T05:33:29.987Z"
+        "completedAt": "2026-11-24T05:40:29.867Z"
       },
-      "totalScore": 34,
-      "percentage": 76,
-      "isPassed": true,
-      "examResult": "Pass",
-      "certificateId": "INZ-CERT-2026-2DFDAA",
-      "completedAt": "2026-11-24T05:33:29.987Z"
+      "totalScore": 6,
+      "percentage": 13,
+      "isPassed": false,
+      "examResult": "Fail",
+      "certificateId": "INZ-CERT-2026-CE81D1",
+      "completedAt": "2026-11-24T05:40:29.867Z"
     },
     {
       "_id": "cand-0e7bf653-43f9-4c83-84b0-89a7856d81f0",
@@ -24063,7 +24063,7 @@
       "completedAt": "2026-11-24T05:40:14.443Z"
     },
     {
-      "sessionId": "inz_cbt_57f435be-004c-4375-9620-da19bf4459b6",
+      "sessionId": "inz_cbt_9f08f3e1-a5d4-482b-a79b-6f4fef4a0f79",
       "candidateId": "INZ-CAND-2026-00169",
       "candidateDisplayId": "INZ-CAND-2026-00169",
       "candidateName": "Rohith k",
@@ -24072,38 +24072,38 @@
       "domainId": "dom-02",
       "domainName": "Data & Analytics",
       "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
-      "totalScore": 34,
+      "totalScore": 6,
       "maxScore": 45,
       "totalQuestions": 45,
       "totalAttempted": 45,
       "totalQuestionsAttempted": 45,
       "unattempted": 0,
-      "percentage": 76,
-      "isPassed": true,
-      "examResult": "Pass",
-      "selectionStatus": "Selected for Next Round",
+      "percentage": 13,
+      "isPassed": false,
+      "examResult": "Fail",
+      "selectionStatus": "Rejected",
       "passCutoff": "> 25",
-      "performanceCategory": "Proficient (Commendable)",
+      "performanceCategory": "Needs Improvement",
       "status": "Completed",
-      "certificateId": "INZ-CERT-2026-2DFDAA",
+      "certificateId": "INZ-CERT-2026-CE81D1",
       "sectionScores": {
         "section-1": {
-          "score": 12,
+          "score": 2,
           "total": 15,
-          "percentage": 80
+          "percentage": 13
         },
         "section-2": {
-          "score": 13,
+          "score": 2,
           "total": 15,
-          "percentage": 87
+          "percentage": 13
         },
         "section-3": {
-          "score": 9,
+          "score": 2,
           "total": 15,
-          "percentage": 60
+          "percentage": 13
         }
       },
-      "completedAt": "2026-11-24T05:33:29.987Z"
+      "completedAt": "2026-11-24T05:40:29.867Z"
     },
     {
       "sessionId": "inz_cbt_0dfd5ced-af52-4409-bcca-5f8e04f3f8cb",
@@ -27033,5 +27033,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:40:29.182Z"
+  "lastUpdated": "2026-11-24T05:40:31.557Z"
 }
