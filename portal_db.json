@@ -11190,15 +11190,15 @@
       "jobRoleId": "role-ai-ml",
       "jobRoleTitle": "AI/ML Engineer",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Rejected",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
       "assessmentStatus": "Completed",
-      "testAttempts": 1,
+      "testAttempts": 2,
       "createdAt": "2026-11-24T04:56:12.861Z",
       "updatedAt": "2026-11-24T04:56:12.861Z",
       "assessmentResult": {
-        "sessionId": "inz_cbt_0437ad8b-2b90-477b-9c43-815a44229ef4",
+        "sessionId": "inz_cbt_0099ec8d-cbc7-4616-9219-d0a4e4eb8584",
         "candidateId": "INZ-CAND-2026-00197",
         "candidateDisplayId": "INZ-CAND-2026-00197",
         "candidateName": "Talip I",
@@ -11207,45 +11207,45 @@
         "domainId": "dom-03",
         "domainName": "Artificial Intelligence",
         "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
-        "totalScore": 10,
+        "totalScore": 33,
         "maxScore": 45,
         "totalQuestions": 45,
         "totalAttempted": 45,
         "totalQuestionsAttempted": 45,
         "unattempted": 0,
-        "percentage": 22,
-        "isPassed": false,
-        "examResult": "Fail",
-        "selectionStatus": "Rejected",
+        "percentage": 73,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
         "passCutoff": "> 25",
-        "performanceCategory": "Needs Improvement",
+        "performanceCategory": "Proficient (Commendable)",
         "status": "Completed",
-        "certificateId": "INZ-CERT-2026-4155E2",
+        "certificateId": "INZ-CERT-2026-1FB6ED",
         "sectionScores": {
           "section-1": {
-            "score": 3,
+            "score": 10,
             "total": 15,
-            "percentage": 20
+            "percentage": 67
           },
           "section-2": {
-            "score": 4,
+            "score": 14,
             "total": 15,
-            "percentage": 27
+            "percentage": 93
           },
           "section-3": {
-            "score": 3,
+            "score": 9,
             "total": 15,
-            "percentage": 20
+            "percentage": 60
           }
         },
-        "completedAt": "2026-11-24T05:30:31.562Z"
+        "completedAt": "2026-11-24T05:34:54.143Z"
       },
-      "totalScore": 10,
-      "percentage": 22,
-      "isPassed": false,
-      "examResult": "Fail",
-      "certificateId": "INZ-CERT-2026-4155E2",
-      "completedAt": "2026-11-24T05:30:31.562Z"
+      "totalScore": 33,
+      "percentage": 73,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-1FB6ED",
+      "completedAt": "2026-11-24T05:34:54.143Z"
     },
     {
       "_id": "cand-6e7e1de9-e382-4828-a14d-419dacad7ca8",
@@ -21072,7 +21072,7 @@
       "completedAt": "2026-11-24T05:30:24.201Z"
     },
     {
-      "sessionId": "inz_cbt_0437ad8b-2b90-477b-9c43-815a44229ef4",
+      "sessionId": "inz_cbt_0099ec8d-cbc7-4616-9219-d0a4e4eb8584",
       "candidateId": "INZ-CAND-2026-00197",
       "candidateDisplayId": "INZ-CAND-2026-00197",
       "candidateName": "Talip I",
@@ -21081,38 +21081,38 @@
       "domainId": "dom-03",
       "domainName": "Artificial Intelligence",
       "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
-      "totalScore": 10,
+      "totalScore": 33,
       "maxScore": 45,
       "totalQuestions": 45,
       "totalAttempted": 45,
       "totalQuestionsAttempted": 45,
       "unattempted": 0,
-      "percentage": 22,
-      "isPassed": false,
-      "examResult": "Fail",
-      "selectionStatus": "Rejected",
+      "percentage": 73,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
       "passCutoff": "> 25",
-      "performanceCategory": "Needs Improvement",
+      "performanceCategory": "Proficient (Commendable)",
       "status": "Completed",
-      "certificateId": "INZ-CERT-2026-4155E2",
+      "certificateId": "INZ-CERT-2026-1FB6ED",
       "sectionScores": {
         "section-1": {
-          "score": 3,
+          "score": 10,
           "total": 15,
-          "percentage": 20
+          "percentage": 67
         },
         "section-2": {
-          "score": 4,
+          "score": 14,
           "total": 15,
-          "percentage": 27
+          "percentage": 93
         },
         "section-3": {
-          "score": 3,
+          "score": 9,
           "total": 15,
-          "percentage": 20
+          "percentage": 60
         }
       },
-      "completedAt": "2026-11-24T05:30:31.562Z"
+      "completedAt": "2026-11-24T05:34:54.143Z"
     },
     {
       "sessionId": "inz_cbt_0275f54b-0e83-49dc-bc03-021623150d89",
@@ -22408,5 +22408,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:34:52.450Z"
+  "lastUpdated": "2026-11-24T05:34:54.307Z"
 }
