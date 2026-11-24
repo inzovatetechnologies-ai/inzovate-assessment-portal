@@ -9981,7 +9981,7 @@
     },
     {
       "_id": "cand-b7f519c0-52e1-498a-856d-47de4cc9fed2",
-      "candidateId": "INZ-CAND-2026-00294",
+      "candidateId": "INZ-CAND-2026-00306",
       "fullName": "Muralidharan.S",
       "email": "muralidharansiva156@gmail.com",
       "password": "Mural!07",
@@ -10481,5 +10481,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:03:05.852Z"
+  "lastUpdated": "2026-11-24T05:03:07.195Z"
 }
