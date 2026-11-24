@@ -11112,7 +11112,7 @@
     },
     {
       "_id": "cand-522e4fda-7cea-4c0a-9726-43d6a2396409",
-      "candidateId": "INZ-CAND-2026-00266",
+      "candidateId": "INZ-CAND-2026-00343",
       "fullName": "Soundarya M",
       "email": "soundaryamariappan47@gmail.com",
       "password": "Sound@2006",
@@ -11413,5 +11413,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:07:55.922Z"
+  "lastUpdated": "2026-11-24T05:07:57.571Z"
 }
