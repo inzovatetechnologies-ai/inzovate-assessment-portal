@@ -8660,13 +8660,62 @@
       "jobRoleId": "role-bde",
       "jobRoleTitle": "Business Development Executive",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Rejected",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-24T04:51:19.440Z",
-      "updatedAt": "2026-11-24T04:51:19.440Z"
+      "updatedAt": "2026-11-24T04:51:19.440Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_02c0f0de-36ab-4f0f-b2ac-d49f9ce17192",
+        "candidateId": "INZ-CAND-2026-00155",
+        "candidateDisplayId": "INZ-CAND-2026-00155",
+        "candidateName": "DIVAKAR R S",
+        "jobRoleId": "role-bde",
+        "jobRoleTitle": "Business Development Executive",
+        "domainId": "dom-11",
+        "domainName": "Business & Sales",
+        "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+        "totalScore": 8,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 18,
+        "isPassed": false,
+        "examResult": "Fail",
+        "selectionStatus": "Rejected",
+        "passCutoff": "> 25",
+        "performanceCategory": "Needs Improvement",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-4630FD",
+        "sectionScores": {
+          "section-1": {
+            "score": 4,
+            "total": 15,
+            "percentage": 27
+          },
+          "section-2": {
+            "score": 2,
+            "total": 15,
+            "percentage": 13
+          },
+          "section-3": {
+            "score": 2,
+            "total": 15,
+            "percentage": 13
+          }
+        },
+        "completedAt": "2026-11-24T05:30:57.517Z"
+      },
+      "totalScore": 8,
+      "percentage": 18,
+      "isPassed": false,
+      "examResult": "Fail",
+      "certificateId": "INZ-CERT-2026-4630FD",
+      "completedAt": "2026-11-24T05:30:57.517Z"
     },
     {
       "_id": "cand-cee2b0fe-9533-462c-a79b-1c06ee648462",
@@ -20219,10 +20268,53 @@
         }
       },
       "completedAt": "2026-11-24T05:30:37.022Z"
+    },
+    {
+      "sessionId": "inz_cbt_02c0f0de-36ab-4f0f-b2ac-d49f9ce17192",
+      "candidateId": "INZ-CAND-2026-00155",
+      "candidateDisplayId": "INZ-CAND-2026-00155",
+      "candidateName": "DIVAKAR R S",
+      "jobRoleId": "role-bde",
+      "jobRoleTitle": "Business Development Executive",
+      "domainId": "dom-11",
+      "domainName": "Business & Sales",
+      "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+      "totalScore": 8,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 18,
+      "isPassed": false,
+      "examResult": "Fail",
+      "selectionStatus": "Rejected",
+      "passCutoff": "> 25",
+      "performanceCategory": "Needs Improvement",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-4630FD",
+      "sectionScores": {
+        "section-1": {
+          "score": 4,
+          "total": 15,
+          "percentage": 27
+        },
+        "section-2": {
+          "score": 2,
+          "total": 15,
+          "percentage": 13
+        },
+        "section-3": {
+          "score": 2,
+          "total": 15,
+          "percentage": 13
+        }
+      },
+      "completedAt": "2026-11-24T05:30:57.517Z"
     }
   ],
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:30:37.166Z"
+  "lastUpdated": "2026-11-24T05:30:57.679Z"
 }
