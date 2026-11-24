@@ -30034,10 +30034,53 @@
         }
       },
       "completedAt": "2026-11-24T05:44:37.409Z"
+    },
+    {
+      "sessionId": "inz_cbt_ede5ab05-1ce4-4a34-a057-9ba9c50b6da5",
+      "candidateId": "INZ-CAND-2026-00261",
+      "candidateDisplayId": "INZ-CAND-2026-00261",
+      "candidateName": "Saravanan S",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Software Developer",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "collegeName": "Autonomous Engineering College",
+      "totalScore": 17,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 38,
+      "isPassed": false,
+      "examResult": "Fail",
+      "selectionStatus": "Rejected",
+      "passCutoff": "> 25",
+      "performanceCategory": "Needs Improvement",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-50D959",
+      "sectionScores": {
+        "section-1": {
+          "score": 7,
+          "total": 15,
+          "percentage": 47
+        },
+        "section-2": {
+          "score": 4,
+          "total": 15,
+          "percentage": 27
+        },
+        "section-3": {
+          "score": 6,
+          "total": 15,
+          "percentage": 40
+        }
+      },
+      "completedAt": "2026-11-24T05:45:42.748Z"
     }
   ],
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:45:19.921Z"
+  "lastUpdated": "2026-11-24T05:45:42.882Z"
 }
