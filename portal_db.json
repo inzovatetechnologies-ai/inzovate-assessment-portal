@@ -20538,10 +20538,53 @@
         }
       },
       "completedAt": "2026-11-24T05:31:12.034Z"
+    },
+    {
+      "sessionId": "inz_cbt_bfacf832-e04e-4bbb-8bdf-caaf1dd7d4ab",
+      "candidateId": "INZ-CAND-2026-00097",
+      "candidateDisplayId": "INZ-CAND-2026-00097",
+      "candidateName": "Ruthresh P",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Software Developer",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "collegeName": "Autonomous Engineering College",
+      "totalScore": 29,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 64,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Foundational (Competent)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-7FAA75",
+      "sectionScores": {
+        "section-1": {
+          "score": 12,
+          "total": 15,
+          "percentage": 80
+        },
+        "section-2": {
+          "score": 9,
+          "total": 15,
+          "percentage": 60
+        },
+        "section-3": {
+          "score": 8,
+          "total": 15,
+          "percentage": 53
+        }
+      },
+      "completedAt": "2026-11-24T05:31:33.006Z"
     }
   ],
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:31:12.322Z"
+  "lastUpdated": "2026-11-24T05:31:33.151Z"
 }
