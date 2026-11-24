@@ -10820,13 +10820,62 @@
       "jobRoleId": "role-data-analyst",
       "jobRoleTitle": "Data Analyst",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-24T04:53:48.567Z",
-      "updatedAt": "2026-11-24T04:53:48.567Z"
+      "updatedAt": "2026-11-24T04:53:48.567Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_8c95a512-3a65-411e-8bf8-068abf5297d3",
+        "candidateId": "INZ-CAND-2026-00166",
+        "candidateDisplayId": "INZ-CAND-2026-00166",
+        "candidateName": "Mohamed Haneef A",
+        "jobRoleId": "role-data-analyst",
+        "jobRoleTitle": "Data Analyst",
+        "domainId": "dom-02",
+        "domainName": "Data & Analytics",
+        "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+        "totalScore": 45,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 100,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Mastery (Outstanding)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-1B49A9",
+        "sectionScores": {
+          "section-1": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-2": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-3": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          }
+        },
+        "completedAt": "2026-11-24T05:37:09.397Z"
+      },
+      "totalScore": 45,
+      "percentage": 100,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-1B49A9",
+      "completedAt": "2026-11-24T05:37:09.397Z"
     },
     {
       "_id": "cand-f748a4f1-03ab-4fb3-8e7c-ece4aa3cc256",
@@ -24415,10 +24464,53 @@
         }
       },
       "completedAt": "2026-11-24T05:37:05.298Z"
+    },
+    {
+      "sessionId": "inz_cbt_8c95a512-3a65-411e-8bf8-068abf5297d3",
+      "candidateId": "INZ-CAND-2026-00166",
+      "candidateDisplayId": "INZ-CAND-2026-00166",
+      "candidateName": "Mohamed Haneef A",
+      "jobRoleId": "role-data-analyst",
+      "jobRoleTitle": "Data Analyst",
+      "domainId": "dom-02",
+      "domainName": "Data & Analytics",
+      "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+      "totalScore": 45,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 100,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Mastery (Outstanding)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-1B49A9",
+      "sectionScores": {
+        "section-1": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-2": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-3": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        }
+      },
+      "completedAt": "2026-11-24T05:37:09.397Z"
     }
   ],
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:37:05.434Z"
+  "lastUpdated": "2026-11-24T05:37:09.602Z"
 }
