@@ -9079,7 +9079,7 @@
     },
     {
       "_id": "cand-15982d2a-29f7-417d-aa7f-9c9a4fb344f7",
-      "candidateId": "INZ-CAND-2026-00261",
+      "candidateId": "INZ-CAND-2026-00280",
       "fullName": "Vijayasarathi M",
       "email": "vijaysarathi2708@gmail.com",
       "password": "Vijay@2071",
@@ -9825,5 +9825,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:01:41.662Z"
+  "lastUpdated": "2026-11-24T05:01:43.362Z"
 }
