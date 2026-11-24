@@ -14841,13 +14841,62 @@
       "jobRoleId": "role-soft-dev",
       "jobRoleTitle": "Software Developer",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-24T05:04:17.740Z",
-      "updatedAt": "2026-11-24T05:04:17.740Z"
+      "updatedAt": "2026-11-24T05:04:17.740Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_78321975-ad30-40e0-a36a-caef3a8ddd80",
+        "candidateId": "INZ-CAND-2026-00333",
+        "candidateDisplayId": "INZ-CAND-2026-00333",
+        "candidateName": "Vijayasri K R",
+        "jobRoleId": "role-soft-dev",
+        "jobRoleTitle": "Software Developer",
+        "domainId": "dom-01",
+        "domainName": "Software Development",
+        "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+        "totalScore": 45,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 100,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Mastery (Outstanding)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-A3C4E2",
+        "sectionScores": {
+          "section-1": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-2": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          },
+          "section-3": {
+            "score": 15,
+            "total": 15,
+            "percentage": 100
+          }
+        },
+        "completedAt": "2026-11-24T05:30:24.201Z"
+      },
+      "totalScore": 45,
+      "percentage": 100,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-A3C4E2",
+      "completedAt": "2026-11-24T05:30:24.201Z"
     },
     {
       "_id": "cand-648f53b2-3621-4bca-9af7-a2924148400e",
@@ -19851,10 +19900,53 @@
         }
       },
       "completedAt": "2026-11-24T05:30:11.795Z"
+    },
+    {
+      "sessionId": "inz_cbt_78321975-ad30-40e0-a36a-caef3a8ddd80",
+      "candidateId": "INZ-CAND-2026-00333",
+      "candidateDisplayId": "INZ-CAND-2026-00333",
+      "candidateName": "Vijayasri K R",
+      "jobRoleId": "role-soft-dev",
+      "jobRoleTitle": "Software Developer",
+      "domainId": "dom-01",
+      "domainName": "Software Development",
+      "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+      "totalScore": 45,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 100,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Mastery (Outstanding)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-A3C4E2",
+      "sectionScores": {
+        "section-1": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-2": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        },
+        "section-3": {
+          "score": 15,
+          "total": 15,
+          "percentage": 100
+        }
+      },
+      "completedAt": "2026-11-24T05:30:24.201Z"
     }
   ],
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:30:21.485Z"
+  "lastUpdated": "2026-11-24T05:30:24.364Z"
 }
