@@ -13337,11 +13337,11 @@
       "status": "Registered",
       "deletedAt": null,
       "assessmentStatus": "Completed",
-      "testAttempts": 1,
+      "testAttempts": 2,
       "createdAt": "2026-11-24T04:58:10.522Z",
       "updatedAt": "2026-11-24T04:58:10.522Z",
       "assessmentResult": {
-        "sessionId": "inz_cbt_be49fb9b-de56-49f6-9e4b-5266ff5c0a2c",
+        "sessionId": "inz_cbt_9cea1d11-3361-4b0a-b187-c3e8258c7ade",
         "candidateId": "INZ-CAND-2026-00210",
         "candidateDisplayId": "INZ-CAND-2026-00210",
         "candidateName": "Suryaprakash B",
@@ -13350,20 +13350,20 @@
         "domainId": "dom-02",
         "domainName": "Data & Analytics",
         "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
-        "totalScore": 31,
+        "totalScore": 30,
         "maxScore": 45,
         "totalQuestions": 45,
         "totalAttempted": 45,
         "totalQuestionsAttempted": 45,
         "unattempted": 0,
-        "percentage": 69,
+        "percentage": 67,
         "isPassed": true,
         "examResult": "Pass",
         "selectionStatus": "Selected for Next Round",
         "passCutoff": "> 25",
         "performanceCategory": "Proficient (Commendable)",
         "status": "Completed",
-        "certificateId": "INZ-CERT-2026-1FD165",
+        "certificateId": "INZ-CERT-2026-FF99F0",
         "sectionScores": {
           "section-1": {
             "score": 10,
@@ -13371,9 +13371,9 @@
             "percentage": 67
           },
           "section-2": {
-            "score": 11,
+            "score": 10,
             "total": 15,
-            "percentage": 73
+            "percentage": 67
           },
           "section-3": {
             "score": 10,
@@ -13381,14 +13381,14 @@
             "percentage": 67
           }
         },
-        "completedAt": "2026-11-24T05:36:46.370Z"
+        "completedAt": "2026-11-24T05:41:51.482Z"
       },
-      "totalScore": 31,
-      "percentage": 69,
+      "totalScore": 30,
+      "percentage": 67,
       "isPassed": true,
       "examResult": "Pass",
-      "certificateId": "INZ-CERT-2026-1FD165",
-      "completedAt": "2026-11-24T05:36:46.370Z"
+      "certificateId": "INZ-CERT-2026-FF99F0",
+      "completedAt": "2026-11-24T05:41:51.482Z"
     },
     {
       "_id": "cand-1d73f736-c56d-473b-87c5-83f88bcdfffe",
@@ -26107,7 +26107,7 @@
       "completedAt": "2026-11-24T05:36:38.841Z"
     },
     {
-      "sessionId": "inz_cbt_be49fb9b-de56-49f6-9e4b-5266ff5c0a2c",
+      "sessionId": "inz_cbt_9cea1d11-3361-4b0a-b187-c3e8258c7ade",
       "candidateId": "INZ-CAND-2026-00210",
       "candidateDisplayId": "INZ-CAND-2026-00210",
       "candidateName": "Suryaprakash B",
@@ -26116,20 +26116,20 @@
       "domainId": "dom-02",
       "domainName": "Data & Analytics",
       "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
-      "totalScore": 31,
+      "totalScore": 30,
       "maxScore": 45,
       "totalQuestions": 45,
       "totalAttempted": 45,
       "totalQuestionsAttempted": 45,
       "unattempted": 0,
-      "percentage": 69,
+      "percentage": 67,
       "isPassed": true,
       "examResult": "Pass",
       "selectionStatus": "Selected for Next Round",
       "passCutoff": "> 25",
       "performanceCategory": "Proficient (Commendable)",
       "status": "Completed",
-      "certificateId": "INZ-CERT-2026-1FD165",
+      "certificateId": "INZ-CERT-2026-FF99F0",
       "sectionScores": {
         "section-1": {
           "score": 10,
@@ -26137,9 +26137,9 @@
           "percentage": 67
         },
         "section-2": {
-          "score": 11,
+          "score": 10,
           "total": 15,
-          "percentage": 73
+          "percentage": 67
         },
         "section-3": {
           "score": 10,
@@ -26147,7 +26147,7 @@
           "percentage": 67
         }
       },
-      "completedAt": "2026-11-24T05:36:46.370Z"
+      "completedAt": "2026-11-24T05:41:51.482Z"
     },
     {
       "sessionId": "inz_cbt_0f65e6f5-0877-4064-9065-abcd2fbf5f14",
@@ -28217,5 +28217,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:41:36.213Z"
+  "lastUpdated": "2026-11-24T05:41:51.623Z"
 }
