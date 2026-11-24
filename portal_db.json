@@ -15718,11 +15718,11 @@
       "status": "Registered",
       "deletedAt": null,
       "assessmentStatus": "Completed",
-      "testAttempts": 1,
+      "testAttempts": 2,
       "createdAt": "2026-11-24T04:59:48.340Z",
       "updatedAt": "2026-11-24T04:59:48.340Z",
       "assessmentResult": {
-        "sessionId": "inz_cbt_c5771f3c-1443-4b49-bf2f-7fd8872c1609",
+        "sessionId": "inz_cbt_14bd14ba-8316-4cbe-9394-41cfc531f05f",
         "candidateId": "INZ-CAND-2026-00272",
         "candidateDisplayId": "INZ-CAND-2026-00272",
         "candidateName": "Deepika S",
@@ -15731,45 +15731,45 @@
         "domainId": "dom-02",
         "domainName": "Data & Analytics",
         "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
-        "totalScore": 44,
+        "totalScore": 34,
         "maxScore": 45,
         "totalQuestions": 45,
         "totalAttempted": 45,
         "totalQuestionsAttempted": 45,
         "unattempted": 0,
-        "percentage": 98,
+        "percentage": 76,
         "isPassed": true,
         "examResult": "Pass",
         "selectionStatus": "Selected for Next Round",
         "passCutoff": "> 25",
-        "performanceCategory": "Mastery (Outstanding)",
+        "performanceCategory": "Proficient (Commendable)",
         "status": "Completed",
-        "certificateId": "INZ-CERT-2026-847365",
+        "certificateId": "INZ-CERT-2026-858688",
         "sectionScores": {
           "section-1": {
-            "score": 15,
+            "score": 12,
             "total": 15,
-            "percentage": 100
+            "percentage": 80
           },
           "section-2": {
-            "score": 15,
+            "score": 13,
             "total": 15,
-            "percentage": 100
+            "percentage": 87
           },
           "section-3": {
-            "score": 14,
+            "score": 9,
             "total": 15,
-            "percentage": 93
+            "percentage": 60
           }
         },
-        "completedAt": "2026-11-24T05:31:47.971Z"
+        "completedAt": "2026-11-24T05:45:19.746Z"
       },
-      "totalScore": 44,
-      "percentage": 98,
+      "totalScore": 34,
+      "percentage": 76,
       "isPassed": true,
       "examResult": "Pass",
-      "certificateId": "INZ-CERT-2026-847365",
-      "completedAt": "2026-11-24T05:31:47.971Z"
+      "certificateId": "INZ-CERT-2026-858688",
+      "completedAt": "2026-11-24T05:45:19.746Z"
     },
     {
       "_id": "cand-4fff5568-ed28-455a-8d21-0adb5a98e931",
@@ -25091,7 +25091,7 @@
       "completedAt": "2026-11-24T05:31:33.006Z"
     },
     {
-      "sessionId": "inz_cbt_c5771f3c-1443-4b49-bf2f-7fd8872c1609",
+      "sessionId": "inz_cbt_14bd14ba-8316-4cbe-9394-41cfc531f05f",
       "candidateId": "INZ-CAND-2026-00272",
       "candidateDisplayId": "INZ-CAND-2026-00272",
       "candidateName": "Deepika S",
@@ -25100,38 +25100,38 @@
       "domainId": "dom-02",
       "domainName": "Data & Analytics",
       "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
-      "totalScore": 44,
+      "totalScore": 34,
       "maxScore": 45,
       "totalQuestions": 45,
       "totalAttempted": 45,
       "totalQuestionsAttempted": 45,
       "unattempted": 0,
-      "percentage": 98,
+      "percentage": 76,
       "isPassed": true,
       "examResult": "Pass",
       "selectionStatus": "Selected for Next Round",
       "passCutoff": "> 25",
-      "performanceCategory": "Mastery (Outstanding)",
+      "performanceCategory": "Proficient (Commendable)",
       "status": "Completed",
-      "certificateId": "INZ-CERT-2026-847365",
+      "certificateId": "INZ-CERT-2026-858688",
       "sectionScores": {
         "section-1": {
-          "score": 15,
+          "score": 12,
           "total": 15,
-          "percentage": 100
+          "percentage": 80
         },
         "section-2": {
-          "score": 15,
+          "score": 13,
           "total": 15,
-          "percentage": 100
+          "percentage": 87
         },
         "section-3": {
-          "score": 14,
+          "score": 9,
           "total": 15,
-          "percentage": 93
+          "percentage": 60
         }
       },
-      "completedAt": "2026-11-24T05:31:47.971Z"
+      "completedAt": "2026-11-24T05:45:19.746Z"
     },
     {
       "sessionId": "inz_cbt_7bfb51b4-ef83-430f-b7fb-56ee9fba2547",
@@ -30039,5 +30039,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:44:37.624Z"
+  "lastUpdated": "2026-11-24T05:45:19.921Z"
 }
