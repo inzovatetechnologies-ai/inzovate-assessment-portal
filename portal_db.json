@@ -11273,8 +11273,8 @@
       "updatedAt": "2026-11-24T05:04:17.740Z"
     },
     {
-      "_id": "cand-6fbb79b3-573b-4d6b-b72a-c61fd19661aa",
-      "candidateId": "INZ-CAND-2026-00340",
+      "_id": "cand-648f53b2-3621-4bca-9af7-a2924148400e",
+      "candidateId": "INZ-CAND-2026-00270",
       "fullName": "Ramya S",
       "email": "ramyaselvaraj246@gmail.com",
       "password": "ramya@2006",
@@ -11282,14 +11282,14 @@
       "altMobileNumber": "",
       "dateOfBirth": "2006-03-24",
       "gender": "Female",
-      "residentialAddress": "Sellandi Amman Koil Thottam,Masthigoundenpathy,Coimbatore-641032",
+      "residentialAddress": "Sellandi amman Koil Thottam,masthigoundenpathy,Coimbatore",
       "district": "Pollachi",
       "state": "Tamil Nadu",
       "pinCode": "641032",
       "collegeId": "col-21",
       "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
       "universityRegisterNumber": "",
-      "degree": "B.tech.Artificial Intelligence And Data Science",
+      "degree": "B.Tech.Artitficial Intelligence and Data Science",
       "branch": "Engineering",
       "yearOfPassing": "2026",
       "graduationYear": "2026",
@@ -11305,13 +11305,13 @@
       "jobRoleId": "role-soft-dev",
       "jobRoleTitle": "Software Developer",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Deleted / Archived",
-      "status": "deleted",
-      "deletedAt": "2026-11-24T05:10:08.514Z",
+      "recruitmentStage": "Registered",
+      "status": "Registered",
+      "deletedAt": null,
       "assessmentStatus": "Ready",
       "testAttempts": 0,
-      "createdAt": "2026-11-24T05:04:30.590Z",
-      "updatedAt": "2026-11-24T05:04:30.590Z"
+      "createdAt": "2026-11-24T05:13:52.981Z",
+      "updatedAt": "2026-11-24T05:13:52.981Z"
     },
     {
       "_id": "cand-c6e3c20d-e86e-4477-802a-3b119ec7d95d",
@@ -12587,5 +12587,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:13:45.768Z"
+  "lastUpdated": "2026-11-24T05:13:53.100Z"
 }
