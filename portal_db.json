@@ -5339,7 +5339,7 @@
     },
     {
       "_id": "cand-e85d3e11-97ef-458d-9178-1ad197b1a91d",
-      "candidateId": "INZ-CAND-2026-00081",
+      "candidateId": "INZ-CAND-2026-00358",
       "fullName": "kavya",
       "email": "sivakumarkavya067@gmail.com",
       "password": "Inzovate@1234",
@@ -16703,5 +16703,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:23:05.508Z"
+  "lastUpdated": "2026-11-24T05:23:07.212Z"
 }
