@@ -12435,15 +12435,15 @@
       "jobRoleId": "role-ai-ml",
       "jobRoleTitle": "AI/ML Engineer",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Rejected",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
       "assessmentStatus": "Completed",
-      "testAttempts": 1,
+      "testAttempts": 2,
       "createdAt": "2026-11-24T04:58:37.094Z",
       "updatedAt": "2026-11-24T04:58:37.094Z",
       "assessmentResult": {
-        "sessionId": "inz_cbt_0275f54b-0e83-49dc-bc03-021623150d89",
+        "sessionId": "inz_cbt_58c1d46f-e03d-4d06-9772-68fb8f02037a",
         "candidateId": "INZ-CAND-2026-00214",
         "candidateDisplayId": "INZ-CAND-2026-00214",
         "candidateName": "KAPIL RAJKUMAR A",
@@ -12452,45 +12452,45 @@
         "domainId": "dom-03",
         "domainName": "Artificial Intelligence",
         "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
-        "totalScore": 18,
+        "totalScore": 26,
         "maxScore": 45,
         "totalQuestions": 45,
         "totalAttempted": 45,
         "totalQuestionsAttempted": 45,
         "unattempted": 0,
-        "percentage": 40,
-        "isPassed": false,
-        "examResult": "Fail",
-        "selectionStatus": "Rejected",
+        "percentage": 58,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
         "passCutoff": "> 25",
-        "performanceCategory": "Needs Improvement",
+        "performanceCategory": "Foundational (Competent)",
         "status": "Completed",
-        "certificateId": "INZ-CERT-2026-4E9AC9",
+        "certificateId": "INZ-CERT-2026-04AE9F",
         "sectionScores": {
           "section-1": {
-            "score": 7,
+            "score": 9,
             "total": 15,
-            "percentage": 47
+            "percentage": 60
           },
           "section-2": {
-            "score": 6,
+            "score": 8,
             "total": 15,
-            "percentage": 40
+            "percentage": 53
           },
           "section-3": {
-            "score": 5,
+            "score": 9,
             "total": 15,
-            "percentage": 33
+            "percentage": 60
           }
         },
-        "completedAt": "2026-11-24T05:30:35.435Z"
+        "completedAt": "2026-11-24T05:35:12.503Z"
       },
-      "totalScore": 18,
-      "percentage": 40,
-      "isPassed": false,
-      "examResult": "Fail",
-      "certificateId": "INZ-CERT-2026-4E9AC9",
-      "completedAt": "2026-11-24T05:30:35.435Z"
+      "totalScore": 26,
+      "percentage": 58,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-04AE9F",
+      "completedAt": "2026-11-24T05:35:12.503Z"
     },
     {
       "_id": "cand-9ac3b9b9-a6b8-418b-a937-ebb89b9a466c",
@@ -21311,7 +21311,7 @@
       "completedAt": "2026-11-24T05:34:54.143Z"
     },
     {
-      "sessionId": "inz_cbt_0275f54b-0e83-49dc-bc03-021623150d89",
+      "sessionId": "inz_cbt_58c1d46f-e03d-4d06-9772-68fb8f02037a",
       "candidateId": "INZ-CAND-2026-00214",
       "candidateDisplayId": "INZ-CAND-2026-00214",
       "candidateName": "KAPIL RAJKUMAR A",
@@ -21320,38 +21320,38 @@
       "domainId": "dom-03",
       "domainName": "Artificial Intelligence",
       "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
-      "totalScore": 18,
+      "totalScore": 26,
       "maxScore": 45,
       "totalQuestions": 45,
       "totalAttempted": 45,
       "totalQuestionsAttempted": 45,
       "unattempted": 0,
-      "percentage": 40,
-      "isPassed": false,
-      "examResult": "Fail",
-      "selectionStatus": "Rejected",
+      "percentage": 58,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
       "passCutoff": "> 25",
-      "performanceCategory": "Needs Improvement",
+      "performanceCategory": "Foundational (Competent)",
       "status": "Completed",
-      "certificateId": "INZ-CERT-2026-4E9AC9",
+      "certificateId": "INZ-CERT-2026-04AE9F",
       "sectionScores": {
         "section-1": {
-          "score": 7,
+          "score": 9,
           "total": 15,
-          "percentage": 47
+          "percentage": 60
         },
         "section-2": {
-          "score": 6,
+          "score": 8,
           "total": 15,
-          "percentage": 40
+          "percentage": 53
         },
         "section-3": {
-          "score": 5,
+          "score": 9,
           "total": 15,
-          "percentage": 33
+          "percentage": 60
         }
       },
-      "completedAt": "2026-11-24T05:30:35.435Z"
+      "completedAt": "2026-11-24T05:35:12.503Z"
     },
     {
       "sessionId": "inz_cbt_dc95548b-e8e1-4825-9cd4-243080b91b94",
@@ -22862,5 +22862,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:35:06.844Z"
+  "lastUpdated": "2026-11-24T05:35:12.727Z"
 }
