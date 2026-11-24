@@ -7685,7 +7685,7 @@
     },
     {
       "_id": "cand-0956dcc9-d0e1-4c53-bedc-9b77a2c52032",
-      "candidateId": "INZ-CAND-2026-00221",
+      "candidateId": "INZ-CAND-2026-00255",
       "fullName": "Shivaram R",
       "email": "sram30771@gmail.com",
       "password": "Shivabad@2005",
@@ -9087,5 +9087,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:00:35.722Z"
+  "lastUpdated": "2026-11-24T05:00:36.910Z"
 }
