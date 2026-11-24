@@ -12125,13 +12125,62 @@
       "jobRoleId": "role-ai-ml",
       "jobRoleTitle": "AI/ML Engineer",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Rejected",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-24T04:58:39.420Z",
-      "updatedAt": "2026-11-24T04:58:39.420Z"
+      "updatedAt": "2026-11-24T04:58:39.420Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_bcd3691d-c695-4875-bd66-eaabe079fc4c",
+        "candidateId": "INZ-CAND-2026-00262",
+        "candidateDisplayId": "INZ-CAND-2026-00262",
+        "candidateName": "Azhahu vishwajith S",
+        "jobRoleId": "role-ai-ml",
+        "jobRoleTitle": "AI/ML Engineer",
+        "domainId": "dom-03",
+        "domainName": "Artificial Intelligence",
+        "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+        "totalScore": 23,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 51,
+        "isPassed": false,
+        "examResult": "Fail",
+        "selectionStatus": "Rejected",
+        "passCutoff": "> 25",
+        "performanceCategory": "Foundational (Competent)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-A34B79",
+        "sectionScores": {
+          "section-1": {
+            "score": 8,
+            "total": 15,
+            "percentage": 53
+          },
+          "section-2": {
+            "score": 10,
+            "total": 15,
+            "percentage": 67
+          },
+          "section-3": {
+            "score": 5,
+            "total": 15,
+            "percentage": 33
+          }
+        },
+        "completedAt": "2026-11-24T05:33:32.956Z"
+      },
+      "totalScore": 23,
+      "percentage": 51,
+      "isPassed": false,
+      "examResult": "Fail",
+      "certificateId": "INZ-CERT-2026-A34B79",
+      "completedAt": "2026-11-24T05:33:32.956Z"
     },
     {
       "_id": "cand-9b1781c3-d9d9-4c69-93a3-20a693dbfef8",
@@ -21354,10 +21403,53 @@
         }
       },
       "completedAt": "2026-11-24T05:33:29.884Z"
+    },
+    {
+      "sessionId": "inz_cbt_bcd3691d-c695-4875-bd66-eaabe079fc4c",
+      "candidateId": "INZ-CAND-2026-00262",
+      "candidateDisplayId": "INZ-CAND-2026-00262",
+      "candidateName": "Azhahu vishwajith S",
+      "jobRoleId": "role-ai-ml",
+      "jobRoleTitle": "AI/ML Engineer",
+      "domainId": "dom-03",
+      "domainName": "Artificial Intelligence",
+      "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+      "totalScore": 23,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 51,
+      "isPassed": false,
+      "examResult": "Fail",
+      "selectionStatus": "Rejected",
+      "passCutoff": "> 25",
+      "performanceCategory": "Foundational (Competent)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-A34B79",
+      "sectionScores": {
+        "section-1": {
+          "score": 8,
+          "total": 15,
+          "percentage": 53
+        },
+        "section-2": {
+          "score": 10,
+          "total": 15,
+          "percentage": 67
+        },
+        "section-3": {
+          "score": 5,
+          "total": 15,
+          "percentage": 33
+        }
+      },
+      "completedAt": "2026-11-24T05:33:32.956Z"
     }
   ],
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:33:31.421Z"
+  "lastUpdated": "2026-11-24T05:33:33.090Z"
 }
