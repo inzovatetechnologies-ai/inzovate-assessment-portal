@@ -12220,13 +12220,62 @@
       "jobRoleId": "role-cloud-eng",
       "jobRoleTitle": "Cloud Engineer",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-24T04:57:09.621Z",
-      "updatedAt": "2026-11-24T04:57:09.621Z"
+      "updatedAt": "2026-11-24T04:57:09.621Z",
+      "assessmentResult": {
+        "sessionId": "inz_cbt_25c92640-c114-4a60-9aaa-31013d133e53",
+        "candidateId": "INZ-CAND-2026-00162",
+        "candidateDisplayId": "INZ-CAND-2026-00162",
+        "candidateName": "Naveen M",
+        "jobRoleId": "role-cloud-eng",
+        "jobRoleTitle": "Cloud Engineer",
+        "domainId": "dom-05",
+        "domainName": "Cloud Computing",
+        "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+        "totalScore": 29,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 45,
+        "totalQuestionsAttempted": 45,
+        "unattempted": 0,
+        "percentage": 64,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
+        "passCutoff": "> 25",
+        "performanceCategory": "Foundational (Competent)",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-64746C",
+        "sectionScores": {
+          "section-1": {
+            "score": 12,
+            "total": 15,
+            "percentage": 80
+          },
+          "section-2": {
+            "score": 9,
+            "total": 15,
+            "percentage": 60
+          },
+          "section-3": {
+            "score": 8,
+            "total": 15,
+            "percentage": 53
+          }
+        },
+        "completedAt": "2026-11-24T05:39:35.871Z"
+      },
+      "totalScore": 29,
+      "percentage": 64,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-64746C",
+      "completedAt": "2026-11-24T05:39:35.871Z"
     },
     {
       "_id": "cand-1a8f8f87-9167-47ef-b931-27a2678690a0",
@@ -26108,10 +26157,53 @@
         }
       },
       "completedAt": "2026-11-24T05:39:10.918Z"
+    },
+    {
+      "sessionId": "inz_cbt_25c92640-c114-4a60-9aaa-31013d133e53",
+      "candidateId": "INZ-CAND-2026-00162",
+      "candidateDisplayId": "INZ-CAND-2026-00162",
+      "candidateName": "Naveen M",
+      "jobRoleId": "role-cloud-eng",
+      "jobRoleTitle": "Cloud Engineer",
+      "domainId": "dom-05",
+      "domainName": "Cloud Computing",
+      "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
+      "totalScore": 29,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 45,
+      "totalQuestionsAttempted": 45,
+      "unattempted": 0,
+      "percentage": 64,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
+      "passCutoff": "> 25",
+      "performanceCategory": "Foundational (Competent)",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-64746C",
+      "sectionScores": {
+        "section-1": {
+          "score": 12,
+          "total": 15,
+          "percentage": 80
+        },
+        "section-2": {
+          "score": 9,
+          "total": 15,
+          "percentage": 60
+        },
+        "section-3": {
+          "score": 8,
+          "total": 15,
+          "percentage": 53
+        }
+      },
+      "completedAt": "2026-11-24T05:39:35.871Z"
     }
   ],
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:39:11.058Z"
+  "lastUpdated": "2026-11-24T05:39:36.011Z"
 }
