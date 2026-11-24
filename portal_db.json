@@ -15043,15 +15043,15 @@
       "jobRoleId": "role-data-analyst",
       "jobRoleTitle": "Data Analyst",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Rejected",
+      "recruitmentStage": "Selected for Next Round",
       "status": "Registered",
       "deletedAt": null,
       "assessmentStatus": "Completed",
-      "testAttempts": 1,
+      "testAttempts": 2,
       "createdAt": "2026-11-24T04:59:19.431Z",
       "updatedAt": "2026-11-24T04:59:19.431Z",
       "assessmentResult": {
-        "sessionId": "inz_cbt_311f7e5e-7ec6-4e40-8d33-e174787260d0",
+        "sessionId": "inz_cbt_af6697bb-3325-4449-bef8-18aca85cd3da",
         "candidateId": "INZ-CAND-2026-00229",
         "candidateDisplayId": "INZ-CAND-2026-00229",
         "candidateName": "Sridharan G",
@@ -15060,45 +15060,45 @@
         "domainId": "dom-02",
         "domainName": "Data & Analytics",
         "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
-        "totalScore": 17,
+        "totalScore": 28,
         "maxScore": 45,
         "totalQuestions": 45,
         "totalAttempted": 45,
         "totalQuestionsAttempted": 45,
         "unattempted": 0,
-        "percentage": 38,
-        "isPassed": false,
-        "examResult": "Fail",
-        "selectionStatus": "Rejected",
+        "percentage": 62,
+        "isPassed": true,
+        "examResult": "Pass",
+        "selectionStatus": "Selected for Next Round",
         "passCutoff": "> 25",
-        "performanceCategory": "Needs Improvement",
+        "performanceCategory": "Foundational (Competent)",
         "status": "Completed",
-        "certificateId": "INZ-CERT-2026-9AAFA5",
+        "certificateId": "INZ-CERT-2026-5F3CF3",
         "sectionScores": {
           "section-1": {
-            "score": 5,
+            "score": 8,
             "total": 15,
-            "percentage": 33
+            "percentage": 53
           },
           "section-2": {
-            "score": 9,
+            "score": 13,
             "total": 15,
-            "percentage": 60
+            "percentage": 87
           },
           "section-3": {
-            "score": 3,
+            "score": 7,
             "total": 15,
-            "percentage": 20
+            "percentage": 47
           }
         },
-        "completedAt": "2026-11-24T05:40:18.319Z"
+        "completedAt": "2026-11-24T05:44:17.111Z"
       },
-      "totalScore": 17,
-      "percentage": 38,
-      "isPassed": false,
-      "examResult": "Fail",
-      "certificateId": "INZ-CERT-2026-9AAFA5",
-      "completedAt": "2026-11-24T05:40:18.319Z"
+      "totalScore": 28,
+      "percentage": 62,
+      "isPassed": true,
+      "examResult": "Pass",
+      "certificateId": "INZ-CERT-2026-5F3CF3",
+      "completedAt": "2026-11-24T05:44:17.111Z"
     },
     {
       "_id": "cand-208c3172-f7b8-469e-ab70-43a5517ee0fb",
@@ -28224,7 +28224,7 @@
       "completedAt": "2026-11-24T05:40:14.092Z"
     },
     {
-      "sessionId": "inz_cbt_311f7e5e-7ec6-4e40-8d33-e174787260d0",
+      "sessionId": "inz_cbt_af6697bb-3325-4449-bef8-18aca85cd3da",
       "candidateId": "INZ-CAND-2026-00229",
       "candidateDisplayId": "INZ-CAND-2026-00229",
       "candidateName": "Sridharan G",
@@ -28233,38 +28233,38 @@
       "domainId": "dom-02",
       "domainName": "Data & Analytics",
       "collegeName": "Dr. Mahalingam College of Engineering and Technology (MCET)",
-      "totalScore": 17,
+      "totalScore": 28,
       "maxScore": 45,
       "totalQuestions": 45,
       "totalAttempted": 45,
       "totalQuestionsAttempted": 45,
       "unattempted": 0,
-      "percentage": 38,
-      "isPassed": false,
-      "examResult": "Fail",
-      "selectionStatus": "Rejected",
+      "percentage": 62,
+      "isPassed": true,
+      "examResult": "Pass",
+      "selectionStatus": "Selected for Next Round",
       "passCutoff": "> 25",
-      "performanceCategory": "Needs Improvement",
+      "performanceCategory": "Foundational (Competent)",
       "status": "Completed",
-      "certificateId": "INZ-CERT-2026-9AAFA5",
+      "certificateId": "INZ-CERT-2026-5F3CF3",
       "sectionScores": {
         "section-1": {
-          "score": 5,
+          "score": 8,
           "total": 15,
-          "percentage": 33
+          "percentage": 53
         },
         "section-2": {
-          "score": 9,
+          "score": 13,
           "total": 15,
-          "percentage": 60
+          "percentage": 87
         },
         "section-3": {
-          "score": 3,
+          "score": 7,
           "total": 15,
-          "percentage": 20
+          "percentage": 47
         }
       },
-      "completedAt": "2026-11-24T05:40:18.319Z"
+      "completedAt": "2026-11-24T05:44:17.111Z"
     },
     {
       "sessionId": "inz_cbt_dda9c2d6-17af-441e-b962-6e5325d0aba8",
@@ -29947,5 +29947,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-24T05:43:56.647Z"
+  "lastUpdated": "2026-11-24T05:44:17.318Z"
 }
