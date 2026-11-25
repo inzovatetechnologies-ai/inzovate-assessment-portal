@@ -20713,9 +20713,9 @@
       "jobRoleId": "role-hr-exec",
       "jobRoleTitle": "HR Executive / Recruiter",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Rejected",
-      "status": "Registered",
-      "deletedAt": null,
+      "recruitmentStage": "Deleted / Archived",
+      "status": "deleted",
+      "deletedAt": "2026-11-25T07:51:55.820Z",
       "assessmentStatus": "Completed",
       "testAttempts": 1,
       "createdAt": "2026-11-25T06:39:50.776Z",
@@ -30754,5 +30754,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-25T07:51:36.428Z"
+  "lastUpdated": "2026-11-25T07:51:55.820Z"
 }
