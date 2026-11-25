@@ -198,7 +198,7 @@ export default function App() {
       setIsExamCompleted(false);
       localStorage.removeItem('inzovate_exam_completed');
       handleCandidateLoginSuccess({ ...candidate, assessmentStatus: 'Ready' }, 'inz_session_direct');
-      setActiveTab('system-check');
+      setActiveTab('exam');
     } else {
       setActiveTab('home');
       setCandidateLoginOpen(true);

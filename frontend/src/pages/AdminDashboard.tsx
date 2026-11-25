@@ -1365,7 +1365,15 @@ export const AdminDashboard: React.FC = () => {
                             <select
                               value={c.recruitmentStage || (isPassed ? 'Selected for Next Round' : 'Rejected')}
                               onChange={(e) => {
-                                api.updateCandidateStage(c._id, e.target.value).then(() => loadAllAdminData());
+                                const newStage = e.target.value;
+                                setCandidates((prev) =>
+                                  prev.map((item: any) =>
+                                    item._id === c._id || item.candidateId === c.candidateId
+                                      ? { ...item, recruitmentStage: newStage }
+                                      : item
+                                  )
+                                );
+                                api.updateCandidateStage(c._id || c.candidateId, newStage).catch(() => {});
                               }}
                               className="px-1.5 py-0.5 rounded text-[10px] border border-slate-300 bg-white font-medium text-slate-700 hover:border-blue-400 focus:outline-none"
                               title="Update Candidate Stage"
@@ -1559,7 +1567,15 @@ export const AdminDashboard: React.FC = () => {
                           <select
                             value={c.recruitmentStage}
                             onChange={(e) => {
-                              api.updateCandidateStage(c._id, e.target.value).then(() => loadAllAdminData());
+                              const newStage = e.target.value;
+                              setCandidates((prev) =>
+                                prev.map((item: any) =>
+                                  item._id === c._id || item.candidateId === c.candidateId
+                                    ? { ...item, recruitmentStage: newStage }
+                                    : item
+                                )
+                              );
+                              api.updateCandidateStage(c._id || c.candidateId, newStage).catch(() => {});
                             }}
                             className="px-2 py-1 rounded-lg border border-slate-300 text-[11px] bg-white font-medium focus:ring-1 focus:ring-blue-500"
                           >
@@ -1593,16 +1609,23 @@ export const AdminDashboard: React.FC = () => {
                                     `Delete profile for ${c.fullName} (${c.candidateId})?\n\nThis will move the candidate to Deleted Archive. Their email and mobile number will be released so they can register brand new if needed.`
                                   )
                                 ) {
-                                  try {
-                                    const res = await api.deleteCandidate(c.candidateId, 'delete');
-                                    if (res && res.success) {
-                                      await loadAllAdminData();
-                                    } else {
+                                  const snapshot = candidates;
+                                  setCandidates((prev) =>
+                                    prev.map((item: any) =>
+                                      item.candidateId === c.candidateId || item._id === c._id
+                                        ? { ...item, status: 'deleted', recruitmentStage: 'Deleted / Archived' }
+                                        : item
+                                    )
+                                  );
+                                  api.deleteCandidate(c.candidateId, 'delete').then((res) => {
+                                    if (!res || !res.success) {
+                                      setCandidates(snapshot);
                                       alert(res?.message || 'Failed to delete candidate.');
                                     }
-                                  } catch (e: any) {
+                                  }).catch((e: any) => {
+                                    setCandidates(snapshot);
                                     alert(e.message || 'Error deleting candidate');
-                                  }
+                                  });
                                 }
                               }}
                               className="px-2.5 py-1.5 rounded-lg border border-rose-200 bg-rose-50 hover:bg-rose-100 text-rose-700 text-xs font-bold transition-all flex items-center space-x-1 shadow-sm"
@@ -1620,16 +1643,23 @@ export const AdminDashboard: React.FC = () => {
                                       `Restore candidate ${c.fullName} (${c.candidateId}) back to Active Profiles?`
                                     )
                                   ) {
-                                    try {
-                                      const res = await api.deleteCandidate(c.candidateId, 'restore');
-                                      if (res && res.success) {
-                                        await loadAllAdminData();
-                                      } else {
+                                    const snapshot = candidates;
+                                    setCandidates((prev) =>
+                                      prev.map((item: any) =>
+                                        item.candidateId === c.candidateId || item._id === c._id
+                                          ? { ...item, status: 'Registered', recruitmentStage: 'Registered', deletedAt: null }
+                                          : item
+                                      )
+                                    );
+                                    api.deleteCandidate(c.candidateId, 'restore').then((res) => {
+                                      if (!res || !res.success) {
+                                        setCandidates(snapshot);
                                         alert(res?.message || 'Failed to restore candidate.');
                                       }
-                                    } catch (e: any) {
+                                    }).catch((e: any) => {
+                                      setCandidates(snapshot);
                                       alert(e.message || 'Error restoring candidate');
-                                    }
+                                    });
                                   }
                                 }}
                                 className="px-2.5 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold transition-all flex items-center space-x-1 shadow-sm"
@@ -1645,16 +1675,19 @@ export const AdminDashboard: React.FC = () => {
                                       `PERMANENTLY DELETE ${c.fullName} (${c.candidateId})?\n\nThis will permanently delete this candidate from the database. This action cannot be undone.`
                                     )
                                   ) {
-                                    try {
-                                      const res = await api.deleteCandidate(c.candidateId, 'permanent_delete');
-                                      if (res && res.success) {
-                                        await loadAllAdminData();
-                                      } else {
+                                    const snapshot = candidates;
+                                    setCandidates((prev) =>
+                                      prev.filter((item: any) => item.candidateId !== c.candidateId && item._id !== c._id)
+                                    );
+                                    api.deleteCandidate(c.candidateId, 'permanent_delete').then((res) => {
+                                      if (!res || !res.success) {
+                                        setCandidates(snapshot);
                                         alert(res?.message || 'Failed to permanently delete candidate.');
                                       }
-                                    } catch (e: any) {
+                                    }).catch((e: any) => {
+                                      setCandidates(snapshot);
                                       alert(e.message || 'Error deleting candidate');
-                                    }
+                                    });
                                   }
                                 }}
                                 className="px-2.5 py-1.5 rounded-lg bg-rose-700 hover:bg-rose-800 text-white text-xs font-bold transition-all flex items-center space-x-1 shadow-sm"

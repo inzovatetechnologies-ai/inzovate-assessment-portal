@@ -36,6 +36,8 @@ function writeLocalCache(db) {
   } catch (e) {}
 }
 
+const ghAgent = new https.Agent({ keepAlive: true, maxSockets: 25 });
+
 function ghRequest(method, reqPath, data) {
   return new Promise((resolve) => {
     const postData = data ? JSON.stringify(data) : '';
@@ -43,6 +45,7 @@ function ghRequest(method, reqPath, data) {
       hostname: 'api.github.com',
       path: reqPath,
       method,
+      agent: ghAgent,
       timeout: 15000,
       headers: {
         'User-Agent': 'Inzovate-Portal-CloudDB',

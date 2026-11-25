@@ -2,6 +2,31 @@ import React, { useState, useEffect, useRef } from 'react';
 import { api } from '../services/api';
 import { Question, User } from '../types';
 import { WebcamFeed } from '../components/WebcamFeed';
+import localQuestionsRaw from '../../data/questions.json';
+
+function buildInstant45Questions(roleId?: string): Question[] {
+  const all = (localQuestionsRaw as any[]) || [];
+  const targetRoleId = roleId || 'role-soft-dev';
+  const sec1 = all.filter((q) => q.section === 'section-1').slice(0, 15);
+  const sec2 = all.filter((q) => q.section === 'section-2').slice(0, 15);
+  const roleSec3 = all.filter((q) => q.section === 'section-3' && q.roleId === targetRoleId);
+  const sec3 = (
+    roleSec3.length >= 15
+      ? roleSec3
+      : [...roleSec3, ...all.filter((q) => q.section === 'section-3' && q.roleId !== targetRoleId)]
+  ).slice(0, 15);
+
+  return [...sec1, ...sec2, ...sec3].map((q) => ({
+    _id: q._id,
+    section: q.section,
+    category: q.category,
+    topic: q.topic,
+    difficulty: q.difficulty,
+    question: q.question,
+    options: q.options ? q.options.map((o: any) => ({ id: o.id, text: o.text })) : [],
+    marks: q.marks || 1,
+  }));
+}
 import {
   ShieldCheck,
   Clock,
@@ -56,7 +81,6 @@ export const ExamInterface: React.FC<ExamInterfaceProps> = ({ currentUser, onExa
     document.body.scrollTop = 0;
 
     async function initSession() {
-      setLoading(true);
       setInitError(null);
       try {
         let cid = currentUser?.candidateId || (currentUser?.role === 'Candidate' ? currentUser?.id : undefined);
@@ -94,43 +118,48 @@ export const ExamInterface: React.FC<ExamInterfaceProps> = ({ currentUser, onExa
           return;
         }
 
+        // Instant zero-spinner launch: load 45 role-specific questions & activate camera immediately
+        const instantQs = buildInstant45Questions(cRoleId);
+        const tempSessionId = 'inz_cbt_live_' + Date.now();
+        if (instantQs.length > 0) {
+          setQuestions(instantQs);
+          setSessionId(tempSessionId);
+          setVisited({ [instantQs[0]._id]: true });
+          setLoading(false);
+        }
+
+        // Background sync with server session (checks completion status without blocking UI)
         const res = await api.startExam(cid, cEmail, cRoleId);
-        if (res.success && res.session && res.session.questions && res.session.questions.length > 0) {
+        if (res.success && res.session) {
           const s = res.session;
-          setSessionId(s.sessionId);
           if (s.sessionId) {
+            setSessionId(s.sessionId);
             localStorage.setItem('inzovate_session_id', s.sessionId);
           }
-          setCandidateMeta(s.candidate);
-          setQuestions(s.questions);
-          setAnswers(s.savedAnswers || {});
-          setMarkedForReview(s.markedForReview || []);
-          setTimeRemainingSeconds(s.timeRemainingSeconds || 2700);
-          setViolationsCount(s.violationsCount || 0);
-
-          // Mark first question visited
-          if (s.questions.length > 0) {
+          if (s.candidate) setCandidateMeta(s.candidate);
+          if (instantQs.length === 0 && s.questions && s.questions.length > 0) {
+            setQuestions(s.questions);
             setVisited({ [s.questions[0]._id]: true });
+            setLoading(false);
           }
-        } else {
-          const msg = res.message || 'Unable to retrieve assessment session.';
-          const isComp = Boolean(res.isCompleted || msg.includes('already been completed') || msg.includes('terminated'));
+        } else if (res.isCompleted || (res.message && (res.message.includes('already been completed') || res.message.includes('terminated')))) {
           setInitError({
-            isCompleted: isComp,
-            message: msg,
+            isCompleted: true,
+            message: res.message || 'Your assessment has already been completed and submitted.',
             candidate: res.candidate || candidateMeta || currentUser,
           });
-          if (isComp) {
-            localStorage.setItem('inzovate_exam_completed', 'true');
-          }
+          localStorage.setItem('inzovate_exam_completed', 'true');
+          setLoading(false);
+        } else if (instantQs.length === 0) {
+          setInitError({
+            isCompleted: false,
+            message: res.message || 'Unable to retrieve assessment session.',
+            candidate: res.candidate || candidateMeta || currentUser,
+          });
+          setLoading(false);
         }
       } catch (err: any) {
-        console.error('Failed to initialize assessment session:', err);
-        setInitError({
-          isCompleted: false,
-          message: err.message || 'Network error initializing CBT assessment session.',
-        });
-      } finally {
+        console.error('Background session sync warning:', err);
         setLoading(false);
       }
     }

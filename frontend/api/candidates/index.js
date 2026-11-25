@@ -82,13 +82,12 @@ export default async function handler(req, res) {
         res.setHeader('Content-Type', 'application/json');
         return res.end(JSON.stringify({
           success: true,
-          message: `Candidate ${targetId} profile archived. Email and mobile number are now released for new registration.`,
-          candidates: updatedDb.candidates
+          message: `Candidate ${targetId} profile archived. Email and mobile number are now released for new registration.`
         }));
       }
 
       if (action === 'restore') {
-        const updatedDb = await mutateDb((current) => {
+        await mutateDb((current) => {
           if (!current.candidates) current.candidates = [];
           const idx = current.candidates.findIndex(c =>
             (c.candidateId && c.candidateId.toLowerCase() === cleanTarget) ||
@@ -107,14 +106,13 @@ export default async function handler(req, res) {
         res.setHeader('Content-Type', 'application/json');
         return res.end(JSON.stringify({
           success: true,
-          message: `Candidate ${targetId} profile successfully restored to Active.`,
-          candidates: updatedDb.candidates
+          message: `Candidate ${targetId} profile successfully restored to Active.`
         }));
       }
 
       if (action === 'update_stage' || (payload.stage && targetId)) {
         const stage = payload.stage;
-        const updatedDb = await mutateDb((current) => {
+        await mutateDb((current) => {
           if (!current.candidates) current.candidates = [];
           const idx = current.candidates.findIndex(c =>
             (c.candidateId && c.candidateId.toLowerCase() === cleanTarget) ||
@@ -132,13 +130,12 @@ export default async function handler(req, res) {
         res.setHeader('Content-Type', 'application/json');
         return res.end(JSON.stringify({
           success: true,
-          message: `Candidate ${targetId} stage updated to ${stage}`,
-          candidates: updatedDb.candidates
+          message: `Candidate ${targetId} stage updated to ${stage}`
         }));
       }
 
       if (action === 'permanent_delete') {
-        const updatedDb = await mutateDb((current) => {
+        await mutateDb((current) => {
           if (!current.candidates) current.candidates = [];
           current.candidates = current.candidates.filter(c =>
             c.candidateId?.toLowerCase() !== cleanTarget &&
@@ -158,8 +155,7 @@ export default async function handler(req, res) {
         res.setHeader('Content-Type', 'application/json');
         return res.end(JSON.stringify({
           success: true,
-          message: `Candidate ${targetId} profile permanently removed from system.`,
-          candidates: updatedDb.candidates
+          message: `Candidate ${targetId} profile permanently removed from system.`
         }));
       }
     }
