@@ -172,7 +172,7 @@ export const WebcamFeed: React.FC<WebcamFeedProps> = ({
         setAiStatus('Loading AI Vision...');
         await loadScriptOnce('https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.20.0/dist/tf.min.js');
         await Promise.all([
-          loadScriptOnce('https://cdn.jsdelivr.net/npm/@tensorflow-models/blazeface@0.1.0/dist/blazeface.min.js'),
+          loadScriptOnce('https://cdn.jsdelivr.net/npm/@tensorflow-models/blazeface@0.0.7/dist/blazeface.min.js'),
           loadScriptOnce('https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd@2.2.3/dist/coco-ssd.min.js'),
         ]);
         if (cancelled) return;
