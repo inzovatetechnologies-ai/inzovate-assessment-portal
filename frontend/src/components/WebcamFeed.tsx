@@ -74,31 +74,11 @@ export const WebcamFeed: React.FC<WebcamFeedProps> = ({
         throw new Error('Camera API is not supported in this browser.');
       }
 
-      // Prefer real physical webcam over virtual cameras when device labels are available
-      let preferredDeviceId: string | undefined;
-      try {
-        const devices = await navigator.mediaDevices.enumerateDevices();
-        const videoInputs = devices.filter((d) => d.kind === 'videoinput');
-        const realCam = videoInputs.find((d) => {
-          const lbl = (d.label || '').toLowerCase();
-          return lbl && !lbl.includes('virtual') && !lbl.includes('obs') && !lbl.includes('snap') && !lbl.includes('ir camera');
-        });
-        if (realCam && realCam.deviceId) {
-          preferredDeviceId = realCam.deviceId;
-        }
-      } catch (e) {}
-
-      let stream: MediaStream;
-      try {
-        stream = await navigator.mediaDevices.getUserMedia({
-          video: preferredDeviceId
-            ? { deviceId: { exact: preferredDeviceId }, width: { ideal: 640 }, height: { ideal: 480 } }
-            : { facingMode: 'user', width: { ideal: 640 }, height: { ideal: 480 } },
-          audio: false,
-        });
-      } catch (e1) {
-        stream = await navigator.mediaDevices.getUserMedia({ video: true, audio: false });
-      }
+      // Standard Chrome & Microsoft Edge webcam activation (triggers Allow prompt automatically & uses browser's active webcam)
+      const stream = await navigator.mediaDevices.getUserMedia({
+        video: { facingMode: 'user', width: { ideal: 640 }, height: { ideal: 480 } },
+        audio: false,
+      }).catch(() => navigator.mediaDevices.getUserMedia({ video: true, audio: false }));
 
       streamRef.current = stream;
 
@@ -118,7 +98,6 @@ export const WebcamFeed: React.FC<WebcamFeedProps> = ({
       setConnecting(false);
       if (onStreamActive) onStreamActive(true);
     } catch (err: any) {
-      // Auto-retry if camera hardware was briefly busy during page transition
       if (attempt < 3 && err?.name !== 'NotAllowedError' && err?.name !== 'PermissionDeniedError') {
         setTimeout(() => startHardwareCamera(attempt + 1), 500);
         return;
@@ -128,11 +107,11 @@ export const WebcamFeed: React.FC<WebcamFeedProps> = ({
       setConnecting(false);
       if (onStreamActive) onStreamActive(false);
       if (err?.name === 'NotAllowedError' || err?.name === 'PermissionDeniedError') {
-        setCameraError('Please click "Allow" on the browser camera prompt to turn on your physical camera.');
+        setCameraError('Please click "Allow" on the Chrome / Edge camera prompt to turn on your webcam.');
       } else if (err?.name === 'NotFoundError' || err?.name === 'DevicesNotFoundError') {
-        setCameraError('No physical webcam detected. Please connect or enable your camera.');
+        setCameraError('No webcam detected. Please enable your webcam in Chrome / Edge settings.');
       } else {
-        setCameraError('Camera is busy or unavailable. Close other camera apps and retry.');
+        setCameraError('Webcam is busy or unavailable. Close other camera apps and retry.');
       }
     }
   };
