@@ -20835,13 +20835,63 @@
       "jobRoleId": "role-dev-fullstack",
       "jobRoleTitle": "Full Stack Developer",
       "preferredLocation": "Chennai / Coimbatore",
-      "recruitmentStage": "Registered",
+      "recruitmentStage": "Rejected",
       "status": "Registered",
       "deletedAt": null,
-      "assessmentStatus": "Ready",
-      "testAttempts": 0,
+      "assessmentStatus": "Completed",
+      "testAttempts": 1,
       "createdAt": "2026-11-25T06:29:11.869Z",
-      "updatedAt": "2026-11-25T06:29:11.869Z"
+      "updatedAt": "2026-11-25T06:29:11.869Z",
+      "assessmentResult": {
+        "sessionId": "session-1795588194337",
+        "candidateId": "INZ-CAND-2026-00372",
+        "candidateDisplayId": "INZ-CAND-2026-00372",
+        "candidateName": "Concurrent Student 0",
+        "candidateEmail": "test_concurrent_1795588148407_0@example.com",
+        "jobRoleId": "role-dev-fullstack",
+        "jobRoleTitle": "Full Stack Developer",
+        "domainId": "dom-02",
+        "domainName": "Software Development",
+        "collegeName": "Test Concurrency College",
+        "totalScore": 0,
+        "maxScore": 45,
+        "totalQuestions": 45,
+        "totalAttempted": 1,
+        "totalQuestionsAttempted": 1,
+        "unattempted": 44,
+        "percentage": 0,
+        "isPassed": false,
+        "examResult": "Fail",
+        "selectionStatus": "Rejected",
+        "passCutoff": "> 25",
+        "performanceCategory": "Needs Improvement",
+        "status": "Completed",
+        "certificateId": "INZ-CERT-2026-167BB4",
+        "sectionScores": {
+          "section-1": {
+            "score": 0,
+            "total": 15,
+            "percentage": 0
+          },
+          "section-2": {
+            "score": 0,
+            "total": 15,
+            "percentage": 0
+          },
+          "section-3": {
+            "score": 0,
+            "total": 15,
+            "percentage": 0
+          }
+        },
+        "completedAt": "2026-11-25T06:29:54.337Z"
+      },
+      "totalScore": 0,
+      "percentage": 0,
+      "isPassed": false,
+      "examResult": "Fail",
+      "certificateId": "INZ-CERT-2026-167BB4",
+      "completedAt": "2026-11-25T06:29:54.337Z"
     },
     {
       "_id": "cand-9c820cc0-30ad-4083-a2e4-0b7916258f6c",
@@ -30818,10 +30868,54 @@
         }
       },
       "completedAt": "2026-11-24T05:49:24.287Z"
+    },
+    {
+      "sessionId": "session-1795588194337",
+      "candidateId": "INZ-CAND-2026-00372",
+      "candidateDisplayId": "INZ-CAND-2026-00372",
+      "candidateName": "Concurrent Student 0",
+      "candidateEmail": "test_concurrent_1795588148407_0@example.com",
+      "jobRoleId": "role-dev-fullstack",
+      "jobRoleTitle": "Full Stack Developer",
+      "domainId": "dom-02",
+      "domainName": "Software Development",
+      "collegeName": "Test Concurrency College",
+      "totalScore": 0,
+      "maxScore": 45,
+      "totalQuestions": 45,
+      "totalAttempted": 1,
+      "totalQuestionsAttempted": 1,
+      "unattempted": 44,
+      "percentage": 0,
+      "isPassed": false,
+      "examResult": "Fail",
+      "selectionStatus": "Rejected",
+      "passCutoff": "> 25",
+      "performanceCategory": "Needs Improvement",
+      "status": "Completed",
+      "certificateId": "INZ-CERT-2026-167BB4",
+      "sectionScores": {
+        "section-1": {
+          "score": 0,
+          "total": 15,
+          "percentage": 0
+        },
+        "section-2": {
+          "score": 0,
+          "total": 15,
+          "percentage": 0
+        },
+        "section-3": {
+          "score": 0,
+          "total": 15,
+          "percentage": 0
+        }
+      },
+      "completedAt": "2026-11-25T06:29:54.337Z"
     }
   ],
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-25T06:29:49.656Z"
+  "lastUpdated": "2026-11-25T06:29:55.874Z"
 }
