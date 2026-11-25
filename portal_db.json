@@ -123,9 +123,9 @@
       "jobRoleId": "role-fullstack",
       "jobRoleTitle": "Full Stack Developer",
       "preferredLocation": "Chennai / Bengaluru / Hybrid",
-      "recruitmentStage": "Selected for Next Round",
-      "status": "Registered",
-      "deletedAt": null,
+      "recruitmentStage": "Deleted / Archived",
+      "status": "deleted",
+      "deletedAt": "2026-11-25T07:51:36.428Z",
       "assessmentStatus": "Completed",
       "testAttempts": 2,
       "createdAt": "2026-11-23T17:11:04.507Z",
@@ -30754,5 +30754,5 @@
   "exam_sessions": [],
   "lastClearedAt": "2026-11-23T15:08:21.140Z",
   "status": "Pristine Clean State",
-  "lastUpdated": "2026-11-25T06:45:49.239Z"
+  "lastUpdated": "2026-11-25T07:51:36.428Z"
 }
