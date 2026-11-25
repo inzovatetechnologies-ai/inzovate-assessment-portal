@@ -83,7 +83,10 @@ export const api = {
         degree: localCandidate.degree || 'B.E. Computer Science',
         branch: localCandidate.branch || 'Engineering',
         cgpa: localCandidate.cgpa || '8.5',
-        graduationYear: localCandidate.graduationYear || '2026'
+        graduationYear: localCandidate.graduationYear || '2026',
+        assessmentStatus: localCandidate.assessmentStatus || 'Ready',
+        totalScore: localCandidate.totalScore,
+        completedAt: localCandidate.completedAt || null
       };
       localStorage.setItem('inzovate_user', JSON.stringify(user));
       localStorage.setItem('inzovate_token', token);
@@ -440,11 +443,13 @@ export const api = {
 
     if (res && res.success && res.result) {
       try {
+        const finalStatus = res.result.status === 'Terminated' ? 'Terminated' : 'Completed';
         const stored = JSON.parse(localStorage.getItem('inzovate_registered_candidates') || '[]');
         const cId = payload.candidateId;
-        const idx = stored.findIndex((c: any) => c.candidateId === cId || c.email === cId);
+        const cEmail = (payload.candidateEmail || '').toLowerCase();
+        const idx = stored.findIndex((c: any) => c.candidateId === cId || (cEmail && c.email?.toLowerCase() === cEmail) || c.email === cId);
         if (idx >= 0) {
-          stored[idx].assessmentStatus = 'Completed';
+          stored[idx].assessmentStatus = finalStatus;
           stored[idx].assessmentResult = res.result;
           stored[idx].totalScore = res.result.totalScore;
           stored[idx].percentage = res.result.percentage;
@@ -455,6 +460,11 @@ export const api = {
           if (res.result.jobRoleId) stored[idx].jobRoleId = res.result.jobRoleId;
           if (res.result.domainId) stored[idx].domainId = res.result.domainId;
           localStorage.setItem('inzovate_registered_candidates', JSON.stringify(stored));
+        }
+        const curUser = JSON.parse(localStorage.getItem('inzovate_user') || 'null');
+        if (curUser) {
+          curUser.assessmentStatus = finalStatus;
+          localStorage.setItem('inzovate_user', JSON.stringify(curUser));
         }
       } catch (e) {}
     }

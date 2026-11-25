@@ -216,9 +216,25 @@ export async function addCandidateToDb(candidate) {
       : -1;
 
     if (existingByEmailIdx >= 0) {
-      const existingId = db.candidates[existingByEmailIdx].candidateId;
+      const existing = db.candidates[existingByEmailIdx];
+      const existingId = existing.candidateId;
+      const isAlreadyDone = existing.assessmentStatus === 'Completed' || existing.assessmentStatus === 'Terminated';
       candidate.candidateId = existingId;
-      db.candidates[existingByEmailIdx] = { ...db.candidates[existingByEmailIdx], ...candidate, candidateId: existingId };
+      db.candidates[existingByEmailIdx] = {
+        ...existing,
+        ...candidate,
+        candidateId: existingId,
+        ...(isAlreadyDone ? {
+          assessmentStatus: existing.assessmentStatus,
+          assessmentResult: existing.assessmentResult,
+          totalScore: existing.totalScore,
+          percentage: existing.percentage,
+          isPassed: existing.isPassed,
+          examResult: existing.examResult,
+          recruitmentStage: existing.recruitmentStage,
+          completedAt: existing.completedAt
+        } : {})
+      };
       return db;
     }
 

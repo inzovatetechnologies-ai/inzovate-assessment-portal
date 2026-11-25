@@ -66,13 +66,6 @@ export default async function handler(req, res) {
     const db = await getDb(true);
     let candidates = db.candidates || [];
 
-    // Sync candidateData if provided from client
-    if (candidateData && candidateData.email) {
-      await addCandidateToDb(candidateData);
-      const refreshed = await getDb(true);
-      candidates = refreshed.candidates || [];
-    }
-
     // Find candidate by email, candidateId, or 10-digit mobile number (prefer active non-deleted)
     const cleanDigits = identifier.replace(/\D/g, '');
     let candidate = candidates.find(
@@ -85,6 +78,30 @@ export default async function handler(req, res) {
       c => (c.email && c.email.toLowerCase() === identifier) ||
            (c.candidateId && c.candidateId.toLowerCase() === identifier)
     );
+
+    // Only sync candidateData if candidate does NOT exist in DB yet (never overwrite existing Completed status!)
+    if (!candidate && candidateData && candidateData.email) {
+      await addCandidateToDb(candidateData);
+      const refreshed = await getDb(true);
+      candidates = refreshed.candidates || [];
+      candidate = candidates.find(
+        c => c.status !== 'deleted' && (
+          (c.email && c.email.toLowerCase() === identifier) ||
+          (c.candidateId && c.candidateId.toLowerCase() === identifier)
+        )
+      );
+    }
+
+    // Cross-check assessment_results so completed status is never missed
+    const existingResult = candidate ? (db.assessment_results || []).find(r =>
+      (r.candidateId && candidate.candidateId && r.candidateId.toLowerCase() === candidate.candidateId.toLowerCase()) ||
+      (r.candidateEmail && candidate.email && r.candidateEmail.toLowerCase() === candidate.email.toLowerCase())
+    ) : null;
+    if (candidate && existingResult && candidate.assessmentStatus !== 'Completed' && candidate.assessmentStatus !== 'Terminated') {
+      candidate.assessmentStatus = existingResult.status === 'Terminated' ? 'Terminated' : 'Completed';
+      candidate.totalScore = existingResult.totalScore;
+      candidate.completedAt = existingResult.completedAt;
+    }
 
     if (!candidate) {
       res.statusCode = 404;
