@@ -59,19 +59,31 @@ export const ExamInterface: React.FC<ExamInterfaceProps> = ({ currentUser, onExa
       setLoading(true);
       setInitError(null);
       try {
-        let cid = currentUser?.candidateId;
+        let cid = currentUser?.candidateId || (currentUser?.role === 'Candidate' ? currentUser?.id : undefined);
         let cEmail = currentUser?.email;
         let cRoleId = (currentUser as any)?.jobRoleId;
         if (!cid || !cEmail || !cRoleId) {
-          try {
-            const saved = localStorage.getItem('inzovate_user');
-            if (saved) {
-              const u = JSON.parse(saved);
-              if (!cid) cid = u.candidateId;
-              if (!cEmail) cEmail = u.email;
-              if (!cRoleId) cRoleId = u.jobRoleId;
+          const sources = [
+            () => localStorage.getItem('inzovate_user'),
+            () => localStorage.getItem('inzovate_last_candidate'),
+            () => {
+              const reg = sessionStorage.getItem('inzovate_reg_success');
+              if (!reg) return null;
+              const parsed = JSON.parse(reg);
+              return JSON.stringify(parsed.candidateObj || parsed);
             }
-          } catch (e) {}
+          ];
+          for (const getRaw of sources) {
+            try {
+              const saved = getRaw();
+              if (saved) {
+                const u = JSON.parse(saved);
+                if (!cid) cid = u.candidateId || u.id;
+                if (!cEmail) cEmail = u.email;
+                if (!cRoleId) cRoleId = u.jobRoleId;
+              }
+            } catch (e) {}
+          }
         }
         if (!cid && !cEmail) {
           setInitError({
@@ -518,6 +530,9 @@ export const ExamInterface: React.FC<ExamInterfaceProps> = ({ currentUser, onExa
               onClick={() => {
                 localStorage.removeItem('inzovate_user');
                 localStorage.removeItem('inzovate_token');
+                try {
+                  sessionStorage.removeItem('inzovate_active_tab');
+                } catch (e) {}
                 window.location.reload();
               }}
               className="px-5 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs shadow-md transition-all"

@@ -35,6 +35,8 @@ export default function App() {
   const [activeTab, setActiveTab] = useState<string>(() => {
     try {
       const savedTab = sessionStorage.getItem('inzovate_active_tab');
+      const hasUser = Boolean(localStorage.getItem('inzovate_user') && localStorage.getItem('inzovate_token'));
+      if (savedTab === 'exam' && !hasUser) return 'home';
       if (savedTab) return savedTab;
     } catch (e) {}
     return 'home';
@@ -312,7 +314,19 @@ export default function App() {
         )}
 
         {activeTab === 'exam' && (
-          <ExamInterface currentUser={currentUser} onExamComplete={handleExamComplete} />
+          currentUser ? (
+            <ExamInterface currentUser={currentUser} onExamComplete={handleExamComplete} />
+          ) : (
+            <div className="min-h-[60vh] flex flex-col items-center justify-center p-6 text-center space-y-4">
+              <p className="text-sm font-semibold text-slate-700">Please sign in with your Candidate ID or Email to launch the assessment.</p>
+              <button
+                onClick={() => { setActiveTab('home'); setCandidateLoginOpen(true); }}
+                className="px-5 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold shadow-md"
+              >
+                Open Candidate Sign In
+              </button>
+            </div>
+          )
         )}
 
         {activeTab === 'candidate-result' && (
