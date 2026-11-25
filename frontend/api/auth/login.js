@@ -63,7 +63,7 @@ export default async function handler(req, res) {
       }
     }
 
-    const db = await getDb(false);
+    const db = await getDb(true);
     let candidates = db.candidates || [];
 
     // Sync candidateData if provided from client

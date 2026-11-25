@@ -42,7 +42,11 @@ export const CandidateProfilePage: React.FC<CandidateProfilePageProps> = ({
     async function load() {
       setLoading(true);
       try {
-        const candidateId = currentUser?.candidateId || 'INZ-CAND-2026-00001';
+        const candidateId = currentUser?.candidateId || currentUser?.email;
+        if (!candidateId) {
+          setLoading(false);
+          return;
+        }
         const res = await api.getCandidateById(candidateId);
         if (res.success) {
           setCandidate(res.candidate);
@@ -95,7 +99,7 @@ export const CandidateProfilePage: React.FC<CandidateProfilePageProps> = ({
                 : 'bg-emerald-600 text-white'
             }`}
           >
-            Stage: {candidate?.recruitmentStage || 'Assessment Pending'}
+            Stage: {isCompleted ? 'Assessment Submitted — Under Evaluation' : (candidate?.recruitmentStage || 'Assessment Pending')}
           </span>
         </div>
       </div>

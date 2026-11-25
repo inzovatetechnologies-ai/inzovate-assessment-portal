@@ -91,47 +91,56 @@ export default async function handler(req, res) {
       const parts = effectiveRoute.split('/');
       candidateId = parts[parts.length - 1];
     }
-    const db = await getDb(false);
+    if (!candidateId || candidateId === 'result' || candidateId === 'results') {
+      res.statusCode = 400;
+      res.setHeader('Content-Type', 'application/json');
+      return res.end(JSON.stringify({ success: false, message: 'Candidate ID is required to retrieve submission status.' }));
+    }
+
+    const cleanId = String(candidateId).toLowerCase().trim();
+    const db = await getDb(true);
     const results = db.assessment_results || [];
-    const found = results.find(r => r.candidateId === candidateId || r.candidateDisplayId === candidateId);
+    const found = results.find(r =>
+      (r.candidateId && r.candidateId.toLowerCase().trim() === cleanId) ||
+      (r.candidateDisplayId && r.candidateDisplayId.toLowerCase().trim() === cleanId)
+    );
     if (found) {
       res.statusCode = 200;
       res.setHeader('Content-Type', 'application/json');
       return res.end(JSON.stringify({ success: true, result: found }));
     }
 
-    const candidate = (db.candidates || []).find(c => c.candidateId === candidateId) || {};
-    if (candidate.assessmentResult) {
+    const candidate = (db.candidates || []).find(c =>
+      (c.candidateId && c.candidateId.toLowerCase().trim() === cleanId) ||
+      (c.email && c.email.toLowerCase().trim() === cleanId)
+    );
+    if (candidate && candidate.assessmentResult) {
       res.statusCode = 200;
       res.setHeader('Content-Type', 'application/json');
       return res.end(JSON.stringify({ success: true, result: candidate.assessmentResult }));
     }
 
-    const fallbackResult = {
-      candidateId: candidateId || 'INZ-CAND-2026-00001',
-      candidateDisplayId: candidateId || 'INZ-CAND-2026-00001',
-      candidateName: candidate.fullName || 'Candidate',
-      jobRoleTitle: candidate.jobRoleTitle || 'Software Developer',
-      collegeName: candidate.collegeName || 'Autonomous Engineering College',
-      totalScore: 38,
-      maxScore: 45,
-      totalQuestions: 45,
-      totalAttempted: 45,
-      totalQuestionsAttempted: 45,
-      percentage: 84,
-      performanceCategory: 'Mastery (Outstanding)',
-      status: 'Completed',
-      certificateId: 'INZ-CERT-2026-' + crypto.randomBytes(3).toString('hex').toUpperCase(),
-      sectionScores: {
-        'section-1': { score: 13, total: 15, percentage: 87 },
-        'section-2': { score: 12, total: 15, percentage: 80 },
-        'section-3': { score: 13, total: 15, percentage: 87 }
-      },
-      completedAt: new Date().toISOString()
-    };
-    res.statusCode = 200;
+    if (candidate && candidate.assessmentStatus === 'Completed') {
+      res.statusCode = 200;
+      res.setHeader('Content-Type', 'application/json');
+      return res.end(JSON.stringify({
+        success: true,
+        result: {
+          candidateId: candidate.candidateId,
+          candidateDisplayId: candidate.candidateId,
+          candidateName: candidate.fullName,
+          jobRoleTitle: candidate.jobRoleTitle || 'Software Developer',
+          domainName: candidate.domainName || 'Software Development',
+          collegeName: candidate.collegeName,
+          status: 'Completed',
+          completedAt: candidate.completedAt || new Date().toISOString()
+        }
+      }));
+    }
+
+    res.statusCode = 404;
     res.setHeader('Content-Type', 'application/json');
-    return res.end(JSON.stringify({ success: true, result: fallbackResult }));
+    return res.end(JSON.stringify({ success: false, message: 'Assessment submission record not found for this candidate.' }));
   }
 
   // 4. Reset Attempt
@@ -166,15 +175,29 @@ export default async function handler(req, res) {
   if (effectiveRoute.includes('submit')) {
     const payload = await parseBody(req);
     const candidateId = payload.candidateId;
+    const candidateEmail = payload.candidateEmail || payload.email || '';
+
+    if (!candidateId && !candidateEmail) {
+      res.statusCode = 400;
+      res.setHeader('Content-Type', 'application/json');
+      return res.end(JSON.stringify({
+        success: false,
+        message: 'Candidate identification is missing. Please sign in again before submitting.'
+      }));
+    }
+
     const allQuestions = loadAllQuestions();
     const questionMap = new Map();
     allQuestions.forEach(q => questionMap.set(q._id, q));
 
-    const db = await getDb(false);
+    const db = await getDb(true);
+    const cleanCandId = String(candidateId || '').toLowerCase().trim();
+    const cleanCandEmail = String(candidateEmail || '').toLowerCase().trim();
     const candidate = (db.candidates || []).find(c =>
-      (c.candidateId && c.candidateId.toLowerCase() === String(candidateId).toLowerCase()) ||
-      (c._id && c._id === candidateId) ||
-      (c.email && c.email.toLowerCase() === String(candidateId).toLowerCase())
+      (cleanCandId && c.candidateId && c.candidateId.toLowerCase().trim() === cleanCandId) ||
+      (cleanCandId && c._id && c._id.toLowerCase().trim() === cleanCandId) ||
+      (cleanCandEmail && c.email && c.email.toLowerCase().trim() === cleanCandEmail) ||
+      (cleanCandId && c.email && c.email.toLowerCase().trim() === cleanCandId)
     ) || {};
 
     const answers = payload.answers || {};
@@ -225,9 +248,10 @@ export default async function handler(req, res) {
 
     const result = {
       sessionId: payload.sessionId || 'session-' + Date.now(),
-      candidateId: candidate.candidateId || candidateId || 'INZ-CAND-2026-00001',
-      candidateDisplayId: candidate.candidateId || candidateId || 'INZ-CAND-2026-00001',
+      candidateId: candidate.candidateId || candidateId,
+      candidateDisplayId: candidate.candidateId || candidateId,
       candidateName: candidate.fullName || payload.candidateName || 'Candidate',
+      candidateEmail: candidate.email || candidateEmail || '',
       jobRoleId: candidate.jobRoleId || payload.jobRoleId || 'role-soft-dev',
       jobRoleTitle: resolvedRoleTitle,
       domainId: candidate.domainId || payload.domainId || 'dom-01',
@@ -266,7 +290,47 @@ export default async function handler(req, res) {
   // 9. Start Assessment Session
   try {
     const payload = await parseBody(req);
-    const candidateId = payload.candidateId || 'INZ-CAND-2026-00001';
+    const candidateId = payload.candidateId;
+    const candidateEmail = payload.candidateEmail || payload.email || '';
+
+    if (!candidateId && !candidateEmail) {
+      res.statusCode = 400;
+      res.setHeader('Content-Type', 'application/json');
+      return res.end(JSON.stringify({
+        success: false,
+        message: 'Candidate session expired or missing. Please log in with your Candidate ID or Email.'
+      }));
+    }
+
+    const db = await getDb(true);
+    const cleanId = String(candidateId || '').toLowerCase().trim();
+    const cleanEmail = String(candidateEmail || '').toLowerCase().trim();
+    const matchedCandidate = (db.candidates || []).find(c =>
+      (cleanId && c.candidateId && c.candidateId.toLowerCase().trim() === cleanId) ||
+      (cleanId && c._id && c._id.toLowerCase().trim() === cleanId) ||
+      (cleanEmail && c.email && c.email.toLowerCase().trim() === cleanEmail) ||
+      (cleanId && c.email && c.email.toLowerCase().trim() === cleanId)
+    );
+
+    if (matchedCandidate && matchedCandidate.assessmentStatus === 'Completed') {
+      res.statusCode = 200;
+      res.setHeader('Content-Type', 'application/json');
+      return res.end(JSON.stringify({
+        success: false,
+        isCompleted: true,
+        message: 'Your assessment has already been completed and submitted.',
+        candidate: {
+          id: matchedCandidate.candidateId,
+          fullName: matchedCandidate.fullName,
+          email: matchedCandidate.email,
+          jobRoleId: matchedCandidate.jobRoleId,
+          jobRoleTitle: matchedCandidate.jobRoleTitle,
+          domainId: matchedCandidate.domainId,
+          domainName: matchedCandidate.domainName
+        }
+      }));
+    }
+
     const allQuestions = loadAllQuestions();
 
     const section1 = allQuestions.filter(q => q.section === 'section-1').slice(0, 15);
@@ -281,10 +345,21 @@ export default async function handler(req, res) {
 
     const sanitizedQuestions = questions45.map(sanitizeQuestion);
     const sessionId = 'inz_cbt_' + crypto.randomUUID();
+    const resolvedCandidateId = matchedCandidate?.candidateId || candidateId;
 
     const sessionObj = {
       sessionId,
-      candidateId,
+      candidateId: resolvedCandidateId,
+      candidate: matchedCandidate ? {
+        id: matchedCandidate.candidateId,
+        fullName: matchedCandidate.fullName,
+        email: matchedCandidate.email,
+        jobRoleId: matchedCandidate.jobRoleId,
+        jobRoleTitle: matchedCandidate.jobRoleTitle,
+        domainId: matchedCandidate.domainId,
+        domainName: matchedCandidate.domainName,
+        collegeName: matchedCandidate.collegeName
+      } : null,
       status: 'IN_PROGRESS',
       durationMinutes: 45,
       timeRemainingSeconds: 2700,

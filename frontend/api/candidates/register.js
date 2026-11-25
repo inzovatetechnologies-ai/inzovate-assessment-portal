@@ -67,7 +67,7 @@ export default async function handler(req, res) {
     const cleanMobile = String(mobile).trim();
     const rawDigits = cleanMobile.replace(/\D/g, '');
 
-    const db = await getDb(false);
+    const db = await getDb(true);
     const candidates = db.candidates || [];
 
     // Duplicate Check: Active (non-deleted) candidates with matching email or phone
@@ -99,8 +99,6 @@ export default async function handler(req, res) {
       }
     }
 
-    const sequence = String(candidates.length + 1).padStart(5, '0');
-    const candidateId = `INZ-CAND-2026-${sequence}`;
     const now = new Date().toISOString();
 
     const resolvedRoleTitle =
@@ -116,7 +114,7 @@ export default async function handler(req, res) {
 
     const newCandidate = {
       _id: 'cand-' + crypto.randomUUID(),
-      candidateId,
+      candidateId: null,
       fullName: payload.fullName.trim(),
       email: cleanEmail,
       password: payload.password,
@@ -156,8 +154,9 @@ export default async function handler(req, res) {
       updatedAt: now
     };
 
-    // Save to permanent cloud DB
+    // Save to permanent cloud DB (assigns collision-proof candidateId atomically)
     await addCandidateToDb(newCandidate);
+    const assignedCandidateId = newCandidate.candidateId;
 
     const token = 'inz_session_' + Buffer.from(cleanEmail).toString('base64');
 
@@ -166,12 +165,12 @@ export default async function handler(req, res) {
     return res.end(JSON.stringify({
       success: true,
       message: `Candidate ${newCandidate.fullName} successfully registered for Inzovate Campus Drive 2026.`,
-      candidateId,
+      candidateId: assignedCandidateId,
       token,
       candidate: newCandidate,
       user: {
-        id: candidateId,
-        candidateId,
+        id: assignedCandidateId,
+        candidateId: assignedCandidateId,
         fullName: newCandidate.fullName,
         email: cleanEmail,
         role: 'Candidate',

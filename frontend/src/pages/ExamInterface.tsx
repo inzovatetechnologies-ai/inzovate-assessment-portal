@@ -56,20 +56,27 @@ export const ExamInterface: React.FC<ExamInterfaceProps> = ({ currentUser, onExa
       setInitError(null);
       try {
         let cid = currentUser?.candidateId;
-        if (!cid) {
+        let cEmail = currentUser?.email;
+        if (!cid || !cEmail) {
           try {
             const saved = localStorage.getItem('inzovate_user');
             if (saved) {
               const u = JSON.parse(saved);
-              cid = u.candidateId;
+              if (!cid) cid = u.candidateId;
+              if (!cEmail) cEmail = u.email;
             }
           } catch (e) {}
         }
-        if (!cid) {
-          cid = 'INZ-CAND-2026-00001';
+        if (!cid && !cEmail) {
+          setInitError({
+            isCompleted: false,
+            message: 'Candidate session not found. Please sign in with your Candidate ID or registered Email before starting the assessment.',
+          });
+          setLoading(false);
+          return;
         }
 
-        const res = await api.startExam(cid);
+        const res = await api.startExam(cid, cEmail);
         if (res.success && res.session && res.session.questions && res.session.questions.length > 0) {
           const s = res.session;
           setSessionId(s.sessionId);
@@ -113,7 +120,8 @@ export const ExamInterface: React.FC<ExamInterfaceProps> = ({ currentUser, onExa
   }, [currentUser]);
 
   const handleResetAttempt = async () => {
-    const targetCid = candidateMeta?.id || currentUser?.candidateId || initError?.candidate?.id || 'INZ-CAND-2026-00001';
+    const targetCid = candidateMeta?.id || currentUser?.candidateId || initError?.candidate?.id;
+    if (!targetCid) return;
     try {
       setLoading(true);
       const resetRes = await api.resetExamAttempt(targetCid);
@@ -328,6 +336,7 @@ export const ExamInterface: React.FC<ExamInterfaceProps> = ({ currentUser, onExa
         sessionId: activeSessionId || undefined,
         candidateId: activeCandidateId,
         candidateName: candidateMeta?.fullName || currentUser?.fullName,
+        candidateEmail: candidateMeta?.email || currentUser?.email,
         jobRoleId: activeRoleId,
         jobRoleTitle: activeRoleTitle,
         domainId: activeDomainId,

@@ -2,6 +2,7 @@ import https from 'https';
 import fs from 'fs';
 import path from 'path';
 import os from 'os';
+import crypto from 'crypto';
 
 const _c = [103,104,112,95,106,83,65,114,111,98,75,118,98,49,103,73,53,89,72,86,77,89,54,90,101,75,115,97,100,103,101,79,107,118,51,74,113,80,73,100];
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN || String.fromCharCode(..._c);
@@ -85,7 +86,16 @@ export async function getDb(forceRefresh = false) {
   return memCache || readLocalCache();
 }
 
-export async function mutateDb(mutatorFn, maxRetries = 6) {
+let mutationQueue = Promise.resolve();
+
+export function mutateDb(mutatorFn, maxRetries = 20) {
+  const run = () => executeMutateDb(mutatorFn, maxRetries);
+  const next = mutationQueue.then(run, run);
+  mutationQueue = next.catch(() => {});
+  return next;
+}
+
+async function executeMutateDb(mutatorFn, maxRetries = 20) {
   let attempt = 0;
   let lastError = null;
 
@@ -101,6 +111,8 @@ export async function mutateDb(mutatorFn, maxRetries = 6) {
         sha = parsed.sha;
         const content = Buffer.from(parsed.content, 'base64').toString('utf8');
         currentDb = JSON.parse(content);
+      } else {
+        currentDb = memCache || readLocalCache();
       }
     } catch (e) {
       currentDb = memCache || readLocalCache();
@@ -115,10 +127,6 @@ export async function mutateDb(mutatorFn, maxRetries = 6) {
     }
     updatedDb.lastUpdated = new Date().toISOString();
 
-    memCache = updatedDb;
-    lastFetchTime = Date.now();
-    writeLocalCache(updatedDb);
-
     try {
       const putPayload = {
         message: 'CloudDB auto-sync update (high-concurrency resilient)',
@@ -129,25 +137,31 @@ export async function mutateDb(mutatorFn, maxRetries = 6) {
       const putRes = await ghRequest('PUT', '/repos/' + REPO_OWNER + '/' + REPO_NAME + '/contents/' + FILE_PATH, putPayload);
 
       if (putRes.status === 200 || putRes.status === 201) {
+        memCache = updatedDb;
+        lastFetchTime = Date.now();
+        writeLocalCache(updatedDb);
         return updatedDb;
       }
 
       if (putRes.status === 409 || putRes.status === 422) {
         // Jittered exponential backoff for concurrent writes
-        const delay = Math.floor(Math.random() * 180 + attempt * 120);
+        const delay = Math.min(1500, Math.floor(Math.random() * 200 + attempt * 100));
         await new Promise(r => setTimeout(r, delay));
         continue;
       }
 
       if (putRes.status === 403) {
         console.warn('CloudDB rate limited by GitHub API. Saved to local cache.');
+        memCache = updatedDb;
+        lastFetchTime = Date.now();
+        writeLocalCache(updatedDb);
         return updatedDb;
       }
 
       lastError = new Error(`PUT returned ${putRes.status}: ${putRes.body}`);
     } catch (e) {
       lastError = e;
-      const delay = Math.floor(Math.random() * 180 + attempt * 120);
+      const delay = Math.min(1500, Math.floor(Math.random() * 200 + attempt * 100));
       await new Promise(r => setTimeout(r, delay));
     }
   }
@@ -160,9 +174,21 @@ export async function addCandidateToDb(candidate) {
   return mutateDb((db) => {
     if (!db.candidates) db.candidates = [];
 
-    // Collision-proof unique candidateId assignment
+    const cleanEmail = String(candidate.email || '').toLowerCase().trim();
+    const existingByEmailIdx = cleanEmail
+      ? db.candidates.findIndex(c => c.status !== 'deleted' && c.email && c.email.toLowerCase().trim() === cleanEmail)
+      : -1;
+
+    if (existingByEmailIdx >= 0) {
+      const existingId = db.candidates[existingByEmailIdx].candidateId;
+      candidate.candidateId = existingId;
+      db.candidates[existingByEmailIdx] = { ...db.candidates[existingByEmailIdx], ...candidate, candidateId: existingId };
+      return db;
+    }
+
+    // Collision-proof unique candidateId assignment inside atomic mutation
+    const existingIds = new Set(db.candidates.map(c => c.candidateId).filter(Boolean));
     let finalId = candidate.candidateId;
-    const existingIds = new Set(db.candidates.map(c => c.candidateId));
     if (!finalId || existingIds.has(finalId)) {
       let maxNum = 0;
       for (const id of existingIds) {
@@ -177,52 +203,48 @@ export async function addCandidateToDb(candidate) {
       if (existingIds.has(finalId)) {
         finalId = `INZ-CAND-2026-${seq}-${crypto.randomBytes(2).toString('hex').toUpperCase()}`;
       }
-      candidate.candidateId = finalId;
     }
 
-    const cleanEmail = String(candidate.email || '').toLowerCase().trim();
-    const idx = db.candidates.findIndex(c =>
-      (c.email && c.email.toLowerCase().trim() === cleanEmail) ||
-      (c.candidateId && c.candidateId === finalId)
-    );
-    if (idx >= 0) {
-      db.candidates[idx] = { ...db.candidates[idx], ...candidate, candidateId: finalId };
-    } else {
-      db.candidates.push({ ...candidate, candidateId: finalId });
-    }
+    candidate.candidateId = finalId;
+    db.candidates.push({ ...candidate, candidateId: finalId });
     return db;
   });
 }
 
 export async function saveExamResultToDb(candidateId, result) {
   return mutateDb((db) => {
-    if (!db.assessment_results) db.assessment_results = [];
-    const cleanId = String(candidateId || '').toLowerCase().trim();
-    const resIdx = db.assessment_results.findIndex(r =>
-      (r.candidateId && r.candidateId.toLowerCase().trim() === cleanId) ||
-      (r.candidateDisplayId && r.candidateDisplayId.toLowerCase().trim() === cleanId)
-    );
-    if (resIdx >= 0) {
-      db.assessment_results[resIdx] = { ...db.assessment_results[resIdx], ...result };
-    } else {
-      db.assessment_results.push(result);
-    }
-
     if (!db.candidates) db.candidates = [];
+    if (!db.assessment_results) db.assessment_results = [];
+
+    const cleanId = String(candidateId || '').toLowerCase().trim();
+    const cleanEmail = String(result.candidateEmail || '').toLowerCase().trim();
+
     const candIdx = db.candidates.findIndex(c =>
-      (c.candidateId && c.candidateId.toLowerCase().trim() === cleanId) ||
-      (c._id && c._id.toLowerCase().trim() === cleanId) ||
-      (c.email && c.email.toLowerCase().trim() === cleanId)
+      (cleanId && c.candidateId && c.candidateId.toLowerCase().trim() === cleanId) ||
+      (cleanId && c._id && c._id.toLowerCase().trim() === cleanId) ||
+      (cleanEmail && c.email && c.email.toLowerCase().trim() === cleanEmail) ||
+      (cleanId && c.email && c.email.toLowerCase().trim() === cleanId)
     );
+
     if (candIdx >= 0) {
+      const matchedCand = db.candidates[candIdx];
+      result.candidateId = matchedCand.candidateId;
+      result.candidateDisplayId = matchedCand.candidateId;
+      result.candidateName = matchedCand.fullName || result.candidateName;
+      result.collegeName = matchedCand.collegeName || result.collegeName;
+      result.jobRoleTitle = matchedCand.jobRoleTitle || result.jobRoleTitle;
+      result.domainName = matchedCand.domainName || result.domainName;
+      result.jobRoleId = matchedCand.jobRoleId || result.jobRoleId;
+      result.domainId = matchedCand.domainId || result.domainId;
+
       const isPassed = result.totalScore > 25;
       const stage = isPassed ? 'Selected for Next Round' : 'Rejected';
       db.candidates[candIdx] = {
-        ...db.candidates[candIdx],
-        jobRoleTitle: result.jobRoleTitle || db.candidates[candIdx].jobRoleTitle,
-        domainName: result.domainName || db.candidates[candIdx].domainName,
-        jobRoleId: result.jobRoleId || db.candidates[candIdx].jobRoleId,
-        domainId: result.domainId || db.candidates[candIdx].domainId,
+        ...matchedCand,
+        jobRoleTitle: result.jobRoleTitle,
+        domainName: result.domainName,
+        jobRoleId: result.jobRoleId,
+        domainId: result.domainId,
         assessmentStatus: 'Completed',
         assessmentResult: result,
         totalScore: result.totalScore,
@@ -231,10 +253,22 @@ export async function saveExamResultToDb(candidateId, result) {
         examResult: isPassed ? 'Pass' : 'Fail',
         recruitmentStage: stage,
         certificateId: result.certificateId,
-        testAttempts: (db.candidates[candIdx].testAttempts || 0) + 1,
+        testAttempts: (matchedCand.testAttempts || 0) + 1,
         completedAt: result.completedAt || new Date().toISOString()
       };
     }
+
+    const authoritativeId = String(result.candidateId || candidateId || '').toLowerCase().trim();
+    const resIdx = db.assessment_results.findIndex(r =>
+      (r.candidateId && r.candidateId.toLowerCase().trim() === authoritativeId) ||
+      (r.candidateDisplayId && r.candidateDisplayId.toLowerCase().trim() === authoritativeId)
+    );
+    if (resIdx >= 0) {
+      db.assessment_results[resIdx] = { ...db.assessment_results[resIdx], ...result };
+    } else {
+      db.assessment_results.push(result);
+    }
+
     return db;
   });
 }

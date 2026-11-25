@@ -151,14 +151,24 @@ export default function App() {
       candidateId: user.candidateId,
       collegeId: user.collegeId,
       department: user.department,
+      ...(user.jobRoleId ? { jobRoleId: user.jobRoleId } : {}),
+      ...(user.jobRoleTitle ? { jobRoleTitle: user.jobRoleTitle } : {}),
+      ...(user.domainId ? { domainId: user.domainId } : {}),
+      ...(user.domainName ? { domainName: user.domainName } : {}),
+      ...(user.collegeName ? { collegeName: user.collegeName } : {}),
     };
     setCurrentUser(normalizedUser);
+    setExamResultData(null);
     localStorage.setItem('inzovate_user', JSON.stringify(normalizedUser));
     localStorage.setItem('inzovate_token', token);
 
-    if (user.assessmentStatus === 'Completed' || user.totalScore !== null && user.totalScore !== undefined) {
+    if (user.assessmentStatus === 'Completed' || (user.totalScore !== null && user.totalScore !== undefined)) {
       setIsExamCompleted(true);
       localStorage.setItem('inzovate_exam_completed', 'true');
+    } else {
+      setIsExamCompleted(false);
+      localStorage.removeItem('inzovate_exam_completed');
+      localStorage.removeItem('inzovate_session_id');
     }
 
     setActiveTab('candidate-dash');
@@ -179,10 +189,12 @@ export default function App() {
 
   const handleLogout = () => {
     setCurrentUser(null);
+    setExamResultData(null);
     setIsExamCompleted(false);
     localStorage.removeItem('inzovate_user');
     localStorage.removeItem('inzovate_token');
     localStorage.removeItem('inzovate_exam_completed');
+    localStorage.removeItem('inzovate_session_id');
     setActiveTab('home');
   };
 
