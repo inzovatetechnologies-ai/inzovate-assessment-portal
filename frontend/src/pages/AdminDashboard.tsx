@@ -391,7 +391,7 @@ export const AdminDashboard: React.FC = () => {
         `"${c.mobileNumber || ''}"`,
         `"${c.collegeName || ''}"`,
         `"${c.degree || ''}"`,
-        `"${c.department || ''}"`,
+        `"${c.department || (c.branch && c.branch !== 'Engineering' ? c.branch : '') || c.degree || ''}"`,
         `"${c.jobRoleTitle || ''}"`,
         `"${c.domainName || ''}"`,
         attempted,
@@ -485,7 +485,10 @@ export const AdminDashboard: React.FC = () => {
               <div style="font-weight: bold; color: #0F172A;">${c.fullName}</div>
               <div style="font-size: 11px; color: #64748B;">${c.email}</div>
             </td>
-            <td style="padding: 10px; font-size: 11px; color: #334155;">${c.collegeName}</td>
+            <td style="padding: 10px; font-size: 11px; color: #334155;">
+              <div>${c.collegeName}</div>
+              ${(c.department || (c.branch && c.branch !== 'Engineering' ? c.branch : '') || c.degree) ? `<div style="font-size: 10px; color: #4338CA; font-weight: 600; margin-top: 2px;">Dept: ${c.department || (c.branch && c.branch !== 'Engineering' ? c.branch : '') || c.degree}</div>` : ''}
+            </td>
             <td style="padding: 10px; font-size: 11px; color: #334155;">
               <div style="font-weight: 700; color: #0F172A;">${c.jobRoleTitle || 'Software Developer'}</div>
               ${c.domainName ? `<div style="font-size: 10px; color: #0284C7; font-weight: 600;">${c.domainName}</div>` : ''}
@@ -1226,8 +1229,16 @@ export const AdminDashboard: React.FC = () => {
                           <span className="text-[10px] font-semibold text-sky-600 block mt-0.5">{c.domainName || 'Software Development'}</span>
                           <span className="text-[11px] text-slate-500 flex items-center space-x-1 mt-1">
                             <GraduationCap className="w-3 h-3 text-slate-400 shrink-0" />
-                            <span className="truncate max-w-[160px]">{c.collegeName}</span>
+                            <span className="truncate max-w-[180px]" title={c.collegeName}>{c.collegeName}</span>
                           </span>
+                          {(c.department || (c.branch && c.branch !== 'Engineering' ? c.branch : '') || c.degree) && (
+                            <span
+                              className="inline-block text-[10px] font-semibold text-indigo-700 bg-indigo-50 border border-indigo-100 px-1.5 py-0.5 rounded mt-1 max-w-[180px] truncate"
+                              title={c.department || (c.branch && c.branch !== 'Engineering' ? c.branch : '') || c.degree}
+                            >
+                              Dept: {c.department || (c.branch && c.branch !== 'Engineering' ? c.branch : '') || c.degree}
+                            </span>
+                          )}
                         </td>
 
                         <td className="py-3.5 px-3 text-center font-mono font-medium text-slate-700">
@@ -1476,8 +1487,8 @@ export const AdminDashboard: React.FC = () => {
 
                       <td className="py-3.5 px-4">
                         <p className="font-semibold text-slate-800">{c.collegeName}</p>
-                        <p className="text-[11px] text-slate-500">
-                          {c.degree || 'B.E.'} - {c.department || 'CSE'} ({c.graduationYear || '2026'})
+                        <p className="text-[11px] font-medium text-indigo-700 mt-0.5">
+                          Dept: {c.department || (c.branch && c.branch !== 'Engineering' ? c.branch : '') || c.degree || 'CSE'} ({c.graduationYear || '2026'})
                         </p>
                       </td>
 
@@ -1814,7 +1825,10 @@ export const AdminDashboard: React.FC = () => {
                   <strong>College:</strong> {selectedCandidate.collegeName}
                 </p>
                 <p>
-                  <strong>Degree:</strong> {selectedCandidate.degree} - {selectedCandidate.department}
+                  <strong>Degree / Dept:</strong> {selectedCandidate.degree}
+                  {(selectedCandidate.department || (selectedCandidate.branch && selectedCandidate.branch !== 'Engineering' ? selectedCandidate.branch : ''))
+                    ? ` - ${selectedCandidate.department || selectedCandidate.branch}`
+                    : ''}
                 </p>
                 <p>
                   <strong>CGPA:</strong> {selectedCandidate.cgpa || '8.2'} • <strong>Grad Year:</strong>{' '}

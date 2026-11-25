@@ -76,8 +76,8 @@ export const RegistrationPage: React.FC<RegistrationPageProps> = ({
     collegeName: '',
     collegeRegNumber: '',
     universityRegNumber: '',
-    degree: 'B.E. Computer Science and Engineering',
-    department: 'Computer Science',
+    degree: 'B.E. / B.Tech',
+    department: '',
     specialization: 'Software Engineering',
     currentYear: 'Final Year',
     graduationYear: '2026',
@@ -240,6 +240,11 @@ export const RegistrationPage: React.FC<RegistrationPageProps> = ({
     }
     if (!formData.collegeName.trim()) {
       setErrorMsg('Please type your College / University name in Step 3.');
+      setStep(3);
+      return;
+    }
+    if (!formData.department.trim()) {
+      setErrorMsg('Please enter your Department / Branch in Step 3.');
       setStep(3);
       return;
     }
@@ -706,13 +711,26 @@ export const RegistrationPage: React.FC<RegistrationPageProps> = ({
               </div>
 
               <div>
-                <label className="block text-xs font-semibold text-slate-700 mb-1">Degree & Major *</label>
+                <label className="block text-xs font-semibold text-slate-700 mb-1">Degree *</label>
                 <input
                   type="text"
                   name="degree"
                   value={formData.degree}
                   onChange={handleChange}
-                  placeholder="e.g. B.E. Computer Science and Engineering"
+                  placeholder="e.g. B.E. / B.Tech"
+                  className="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 text-xs focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                  required
+                />
+              </div>
+
+              <div>
+                <label className="block text-xs font-semibold text-slate-700 mb-1">Department / Branch *</label>
+                <input
+                  type="text"
+                  name="department"
+                  value={formData.department}
+                  onChange={handleChange}
+                  placeholder="e.g. CSE, AI&DS, ECE, IT, EEE, Mechanical"
                   className="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 text-xs focus:ring-2 focus:ring-blue-500 focus:outline-none"
                   required
                 />
