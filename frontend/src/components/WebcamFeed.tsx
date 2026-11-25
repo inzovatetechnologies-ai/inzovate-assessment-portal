@@ -155,6 +155,7 @@ export const WebcamFeed: React.FC<WebcamFeedProps> = ({
     let lookDownStartMs: number | null = null;
     let headTurnStartMs: number | null = null;
     let noFaceStartMs: number | null = null;
+    let phoneStreak = 0;
     let lastViolationMs = 0;
 
     const emitViolation = (type: string, reason: string, immediateTerminate = false) => {
@@ -200,20 +201,25 @@ export const WebcamFeed: React.FC<WebcamFeedProps> = ({
         const now = Date.now();
 
         try {
-          // 1. Mobile Phone Detection (Instant Termination)
+          // 1. Mobile Phone Detection (Require 2 consecutive frames >= 0.62 confidence to avoid false positives)
           if (objectModel) {
             const objects = await objectModel.detect(video);
             if (cancelled) return;
             const phone = objects.find(
-              (o: any) => o.class === 'cell phone' && o.score >= 0.42
+              (o: any) => o.class === 'cell phone' && o.score >= 0.62
             );
             if (phone) {
-              emitViolation(
-                'mobile_phone',
-                'Mobile Phone detected in camera frame! Assessment terminated immediately.',
-                true
-              );
-              return;
+              phoneStreak++;
+              if (phoneStreak >= 2) {
+                emitViolation(
+                  'mobile_phone',
+                  'Mobile Phone detected in camera frame! Assessment terminated immediately.',
+                  true
+                );
+                return;
+              }
+            } else {
+              phoneStreak = 0;
             }
           }
 

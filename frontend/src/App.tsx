@@ -195,7 +195,9 @@ export default function App() {
 
   const handleRegistrationSuccess = (candidate: any) => {
     if (candidate) {
-      handleCandidateLoginSuccess(candidate, 'inz_session_direct');
+      setIsExamCompleted(false);
+      localStorage.removeItem('inzovate_exam_completed');
+      handleCandidateLoginSuccess({ ...candidate, assessmentStatus: 'Ready' }, 'inz_session_direct');
       setActiveTab('system-check');
     } else {
       setActiveTab('home');

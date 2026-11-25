@@ -178,6 +178,33 @@ export default async function handler(req, res) {
     return res.end(JSON.stringify({ success: true }));
   }
 
+function findAuthoritativeCandidate(candidates, candidateId, candidateEmail) {
+  const cleanId = String(candidateId || '').toLowerCase().trim();
+  const cleanEmail = String(candidateEmail || '').toLowerCase().trim();
+  const list = candidates || [];
+
+  // 1. Strict candidateId / _id match first (prevents matching an older record with the same email)
+  if (cleanId) {
+    const byId = list.find(c =>
+      (c.candidateId && c.candidateId.toLowerCase().trim() === cleanId) ||
+      (c._id && c._id.toLowerCase().trim() === cleanId)
+    );
+    if (byId) return byId;
+  }
+
+  // 2. Fallback to email only if no candidateId match (pick latest matching record)
+  const targetEmail = cleanEmail || (cleanId.includes('@') ? cleanId : '');
+  if (targetEmail) {
+    for (let i = list.length - 1; i >= 0; i--) {
+      const c = list[i];
+      if (c.status !== 'deleted' && c.email && c.email.toLowerCase().trim() === targetEmail) {
+        return c;
+      }
+    }
+  }
+  return null;
+}
+
   // 8. Submit Assessment
   if (effectiveRoute.includes('submit')) {
     const payload = await parseBody(req);
@@ -197,15 +224,12 @@ export default async function handler(req, res) {
     const questionMap = new Map();
     allQuestions.forEach(q => questionMap.set(q._id, q));
 
-    const db = await getDb(false);
-    const cleanCandId = String(candidateId || '').toLowerCase().trim();
-    const cleanCandEmail = String(candidateEmail || '').toLowerCase().trim();
-    const candidate = (db.candidates || []).find(c =>
-      (cleanCandId && c.candidateId && c.candidateId.toLowerCase().trim() === cleanCandId) ||
-      (cleanCandId && c._id && c._id.toLowerCase().trim() === cleanCandId) ||
-      (cleanCandEmail && c.email && c.email.toLowerCase().trim() === cleanCandEmail) ||
-      (cleanCandId && c.email && c.email.toLowerCase().trim() === cleanCandId)
-    ) || {};
+    let db = await getDb(false);
+    let candidate = findAuthoritativeCandidate(db.candidates, candidateId, candidateEmail);
+    if (!candidate) {
+      db = await getDb(true);
+      candidate = findAuthoritativeCandidate(db.candidates, candidateId, candidateEmail) || {};
+    }
 
     const answers = payload.answers || {};
 
@@ -310,15 +334,12 @@ export default async function handler(req, res) {
       }));
     }
 
-    const db = await getDb(false);
-    const cleanId = String(candidateId || '').toLowerCase().trim();
-    const cleanEmail = String(candidateEmail || '').toLowerCase().trim();
-    const matchedCandidate = (db.candidates || []).find(c =>
-      (cleanId && c.candidateId && c.candidateId.toLowerCase().trim() === cleanId) ||
-      (cleanId && c._id && c._id.toLowerCase().trim() === cleanId) ||
-      (cleanEmail && c.email && c.email.toLowerCase().trim() === cleanEmail) ||
-      (cleanId && c.email && c.email.toLowerCase().trim() === cleanId)
-    );
+    let db = await getDb(false);
+    let matchedCandidate = findAuthoritativeCandidate(db.candidates, candidateId, candidateEmail);
+    if (!matchedCandidate) {
+      db = await getDb(true);
+      matchedCandidate = findAuthoritativeCandidate(db.candidates, candidateId, candidateEmail);
+    }
 
     if (matchedCandidate && matchedCandidate.assessmentStatus === 'Completed') {
       res.statusCode = 200;
