@@ -64,7 +64,7 @@ export const WebcamFeed: React.FC<WebcamFeedProps> = ({
     }
   };
 
-  const startHardwareCamera = async () => {
+  const startHardwareCamera = async (attempt = 1) => {
     stopHardwareTracks();
     setCameraError(null);
     setConnecting(true);
@@ -74,10 +74,26 @@ export const WebcamFeed: React.FC<WebcamFeedProps> = ({
         throw new Error('Camera API is not supported in this browser.');
       }
 
+      // Prefer real physical webcam over virtual cameras when device labels are available
+      let preferredDeviceId: string | undefined;
+      try {
+        const devices = await navigator.mediaDevices.enumerateDevices();
+        const videoInputs = devices.filter((d) => d.kind === 'videoinput');
+        const realCam = videoInputs.find((d) => {
+          const lbl = (d.label || '').toLowerCase();
+          return lbl && !lbl.includes('virtual') && !lbl.includes('obs') && !lbl.includes('snap') && !lbl.includes('ir camera');
+        });
+        if (realCam && realCam.deviceId) {
+          preferredDeviceId = realCam.deviceId;
+        }
+      } catch (e) {}
+
       let stream: MediaStream;
       try {
         stream = await navigator.mediaDevices.getUserMedia({
-          video: { facingMode: 'user', width: { ideal: 640 }, height: { ideal: 480 } },
+          video: preferredDeviceId
+            ? { deviceId: { exact: preferredDeviceId }, width: { ideal: 640 }, height: { ideal: 480 } }
+            : { facingMode: 'user', width: { ideal: 640 }, height: { ideal: 480 } },
           audio: false,
         });
       } catch (e1) {
@@ -87,13 +103,9 @@ export const WebcamFeed: React.FC<WebcamFeedProps> = ({
       streamRef.current = stream;
 
       if (videoRef.current) {
-        videoRef.current.setAttribute('autoplay', '');
-        videoRef.current.setAttribute('muted', '');
-        videoRef.current.setAttribute('playsinline', '');
         videoRef.current.muted = true;
         videoRef.current.playsInline = true;
         videoRef.current.srcObject = stream;
-
         try {
           await videoRef.current.play();
         } catch (playErr) {
@@ -103,9 +115,17 @@ export const WebcamFeed: React.FC<WebcamFeedProps> = ({
 
       setStreamActive(true);
       setCameraError(null);
+      setConnecting(false);
       if (onStreamActive) onStreamActive(true);
     } catch (err: any) {
+      // Auto-retry if camera hardware was briefly busy during page transition
+      if (attempt < 3 && err?.name !== 'NotAllowedError' && err?.name !== 'PermissionDeniedError') {
+        setTimeout(() => startHardwareCamera(attempt + 1), 500);
+        return;
+      }
+
       setStreamActive(false);
+      setConnecting(false);
       if (onStreamActive) onStreamActive(false);
       if (err?.name === 'NotAllowedError' || err?.name === 'PermissionDeniedError') {
         setCameraError('Please click "Allow" on the browser camera prompt to turn on your physical camera.');
@@ -114,10 +134,18 @@ export const WebcamFeed: React.FC<WebcamFeedProps> = ({
       } else {
         setCameraError('Camera is busy or unavailable. Close other camera apps and retry.');
       }
-    } finally {
-      setConnecting(false);
     }
   };
+
+  // Ensure video element always binds & plays stream when active
+  useEffect(() => {
+    if (streamActive && streamRef.current && videoRef.current) {
+      if (videoRef.current.srcObject !== streamRef.current) {
+        videoRef.current.srcObject = streamRef.current;
+      }
+      videoRef.current.play().catch(() => {});
+    }
+  }, [streamActive]);
 
   useEffect(() => {
     startHardwareCamera();
@@ -309,18 +337,18 @@ export const WebcamFeed: React.FC<WebcamFeedProps> = ({
 
   return (
     <div className={`relative bg-slate-950 rounded-xl overflow-hidden border border-slate-800 shadow-xl flex items-center justify-center ${className}`}>
-      {/* REAL PHYSICAL HARDWARE VIDEO FEED */}
+      {/* REAL PHYSICAL HARDWARE VIDEO FEED (never display:none so browser decodes frames immediately) */}
       <video
         ref={videoRef}
         autoPlay
         playsInline
         muted
-        className={`w-full h-full object-cover transform scale-x-[-1] ${streamActive ? 'block' : 'hidden'}`}
+        className={`w-full h-full object-cover transform scale-x-[-1] transition-opacity duration-200 ${streamActive ? 'opacity-100' : 'opacity-0 absolute inset-0 pointer-events-none'}`}
       />
 
       {/* Camera Connecting / Permission Prompt State */}
       {!streamActive && (
-        <div className="p-6 text-center space-y-3 max-w-xs">
+        <div className="relative z-10 p-6 text-center space-y-3 max-w-xs">
           <div className="w-12 h-12 rounded-2xl bg-blue-500/15 border border-blue-500/30 flex items-center justify-center mx-auto">
             <Camera className={`w-6 h-6 text-sky-400 ${connecting ? 'animate-pulse' : ''}`} />
           </div>
@@ -335,7 +363,7 @@ export const WebcamFeed: React.FC<WebcamFeedProps> = ({
           {!connecting && (
             <button
               type="button"
-              onClick={startHardwareCamera}
+              onClick={() => startHardwareCamera(1)}
               className="px-4 py-2 rounded-lg bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold inline-flex items-center space-x-1.5 shadow-md transition-all"
             >
               <RefreshCw className="w-3.5 h-3.5" />

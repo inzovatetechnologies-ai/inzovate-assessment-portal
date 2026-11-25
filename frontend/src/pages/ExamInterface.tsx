@@ -215,6 +215,7 @@ export const ExamInterface: React.FC<ExamInterfaceProps> = ({ currentUser, onExa
   }, [loading]);
 
   // Security Anti-Cheating Listeners (Tab switch, window blur, keyboard)
+  const examMountTimeRef = useRef(Date.now());
   useEffect(() => {
     if (!sessionId) return;
 
@@ -225,6 +226,8 @@ export const ExamInterface: React.FC<ExamInterfaceProps> = ({ currentUser, onExa
     };
 
     const handleWindowBlur = () => {
+      // Allow 5s grace period at exam start so browser Camera Permission popup does not trigger false blur warning
+      if (Date.now() - examMountTimeRef.current < 5000) return;
       triggerSecurityViolation('window_blur', 'Window focus lost. Please remain strictly on the examination window.');
     };
 
