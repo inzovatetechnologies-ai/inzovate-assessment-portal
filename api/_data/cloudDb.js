@@ -32,7 +32,7 @@ function readLocalCache() {
 
 function writeLocalCache(db) {
   try {
-    fs.writeFileSync(LOCAL_CACHE_FILE, JSON.stringify(db, null, 2), 'utf8');
+    fs.writeFileSync(LOCAL_CACHE_FILE, JSON.stringify(db), 'utf8');
   } catch (e) {}
 }
 
@@ -43,6 +43,7 @@ function ghRequest(method, reqPath, data) {
       hostname: 'api.github.com',
       path: reqPath,
       method,
+      timeout: 15000,
       headers: {
         'User-Agent': 'Inzovate-Portal-CloudDB',
         'Authorization': 'token ' + GITHUB_TOKEN,
@@ -55,11 +56,39 @@ function ghRequest(method, reqPath, data) {
       res.on('data', d => body += d);
       res.on('end', () => resolve({ status: res.statusCode, body }));
     });
-    req.on('error', (err) => resolve({ status: 500, error: err }));
+    req.on('timeout', () => { req.destroy(); resolve({ status: 504, body: 'GitHub API request timeout' }); });
+    req.on('error', (err) => resolve({ status: 500, body: err?.message || 'Network error', error: err }));
     if (data) req.write(postData);
     req.end();
   });
 }
+
+async function fetchLatestDbWithSha() {
+  const res = await ghRequest('GET', '/repos/' + REPO_OWNER + '/' + REPO_NAME + '/contents/' + FILE_PATH + '?ref=' + BRANCH);
+  if (res.status !== 200) return { sha: null, db: null };
+
+  const parsed = JSON.parse(res.body);
+  const sha = parsed.sha;
+  let contentStr = '';
+
+  if (parsed.content && parsed.content.trim()) {
+    contentStr = Buffer.from(parsed.content, 'base64').toString('utf8');
+  } else if (sha) {
+    // GitHub Contents API omits content for files > 1 MB; fetch via Git Blobs API (supports up to 100 MB)
+    const blobRes = await ghRequest('GET', '/repos/' + REPO_OWNER + '/' + REPO_NAME + '/git/blobs/' + sha);
+    if (blobRes.status === 200) {
+      const blobParsed = JSON.parse(blobRes.body);
+      if (blobParsed.content) {
+        contentStr = Buffer.from(blobParsed.content, 'base64').toString('utf8');
+      }
+    }
+  }
+
+  if (!contentStr || !contentStr.trim()) return { sha, db: null };
+  return { sha, db: JSON.parse(contentStr) };
+}
+
+let inFlightGet = null;
 
 export async function getDb(forceRefresh = false) {
   const now = Date.now();
@@ -67,23 +96,29 @@ export async function getDb(forceRefresh = false) {
     return memCache;
   }
 
-  try {
-    const res = await ghRequest('GET', '/repos/' + REPO_OWNER + '/' + REPO_NAME + '/contents/' + FILE_PATH + '?ref=' + BRANCH);
-    if (res.status === 200) {
-      const parsed = JSON.parse(res.body);
-      const content = Buffer.from(parsed.content, 'base64').toString('utf8');
-      const db = JSON.parse(content);
-      memCache = db;
-      lastFetchTime = now;
-      writeLocalCache(db);
-      return db;
-    }
-    if (memCache) return memCache;
-  } catch (e) {
-    console.error('CloudDB getDb error:', e);
+  if (inFlightGet) {
+    return inFlightGet;
   }
 
-  return memCache || readLocalCache();
+  inFlightGet = (async () => {
+    try {
+      const { db } = await fetchLatestDbWithSha();
+      if (db) {
+        memCache = db;
+        lastFetchTime = Date.now();
+        writeLocalCache(db);
+        return db;
+      }
+      if (memCache) return memCache;
+    } catch (e) {
+      console.error('CloudDB getDb error:', e);
+    } finally {
+      inFlightGet = null;
+    }
+    return memCache || readLocalCache();
+  })();
+
+  return inFlightGet;
 }
 
 let mutationQueue = Promise.resolve();
@@ -105,12 +140,10 @@ async function executeMutateDb(mutatorFn, maxRetries = 20) {
     let currentDb = { candidates: [], assessment_results: [], exam_sessions: [] };
 
     try {
-      const res = await ghRequest('GET', '/repos/' + REPO_OWNER + '/' + REPO_NAME + '/contents/' + FILE_PATH + '?ref=' + BRANCH);
-      if (res.status === 200) {
-        const parsed = JSON.parse(res.body);
-        sha = parsed.sha;
-        const content = Buffer.from(parsed.content, 'base64').toString('utf8');
-        currentDb = JSON.parse(content);
+      const latest = await fetchLatestDbWithSha();
+      sha = latest.sha;
+      if (latest.db) {
+        currentDb = latest.db;
       } else {
         currentDb = memCache || readLocalCache();
       }
@@ -130,7 +163,7 @@ async function executeMutateDb(mutatorFn, maxRetries = 20) {
     try {
       const putPayload = {
         message: 'CloudDB auto-sync update (high-concurrency resilient)',
-        content: Buffer.from(JSON.stringify(updatedDb, null, 2)).toString('base64'),
+        content: Buffer.from(JSON.stringify(updatedDb)).toString('base64'),
         branch: BRANCH,
         ...(sha ? { sha } : {})
       };
@@ -245,7 +278,7 @@ export async function saveExamResultToDb(candidateId, result) {
         domainName: result.domainName,
         jobRoleId: result.jobRoleId,
         domainId: result.domainId,
-        assessmentStatus: 'Completed',
+        assessmentStatus: result.status === 'Terminated' ? 'Terminated' : 'Completed',
         assessmentResult: result,
         totalScore: result.totalScore,
         percentage: result.percentage,

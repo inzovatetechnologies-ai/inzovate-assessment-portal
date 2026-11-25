@@ -69,6 +69,7 @@ export const AdminDashboard: React.FC = () => {
   const [stageFilter, setStageFilter] = useState('');
   const [collegeFilter, setCollegeFilter] = useState('');
   const [districtFilter, setDistrictFilter] = useState('');
+  const [dateFilter, setDateFilter] = useState('');
   const [collegeSearchInput, setCollegeSearchInput] = useState('');
   const [showCollegeDropdown, setShowCollegeDropdown] = useState(false);
   const [sortOrder, setSortOrder] = useState<'score_desc' | 'score_asc' | 'name_asc'>('score_desc');
@@ -269,7 +270,22 @@ export const AdminDashboard: React.FC = () => {
         (c.district || '').toLowerCase().includes(districtFilter.toLowerCase());
     }
 
-    return matchesSearch && matchesStage && matchesCollege && matchesDistrict;
+    // Date matching (YYYY-MM-DD in local timezone)
+    let matchesDate = true;
+    if (dateFilter) {
+      const rawDate = c.completedAt || c.assessmentResult?.completedAt || c.createdAt;
+      if (rawDate) {
+        const d = new Date(rawDate);
+        const yyyy = d.getFullYear();
+        const mm = String(d.getMonth() + 1).padStart(2, '0');
+        const dd = String(d.getDate()).padStart(2, '0');
+        matchesDate = `${yyyy}-${mm}-${dd}` === dateFilter;
+      } else {
+        matchesDate = false;
+      }
+    }
+
+    return matchesSearch && matchesStage && matchesCollege && matchesDistrict && matchesDate;
   });
 
   const activeCandidates = filteredCandidates.filter((c: any) => c.status !== 'deleted');
@@ -414,10 +430,11 @@ export const AdminDashboard: React.FC = () => {
     const link = document.createElement('a');
     link.setAttribute('href', encodedUri);
     const collegeTag = collegeFilter ? collegeFilter.replace(/[^a-zA-Z0-9]/g, '_') : 'All_Colleges';
+    const dateTag = dateFilter ? `_${dateFilter}` : '';
     const filterTag = selectionDecisionFilter !== 'all' ? `_${selectionDecisionFilter}` : '';
     link.setAttribute(
       'download',
-      `Inzovate_Assessment_MarkList_${collegeTag}${filterTag}_${new Date().toISOString().slice(0, 10)}.csv`
+      `Inzovate_Assessment_MarkList_${collegeTag}${dateTag}${filterTag}_${new Date().toISOString().slice(0, 10)}.csv`
     );
     document.body.appendChild(link);
     link.click();
@@ -1054,8 +1071,31 @@ export const AdminDashboard: React.FC = () => {
                 </p>
               </div>
 
-              {/* Sort Controls & Export Buttons */}
+              {/* Sort Controls, Date Filter & Export Buttons */}
               <div className="flex flex-wrap items-center gap-2">
+                {/* Date Filter */}
+                <div className="flex items-center space-x-1.5 bg-slate-50 border border-slate-200 px-3 py-1.5 rounded-xl text-xs font-semibold text-slate-700 shadow-sm">
+                  <Calendar className="w-3.5 h-3.5 text-indigo-600" />
+                  <span>Date:</span>
+                  <input
+                    type="date"
+                    value={dateFilter}
+                    onChange={(e) => setDateFilter(e.target.value)}
+                    className="bg-transparent border-none text-xs font-bold text-indigo-700 focus:outline-none cursor-pointer"
+                    title="Filter by Assessment / Registration Date"
+                  />
+                  {dateFilter && (
+                    <button
+                      type="button"
+                      onClick={() => setDateFilter('')}
+                      className="text-[10px] font-bold text-rose-600 hover:text-rose-800 px-1"
+                      title="Clear date filter"
+                    >
+                      ✕
+                    </button>
+                  )}
+                </div>
+
                 {/* Sort Order Selector */}
                 <div className="flex items-center space-x-1.5 bg-slate-50 border border-slate-200 px-3 py-1.5 rounded-xl text-xs font-semibold text-slate-700 shadow-sm">
                   <ArrowUpDown className="w-3.5 h-3.5 text-blue-600" />

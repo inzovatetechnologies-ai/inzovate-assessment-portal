@@ -39,6 +39,10 @@ export const ExamInterface: React.FC<ExamInterfaceProps> = ({ currentUser, onExa
   // Timer & Security
   const [timeRemainingSeconds, setTimeRemainingSeconds] = useState(45 * 60);
   const [violationsCount, setViolationsCount] = useState(0);
+  const [tabSwitchCount, setTabSwitchCount] = useState(0);
+  const violationsCountRef = useRef(0);
+  const tabSwitchCountRef = useRef(0);
+  const lastTabSwitchMsRef = useRef(0);
   const [violationModal, setViolationModal] = useState<{ open: boolean; message: string; count: number } | null>(null);
   const [submitModalOpen, setSubmitModalOpen] = useState(false);
   const [submitting, setSubmitting] = useState(false);
@@ -222,21 +226,76 @@ export const ExamInterface: React.FC<ExamInterfaceProps> = ({ currentUser, onExa
     };
   }, [sessionId, violationsCount]);
 
-  const triggerSecurityViolation = async (eventType: string, details: string) => {
-    if (!sessionId) return;
-    try {
-      const res = await api.logViolation({ sessionId, eventType, details });
-      if (res.success) {
-        setViolationsCount(res.violationCount);
-        setViolationModal({
-          open: true,
-          message: res.message,
-          count: res.violationCount,
-        });
+  const triggerSecurityViolation = (eventType: string, details: string, immediateTerminate = false) => {
+    if (!sessionId || isSubmittingOrDoneRef.current) return;
+
+    // Handle Tab Switch / Window Blur with strict 2-warning -> 3rd-time termination rule
+    if (eventType === 'tab_switch' || eventType === 'window_blur') {
+      const now = Date.now();
+      if (now - lastTabSwitchMsRef.current < 1200) return;
+      lastTabSwitchMsRef.current = now;
+
+      const nextTabCount = tabSwitchCountRef.current + 1;
+      tabSwitchCountRef.current = nextTabCount;
+      setTabSwitchCount(nextTabCount);
+
+      const nextViolations = violationsCountRef.current + 1;
+      violationsCountRef.current = nextViolations;
+      setViolationsCount(nextViolations);
+
+      api.logViolation({ sessionId, eventType, details, currentCount: nextViolations - 1 } as any).catch(() => {});
+
+      if (nextTabCount >= 3 || nextViolations >= 15) {
+        setViolationModal(null);
+        handleAutoSubmit(
+          nextTabCount >= 3
+            ? 'Terminated: Tab Switch Limit Exceeded (3/3)'
+            : 'Terminated: Maximum Proctoring Violations (15/15) Exceeded'
+        );
+        return;
       }
-    } catch (err) {
-      console.error('Failed to log violation:', err);
+
+      const tabMsg =
+        nextTabCount === 1
+          ? `Tab Switch Warning (1 of 2): ${details} One more warning remains before automatic termination.`
+          : `FINAL TAB SWITCH WARNING (2 of 2): ${details} Switching tabs or leaving this window ONE MORE TIME will IMMEDIATELY TERMINATE your assessment!`;
+
+      setViolationModal({
+        open: true,
+        message: tabMsg,
+        count: nextViolations,
+      });
+      return;
     }
+
+    // Immediate termination for Mobile Phone Detection
+    if (immediateTerminate) {
+      const nextViolations = violationsCountRef.current + 1;
+      violationsCountRef.current = nextViolations;
+      setViolationsCount(nextViolations);
+      api.logViolation({ sessionId, eventType, details, currentCount: nextViolations - 1 } as any).catch(() => {});
+      setViolationModal(null);
+      handleAutoSubmit(`Terminated: ${details}`);
+      return;
+    }
+
+    // Standard Camera / Keyboard Violations -> Auto-terminate at 15
+    const nextViolations = violationsCountRef.current + 1;
+    violationsCountRef.current = nextViolations;
+    setViolationsCount(nextViolations);
+    api.logViolation({ sessionId, eventType, details, currentCount: nextViolations - 1 } as any).catch(() => {});
+
+    if (nextViolations >= 15) {
+      setViolationModal(null);
+      handleAutoSubmit('Terminated: Maximum Proctoring Violations (15/15) Exceeded');
+      return;
+    }
+
+    setViolationModal({
+      open: true,
+      message: `${details} (Violation ${nextViolations} of 15 — reaching 15 violations will automatically terminate your exam.)`,
+      count: nextViolations,
+    });
   };
 
   // Answer Selection & Heartbeat
@@ -793,15 +852,27 @@ export const ExamInterface: React.FC<ExamInterfaceProps> = ({ currentUser, onExa
               </span>
             </div>
 
-            {/* Real Webcam Component */}
-            <WebcamFeed className="w-full h-44 shadow-lg" />
+            {/* Real Webcam Component with Live AI Proctoring */}
+            <WebcamFeed
+              className="w-full h-44 shadow-lg"
+              proctoringEnabled={!loading && Boolean(sessionId)}
+              onProctorViolation={triggerSecurityViolation}
+            />
           </div>
 
           {/* Assessment Integrity Widgets */}
           <div className="p-4 rounded-xl bg-slate-900/80 border border-slate-800 space-y-3 text-xs">
             <div className="flex items-center justify-between">
-              <span className="text-slate-400">Monitoring Sensor</span>
-              <span className="font-semibold text-emerald-400">Face Detected</span>
+              <span className="text-slate-400">Proctor Violations</span>
+              <span className={`font-bold font-mono ${violationsCount >= 10 ? 'text-rose-400' : violationsCount > 0 ? 'text-amber-400' : 'text-emerald-400'}`}>
+                {violationsCount} / 15
+              </span>
+            </div>
+            <div className="flex items-center justify-between">
+              <span className="text-slate-400">Tab Switches</span>
+              <span className={`font-bold font-mono ${tabSwitchCount >= 2 ? 'text-rose-400' : tabSwitchCount > 0 ? 'text-amber-400' : 'text-emerald-400'}`}>
+                {tabSwitchCount} / 3
+              </span>
             </div>
             <div className="flex items-center justify-between">
               <span className="text-slate-400">Network Latency</span>

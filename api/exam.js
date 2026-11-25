@@ -98,7 +98,7 @@ export default async function handler(req, res) {
     }
 
     const cleanId = String(candidateId).toLowerCase().trim();
-    const db = await getDb(true);
+    const db = await getDb(false);
     const results = db.assessment_results || [];
     const found = results.find(r =>
       (r.candidateId && r.candidateId.toLowerCase().trim() === cleanId) ||
@@ -159,9 +159,16 @@ export default async function handler(req, res) {
 
   // 6. Log Proctoring Violation
   if (effectiveRoute.includes('violation')) {
+    const payload = await parseBody(req);
+    const currentCount = Number(payload.currentCount || 0) + 1;
     res.statusCode = 200;
     res.setHeader('Content-Type', 'application/json');
-    return res.end(JSON.stringify({ success: true, violationLogged: true }));
+    return res.end(JSON.stringify({
+      success: true,
+      violationLogged: true,
+      violationCount: currentCount,
+      message: payload.details || 'Proctoring violation recorded.'
+    }));
   }
 
   // 7. Terminate Session
@@ -190,7 +197,7 @@ export default async function handler(req, res) {
     const questionMap = new Map();
     allQuestions.forEach(q => questionMap.set(q._id, q));
 
-    const db = await getDb(true);
+    const db = await getDb(false);
     const cleanCandId = String(candidateId || '').toLowerCase().trim();
     const cleanCandEmail = String(candidateEmail || '').toLowerCase().trim();
     const candidate = (db.candidates || []).find(c =>
@@ -269,7 +276,8 @@ export default async function handler(req, res) {
       selectionStatus,
       passCutoff: '> 25',
       performanceCategory,
-      status: 'Completed',
+      status: String(payload.submissionType || '').startsWith('Terminated') ? 'Terminated' : 'Completed',
+      submissionType: payload.submissionType || 'manual',
       certificateId,
       sectionScores: {
         'section-1': { score: aptScore, total: 15, percentage: Math.round((aptScore / 15) * 100) },
@@ -302,7 +310,7 @@ export default async function handler(req, res) {
       }));
     }
 
-    const db = await getDb(true);
+    const db = await getDb(false);
     const cleanId = String(candidateId || '').toLowerCase().trim();
     const cleanEmail = String(candidateEmail || '').toLowerCase().trim();
     const matchedCandidate = (db.candidates || []).find(c =>

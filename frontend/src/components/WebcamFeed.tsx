@@ -3,22 +3,59 @@ import { Camera, ShieldCheck, AlertCircle, RefreshCw } from 'lucide-react';
 
 interface WebcamFeedProps {
   onStreamActive?: (active: boolean) => void;
+  onProctorViolation?: (type: string, reason: string, immediateTerminate?: boolean) => void;
+  proctoringEnabled?: boolean;
   className?: string;
   showOverlay?: boolean;
 }
 
+declare global {
+  interface Window {
+    tf?: any;
+    blazeface?: any;
+    cocoSsd?: any;
+  }
+}
+
+function loadScriptOnce(src: string): Promise<void> {
+  return new Promise((resolve, reject) => {
+    const existing = document.querySelector(`script[src="${src}"]`);
+    if (existing) {
+      if ((existing as any).dataset.loaded === 'true') return resolve();
+      existing.addEventListener('load', () => resolve());
+      existing.addEventListener('error', () => reject(new Error(`Failed to load ${src}`)));
+      return;
+    }
+    const script = document.createElement('script');
+    script.src = src;
+    script.async = true;
+    script.crossOrigin = 'anonymous';
+    script.onload = () => {
+      script.dataset.loaded = 'true';
+      resolve();
+    };
+    script.onerror = () => reject(new Error(`Failed to load ${src}`));
+    document.head.appendChild(script);
+  });
+}
+
 export const WebcamFeed: React.FC<WebcamFeedProps> = ({
   onStreamActive,
+  onProctorViolation,
+  proctoringEnabled = false,
   className = '',
   showOverlay = true,
 }) => {
   const videoRef = useRef<HTMLVideoElement | null>(null);
   const streamRef = useRef<MediaStream | null>(null);
+  const onViolationRef = useRef(onProctorViolation);
+  onViolationRef.current = onProctorViolation;
 
   const [streamActive, setStreamActive] = useState(false);
   const [cameraError, setCameraError] = useState<string | null>(null);
   const [connecting, setConnecting] = useState(true);
   const [isShutterHintVisible, setIsShutterHintVisible] = useState(true);
+  const [aiStatus, setAiStatus] = useState<string>('Initializing AI Proctor...');
 
   const stopHardwareTracks = () => {
     if (streamRef.current) {
@@ -85,7 +122,6 @@ export const WebcamFeed: React.FC<WebcamFeedProps> = ({
   useEffect(() => {
     startHardwareCamera();
 
-    // Auto-start physical camera as soon as permission changes to 'granted'
     let permStatus: PermissionStatus | null = null;
     if (navigator.permissions && navigator.permissions.query) {
       navigator.permissions
@@ -106,6 +142,160 @@ export const WebcamFeed: React.FC<WebcamFeedProps> = ({
       stopHardwareTracks();
     };
   }, []);
+
+  // Real-Time AI Proctoring Loop (Mobile Phone, Looking Down >1s, Head Turn, Multi-Face, No Face)
+  useEffect(() => {
+    if (!proctoringEnabled || !streamActive) return;
+
+    let cancelled = false;
+    let faceModel: any = null;
+    let objectModel: any = null;
+    let timerId: any = null;
+
+    let lookDownStartMs: number | null = null;
+    let headTurnStartMs: number | null = null;
+    let noFaceStartMs: number | null = null;
+    let lastViolationMs = 0;
+
+    const emitViolation = (type: string, reason: string, immediateTerminate = false) => {
+      const now = Date.now();
+      if (!immediateTerminate && now - lastViolationMs < 3500) return;
+      lastViolationMs = now;
+      if (onViolationRef.current) {
+        onViolationRef.current(type, reason, immediateTerminate);
+      }
+    };
+
+    async function initModelsAndLoop() {
+      try {
+        setAiStatus('Loading AI Vision...');
+        await loadScriptOnce('https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.20.0/dist/tf.min.js');
+        await Promise.all([
+          loadScriptOnce('https://cdn.jsdelivr.net/npm/@tensorflow-models/blazeface@0.1.0/dist/blazeface.min.js'),
+          loadScriptOnce('https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd@2.2.3/dist/coco-ssd.min.js'),
+        ]);
+        if (cancelled) return;
+
+        if (window.blazeface) {
+          faceModel = await window.blazeface.load();
+        }
+        if (window.cocoSsd) {
+          objectModel = await window.cocoSsd.load({ base: 'lite_mobilenet_v2' });
+        }
+        if (cancelled) return;
+        setAiStatus('AI Proctoring Active');
+      } catch (err) {
+        console.warn('AI Vision CDN load failed, using fallback frame monitor:', err);
+        setAiStatus('Webcam Monitor Active');
+      }
+
+      const runCheck = async () => {
+        if (cancelled) return;
+        const video = videoRef.current;
+        if (!video || video.readyState < 2 || video.videoWidth === 0) {
+          timerId = setTimeout(runCheck, 600);
+          return;
+        }
+
+        const now = Date.now();
+
+        try {
+          // 1. Mobile Phone Detection (Instant Termination)
+          if (objectModel) {
+            const objects = await objectModel.detect(video);
+            if (cancelled) return;
+            const phone = objects.find(
+              (o: any) => o.class === 'cell phone' && o.score >= 0.42
+            );
+            if (phone) {
+              emitViolation(
+                'mobile_phone',
+                'Mobile Phone detected in camera frame! Assessment terminated immediately.',
+                true
+              );
+              return;
+            }
+          }
+
+          // 2. Face, Head Turn & Looking Down (> 1s) Detection
+          if (faceModel) {
+            const faces = await faceModel.estimateFaces(video, false);
+            if (cancelled) return;
+
+            if (!faces || faces.length === 0) {
+              if (!noFaceStartMs) noFaceStartMs = now;
+              else if (now - noFaceStartMs >= 1500) {
+                noFaceStartMs = now;
+                emitViolation('no_face', 'Face not visible in camera for over 1.5 seconds.');
+              }
+              lookDownStartMs = null;
+              headTurnStartMs = null;
+            } else {
+              noFaceStartMs = null;
+
+              if (faces.length > 1) {
+                emitViolation('multiple_faces', 'Multiple people detected in camera frame.');
+              }
+
+              const f = faces[0];
+              const lm = f.landmarks; // [rightEye, leftEye, nose, mouth, rightEar, leftEar]
+              if (lm && lm.length >= 4) {
+                const rightEye = lm[0];
+                const leftEye = lm[1];
+                const nose = lm[2];
+                const mouth = lm[3];
+
+                const eyeMidX = (rightEye[0] + leftEye[0]) / 2;
+                const eyeMidY = (rightEye[1] + leftEye[1]) / 2;
+                const eyeDist = Math.max(10, Math.abs(leftEye[0] - rightEye[0]));
+
+                // Head Turn Left/Right: nose shifts far from eye midpoint
+                const yawRatio = Math.abs(nose[0] - eyeMidX) / eyeDist;
+                if (yawRatio > 0.45) {
+                  if (!headTurnStartMs) headTurnStartMs = now;
+                  else if (now - headTurnStartMs >= 1000) {
+                    headTurnStartMs = now;
+                    emitViolation('head_turn', 'Looking away / head turned away from screen for over 1 second.');
+                  }
+                } else {
+                  headTurnStartMs = null;
+                }
+
+                // Looking Down (> 1 second): nose-to-eye vertical ratio or face box drops low
+                const faceHeight = Math.max(20, (f.bottomRight?.[1] || 0) - (f.topLeft?.[1] || 0));
+                const noseDropRatio = (nose[1] - eyeMidY) / faceHeight;
+                const mouthToNose = (mouth[1] - nose[1]) / faceHeight;
+                if (noseDropRatio < 0.08 || mouthToNose < 0.08 || (f.topLeft?.[1] || 0) > video.videoHeight * 0.62) {
+                  if (!lookDownStartMs) lookDownStartMs = now;
+                  else if (now - lookDownStartMs >= 1000) {
+                    lookDownStartMs = now;
+                    emitViolation('looking_down', 'Looking down away from screen for over 1 second.');
+                  }
+                } else {
+                  lookDownStartMs = null;
+                }
+              }
+            }
+          }
+        } catch (err) {
+          // Ignore transient frame errors
+        }
+
+        if (!cancelled) {
+          timerId = setTimeout(runCheck, 550);
+        }
+      };
+
+      timerId = setTimeout(runCheck, 800);
+    }
+
+    initModelsAndLoop();
+
+    return () => {
+      cancelled = true;
+      if (timerId) clearTimeout(timerId);
+    };
+  }, [proctoringEnabled, streamActive]);
 
   return (
     <div className={`relative bg-slate-950 rounded-xl overflow-hidden border border-slate-800 shadow-xl flex items-center justify-center ${className}`}>
@@ -155,7 +345,7 @@ export const WebcamFeed: React.FC<WebcamFeedProps> = ({
 
           <div className="flex items-center space-x-1 px-2.5 py-0.5 rounded-full bg-black/85 backdrop-blur-md text-[10px] text-sky-300 border border-slate-700 shadow">
             <ShieldCheck className="w-3.5 h-3.5 text-sky-400" />
-            <span className="font-semibold">Integrity Verified</span>
+            <span className="font-semibold">{proctoringEnabled ? aiStatus : 'Integrity Verified'}</span>
           </div>
         </div>
       )}
