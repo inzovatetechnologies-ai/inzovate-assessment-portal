@@ -39,13 +39,20 @@ export const RegistrationPage: React.FC<RegistrationPageProps> = ({
   const [loading, setLoading] = useState(false);
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
 
-  // Success Modal State
+  // Success Modal State (persisted in sessionStorage so refresh does not lose it)
   const [successInfo, setSuccessInfo] = useState<{
     candidateId: string;
     fullName: string;
     email: string;
     candidateObj?: any;
-  } | null>(null);
+  } | null>(() => {
+    try {
+      const saved = sessionStorage.getItem('inzovate_reg_success');
+      return saved ? JSON.parse(saved) : null;
+    } catch (e) {
+      return null;
+    }
+  });
 
   // Form State
   const [formData, setFormData] = useState({
@@ -274,21 +281,33 @@ export const RegistrationPage: React.FC<RegistrationPageProps> = ({
       if (res.success) {
         const enrichedCandidate = {
           ...(res.candidate || {}),
+          id: res.candidateId || res.candidate?.candidateId,
           candidateId: res.candidateId || res.candidate?.candidateId,
           fullName: formData.fullName,
           email: formData.email,
+          role: 'Candidate',
           jobRoleId: selectedRole?._id || formData.jobRoleId,
           jobRoleTitle: roleTitle,
           domainId: selectedDomain?._id || formData.domainId,
           domainName: domainName,
           collegeName: formData.collegeName,
         };
-        setSuccessInfo({
+        try {
+          localStorage.setItem('inzovate_user', JSON.stringify(enrichedCandidate));
+          localStorage.setItem('inzovate_token', res.token || 'inz_session_direct');
+          localStorage.removeItem('inzovate_exam_completed');
+        } catch (e) {}
+
+        const infoObj = {
           candidateId: res.candidateId,
           fullName: formData.fullName,
           email: formData.email,
           candidateObj: enrichedCandidate,
-        });
+        };
+        try {
+          sessionStorage.setItem('inzovate_reg_success', JSON.stringify(infoObj));
+        } catch (e) {}
+        setSuccessInfo(infoObj);
       } else {
         setErrorMsg(res.message);
       }
@@ -1109,12 +1128,12 @@ export const RegistrationPage: React.FC<RegistrationPageProps> = ({
 
             <div className="space-y-1">
               <span className="text-[11px] font-bold uppercase tracking-wider text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-full">
-                Registration Verified & Confirmed
+                Registration Verified &amp; Account Active
               </span>
               <h2 className="text-2xl font-black text-[#0A1128] mt-2">Candidate Profile Created!</h2>
               <p className="text-xs text-slate-500 max-w-sm mx-auto">
-                Your profile has been saved. You must now log in with your credentials to open the portal and take the
-                assessment.
+                Your profile has been saved and your account is now active. Click below to proceed directly to launch
+                your assessment.
               </p>
             </div>
 
@@ -1144,30 +1163,20 @@ export const RegistrationPage: React.FC<RegistrationPageProps> = ({
             <div className="space-y-2 pt-2">
               <button
                 onClick={() => {
-                  const cId = successInfo.candidateId;
-                  const cPw = formData.password;
-                  setSuccessInfo(null);
-                  onOpenLogin(cId, cPw);
-                }}
-                className="w-full py-3.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs shadow-lg shadow-blue-600/30 flex items-center justify-center space-x-2 transition-all transform hover:-translate-y-0.5"
-              >
-                <span>Proceed to Candidate Sign In</span>
-                <ArrowRight className="w-4 h-4" />
-              </button>
-
-              <button
-                onClick={() => {
                   const candidateData = successInfo.candidateObj || {
                     ...formData,
                     candidateId: successInfo.candidateId,
                   };
+                  try {
+                    sessionStorage.removeItem('inzovate_reg_success');
+                  } catch (e) {}
                   setSuccessInfo(null);
                   onRegistrationSuccess(candidateData);
                 }}
-                className="w-full py-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold text-xs transition-colors flex items-center justify-center space-x-1.5"
+                className="w-full py-3.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs shadow-lg shadow-blue-600/30 flex items-center justify-center space-x-2 transition-all transform hover:-translate-y-0.5"
               >
                 <span>Start Assessment Immediately (Direct)</span>
-                <ArrowRight className="w-4 h-4 text-slate-600" />
+                <ArrowRight className="w-4 h-4" />
               </button>
             </div>
           </div>

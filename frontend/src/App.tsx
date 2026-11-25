@@ -24,8 +24,21 @@ import { CertificateVerifyPage } from './pages/CertificateVerifyPage';
 import { CandidateProfilePage } from './pages/CandidateProfilePage';
 
 export default function App() {
-  const [currentUser, setCurrentUser] = useState<User | null>(null);
-  const [activeTab, setActiveTab] = useState<string>('home');
+  const [currentUser, setCurrentUser] = useState<User | null>(() => {
+    try {
+      const savedUser = localStorage.getItem('inzovate_user');
+      const savedToken = localStorage.getItem('inzovate_token');
+      if (savedUser && savedToken) return JSON.parse(savedUser);
+    } catch (e) {}
+    return null;
+  });
+  const [activeTab, setActiveTab] = useState<string>(() => {
+    try {
+      const savedTab = sessionStorage.getItem('inzovate_active_tab');
+      if (savedTab) return savedTab;
+    } catch (e) {}
+    return 'home';
+  });
   const [examResultData, setExamResultData] = useState<any>(null);
   const [isExamCompleted, setIsExamCompleted] = useState<boolean>(() => {
     return localStorage.getItem('inzovate_exam_completed') === 'true';
@@ -39,53 +52,29 @@ export default function App() {
   const [forgotPasswordInitialIdentifier, setForgotPasswordInitialIdentifier] = useState('');
   const [adminLoginOpen, setAdminLoginOpen] = useState(false);
 
-  // Check saved session on startup & strictly auto-logout candidate on reload/refresh
+  // Persist active tab across page refreshes & restore session on startup
+  useEffect(() => {
+    try {
+      sessionStorage.setItem('inzovate_active_tab', activeTab);
+    } catch (e) {}
+  }, [activeTab]);
+
   useEffect(() => {
     const savedUser = localStorage.getItem('inzovate_user');
     const savedToken = localStorage.getItem('inzovate_token');
     if (savedUser && savedToken) {
       try {
         const user = JSON.parse(savedUser);
-        if (user.role === 'Admin') {
-          setCurrentUser(user);
+        setCurrentUser(user);
+        if (user.role === 'Admin' && activeTab === 'home') {
           setActiveTab('admin-dash');
-        } else {
-          // STRICT CANDIDATE SECURITY POLICY:
-          // Candidate is automatically logged out upon page reload/refresh
-          localStorage.removeItem('inzovate_user');
-          localStorage.removeItem('inzovate_token');
-          setCurrentUser(null);
-          setActiveTab('home');
         }
       } catch (e) {
         localStorage.removeItem('inzovate_user');
         localStorage.removeItem('inzovate_token');
         setCurrentUser(null);
-        setActiveTab('home');
       }
     }
-
-    // Auto-wipe candidate session on beforeunload so reload forces fresh sign-in
-    const handleBeforeUnload = () => {
-      try {
-        if ('scrollRestoration' in window.history) {
-          window.history.scrollRestoration = 'manual';
-        }
-        window.scrollTo(0, 0);
-        document.documentElement.scrollTop = 0;
-        document.body.scrollTop = 0;
-        const raw = localStorage.getItem('inzovate_user');
-        if (raw) {
-          const u = JSON.parse(raw);
-          if (u.role === 'Candidate') {
-            localStorage.removeItem('inzovate_user');
-            localStorage.removeItem('inzovate_token');
-          }
-        }
-      } catch (e) {}
-    };
-    window.addEventListener('beforeunload', handleBeforeUnload);
-    return () => window.removeEventListener('beforeunload', handleBeforeUnload);
   }, []);
 
   // Instant Strict Scroll-To-Top on Initial Mount, Page Show, and Window Load
@@ -195,13 +184,17 @@ export default function App() {
     localStorage.removeItem('inzovate_token');
     localStorage.removeItem('inzovate_exam_completed');
     localStorage.removeItem('inzovate_session_id');
+    try {
+      sessionStorage.removeItem('inzovate_active_tab');
+      sessionStorage.removeItem('inzovate_reg_success');
+    } catch (e) {}
     setActiveTab('home');
   };
 
   const handleRegistrationSuccess = (candidate: any) => {
     if (candidate) {
       handleCandidateLoginSuccess(candidate, 'inz_session_direct');
-      setActiveTab('candidate-profile');
+      setActiveTab('system-check');
     } else {
       setActiveTab('home');
       setCandidateLoginOpen(true);
