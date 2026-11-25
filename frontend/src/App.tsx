@@ -134,6 +134,17 @@ export default function App() {
   }, []);
 
   const handleCandidateLoginSuccess = (user: any, token: string) => {
+    const cleanEmail = String(user?.email || '').toLowerCase().trim();
+    if (
+      user?.role === 'Admin' ||
+      cleanEmail === 'admin@inzovate-technologies.com' ||
+      cleanEmail === 'admin@inzovate.com' ||
+      cleanEmail === 'superadmin@inzovate.com'
+    ) {
+      handleAdminLoginSuccess(user, token);
+      return;
+    }
+
     const normalizedUser: User = {
       id: user.id || user._id,
       fullName: user.fullName || user.name,

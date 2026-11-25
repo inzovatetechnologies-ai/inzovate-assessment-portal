@@ -200,7 +200,7 @@ export const ExamInterface: React.FC<ExamInterfaceProps> = ({ currentUser, onExa
 
   // Server Countdown Timer
   useEffect(() => {
-    if (loading || timeRemainingSeconds <= 0) return;
+    if (loading) return;
     const interval = setInterval(() => {
       setTimeRemainingSeconds((prev) => {
         if (prev <= 1) {
@@ -212,7 +212,7 @@ export const ExamInterface: React.FC<ExamInterfaceProps> = ({ currentUser, onExa
       });
     }, 1000);
     return () => clearInterval(interval);
-  }, [loading, timeRemainingSeconds]);
+  }, [loading]);
 
   // Security Anti-Cheating Listeners (Tab switch, window blur, keyboard)
   useEffect(() => {
@@ -277,7 +277,7 @@ export const ExamInterface: React.FC<ExamInterfaceProps> = ({ currentUser, onExa
       window.removeEventListener('beforeunload', handleBeforeUnload);
       window.removeEventListener('unload', handleUnload);
     };
-  }, [sessionId, violationsCount]);
+  }, [sessionId]);
 
   const triggerSecurityViolation = (eventType: string, details: string, immediateTerminate = false) => {
     if (!sessionId || isSubmittingOrDoneRef.current) return;
@@ -351,55 +351,31 @@ export const ExamInterface: React.FC<ExamInterfaceProps> = ({ currentUser, onExa
     });
   };
 
-  // Answer Selection & Heartbeat
-  const handleSelectOption = async (optionId: string) => {
+  // Answer Selection (0ms Instant State Update — All answers submitted cleanly on Finish)
+  const handleSelectOption = (optionId: string) => {
     const currentQ = questions[currentIndex];
-    if (!currentQ || !sessionId) return;
-
-    const updatedAnswers = { ...answers, [currentQ._id]: optionId };
-    setAnswers(updatedAnswers);
-
-    // Auto-save to backend
-    api.saveAnswer({
-      sessionId,
-      questionId: currentQ._id,
-      selectedOption: optionId,
-    }).catch((err) => console.warn('Auto-save heartbeat failed:', err));
+    if (!currentQ) return;
+    setAnswers((prev) => ({ ...prev, [currentQ._id]: optionId }));
   };
 
   const handleClearResponse = () => {
     const currentQ = questions[currentIndex];
-    if (!currentQ || !sessionId) return;
-
-    const updated = { ...answers };
-    delete updated[currentQ._id];
-    setAnswers(updated);
-
-    api.saveAnswer({
-      sessionId,
-      questionId: currentQ._id,
-      selectedOption: '',
+    if (!currentQ) return;
+    setAnswers((prev) => {
+      const updated = { ...prev };
+      delete updated[currentQ._id];
+      return updated;
     });
   };
 
   const handleToggleMarkReview = () => {
     const currentQ = questions[currentIndex];
-    if (!currentQ || !sessionId) return;
-
-    let updated: string[];
-    const isMarked = markedForReview.includes(currentQ._id);
-    if (isMarked) {
-      updated = markedForReview.filter((id) => id !== currentQ._id);
-    } else {
-      updated = [...markedForReview, currentQ._id];
-    }
-    setMarkedForReview(updated);
-
-    api.saveAnswer({
-      sessionId,
-      questionId: currentQ._id,
-      isMarkedForReview: !isMarked,
-    });
+    if (!currentQ) return;
+    setMarkedForReview((prev) =>
+      prev.includes(currentQ._id)
+        ? prev.filter((id) => id !== currentQ._id)
+        : [...prev, currentQ._id]
+    );
   };
 
   const navigateToQuestion = (index: number) => {

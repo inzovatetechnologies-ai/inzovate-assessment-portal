@@ -190,19 +190,23 @@ export const WebcamFeed: React.FC<WebcamFeedProps> = ({
         setAiStatus('Webcam Monitor Active');
       }
 
+      let checkTick = 0;
+
       const runCheck = async () => {
         if (cancelled) return;
         const video = videoRef.current;
         if (!video || video.readyState < 2 || video.videoWidth === 0) {
-          timerId = setTimeout(runCheck, 600);
+          timerId = setTimeout(runCheck, 1200);
           return;
         }
 
         const now = Date.now();
+        checkTick++;
 
         try {
-          // 1. Mobile Phone Detection (Require 2 consecutive frames >= 0.62 confidence to avoid false positives)
-          if (objectModel) {
+          // Alternate object detection & face detection across ticks to keep UI clicks 100% lag-free
+          // 1. Mobile Phone Detection (on odd ticks, or every 2nd tick)
+          if (objectModel && checkTick % 2 === 1) {
             const objects = await objectModel.detect(video);
             if (cancelled) return;
             const phone = objects.find(
@@ -223,8 +227,8 @@ export const WebcamFeed: React.FC<WebcamFeedProps> = ({
             }
           }
 
-          // 2. Face, Head Turn & Looking Down (> 1s) Detection
-          if (faceModel) {
+          // 2. Face, Head Turn & Looking Down (> 1s) Detection (on even ticks)
+          if (faceModel && checkTick % 2 === 0) {
             const faces = await faceModel.estimateFaces(video, false);
             if (cancelled) return;
 
@@ -288,7 +292,7 @@ export const WebcamFeed: React.FC<WebcamFeedProps> = ({
         }
 
         if (!cancelled) {
-          timerId = setTimeout(runCheck, 550);
+          timerId = setTimeout(runCheck, 1400);
         }
       };
 
