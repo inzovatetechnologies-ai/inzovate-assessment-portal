@@ -375,11 +375,11 @@ export const api = {
   },
 
   // Assessment Engine
-  async startExam(candidateId?: string, candidateEmail?: string) {
+  async startExam(candidateId?: string, candidateEmail?: string, jobRoleId?: string) {
     const res = await fetch(`${API_BASE}/exam/start`, {
       method: 'POST',
       headers: getHeaders(),
-      body: JSON.stringify({ candidateId, candidateEmail }),
+      body: JSON.stringify({ candidateId, candidateEmail, jobRoleId }),
     });
     return handleResponse(res);
   },

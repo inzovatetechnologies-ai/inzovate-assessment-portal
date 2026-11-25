@@ -57,13 +57,15 @@ export const ExamInterface: React.FC<ExamInterfaceProps> = ({ currentUser, onExa
       try {
         let cid = currentUser?.candidateId;
         let cEmail = currentUser?.email;
-        if (!cid || !cEmail) {
+        let cRoleId = (currentUser as any)?.jobRoleId;
+        if (!cid || !cEmail || !cRoleId) {
           try {
             const saved = localStorage.getItem('inzovate_user');
             if (saved) {
               const u = JSON.parse(saved);
               if (!cid) cid = u.candidateId;
               if (!cEmail) cEmail = u.email;
+              if (!cRoleId) cRoleId = u.jobRoleId;
             }
           } catch (e) {}
         }
@@ -76,7 +78,7 @@ export const ExamInterface: React.FC<ExamInterfaceProps> = ({ currentUser, onExa
           return;
         }
 
-        const res = await api.startExam(cid, cEmail);
+        const res = await api.startExam(cid, cEmail, cRoleId);
         if (res.success && res.session && res.session.questions && res.session.questions.length > 0) {
           const s = res.session;
           setSessionId(s.sessionId);

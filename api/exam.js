@@ -332,10 +332,16 @@ export default async function handler(req, res) {
     }
 
     const allQuestions = loadAllQuestions();
+    const targetRoleId = matchedCandidate?.jobRoleId || payload.jobRoleId || 'role-soft-dev';
 
     const section1 = allQuestions.filter(q => q.section === 'section-1').slice(0, 15);
     const section2 = allQuestions.filter(q => q.section === 'section-2').slice(0, 15);
-    const section3 = allQuestions.filter(q => q.section === 'section-3').slice(0, 15);
+    const roleSection3 = allQuestions.filter(q => q.section === 'section-3' && q.roleId === targetRoleId);
+    const section3 = (
+      roleSection3.length >= 15
+        ? roleSection3
+        : [...roleSection3, ...allQuestions.filter(q => q.section === 'section-3' && q.roleId !== targetRoleId)]
+    ).slice(0, 15);
 
     const questions45 = [...section1, ...section2, ...section3];
 
