@@ -103,10 +103,12 @@ export const CandidateResultPage: React.FC<CandidateResultPageProps> = ({
 
           <div className="space-y-1.5">
             <span className="text-[11px] font-bold tracking-widest text-emerald-400 uppercase">
-              Online Assessment Completed
+              {result?.status === 'Terminated' ? 'Assessment Terminated & Locked' : 'Already Completed'}
             </span>
             <h1 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
-              Thank You! Your Exam Is Finished
+              {result?.status === 'Terminated'
+                ? 'Assessment Session Terminated'
+                : 'Already You Completed the Assessment'}
             </h1>
             <p className="text-xs text-slate-300 max-w-md mx-auto">
               INZOVATE TECHNOLOGIES PRIVATE LIMITED • CIN: U62011TZ2025PTC036329
@@ -129,12 +131,15 @@ export const CandidateResultPage: React.FC<CandidateResultPageProps> = ({
             </div>
 
             <h2 className="text-lg sm:text-xl font-bold text-slate-900 tracking-tight">
-              Your assessment has been successfully completed and submitted.
+              {result?.status === 'Terminated'
+                ? 'Your assessment session has been finalized and locked.'
+                : 'Your assessment has already been completed and submitted.'}
             </h2>
             <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-              Your responses have been securely saved for evaluation by our recruitment team. Official evaluation
-              outcomes and next-round interview schedules will be communicated directly by{' '}
-              <strong>Inzovate Technologies HR</strong> or your campus placement office.
+              Your responses have been securely saved for evaluation by our recruitment team. Only one attempt per
+              registered Email and Mobile Number is permitted. Official evaluation outcomes and next-round interview
+              schedules will be communicated directly by <strong>Inzovate Technologies HR</strong> or your campus
+              placement office.
             </p>
           </div>
 

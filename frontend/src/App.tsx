@@ -147,22 +147,28 @@ export default function App() {
       ...(user.domainId ? { domainId: user.domainId } : {}),
       ...(user.domainName ? { domainName: user.domainName } : {}),
       ...(user.collegeName ? { collegeName: user.collegeName } : {}),
+      ...(user.assessmentStatus ? { assessmentStatus: user.assessmentStatus } : {}),
     };
     setCurrentUser(normalizedUser);
     setExamResultData(null);
     localStorage.setItem('inzovate_user', JSON.stringify(normalizedUser));
     localStorage.setItem('inzovate_token', token);
 
-    if (user.assessmentStatus === 'Completed' || (user.totalScore !== null && user.totalScore !== undefined)) {
+    const alreadyDone =
+      user.assessmentStatus === 'Completed' ||
+      user.assessmentStatus === 'Terminated' ||
+      (user.totalScore !== null && user.totalScore !== undefined);
+
+    if (alreadyDone) {
       setIsExamCompleted(true);
       localStorage.setItem('inzovate_exam_completed', 'true');
+      setActiveTab('candidate-result');
     } else {
       setIsExamCompleted(false);
       localStorage.removeItem('inzovate_exam_completed');
       localStorage.removeItem('inzovate_session_id');
+      setActiveTab('candidate-dash');
     }
-
-    setActiveTab('candidate-dash');
   };
 
   const handleAdminLoginSuccess = (adminUser: any, token: string) => {

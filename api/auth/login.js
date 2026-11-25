@@ -73,8 +73,15 @@ export default async function handler(req, res) {
       candidates = refreshed.candidates || [];
     }
 
-    // Find candidate by email or candidateId
+    // Find candidate by email, candidateId, or 10-digit mobile number (prefer active non-deleted)
+    const cleanDigits = identifier.replace(/\D/g, '');
     let candidate = candidates.find(
+      c => c.status !== 'deleted' && (
+        (c.email && c.email.toLowerCase() === identifier) ||
+        (c.candidateId && c.candidateId.toLowerCase() === identifier) ||
+        (cleanDigits.length >= 10 && c.mobileNumber && c.mobileNumber.replace(/\D/g, '').endsWith(cleanDigits.slice(-10)))
+      )
+    ) || candidates.find(
       c => (c.email && c.email.toLowerCase() === identifier) ||
            (c.candidateId && c.candidateId.toLowerCase() === identifier)
     );
@@ -125,7 +132,10 @@ export default async function handler(req, res) {
         degree: candidate.degree || 'B.E. Computer Science',
         branch: candidate.branch || 'Engineering',
         cgpa: candidate.cgpa || '8.5',
-        graduationYear: candidate.yearOfPassing || candidate.graduationYear || '2026'
+        graduationYear: candidate.yearOfPassing || candidate.graduationYear || '2026',
+        assessmentStatus: candidate.assessmentStatus || 'Ready',
+        totalScore: candidate.totalScore,
+        completedAt: candidate.completedAt || null
       }
     }));
 

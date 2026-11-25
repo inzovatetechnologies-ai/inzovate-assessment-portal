@@ -69,7 +69,7 @@ export const CandidateProfilePage: React.FC<CandidateProfilePageProps> = ({
     );
   }
 
-  const isCompleted = candidate?.assessmentStatus === 'Completed';
+  const isCompleted = candidate?.assessmentStatus === 'Completed' || candidate?.assessmentStatus === 'Terminated';
 
   return (
     <div className="max-w-5xl mx-auto px-4 py-8 space-y-8">
@@ -125,7 +125,7 @@ export const CandidateProfilePage: React.FC<CandidateProfilePageProps> = ({
                 className="w-full py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs shadow flex items-center justify-center space-x-1.5"
               >
                 <CheckCircle2 className="w-4 h-4" />
-                <span>View Evaluation Scorecard</span>
+                <span>Already Completed — View Status</span>
               </button>
             ) : (
               <button

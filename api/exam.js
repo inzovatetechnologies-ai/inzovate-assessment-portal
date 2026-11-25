@@ -143,11 +143,14 @@ export default async function handler(req, res) {
     return res.end(JSON.stringify({ success: false, message: 'Assessment submission record not found for this candidate.' }));
   }
 
-  // 4. Reset Attempt
+  // 4. Reset Attempt (Strictly Disabled — One-Time Assessment Policy)
   if (effectiveRoute.includes('reset-attempt')) {
-    res.statusCode = 200;
+    res.statusCode = 403;
     res.setHeader('Content-Type', 'application/json');
-    return res.end(JSON.stringify({ success: true, message: 'Assessment attempt reset successfully' }));
+    return res.end(JSON.stringify({
+      success: false,
+      message: 'Re-attempting the assessment is strictly disabled. One-time assessment policy applies.'
+    }));
   }
 
   // 5. Save Answer Heartbeat
@@ -229,6 +232,17 @@ function findAuthoritativeCandidate(candidates, candidateId, candidateEmail) {
     if (!candidate) {
       db = await getDb(true);
       candidate = findAuthoritativeCandidate(db.candidates, candidateId, candidateEmail) || {};
+    }
+
+    if (candidate.assessmentStatus === 'Completed' || candidate.assessmentStatus === 'Terminated') {
+      res.statusCode = 409;
+      res.setHeader('Content-Type', 'application/json');
+      return res.end(JSON.stringify({
+        success: false,
+        alreadyCompleted: true,
+        message: 'Already you completed the assessment. Multiple submissions are not allowed.',
+        result: candidate.assessmentResult || null
+      }));
     }
 
     const answers = payload.answers || {};
@@ -341,21 +355,32 @@ function findAuthoritativeCandidate(candidates, candidateId, candidateEmail) {
       matchedCandidate = findAuthoritativeCandidate(db.candidates, candidateId, candidateEmail);
     }
 
-    if (matchedCandidate && matchedCandidate.assessmentStatus === 'Completed') {
+    const cleanEmail = String(candidateEmail || matchedCandidate?.email || '').toLowerCase().trim();
+    const cleanMobileDigits = String(payload.mobileNumber || matchedCandidate?.mobileNumber || '').replace(/\D/g, '').slice(-10);
+    const completedDuplicate = (db.candidates || []).find(c =>
+      c.status !== 'deleted' &&
+      (c.assessmentStatus === 'Completed' || c.assessmentStatus === 'Terminated') && (
+        (matchedCandidate && c.candidateId === matchedCandidate.candidateId) ||
+        (cleanEmail && c.email && c.email.toLowerCase().trim() === cleanEmail) ||
+        (cleanMobileDigits.length >= 10 && c.mobileNumber && c.mobileNumber.replace(/\D/g, '').endsWith(cleanMobileDigits))
+      )
+    );
+
+    if (completedDuplicate) {
       res.statusCode = 200;
       res.setHeader('Content-Type', 'application/json');
       return res.end(JSON.stringify({
         success: false,
         isCompleted: true,
-        message: 'Your assessment has already been completed and submitted.',
+        message: 'Already you completed the assessment. Only one attempt per Email and Mobile Number is allowed.',
         candidate: {
-          id: matchedCandidate.candidateId,
-          fullName: matchedCandidate.fullName,
-          email: matchedCandidate.email,
-          jobRoleId: matchedCandidate.jobRoleId,
-          jobRoleTitle: matchedCandidate.jobRoleTitle,
-          domainId: matchedCandidate.domainId,
-          domainName: matchedCandidate.domainName
+          id: completedDuplicate.candidateId,
+          fullName: completedDuplicate.fullName,
+          email: completedDuplicate.email,
+          jobRoleId: completedDuplicate.jobRoleId,
+          jobRoleTitle: completedDuplicate.jobRoleTitle,
+          domainId: completedDuplicate.domainId,
+          domainName: completedDuplicate.domainName
         }
       }));
     }

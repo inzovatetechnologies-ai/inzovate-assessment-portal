@@ -80,7 +80,7 @@ export default async function handler(req, res) {
       return res.end(JSON.stringify({
         success: false,
         alreadyRegistered: true,
-        message: `Candidate profile is already registered with email '${cleanEmail}' (Candidate ID: ${existingActiveEmail.candidateId}). Please log in directly to attend or view your assessment.`
+        message: `Already Registered! Email '${cleanEmail}' is already registered (Candidate ID: ${existingActiveEmail.candidateId}). One-time registration is strictly enforced — please log in directly.`
       }));
     }
 
@@ -94,7 +94,7 @@ export default async function handler(req, res) {
         return res.end(JSON.stringify({
           success: false,
           alreadyRegistered: true,
-          message: `Candidate profile is already registered with mobile number '${cleanMobile}' (Candidate ID: ${existingActiveMobile.candidateId}). Please log in directly to attend or view your assessment.`
+          message: `Already Registered! Mobile number '${cleanMobile}' is already registered (Candidate ID: ${existingActiveMobile.candidateId}). One-time registration is strictly enforced — please log in directly.`
         }));
       }
     }

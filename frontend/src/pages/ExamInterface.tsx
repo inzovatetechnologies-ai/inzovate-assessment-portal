@@ -118,6 +118,18 @@ export const ExamInterface: React.FC<ExamInterfaceProps> = ({ currentUser, onExa
           return;
         }
 
+        const currStatus = (currentUser as any)?.assessmentStatus;
+        if (currStatus === 'Completed' || currStatus === 'Terminated') {
+          setInitError({
+            isCompleted: true,
+            message: 'Already you completed the assessment. Only one attempt per Email and Mobile Number is allowed.',
+            candidate: currentUser,
+          });
+          localStorage.setItem('inzovate_exam_completed', 'true');
+          setLoading(false);
+          return;
+        }
+
         // Instant zero-spinner launch: load 45 role-specific questions & activate camera immediately
         const instantQs = buildInstant45Questions(cRoleId);
         const tempSessionId = 'inz_cbt_live_' + Date.now();
@@ -502,9 +514,9 @@ export const ExamInterface: React.FC<ExamInterfaceProps> = ({ currentUser, onExa
 
             <div className="space-y-2">
               <span className="text-[10px] font-bold uppercase tracking-wider text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-full border border-emerald-500/20">
-                Assessment Finalized
+                Already Completed
               </span>
-              <h2 className="text-xl font-black text-white">Assessment Successfully Submitted</h2>
+              <h2 className="text-xl font-black text-white">Already You Completed This Assessment</h2>
               <p className="text-xs text-slate-300 leading-relaxed pt-1">
                 {initError.message}
               </p>
@@ -525,16 +537,6 @@ export const ExamInterface: React.FC<ExamInterfaceProps> = ({ currentUser, onExa
               >
                 <CheckCircle2 className="w-4 h-4" />
                 <span>View Submission Confirmation</span>
-              </button>
-            </div>
-
-            <div className="pt-4 border-t border-slate-800/80 text-[10px] text-slate-500">
-              <span>Drive Evaluation Testing Mode: </span>
-              <button
-                onClick={handleResetAttempt}
-                className="text-sky-400 hover:underline font-bold"
-              >
-                Reset Attempt & Retake Test
               </button>
             </div>
           </div>

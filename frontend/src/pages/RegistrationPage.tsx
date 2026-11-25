@@ -400,9 +400,21 @@ export const RegistrationPage: React.FC<RegistrationPageProps> = ({
       {errorMsg && (
         <div className="mb-6 p-4 rounded-xl bg-red-50 border border-red-200 flex items-start space-x-3 text-red-700 text-xs">
           <AlertCircle className="w-5 h-5 text-red-600 shrink-0 mt-0.5" />
-          <div className="flex-1">
-            <p className="font-bold">Registration Alert</p>
+          <div className="flex-1 space-y-2">
+            <p className="font-bold">
+              {errorMsg.toLowerCase().includes('already registered') ? 'Already Registered' : 'Registration Alert'}
+            </p>
             <p>{errorMsg}</p>
+            {errorMsg.toLowerCase().includes('already registered') && (
+              <button
+                type="button"
+                onClick={() => onOpenLogin(formData.email, formData.password)}
+                className="px-3.5 py-1.5 rounded-lg bg-blue-600 hover:bg-blue-500 text-white font-bold text-[11px] inline-flex items-center space-x-1 shadow-sm"
+              >
+                <span>Sign In with Existing Account</span>
+                <ArrowRight className="w-3.5 h-3.5" />
+              </button>
+            )}
           </div>
         </div>
       )}

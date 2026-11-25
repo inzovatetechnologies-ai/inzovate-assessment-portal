@@ -141,7 +141,7 @@ export interface Candidate {
   recordingConsent: boolean;
 
   recruitmentStage: 'Registered' | 'Assessment Pending' | 'Under Review' | 'Shortlisted' | 'Interview Scheduled' | 'Selected' | 'Rejected';
-  assessmentStatus: 'Ready' | 'In Progress' | 'Completed' | 'Suspended';
+  assessmentStatus: 'Ready' | 'In Progress' | 'Completed' | 'Terminated' | 'Suspended';
   totalScore?: number;
   maxScore?: number;
   percentage?: number;
