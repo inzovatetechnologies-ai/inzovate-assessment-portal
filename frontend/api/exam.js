@@ -2,9 +2,16 @@ import fs from 'fs';
 import path from 'path';
 import crypto from 'crypto';
 import { getDb, saveExamResultToDb } from './_data/cloudDb.js';
+import { setSecurityHeaders, requireAuth } from './_data/auth.js';
 import { getRoleTitleById, getDomainNameById, getDomainByRoleId } from './_data/rolesData.js';
 
+let cachedAllQuestions = null;
+let cachedQuestionMap = null;
+
 function loadAllQuestions() {
+  if (cachedAllQuestions && cachedAllQuestions.length > 0) {
+    return cachedAllQuestions;
+  }
   const seedPaths = [
     path.join(process.cwd(), 'api', '_data', 'questions.json'),
     path.join(process.cwd(), 'frontend', 'api', '_data', 'questions.json'),
@@ -15,11 +22,23 @@ function loadAllQuestions() {
     if (fs.existsSync(sp)) {
       try {
         const data = JSON.parse(fs.readFileSync(sp, 'utf8'));
-        if (Array.isArray(data) && data.length > 0) return data;
+        if (Array.isArray(data) && data.length > 0) {
+          cachedAllQuestions = data;
+          cachedQuestionMap = new Map();
+          data.forEach(q => cachedQuestionMap.set(q._id, q));
+          return cachedAllQuestions;
+        }
       } catch (e) {}
     }
   }
   return [];
+}
+
+function getQuestionMap() {
+  if (!cachedQuestionMap) {
+    loadAllQuestions();
+  }
+  return cachedQuestionMap || new Map();
 }
 
 async function parseBody(req) {
@@ -51,14 +70,16 @@ function sanitizeQuestion(q) {
 }
 
 export default async function handler(req, res) {
-  res.setHeader('Access-Control-Allow-Origin', '*');
-  res.setHeader('Access-Control-Allow-Methods', 'GET,POST,OPTIONS');
-  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+  setSecurityHeaders(req, res, 'GET,POST,OPTIONS');
 
   if (req.method === 'OPTIONS') {
     res.statusCode = 200;
     return res.end();
   }
+
+  const authUser = requireAuth(req, res);
+  if (!authUser) return;
+  const isAdmin = String(authUser.role || '').toLowerCase() === 'admin';
 
   const url = new URL(req.url, 'http://localhost');
   const pathParam = url.searchParams.get('path') || '';
@@ -98,6 +119,14 @@ export default async function handler(req, res) {
     }
 
     const cleanId = String(candidateId).toLowerCase().trim();
+    const isSelf =
+      (authUser.candidateId && authUser.candidateId.toLowerCase().trim() === cleanId) ||
+      (authUser.email && authUser.email.toLowerCase().trim() === cleanId);
+    if (!isAdmin && !isSelf) {
+      res.statusCode = 403;
+      res.setHeader('Content-Type', 'application/json');
+      return res.end(JSON.stringify({ success: false, message: 'Forbidden: You can only view your own assessment status.' }));
+    }
     const db = await getDb(false);
     const results = db.assessment_results || [];
     const found = results.find(r =>
@@ -211,8 +240,18 @@ function findAuthoritativeCandidate(candidates, candidateId, candidateEmail) {
   // 8. Submit Assessment
   if (effectiveRoute.includes('submit')) {
     const payload = await parseBody(req);
-    const candidateId = payload.candidateId;
-    const candidateEmail = payload.candidateEmail || payload.email || '';
+    const candidateId = !isAdmin && authUser.candidateId ? authUser.candidateId : payload.candidateId;
+    const candidateEmail = !isAdmin && authUser.email ? authUser.email : (payload.candidateEmail || payload.email || '');
+
+    if (!isAdmin) {
+      const reqId = String(payload.candidateId || '').toLowerCase().trim();
+      const authCandId = String(authUser.candidateId || '').toLowerCase().trim();
+      if (reqId && authCandId && reqId !== authCandId) {
+        res.statusCode = 403;
+        res.setHeader('Content-Type', 'application/json');
+        return res.end(JSON.stringify({ success: false, message: 'Forbidden: Candidate identity mismatch.' }));
+      }
+    }
 
     if (!candidateId && !candidateEmail) {
       res.statusCode = 400;
@@ -223,9 +262,7 @@ function findAuthoritativeCandidate(candidates, candidateId, candidateEmail) {
       }));
     }
 
-    const allQuestions = loadAllQuestions();
-    const questionMap = new Map();
-    allQuestions.forEach(q => questionMap.set(q._id, q));
+    const questionMap = getQuestionMap();
 
     let db = await getDb(false);
     let candidate = findAuthoritativeCandidate(db.candidates, candidateId, candidateEmail);
@@ -336,8 +373,18 @@ function findAuthoritativeCandidate(candidates, candidateId, candidateEmail) {
   // 9. Start Assessment Session
   try {
     const payload = await parseBody(req);
-    const candidateId = payload.candidateId;
-    const candidateEmail = payload.candidateEmail || payload.email || '';
+    const candidateId = !isAdmin && authUser.candidateId ? authUser.candidateId : payload.candidateId;
+    const candidateEmail = !isAdmin && authUser.email ? authUser.email : (payload.candidateEmail || payload.email || '');
+
+    if (!isAdmin) {
+      const reqId = String(payload.candidateId || '').toLowerCase().trim();
+      const authCandId = String(authUser.candidateId || '').toLowerCase().trim();
+      if (reqId && authCandId && reqId !== authCandId) {
+        res.statusCode = 403;
+        res.setHeader('Content-Type', 'application/json');
+        return res.end(JSON.stringify({ success: false, message: 'Forbidden: You can only start your own assessment.' }));
+      }
+    }
 
     if (!candidateId && !candidateEmail) {
       res.statusCode = 400;

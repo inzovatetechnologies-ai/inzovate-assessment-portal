@@ -1,5 +1,37 @@
 export const COLLEGES = [
   {
+    "_id": "col-vsb-karur",
+    "name": "V.S.B. Engineering College, Karur",
+    "district": "Karur",
+    "code": "VSB-KRR",
+    "university": "Anna University",
+    "address": "NH-67, Covai Road, Karudayampalayam, Karur, Tamil Nadu, 639111",
+    "placementOfficer": "Placement Cell",
+    "contactEmail": "placement@vsbec.com",
+    "phoneNumber": "+91 4324 239300",
+    "departments": [
+      "Computer Science and Engineering",
+      "Information Technology",
+      "Artificial Intelligence and Data Science",
+      "Computer Science and Business Systems",
+      "Electronics and Communication Engineering",
+      "Electrical and Electronics Engineering",
+      "Mechanical Engineering",
+      "Civil Engineering",
+      "Biotechnology",
+      "Chemical Engineering"
+    ],
+    "graduationYears": [
+      "2024",
+      "2025",
+      "2026",
+      "2027"
+    ],
+    "status": "active",
+    "createdAt": "2026-11-26T15:00:00.000Z",
+    "updatedAt": "2026-11-26T15:00:00.000Z"
+  },
+  {
     "_id": "col-01",
     "name": "PSG College of Technology",
     "district": "Coimbatore",

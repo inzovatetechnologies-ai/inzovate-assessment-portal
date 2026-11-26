@@ -1,4 +1,5 @@
-import { getDb, addCandidateToDb } from '../_data/cloudDb.js';
+import { getDb } from '../_data/cloudDb.js';
+import { setSecurityHeaders, signJwt } from '../_data/auth.js';
 
 async function parseBody(req) {
   if (req.body && typeof req.body === 'object') return req.body;
@@ -16,9 +17,7 @@ async function parseBody(req) {
 }
 
 export default async function handler(req, res) {
-  res.setHeader('Access-Control-Allow-Origin', '*');
-  res.setHeader('Access-Control-Allow-Methods', 'POST,OPTIONS');
-  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+  setSecurityHeaders(req, res, 'POST,OPTIONS');
 
   if (req.method === 'OPTIONS') {
     res.statusCode = 200;
@@ -47,12 +46,13 @@ export default async function handler(req, res) {
       identifier === 'superadmin@inzovate.com' ||
       identifier === 'admin'
     ) {
-      if (password === 'Admin@2026' || password === 'Admin@Inzovate2026') {
+      if (password === 'Mousik@2001' || (process.env.ADMIN_PASSWORD && password === process.env.ADMIN_PASSWORD)) {
+        const adminToken = signJwt({ id: 'admin-01', email: identifier, role: 'Admin' });
         res.statusCode = 200;
         res.setHeader('Content-Type', 'application/json');
         return res.end(JSON.stringify({
           success: true,
-          token: 'inz_admin_session_root',
+          token: adminToken,
           user: {
             id: 'admin-01',
             fullName: 'Enterprise Administrator',
@@ -61,35 +61,35 @@ export default async function handler(req, res) {
           }
         }));
       }
+      res.statusCode = 401;
+      res.setHeader('Content-Type', 'application/json');
+      return res.end(JSON.stringify({
+        success: false,
+        message: 'Invalid Administrator password.'
+      }));
     }
 
-    const db = await getDb(true);
+    let db = await getDb(false);
     let candidates = db.candidates || [];
 
     // Find candidate by email, candidateId, or 10-digit mobile number (prefer active non-deleted)
     const cleanDigits = identifier.replace(/\D/g, '');
-    let candidate = candidates.find(
+    const findCandidate = (list) => list.find(
       c => c.status !== 'deleted' && (
         (c.email && c.email.toLowerCase() === identifier) ||
         (c.candidateId && c.candidateId.toLowerCase() === identifier) ||
         (cleanDigits.length >= 10 && c.mobileNumber && c.mobileNumber.replace(/\D/g, '').endsWith(cleanDigits.slice(-10)))
       )
-    ) || candidates.find(
+    ) || list.find(
       c => (c.email && c.email.toLowerCase() === identifier) ||
            (c.candidateId && c.candidateId.toLowerCase() === identifier)
     );
 
-    // Only sync candidateData if candidate does NOT exist in DB yet (never overwrite existing Completed status!)
-    if (!candidate && candidateData && candidateData.email) {
-      await addCandidateToDb(candidateData);
-      const refreshed = await getDb(true);
-      candidates = refreshed.candidates || [];
-      candidate = candidates.find(
-        c => c.status !== 'deleted' && (
-          (c.email && c.email.toLowerCase() === identifier) ||
-          (c.candidateId && c.candidateId.toLowerCase() === identifier)
-        )
-      );
+    let candidate = findCandidate(candidates);
+    if (!candidate) {
+      db = await getDb(true);
+      candidates = db.candidates || [];
+      candidate = findCandidate(candidates);
     }
 
     // Cross-check assessment_results so completed status is never missed
@@ -121,7 +121,7 @@ export default async function handler(req, res) {
       }));
     }
 
-    if (candidate.password && password && candidate.password !== password) {
+    if (!candidate.password || candidate.password !== password) {
       res.statusCode = 401;
       res.setHeader('Content-Type', 'application/json');
       return res.end(JSON.stringify({
@@ -130,11 +130,18 @@ export default async function handler(req, res) {
       }));
     }
 
+    const token = signJwt({
+      id: candidate.candidateId || candidate._id,
+      candidateId: candidate.candidateId,
+      email: candidate.email,
+      role: 'Candidate'
+    });
+
     res.statusCode = 200;
     res.setHeader('Content-Type', 'application/json');
     return res.end(JSON.stringify({
       success: true,
-      token: 'inz_session_' + Buffer.from(candidate.email || identifier).toString('base64'),
+      token,
       user: {
         id: candidate.candidateId || candidate._id,
         candidateId: candidate.candidateId,

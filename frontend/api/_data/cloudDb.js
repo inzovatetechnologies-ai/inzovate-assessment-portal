@@ -19,7 +19,7 @@ const LOCAL_CACHE_FILE = path.join(TMP_DIR, 'portal_db_cache.json');
 
 let memCache = null;
 let lastFetchTime = 0;
-const CACHE_TTL_MS = 3000;
+const CACHE_TTL_MS = 5000;
 
 function readLocalCache() {
   try {
@@ -126,15 +126,16 @@ export async function getDb(forceRefresh = false) {
 
 let mutationQueue = Promise.resolve();
 
-export function mutateDb(mutatorFn, maxRetries = 20) {
+export function mutateDb(mutatorFn, maxRetries = 35) {
   const run = () => executeMutateDb(mutatorFn, maxRetries);
   const next = mutationQueue.then(run, run);
   mutationQueue = next.catch(() => {});
   return next;
 }
 
-async function executeMutateDb(mutatorFn, maxRetries = 20) {
+async function executeMutateDb(mutatorFn, maxRetries = 35) {
   let attempt = 0;
+  let rateLimitHits = 0;
   let lastError = null;
 
   while (attempt < maxRetries) {
@@ -187,6 +188,12 @@ async function executeMutateDb(mutatorFn, maxRetries = 20) {
       }
 
       if (putRes.status === 403) {
+        rateLimitHits++;
+        if (rateLimitHits <= 4) {
+          const delay = 1500 + Math.floor(Math.random() * 1000);
+          await new Promise(r => setTimeout(r, delay));
+          continue;
+        }
         console.warn('CloudDB rate limited by GitHub API. Saved to local cache.');
         memCache = updatedDb;
         lastFetchTime = Date.now();
