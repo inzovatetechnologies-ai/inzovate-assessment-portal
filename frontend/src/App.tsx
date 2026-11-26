@@ -23,19 +23,37 @@ import { CodingSandboxPage } from './pages/CodingSandboxPage';
 import { CertificateVerifyPage } from './pages/CertificateVerifyPage';
 import { CandidateProfilePage } from './pages/CandidateProfilePage';
 
+function isValidJwtToken(token: string | null): boolean {
+  if (!token || typeof token !== 'string') return false;
+  const parts = token.split('.');
+  if (parts.length !== 3) return false;
+  try {
+    const b64 = parts[1].replace(/-/g, '+').replace(/_/g, '/');
+    const json = JSON.parse(atob(b64));
+    if (json.exp && Date.now() / 1000 > json.exp) return false;
+    return true;
+  } catch {
+    return false;
+  }
+}
+
 export default function App() {
   const [currentUser, setCurrentUser] = useState<User | null>(() => {
     try {
       const savedUser = localStorage.getItem('inzovate_user');
       const savedToken = localStorage.getItem('inzovate_token');
-      if (savedUser && savedToken) return JSON.parse(savedUser);
+      if (savedUser && isValidJwtToken(savedToken)) return JSON.parse(savedUser);
+      if (savedToken && !isValidJwtToken(savedToken)) {
+        localStorage.removeItem('inzovate_user');
+        localStorage.removeItem('inzovate_token');
+      }
     } catch (e) {}
     return null;
   });
   const [activeTab, setActiveTab] = useState<string>(() => {
     try {
       const savedTab = sessionStorage.getItem('inzovate_active_tab');
-      const hasUser = Boolean(localStorage.getItem('inzovate_user') && localStorage.getItem('inzovate_token'));
+      const hasUser = Boolean(localStorage.getItem('inzovate_user') && isValidJwtToken(localStorage.getItem('inzovate_token')));
       if (savedTab === 'exam' && !hasUser) return 'home';
       if (savedTab) return savedTab;
     } catch (e) {}
@@ -64,7 +82,7 @@ export default function App() {
   useEffect(() => {
     const savedUser = localStorage.getItem('inzovate_user');
     const savedToken = localStorage.getItem('inzovate_token');
-    if (savedUser && savedToken) {
+    if (savedUser && isValidJwtToken(savedToken)) {
       try {
         const user = JSON.parse(savedUser);
         setCurrentUser(user);
@@ -76,6 +94,10 @@ export default function App() {
         localStorage.removeItem('inzovate_token');
         setCurrentUser(null);
       }
+    } else if (savedToken || savedUser) {
+      localStorage.removeItem('inzovate_user');
+      localStorage.removeItem('inzovate_token');
+      setCurrentUser(null);
     }
   }, []);
 

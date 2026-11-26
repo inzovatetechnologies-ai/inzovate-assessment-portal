@@ -162,6 +162,15 @@ export const ExamInterface: React.FC<ExamInterfaceProps> = ({ currentUser, onExa
           });
           localStorage.setItem('inzovate_exam_completed', 'true');
           setLoading(false);
+        } else if (res.message && res.message.toLowerCase().includes('unauthorized')) {
+          localStorage.removeItem('inzovate_user');
+          localStorage.removeItem('inzovate_token');
+          setInitError({
+            isCompleted: false,
+            message: 'Your session has expired or is invalid. Please Sign In again before starting the assessment.',
+            candidate: candidateMeta || currentUser,
+          });
+          setLoading(false);
         } else if (instantQs.length === 0) {
           setInitError({
             isCompleted: false,

@@ -150,7 +150,26 @@ export const WebcamFeed: React.FC<WebcamFeedProps> = ({
     };
   }, []);
 
-  // Real-Time AI Proctoring Loop (Mobile Phone, Looking Down >1s, Head Turn, Multi-Face, No Face)
+  // Monitor camera-off / permission denied state and emit violation during active proctoring
+  useEffect(() => {
+    if (!proctoringEnabled || streamActive) return;
+    const startGrace = setTimeout(() => {
+      if (onViolationRef.current) {
+        onViolationRef.current('camera_off', 'Webcam is turned off or blocked! Please allow and keep your camera ON.');
+      }
+    }, 4500);
+    const repeatTimer = setInterval(() => {
+      if (onViolationRef.current) {
+        onViolationRef.current('camera_off', 'Webcam is turned off or blocked! Please allow and keep your camera ON.');
+      }
+    }, 6500);
+    return () => {
+      clearTimeout(startGrace);
+      clearInterval(repeatTimer);
+    };
+  }, [proctoringEnabled, streamActive]);
+
+  // Real-Time AI Proctoring Loop (Mobile Phone, Looking Down >1s, Head Turn, Multi-Face, No Face, Covered Camera)
   useEffect(() => {
     if (!proctoringEnabled || !streamActive) return;
 
@@ -158,6 +177,8 @@ export const WebcamFeed: React.FC<WebcamFeedProps> = ({
     let faceModel: any = null;
     let objectModel: any = null;
     let timerId: any = null;
+    let monitorCanvas: HTMLCanvasElement | null = null;
+    let monitorCtx: CanvasRenderingContext2D | null = null;
 
     let lookDownStartMs: number | null = null;
     let headTurnStartMs: number | null = null;
@@ -211,6 +232,40 @@ export const WebcamFeed: React.FC<WebcamFeedProps> = ({
         checkTick++;
 
         try {
+          // 0. Check if camera track ended or lens is covered / shuttered / blank
+          const stream = streamRef.current;
+          const vTrack = stream?.getVideoTracks?.()?.[0];
+          if (!vTrack || vTrack.readyState === 'ended' || vTrack.enabled === false) {
+            setStreamActive(false);
+            emitViolation('camera_off', 'Webcam was turned off or disconnected during the assessment!');
+            return;
+          }
+
+          if (!monitorCanvas) {
+            monitorCanvas = document.createElement('canvas');
+            monitorCanvas.width = 32;
+            monitorCanvas.height = 24;
+            monitorCtx = monitorCanvas.getContext('2d', { willReadFrequently: true });
+          }
+          if (monitorCtx) {
+            monitorCtx.drawImage(video, 0, 0, 32, 24);
+            const pixels = monitorCtx.getImageData(0, 0, 32, 24).data;
+            let sum = 0;
+            let sumSq = 0;
+            const n = 32 * 24;
+            for (let i = 0; i < pixels.length; i += 4) {
+              const lum = (pixels[i] + pixels[i + 1] + pixels[i + 2]) / 3;
+              sum += lum;
+              sumSq += lum * lum;
+            }
+            const mean = sum / n;
+            const variance = Math.max(0, sumSq / n - mean * mean);
+            const stdDev = Math.sqrt(variance);
+            if (mean < 12 || stdDev < 6) {
+              emitViolation('camera_covered', 'Webcam appears covered, blocked, or shuttered! Please uncover your camera.');
+            }
+          }
+
           // Alternate object detection & face detection across ticks to keep UI clicks 100% lag-free
           // 1. Mobile Phone Detection (on odd ticks, or every 2nd tick)
           if (objectModel && checkTick % 2 === 1) {
