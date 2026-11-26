@@ -185,7 +185,9 @@ export default function App() {
     setCurrentUser(normalizedUser);
     setExamResultData(null);
     localStorage.setItem('inzovate_user', JSON.stringify(normalizedUser));
-    localStorage.setItem('inzovate_token', token);
+    if (token && isValidJwtToken(token)) {
+      localStorage.setItem('inzovate_token', token);
+    }
 
     const alreadyDone =
       user.assessmentStatus === 'Completed' ||
@@ -236,7 +238,8 @@ export default function App() {
     if (candidate) {
       setIsExamCompleted(false);
       localStorage.removeItem('inzovate_exam_completed');
-      handleCandidateLoginSuccess({ ...candidate, assessmentStatus: 'Ready' }, 'inz_session_direct');
+      const activeToken = candidate.token || localStorage.getItem('inzovate_token') || '';
+      handleCandidateLoginSuccess({ ...candidate, assessmentStatus: 'Ready' }, activeToken);
       setActiveTab('exam');
     } else {
       setActiveTab('home');
