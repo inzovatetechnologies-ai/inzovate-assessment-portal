@@ -13,7 +13,7 @@ export default async function handler(req, res) {
   if (!adminUser) return;
 
   try {
-    const db = await getDb(true);
+    const db = await getDb(false);
     const allCandidates = db.candidates || [];
     const candidates = allCandidates.filter(c => c.status !== 'deleted');
     const results = db.assessment_results || [];

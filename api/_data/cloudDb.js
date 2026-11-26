@@ -19,7 +19,7 @@ const LOCAL_CACHE_FILE = path.join(TMP_DIR, 'portal_db_cache.json');
 
 let memCache = null;
 let lastFetchTime = 0;
-const CACHE_TTL_MS = 3000;
+const CACHE_TTL_MS = 5000;
 
 function readLocalCache() {
   try {

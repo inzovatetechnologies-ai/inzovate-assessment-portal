@@ -1,5 +1,35 @@
 const DRIVES = [
   {
+    "_id": "drive-vsb-s1",
+    "driveId": "INZ-DRIVE-VSB-2026-S1",
+    "name": "V.S.B. Engineering College, Karur — Session 1 (500 Candidates)",
+    "collegeId": "col-vsb-karur",
+    "collegeName": "V.S.B. Engineering College, Karur",
+    "recruitmentDate": "2026-11-27",
+    "registrationDeadline": "2026-11-27",
+    "eligibleDepartments": ["Computer Science and Engineering", "Information Technology", "Artificial Intelligence and Data Science", "ECE", "EEE", "Mechanical", "Civil"],
+    "eligibleGraduationYears": ["2026", "2027"],
+    "availableJobRoles": ["role-soft-dev", "role-fullstack", "role-data-analyst", "role-cloud-eng", "role-devops", "role-uiux", "role-java-dev", "role-python-dev", "role-qa-eng"],
+    "maxCandidates": 500,
+    "status": "active",
+    "instructions": "Session 1 (500 Students). Desktop/laptop with working webcam required. Assessment duration: 45 minutes."
+  },
+  {
+    "_id": "drive-vsb-s2",
+    "driveId": "INZ-DRIVE-VSB-2026-S2",
+    "name": "V.S.B. Engineering College, Karur — Session 2 (500 Candidates)",
+    "collegeId": "col-vsb-karur",
+    "collegeName": "V.S.B. Engineering College, Karur",
+    "recruitmentDate": "2026-11-27",
+    "registrationDeadline": "2026-11-27",
+    "eligibleDepartments": ["Computer Science and Engineering", "Information Technology", "Artificial Intelligence and Data Science", "ECE", "EEE", "Mechanical", "Civil"],
+    "eligibleGraduationYears": ["2026", "2027"],
+    "availableJobRoles": ["role-soft-dev", "role-fullstack", "role-data-analyst", "role-cloud-eng", "role-devops", "role-uiux", "role-java-dev", "role-python-dev", "role-qa-eng"],
+    "maxCandidates": 500,
+    "status": "active",
+    "instructions": "Session 2 (500 Students). Desktop/laptop with working webcam required. Assessment duration: 45 minutes."
+  },
+  {
     "_id": "drive-01",
     "driveId": "INZ-DRIVE-2026-01",
     "name": "Inzovate Pan-India Campus Recruitment 2026 – Phase 1",

@@ -69,21 +69,28 @@ export default async function handler(req, res) {
       }));
     }
 
-    const db = await getDb(true);
+    let db = await getDb(false);
     let candidates = db.candidates || [];
 
     // Find candidate by email, candidateId, or 10-digit mobile number (prefer active non-deleted)
     const cleanDigits = identifier.replace(/\D/g, '');
-    let candidate = candidates.find(
+    const findCandidate = (list) => list.find(
       c => c.status !== 'deleted' && (
         (c.email && c.email.toLowerCase() === identifier) ||
         (c.candidateId && c.candidateId.toLowerCase() === identifier) ||
         (cleanDigits.length >= 10 && c.mobileNumber && c.mobileNumber.replace(/\D/g, '').endsWith(cleanDigits.slice(-10)))
       )
-    ) || candidates.find(
+    ) || list.find(
       c => (c.email && c.email.toLowerCase() === identifier) ||
            (c.candidateId && c.candidateId.toLowerCase() === identifier)
     );
+
+    let candidate = findCandidate(candidates);
+    if (!candidate) {
+      db = await getDb(true);
+      candidates = db.candidates || [];
+      candidate = findCandidate(candidates);
+    }
 
     // Cross-check assessment_results so completed status is never missed
     const existingResult = candidate ? (db.assessment_results || []).find(r =>
