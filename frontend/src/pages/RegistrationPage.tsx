@@ -294,7 +294,7 @@ export const RegistrationPage: React.FC<RegistrationPageProps> = ({
         };
         try {
           localStorage.setItem('inzovate_user', JSON.stringify(enrichedCandidate));
-          localStorage.setItem('inzovate_token', res.token || 'inz_session_direct');
+          if (res.token) localStorage.setItem('inzovate_token', res.token);
           localStorage.removeItem('inzovate_exam_completed');
         } catch (e) {}
 

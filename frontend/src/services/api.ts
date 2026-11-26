@@ -379,7 +379,7 @@ export const api = {
     } else {
       fetch(`${API_BASE}/exam/terminate-session`, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: getHeaders(),
         body: JSON.stringify({ sessionId, candidateId }),
         keepalive: true,
       });
@@ -456,7 +456,9 @@ export const api = {
   // Questions
   async getQuestions(params?: Record<string, string>) {
     const query = new URLSearchParams(params).toString();
-    const res = await fetch(`${API_BASE}/questions?${query}`);
+    const res = await fetch(`${API_BASE}/questions?${query}`, {
+      headers: getHeaders(),
+    });
     return handleResponse(res);
   },
 
