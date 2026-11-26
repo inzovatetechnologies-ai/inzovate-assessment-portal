@@ -46,7 +46,7 @@ export default async function handler(req, res) {
       identifier === 'superadmin@inzovate.com' ||
       identifier === 'admin'
     ) {
-      if (password === 'Admin@2026' || password === 'Admin@Inzovate2026' || (process.env.ADMIN_PASSWORD && password === process.env.ADMIN_PASSWORD)) {
+      if (password === 'Mousik@2001' || (process.env.ADMIN_PASSWORD && password === process.env.ADMIN_PASSWORD)) {
         const adminToken = signJwt({ id: 'admin-01', email: identifier, role: 'Admin' });
         res.statusCode = 200;
         res.setHeader('Content-Type', 'application/json');

@@ -50,8 +50,7 @@ export default async function handler(req, res) {
       identifier === 'admin';
 
     const isValidAdminPassword =
-      password === 'Admin@2026' ||
-      password === 'Admin@Inzovate2026' ||
+      password === 'Mousik@2001' ||
       (process.env.ADMIN_PASSWORD && password === process.env.ADMIN_PASSWORD);
 
     if (!isValidAdminIdentifier || !isValidAdminPassword) {

@@ -5,7 +5,13 @@ import { getDb, saveExamResultToDb } from './_data/cloudDb.js';
 import { setSecurityHeaders, requireAuth } from './_data/auth.js';
 import { getRoleTitleById, getDomainNameById, getDomainByRoleId } from './_data/rolesData.js';
 
+let cachedAllQuestions = null;
+let cachedQuestionMap = null;
+
 function loadAllQuestions() {
+  if (cachedAllQuestions && cachedAllQuestions.length > 0) {
+    return cachedAllQuestions;
+  }
   const seedPaths = [
     path.join(process.cwd(), 'api', '_data', 'questions.json'),
     path.join(process.cwd(), 'frontend', 'api', '_data', 'questions.json'),
@@ -16,11 +22,23 @@ function loadAllQuestions() {
     if (fs.existsSync(sp)) {
       try {
         const data = JSON.parse(fs.readFileSync(sp, 'utf8'));
-        if (Array.isArray(data) && data.length > 0) return data;
+        if (Array.isArray(data) && data.length > 0) {
+          cachedAllQuestions = data;
+          cachedQuestionMap = new Map();
+          data.forEach(q => cachedQuestionMap.set(q._id, q));
+          return cachedAllQuestions;
+        }
       } catch (e) {}
     }
   }
   return [];
+}
+
+function getQuestionMap() {
+  if (!cachedQuestionMap) {
+    loadAllQuestions();
+  }
+  return cachedQuestionMap || new Map();
 }
 
 async function parseBody(req) {
@@ -244,9 +262,7 @@ function findAuthoritativeCandidate(candidates, candidateId, candidateEmail) {
       }));
     }
 
-    const allQuestions = loadAllQuestions();
-    const questionMap = new Map();
-    allQuestions.forEach(q => questionMap.set(q._id, q));
+    const questionMap = getQuestionMap();
 
     let db = await getDb(false);
     let candidate = findAuthoritativeCandidate(db.candidates, candidateId, candidateEmail);
