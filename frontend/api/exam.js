@@ -134,9 +134,19 @@ export default async function handler(req, res) {
       (r.candidateDisplayId && r.candidateDisplayId.toLowerCase().trim() === cleanId)
     );
     if (found) {
+      const safeResult = isAdmin ? found : {
+        candidateId: found.candidateId,
+        candidateDisplayId: found.candidateDisplayId || found.candidateId,
+        candidateName: found.candidateName,
+        jobRoleTitle: found.jobRoleTitle || 'Software Developer',
+        domainName: found.domainName || 'Software Development',
+        collegeName: found.collegeName,
+        status: found.status || 'Completed',
+        completedAt: found.completedAt
+      };
       res.statusCode = 200;
       res.setHeader('Content-Type', 'application/json');
-      return res.end(JSON.stringify({ success: true, result: found }));
+      return res.end(JSON.stringify({ success: true, result: safeResult }));
     }
 
     const candidate = (db.candidates || []).find(c =>
@@ -365,9 +375,22 @@ function findAuthoritativeCandidate(candidates, candidateId, candidateEmail) {
     // Save permanently to CloudDB attached to candidate
     await saveExamResultToDb(result.candidateId, result);
 
+    const responseResult = isAdmin ? result : {
+      sessionId: result.sessionId,
+      candidateId: result.candidateId,
+      candidateDisplayId: result.candidateDisplayId,
+      candidateName: result.candidateName,
+      jobRoleTitle: result.jobRoleTitle,
+      domainName: result.domainName,
+      collegeName: result.collegeName,
+      status: result.status,
+      certificateId: result.certificateId,
+      completedAt: result.completedAt
+    };
+
     res.statusCode = 200;
     res.setHeader('Content-Type', 'application/json');
-    return res.end(JSON.stringify({ success: true, result }));
+    return res.end(JSON.stringify({ success: true, result: responseResult }));
   }
 
   // 9. Start Assessment Session

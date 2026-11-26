@@ -158,7 +158,6 @@ export default async function handler(req, res) {
         cgpa: candidate.cgpa || '8.5',
         graduationYear: candidate.yearOfPassing || candidate.graduationYear || '2026',
         assessmentStatus: candidate.assessmentStatus || 'Ready',
-        totalScore: candidate.totalScore,
         completedAt: candidate.completedAt || null
       }
     }));

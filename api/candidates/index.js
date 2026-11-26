@@ -54,9 +54,18 @@ export default async function handler(req, res) {
         (c.email && c.email.toLowerCase() === query)
       );
       if (found) {
+        const safe = sanitizeCandidate(found);
+        if (!isAdmin) {
+          delete safe.assessmentResult;
+          delete safe.totalScore;
+          delete safe.percentage;
+          delete safe.isPassed;
+          delete safe.examResult;
+          delete safe.recruitmentStage;
+        }
         res.statusCode = 200;
         res.setHeader('Content-Type', 'application/json');
-        return res.end(JSON.stringify({ success: true, candidate: sanitizeCandidate(found) }));
+        return res.end(JSON.stringify({ success: true, candidate: safe }));
       }
       res.statusCode = 404;
       res.setHeader('Content-Type', 'application/json');
