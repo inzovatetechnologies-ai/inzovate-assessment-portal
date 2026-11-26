@@ -28,22 +28,6 @@ function getHeaders() {
 export const api = {
   // Auth
   async login(identifier: string, password: string) {
-    const cleanId = (identifier || '').trim().toLowerCase();
-    let localCandidate: any = null;
-    try {
-      const stored = JSON.parse(localStorage.getItem('inzovate_registered_candidates') || '[]');
-      localCandidate = stored.find((c: any) =>
-        (c.email && c.email.toLowerCase() === cleanId) ||
-        (c.candidateId && c.candidateId.toLowerCase() === cleanId)
-      );
-      if (!localCandidate) {
-        const lastCand = JSON.parse(localStorage.getItem('inzovate_last_candidate') || 'null');
-        if (lastCand && (lastCand.email?.toLowerCase() === cleanId || lastCand.candidateId?.toLowerCase() === cleanId)) {
-          localCandidate = lastCand;
-        }
-      }
-    } catch (e) {}
-
     try {
       const res = await fetch(`${API_BASE}/auth/login`, {
         method: 'POST',
@@ -51,52 +35,21 @@ export const api = {
         body: JSON.stringify({
           email: identifier,
           username: identifier,
-          password,
-          candidateData: localCandidate || undefined
+          password
         }),
       });
       const data = await handleResponse(res);
       if (data.success) {
         if (data.token) localStorage.setItem('inzovate_token', data.token);
         if (data.user) localStorage.setItem('inzovate_user', JSON.stringify(data.user));
-        return data;
       }
-    } catch (e) {}
-
-    // Resilient local authentication fallback
-    if (localCandidate) {
-      if (localCandidate.password && localCandidate.password !== password) {
-        return { success: false, message: 'Invalid password. Please check your credentials.' };
-      }
-      const token = 'inz_session_' + btoa(localCandidate.email);
-      const user = {
-        id: localCandidate.candidateId,
-        candidateId: localCandidate.candidateId,
-        fullName: localCandidate.fullName,
-        email: localCandidate.email,
-        role: 'Candidate',
-        jobRoleId: localCandidate.jobRoleId || 'role-soft-dev',
-        jobRoleTitle: localCandidate.jobRoleTitle || 'Software Developer',
-        domainId: localCandidate.domainId || 'dom-01',
-        domainName: localCandidate.domainName || 'Software Development',
-        collegeName: localCandidate.collegeName || 'Autonomous Engineering College',
-        degree: localCandidate.degree || 'B.E. Computer Science',
-        branch: localCandidate.branch || 'Engineering',
-        cgpa: localCandidate.cgpa || '8.5',
-        graduationYear: localCandidate.graduationYear || '2026',
-        assessmentStatus: localCandidate.assessmentStatus || 'Ready',
-        totalScore: localCandidate.totalScore,
-        completedAt: localCandidate.completedAt || null
+      return data;
+    } catch (e) {
+      return {
+        success: false,
+        message: 'Unable to reach authentication server. Please check your internet connection.'
       };
-      localStorage.setItem('inzovate_user', JSON.stringify(user));
-      localStorage.setItem('inzovate_token', token);
-      return { success: true, token, user };
     }
-
-    return {
-      success: false,
-      message: 'Invalid credentials. Please verify your Email/Candidate ID and Password.'
-    };
   },
 
   async adminLogin(identifier: string, password: string) {
@@ -105,7 +58,12 @@ export const api = {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ email: identifier, username: identifier, password }),
     });
-    return handleResponse(res);
+    const data = await handleResponse(res);
+    if (data.success && data.token) {
+      localStorage.setItem('inzovate_token', data.token);
+      if (data.user) localStorage.setItem('inzovate_user', JSON.stringify(data.user));
+    }
+    return data;
   },
 
   async requestPasswordReset(identifier: string) {

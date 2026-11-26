@@ -1,3 +1,5 @@
+import { setSecurityHeaders, signJwt } from '../_data/auth.js';
+
 async function parseBody(req) {
   if (req.body && typeof req.body === 'object') return req.body;
   if (typeof req.body === 'string') {
@@ -14,9 +16,7 @@ async function parseBody(req) {
 }
 
 export default async function handler(req, res) {
-  res.setHeader('Access-Control-Allow-Origin', '*');
-  res.setHeader('Access-Control-Allow-Methods', 'POST,OPTIONS');
-  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+  setSecurityHeaders(req, res, 'POST,OPTIONS');
 
   if (req.method === 'OPTIONS') {
     res.statusCode = 200;
@@ -43,12 +43,18 @@ export default async function handler(req, res) {
       }));
     }
 
+    const isValidAdminIdentifier =
+      identifier === 'admin@inzovate-technologies.com' ||
+      identifier === 'admin@inzovate.com' ||
+      identifier === 'superadmin@inzovate.com' ||
+      identifier === 'admin';
+
     const isValidAdminPassword =
       password === 'Admin@2026' ||
       password === 'Admin@Inzovate2026' ||
-      password === process.env.ADMIN_PASSWORD;
+      (process.env.ADMIN_PASSWORD && password === process.env.ADMIN_PASSWORD);
 
-    if (!isValidAdminPassword) {
+    if (!isValidAdminIdentifier || !isValidAdminPassword) {
       res.statusCode = 401;
       res.setHeader('Content-Type', 'application/json');
       return res.end(JSON.stringify({
@@ -66,7 +72,11 @@ export default async function handler(req, res) {
       status: 'active'
     };
 
-    const token = 'inz_admin_jwt_' + Buffer.from(adminUser.email).toString('base64');
+    const token = signJwt({
+      id: adminUser.id,
+      email: adminUser.email,
+      role: 'Admin'
+    });
 
     res.statusCode = 200;
     res.setHeader('Content-Type', 'application/json');

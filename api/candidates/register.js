@@ -3,6 +3,7 @@ import path from 'path';
 import os from 'os';
 import crypto from 'crypto';
 import { getDb, addCandidateToDb } from '../_data/cloudDb.js';
+import { setSecurityHeaders, signJwt, sanitizeCandidate } from '../_data/auth.js';
 import { getRoleTitleById, getDomainNameById, getDomainByRoleId } from '../_data/rolesData.js';
 
 const TMP_DIR = path.join(os.tmpdir(), 'inzovate-portal-data');
@@ -26,9 +27,7 @@ async function parseBody(req) {
 }
 
 export default async function handler(req, res) {
-  res.setHeader('Access-Control-Allow-Origin', '*');
-  res.setHeader('Access-Control-Allow-Methods', 'POST,OPTIONS');
-  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+  setSecurityHeaders(req, res, 'POST,OPTIONS');
 
   if (req.method === 'OPTIONS') {
     res.statusCode = 200;
@@ -164,7 +163,12 @@ export default async function handler(req, res) {
     await addCandidateToDb(newCandidate);
     const assignedCandidateId = newCandidate.candidateId;
 
-    const token = 'inz_session_' + Buffer.from(cleanEmail).toString('base64');
+    const token = signJwt({
+      id: assignedCandidateId,
+      candidateId: assignedCandidateId,
+      email: cleanEmail,
+      role: 'Candidate'
+    });
 
     res.statusCode = 201;
     res.setHeader('Content-Type', 'application/json');
@@ -173,7 +177,7 @@ export default async function handler(req, res) {
       message: `Candidate ${newCandidate.fullName} successfully registered for Inzovate Campus Drive 2026.`,
       candidateId: assignedCandidateId,
       token,
-      candidate: newCandidate,
+      candidate: sanitizeCandidate(newCandidate),
       user: {
         id: assignedCandidateId,
         candidateId: assignedCandidateId,

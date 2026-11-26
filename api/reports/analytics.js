@@ -1,14 +1,16 @@
 import { getDb } from '../_data/cloudDb.js';
+import { setSecurityHeaders, requireAdmin } from '../_data/auth.js';
 
 export default async function handler(req, res) {
-  res.setHeader('Access-Control-Allow-Origin', '*');
-  res.setHeader('Access-Control-Allow-Methods', 'GET,OPTIONS');
-  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+  setSecurityHeaders(req, res, 'GET,OPTIONS');
 
   if (req.method === 'OPTIONS') {
     res.statusCode = 200;
     return res.end();
   }
+
+  const adminUser = requireAdmin(req, res);
+  if (!adminUser) return;
 
   try {
     const db = await getDb(true);

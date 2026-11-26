@@ -1,4 +1,5 @@
 import { getDb, addCandidateToDb, mutateDb } from '../_data/cloudDb.js';
+import { setSecurityHeaders, requireAuth, requireAdmin, sanitizeCandidate } from '../_data/auth.js';
 
 async function parseBody(req) {
   if (req.body && typeof req.body === 'object') return req.body;
@@ -16,9 +17,7 @@ async function parseBody(req) {
 }
 
 export default async function handler(req, res) {
-  res.setHeader('Access-Control-Allow-Origin', '*');
-  res.setHeader('Access-Control-Allow-Methods', 'GET,POST,PUT,PATCH,DELETE,OPTIONS');
-  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+  setSecurityHeaders(req, res, 'GET,POST,PUT,PATCH,DELETE,OPTIONS');
 
   if (req.method === 'OPTIONS') {
     res.statusCode = 200;
@@ -30,12 +29,25 @@ export default async function handler(req, res) {
   const actionQuery = url.searchParams.get('action');
 
   try {
-    const db = await getDb(false);
-    const candidates = db.candidates || [];
-
-    // 1. Single candidate lookup
+    // 1. Single candidate lookup (Admin OR the candidate themselves)
     if (req.method === 'GET' && candidateIdQuery) {
+      const authUser = requireAuth(req, res);
+      if (!authUser) return;
+
       const query = candidateIdQuery.toLowerCase();
+      const isAdmin = String(authUser.role || '').toLowerCase() === 'admin';
+      const isSelf =
+        (authUser.candidateId && authUser.candidateId.toLowerCase() === query) ||
+        (authUser.email && authUser.email.toLowerCase() === query);
+
+      if (!isAdmin && !isSelf) {
+        res.statusCode = 403;
+        res.setHeader('Content-Type', 'application/json');
+        return res.end(JSON.stringify({ success: false, message: 'Forbidden: You can only access your own profile.' }));
+      }
+
+      const db = await getDb(false);
+      const candidates = db.candidates || [];
       const found = candidates.find(c =>
         (c.candidateId && c.candidateId.toLowerCase() === query) ||
         (c._id && c._id.toLowerCase() === query) ||
@@ -44,12 +56,19 @@ export default async function handler(req, res) {
       if (found) {
         res.statusCode = 200;
         res.setHeader('Content-Type', 'application/json');
-        return res.end(JSON.stringify({ success: true, candidate: found }));
+        return res.end(JSON.stringify({ success: true, candidate: sanitizeCandidate(found) }));
       }
       res.statusCode = 404;
       res.setHeader('Content-Type', 'application/json');
       return res.end(JSON.stringify({ success: false, message: 'Candidate not found' }));
     }
+
+    // All list, delete, restore, stage update, and upsert operations require Admin authorization
+    const adminUser = requireAdmin(req, res);
+    if (!adminUser) return;
+
+    const db = await getDb(false);
+    const candidates = db.candidates || [];
 
     // 2. Candidate Management: Delete / Restore / Permanent Delete
     let payload = {};
@@ -171,22 +190,24 @@ export default async function handler(req, res) {
       }
 
       const updatedDb = await getDb(true);
+      const safeCandidates = (updatedDb.candidates || []).map(sanitizeCandidate);
       res.statusCode = 200;
       res.setHeader('Content-Type', 'application/json');
       return res.end(JSON.stringify({
         success: true,
-        count: updatedDb.candidates.length,
-        candidates: updatedDb.candidates
+        count: safeCandidates.length,
+        candidates: safeCandidates
       }));
     }
 
-    // 4. List all registered candidates
+    // 4. List all registered candidates (Admin only, sanitized)
+    const safeCandidates = candidates.map(sanitizeCandidate);
     res.statusCode = 200;
     res.setHeader('Content-Type', 'application/json');
     return res.end(JSON.stringify({
       success: true,
-      count: candidates.length,
-      candidates
+      count: safeCandidates.length,
+      candidates: safeCandidates
     }));
   } catch (err) {
     res.statusCode = 500;
